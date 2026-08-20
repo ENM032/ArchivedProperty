@@ -22,6 +22,8 @@ from property_archiver.images.downloader import ImageDownloader
 from property_archiver.models.archive import ArchiveMetadata
 from property_archiver.storage.reader import ArchiveReader
 from property_archiver.storage.writer import ArchiveWriter
+from property_archiver.utils.clipboard import get_clipboard_text
+from property_archiver.utils.url_resolver import resolve_input_targets
 
 console = Console(safe_box=True, highlight=False)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -34,22 +36,8 @@ def main():
     pass
 
 
-@main.command(name="fetch")
-@click.argument("target", type=str)
-@click.option("--output", "-o", type=click.Path(), default="./archive", help="Output archive directory")
-@click.option("--no-images", is_flag=True, default=False, help="Disable downloading of listing images")
-@click.option("--timeout", type=float, default=25.0, help="HTTP request timeout in seconds")
-@click.option("--rate-limit", type=float, default=1.0, help="Polite delay between requests in seconds")
-@click.option("--user-agent", type=str, default=None, help="Custom User-Agent string")
-def fetch_command(target: str, output: str, no_images: bool, timeout: float, rate_limit: float, user_agent: str | None):
-    """
-    Fetch and archive a listing from a live URL or local HTML snapshot.
-
-    TARGET can be an HTTP(S) URL or a local filepath.
-    """
-    console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
-    console.print(f"Target: [green]{target}[/green]")
-
+def _fetch_single_target(target: str, output: str, no_images: bool, timeout: float, rate_limit: float, user_agent: str | None) -> bool:
+    """Internal helper to fetch and archive a single resolved target."""
     cfg = settings.model_copy()
     cfg.archive_dir = Path(output)
     cfg.download_images = not no_images
@@ -61,7 +49,7 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
     is_local_file = Path(target).exists()
 
     # Step 1: Ingestion
-    console.print("[yellow]Ingesting source...[/yellow]")
+    console.print(f"[yellow]Ingesting source:[/yellow] [green]{target}[/green]")
     start_time = time.time()
 
     if is_local_file:
@@ -85,19 +73,16 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
             fetch_mode = "http"
             duration = result.duration_sec
         except Exception as exc:
-            console.print(f"[bold red]Fetch failed:[/bold red] {exc}")
-            sys.exit(1)
-
-    console.print("[green]Source ingested successfully.[/green]")
+            console.print(f"[bold red]Fetch failed for {target}:[/bold red] {exc}")
+            return False
 
     # Step 2: Extraction
-    console.print("[yellow]Extracting listing data...[/yellow]")
     extractor = get_extractor_for_url_or_html(url)
     try:
         listing = extractor.extract(raw_html, url)
     except Exception as exc:
-        console.print(f"[bold red]Extraction failed:[/bold red] {exc}")
-        sys.exit(1)
+        console.print(f"[bold red]Extraction failed for {target}:[/bold red] {exc}")
+        return False
 
     status_str = f"Status: [bold cyan]{listing.listing_status.upper()}[/bold cyan]"
     if listing.status_badges:
@@ -118,7 +103,6 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
         console.print(f"[green]Archived {archived_images_count}/{len(listing.images)} images.[/green]")
 
     # Step 4: Write Archive
-    console.print("[yellow]Writing archive package and generating manifest...[/yellow]")
     metadata = ArchiveMetadata(
         schema_version="1.0.0",
         listing_id=listing.listing_id,
@@ -142,13 +126,10 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
             output_base_dir=cfg.archive_dir
         )
     except Exception as exc:
-        console.print(f"[bold red]Storage error:[/bold red] {exc}")
-        sys.exit(1)
-
-    console.print("[green]Archive created successfully.[/green]")
+        console.print(f"[bold red]Storage error for {target}:[/bold red] {exc}")
+        return False
 
     # Display Summary Card
-    console.print()
     badges_display = f" | Badges: {', '.join(listing.status_badges)}" if listing.status_badges else ""
     card_text = (
         f"[bold white]{listing.title or 'Property Listing'}[/bold white]\n"
@@ -164,6 +145,67 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
         title="[bold green] Listing Successfully Archived [/bold green]",
         expand=False
     ))
+    return True
+
+
+@main.command(name="fetch")
+@click.argument("targets", nargs=-1, type=str)
+@click.option("--clipboard", "-c", is_flag=True, default=False, help="Read listing URL or ID from system clipboard")
+@click.option("--output", "-o", type=click.Path(), default="./archive", help="Output archive directory")
+@click.option("--no-images", is_flag=True, default=False, help="Disable downloading of listing images")
+@click.option("--timeout", type=float, default=25.0, help="HTTP request timeout in seconds")
+@click.option("--rate-limit", type=float, default=1.0, help="Polite delay between requests in seconds")
+@click.option("--user-agent", type=str, default=None, help="Custom User-Agent string")
+def fetch_command(
+    targets: tuple[str, ...],
+    clipboard: bool,
+    output: str,
+    no_images: bool,
+    timeout: float,
+    rate_limit: float,
+    user_agent: str | None
+):
+    """
+    Fetch and archive listings from URLs, short IDs (e.g. 'T4710876'), files, or clipboard.
+
+    Examples:
+      property-archiver fetch T4710876
+      property-archiver fetch https://www.privateproperty.co.za/...
+      property-archiver fetch -c
+      property-archiver fetch ./snapshots/*.html
+    """
+    console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
+
+    raw_targets = list(targets)
+
+    # If clipboard flag requested or no arguments provided, attempt reading clipboard
+    if clipboard or not raw_targets:
+        clip_text = get_clipboard_text()
+        if clip_text:
+            console.print(f"[cyan]Ingesting from clipboard:[/cyan] [dim]{clip_text}[/dim]")
+            raw_targets.append(clip_text)
+        elif not raw_targets:
+            console.print("[bold red]No target provided and clipboard is empty.[/bold red]")
+            console.print("Usage: [green]property-archiver fetch <URL_OR_ID>[/green] or [green]property-archiver fetch -c[/green]")
+            sys.exit(1)
+
+    # Resolve IDs, URLs, and Globs
+    resolved = resolve_input_targets(raw_targets)
+    if not resolved:
+        console.print("[bold red]No valid targets found to archive.[/bold red]")
+        sys.exit(1)
+
+    console.print(f"Resolved [bold cyan]{len(resolved)}[/bold cyan] target(s) to archive.")
+
+    success_count = 0
+    for idx, target in enumerate(resolved, 1):
+        if len(resolved) > 1:
+            console.print(f"\n[bold cyan]--- Processing [{idx}/{len(resolved)}] ---[/bold cyan]")
+        if _fetch_single_target(target, output, no_images, timeout, rate_limit, user_agent):
+            success_count += 1
+
+    if len(resolved) > 1:
+        console.print(f"\n[bold green]Batch complete: {success_count}/{len(resolved)} listings archived successfully.[/bold green]")
 
 
 @main.command(name="inspect")
@@ -267,17 +309,12 @@ def compare_command(archive_a: str, archive_b: str):
 @click.argument("file_list", type=click.Path(exists=True))
 @click.option("--output", "-o", type=click.Path(), default="./archive", help="Output archive directory")
 def batch_command(file_list: str, output: str):
-    """Archive multiple listings from a newline-separated file of URLs."""
+    """Archive multiple listings from a newline-separated file of URLs or IDs."""
     with open(file_list, "r", encoding="utf-8") as f:
         urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
-    console.print(f"[bold cyan]Starting batch archive for {len(urls)} URLs...[/bold cyan]")
-    for idx, url in enumerate(urls, 1):
-        console.print(f"\n[bold][{idx}/{len(urls)}][/bold] Archiving {url}...")
-        try:
-            fetch_command.callback(target=url, output=output, no_images=False, timeout=25.0, rate_limit=1.0, user_agent=None)
-        except Exception as e:
-            console.print(f"[red]Error archiving {url}: {e}[/red]")
+    console.print(f"[bold cyan]Starting batch archive for {len(urls)} target(s)...[/bold cyan]")
+    fetch_command.callback(targets=tuple(urls), clipboard=False, output=output, no_images=False, timeout=25.0, rate_limit=1.0, user_agent=None)
 
 
 if __name__ == "__main__":
