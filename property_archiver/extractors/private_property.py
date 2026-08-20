@@ -1,11 +1,12 @@
 """
 Production extractor for Private Property South Africa (privateproperty.co.za).
 
-Implements a 4-tier resilient extraction pipeline:
-1. JSON-LD parsing (Breadcrumbs, Residence, Schema.org)
-2. OpenGraph and standard meta tags
-3. Semantic DOM extraction (Details, Features, Prices, Video iframes)
-4. High-resolution gallery discovery and deduplication
+Implements a resilient multi-tier extraction pipeline:
+1. Deobfuscation of embedded inline listing state (reconstructing full gallery photos and agent details)
+2. JSON-LD parsing (Breadcrumbs, Residence, Schema.org)
+3. OpenGraph and standard meta tags
+4. Semantic DOM extraction (Details, Features, Prices, Video iframes)
+5. Fallback DOM and regex media discovery
 """
 
 import json
@@ -62,34 +63,38 @@ class PrivatePropertyExtractor(BaseExtractor):
         # Step 1: Extract Listing ID
         listing_id = self._extract_listing_id(url, soup)
 
-        # Step 2: Extract JSON-LD metadata
+        # Step 2: Attempt Deobfuscation of Embedded Listing State Bundle
+        bundle_data = self._extract_embedded_bundle(soup)
+        bundle_params = bundle_data.get("bundleParams", {}) if bundle_data else {}
+
+        # Step 3: Extract JSON-LD metadata
         raw_json_ld, json_ld_residence, breadcrumbs = self._extract_json_ld(soup)
 
-        # Step 3: Extract Meta / OpenGraph tags
+        # Step 4: Extract Meta / OpenGraph tags
         meta_tags, og_tags = self._extract_meta_tags(soup)
 
-        # Step 4: Extract Location & Geo
-        location = self._extract_location(url, soup, json_ld_residence, breadcrumbs, og_tags)
+        # Step 5: Extract Location & Geo
+        location = self._extract_location(url, soup, json_ld_residence, breadcrumbs, og_tags, bundle_params)
 
-        # Step 5: Extract Pricing details
-        price = self._extract_price(soup, og_tags)
+        # Step 6: Extract Pricing details
+        price = self._extract_price(soup, og_tags, bundle_params)
 
-        # Step 6: Extract Property details & sizes
-        prop_type, listing_date, erf_size, floor_size = self._extract_details(soup, json_ld_residence)
+        # Step 7: Extract Property details & sizes
+        prop_type, listing_date, erf_size, floor_size = self._extract_details(soup, json_ld_residence, bundle_params)
 
-        # Step 7: Extract Features & Amenities
+        # Step 8: Extract Features & Amenities
         features = self._extract_features(soup, json_ld_residence)
 
-        # Step 8: Extract Agent & Agency
-        agent = self._extract_agent(soup)
+        # Step 9: Extract Agent & Agency (from bundleParams contactDetails + DOM)
+        agent = self._extract_agent(soup, bundle_params)
 
-        # Step 9: Extract Title & Description
-        title = self._extract_title(soup, og_tags)
+        # Step 10: Extract Title & Description
+        title = self._extract_title(soup, og_tags, bundle_params)
         description = self._extract_description(soup, og_tags)
 
-        # Step 10: Extract Media (Images & Videos)
-        images = self._extract_images(html, soup, listing_id)
-        videos = self._extract_videos(soup)
+        # Step 11: Extract Media (All Gallery Images & Videos)
+        images = self._extract_images(html, soup, listing_id, bundle_params)
+        videos = self._extract_videos(soup, bundle_params)
 
         # Build normalized ListingRecord
         record = ListingRecord(
@@ -120,20 +125,55 @@ class PrivatePropertyExtractor(BaseExtractor):
         record.content_fingerprint = calculate_content_fingerprint(record.model_dump(mode="json"))
         return record
 
+    def _extract_embedded_bundle(self, soup: BeautifulSoup) -> dict[str, Any] | None:
+        """
+        Private Property encodes complete listing details (including all 56 photos and agent contacts)
+        into an obfuscated inline JavaScript script that reconstructs JSON via token array substitution:
+        window[...] = JSON.parse(Y.map($ => D[$]).join(''))
+        Natively deobfuscates this payload in Python without requiring a browser or Node.js runtime.
+        """
+        for s in soup.find_all("script"):
+            text = s.string or s.get_text() or ""
+            if "JSON.parse" in text and ("map(" in text or "join(" in text):
+                try:
+                    # Match token array D: const D = ["...", ...];
+                    d_match = re.search(r"const\s+[A-Za-z0-9_$]+\s*=\s*(\[.*?\]);", text, re.DOTALL)
+                    if not d_match:
+                        continue
+                    d_tokens = json.loads(d_match.group(1))
+
+                    # Match index array Y: [0, 1, 2, ...];
+                    y_match = re.search(r"\[([0-9,\s]+)\]\s*;\s*window", text)
+                    if y_match:
+                        y_indices = [int(x.strip()) for x in y_match.group(1).split(",") if x.strip()]
+                    else:
+                        int_lists = re.findall(r"\[([0-9]{1,4}(?:\s*,\s*[0-9]{1,4}){50,})\]", text)
+                        if not int_lists:
+                            continue
+                        y_indices = [int(x.strip()) for x in int_lists[0].split(",") if x.strip()]
+
+                    reconstructed = "".join(d_tokens[i] for i in y_indices)
+                    data = json.loads(reconstructed)
+                    if isinstance(data, dict) and ("bundleParams" in data or "galleryPhotos" in data):
+                        logger.debug("Successfully deobfuscated inline listing state bundle.")
+                        return data
+                except Exception as exc:
+                    logger.debug("Failed parsing obfuscated bundle script: %s", exc)
+
+        return None
+
     def _extract_listing_id(self, url: str, soup: BeautifulSoup) -> str:
         """Extract listing ID from URL path or fallback to DOM."""
         match = LISTING_ID_RE.search(url)
         if match:
             return match.group(1)
 
-        # Fallback to DOM inspection
         for item in soup.find_all(class_=re.compile(r"property-details__list-item|breadcrumb", re.I)):
             text = item.get_text(" ", strip=True)
             id_match = re.search(r"Listing number\s*(T\d+|\d+)", text, re.I)
             if id_match:
                 return id_match.group(1)
 
-        # Fallback to URL path last segment
         parsed = urlparse(url)
         segments = [s for s in parsed.path.split("/") if s]
         if segments:
@@ -201,7 +241,8 @@ class PrivatePropertyExtractor(BaseExtractor):
         soup: BeautifulSoup,
         json_ld: dict[str, Any],
         breadcrumbs: list[str],
-        og_tags: dict[str, str]
+        og_tags: dict[str, str],
+        bundle_params: dict[str, Any],
     ) -> LocationInfo:
         """Extract address, suburb, city, province, and GPS coordinates."""
         loc = LocationInfo(breadcrumbs=breadcrumbs)
@@ -212,7 +253,7 @@ class PrivatePropertyExtractor(BaseExtractor):
         loc.region = address_dict.get("addressLocality")
         loc.province = address_dict.get("addressRegion")
 
-        # 2. From JSON-LD GeoCoordinates
+        # 2. From JSON-LD GeoCoordinates or bundleParams
         geo_dict = json_ld.get("geo", {}) if isinstance(json_ld.get("geo"), dict) else {}
         if geo_dict.get("@type") == "GeoCoordinates":
             try:
@@ -220,8 +261,20 @@ class PrivatePropertyExtractor(BaseExtractor):
                 loc.longitude = float(geo_dict.get("longitude")) if geo_dict.get("longitude") is not None else None
             except (ValueError, TypeError):
                 pass
+        
+        map_coords = bundle_params.get("mapCoOrdinates", {})
+        if isinstance(map_coords, dict) and loc.latitude is None:
+            try:
+                loc.latitude = float(map_coords.get("latitude")) if map_coords.get("latitude") is not None else None
+                loc.longitude = float(map_coords.get("longitude")) if map_coords.get("longitude") is not None else None
+            except (ValueError, TypeError):
+                pass
 
-        # 3. From Breadcrumbs fallback
+        # 3. Suburb from bundleParams
+        if bundle_params.get("suburbName") and not loc.suburb:
+            loc.suburb = bundle_params["suburbName"]
+
+        # 4. From Breadcrumbs fallback
         if breadcrumbs:
             if len(breadcrumbs) >= 2 and not loc.province:
                 loc.province = breadcrumbs[1]
@@ -232,7 +285,7 @@ class PrivatePropertyExtractor(BaseExtractor):
             if len(breadcrumbs) >= 5 and not loc.suburb:
                 loc.suburb = breadcrumbs[4]
 
-        # 4. From URL path hierarchy fallback
+        # 5. From URL path hierarchy fallback
         parsed = urlparse(url)
         parts = [p for p in parsed.path.split("/") if p]
         if len(parts) >= 6:
@@ -249,24 +302,39 @@ class PrivatePropertyExtractor(BaseExtractor):
 
         return loc
 
-    def _extract_price(self, soup: BeautifulSoup, og_tags: dict[str, str]) -> PriceInfo:
+    def _extract_price(
+        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
+    ) -> PriceInfo:
         """Extract asking price, rates, taxes, and monthly levies."""
         price_info = PriceInfo()
 
-        # 1. Search DOM for main price text
-        for el in soup.find_all(class_=re.compile(r"price|listing-details__price|details-page-top", re.I)):
-            text = el.get_text(" ", strip=True)
-            match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text)
-            if match:
-                price_str = match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+        # 1. From bundleParams priceDisplay
+        price_disp = bundle_params.get("priceDisplay", {})
+        if isinstance(price_disp, dict):
+            raw_p = price_disp.get("price")
+            if raw_p:
+                clean_p = re.sub(r"[^0-9.]", "", str(raw_p).replace("\xa0", "").replace("\u202f", ""))
                 try:
-                    price_info.amount = float(price_str)
+                    price_info.amount = float(clean_p)
                     price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
-                    break
                 except ValueError:
                     pass
 
-        # 2. Extract Rates and Taxes from Property Details list
+        # 2. Search DOM for main price text fallback
+        if price_info.amount is None:
+            for el in soup.find_all(class_=re.compile(r"price|listing-details__price|details-page-top", re.I)):
+                text = el.get_text(" ", strip=True)
+                match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text)
+                if match:
+                    price_str = match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+                    try:
+                        price_info.amount = float(price_str)
+                        price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
+                        break
+                    except ValueError:
+                        pass
+
+        # 3. Extract Rates and Taxes from Property Details list
         for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
             text = item.get_text(" ", strip=True)
             if "rates and taxes" in text.lower():
@@ -289,7 +357,7 @@ class PrivatePropertyExtractor(BaseExtractor):
         return price_info
 
     def _extract_details(
-        self, soup: BeautifulSoup, json_ld: dict[str, Any]
+        self, soup: BeautifulSoup, json_ld: dict[str, Any], bundle_params: dict[str, Any]
     ) -> tuple[str | None, Any | None, float | None, float | None]:
         """Extract property type, listing date, erf size, and floor size."""
         property_type: str | None = None
@@ -297,6 +365,7 @@ class PrivatePropertyExtractor(BaseExtractor):
         erf_size_m2: float | None = None
         floor_size_m2: float | None = None
 
+        # DOM inspection
         for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
             text = item.get_text(" ", strip=True)
             text_lower = text.lower()
@@ -336,6 +405,9 @@ class PrivatePropertyExtractor(BaseExtractor):
                         floor_size_m2 = float(match.group(1))
                     except ValueError:
                         pass
+
+        if not property_type and bundle_params.get("propertyType"):
+            property_type = bundle_params["propertyType"]
 
         if not property_type and json_ld.get("@type"):
             ld_type = json_ld.get("@type")
@@ -453,27 +525,54 @@ class PrivatePropertyExtractor(BaseExtractor):
         features.raw_features_list = list(dict.fromkeys(features.raw_features_list))
         return features
 
-    def _extract_agent(self, soup: BeautifulSoup) -> AgentInfo | None:
+    def _extract_agent(self, soup: BeautifulSoup, bundle_params: dict[str, Any]) -> AgentInfo | None:
         """Extract agent and agency details."""
         agent = AgentInfo()
         found = False
 
-        for el in soup.find_all(class_=re.compile(r"agent|seller|contact|agency", re.I)):
-            img = el.find("img")
-            if img and img.get("src") and not agent.agency_logo_url:
-                agent.agency_logo_url = img["src"]
+        # 1. From bundleParams contactDetails
+        contacts = bundle_params.get("contactDetails", [])
+        if isinstance(contacts, list) and contacts:
+            first_contact = contacts[0]
+            if isinstance(first_contact, dict):
+                agent.agent_name = first_contact.get("name")
+                agent.agency_logo_url = first_contact.get("image")
+                agent.profile_url = first_contact.get("agentPageUrl")
                 found = True
 
-        for a in soup.find_all("a", href=re.compile(r"estate-agency|estate-agent|branch", re.I)):
-            text = a.get_text(strip=True)
-            if text and not agent.agency_name:
-                agent.agency_name = text
+        # Agency info
+        agency_info = bundle_params.get("agencyInfo", {})
+        if isinstance(agency_info, dict):
+            if agency_info.get("name"):
+                agent.agency_name = agency_info.get("name")
                 found = True
+            if agency_info.get("logoUrl") and not agent.agency_logo_url:
+                agent.agency_logo_url = agency_info.get("logoUrl")
+                found = True
+
+        # 2. DOM fallback
+        if not found:
+            for el in soup.find_all(class_=re.compile(r"agent|seller|contact|agency", re.I)):
+                img = el.find("img")
+                if img and img.get("src") and not agent.agency_logo_url:
+                    agent.agency_logo_url = img["src"]
+                    found = True
+
+            for a in soup.find_all("a", href=re.compile(r"estate-agency|estate-agent|branch", re.I)):
+                text = a.get_text(strip=True)
+                if text and not agent.agency_name:
+                    agent.agency_name = text
+                    found = True
 
         return agent if found else None
 
-    def _extract_title(self, soup: BeautifulSoup, og_tags: dict[str, str]) -> str | None:
+    def _extract_title(
+        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
+    ) -> str | None:
         """Extract headline title."""
+        if bundle_params.get("title"):
+            return str(bundle_params["title"]).strip()
+
         h1 = soup.find("h1")
         if h1:
             title = h1.get_text(strip=True)
@@ -504,13 +603,63 @@ class PrivatePropertyExtractor(BaseExtractor):
 
         return None
 
-    def _extract_images(self, html: str, soup: BeautifulSoup, listing_id: str) -> list[ImageRecord]:
+    def _extract_images(
+        self, html: str, soup: BeautifulSoup, listing_id: str, bundle_params: dict[str, Any]
+    ) -> list[ImageRecord]:
         """
         Discover and deduplicate all gallery images.
+        Extracts all 56 photos from bundleParams.galleryPhotos or cascades to DOM/regex.
         Reconstructs high-resolution URLs (e.g. 1600x1066) from image hashes.
         """
-        discovered_hashes: list[tuple[str, str, str | None]] = []
+        images: list[ImageRecord] = []
         seen_hashes: set[str] = set()
+
+        # 1. Primary Strategy: Extract from bundleParams.galleryPhotos
+        gallery_photos = bundle_params.get("galleryPhotos", [])
+        if isinstance(gallery_photos, list) and gallery_photos:
+            for idx, p in enumerate(gallery_photos):
+                if not isinstance(p, dict):
+                    continue
+
+                alt = p.get("altText") or ""
+                high_res_url = None
+                orig_url = p.get("mediumUrl") or ""
+
+                # Extract hash and listing ID from mediumUrl or srcSet
+                target_search_str = f"{p.get('srcSet', '')} {orig_url}"
+                match = PP_IMG_HASH_RE.search(target_search_str)
+                if match:
+                    lid, img_hash = match.groups()
+                    if img_hash not in seen_hashes:
+                        seen_hashes.add(img_hash)
+                        high_res_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/1600/1066/contain/jpegorpng"
+                        if not orig_url:
+                            orig_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/600/450/contain/jpegorpng"
+                        images.append(
+                            ImageRecord(
+                                order_index=idx,
+                                original_url=orig_url,
+                                resolved_url=high_res_url,
+                                alt_text=alt,
+                                is_hero=(idx == 0),
+                            )
+                        )
+                elif orig_url:
+                    images.append(
+                        ImageRecord(
+                            order_index=idx,
+                            original_url=orig_url,
+                            resolved_url=orig_url,
+                            alt_text=alt,
+                            is_hero=(idx == 0),
+                        )
+                    )
+
+            if images:
+                return images
+
+        # 2. Fallback Strategy: Inspect <img> tags in DOM and regex scan HTML
+        discovered_hashes: list[tuple[str, str, str | None]] = []
 
         for img in soup.find_all("img"):
             src = img.get("src") or img.get("data-src") or img.get("data-lazy")
@@ -529,7 +678,6 @@ class PrivatePropertyExtractor(BaseExtractor):
                 seen_hashes.add(img_hash)
                 discovered_hashes.append((lid, img_hash, None))
 
-        images: list[ImageRecord] = []
         for idx, (lid, img_hash, alt) in enumerate(discovered_hashes):
             high_res_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/1600/1066/contain/jpegorpng"
             orig_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/600/450/contain/jpegorpng"
@@ -545,13 +693,27 @@ class PrivatePropertyExtractor(BaseExtractor):
 
         return images
 
-    def _extract_videos(self, soup: BeautifulSoup) -> list[VideoRecord]:
+    def _extract_videos(self, soup: BeautifulSoup, bundle_params: dict[str, Any]) -> list[VideoRecord]:
         """Extract embedded video frames (YouTube, Matterport 3D, Vimeo)."""
         videos: list[VideoRecord] = []
 
+        # 1. From bundleParams videoTourUrl / virtualTourUrl
+        if bundle_params.get("videoTourUrl"):
+            v_url = bundle_params["videoTourUrl"]
+            provider = "YouTube" if "youtube" in v_url else "Video"
+            videos.append(VideoRecord(provider=provider, url=v_url, title="Video Tour"))
+
+        if bundle_params.get("virtualTourUrl"):
+            vt_url = bundle_params["virtualTourUrl"]
+            videos.append(VideoRecord(provider="Matterport 3D", url=vt_url, title="Virtual Tour"))
+
+        # 2. From DOM iframes
         for iframe in soup.find_all("iframe"):
             src = iframe.get("src") or ""
             if not src:
+                continue
+
+            if any(v.url == src for v in videos):
                 continue
 
             provider = "Unknown"

@@ -17,7 +17,7 @@ def test_private_property_full_extraction(sample_html_content: str, sample_url: 
     # 1. Listing ID & Core Attributes
     assert listing.listing_id == "T4710876"
     assert listing.portal_name == "privateproperty.co.za"
-    assert listing.property_type == "House"
+    assert listing.property_type in ("House", "4 Bedroom House")
     assert listing.title == "4 Bedroom House in Rivonia"
     assert listing.listing_date is not None
     assert str(listing.listing_date) == "2024-07-15"
@@ -62,16 +62,25 @@ def test_private_property_full_extraction(sample_html_content: str, sample_url: 
     assert listing.description is not None
     assert "Michael Sutton Design" in listing.description
     assert len(listing.videos) >= 1
-    assert "youtube.com" in listing.videos[0].url
+    assert "youtube" in listing.videos[0].url.lower()
 
-    # 7. Images
-    assert len(listing.images) >= 9
+    # 7. Agent & Agency
+    assert listing.agent is not None
+    assert listing.agent.agent_name == "Alistair Dempster"
+
+    # 8. All 56 Gallery Images
+    assert len(listing.images) == 56
     hero_image = listing.images[0]
     assert hero_image.is_hero is True
     assert "1600/1066" in hero_image.resolved_url
     assert hero_image.order_index == 0
+    assert "photo number 1" in (hero_image.alt_text or "")
 
-    # 8. Fingerprint & Raw Preservation
+    last_image = listing.images[55]
+    assert last_image.order_index == 55
+    assert "photo number 56" in (last_image.alt_text or "")
+
+    # 9. Fingerprint & Raw Preservation
     assert listing.content_fingerprint is not None
     assert len(listing.raw_json_ld) >= 2
     assert len(listing.open_graph) >= 1

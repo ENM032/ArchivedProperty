@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "listing_id": "T4710876",
   "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
-  "archived_at": "2026-08-20T13:47:10.016281Z",
+  "archived_at": "2026-08-20T14:16:20.614350Z",
   "archiver_version": "1.0.0",
   "fetch_mode": "http",
   "http_status": 200,
@@ -12,20 +12,20 @@
     "content-encoding": "gzip",
     "vary": "Accept-Encoding",
     "server": "Microsoft-IIS/10.0",
-    "x-stackifyid": "V2|7b58685b-db02-4912-924b-21271c336b11|C2143|CD886",
+    "x-stackifyid": "V2|ee389800-916d-451a-9be6-3a099c51eddb|C2143|CD888",
     "x-aspnetmvc-version": "5.2",
     "x-aspnet-version": "4.0.30319",
-    "set-cookie": "live-za.phoenix.dv=26mgRA3QH0W0d5BWCYTCdQ; expires=Mon, 20-Aug-2125 13:47:07 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "set-cookie": "live-za.phoenix.dv=ldZd8Cad-kadgY9TFKMh2Q; expires=Mon, 20-Aug-2125 14:16:08 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
     "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
     "access-control-expose-headers": "Request-Context",
     "x-powered-by": "ASP.NET",
     "x-frame-options": "sameorigin",
-    "date": "Thu, 20 Aug 2026 13:47:07 GMT",
-    "content-length": "31967"
+    "date": "Thu, 20 Aug 2026 14:16:07 GMT",
+    "content-length": "32163"
   },
-  "fetch_duration_sec": 1.3753080368041992,
-  "total_images_discovered": 9,
-  "total_images_archived": 9,
-  "total_archive_size_bytes": 2161998,
-  "content_fingerprint": "52104b89efd03cf6a7139c904d62af56cee35f30c7a85bc3f191ba545e60167e"
+  "fetch_duration_sec": 3.4709391593933105,
+  "total_images_discovered": 56,
+  "total_images_archived": 56,
+  "total_archive_size_bytes": 13440447,
+  "content_fingerprint": "1d9f1e3d0852c447256f392d88f301680bc1b8ac50a8a4629cd3f1573a601925"
 }
