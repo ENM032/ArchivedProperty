@@ -3,10 +3,16 @@
   "portal_name": "privateproperty.co.za",
   "listing_id": "T4710876",
   "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
-  "extracted_at": "2026-08-20T14:16:11.474471Z",
+  "extracted_at": "2026-08-20T14:40:51.861156Z",
   "title": "4 Bedroom House in Rivonia",
   "property_type": "House",
   "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
   "listing_date": "2024-07-15",
   "description": "Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to the skylit entrance hall and classiccontemporary design, enter a world of beautifully proportioned li...",
   "erf_size_m2": 1983.0,
@@ -126,7 +132,7 @@
       "height": 779,
       "alt_text": "4 Bedroom House in Rivonia photo number 1",
       "is_hero": true,
-      "downloaded_at": "2026-08-20T14:16:12.069471Z"
+      "downloaded_at": "2026-08-20T14:40:52.415442Z"
     },
     {
       "order_index": 1,
@@ -140,7 +146,7 @@
       "height": 816,
       "alt_text": "4 Bedroom House in Rivonia photo number 2",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.069317Z"
+      "downloaded_at": "2026-08-20T14:40:52.416191Z"
     },
     {
       "order_index": 2,
@@ -154,7 +160,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 3",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.069676Z"
+      "downloaded_at": "2026-08-20T14:40:52.416757Z"
     },
     {
       "order_index": 3,
@@ -168,7 +174,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 4",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.068353Z"
+      "downloaded_at": "2026-08-20T14:40:52.415130Z"
     },
     {
       "order_index": 4,
@@ -182,7 +188,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 5",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.129194Z"
+      "downloaded_at": "2026-08-20T14:40:52.491413Z"
     },
     {
       "order_index": 5,
@@ -196,7 +202,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 6",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.142696Z"
+      "downloaded_at": "2026-08-20T14:40:52.491980Z"
     },
     {
       "order_index": 6,
@@ -210,7 +216,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 7",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.159234Z"
+      "downloaded_at": "2026-08-20T14:40:52.491694Z"
     },
     {
       "order_index": 7,
@@ -224,7 +230,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 8",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.141819Z"
+      "downloaded_at": "2026-08-20T14:40:52.490873Z"
     },
     {
       "order_index": 8,
@@ -238,7 +244,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 9",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.189028Z"
+      "downloaded_at": "2026-08-20T14:40:52.544732Z"
     },
     {
       "order_index": 9,
@@ -252,7 +258,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 10",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.818675Z"
+      "downloaded_at": "2026-08-20T14:40:53.843051Z"
     },
     {
       "order_index": 10,
@@ -266,7 +272,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 11",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.228677Z"
+      "downloaded_at": "2026-08-20T14:40:52.677759Z"
     },
     {
       "order_index": 11,
@@ -280,7 +286,7 @@
       "height": 829,
       "alt_text": "4 Bedroom House in Rivonia photo number 12",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.775081Z"
+      "downloaded_at": "2026-08-20T14:40:52.770887Z"
     },
     {
       "order_index": 12,
@@ -294,7 +300,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 13",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:12.703416Z"
+      "downloaded_at": "2026-08-20T14:40:52.791060Z"
     },
     {
       "order_index": 13,
@@ -308,7 +314,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 14",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.264179Z"
+      "downloaded_at": "2026-08-20T14:40:53.068002Z"
     },
     {
       "order_index": 14,
@@ -322,7 +328,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 15",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.195463Z"
+      "downloaded_at": "2026-08-20T14:40:52.984159Z"
     },
     {
       "order_index": 15,
@@ -336,7 +342,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 16",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:14.189480Z"
+      "downloaded_at": "2026-08-20T14:40:53.497402Z"
     },
     {
       "order_index": 16,
@@ -350,7 +356,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 17",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.587067Z"
+      "downloaded_at": "2026-08-20T14:40:53.164255Z"
     },
     {
       "order_index": 17,
@@ -364,7 +370,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 18",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.655780Z"
+      "downloaded_at": "2026-08-20T14:40:53.557076Z"
     },
     {
       "order_index": 18,
@@ -378,7 +384,7 @@
       "height": 816,
       "alt_text": "4 Bedroom House in Rivonia photo number 19",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:13.861368Z"
+      "downloaded_at": "2026-08-20T14:40:53.511134Z"
     },
     {
       "order_index": 19,
@@ -392,7 +398,7 @@
       "height": 756,
       "alt_text": "4 Bedroom House in Rivonia photo number 20",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:14.030993Z"
+      "downloaded_at": "2026-08-20T14:40:53.925048Z"
     },
     {
       "order_index": 20,
@@ -406,7 +412,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 21",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:14.584573Z"
+      "downloaded_at": "2026-08-20T14:40:53.768848Z"
     },
     {
       "order_index": 21,
@@ -420,7 +426,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 22",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:14.787501Z"
+      "downloaded_at": "2026-08-20T14:40:54.156714Z"
     },
     {
       "order_index": 22,
@@ -434,7 +440,7 @@
       "height": 829,
       "alt_text": "4 Bedroom House in Rivonia photo number 23",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:14.590038Z"
+      "downloaded_at": "2026-08-20T14:40:54.652762Z"
     },
     {
       "order_index": 23,
@@ -448,7 +454,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 24",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.546893Z"
+      "downloaded_at": "2026-08-20T14:40:54.083546Z"
     },
     {
       "order_index": 24,
@@ -462,7 +468,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 25",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.024437Z"
+      "downloaded_at": "2026-08-20T14:40:55.299617Z"
     },
     {
       "order_index": 25,
@@ -476,7 +482,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 26",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.340853Z"
+      "downloaded_at": "2026-08-20T14:40:54.289838Z"
     },
     {
       "order_index": 26,
@@ -490,7 +496,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 27",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.180916Z"
+      "downloaded_at": "2026-08-20T14:40:54.400888Z"
     },
     {
       "order_index": 27,
@@ -504,7 +510,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 28",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.548678Z"
+      "downloaded_at": "2026-08-20T14:40:54.651807Z"
     },
     {
       "order_index": 28,
@@ -518,7 +524,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 29",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.590945Z"
+      "downloaded_at": "2026-08-20T14:40:54.912217Z"
     },
     {
       "order_index": 29,
@@ -532,7 +538,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 30",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.740118Z"
+      "downloaded_at": "2026-08-20T14:40:54.914699Z"
     },
     {
       "order_index": 30,
@@ -546,7 +552,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 31",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:16.935626Z"
+      "downloaded_at": "2026-08-20T14:40:54.854105Z"
     },
     {
       "order_index": 31,
@@ -560,7 +566,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 32",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.916329Z"
+      "downloaded_at": "2026-08-20T14:40:55.086194Z"
     },
     {
       "order_index": 32,
@@ -574,7 +580,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 33",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:15.997710Z"
+      "downloaded_at": "2026-08-20T14:40:55.096867Z"
     },
     {
       "order_index": 33,
@@ -588,7 +594,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 34",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:16.620392Z"
+      "downloaded_at": "2026-08-20T14:40:55.098831Z"
     },
     {
       "order_index": 34,
@@ -602,7 +608,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 35",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:16.477054Z"
+      "downloaded_at": "2026-08-20T14:40:55.373434Z"
     },
     {
       "order_index": 35,
@@ -616,7 +622,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 36",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:17.371781Z"
+      "downloaded_at": "2026-08-20T14:40:55.463550Z"
     },
     {
       "order_index": 36,
@@ -630,7 +636,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 37",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:17.394614Z"
+      "downloaded_at": "2026-08-20T14:40:55.634523Z"
     },
     {
       "order_index": 37,
@@ -644,7 +650,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 38",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:17.180617Z"
+      "downloaded_at": "2026-08-20T14:40:55.479852Z"
     },
     {
       "order_index": 38,
@@ -658,7 +664,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 39",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.314271Z"
+      "downloaded_at": "2026-08-20T14:40:55.903056Z"
     },
     {
       "order_index": 39,
@@ -672,7 +678,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 40",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:17.538170Z"
+      "downloaded_at": "2026-08-20T14:40:55.899417Z"
     },
     {
       "order_index": 40,
@@ -686,7 +692,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 41",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:17.795063Z"
+      "downloaded_at": "2026-08-20T14:40:55.656108Z"
     },
     {
       "order_index": 41,
@@ -700,7 +706,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 42",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.064022Z"
+      "downloaded_at": "2026-08-20T14:40:55.817871Z"
     },
     {
       "order_index": 42,
@@ -714,7 +720,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 43",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.066052Z"
+      "downloaded_at": "2026-08-20T14:40:56.093518Z"
     },
     {
       "order_index": 43,
@@ -728,7 +734,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 44",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.766545Z"
+      "downloaded_at": "2026-08-20T14:40:56.434946Z"
     },
     {
       "order_index": 44,
@@ -742,7 +748,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 45",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.754047Z"
+      "downloaded_at": "2026-08-20T14:40:56.434799Z"
     },
     {
       "order_index": 45,
@@ -756,7 +762,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 46",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:18.617853Z"
+      "downloaded_at": "2026-08-20T14:40:56.124380Z"
     },
     {
       "order_index": 46,
@@ -770,7 +776,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 47",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.263164Z"
+      "downloaded_at": "2026-08-20T14:40:56.400018Z"
     },
     {
       "order_index": 47,
@@ -784,7 +790,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 48",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.050277Z"
+      "downloaded_at": "2026-08-20T14:40:56.308739Z"
     },
     {
       "order_index": 48,
@@ -798,7 +804,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 49",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.329164Z"
+      "downloaded_at": "2026-08-20T14:40:56.655977Z"
     },
     {
       "order_index": 49,
@@ -812,7 +818,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 50",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.447125Z"
+      "downloaded_at": "2026-08-20T14:40:57.755632Z"
     },
     {
       "order_index": 50,
@@ -826,7 +832,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 51",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:20.613023Z"
+      "downloaded_at": "2026-08-20T14:40:56.980774Z"
     },
     {
       "order_index": 51,
@@ -840,7 +846,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 52",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.791824Z"
+      "downloaded_at": "2026-08-20T14:40:56.952459Z"
     },
     {
       "order_index": 52,
@@ -854,7 +860,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 53",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:19.790905Z"
+      "downloaded_at": "2026-08-20T14:40:56.852224Z"
     },
     {
       "order_index": 53,
@@ -868,7 +874,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 54",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:20.375351Z"
+      "downloaded_at": "2026-08-20T14:40:57.072564Z"
     },
     {
       "order_index": 54,
@@ -882,7 +888,7 @@
       "height": 990,
       "alt_text": "4 Bedroom House in Rivonia photo number 55",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:20.310821Z"
+      "downloaded_at": "2026-08-20T14:40:57.323386Z"
     },
     {
       "order_index": 55,
@@ -896,7 +902,7 @@
       "height": 794,
       "alt_text": "4 Bedroom House in Rivonia photo number 56",
       "is_hero": false,
-      "downloaded_at": "2026-08-20T14:16:20.343448Z"
+      "downloaded_at": "2026-08-20T14:40:57.853761Z"
     }
   ],
   "videos": [
@@ -1016,5 +1022,5 @@
     "description": "4 Bedroom House in Rivonia, 13 winston avenue, Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to t",
     "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
   },
-  "content_fingerprint": "1d9f1e3d0852c447256f392d88f301680bc1b8ac50a8a4629cd3f1573a601925"
+  "content_fingerprint": "b73721bdf5eb6a43c5de82ce0effa29236cbd334f161e17e444a34d150383639"
 }
