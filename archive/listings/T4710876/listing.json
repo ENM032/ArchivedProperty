@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T4710876",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
+  "extracted_at": "2026-08-20T13:47:09.109149Z",
+  "title": "4 Bedroom House in Rivonia",
+  "property_type": "House",
+  "listing_status": "active",
+  "listing_date": "2024-07-15",
+  "description": "Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to the skylit entrance hall and classiccontemporary design, enter a world of beautifully proportioned li...",
+  "erf_size_m2": 1983.0,
+  "floor_size_m2": null,
+  "price": {
+    "amount": 4999000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 999 000",
+    "rates_and_taxes_monthly": 2495.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "13 Winston Avenue",
+    "suburb": "Rivonia",
+    "city": "Johannesburg",
+    "region": "Rivonia, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.043712,
+    "longitude": 28.055459,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Rivonia",
+      "T4710876"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.5,
+    "en_suites": 2.0,
+    "lounges": 3.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 3.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": true,
+    "has_alarm": true,
+    "has_intercom": true,
+    "has_fencing": true,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": true,
+    "has_kitchen": true,
+    "has_scullery": true,
+    "has_laundry": true,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": true,
+    "has_guest_toilet": true,
+    "has_irrigation_system": true,
+    "has_aircon": true,
+    "has_storage": true,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3.5",
+      "En-suite 2",
+      "Lounges 3",
+      "Garage parking 3",
+      "Access gate",
+      "Alarm",
+      "Built in cupboards",
+      "Fenced",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Staff quarters",
+      "Storage",
+      "Study",
+      "Walk in closet",
+      "Entrance hall",
+      "Kitchen",
+      "Garden",
+      "Scullery",
+      "Intercom",
+      "Family TV room",
+      "Fireplace",
+      "Guest toilet",
+      "Irrigation system",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": null,
+    "agency_name": "Find an Estate Agent",
+    "agency_logo_url": null,
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null
+  },
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/10524708/OHWDrL0sRYBS5V4yxQIos2/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/OHWDrL0sRYBS5V4yxQIos2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_OHWDrL0sRYBS5V4yxQIos2.jpg",
+      "sha256": "e5772349cca951624bdb128107bf8cfae278aba53a444fdc46dbd33310459635",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216531,
+      "width": 1600,
+      "height": 779,
+      "alt_text": "",
+      "is_hero": true,
+      "downloaded_at": "2026-08-20T13:47:09.983407Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/10524708/QfBaAogURQxOa3iC6KATv2/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/QfBaAogURQxOa3iC6KATv2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_QfBaAogURQxOa3iC6KATv2.jpg",
+      "sha256": "c12aa719a134bf31372b384b5241487e39c6ac89e718e084a1b9cfabc5d977ab",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 241551,
+      "width": 1600,
+      "height": 816,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:10.012371Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/10524708/PzdR5Oi5ROOW799BiUIN75/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/PzdR5Oi5ROOW799BiUIN75/1600/1066/contain/jpegorpng",
+      "local_filename": "003_PzdR5Oi5ROOW799BiUIN75.jpg",
+      "sha256": "e334e261aa9c2805cb00d808119e9dccded0d5a35b11e51d55273aa5f24d5559",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 293867,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.749404Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/10524708/hsIeiEoh6geLcm1OksFTF7/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/hsIeiEoh6geLcm1OksFTF7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_hsIeiEoh6geLcm1OksFTF7.jpg",
+      "sha256": "893af555b5585f2afca42a83b3db37155c78cb187aeca47a38367508a428dba8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 226925,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.749199Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/10524708/HnmxWgAWgt7sdo9CZrZjm0/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/HnmxWgAWgt7sdo9CZrZjm0/1600/1066/contain/jpegorpng",
+      "local_filename": "005_HnmxWgAWgt7sdo9CZrZjm0.jpg",
+      "sha256": "a550d912cf6e738307524ad0d772f2c8e34ecaa7d38b51f8ed4d0a2cb4eb5c62",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 198322,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.806439Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/10524708/Wuza0WEvhhIg6SzK7uG4J3/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/Wuza0WEvhhIg6SzK7uG4J3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Wuza0WEvhhIg6SzK7uG4J3.jpg",
+      "sha256": "9d64cbe32ee5ad66f271580e8d23c95283f5ed857cb7a87dc280a4aa073c6344",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182626,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.809618Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/10524708/2hLgP3kMRW2UFVgwq4Ykr2/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/2hLgP3kMRW2UFVgwq4Ykr2/1600/1066/contain/jpegorpng",
+      "local_filename": "007_2hLgP3kMRW2UFVgwq4Ykr2.jpg",
+      "sha256": "3ef85f8a9a9d9a1397c734bb5c0dd52d724a99a46266d61afca1ee5f303305eb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 231495,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.850885Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/10524708/Vti7JGI96aqHdZnsOGzLg6/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/Vti7JGI96aqHdZnsOGzLg6/1600/1066/contain/jpegorpng",
+      "local_filename": "008_Vti7JGI96aqHdZnsOGzLg6.jpg",
+      "sha256": "b442283c2ee1d6c1157316a8da107896011ee36cef3a54efa69eb72711e14197",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175690,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.861160Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/10524708/DGFUHwAWzhjTbCIoC5qw22/600/450/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10524708/DGFUHwAWzhjTbCIoC5qw22/1600/1066/contain/jpegorpng",
+      "local_filename": "009_DGFUHwAWzhjTbCIoC5qw22.jpg",
+      "sha256": "10117e2ac1c827d32f8ba125af0da8b3b0a1e2b4a9615b7c0836156be0d3aa4e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 193779,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "",
+      "is_hero": false,
+      "downloaded_at": "2026-08-20T13:47:09.891101Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/TRaDKKcJRiQ?enablejsapi=1&rel=0",
+      "title": "Video"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/244",
+            "name": "Rivonia"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
+            "name": "T4710876"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/10524708/OHWDrL0sRYBS5V4yxQIos2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Winston Avenue",
+        "addressLocality": "Rivonia, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.043712,
+        "longitude": 28.055459
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 999 000 | 4 Bedroom House in Rivonia | Private Property",
+    "og:description": "Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to the skylit entrance hall and classiccontemporary design, enter a world of beautifully proportioned li...",
+    "og:image": "https://images.pp.co.za/listing/10524708/OHWDrL0sRYBS5V4yxQIos2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 999 000 | 4 Bedroom House in Rivonia | Private Property",
+    "og:description": "Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to the skylit entrance hall and classiccontemporary design, enter a world of beautifully proportioned li...",
+    "og:image": "https://images.pp.co.za/listing/10524708/OHWDrL0sRYBS5V4yxQIos2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
+    "description": "4 Bedroom House in Rivonia, 13 winston avenue, Timeless 4 Bedroom Michael Sutton Design In Secure Enclave. From the elegant entrance courtyard to t",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "52104b89efd03cf6a7139c904d62af56cee35f30c7a85bc3f191ba545e60167e"
+}

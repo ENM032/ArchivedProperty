@@ -1,0 +1,576 @@
+"""
+Production extractor for Private Property South Africa (privateproperty.co.za).
+
+Implements a 4-tier resilient extraction pipeline:
+1. JSON-LD parsing (Breadcrumbs, Residence, Schema.org)
+2. OpenGraph and standard meta tags
+3. Semantic DOM extraction (Details, Features, Prices, Video iframes)
+4. High-resolution gallery discovery and deduplication
+"""
+
+import json
+import logging
+import re
+from datetime import datetime, timezone
+from typing import Any
+from urllib.parse import urlparse
+
+from bs4 import BeautifulSoup
+from dateutil import parser as date_parser
+
+from property_archiver.core.exceptions import ExtractionError
+from property_archiver.core.hasher import calculate_content_fingerprint
+from property_archiver.extractors.base import BaseExtractor
+from property_archiver.models.listing import ListingRecord
+from property_archiver.models.media import ImageRecord, VideoRecord
+from property_archiver.models.property_details import (
+    AgentInfo,
+    LocationInfo,
+    PriceInfo,
+    PropertyFeatures,
+)
+
+logger = logging.getLogger(__name__)
+
+# Regular expressions for data parsing
+PRICE_CLEAN_RE = re.compile(r"[^0-9.]")
+LISTING_ID_RE = re.compile(r"/(T\d+|\d+)(?:[/?#]|$)")
+SIZE_NUM_RE = re.compile(r"([0-9\s\xa0\u202f]+(?:[.,]\d+)?)")
+PP_IMG_HASH_RE = re.compile(r"images\.(?:pp|privateproperty)\.co\.za/listing/(\d+)/([A-Za-z0-9]+)")
+
+
+class PrivatePropertyExtractor(BaseExtractor):
+    """Extractor for Private Property South Africa listings."""
+
+    PORTAL_NAME = "privateproperty.co.za"
+
+    def can_handle(self, url_or_html: str) -> bool:
+        """Check if URL or HTML belongs to Private Property."""
+        if "privateproperty.co.za" in url_or_html.lower():
+            return True
+        if "images.pp.co.za" in url_or_html:
+            return True
+        return False
+
+    def extract(self, html: str, url: str) -> ListingRecord:
+        """Extract all publicly available listing information from HTML."""
+        if not html:
+            raise ExtractionError("Cannot extract from empty HTML document.")
+
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Step 1: Extract Listing ID
+        listing_id = self._extract_listing_id(url, soup)
+
+        # Step 2: Extract JSON-LD metadata
+        raw_json_ld, json_ld_residence, breadcrumbs = self._extract_json_ld(soup)
+
+        # Step 3: Extract Meta / OpenGraph tags
+        meta_tags, og_tags = self._extract_meta_tags(soup)
+
+        # Step 4: Extract Location & Geo
+        location = self._extract_location(url, soup, json_ld_residence, breadcrumbs, og_tags)
+
+        # Step 5: Extract Pricing details
+        price = self._extract_price(soup, og_tags)
+
+        # Step 6: Extract Property details & sizes
+        prop_type, listing_date, erf_size, floor_size = self._extract_details(soup, json_ld_residence)
+
+        # Step 7: Extract Features & Amenities
+        features = self._extract_features(soup, json_ld_residence)
+
+        # Step 8: Extract Agent & Agency
+        agent = self._extract_agent(soup)
+
+        # Step 9: Extract Title & Description
+        title = self._extract_title(soup, og_tags)
+        description = self._extract_description(soup, og_tags)
+
+        # Step 10: Extract Media (Images & Videos)
+        images = self._extract_images(html, soup, listing_id)
+        videos = self._extract_videos(soup)
+
+        # Build normalized ListingRecord
+        record = ListingRecord(
+            schema_version="1.0.0",
+            portal_name=self.PORTAL_NAME,
+            listing_id=listing_id,
+            canonical_url=url,
+            extracted_at=datetime.now(timezone.utc),
+            title=title,
+            property_type=prop_type,
+            listing_status="active",
+            listing_date=listing_date,
+            description=description,
+            erf_size_m2=erf_size,
+            floor_size_m2=floor_size,
+            price=price,
+            location=location,
+            features=features,
+            agent=agent,
+            images=images,
+            videos=videos,
+            raw_json_ld=raw_json_ld,
+            open_graph=og_tags,
+            meta_tags=meta_tags,
+        )
+
+        # Compute content fingerprint
+        record.content_fingerprint = calculate_content_fingerprint(record.model_dump(mode="json"))
+        return record
+
+    def _extract_listing_id(self, url: str, soup: BeautifulSoup) -> str:
+        """Extract listing ID from URL path or fallback to DOM."""
+        match = LISTING_ID_RE.search(url)
+        if match:
+            return match.group(1)
+
+        # Fallback to DOM inspection
+        for item in soup.find_all(class_=re.compile(r"property-details__list-item|breadcrumb", re.I)):
+            text = item.get_text(" ", strip=True)
+            id_match = re.search(r"Listing number\s*(T\d+|\d+)", text, re.I)
+            if id_match:
+                return id_match.group(1)
+
+        # Fallback to URL path last segment
+        parsed = urlparse(url)
+        segments = [s for s in parsed.path.split("/") if s]
+        if segments:
+            return segments[-1]
+
+        return "unknown_listing"
+
+    def _extract_json_ld(self, soup: BeautifulSoup) -> tuple[list[dict[str, Any]], dict[str, Any], list[str]]:
+        """Parse all schema.org JSON-LD blocks."""
+        raw_blocks: list[dict[str, Any]] = []
+        residence_block: dict[str, Any] = {}
+        breadcrumbs: list[str] = []
+
+        for tag in soup.find_all("script", type="application/ld+json"):
+            if not tag.string:
+                continue
+            try:
+                data = json.loads(tag.string.strip())
+                if isinstance(data, dict):
+                    raw_blocks.append(data)
+                    data_type = data.get("@type")
+                    if data_type in ("Residence", "SingleFamilyResidence", "RealEstateListing", "House", "Place"):
+                        residence_block = data
+                    elif data_type == "BreadcrumbList":
+                        items = data.get("itemListElement", [])
+                        for it in items:
+                            if isinstance(it, dict):
+                                item_obj = it.get("item", {})
+                                name = item_obj.get("name") if isinstance(item_obj, dict) else it.get("name")
+                                if name:
+                                    breadcrumbs.append(str(name).strip())
+                elif isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict):
+                            raw_blocks.append(item)
+                            if item.get("@type") in ("Residence", "SingleFamilyResidence", "RealEstateListing"):
+                                residence_block = item
+            except Exception as exc:
+                logger.debug("Failed parsing JSON-LD script block: %s", exc)
+
+        return raw_blocks, residence_block, breadcrumbs
+
+    def _extract_meta_tags(self, soup: BeautifulSoup) -> tuple[dict[str, str], dict[str, str]]:
+        """Extract standard and OpenGraph metadata."""
+        meta_tags: dict[str, str] = {}
+        og_tags: dict[str, str] = {}
+
+        for meta in soup.find_all("meta"):
+            name = meta.get("name") or meta.get("property") or ""
+            content = meta.get("content") or ""
+            if not name or not content:
+                continue
+            name_clean = name.strip()
+            content_clean = content.strip()
+
+            meta_tags[name_clean] = content_clean
+            if name_clean.startswith("og:"):
+                og_tags[name_clean] = content_clean
+
+        return meta_tags, og_tags
+
+    def _extract_location(
+        self,
+        url: str,
+        soup: BeautifulSoup,
+        json_ld: dict[str, Any],
+        breadcrumbs: list[str],
+        og_tags: dict[str, str]
+    ) -> LocationInfo:
+        """Extract address, suburb, city, province, and GPS coordinates."""
+        loc = LocationInfo(breadcrumbs=breadcrumbs)
+
+        # 1. From JSON-LD Address
+        address_dict = json_ld.get("address", {}) if isinstance(json_ld.get("address"), dict) else {}
+        loc.street_address = address_dict.get("streetAddress")
+        loc.region = address_dict.get("addressLocality")
+        loc.province = address_dict.get("addressRegion")
+
+        # 2. From JSON-LD GeoCoordinates
+        geo_dict = json_ld.get("geo", {}) if isinstance(json_ld.get("geo"), dict) else {}
+        if geo_dict.get("@type") == "GeoCoordinates":
+            try:
+                loc.latitude = float(geo_dict.get("latitude")) if geo_dict.get("latitude") is not None else None
+                loc.longitude = float(geo_dict.get("longitude")) if geo_dict.get("longitude") is not None else None
+            except (ValueError, TypeError):
+                pass
+
+        # 3. From Breadcrumbs fallback
+        if breadcrumbs:
+            if len(breadcrumbs) >= 2 and not loc.province:
+                loc.province = breadcrumbs[1]
+            if len(breadcrumbs) >= 3 and not loc.city:
+                loc.city = breadcrumbs[2]
+            if len(breadcrumbs) >= 4 and not loc.region:
+                loc.region = breadcrumbs[3]
+            if len(breadcrumbs) >= 5 and not loc.suburb:
+                loc.suburb = breadcrumbs[4]
+
+        # 4. From URL path hierarchy fallback
+        parsed = urlparse(url)
+        parts = [p for p in parsed.path.split("/") if p]
+        if len(parts) >= 6:
+            if not loc.province:
+                loc.province = parts[1].replace("-", " ").title()
+            if not loc.city:
+                loc.city = parts[2].replace("-", " ").title()
+            if not loc.region:
+                loc.region = parts[3].replace("-", " ").title()
+            if not loc.suburb:
+                loc.suburb = parts[4].replace("-", " ").title()
+            if not loc.street_address:
+                loc.street_address = parts[5].replace("-", " ").title()
+
+        return loc
+
+    def _extract_price(self, soup: BeautifulSoup, og_tags: dict[str, str]) -> PriceInfo:
+        """Extract asking price, rates, taxes, and monthly levies."""
+        price_info = PriceInfo()
+
+        # 1. Search DOM for main price text
+        for el in soup.find_all(class_=re.compile(r"price|listing-details__price|details-page-top", re.I)):
+            text = el.get_text(" ", strip=True)
+            match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text)
+            if match:
+                price_str = match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+                try:
+                    price_info.amount = float(price_str)
+                    price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
+                    break
+                except ValueError:
+                    pass
+
+        # 2. Extract Rates and Taxes from Property Details list
+        for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
+            text = item.get_text(" ", strip=True)
+            if "rates and taxes" in text.lower():
+                val_match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text, re.I)
+                if val_match:
+                    num_str = val_match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+                    try:
+                        price_info.rates_and_taxes_monthly = float(num_str)
+                    except ValueError:
+                        pass
+            elif "levies" in text.lower() or "levy" in text.lower():
+                val_match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text, re.I)
+                if val_match:
+                    num_str = val_match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+                    try:
+                        price_info.levies_monthly = float(num_str)
+                    except ValueError:
+                        pass
+
+        return price_info
+
+    def _extract_details(
+        self, soup: BeautifulSoup, json_ld: dict[str, Any]
+    ) -> tuple[str | None, Any | None, float | None, float | None]:
+        """Extract property type, listing date, erf size, and floor size."""
+        property_type: str | None = None
+        listing_date = None
+        erf_size_m2: float | None = None
+        floor_size_m2: float | None = None
+
+        for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
+            text = item.get_text(" ", strip=True)
+            text_lower = text.lower()
+
+            if "property type" in text_lower:
+                val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
+                if val_elem:
+                    property_type = val_elem.get_text(strip=True)
+                else:
+                    property_type = text.replace("Property type", "").strip()
+
+            elif "listing date" in text_lower:
+                val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
+                date_str = val_elem.get_text(strip=True) if val_elem else text.replace("Listing date", "").strip()
+                try:
+                    parsed_dt = date_parser.parse(date_str)
+                    listing_date = parsed_dt.date()
+                except Exception:
+                    pass
+
+            elif "land size" in text_lower or "erf size" in text_lower:
+                val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
+                size_str = val_elem.get_text(strip=True) if val_elem else text
+                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", ""))
+                if match:
+                    try:
+                        erf_size_m2 = float(match.group(1))
+                    except ValueError:
+                        pass
+
+            elif "floor size" in text_lower or "building size" in text_lower:
+                val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
+                size_str = val_elem.get_text(strip=True) if val_elem else text
+                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", ""))
+                if match:
+                    try:
+                        floor_size_m2 = float(match.group(1))
+                    except ValueError:
+                        pass
+
+        if not property_type and json_ld.get("@type"):
+            ld_type = json_ld.get("@type")
+            if ld_type in ("SingleFamilyResidence", "Residence", "House"):
+                property_type = "House"
+
+        return property_type, listing_date, erf_size_m2, floor_size_m2
+
+    def _extract_features(self, soup: BeautifulSoup, json_ld: dict[str, Any]) -> PropertyFeatures:
+        """Extract structured amenities, counts, and boolean feature flags."""
+        features = PropertyFeatures()
+
+        # 1. Parse JSON-LD additionalProperty
+        add_props = json_ld.get("additionalProperty", [])
+        if isinstance(add_props, list):
+            for prop in add_props:
+                if isinstance(prop, dict):
+                    name = str(prop.get("name", "")).strip().lower()
+                    val_str = str(prop.get("value", "")).strip()
+                    try:
+                        val_float = float(val_str)
+                        if "bedroom" in name:
+                            features.bedrooms = val_float
+                        elif "bathroom" in name:
+                            features.bathrooms = val_float
+                        elif "garage" in name:
+                            features.garages = val_float
+                    except ValueError:
+                        pass
+
+        # 2. Parse DOM .property-features__list-item elements
+        for item in soup.find_all(class_=re.compile(r"property-features__list-item", re.I)):
+            text = item.get_text(" ", strip=True)
+            if not text:
+                continue
+
+            features.raw_features_list.append(text)
+            text_lower = text.lower()
+
+            val_span = item.find(class_=re.compile(r"property-features__value", re.I))
+            val_num: float | None = None
+            if val_span:
+                try:
+                    val_num = float(val_span.get_text(strip=True))
+                except ValueError:
+                    pass
+
+            if "bedroom" in text_lower:
+                features.bedrooms = val_num if val_num is not None else features.bedrooms or 1.0
+            elif "bathroom" in text_lower:
+                features.bathrooms = val_num if val_num is not None else features.bathrooms or 1.0
+            elif "en-suite" in text_lower or "ensuite" in text_lower:
+                features.en_suites = val_num if val_num is not None else 1.0
+            elif "lounge" in text_lower:
+                features.lounges = val_num if val_num is not None else 1.0
+            elif "dining" in text_lower:
+                features.dining_rooms = val_num if val_num is not None else 1.0
+            elif "garage" in text_lower:
+                features.garages = val_num if val_num is not None else 1.0
+            elif "pool" in text_lower:
+                features.has_pool = True
+            elif "garden" in text_lower:
+                features.has_garden = True
+            elif "security post" in text_lower or "guard" in text_lower:
+                features.has_security_post = True
+            elif "access gate" in text_lower:
+                features.has_access_gate = True
+            elif "alarm" in text_lower:
+                features.has_alarm = True
+            elif "intercom" in text_lower:
+                features.has_intercom = True
+            elif "fence" in text_lower or "fenced" in text_lower:
+                features.has_fencing = True
+            elif "staff" in text_lower or "domestic" in text_lower:
+                features.has_staff_quarters = True
+            elif "patio" in text_lower:
+                features.has_patio = True
+            elif "balcony" in text_lower:
+                features.has_balcony = True
+            elif "built in cupboard" in text_lower or "bic" in text_lower:
+                features.has_built_in_cupboards = True
+            elif "walk in closet" in text_lower:
+                features.has_walk_in_closet = True
+            elif "scullery" in text_lower:
+                features.has_scullery = True
+            elif "laundry" in text_lower:
+                features.has_laundry = True
+            elif "entrance hall" in text_lower:
+                features.has_entrance_hall = True
+            elif "kitchen" in text_lower:
+                features.has_kitchen = True
+                if val_num is not None:
+                    features.kitchens = val_num
+            elif "tv room" in text_lower or "family room" in text_lower:
+                features.has_family_tv_room = True
+            elif "fireplace" in text_lower:
+                features.has_fireplace = True
+            elif "guest toilet" in text_lower:
+                features.has_guest_toilet = True
+            elif "irrigation" in text_lower:
+                features.has_irrigation_system = True
+            elif "aircon" in text_lower or "air conditioning" in text_lower:
+                features.has_aircon = True
+            elif "storage" in text_lower or "store room" in text_lower:
+                features.has_storage = True
+            elif "study" in text_lower or "office" in text_lower:
+                features.study_rooms = val_num if val_num is not None else 1.0
+            elif "solar" in text_lower or "inverter" in text_lower:
+                features.has_solar_inverter = True
+            elif "pet friendly" in text_lower:
+                features.is_pet_friendly = True
+            elif "furnished" in text_lower:
+                features.is_furnished = True
+
+        features.raw_features_list = list(dict.fromkeys(features.raw_features_list))
+        return features
+
+    def _extract_agent(self, soup: BeautifulSoup) -> AgentInfo | None:
+        """Extract agent and agency details."""
+        agent = AgentInfo()
+        found = False
+
+        for el in soup.find_all(class_=re.compile(r"agent|seller|contact|agency", re.I)):
+            img = el.find("img")
+            if img and img.get("src") and not agent.agency_logo_url:
+                agent.agency_logo_url = img["src"]
+                found = True
+
+        for a in soup.find_all("a", href=re.compile(r"estate-agency|estate-agent|branch", re.I)):
+            text = a.get_text(strip=True)
+            if text and not agent.agency_name:
+                agent.agency_name = text
+                found = True
+
+        return agent if found else None
+
+    def _extract_title(self, soup: BeautifulSoup, og_tags: dict[str, str]) -> str | None:
+        """Extract headline title."""
+        h1 = soup.find("h1")
+        if h1:
+            title = h1.get_text(strip=True)
+            if title:
+                return title
+
+        if "og:title" in og_tags:
+            return og_tags["og:title"]
+
+        if soup.title and soup.title.string:
+            return soup.title.string.strip()
+
+        return None
+
+    def _extract_description(self, soup: BeautifulSoup, og_tags: dict[str, str]) -> str | None:
+        """Extract complete property description."""
+        desc_elem = soup.find(class_=re.compile(r"details-page-description|property-description|overview", re.I))
+        if desc_elem:
+            for btn in desc_elem.find_all(["button", "a"]):
+                if any(w in btn.get_text().lower() for w in ["show more", "show less", "read more"]):
+                    btn.decompose()
+            text = desc_elem.get_text("\n", strip=True)
+            if text:
+                return text
+
+        if "og:description" in og_tags:
+            return og_tags["og:description"]
+
+        return None
+
+    def _extract_images(self, html: str, soup: BeautifulSoup, listing_id: str) -> list[ImageRecord]:
+        """
+        Discover and deduplicate all gallery images.
+        Reconstructs high-resolution URLs (e.g. 1600x1066) from image hashes.
+        """
+        discovered_hashes: list[tuple[str, str, str | None]] = []
+        seen_hashes: set[str] = set()
+
+        for img in soup.find_all("img"):
+            src = img.get("src") or img.get("data-src") or img.get("data-lazy")
+            if not src:
+                continue
+            match = PP_IMG_HASH_RE.search(src)
+            if match:
+                lid, img_hash = match.groups()
+                if img_hash not in seen_hashes:
+                    seen_hashes.add(img_hash)
+                    alt = img.get("alt")
+                    discovered_hashes.append((lid, img_hash, alt))
+
+        for lid, img_hash in PP_IMG_HASH_RE.findall(html):
+            if img_hash not in seen_hashes:
+                seen_hashes.add(img_hash)
+                discovered_hashes.append((lid, img_hash, None))
+
+        images: list[ImageRecord] = []
+        for idx, (lid, img_hash, alt) in enumerate(discovered_hashes):
+            high_res_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/1600/1066/contain/jpegorpng"
+            orig_url = f"https://images.pp.co.za/listing/{lid}/{img_hash}/600/450/contain/jpegorpng"
+            images.append(
+                ImageRecord(
+                    order_index=idx,
+                    original_url=orig_url,
+                    resolved_url=high_res_url,
+                    alt_text=alt,
+                    is_hero=(idx == 0),
+                )
+            )
+
+        return images
+
+    def _extract_videos(self, soup: BeautifulSoup) -> list[VideoRecord]:
+        """Extract embedded video frames (YouTube, Matterport 3D, Vimeo)."""
+        videos: list[VideoRecord] = []
+
+        for iframe in soup.find_all("iframe"):
+            src = iframe.get("src") or ""
+            if not src:
+                continue
+
+            provider = "Unknown"
+            if "youtube.com" in src or "youtu.be" in src:
+                provider = "YouTube"
+            elif "vimeo.com" in src:
+                provider = "Vimeo"
+            elif "matterport.com" in src:
+                provider = "Matterport 3D"
+
+            title_elem = iframe.find_previous(["h2", "h3", "div"], class_=re.compile(r"video|title", re.I))
+            title = title_elem.get_text(strip=True) if title_elem else None
+
+            videos.append(
+                VideoRecord(
+                    provider=provider,
+                    url=src,
+                    title=title,
+                )
+            )
+
+        return videos
