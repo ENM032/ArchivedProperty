@@ -1,5 +1,5 @@
 """
-Top-level canonical listing model.
+Top-level canonical listing model with status lifecycle and badge tracking.
 """
 
 from datetime import date, datetime, timezone
@@ -28,7 +28,22 @@ class ListingRecord(BaseModel):
     # Core listing attributes
     title: str | None = Field(default=None, description="Headline title of the listing")
     property_type: str | None = Field(default=None, description="Property type (e.g. 'House', 'Apartment', 'Townhouse')")
-    listing_status: str = Field(default="active", description="Listing status ('active', 'sold', 'withdrawn', etc.)")
+    
+    # Lifecycle & Status Tracking
+    listing_status: str = Field(
+        default="active",
+        description="Normalized listing lifecycle status ('active', 'under_offer', 'sold', 'pending', 'withdrawn', 'unknown')"
+    )
+    status_badges: list[str] = Field(
+        default_factory=list,
+        description="Raw visual badge labels discovered on page (e.g. 'Under Offer', 'Reduced', 'On Show', 'Auction')"
+    )
+    is_under_offer: bool = Field(default=False, description="True if listing is currently marked Under Offer / Contract Pending")
+    is_sold: bool = Field(default=False, description="True if listing is marked Sold")
+    is_on_show: bool = Field(default=False, description="True if listing has an active On Show viewing scheduled")
+    is_price_reduced: bool = Field(default=False, description="True if listing price was marked as reduced/discounted")
+    on_show_details: dict[str, Any] | None = Field(default=None, description="Structured date/time metadata for On Show viewings")
+
     listing_date: date | None = Field(default=None, description="Publication or listing date")
     description: str | None = Field(default=None, description="Full textual property description")
 

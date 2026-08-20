@@ -27,10 +27,12 @@
                                          ▼
                          ┌───────────────────────────────┐
                          │    Multi-Tier Extractor       │
-                         │   • Tier 1: JSON-LD / Schema  │
-                         │   • Tier 2: OpenGraph / Meta  │
-                         │   • Tier 3: Semantic DOM      │
-                         │   • Tier 4: Media Discovery   │
+                         │   • Tier 1: JS Deobfuscation  │
+                         │   • Tier 2: Status & Badges   │
+                         │   • Tier 3: JSON-LD / Schema  │
+                         │   • Tier 4: OpenGraph / Meta  │
+                         │   • Tier 5: Semantic DOM      │
+                         │   • Tier 6: Media Discovery   │
                          └───────────────────────────────┘
                                          │
                                          ▼
@@ -44,7 +46,8 @@
                                          ▼
                          ┌───────────────────────────────┐
                          │   Image Processing Worker     │
-                         │   • High-res URL resolution   │
+                         │   • Full 56-image resolution  │
+                         │   • High-res 1600x1066 URLs   │
                          │   • Pillow format validation  │
                          │   • Dimension inspection      │
                          │   • SHA-256 computation       │
@@ -64,34 +67,27 @@
 
 ---
 
-## 2. Core Subsystems
+## 2. Core Subsystems & Key Innovations
 
-### A. Security & SSRF Prevention Layer (`property_archiver/core/security.py`)
-- **Scheme Validation**: Enforces `http` and `https` protocols exclusively.
-- **DNS Resolution Checks**: Resolves hostnames to IP addresses before initiating requests, actively blocking private, loopback, multicast, or link-local addresses (`127.0.0.0/8`, `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`, `169.254.0.0/16`, `::1`, `fc00::/7`).
-- **Path Traversal Protection**: Implements `safe_join_path` to prevent relative directory escapes (`../../`).
-- **Filename Sanitization**: Scrubs cross-platform illegal characters (`\ / : * ? " < > |`) and Windows reserved names (`CON`, `PRN`, `AUX`, `NUL`, `COM1-9`, `LPT1-9`).
+### A. JavaScript Deobfuscation Engine
+Private Property encodes full listing metadata, all 56 high-resolution gallery photos, and agent contact cards inside an obfuscated inline script:
+```javascript
+window[...] = JSON.parse(Y.map($ => D[$]).join(''));
+```
+The extractor parses the token array `D` (1,600+ string tokens) and index mapping array `Y` (17,900+ integer indices), executing the token replacement natively in Python. This allows capturing all 56 gallery photos and real agent profiles without requiring headless Chrome or Node.js.
 
-### B. Resilient Fetcher (`property_archiver/core/fetcher.py`)
-- Built on `httpx.Client`.
-- Implements domain-specific rate limiting (`rate_limit_delay_sec`) to guarantee polite crawl behavior.
-- Retries on HTTP 429 (Too Many Requests) and 5xx (Server Errors) with exponential backoff and jitter.
-- Enforces maximum response body boundaries (`max_response_size_bytes`) to protect against decompression and resource exhaustion attacks.
+### B. Status & Lifecycle Detector (`docs/listing_lifecycle_and_status.md`)
+Detects whether listings are `active`, `under_offer`, `sold`, `withdrawn`, `reduced`, or `on_show` by analyzing application state (`bundleParams.isUnderOffer`), DOM badge containers, and OpenGraph headers.
 
-### C. Multi-Tier Extractor Architecture (`property_archiver/extractors/`)
-- Implements `BaseExtractor` abstract base class to support pluggable multi-portal extractors.
-- `PrivatePropertyExtractor` processes pages in four cascading layers:
-  1. **Structured JSON-LD**: Reads `BreadcrumbList`, `PostalAddress`, `GeoCoordinates`, and `additionalProperty` key-values.
-  2. **OpenGraph & Meta Tags**: Captures social titles, canonical URLs, and fallback descriptions.
-  3. **Semantic DOM Parsing**: Extracts prices, monthly rates, levies, property type, erf/floor sizes, and structured amenities.
-  4. **Media Resolution**: Identifies unique CDN image IDs and synthesizes full 1600x1066 high-resolution URLs.
+### C. Security & SSRF Prevention Layer (`property_archiver/core/security.py`)
+- Scheme enforcement (`http`/`https`).
+- DNS resolution checks actively blocking private/loopback/link-local IPv4 and IPv6 subnets (`127.0.0.0/8`, `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`, `169.254.0.0/16`, `::1`, `fc00::/7`).
+- Path-traversal protection and cross-platform filename sanitization.
 
 ### D. Image Preservation Pipeline (`property_archiver/images/downloader.py`)
-- Downloads images concurrently using a bounded `ThreadPoolExecutor` (default 4 workers).
-- Verifies image bytes using `PIL.Image.open()` to detect malformed files or non-image payloads.
-- Extracts real dimensions and MIME types, computing SHA-256 digests.
+- Downloads all 56 high-resolution images concurrently using a bounded thread pool.
+- Validates image headers with Pillow and computes SHA-256 digests.
 
 ### E. Atomic Storage & Integrity Manifests (`property_archiver/storage/`)
-- Downloads and writes everything into a hidden staging directory (`.staging_<id>_<timestamp>`).
-- Calculates SHA-256 checksums across all files and outputs `checksums.json`.
-- Atomically renames the staging folder to the permanent destination (`archive/listings/<id>`), guaranteeing zero corruption from aborted runs.
+- Uses staging folders (`.staging_<id>_<timestamp>`) and atomic directory renaming.
+- Generates `checksums.json` containing SHA-256 hashes for all 56 images, raw HTML, metadata, and normalized JSON.
