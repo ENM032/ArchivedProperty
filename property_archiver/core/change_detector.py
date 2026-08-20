@@ -22,6 +22,8 @@ class ListingDiff:
     status_changed: bool = False
     old_status: str | None = None
     new_status: str | None = None
+    badges_added: list[str] = field(default_factory=list)
+    badges_removed: list[str] = field(default_factory=list)
     spec_changes: list[str] = field(default_factory=list)
     added_features: list[str] = field(default_factory=list)
     removed_features: list[str] = field(default_factory=list)
@@ -48,11 +50,17 @@ class ChangeDetector:
             if old.price.amount is not None and new.price.amount is not None:
                 diff.price_diff = new.price.amount - old.price.amount
 
-        # Status comparison
+        # Status & Lifecycle comparison
         if old.listing_status != new.listing_status:
             diff.status_changed = True
             diff.old_status = old.listing_status
             diff.new_status = new.listing_status
+
+        # Badges comparison
+        old_badges = set(old.status_badges)
+        new_badges = set(new.status_badges)
+        diff.badges_added = sorted(list(new_badges - old_badges))
+        diff.badges_removed = sorted(list(old_badges - new_badges))
 
         # Specification comparison
         if old.features.bedrooms != new.features.bedrooms:

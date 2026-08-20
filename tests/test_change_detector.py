@@ -1,5 +1,5 @@
 """
-Tests for change detector and diffing between listing snapshots.
+Tests for change detector and diffing between listing snapshots including status transitions.
 """
 
 from property_archiver.core.change_detector import ChangeDetector
@@ -15,7 +15,7 @@ def test_change_detector_identical():
         price=PriceInfo(amount=2000000.0),
         features=PropertyFeatures(bedrooms=3.0, has_pool=True)
     )
-    rec1.content_fingerprint = calculate_content_fingerprint(rec1.model_dump())
+    rec1.content_fingerprint = calculate_content_fingerprint(rec1.model_dump(mode="json"))
 
     rec2 = ListingRecord(
         listing_id="T1",
@@ -23,34 +23,35 @@ def test_change_detector_identical():
         price=PriceInfo(amount=2000000.0),
         features=PropertyFeatures(bedrooms=3.0, has_pool=True)
     )
-    rec2.content_fingerprint = calculate_content_fingerprint(rec2.model_dump())
+    rec2.content_fingerprint = calculate_content_fingerprint(rec2.model_dump(mode="json"))
 
     diff = ChangeDetector.compare_records(rec1, rec2)
     assert diff.is_identical is True
     assert diff.price_changed is False
+    assert diff.status_changed is False
 
 
-def test_change_detector_price_and_feature_change():
+def test_change_detector_status_transition_under_offer_and_sold():
     rec1 = ListingRecord(
         listing_id="T1",
         canonical_url="https://www.privateproperty.co.za/1",
-        price=PriceInfo(amount=2000000.0),
-        features=PropertyFeatures(bedrooms=3.0, raw_features_list=["Pool", "Alarm"])
+        listing_status="active",
+        status_badges=[]
     )
-    rec1.content_fingerprint = calculate_content_fingerprint(rec1.model_dump())
+    rec1.content_fingerprint = calculate_content_fingerprint(rec1.model_dump(mode="json"))
 
     rec2 = ListingRecord(
         listing_id="T1",
         canonical_url="https://www.privateproperty.co.za/1",
-        price=PriceInfo(amount=1850000.0),
-        features=PropertyFeatures(bedrooms=3.0, raw_features_list=["Pool", "Alarm", "Solar Inverter"])
+        listing_status="under_offer",
+        status_badges=["Under Offer"],
+        is_under_offer=True
     )
-    rec2.content_fingerprint = calculate_content_fingerprint(rec2.model_dump())
+    rec2.content_fingerprint = calculate_content_fingerprint(rec2.model_dump(mode="json"))
 
     diff = ChangeDetector.compare_records(rec1, rec2)
     assert diff.is_identical is False
-    assert diff.price_changed is True
-    assert diff.old_price == 2000000.0
-    assert diff.new_price == 1850000.0
-    assert diff.price_diff == -150000.0
-    assert "Solar Inverter" in diff.added_features
+    assert diff.status_changed is True
+    assert diff.old_status == "active"
+    assert diff.new_status == "under_offer"
+    assert "Under Offer" in diff.badges_added

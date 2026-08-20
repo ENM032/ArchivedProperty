@@ -99,7 +99,10 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
         console.print(f"[bold red]Extraction failed:[/bold red] {exc}")
         sys.exit(1)
 
-    console.print(f"[green]Data extracted for listing ID: {listing.listing_id}[/green]")
+    status_str = f"Status: [bold cyan]{listing.listing_status.upper()}[/bold cyan]"
+    if listing.status_badges:
+        status_str += f" ({', '.join(listing.status_badges)})"
+    console.print(f"[green]Data extracted for listing ID: {listing.listing_id}[/green] | {status_str}")
 
     # Prepare Staging Directory
     writer = ArchiveWriter(config=cfg)
@@ -146,9 +149,10 @@ def fetch_command(target: str, output: str, no_images: bool, timeout: float, rat
 
     # Display Summary Card
     console.print()
+    badges_display = f" | Badges: {', '.join(listing.status_badges)}" if listing.status_badges else ""
     card_text = (
         f"[bold white]{listing.title or 'Property Listing'}[/bold white]\n"
-        f"[cyan]ID:[/cyan] {listing.listing_id} | [cyan]Type:[/cyan] {listing.property_type or 'N/A'}\n"
+        f"[cyan]ID:[/cyan] {listing.listing_id} | [cyan]Type:[/cyan] {listing.property_type or 'N/A'} | [cyan]Status:[/cyan] [bold]{listing.listing_status.upper()}[/bold]{badges_display}\n"
         f"[cyan]Price:[/cyan] {listing.price.formatted_display or 'N/A'}\n"
         f"[cyan]Location:[/cyan] {listing.location.street_address or ''}, {listing.location.suburb or ''}, {listing.location.city or ''}\n"
         f"[cyan]Specs:[/cyan] {listing.features.bedrooms or 0} Beds | {listing.features.bathrooms or 0} Baths | {listing.features.garages or 0} Garages | Erf: {listing.erf_size_m2 or 'N/A'} m2\n"
@@ -181,6 +185,10 @@ def inspect_command(archive_path: str):
     table.add_row("Title", listing.title or "N/A")
     table.add_row("Listing ID", listing.listing_id)
     table.add_row("Portal", listing.portal_name)
+    table.add_row("Status", listing.listing_status.upper())
+    table.add_row("Badges", ", ".join(listing.status_badges) if listing.status_badges else "None")
+    table.add_row("Under Offer?", "Yes" if listing.is_under_offer else "No")
+    table.add_row("Sold?", "Yes" if listing.is_sold else "No")
     table.add_row("Price", listing.price.formatted_display or str(listing.price.amount))
     table.add_row("Rates & Taxes", f"R {listing.price.rates_and_taxes_monthly}" if listing.price.rates_and_taxes_monthly else "N/A")
     table.add_row("Address", f"{listing.location.street_address or ''}, {listing.location.suburb or ''}, {listing.location.city or ''}")
@@ -237,7 +245,11 @@ def compare_command(archive_a: str, archive_b: str):
         sign = "+" if (diff.price_diff or 0) > 0 else ""
         console.print(f"  * [bold]Price:[/bold] R {diff.old_price:,} -> R {diff.new_price:,} ({sign}{diff.price_diff:,})")
     if diff.status_changed:
-        console.print(f"  * [bold]Status:[/bold] {diff.old_status} -> {diff.new_status}")
+        console.print(f"  * [bold]Status Transition:[/bold] [yellow]{diff.old_status}[/yellow] -> [bold green]{diff.new_status}[/bold green]")
+    if diff.badges_added:
+        console.print(f"  * [bold green]New Badges:[/bold green] {', '.join(diff.badges_added)}")
+    if diff.badges_removed:
+        console.print(f"  * [bold red]Removed Badges:[/bold red] {', '.join(diff.badges_removed)}")
     if diff.spec_changes:
         for spec in diff.spec_changes:
             console.print(f"  * [bold]Specification:[/bold] {spec}")
