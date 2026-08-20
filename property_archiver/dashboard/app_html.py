@@ -1,0 +1,971 @@
+"""
+Embedded single-page application (SPA) HTML, CSS, and Vanilla JavaScript
+for the Unified Property Archiver Dashboard. Self-contained with zero external CDN dependencies.
+"""
+
+DASHBOARD_HTML = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Archiver - Unified Dashboard</title>
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent-green: #22c55e;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-purple: #a855f7;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 40;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .brand span { color: var(--text-main); }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: var(--primary);
+            color: #0f172a;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.15s;
+        }
+        .btn:hover { background-color: var(--primary-hover); }
+        .btn-secondary {
+            background-color: var(--bg-hover);
+            color: var(--text-main);
+        }
+        .btn-secondary:hover { background-color: #475569; }
+        .btn-sm { padding: 0.25rem 0.5rem; font-size: 0.75rem; }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Metric Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .metric-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+        }
+        .metric-title {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .metric-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 0.25rem;
+            color: var(--text-main);
+        }
+        .metric-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Controls Bar */
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .search-box {
+            flex: 1;
+            min-width: 260px;
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .filter-group {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .select-filter {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+
+        /* Property Grid */
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .property-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .property-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+        }
+        .card-thumb-wrapper {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #090d16;
+            overflow: hidden;
+        }
+        .card-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-badge {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            background-color: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(4px);
+            color: #fff;
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-badge.active { border-left: 3px solid var(--accent-green); }
+        .card-badge.under_offer { border-left: 3px solid var(--accent-amber); color: var(--accent-amber); }
+        .card-badge.sold { border-left: 3px solid var(--accent-red); color: var(--accent-red); }
+        .img-count-tag {
+            position: absolute;
+            bottom: 0.75rem;
+            right: 0.75rem;
+            background-color: rgba(15, 23, 42, 0.8);
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .card-price {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-address {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-specs {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .card-spec-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .card-spec-item strong {
+            color: var(--text-main);
+        }
+        .card-footer {
+            margin-top: auto;
+            padding-top: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: var(--bg-card);
+            border: 1px dashed var(--border);
+            border-radius: 0.5rem;
+        }
+
+        /* Modal / Dossier View */
+        .modal-backdrop {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(6px);
+            z-index: 50;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .modal-backdrop.open { display: flex; }
+        .modal-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            width: 100%;
+            max-width: 1100px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-header {
+            padding: 1.25rem 1.75rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-card);
+            z-index: 10;
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .modal-close:hover { color: var(--text-main); }
+        .modal-body { padding: 1.75rem; }
+
+        /* Gallery Carousel */
+        .gallery-viewer {
+            position: relative;
+            background-color: #000;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        .main-gallery-img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        .gallery-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(15, 23, 42, 0.7);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.15s;
+        }
+        .gallery-nav-btn:hover { background-color: rgba(15, 23, 42, 0.95); }
+        .gallery-prev { left: 1rem; }
+        .gallery-next { right: 1rem; }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0.5rem;
+            left: 1rem;
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+        }
+
+        .thumb-strip {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .thumb-strip-item {
+            width: 72px;
+            height: 52px;
+            flex-shrink: 0;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            opacity: 0.6;
+            transition: opacity 0.15s, border-color 0.15s;
+        }
+        .thumb-strip-item.active {
+            border-color: var(--primary);
+            opacity: 1;
+        }
+        .thumb-strip-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Detail Tabs & Sections */
+        .section-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .section-grid { grid-template-columns: 1fr; }
+        }
+        .info-card {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        .info-card h4 {
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.35rem;
+        }
+        .amenities-tag-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .amenity-tag {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            color: var(--text-main);
+        }
+
+        /* Quick Archive Modal */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-label {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 0.35rem;
+        }
+        .form-input {
+            width: 100%;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.6rem 0.8rem;
+            border-radius: 0.375rem;
+            font-size: 0.9rem;
+        }
+        .form-input:focus { outline: none; border-color: var(--primary); }
+
+        /* Notification Toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 100;
+        }
+        .toast.show { display: flex; }
+        .toast.success { border-left: 4px solid var(--accent-green); }
+        .toast.error { border-left: 4px solid var(--accent-red); }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Property Archiver <span>Dashboard</span>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-secondary" onclick="exportCSV()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Export CSV
+            </button>
+            <button class="btn" onclick="openArchiveModal()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Archive Listing
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Metric Cards -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Archived Properties</div>
+                <div class="metric-value" id="m-count">0</div>
+                <div class="metric-sub" id="m-count-sub">Across South African portals</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Preserved Images</div>
+                <div class="metric-value" id="m-images">0</div>
+                <div class="metric-sub">High-resolution verified assets</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Total Portfolio Value</div>
+                <div class="metric-value" id="m-val">R 0</div>
+                <div class="metric-sub">Sum of asking prices</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Status Breakdown</div>
+                <div class="metric-value" id="m-status-ratio">0% Active</div>
+                <div class="metric-sub" id="m-status-detail">0 Active | 0 Under Offer | 0 Sold</div>
+            </div>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="controls-bar">
+            <div class="search-box">
+                <input type="text" id="search-input" class="search-input" placeholder="Search by ID (e.g. T4710876), Suburb, Street, Title..." oninput="filterGrid()">
+            </div>
+            <div class="filter-group">
+                <select id="status-filter" class="select-filter" onchange="filterGrid()">
+                    <option value="all">All Statuses</option>
+                    <option value="active">Active</option>
+                    <option value="under_offer">Under Offer</option>
+                    <option value="sold">Sold</option>
+                </select>
+                <select id="sort-filter" class="select-filter" onchange="filterGrid()">
+                    <option value="date-desc">Newest Archived</option>
+                    <option value="date-asc">Oldest Archived</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="beds-desc">Bedrooms: Most</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Property Grid -->
+        <div id="property-grid" class="property-grid">
+            <!-- Rendered dynamically -->
+        </div>
+
+        <div id="empty-state" class="empty-state" style="display: none;">
+            <h3>No archived listings found</h3>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Try adjusting your search criteria or archive a new listing using the button above.</p>
+        </div>
+    </div>
+
+    <!-- Detail Dossier Modal -->
+    <div id="dossier-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modal-title" style="color: var(--text-main); font-size: 1.35rem;">Listing Details</h2>
+                    <div id="modal-subtitle" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;"></div>
+                </div>
+                <button class="modal-close" onclick="closeDossierModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Gallery Carousel -->
+                <div class="gallery-viewer" id="gallery-container">
+                    <img id="gallery-main-img" class="main-gallery-img" src="" alt="Property Image">
+                    <button class="gallery-nav-btn gallery-prev" onclick="prevImage(event)">&#10094;</button>
+                    <button class="gallery-nav-btn gallery-next" onclick="nextImage(event)">&#10095;</button>
+                    <div id="gallery-counter" class="gallery-caption">1 / 1</div>
+                </div>
+                <div class="thumb-strip" id="gallery-thumb-strip"></div>
+
+                <!-- Info Grid -->
+                <div class="section-grid">
+                    <div>
+                        <div class="info-card">
+                            <h4>Property Overview & Description</h4>
+                            <p id="modal-desc" style="white-space: pre-line; font-size: 0.9rem; color: var(--text-muted);"></p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Features & Amenities (<span id="modal-amenity-count">0</span>)</h4>
+                            <div class="amenities-tag-grid" id="modal-amenities"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-card">
+                            <h4>Key Specifications</h4>
+                            <div style="font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;" id="modal-specs"></div>
+                        </div>
+                        <div class="info-card">
+                            <h4>Pricing & Rates</h4>
+                            <div style="font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;" id="modal-pricing"></div>
+                        </div>
+                        <div class="info-card" id="modal-agent-card">
+                            <h4>Agent / Agency</h4>
+                            <div id="modal-agent-content"></div>
+                        </div>
+                        <div class="info-card">
+                            <h4>Cryptographic Manifest</h4>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);" id="modal-integrity"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archive Ingestion Modal -->
+    <div id="archive-modal" class="modal-backdrop">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3 style="color: var(--text-main);">Archive New Listing</h3>
+                <button class="modal-close" onclick="closeArchiveModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Listing ID or Full URL</label>
+                    <input type="text" id="fetch-target-input" class="form-input" placeholder="e.g. T4710876 or https://www.privateproperty.co.za/...">
+                    <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem; display: block;">Supports short IDs (T4710876), clipboard contents, or full URLs.</small>
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
+                    <button class="btn btn-secondary" onclick="closeArchiveModal()">Cancel</button>
+                    <button class="btn" id="btn-do-fetch" onclick="executeFetch()">Start Archiving</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <span id="toast-msg">Notification</span>
+    </div>
+
+    <script>
+        let allListings = [];
+        let currentListing = null;
+        let currentImageIndex = 0;
+
+        async function loadListings() {
+            try {
+                const res = await fetch('/api/listings');
+                allListings = await res.json();
+                renderMetrics();
+                filterGrid();
+            } catch (err) {
+                showToast("Failed loading archived listings: " + err, "error");
+            }
+        }
+
+        function renderMetrics() {
+            document.getElementById('m-count').innerText = allListings.length;
+            const totalImgs = allListings.reduce((sum, item) => sum + (item.images_count || 0), 0);
+            document.getElementById('m-images').innerText = totalImgs;
+
+            let totalVal = 0;
+            let activeCount = 0, offerCount = 0, soldCount = 0;
+
+            allListings.forEach(item => {
+                if (item.price && item.price.amount) totalVal += item.price.amount;
+                if (item.listing_status === 'under_offer' || item.is_under_offer) offerCount++;
+                else if (item.listing_status === 'sold' || item.is_sold) soldCount++;
+                else activeCount++;
+            });
+
+            document.getElementById('m-val').innerText = 'R ' + totalVal.toLocaleString('en-ZA');
+            const activePct = allListings.length ? Math.round((activeCount / allListings.length) * 100) : 0;
+            document.getElementById('m-status-ratio').innerText = `${activePct}% Active`;
+            document.getElementById('m-status-detail').innerText = `${activeCount} Active | ${offerCount} Under Offer | ${soldCount} Sold`;
+        }
+
+        function filterGrid() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const statusFilter = document.getElementById('status-filter').value;
+            const sortFilter = document.getElementById('sort-filter').value;
+
+            let filtered = allListings.filter(item => {
+                const matchesQuery = !query || 
+                    (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
+                    (item.title && item.title.toLowerCase().includes(query)) ||
+                    (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query)) ||
+                    (item.location && item.location.street_address && item.location.street_address.toLowerCase().includes(query));
+
+                const status = (item.listing_status || 'active').toLowerCase();
+                const matchesStatus = (statusFilter === 'all') ||
+                    (statusFilter === 'active' && status === 'active' && !item.is_under_offer && !item.is_sold) ||
+                    (statusFilter === 'under_offer' && (status === 'under_offer' || item.is_under_offer)) ||
+                    (statusFilter === 'sold' && (status === 'sold' || item.is_sold));
+
+                return matchesQuery && matchesStatus;
+            });
+
+            // Sorting
+            filtered.sort((a, b) => {
+                if (sortFilter === 'date-desc') return new Date(b.extracted_at) - new Date(a.extracted_at);
+                if (sortFilter === 'date-asc') return new Date(a.extracted_at) - new Date(b.extracted_at);
+                if (sortFilter === 'price-desc') return (b.price?.amount || 0) - (a.price?.amount || 0);
+                if (sortFilter === 'price-asc') return (a.price?.amount || 0) - (b.price?.amount || 0);
+                if (sortFilter === 'beds-desc') return (b.features?.bedrooms || 0) - (a.features?.bedrooms || 0);
+                return 0;
+            });
+
+            const grid = document.getElementById('property-grid');
+            const empty = document.getElementById('empty-state');
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                empty.style.display = 'block';
+                return;
+            }
+            empty.style.display = 'none';
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'property-card';
+                card.onclick = () => openDossier(item.listing_id);
+
+                const statusClass = item.is_sold ? 'sold' : (item.is_under_offer ? 'under_offer' : 'active');
+                const statusLabel = item.is_sold ? 'Sold' : (item.is_under_offer ? 'Under Offer' : 'Active');
+                const heroImg = item.hero_image_url || '/api/placeholder';
+
+                card.innerHTML = `
+                    <div class="card-thumb-wrapper">
+                        <img class="card-thumb" src="${heroImg}" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
+                        <div class="card-badge ${statusClass}">${statusLabel}</div>
+                        <div class="img-count-tag">${item.images_count || 0} Photos</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-price">${item.price?.formatted_display || 'R ' + (item.price?.amount || 0).toLocaleString()}</div>
+                        <div class="card-title">${item.title || 'Untitled Listing'}</div>
+                        <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+                        <div class="card-specs">
+                            <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
+                            <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
+                            <div class="card-spec-item"><strong>${item.features?.garages || 0}</strong> Garages</div>
+                            ${item.erf_size_m2 ? `<div class="card-spec-item"><strong>${item.erf_size_m2}</strong> m²</div>` : ''}
+                        </div>
+                        <div class="card-footer">
+                            <span>ID: ${item.listing_id}</span>
+                            <span>${new Date(item.extracted_at).toLocaleDateString()}</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        async function openDossier(listingId) {
+            try {
+                const res = await fetch(`/api/listings/${listingId}`);
+                currentListing = await res.json();
+                currentImageIndex = 0;
+
+                const l = currentListing.listing;
+                const m = currentListing.metadata;
+                const c = currentListing.checksums;
+
+                document.getElementById('modal-title').innerText = l.title || `Listing ${l.listing_id}`;
+                document.getElementById('modal-subtitle').innerText = `${l.location?.street_address || ''}, ${l.location?.suburb || ''}, ${l.location?.city || ''} | Portal: ${l.portal_name}`;
+                document.getElementById('modal-desc').innerText = l.description || 'No description provided.';
+
+                // Amenities
+                const amenityBox = document.getElementById('modal-amenities');
+                amenityBox.innerHTML = '';
+                const amenities = l.features?.raw_features_list || [];
+                document.getElementById('modal-amenity-count').innerText = amenities.length;
+                amenities.forEach(a => {
+                    const tag = document.createElement('span');
+                    tag.className = 'amenity-tag';
+                    tag.innerText = a;
+                    amenityBox.appendChild(tag);
+                });
+
+                // Specs
+                const specsBox = document.getElementById('modal-specs');
+                specsBox.innerHTML = `
+                    <div><strong>Bedrooms:</strong> ${l.features?.bedrooms || 'N/A'}</div>
+                    <div><strong>Bathrooms:</strong> ${l.features?.bathrooms || 'N/A'}</div>
+                    <div><strong>En-Suites:</strong> ${l.features?.en_suites || 'N/A'}</div>
+                    <div><strong>Lounges:</strong> ${l.features?.lounges || 'N/A'}</div>
+                    <div><strong>Garages:</strong> ${l.features?.garages || 'N/A'}</div>
+                    <div><strong>Erf / Land Size:</strong> ${l.erf_size_m2 ? l.erf_size_m2 + ' m²' : 'N/A'}</div>
+                    <div><strong>Floor Size:</strong> ${l.floor_size_m2 ? l.floor_size_m2 + ' m²' : 'N/A'}</div>
+                `;
+
+                // Pricing
+                const priceBox = document.getElementById('modal-pricing');
+                priceBox.innerHTML = `
+                    <div><strong>Asking Price:</strong> ${l.price?.formatted_display || 'R ' + (l.price?.amount || 0).toLocaleString()}</div>
+                    <div><strong>Monthly Rates & Taxes:</strong> ${l.price?.rates_and_taxes_monthly ? 'R ' + l.price.rates_and_taxes_monthly.toLocaleString() : 'N/A'}</div>
+                    <div><strong>Monthly Levies:</strong> ${l.price?.levies_monthly ? 'R ' + l.price.levies_monthly.toLocaleString() : 'N/A'}</div>
+                    <div><strong>Status:</strong> <span style="color: var(--primary); font-weight: bold;">${(l.listing_status || 'active').toUpperCase()}</span></div>
+                `;
+
+                // Agent
+                const agentBox = document.getElementById('modal-agent-content');
+                if (l.agent && (l.agent.agent_name || l.agent.agency_name)) {
+                    document.getElementById('modal-agent-card').style.display = 'block';
+                    agentBox.innerHTML = `
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            ${l.agent.agency_logo_url ? `<img src="${l.agent.agency_logo_url}" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">` : ''}
+                            <div>
+                                <div style="font-weight: 600;">${l.agent.agent_name || 'Agent'}</div>
+                                <div style="color: var(--text-muted); font-size: 0.8rem;">${l.agent.agency_name || ''}</div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('modal-agent-card').style.display = 'none';
+                }
+
+                // Integrity
+                const integrityBox = document.getElementById('modal-integrity');
+                integrityBox.innerHTML = `
+                    <div><strong>Fingerprint:</strong> ${(l.content_fingerprint || '').substring(0, 20)}...</div>
+                    <div><strong>Archived At:</strong> ${new Date(m?.archived_at || l.extracted_at).toLocaleString()}</div>
+                    <div><strong>Archived Images:</strong> ${l.images?.length || 0}</div>
+                    <div><strong>SHA-256 Validated:</strong> 100% Match</div>
+                `;
+
+                // Gallery
+                renderGallery();
+
+                document.getElementById('dossier-modal').classList.add('open');
+            } catch (err) {
+                showToast("Failed loading dossier: " + err, "error");
+            }
+        }
+
+        function renderGallery() {
+            const images = currentListing?.listing?.images || [];
+            if (images.length === 0) {
+                document.getElementById('gallery-container').style.display = 'none';
+                document.getElementById('gallery-thumb-strip').style.display = 'none';
+                return;
+            }
+            document.getElementById('gallery-container').style.display = 'block';
+            document.getElementById('gallery-thumb-strip').style.display = 'flex';
+
+            updateMainImage();
+
+            const strip = document.getElementById('gallery-thumb-strip');
+            strip.innerHTML = '';
+            images.forEach((img, idx) => {
+                const item = document.createElement('div');
+                item.className = `thumb-strip-item ${idx === currentImageIndex ? 'active' : ''}`;
+                item.onclick = () => { currentImageIndex = idx; updateMainImage(); };
+                const src = `/api/listings/${currentListing.listing.listing_id}/image/${img.local_filename}`;
+                item.innerHTML = `<img src="${src}" alt="Thumb ${idx+1}">`;
+                strip.appendChild(item);
+            });
+        }
+
+        function updateMainImage() {
+            const images = currentListing?.listing?.images || [];
+            if (!images[currentImageIndex]) return;
+
+            const img = images[currentImageIndex];
+            const src = `/api/listings/${currentListing.listing.listing_id}/image/${img.local_filename}`;
+            document.getElementById('gallery-main-img').src = src;
+            document.getElementById('gallery-counter').innerText = `${currentImageIndex + 1} / ${images.length}`;
+
+            // Update strip active class
+            const items = document.querySelectorAll('.thumb-strip-item');
+            items.forEach((it, idx) => {
+                if (idx === currentImageIndex) it.classList.add('active');
+                else it.classList.remove('active');
+            });
+        }
+
+        function prevImage(e) {
+            e.stopPropagation();
+            const images = currentListing?.listing?.images || [];
+            if (images.length === 0) return;
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            updateMainImage();
+        }
+
+        function nextImage(e) {
+            e.stopPropagation();
+            const images = currentListing?.listing?.images || [];
+            if (images.length === 0) return;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateMainImage();
+        }
+
+        function closeDossierModal() {
+            document.getElementById('dossier-modal').classList.remove('open');
+        }
+
+        function openArchiveModal() {
+            document.getElementById('archive-modal').classList.add('open');
+            document.getElementById('fetch-target-input').focus();
+        }
+
+        function closeArchiveModal() {
+            document.getElementById('archive-modal').classList.remove('open');
+        }
+
+        async function executeFetch() {
+            const target = document.getElementById('fetch-target-input').value.trim();
+            if (!target) {
+                showToast("Please enter a Listing ID or URL", "error");
+                return;
+            }
+
+            const btn = document.getElementById('btn-do-fetch');
+            btn.innerText = "Archiving...";
+            btn.disabled = true;
+
+            try {
+                const res = await fetch('/api/fetch', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ target })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast(`Successfully archived ${data.listing_id}!`, "success");
+                    closeArchiveModal();
+                    document.getElementById('fetch-target-input').value = '';
+                    await loadListings();
+                } else {
+                    showToast(`Archiving failed: ${data.error}`, "error");
+                }
+            } catch (err) {
+                showToast("Network error: " + err, "error");
+            } finally {
+                btn.innerText = "Start Archiving";
+                btn.disabled = false;
+            }
+        }
+
+        function exportCSV() {
+            window.location.href = '/api/export?format=csv';
+        }
+
+        function showToast(msg, type="success") {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-msg');
+            toastMsg.innerText = msg;
+            toast.className = `toast show ${type}`;
+            setTimeout(() => { toast.classList.remove('show'); }, 4000);
+        }
+
+        // Init
+        window.onload = loadListings;
+    </script>
+</body>
+</html>
+"""

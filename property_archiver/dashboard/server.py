@@ -1,0 +1,345 @@
+"""
+Embedded HTTP server and REST API for the Unified Property Archiver Dashboard.
+Built using standard library http.server with zero external heavy web dependencies.
+"""
+
+import csv
+import io
+import json
+import logging
+import mimetypes
+import os
+import threading
+import urllib.parse
+from http import HTTPStatus
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from typing import Any
+
+from property_archiver.config import settings
+from property_archiver.core.fetcher import Fetcher
+from property_archiver.core.security import safe_join_path
+from property_archiver.dashboard.app_html import DASHBOARD_HTML
+from property_archiver.extractors import get_extractor_for_url_or_html
+from property_archiver.images.downloader import ImageDownloader
+from property_archiver.models.archive import ArchiveMetadata
+from property_archiver.storage.reader import ArchiveReader
+from property_archiver.storage.writer import ArchiveWriter
+from property_archiver.utils.url_resolver import resolve_input_targets
+
+logger = logging.getLogger(__name__)
+
+
+class DashboardRequestHandler(BaseHTTPRequestHandler):
+    """Handles REST API and Single-Page Application requests for the Dashboard."""
+
+    server_version = "PropertyArchiverDashboard/1.0"
+
+    @property
+    def archive_dir(self) -> Path:
+        return self.server.archive_dir  # type: ignore
+
+    def do_GET(self):
+        """Handle GET requests."""
+        parsed_url = urllib.parse.urlparse(self.path)
+        path = parsed_url.path
+        query = urllib.parse.parse_qs(parsed_url.query)
+
+        # 1. Root SPA HTML
+        if path in ("/", "/index.html", "/dashboard"):
+            self._send_html_response(DASHBOARD_HTML)
+            return
+
+        # 2. API: List all archived listings
+        if path == "/api/listings":
+            self._handle_api_list_listings()
+            return
+
+        # 3. API: Single listing details
+        if path.startswith("/api/listings/"):
+            parts = [p for p in path.split("/") if p]
+            if len(parts) == 3:
+                listing_id = parts[2]
+                self._handle_api_get_listing(listing_id)
+                return
+            elif len(parts) == 5 and parts[3] == "image":
+                listing_id = parts[2]
+                image_filename = parts[4]
+                self._handle_api_get_image(listing_id, image_filename)
+                return
+
+        # 4. API: Export portfolio
+        if path == "/api/export":
+            export_fmt = query.get("format", ["csv"])[0]
+            self._handle_api_export(export_fmt)
+            return
+
+        # 5. Placeholder SVG image
+        if path == "/api/placeholder":
+            svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#1e293b" width="600" height="400"/><text fill="#94a3b8" font-family="sans-serif" font-size="24" dy="10.5" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
+            self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
+            return
+
+        # Not Found
+        self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
+
+    def do_POST(self):
+        """Handle POST requests."""
+        parsed_url = urllib.parse.urlparse(self.path)
+        path = parsed_url.path
+
+        if path == "/api/fetch":
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length)
+            try:
+                payload = json.loads(body.decode("utf-8"))
+                target = payload.get("target")
+                if not target:
+                    self._send_json_response({"success": False, "error": "Target URL/ID is required"}, HTTPStatus.BAD_REQUEST)
+                    return
+                self._handle_api_fetch_listing(target)
+            except Exception as exc:
+                self._send_json_response({"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
+
+        self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
+
+    def _handle_api_list_listings(self):
+        """Return array of summary records for all archived listings."""
+        listings_base = self.archive_dir / "listings"
+        results: list[dict[str, Any]] = []
+
+        if listings_base.exists():
+            for item in listings_base.iterdir():
+                if item.is_dir() and (item / "listing.json").exists():
+                    try:
+                        record = ArchiveReader.load_listing(item)
+                        hero_url = None
+                        if record.images:
+                            for img in record.images:
+                                if img.local_filename and (item / "images" / img.local_filename).exists():
+                                    hero_url = f"/api/listings/{record.listing_id}/image/{img.local_filename}"
+                                    break
+
+                        results.append({
+                            "listing_id": record.listing_id,
+                            "portal_name": record.portal_name,
+                            "title": record.title,
+                            "property_type": record.property_type,
+                            "listing_status": record.listing_status,
+                            "is_under_offer": record.is_under_offer,
+                            "is_sold": record.is_sold,
+                            "status_badges": record.status_badges,
+                            "price": record.price.model_dump(),
+                            "location": record.location.model_dump(),
+                            "features": record.features.model_dump(),
+                            "erf_size_m2": record.erf_size_m2,
+                            "floor_size_m2": record.floor_size_m2,
+                            "images_count": len(record.images),
+                            "hero_image_url": hero_url,
+                            "extracted_at": record.extracted_at.isoformat(),
+                        })
+                    except Exception as exc:
+                        logger.error("Failed loading listing %s: %s", item.name, exc)
+
+        self._send_json_response(results)
+
+    def _handle_api_get_listing(self, listing_id: str):
+        """Return full details for a listing."""
+        try:
+            listing_dir = safe_join_path(self.archive_dir / "listings", listing_id)
+            if not listing_dir.exists():
+                self.send_error(HTTPStatus.NOT_FOUND, f"Listing {listing_id} not found")
+                return
+
+            record = ArchiveReader.load_listing(listing_dir)
+            metadata = ArchiveReader.load_metadata(listing_dir)
+            manifest = ArchiveReader.load_manifest(listing_dir)
+
+            self._send_json_response({
+                "listing": record.model_dump(mode="json"),
+                "metadata": metadata.model_dump(mode="json"),
+                "checksums": manifest.model_dump(mode="json"),
+            })
+        except Exception as exc:
+            self._send_json_response({"error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+
+    def _handle_api_get_image(self, listing_id: str, filename: str):
+        """Serve an archived image file safely."""
+        try:
+            listing_dir = safe_join_path(self.archive_dir / "listings", listing_id)
+            img_path = safe_join_path(listing_dir / "images", filename)
+            if not img_path.exists() or not img_path.is_file():
+                self.send_error(HTTPStatus.NOT_FOUND, "Image not found")
+                return
+
+            mime_type, _ = mimetypes.guess_type(str(img_path))
+            mime_type = mime_type or "image/jpeg"
+
+            with open(img_path, "rb") as f:
+                img_bytes = f.read()
+
+            self._send_response_bytes(img_bytes, mime_type)
+        except Exception:
+            self.send_error(HTTPStatus.FORBIDDEN, "Access denied")
+
+    def _handle_api_export(self, export_fmt: str):
+        """Export archived listings as CSV."""
+        listings_base = self.archive_dir / "listings"
+        rows: list[dict[str, Any]] = []
+
+        if listings_base.exists():
+            for item in listings_base.iterdir():
+                if item.is_dir() and (item / "listing.json").exists():
+                    try:
+                        rec = ArchiveReader.load_listing(item)
+                        rows.append({
+                            "listing_id": rec.listing_id,
+                            "portal": rec.portal_name,
+                            "title": rec.title,
+                            "status": rec.listing_status,
+                            "is_under_offer": rec.is_under_offer,
+                            "is_sold": rec.is_sold,
+                            "price_zar": rec.price.amount,
+                            "rates_taxes_monthly": rec.price.rates_and_taxes_monthly,
+                            "levies_monthly": rec.price.levies_monthly,
+                            "street_address": rec.location.street_address,
+                            "suburb": rec.location.suburb,
+                            "city": rec.location.city,
+                            "province": rec.location.province,
+                            "latitude": rec.location.latitude,
+                            "longitude": rec.location.longitude,
+                            "bedrooms": rec.features.bedrooms,
+                            "bathrooms": rec.features.bathrooms,
+                            "garages": rec.features.garages,
+                            "erf_size_m2": rec.erf_size_m2,
+                            "floor_size_m2": rec.floor_size_m2,
+                            "images_count": len(rec.images),
+                            "canonical_url": rec.canonical_url,
+                            "extracted_at": rec.extracted_at.isoformat(),
+                        })
+                    except Exception:
+                        pass
+
+        if not rows:
+            csv_output = "listing_id,portal,title,status,price_zar\n"
+        else:
+            output = io.StringIO()
+            writer = csv.DictWriter(output, fieldnames=list(rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(rows)
+            csv_output = output.getvalue()
+
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "text/csv; charset=utf-8")
+        self.send_header("Content-Disposition", "attachment; filename=archived_properties.csv")
+        self.send_header("Content-Length", str(len(csv_output.encode("utf-8"))))
+        self.end_headers()
+        self.wfile.write(csv_output.encode("utf-8"))
+
+    def _handle_api_fetch_listing(self, target: str):
+        """Execute ingestion & archival for a target from the dashboard UI."""
+        resolved = resolve_input_targets([target])
+        if not resolved:
+            self._send_json_response({"success": False, "error": f"Invalid target: {target}"}, HTTPStatus.BAD_REQUEST)
+            return
+
+        target_url = resolved[0]
+        cfg = settings.model_copy()
+        cfg.archive_dir = self.archive_dir
+        cfg.download_images = True
+
+        fetcher = Fetcher(config=cfg)
+        result = fetcher.fetch_url(target_url)
+
+        extractor = get_extractor_for_url_or_html(result.url)
+        listing = extractor.extract(result.text, result.url)
+
+        writer = ArchiveWriter(config=cfg)
+        staging_dir, images_dir = writer.create_staging_dir(listing.listing_id, cfg.archive_dir)
+
+        if listing.images:
+            downloader = ImageDownloader(config=cfg)
+            listing.images = downloader.download_all(listing.images, images_dir)
+
+        metadata = ArchiveMetadata(
+            schema_version="1.0.0",
+            listing_id=listing.listing_id,
+            source_url=result.url,
+            archiver_version="1.0.0",
+            fetch_mode="http",
+            http_status=result.status_code,
+            response_headers=result.headers,
+            fetch_duration_sec=result.duration_sec,
+            total_images_discovered=len(listing.images),
+            total_images_archived=sum(1 for img in listing.images if img.local_filename is not None),
+            content_fingerprint=listing.content_fingerprint,
+        )
+
+        archive_path = writer.commit_archive(
+            staging_dir=staging_dir,
+            listing=listing,
+            raw_html=result.content,
+            metadata=metadata,
+            output_base_dir=cfg.archive_dir,
+        )
+
+        self._send_json_response({
+            "success": True,
+            "listing_id": listing.listing_id,
+            "title": listing.title,
+            "archive_path": str(archive_path),
+        })
+
+    def _send_html_response(self, html_content: str):
+        content_bytes = html_content.encode("utf-8")
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(content_bytes)))
+        self.end_headers()
+        self.wfile.write(content_bytes)
+
+    def _send_json_response(self, data: Any, status: HTTPStatus = HTTPStatus.OK):
+        body = json.dumps(data, indent=2).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def _send_response_bytes(self, content_bytes: bytes, mime_type: str):
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", mime_type)
+        self.send_header("Content-Length", str(len(content_bytes)))
+        self.end_headers()
+        self.wfile.write(content_bytes)
+
+    def log_message(self, format, *args):
+        logger.debug("%s - - [%s] %s", self.address_string(), self.log_date_time_string(), format % args)
+
+
+class DashboardServer:
+    """Manager for running the threaded dashboard HTTP server."""
+
+    def __init__(self, host: str = "127.0.0.1", port: int = 8000, archive_dir: Path | str = "./archive"):
+        self.host = host
+        self.port = port
+        self.archive_dir = Path(archive_dir).resolve()
+        self.server = ThreadingHTTPServer((self.host, self.port), DashboardRequestHandler)
+        self.server.archive_dir = self.archive_dir  # type: ignore
+
+    def start(self):
+        """Start serving requests indefinitely."""
+        logger.info("Dashboard server starting on http://%s:%s (Archive: %s)", self.host, self.port, self.archive_dir)
+        try:
+            self.server.serve_forever()
+        except KeyboardInterrupt:
+            logger.info("Dashboard server stopped by user.")
+        finally:
+            self.server.server_close()
+
+    def start_background(self) -> threading.Thread:
+        """Start serving in a background thread."""
+        thread = threading.Thread(target=self.start, daemon=True)
+        thread.start()
+        return thread
