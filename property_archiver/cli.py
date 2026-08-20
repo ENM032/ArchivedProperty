@@ -5,6 +5,7 @@ Click & Rich Command-Line Interface for Property Archiver.
 import logging
 import sys
 import time
+import webbrowser
 from pathlib import Path
 
 import click
@@ -17,6 +18,7 @@ from property_archiver.config import settings
 from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.exceptions import PropertyArchiverError
 from property_archiver.core.fetcher import Fetcher
+from property_archiver.dashboard.server import DashboardServer
 from property_archiver.extractors import get_extractor_for_url_or_html
 from property_archiver.images.downloader import ImageDownloader
 from property_archiver.models.archive import ArchiveMetadata
@@ -48,7 +50,6 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
 
     is_local_file = Path(target).exists()
 
-    # Step 1: Ingestion
     console.print(f"[yellow]Ingesting source:[/yellow] [green]{target}[/green]")
     start_time = time.time()
 
@@ -76,7 +77,6 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
             console.print(f"[bold red]Fetch failed for {target}:[/bold red] {exc}")
             return False
 
-    # Step 2: Extraction
     extractor = get_extractor_for_url_or_html(url)
     try:
         listing = extractor.extract(raw_html, url)
@@ -89,11 +89,9 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
         status_str += f" ({', '.join(listing.status_badges)})"
     console.print(f"[green]Data extracted for listing ID: {listing.listing_id}[/green] | {status_str}")
 
-    # Prepare Staging Directory
     writer = ArchiveWriter(config=cfg)
     staging_dir, images_dir = writer.create_staging_dir(listing.listing_id, cfg.archive_dir)
 
-    # Step 3: Images
     archived_images_count = 0
     if cfg.download_images and listing.images:
         console.print(f"[yellow]Downloading {len(listing.images)} gallery images...[/yellow]")
@@ -102,7 +100,6 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
         archived_images_count = sum(1 for img in listing.images if img.local_filename is not None)
         console.print(f"[green]Archived {archived_images_count}/{len(listing.images)} images.[/green]")
 
-    # Step 4: Write Archive
     metadata = ArchiveMetadata(
         schema_version="1.0.0",
         listing_id=listing.listing_id,
@@ -129,7 +126,6 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
         console.print(f"[bold red]Storage error for {target}:[/bold red] {exc}")
         return False
 
-    # Display Summary Card
     badges_display = f" | Badges: {', '.join(listing.status_badges)}" if listing.status_badges else ""
     card_text = (
         f"[bold white]{listing.title or 'Property Listing'}[/bold white]\n"
@@ -167,18 +163,10 @@ def fetch_command(
 ):
     """
     Fetch and archive listings from URLs, short IDs (e.g. 'T4710876'), files, or clipboard.
-
-    Examples:
-      property-archiver fetch T4710876
-      property-archiver fetch https://www.privateproperty.co.za/...
-      property-archiver fetch -c
-      property-archiver fetch ./snapshots/*.html
     """
     console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
 
     raw_targets = list(targets)
-
-    # If clipboard flag requested or no arguments provided, attempt reading clipboard
     if clipboard or not raw_targets:
         clip_text = get_clipboard_text()
         if clip_text:
@@ -189,7 +177,6 @@ def fetch_command(
             console.print("Usage: [green]property-archiver fetch <URL_OR_ID>[/green] or [green]property-archiver fetch -c[/green]")
             sys.exit(1)
 
-    # Resolve IDs, URLs, and Globs
     resolved = resolve_input_targets(raw_targets)
     if not resolved:
         console.print("[bold red]No valid targets found to archive.[/bold red]")
@@ -206,6 +193,68 @@ def fetch_command(
 
     if len(resolved) > 1:
         console.print(f"\n[bold green]Batch complete: {success_count}/{len(resolved)} listings archived successfully.[/bold green]")
+
+
+@main.command(name="serve")
+@click.option("--port", "-p", type=int, default=8000, help="Web dashboard port")
+@click.option("--host", "-h", type=str, default="127.0.0.1", help="Host interface to bind to")
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+@click.option("--open-browser/--no-open", default=True, help="Automatically open default web browser")
+def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
+    """
+    Launch the Unified Local Web Dashboard for exploring and inspecting archives.
+    """
+    url = f"http://{host}:{port}"
+    console.print(f"[bold cyan]Property Archiver Dashboard[/bold cyan] v{__version__}")
+    console.print(f"Archive Directory: [green]{Path(archive_dir).resolve()}[/green]")
+    console.print(f"Dashboard URL: [bold green]{url}[/bold green]")
+    console.print("Press [bold yellow]Ctrl+C[/bold yellow] to stop the server.\n")
+
+    server = DashboardServer(host=host, port=port, archive_dir=archive_dir)
+
+    if open_browser:
+        def _open():
+            time.sleep(0.5)
+            webbrowser.open(url)
+        import threading
+        threading.Thread(target=_open, daemon=True).start()
+
+    server.start()
+
+
+@main.command(name="dashboard")
+@click.pass_context
+def dashboard_alias(ctx):
+    """Alias for 'serve' command."""
+    ctx.forward(serve_command)
+
+
+@main.command(name="view")
+@click.argument("listing_id", type=str)
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory")
+@click.option("--port", "-p", type=int, default=8000, help="Web dashboard port")
+def view_command(listing_id: str, archive_dir: str, port: int):
+    """
+    Open a specific archived listing directly in the visual web dossier.
+    """
+    clean_id = listing_id.strip().strip("/").upper()
+    listing_path = Path(archive_dir) / "listings" / clean_id
+    if not listing_path.exists():
+        console.print(f"[bold red]Archive not found for listing ID:[/bold red] {clean_id}")
+        sys.exit(1)
+
+    url = f"http://127.0.0.1:{port}"
+    console.print(f"Opening listing [bold green]{clean_id}[/bold green] at [cyan]{url}[/cyan]...")
+    
+    server = DashboardServer(host="127.0.0.1", port=port, archive_dir=archive_dir)
+    
+    def _open():
+        time.sleep(0.5)
+        webbrowser.open(url)
+    import threading
+    threading.Thread(target=_open, daemon=True).start()
+
+    server.start()
 
 
 @main.command(name="inspect")
