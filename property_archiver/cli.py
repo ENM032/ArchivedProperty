@@ -19,6 +19,7 @@ from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.exceptions import PropertyArchiverError
 from property_archiver.core.fetcher import Fetcher
 from property_archiver.dashboard.server import DashboardServer
+from property_archiver.export.exporter import PortfolioExporter
 from property_archiver.extractors import get_extractor_for_url_or_html
 from property_archiver.images.downloader import ImageDownloader
 from property_archiver.models.archive import ArchiveMetadata
@@ -161,9 +162,7 @@ def fetch_command(
     rate_limit: float,
     user_agent: str | None
 ):
-    """
-    Fetch and archive listings from URLs, short IDs (e.g. 'T4710876'), files, or clipboard.
-    """
+    """Fetch and archive listings from URLs, short IDs, files, or clipboard."""
     console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
 
     raw_targets = list(targets)
@@ -174,7 +173,6 @@ def fetch_command(
             raw_targets.append(clip_text)
         elif not raw_targets:
             console.print("[bold red]No target provided and clipboard is empty.[/bold red]")
-            console.print("Usage: [green]property-archiver fetch <URL_OR_ID>[/green] or [green]property-archiver fetch -c[/green]")
             sys.exit(1)
 
     resolved = resolve_input_targets(raw_targets)
@@ -195,15 +193,46 @@ def fetch_command(
         console.print(f"\n[bold green]Batch complete: {success_count}/{len(resolved)} listings archived successfully.[/bold green]")
 
 
+@main.command(name="export")
+@click.option("--format", "-f", "export_format", type=click.Choice(["csv", "sqlite", "jsonl", "geojson"], case_sensitive=False), default="csv", help="Export format")
+@click.option("--output", "-o", "output_path", type=click.Path(), default=None, help="Destination output file path")
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def export_command(export_format: str, output_path: str | None, archive_dir: str):
+    """
+    Export all archived listings into CSV, SQLite, JSONL, or GeoJSON formats.
+    """
+    fmt = export_format.lower()
+    default_names = {
+        "csv": "portfolio.csv",
+        "sqlite": "portfolio.db",
+        "jsonl": "portfolio.jsonl",
+        "geojson": "portfolio.geojson",
+    }
+    target_out = Path(output_path or default_names[fmt])
+
+    console.print(f"[bold cyan]Exporting portfolio to {fmt.upper()}...[/bold cyan]")
+    if fmt == "csv":
+        out = PortfolioExporter.export_csv(archive_dir, target_out)
+    elif fmt == "sqlite":
+        out = PortfolioExporter.export_sqlite(archive_dir, target_out)
+    elif fmt == "jsonl":
+        out = PortfolioExporter.export_jsonl(archive_dir, target_out)
+    elif fmt == "geojson":
+        out = PortfolioExporter.export_geojson(archive_dir, target_out)
+    else:
+        console.print(f"[red]Unsupported format: {fmt}[/red]")
+        sys.exit(1)
+
+    console.print(f"[bold green]Successfully exported to:[/bold green] [cyan]{out}[/cyan]")
+
+
 @main.command(name="serve")
 @click.option("--port", "-p", type=int, default=8000, help="Web dashboard port")
 @click.option("--host", "-h", type=str, default="127.0.0.1", help="Host interface to bind to")
 @click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
 @click.option("--open-browser/--no-open", default=True, help="Automatically open default web browser")
 def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
-    """
-    Launch the Unified Local Web Dashboard for exploring and inspecting archives.
-    """
+    """Launch the Unified Local Web Dashboard."""
     url = f"http://{host}:{port}"
     console.print(f"[bold cyan]Property Archiver Dashboard[/bold cyan] v{__version__}")
     console.print(f"Archive Directory: [green]{Path(archive_dir).resolve()}[/green]")
@@ -234,9 +263,7 @@ def dashboard_alias(ctx):
 @click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory")
 @click.option("--port", "-p", type=int, default=8000, help="Web dashboard port")
 def view_command(listing_id: str, archive_dir: str, port: int):
-    """
-    Open a specific archived listing directly in the visual web dossier.
-    """
+    """Open a specific archived listing directly in the visual web dossier."""
     clean_id = listing_id.strip().strip("/").upper()
     listing_path = Path(archive_dir) / "listings" / clean_id
     if not listing_path.exists():
@@ -247,7 +274,6 @@ def view_command(listing_id: str, archive_dir: str, port: int):
     console.print(f"Opening listing [bold green]{clean_id}[/bold green] at [cyan]{url}[/cyan]...")
     
     server = DashboardServer(host="127.0.0.1", port=port, archive_dir=archive_dir)
-    
     def _open():
         time.sleep(0.5)
         webbrowser.open(url)

@@ -1,9 +1,8 @@
 """
 Embedded HTTP server and REST API for the Unified Property Archiver Dashboard.
-Built using standard library http.server with zero external heavy web dependencies.
+Supports /api/compare and /api/export (csv, sqlite, jsonl, geojson).
 """
 
-import csv
 import io
 import json
 import logging
@@ -17,9 +16,11 @@ from pathlib import Path
 from typing import Any
 
 from property_archiver.config import settings
+from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.fetcher import Fetcher
 from property_archiver.core.security import safe_join_path
 from property_archiver.dashboard.app_html import DASHBOARD_HTML
+from property_archiver.export.exporter import PortfolioExporter
 from property_archiver.extractors import get_extractor_for_url_or_html
 from property_archiver.images.downloader import ImageDownloader
 from property_archiver.models.archive import ArchiveMetadata
@@ -55,7 +56,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self._handle_api_list_listings()
             return
 
-        # 3. API: Single listing details
+        # 3. API: Single listing details or image
         if path.startswith("/api/listings/"):
             parts = [p for p in path.split("/") if p]
             if len(parts) == 3:
@@ -68,19 +69,25 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                 self._handle_api_get_image(listing_id, image_filename)
                 return
 
-        # 4. API: Export portfolio
+        # 4. API: Compare two archives
+        if path == "/api/compare":
+            id_a = query.get("a", [""])[0]
+            id_b = query.get("b", [""])[0]
+            self._handle_api_compare(id_a, id_b)
+            return
+
+        # 5. API: Multi-format export (CSV, SQLite, JSONL, GeoJSON)
         if path == "/api/export":
-            export_fmt = query.get("format", ["csv"])[0]
+            export_fmt = query.get("format", ["csv"])[0].lower()
             self._handle_api_export(export_fmt)
             return
 
-        # 5. Placeholder SVG image
+        # 6. Placeholder SVG image
         if path == "/api/placeholder":
             svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#1e293b" width="600" height="400"/><text fill="#94a3b8" font-family="sans-serif" font-size="24" dy="10.5" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
             self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
             return
 
-        # Not Found
         self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
 
     def do_POST(self):
@@ -134,6 +141,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                             "location": record.location.model_dump(),
                             "features": record.features.model_dump(),
                             "erf_size_m2": record.erf_size_m2,
+                            "land_size_raw": record.land_size_raw,
                             "floor_size_m2": record.floor_size_m2,
                             "images_count": len(record.images),
                             "hero_image_url": hero_url,
@@ -183,59 +191,87 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
         except Exception:
             self.send_error(HTTPStatus.FORBIDDEN, "Access denied")
 
+    def _handle_api_compare(self, id_a: str, id_b: str):
+        """Compare two listings or snapshots."""
+        try:
+            dir_a = safe_join_path(self.archive_dir / "listings", id_a)
+            dir_b = safe_join_path(self.archive_dir / "listings", id_b)
+            if not dir_a.exists() or not dir_b.exists():
+                self.send_error(HTTPStatus.NOT_FOUND, "One or both listings not found")
+                return
+
+            diff = ChangeDetector.compare_archives(dir_a, dir_b)
+            self._send_json_response({
+                "listing_id": diff.listing_id,
+                "is_identical": diff.is_identical,
+                "price_changed": diff.price_changed,
+                "old_price": diff.old_price,
+                "new_price": diff.new_price,
+                "price_diff": diff.price_diff,
+                "status_changed": diff.status_changed,
+                "old_status": diff.old_status,
+                "new_status": diff.new_status,
+                "badges_added": diff.badges_added,
+                "badges_removed": diff.badges_removed,
+                "spec_changes": diff.spec_changes,
+                "added_features": diff.added_features,
+                "removed_features": diff.removed_features,
+            })
+        except Exception as exc:
+            self._send_json_response({"error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+
     def _handle_api_export(self, export_fmt: str):
-        """Export archived listings as CSV."""
-        listings_base = self.archive_dir / "listings"
-        rows: list[dict[str, Any]] = []
+        """Export portfolio in requested format."""
+        temp_dir = Path("./scratch")
+        temp_dir.mkdir(parents=True, exist_ok=True)
 
-        if listings_base.exists():
-            for item in listings_base.iterdir():
-                if item.is_dir() and (item / "listing.json").exists():
-                    try:
-                        rec = ArchiveReader.load_listing(item)
-                        rows.append({
-                            "listing_id": rec.listing_id,
-                            "portal": rec.portal_name,
-                            "title": rec.title,
-                            "status": rec.listing_status,
-                            "is_under_offer": rec.is_under_offer,
-                            "is_sold": rec.is_sold,
-                            "price_zar": rec.price.amount,
-                            "rates_taxes_monthly": rec.price.rates_and_taxes_monthly,
-                            "levies_monthly": rec.price.levies_monthly,
-                            "street_address": rec.location.street_address,
-                            "suburb": rec.location.suburb,
-                            "city": rec.location.city,
-                            "province": rec.location.province,
-                            "latitude": rec.location.latitude,
-                            "longitude": rec.location.longitude,
-                            "bedrooms": rec.features.bedrooms,
-                            "bathrooms": rec.features.bathrooms,
-                            "garages": rec.features.garages,
-                            "erf_size_m2": rec.erf_size_m2,
-                            "floor_size_m2": rec.floor_size_m2,
-                            "images_count": len(rec.images),
-                            "canonical_url": rec.canonical_url,
-                            "extracted_at": rec.extracted_at.isoformat(),
-                        })
-                    except Exception:
-                        pass
+        if export_fmt == "sqlite":
+            out_file = temp_dir / "portfolio.db"
+            PortfolioExporter.export_sqlite(self.archive_dir, out_file)
+            with open(out_file, "rb") as f:
+                content = f.read()
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "application/x-sqlite3")
+            self.send_header("Content-Disposition", "attachment; filename=portfolio.db")
+            self.send_header("Content-Length", str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
 
-        if not rows:
-            csv_output = "listing_id,portal,title,status,price_zar\n"
-        else:
-            output = io.StringIO()
-            writer = csv.DictWriter(output, fieldnames=list(rows[0].keys()))
-            writer.writeheader()
-            writer.writerows(rows)
-            csv_output = output.getvalue()
+        elif export_fmt == "jsonl":
+            out_file = temp_dir / "portfolio.jsonl"
+            PortfolioExporter.export_jsonl(self.archive_dir, out_file)
+            with open(out_file, "rb") as f:
+                content = f.read()
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "application/x-ndjson; charset=utf-8")
+            self.send_header("Content-Disposition", "attachment; filename=portfolio.jsonl")
+            self.send_header("Content-Length", str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
 
-        self.send_response(HTTPStatus.OK)
-        self.send_header("Content-Type", "text/csv; charset=utf-8")
-        self.send_header("Content-Disposition", "attachment; filename=archived_properties.csv")
-        self.send_header("Content-Length", str(len(csv_output.encode("utf-8"))))
-        self.end_headers()
-        self.wfile.write(csv_output.encode("utf-8"))
+        elif export_fmt == "geojson":
+            out_file = temp_dir / "portfolio.geojson"
+            PortfolioExporter.export_geojson(self.archive_dir, out_file)
+            with open(out_file, "rb") as f:
+                content = f.read()
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "application/geo+json; charset=utf-8")
+            self.send_header("Content-Disposition", "attachment; filename=portfolio.geojson")
+            self.send_header("Content-Length", str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
+
+        else:  # Default to CSV
+            out_file = temp_dir / "portfolio.csv"
+            PortfolioExporter.export_csv(self.archive_dir, out_file)
+            with open(out_file, "rb") as f:
+                content = f.read()
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "text/csv; charset=utf-8")
+            self.send_header("Content-Disposition", "attachment; filename=portfolio.csv")
+            self.send_header("Content-Length", str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
 
     def _handle_api_fetch_listing(self, target: str):
         """Execute ingestion & archival for a target from the dashboard UI."""
