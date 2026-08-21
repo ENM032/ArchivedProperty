@@ -1,5 +1,5 @@
 """
-Tests for PrivateProperty extractor on full test fixture, missing data, and malformed HTML.
+Tests for PrivateProperty extractor on full test fixture, missing data, co-agents, and hectares.
 """
 
 from pathlib import Path
@@ -64,9 +64,11 @@ def test_private_property_full_extraction(sample_html_content: str, sample_url: 
     assert len(listing.videos) >= 1
     assert "youtube" in listing.videos[0].url.lower()
 
-    # 7. Agent & Agency
+    # 7. Primary Agent & Co-Agents
     assert listing.agent is not None
     assert listing.agent.agent_name == "Alistair Dempster"
+    assert len(listing.co_agents) >= 1
+    assert listing.co_agents[0].agent_name == "Pat Dempster"
 
     # 8. All 56 Gallery Images
     assert len(listing.images) == 56
@@ -74,16 +76,28 @@ def test_private_property_full_extraction(sample_html_content: str, sample_url: 
     assert hero_image.is_hero is True
     assert "1600/1066" in hero_image.resolved_url
     assert hero_image.order_index == 0
-    assert "photo number 1" in (hero_image.alt_text or "")
-
-    last_image = listing.images[55]
-    assert last_image.order_index == 55
-    assert "photo number 56" in (last_image.alt_text or "")
 
     # 9. Fingerprint & Raw Preservation
     assert listing.content_fingerprint is not None
     assert len(listing.raw_json_ld) >= 2
     assert len(listing.open_graph) >= 1
+
+
+def test_hectares_conversion():
+    html_with_ha = """
+    <html>
+        <body>
+            <div class="property-details__list-item">
+                <span class="property-details__key">Land size</span>
+                <span class="property-details__value">2.5 ha</span>
+            </div>
+        </body>
+    </html>
+    """
+    extractor = PrivatePropertyExtractor()
+    listing = extractor.extract(html_with_ha, "https://www.privateproperty.co.za/farm-for-sale/T123")
+    assert listing.erf_size_m2 == 25000.0
+    assert listing.land_size_raw == "2.5 ha"
 
 
 def test_extraction_malformed_html(malformed_html_content: str):

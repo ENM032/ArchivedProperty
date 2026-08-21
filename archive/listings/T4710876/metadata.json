@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "listing_id": "T4710876",
   "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876",
-  "archived_at": "2026-08-20T14:40:57.854843Z",
+  "archived_at": "2026-08-21T10:04:30.100477Z",
   "archiver_version": "1.0.0",
   "fetch_mode": "http",
   "http_status": 200,
@@ -12,7 +12,7 @@
     "content-encoding": "gzip",
     "vary": "Accept-Encoding",
     "server": "Microsoft-IIS/10.0",
-    "x-stackifyid": "V2|6310c12a-08a6-4401-8be6-fb263cfc87cc|C2143|CD887",
+    "x-stackifyid": "V2|ad8c0254-de6f-4fea-bc86-a65f74d364fa|C2143|CD888",
     "x-aspnetmvc-version": "5.2",
     "x-aspnet-version": "4.0.30319",
     "set-cookie": "bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
@@ -20,12 +20,12 @@
     "access-control-expose-headers": "Request-Context",
     "x-powered-by": "ASP.NET",
     "x-frame-options": "sameorigin",
-    "date": "Thu, 20 Aug 2026 14:40:50 GMT",
-    "content-length": "31393"
+    "date": "Fri, 21 Aug 2026 10:04:26 GMT",
+    "content-length": "31630"
   },
-  "fetch_duration_sec": 1.5394604206085205,
+  "fetch_duration_sec": 1.627025842666626,
   "total_images_discovered": 56,
   "total_images_archived": 56,
-  "total_archive_size_bytes": 13439684,
-  "content_fingerprint": "b73721bdf5eb6a43c5de82ce0effa29236cbd334f161e17e444a34d150383639"
+  "total_archive_size_bytes": 13441007,
+  "content_fingerprint": "7662b5bf6d7f304fb3c14df7705d3fbfb2cec22bd1a8ae094e833e9e62e15d3c"
 }
