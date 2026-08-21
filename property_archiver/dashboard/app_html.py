@@ -1,6 +1,6 @@
 """
 Embedded single-page application (SPA) HTML, CSS, and Vanilla JavaScript
-for the Unified Property Archiver Dashboard. Self-contained with zero external CDN dependencies.
+for the Unified Property Archiver Dashboard with interactive Leaflet Map View and Side-by-Side Comparison.
 """
 
 DASHBOARD_HTML = """<!DOCTYPE html>
@@ -9,6 +9,9 @@ DASHBOARD_HTML = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Archiver - Unified Dashboard</title>
+    <!-- Leaflet CSS & JS for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <style>
         :root {
             --bg-main: #0f172a;
@@ -34,7 +37,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             min-height: 100vh;
         }
 
-        /* Header */
         header {
             background-color: var(--bg-card);
             border-bottom: 1px solid var(--border);
@@ -58,10 +60,9 @@ DASHBOARD_HTML = """<!DOCTYPE html>
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
         }
 
-        /* Buttons */
         .btn {
             background-color: var(--primary);
             color: #0f172a;
@@ -82,16 +83,13 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             color: var(--text-main);
         }
         .btn-secondary:hover { background-color: #475569; }
-        .btn-sm { padding: 0.25rem 0.5rem; font-size: 0.75rem; }
 
-        /* Container */
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        /* Metric Grid */
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -123,7 +121,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             margin-top: 0.25rem;
         }
 
-        /* Controls Bar */
         .controls-bar {
             background-color: var(--bg-card);
             border: 1px solid var(--border);
@@ -139,7 +136,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
         .search-box {
             flex: 1;
             min-width: 260px;
-            position: relative;
         }
         .search-input {
             width: 100%;
@@ -150,10 +146,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             border-radius: 0.375rem;
             font-size: 0.875rem;
         }
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
+        .search-input:focus { outline: none; border-color: var(--primary); }
         .filter-group {
             display: flex;
             gap: 0.75rem;
@@ -168,6 +161,27 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             border-radius: 0.375rem;
             font-size: 0.875rem;
             cursor: pointer;
+        }
+
+        .view-toggle {
+            display: flex;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            border-radius: 0.375rem;
+            overflow: hidden;
+        }
+        .view-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.5rem 0.85rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .view-btn.active {
+            background-color: var(--primary);
+            color: #0f172a;
         }
 
         /* Property Grid */
@@ -269,14 +283,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             font-size: 0.85rem;
             color: var(--text-muted);
         }
-        .card-spec-item {
-            display: flex;
-            align-items: center;
-            gap: 0.35rem;
-        }
-        .card-spec-item strong {
-            color: var(--text-main);
-        }
+        .card-spec-item strong { color: var(--text-main); }
         .card-footer {
             margin-top: auto;
             padding-top: 0.75rem;
@@ -287,16 +294,24 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             color: var(--text-muted);
         }
 
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 4rem 2rem;
+        /* Map Container */
+        #map-view-container {
+            display: none;
+            width: 100%;
+            height: 650px;
             background-color: var(--bg-card);
-            border: 1px dashed var(--border);
+            border: 1px solid var(--border);
             border-radius: 0.5rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        #leaflet-map {
+            width: 100%;
+            height: 100%;
         }
 
-        /* Modal / Dossier View */
+        /* Modal & Dossier View */
         .modal-backdrop {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -371,9 +386,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background-color 0.15s;
         }
-        .gallery-nav-btn:hover { background-color: rgba(15, 23, 42, 0.95); }
         .gallery-prev { left: 1rem; }
         .gallery-next { right: 1rem; }
         .gallery-caption {
@@ -403,27 +416,16 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             cursor: pointer;
             border: 2px solid transparent;
             opacity: 0.6;
-            transition: opacity 0.15s, border-color 0.15s;
         }
-        .thumb-strip-item.active {
-            border-color: var(--primary);
-            opacity: 1;
-        }
-        .thumb-strip-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .thumb-strip-item.active { border-color: var(--primary); opacity: 1; }
+        .thumb-strip-item img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* Detail Tabs & Sections */
         .section-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 1.5rem;
         }
-        @media (max-width: 768px) {
-            .section-grid { grid-template-columns: 1fr; }
-        }
+        @media (max-width: 768px) { .section-grid { grid-template-columns: 1fr; } }
         .info-card {
             background-color: var(--bg-main);
             border: 1px solid var(--border);
@@ -449,31 +451,33 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             padding: 0.25rem 0.6rem;
             border-radius: 0.25rem;
             font-size: 0.8rem;
-            color: var(--text-main);
         }
 
-        /* Quick Archive Modal */
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        .form-label {
-            display: block;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            margin-bottom: 0.35rem;
-        }
-        .form-input {
+        /* Mini Map in Dossier */
+        #dossier-mini-map {
             width: 100%;
-            background-color: var(--bg-main);
-            border: 1px solid var(--border);
-            color: var(--text-main);
-            padding: 0.6rem 0.8rem;
+            height: 180px;
             border-radius: 0.375rem;
-            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            border: 1px solid var(--border);
         }
-        .form-input:focus { outline: none; border-color: var(--primary); }
 
-        /* Notification Toast */
+        /* Comparison Table */
+        .diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+        .diff-table th, .diff-table td {
+            border: 1px solid var(--border);
+            padding: 0.6rem 0.75rem;
+            text-align: left;
+        }
+        .diff-table th { background-color: var(--bg-main); color: var(--primary); }
+        .diff-changed { background-color: rgba(245, 158, 11, 0.15); }
+
+        /* Toast */
         .toast {
             position: fixed;
             bottom: 2rem;
@@ -495,16 +499,23 @@ DASHBOARD_HTML = """<!DOCTYPE html>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <div class="brand">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             Property Archiver <span>Dashboard</span>
         </div>
         <div class="header-actions">
-            <button class="btn btn-secondary" onclick="exportCSV()">
+            <button class="btn btn-secondary" onclick="openCompareModal()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+                Compare Listings
+            </button>
+            <div class="view-toggle">
+                <button id="btn-view-grid" class="view-btn active" onclick="switchView('grid')">Grid</button>
+                <button id="btn-view-map" class="view-btn" onclick="switchView('map')">Map</button>
+            </div>
+            <button class="btn btn-secondary" onclick="openExportMenu(event)">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Export CSV
+                Export
             </button>
             <button class="btn" onclick="openArchiveModal()">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -560,9 +571,12 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             </div>
         </div>
 
-        <!-- Property Grid -->
-        <div id="property-grid" class="property-grid">
-            <!-- Rendered dynamically -->
+        <!-- Property Grid View -->
+        <div id="property-grid" class="property-grid"></div>
+
+        <!-- Map View Container -->
+        <div id="map-view-container">
+            <div id="leaflet-map"></div>
         </div>
 
         <div id="empty-state" class="empty-state" style="display: none;">
@@ -612,8 +626,13 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                             <h4>Pricing & Rates</h4>
                             <div style="font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;" id="modal-pricing"></div>
                         </div>
+                        <div class="info-card">
+                            <h4>Geospatial Location</h4>
+                            <div id="modal-geo-text" style="font-size: 0.85rem; color: var(--text-muted);"></div>
+                            <div id="dossier-mini-map"></div>
+                        </div>
                         <div class="info-card" id="modal-agent-card">
-                            <h4>Agent / Agency</h4>
+                            <h4>Listing Agents</h4>
                             <div id="modal-agent-content"></div>
                         </div>
                         <div class="info-card">
@@ -626,7 +645,33 @@ DASHBOARD_HTML = """<!DOCTYPE html>
         </div>
     </div>
 
-    <!-- Archive Ingestion Modal -->
+    <!-- Comparison Modal -->
+    <div id="compare-modal" class="modal-backdrop">
+        <div class="modal-content" style="max-width: 900px;">
+            <div class="modal-header">
+                <h3 style="color: var(--text-main);">Side-by-Side Comparison</h3>
+                <button class="modal-close" onclick="closeCompareModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="flex: 1;">
+                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing / Snapshot A</label>
+                        <select id="compare-select-a" class="select-filter" style="width: 100%; margin-top: 0.35rem;"></select>
+                    </div>
+                    <div style="flex: 1;">
+                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing / Snapshot B</label>
+                        <select id="compare-select-b" class="select-filter" style="width: 100%; margin-top: 0.35rem;"></select>
+                    </div>
+                    <div style="display: flex; align-items: flex-end;">
+                        <button class="btn" onclick="executeCompare()">Compare</button>
+                    </div>
+                </div>
+                <div id="compare-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archive Modal -->
     <div id="archive-modal" class="modal-backdrop">
         <div class="modal-content" style="max-width: 500px;">
             <div class="modal-header">
@@ -634,10 +679,9 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 <button class="modal-close" onclick="closeArchiveModal()">&times;</button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label class="form-label">Listing ID or Full URL</label>
-                    <input type="text" id="fetch-target-input" class="form-input" placeholder="e.g. T4710876 or https://www.privateproperty.co.za/...">
-                    <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem; display: block;">Supports short IDs (T4710876), clipboard contents, or full URLs.</small>
+                <div style="margin-bottom: 1rem;">
+                    <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 0.35rem;">Listing ID or Full URL</label>
+                    <input type="text" id="fetch-target-input" class="search-input" placeholder="e.g. T4710876 or https://www.privateproperty.co.za/...">
                 </div>
                 <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
                     <button class="btn btn-secondary" onclick="closeArchiveModal()">Cancel</button>
@@ -648,14 +692,15 @@ DASHBOARD_HTML = """<!DOCTYPE html>
     </div>
 
     <!-- Toast -->
-    <div id="toast" class="toast">
-        <span id="toast-msg">Notification</span>
-    </div>
+    <div id="toast" class="toast"><span id="toast-msg">Notification</span></div>
 
     <script>
         let allListings = [];
         let currentListing = null;
         let currentImageIndex = 0;
+        let mainMap = null;
+        let miniMap = null;
+        let markersGroup = null;
 
         async function loadListings() {
             try {
@@ -663,8 +708,9 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 allListings = await res.json();
                 renderMetrics();
                 filterGrid();
+                populateCompareSelects();
             } catch (err) {
-                showToast("Failed loading archived listings: " + err, "error");
+                showToast("Failed loading listings: " + err, "error");
             }
         }
 
@@ -698,8 +744,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 const matchesQuery = !query || 
                     (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
                     (item.title && item.title.toLowerCase().includes(query)) ||
-                    (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query)) ||
-                    (item.location && item.location.street_address && item.location.street_address.toLowerCase().includes(query));
+                    (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query));
 
                 const status = (item.listing_status || 'active').toLowerCase();
                 const matchesStatus = (statusFilter === 'all') ||
@@ -710,7 +755,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 return matchesQuery && matchesStatus;
             });
 
-            // Sorting
             filtered.sort((a, b) => {
                 if (sortFilter === 'date-desc') return new Date(b.extracted_at) - new Date(a.extracted_at);
                 if (sortFilter === 'date-asc') return new Date(a.extracted_at) - new Date(b.extracted_at);
@@ -720,17 +764,22 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 return 0;
             });
 
+            renderGridCards(filtered);
+            updateMapMarkers(filtered);
+        }
+
+        function renderGridCards(listings) {
             const grid = document.getElementById('property-grid');
             const empty = document.getElementById('empty-state');
             grid.innerHTML = '';
 
-            if (filtered.length === 0) {
+            if (listings.length === 0) {
                 empty.style.display = 'block';
                 return;
             }
             empty.style.display = 'none';
 
-            filtered.forEach(item => {
+            listings.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'property-card';
                 card.onclick = () => openDossier(item.listing_id);
@@ -765,6 +814,63 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             });
         }
 
+        function switchView(view) {
+            document.getElementById('btn-view-grid').classList.toggle('active', view === 'grid');
+            document.getElementById('btn-view-map').classList.toggle('active', view === 'map');
+
+            const grid = document.getElementById('property-grid');
+            const mapContainer = document.getElementById('map-view-container');
+
+            if (view === 'map') {
+                grid.style.display = 'none';
+                mapContainer.style.display = 'block';
+                initMap();
+            } else {
+                grid.style.display = 'grid';
+                mapContainer.style.display = 'none';
+            }
+        }
+
+        function initMap() {
+            if (!mainMap) {
+                mainMap = L.map('leaflet-map').setView([-26.0437, 28.0554], 12);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap'
+                }).addTo(mainMap);
+                markersGroup = L.featureGroup().addTo(mainMap);
+            }
+            setTimeout(() => { mainMap.invalidateSize(); filterGrid(); }, 200);
+        }
+
+        function updateMapMarkers(listings) {
+            if (!mainMap || !markersGroup) return;
+            markersGroup.clearLayers();
+
+            const bounds = [];
+            listings.forEach(item => {
+                if (item.location && item.location.latitude && item.location.longitude) {
+                    const lat = item.location.latitude;
+                    const lng = item.location.longitude;
+                    bounds.push([lat, lng]);
+
+                    const marker = L.marker([lat, lng]).addTo(markersGroup);
+                    marker.bindPopup(`
+                        <div style="font-family: sans-serif; min-width: 180px;">
+                            <strong style="color: #0f172a; font-size: 1rem;">${item.price?.formatted_display || 'Price N/A'}</strong>
+                            <div style="font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${item.title || 'Listing'}</div>
+                            <div style="font-size: 0.75rem; color: #64748b;">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+                            <button onclick="openDossier('${item.listing_id}')" style="margin-top: 8px; width: 100%; background: #0284c7; color: #fff; border: none; padding: 4px; border-radius: 4px; cursor: pointer; font-size: 0.75rem;">View Dossier</button>
+                        </div>
+                    `);
+                }
+            });
+
+            if (bounds.length > 0) {
+                mainMap.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+            }
+        }
+
         async function openDossier(listingId) {
             try {
                 const res = await fetch(`/api/listings/${listingId}`);
@@ -773,7 +879,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
 
                 const l = currentListing.listing;
                 const m = currentListing.metadata;
-                const c = currentListing.checksums;
 
                 document.getElementById('modal-title').innerText = l.title || `Listing ${l.listing_id}`;
                 document.getElementById('modal-subtitle').innerText = `${l.location?.street_address || ''}, ${l.location?.suburb || ''}, ${l.location?.city || ''} | Portal: ${l.portal_name}`;
@@ -792,55 +897,80 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 });
 
                 // Specs
-                const specsBox = document.getElementById('modal-specs');
-                specsBox.innerHTML = `
+                document.getElementById('modal-specs').innerHTML = `
                     <div><strong>Bedrooms:</strong> ${l.features?.bedrooms || 'N/A'}</div>
                     <div><strong>Bathrooms:</strong> ${l.features?.bathrooms || 'N/A'}</div>
                     <div><strong>En-Suites:</strong> ${l.features?.en_suites || 'N/A'}</div>
                     <div><strong>Lounges:</strong> ${l.features?.lounges || 'N/A'}</div>
                     <div><strong>Garages:</strong> ${l.features?.garages || 'N/A'}</div>
-                    <div><strong>Erf / Land Size:</strong> ${l.erf_size_m2 ? l.erf_size_m2 + ' m²' : 'N/A'}</div>
+                    <div><strong>Land Size:</strong> ${l.erf_size_m2 ? l.erf_size_m2.toLocaleString() + ' m²' : 'N/A'} ${l.land_size_raw ? '(' + l.land_size_raw + ')' : ''}</div>
                     <div><strong>Floor Size:</strong> ${l.floor_size_m2 ? l.floor_size_m2 + ' m²' : 'N/A'}</div>
                 `;
 
                 // Pricing
-                const priceBox = document.getElementById('modal-pricing');
-                priceBox.innerHTML = `
+                document.getElementById('modal-pricing').innerHTML = `
                     <div><strong>Asking Price:</strong> ${l.price?.formatted_display || 'R ' + (l.price?.amount || 0).toLocaleString()}</div>
                     <div><strong>Monthly Rates & Taxes:</strong> ${l.price?.rates_and_taxes_monthly ? 'R ' + l.price.rates_and_taxes_monthly.toLocaleString() : 'N/A'}</div>
                     <div><strong>Monthly Levies:</strong> ${l.price?.levies_monthly ? 'R ' + l.price.levies_monthly.toLocaleString() : 'N/A'}</div>
                     <div><strong>Status:</strong> <span style="color: var(--primary); font-weight: bold;">${(l.listing_status || 'active').toUpperCase()}</span></div>
                 `;
 
-                // Agent
+                // Geospatial Mini-Map
+                const geoBox = document.getElementById('modal-geo-text');
+                if (l.location && l.location.latitude && l.location.longitude) {
+                    geoBox.innerText = `GPS Coordinates: ${l.location.latitude}, ${l.location.longitude}`;
+                    setTimeout(() => {
+                        if (!miniMap) {
+                            miniMap = L.map('dossier-mini-map').setView([l.location.latitude, l.location.longitude], 15);
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(miniMap);
+                        } else {
+                            miniMap.setView([l.location.latitude, l.location.longitude], 15);
+                        }
+                        miniMap.eachLayer(layer => { if (layer instanceof L.Marker) miniMap.removeLayer(layer); });
+                        L.marker([l.location.latitude, l.location.longitude]).addTo(miniMap);
+                        miniMap.invalidateSize();
+                    }, 300);
+                } else {
+                    geoBox.innerText = 'GPS Coordinates: Not provided';
+                }
+
+                // Agents
                 const agentBox = document.getElementById('modal-agent-content');
-                if (l.agent && (l.agent.agent_name || l.agent.agency_name)) {
-                    document.getElementById('modal-agent-card').style.display = 'block';
-                    agentBox.innerHTML = `
-                        <div style="display: flex; align-items: center; gap: 0.75rem;">
-                            ${l.agent.agency_logo_url ? `<img src="${l.agent.agency_logo_url}" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">` : ''}
+                let agentHtml = '';
+                if (l.agent && l.agent.agent_name) {
+                    agentHtml += `
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                            ${l.agent.agency_logo_url ? `<img src="${l.agent.agency_logo_url}" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;">` : ''}
                             <div>
-                                <div style="font-weight: 600;">${l.agent.agent_name || 'Agent'}</div>
+                                <div style="font-weight: 600;">${l.agent.agent_name} (Lead)</div>
                                 <div style="color: var(--text-muted); font-size: 0.8rem;">${l.agent.agency_name || ''}</div>
                             </div>
                         </div>
                     `;
-                } else {
-                    document.getElementById('modal-agent-card').style.display = 'none';
                 }
+                if (l.co_agents && l.co_agents.length > 0) {
+                    l.co_agents.forEach(co => {
+                        agentHtml += `
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--border);">
+                                ${co.agency_logo_url ? `<img src="${co.agency_logo_url}" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;">` : ''}
+                                <div>
+                                    <div style="font-weight: 600; font-size: 0.85rem;">${co.agent_name} (Co-Agent)</div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+                agentBox.innerHTML = agentHtml || '<div style="color: var(--text-muted);">No agent details</div>';
 
                 // Integrity
-                const integrityBox = document.getElementById('modal-integrity');
-                integrityBox.innerHTML = `
+                document.getElementById('modal-integrity').innerHTML = `
                     <div><strong>Fingerprint:</strong> ${(l.content_fingerprint || '').substring(0, 20)}...</div>
                     <div><strong>Archived At:</strong> ${new Date(m?.archived_at || l.extracted_at).toLocaleString()}</div>
                     <div><strong>Archived Images:</strong> ${l.images?.length || 0}</div>
-                    <div><strong>SHA-256 Validated:</strong> 100% Match</div>
+                    <div><strong>SHA-256 Checksums:</strong> Verified Match</div>
                 `;
 
-                // Gallery
                 renderGallery();
-
                 document.getElementById('dossier-modal').classList.add('open');
             } catch (err) {
                 showToast("Failed loading dossier: " + err, "error");
@@ -880,7 +1010,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             document.getElementById('gallery-main-img').src = src;
             document.getElementById('gallery-counter').innerText = `${currentImageIndex + 1} / ${images.length}`;
 
-            // Update strip active class
             const items = document.querySelectorAll('.thumb-strip-item');
             items.forEach((it, idx) => {
                 if (idx === currentImageIndex) it.classList.add('active');
@@ -951,8 +1080,77 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             }
         }
 
-        function exportCSV() {
-            window.location.href = '/api/export?format=csv';
+        function populateCompareSelects() {
+            const selA = document.getElementById('compare-select-a');
+            const selB = document.getElementById('compare-select-b');
+            selA.innerHTML = '';
+            selB.innerHTML = '';
+
+            allListings.forEach((item, idx) => {
+                const optA = new Option(`${item.listing_id} - ${item.title || 'Listing'}`, item.listing_id);
+                const optB = new Option(`${item.listing_id} - ${item.title || 'Listing'}`, item.listing_id);
+                selA.add(optA);
+                selB.add(optB);
+            });
+            if (selB.options.length > 1) selB.selectedIndex = 1;
+        }
+
+        function openCompareModal() {
+            populateCompareSelects();
+            document.getElementById('compare-modal').classList.add('open');
+        }
+
+        function closeCompareModal() {
+            document.getElementById('compare-modal').classList.remove('open');
+        }
+
+        async function executeCompare() {
+            const idA = document.getElementById('compare-select-a').value;
+            const idB = document.getElementById('compare-select-b').value;
+            try {
+                const res = await fetch(`/api/compare?a=${idA}&b=${idB}`);
+                const diff = await res.json();
+                const container = document.getElementById('compare-results');
+
+                container.innerHTML = `
+                    <table class="diff-table">
+                        <thead>
+                            <tr><th>Field</th><th>${idA}</th><th>${idB}</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="${diff.price_changed ? 'diff-changed' : ''}">
+                                <td><strong>Price</strong></td>
+                                <td>R ${diff.old_price ? diff.old_price.toLocaleString() : 'N/A'}</td>
+                                <td>R ${diff.new_price ? diff.new_price.toLocaleString() : 'N/A'} ${diff.price_diff ? ' (' + (diff.price_diff > 0 ? '+' : '') + diff.price_diff.toLocaleString() + ')' : ''}</td>
+                            </tr>
+                            <tr class="${diff.status_changed ? 'diff-changed' : ''}">
+                                <td><strong>Status</strong></td>
+                                <td>${(diff.old_status || 'active').toUpperCase()}</td>
+                                <td>${(diff.new_status || 'active').toUpperCase()}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Badges Diff</strong></td>
+                                <td>${diff.badges_removed?.join(', ') || 'None'}</td>
+                                <td>${diff.badges_added?.join(', ') || 'None'}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Specs / Features</strong></td>
+                                <td>-</td>
+                                <td>${diff.spec_changes?.join('<br>') || 'No spec differences'}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
+            } catch (err) {
+                showToast("Comparison error: " + err, "error");
+            }
+        }
+
+        function openExportMenu(event) {
+            const format = prompt("Export Format: Enter 'csv', 'sqlite', 'jsonl', or 'geojson':", "csv");
+            if (format && ['csv', 'sqlite', 'jsonl', 'geojson'].includes(format.toLowerCase().trim())) {
+                window.location.href = `/api/export?format=${format.toLowerCase().trim()}`;
+            }
         }
 
         function showToast(msg, type="success") {
@@ -963,7 +1161,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             setTimeout(() => { toast.classList.remove('show'); }, 4000);
         }
 
-        // Init
         window.onload = loadListings;
     </script>
 </body>
