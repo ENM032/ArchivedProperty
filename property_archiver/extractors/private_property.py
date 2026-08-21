@@ -2,10 +2,10 @@
 Production extractor for Private Property South Africa (privateproperty.co.za).
 
 Implements a resilient multi-tier extraction pipeline:
-1. Deobfuscation of embedded inline listing state (reconstructing full 56-image gallery and agent details)
+1. Deobfuscation of embedded inline listing state (reconstructing full 56-image gallery, primary and co-agents)
 2. Status and badge lifecycle analysis (detecting 'Under Offer', 'Sold', 'Reduced', 'On Show')
-3. JSON-LD parsing (Breadcrumbs, Residence, Schema.org)
-4. OpenGraph and standard meta tags
+3. JSON-LD parsing with recursive @graph support (Breadcrumbs, Residence, Schema.org)
+4. Land size normalization (supporting hectares 'ha' and m²)
 5. Semantic DOM extraction (Details, Features, Prices, Video iframes)
 6. Fallback DOM and regex media discovery
 """
@@ -68,7 +68,7 @@ class PrivatePropertyExtractor(BaseExtractor):
         bundle_data = self._extract_embedded_bundle(soup)
         bundle_params = bundle_data.get("bundleParams", {}) if bundle_data else {}
 
-        # Step 3: Extract JSON-LD metadata
+        # Step 3: Extract JSON-LD metadata (including recursive @graph)
         raw_json_ld, json_ld_residence, breadcrumbs = self._extract_json_ld(soup)
 
         # Step 4: Extract Meta / OpenGraph tags
@@ -85,14 +85,16 @@ class PrivatePropertyExtractor(BaseExtractor):
         # Step 7: Extract Pricing details
         price = self._extract_price(soup, og_tags, bundle_params)
 
-        # Step 8: Extract Property details & sizes
-        prop_type, listing_date, erf_size, floor_size = self._extract_details(soup, json_ld_residence, bundle_params)
+        # Step 8: Extract Property details, sizes, and hectare conversions
+        prop_type, listing_date, erf_size, land_size_raw, floor_size = self._extract_details(
+            soup, json_ld_residence, bundle_params
+        )
 
         # Step 9: Extract Features & Amenities
         features = self._extract_features(soup, json_ld_residence)
 
-        # Step 10: Extract Agent & Agency (from bundleParams contactDetails + DOM)
-        agent = self._extract_agent(soup, bundle_params)
+        # Step 10: Extract Multi-Agent & Agency details (primary agent + co-agents)
+        primary_agent, co_agents = self._extract_agents(soup, bundle_params)
 
         # Step 11: Extract Title & Description
         title = self._extract_title(soup, og_tags, bundle_params)
@@ -121,11 +123,13 @@ class PrivatePropertyExtractor(BaseExtractor):
             listing_date=listing_date,
             description=description,
             erf_size_m2=erf_size,
+            land_size_raw=land_size_raw,
             floor_size_m2=floor_size,
             price=price,
             location=location,
             features=features,
-            agent=agent,
+            agent=primary_agent,
+            co_agents=co_agents,
             images=images,
             videos=videos,
             raw_json_ld=raw_json_ld,
@@ -139,10 +143,10 @@ class PrivatePropertyExtractor(BaseExtractor):
 
     def _extract_embedded_bundle(self, soup: BeautifulSoup) -> dict[str, Any] | None:
         """
-        Private Property encodes complete listing details (including all 56 photos and agent contacts)
+        Private Property encodes complete listing details (including all 56 photos and co-agent contacts)
         into an obfuscated inline JavaScript script that reconstructs JSON via token array substitution:
         window[...] = JSON.parse(Y.map($ => D[$]).join(''))
-        Natively deobfuscates this payload in Python without requiring a browser or Node.js runtime.
+        Natively deobfuscates this payload in Python.
         """
         for s in soup.find_all("script"):
             text = s.string or s.get_text() or ""
@@ -165,7 +169,6 @@ class PrivatePropertyExtractor(BaseExtractor):
                     reconstructed = "".join(d_tokens[i] for i in y_indices)
                     data = json.loads(reconstructed)
                     if isinstance(data, dict) and ("bundleParams" in data or "galleryPhotos" in data):
-                        logger.debug("Successfully deobfuscated inline listing state bundle.")
                         return data
                 except Exception as exc:
                     logger.debug("Failed parsing obfuscated bundle script: %s", exc)
@@ -175,10 +178,7 @@ class PrivatePropertyExtractor(BaseExtractor):
     def _extract_status(
         self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
     ) -> tuple[str, list[str], bool, bool, bool, bool, dict[str, Any] | None]:
-        """
-        Extract listing lifecycle status and visual badges:
-        Detects 'Under Offer', 'Sold', 'Reduced', 'On Show', 'Auction', and 'Withdrawn'.
-        """
+        """Extract listing lifecycle status and visual badges."""
         status = "active"
         badges: list[str] = []
         is_under_offer = False
@@ -187,7 +187,6 @@ class PrivatePropertyExtractor(BaseExtractor):
         is_reduced = False
         on_show_details = None
 
-        # 1. Search bundleParams for badges and flags
         if bundle_params:
             if bundle_params.get("isUnderOffer"):
                 is_under_offer = True
@@ -216,7 +215,6 @@ class PrivatePropertyExtractor(BaseExtractor):
                     if b_text and b_text not in badges:
                         badges.append(b_text)
 
-        # 2. Inspect DOM badges, banners, ribbons, and labels
         badge_elements = soup.find_all(
             class_=re.compile(r"badge|banner|ribbon|tag|label|listing-banners|listing-details__badge", re.I)
         )
@@ -254,7 +252,6 @@ class PrivatePropertyExtractor(BaseExtractor):
                 if "Withdrawn" not in badges:
                     badges.append("Withdrawn")
 
-        # 3. Check OpenGraph / Meta / Title for status prefixes
         og_title = og_tags.get("og:title", "")
         if "under offer" in og_title.lower():
             is_under_offer = True
@@ -263,7 +260,6 @@ class PrivatePropertyExtractor(BaseExtractor):
             is_sold = True
             status = "sold"
 
-        # Clean duplicate badges
         badges = list(dict.fromkeys(badges))
         return status, badges, is_under_offer, is_sold, is_on_show, is_reduced, on_show_details
 
@@ -287,10 +283,29 @@ class PrivatePropertyExtractor(BaseExtractor):
         return "unknown_listing"
 
     def _extract_json_ld(self, soup: BeautifulSoup) -> tuple[list[dict[str, Any]], dict[str, Any], list[str]]:
-        """Parse all schema.org JSON-LD blocks."""
+        """Parse all schema.org JSON-LD blocks including recursive @graph unpack."""
         raw_blocks: list[dict[str, Any]] = []
         residence_block: dict[str, Any] = {}
         breadcrumbs: list[str] = []
+
+        def _process_item(data: dict[str, Any]):
+            nonlocal residence_block, breadcrumbs
+            data_type = data.get("@type")
+            if data_type in ("Residence", "SingleFamilyResidence", "RealEstateListing", "House", "Place"):
+                residence_block = data
+            elif data_type == "BreadcrumbList":
+                items = data.get("itemListElement", [])
+                for it in items:
+                    if isinstance(it, dict):
+                        item_obj = it.get("item", {})
+                        name = item_obj.get("name") if isinstance(item_obj, dict) else it.get("name")
+                        if name:
+                            breadcrumbs.append(str(name).strip())
+
+            if "@graph" in data and isinstance(data["@graph"], list):
+                for sub in data["@graph"]:
+                    if isinstance(sub, dict):
+                        _process_item(sub)
 
         for tag in soup.find_all("script", type="application/ld+json"):
             if not tag.string:
@@ -299,23 +314,12 @@ class PrivatePropertyExtractor(BaseExtractor):
                 data = json.loads(tag.string.strip())
                 if isinstance(data, dict):
                     raw_blocks.append(data)
-                    data_type = data.get("@type")
-                    if data_type in ("Residence", "SingleFamilyResidence", "RealEstateListing", "House", "Place"):
-                        residence_block = data
-                    elif data_type == "BreadcrumbList":
-                        items = data.get("itemListElement", [])
-                        for it in items:
-                            if isinstance(it, dict):
-                                item_obj = it.get("item", {})
-                                name = item_obj.get("name") if isinstance(item_obj, dict) else it.get("name")
-                                if name:
-                                    breadcrumbs.append(str(name).strip())
+                    _process_item(data)
                 elif isinstance(data, list):
                     for item in data:
                         if isinstance(item, dict):
                             raw_blocks.append(item)
-                            if item.get("@type") in ("Residence", "SingleFamilyResidence", "RealEstateListing"):
-                                residence_block = item
+                            _process_item(item)
             except Exception as exc:
                 logger.debug("Failed parsing JSON-LD script block: %s", exc)
 
@@ -352,13 +356,11 @@ class PrivatePropertyExtractor(BaseExtractor):
         """Extract address, suburb, city, province, and GPS coordinates."""
         loc = LocationInfo(breadcrumbs=breadcrumbs)
 
-        # 1. From JSON-LD Address
         address_dict = json_ld.get("address", {}) if isinstance(json_ld.get("address"), dict) else {}
         loc.street_address = address_dict.get("streetAddress")
         loc.region = address_dict.get("addressLocality")
         loc.province = address_dict.get("addressRegion")
 
-        # 2. From JSON-LD GeoCoordinates or bundleParams
         geo_dict = json_ld.get("geo", {}) if isinstance(json_ld.get("geo"), dict) else {}
         if geo_dict.get("@type") == "GeoCoordinates":
             try:
@@ -457,11 +459,14 @@ class PrivatePropertyExtractor(BaseExtractor):
 
     def _extract_details(
         self, soup: BeautifulSoup, json_ld: dict[str, Any], bundle_params: dict[str, Any]
-    ) -> tuple[str | None, Any | None, float | None, float | None]:
-        """Extract property type, listing date, erf size, and floor size."""
+    ) -> tuple[str | None, Any | None, float | None, str | None, float | None]:
+        """
+        Extract property type, listing date, erf size (with hectare conversion), raw land size, and floor size.
+        """
         property_type: str | None = None
         listing_date = None
         erf_size_m2: float | None = None
+        land_size_raw: str | None = None
         floor_size_m2: float | None = None
 
         for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
@@ -487,17 +492,24 @@ class PrivatePropertyExtractor(BaseExtractor):
             elif "land size" in text_lower or "erf size" in text_lower:
                 val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
                 size_str = val_elem.get_text(strip=True) if val_elem else text
-                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", ""))
+                land_size_raw = size_str.strip()
+
+                # Check for hectares vs square meters
+                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", "").replace(",", "."))
                 if match:
                     try:
-                        erf_size_m2 = float(match.group(1))
+                        raw_val = float(match.group(1))
+                        if "ha" in size_str.lower() or "hectare" in size_str.lower():
+                            erf_size_m2 = raw_val * 10000.0
+                        else:
+                            erf_size_m2 = raw_val
                     except ValueError:
                         pass
 
             elif "floor size" in text_lower or "building size" in text_lower:
                 val_elem = item.find(class_=re.compile(r"property-details__value", re.I))
                 size_str = val_elem.get_text(strip=True) if val_elem else text
-                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", ""))
+                match = SIZE_NUM_RE.search(size_str.replace("\xa0", "").replace("\u202f", "").replace(" ", "").replace(",", "."))
                 if match:
                     try:
                         floor_size_m2 = float(match.group(1))
@@ -512,7 +524,7 @@ class PrivatePropertyExtractor(BaseExtractor):
             if ld_type in ("SingleFamilyResidence", "Residence", "House"):
                 property_type = "House"
 
-        return property_type, listing_date, erf_size_m2, floor_size_m2
+        return property_type, listing_date, erf_size_m2, land_size_raw, floor_size_m2
 
     def _extract_features(self, soup: BeautifulSoup, json_ld: dict[str, Any]) -> PropertyFeatures:
         """Extract structured amenities, counts, and boolean feature flags."""
@@ -621,43 +633,53 @@ class PrivatePropertyExtractor(BaseExtractor):
         features.raw_features_list = list(dict.fromkeys(features.raw_features_list))
         return features
 
-    def _extract_agent(self, soup: BeautifulSoup, bundle_params: dict[str, Any]) -> AgentInfo | None:
-        """Extract agent and agency details."""
-        agent = AgentInfo()
-        found = False
-
-        contacts = bundle_params.get("contactDetails", [])
-        if isinstance(contacts, list) and contacts:
-            first_contact = contacts[0]
-            if isinstance(first_contact, dict):
-                agent.agent_name = first_contact.get("name")
-                agent.agency_logo_url = first_contact.get("image")
-                agent.profile_url = first_contact.get("agentPageUrl")
-                found = True
+    def _extract_agents(
+        self, soup: BeautifulSoup, bundle_params: dict[str, Any]
+    ) -> tuple[AgentInfo | None, list[AgentInfo]]:
+        """Extract primary agent and all co-listing agents and agency info."""
+        primary_agent: AgentInfo | None = None
+        co_agents: list[AgentInfo] = []
 
         agency_info = bundle_params.get("agencyInfo", {})
-        if isinstance(agency_info, dict):
-            if agency_info.get("name"):
-                agent.agency_name = agency_info.get("name")
-                found = True
-            if agency_info.get("logoUrl") and not agent.agency_logo_url:
-                agent.agency_logo_url = agency_info.get("logoUrl")
-                found = True
+        agency_name = agency_info.get("name") if isinstance(agency_info, dict) else None
+        agency_logo = agency_info.get("logoUrl") if isinstance(agency_info, dict) else None
 
-        if not found:
+        # 1. From bundleParams contactDetails
+        contacts = bundle_params.get("contactDetails", [])
+        if isinstance(contacts, list) and contacts:
+            for idx, c in enumerate(contacts):
+                if isinstance(c, dict):
+                    ag = AgentInfo(
+                        agent_name=c.get("name"),
+                        agency_name=agency_name,
+                        agency_logo_url=c.get("image") or agency_logo,
+                        profile_url=c.get("agentPageUrl"),
+                    )
+                    if idx == 0:
+                        primary_agent = ag
+                    else:
+                        co_agents.append(ag)
+
+        # 2. DOM fallback if no contact details in bundle
+        if not primary_agent:
+            dom_agent = AgentInfo(agency_name=agency_name, agency_logo_url=agency_logo)
+            found = False
             for el in soup.find_all(class_=re.compile(r"agent|seller|contact|agency", re.I)):
                 img = el.find("img")
-                if img and img.get("src") and not agent.agency_logo_url:
-                    agent.agency_logo_url = img["src"]
+                if img and img.get("src") and not dom_agent.agency_logo_url:
+                    dom_agent.agency_logo_url = img["src"]
                     found = True
 
             for a in soup.find_all("a", href=re.compile(r"estate-agency|estate-agent|branch", re.I)):
                 text = a.get_text(strip=True)
-                if text and not agent.agency_name:
-                    agent.agency_name = text
+                if text and not dom_agent.agency_name:
+                    dom_agent.agency_name = text
                     found = True
 
-        return agent if found else None
+            if found:
+                primary_agent = dom_agent
+
+        return primary_agent, co_agents
 
     def _extract_title(
         self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
@@ -699,15 +721,10 @@ class PrivatePropertyExtractor(BaseExtractor):
     def _extract_images(
         self, html: str, soup: BeautifulSoup, listing_id: str, bundle_params: dict[str, Any]
     ) -> list[ImageRecord]:
-        """
-        Discover and deduplicate all gallery images.
-        Extracts all 56 photos from bundleParams.galleryPhotos or cascades to DOM/regex.
-        Reconstructs high-resolution URLs (e.g. 1600x1066) from image hashes.
-        """
+        """Discover and deduplicate all 56 high-resolution gallery images."""
         images: list[ImageRecord] = []
         seen_hashes: set[str] = set()
 
-        # 1. Primary Strategy: Extract from bundleParams.galleryPhotos
         gallery_photos = bundle_params.get("galleryPhotos", [])
         if isinstance(gallery_photos, list) and gallery_photos:
             for idx, p in enumerate(gallery_photos):
@@ -750,7 +767,6 @@ class PrivatePropertyExtractor(BaseExtractor):
             if images:
                 return images
 
-        # 2. Fallback Strategy: Inspect <img> tags in DOM and regex scan HTML
         discovered_hashes: list[tuple[str, str, str | None]] = []
 
         for img in soup.find_all("img"):

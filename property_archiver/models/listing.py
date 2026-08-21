@@ -1,5 +1,5 @@
 """
-Top-level canonical listing model with status lifecycle and badge tracking.
+Top-level canonical listing model with multi-agent support and land size normalization.
 """
 
 from datetime import date, datetime, timezone
@@ -48,14 +48,18 @@ class ListingRecord(BaseModel):
     description: str | None = Field(default=None, description="Full textual property description")
 
     # Sizes
-    erf_size_m2: float | None = Field(default=None, description="Land / Erf size in square meters")
+    erf_size_m2: float | None = Field(default=None, description="Land / Erf size normalized to square meters")
+    land_size_raw: str | None = Field(default=None, description="Original raw land size string (e.g. '2.5 ha' or '1983 m²')")
     floor_size_m2: float | None = Field(default=None, description="Floor / Building size in square meters")
 
     # Sub-models
     price: PriceInfo = Field(default_factory=PriceInfo, description="Pricing and levy details")
     location: LocationInfo = Field(default_factory=LocationInfo, description="Address and GPS location")
     features: PropertyFeatures = Field(default_factory=PropertyFeatures, description="Extracted features and amenities")
-    agent: AgentInfo | None = Field(default=None, description="Agent and agency details")
+    
+    # Agents
+    agent: AgentInfo | None = Field(default=None, description="Primary listing agent")
+    co_agents: list[AgentInfo] = Field(default_factory=list, description="Additional co-listing agents and team members")
     
     # Media
     images: list[ImageRecord] = Field(default_factory=list, description="Preserved listing images")

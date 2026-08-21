@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 
 from property_archiver.models.listing import ListingRecord
-from property_archiver.storage.reader import ArchiveReader
 
 
 @dataclass
@@ -90,6 +89,7 @@ class ChangeDetector:
     @staticmethod
     def compare_archives(archive_path_a: Path | str, archive_path_b: Path | str) -> ListingDiff:
         """Compare two archived listings on disk."""
+        from property_archiver.storage.reader import ArchiveReader
         rec_a = ArchiveReader.load_listing(archive_path_a)
         rec_b = ArchiveReader.load_listing(archive_path_b)
         return ChangeDetector.compare_records(rec_a, rec_b)
