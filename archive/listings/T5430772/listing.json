@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5430772",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5430772",
+  "extracted_at": "2026-08-23T22:22:38.545805Z",
+  "title": "3 Bedroom House in Paulshof",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-03-19",
+  "description": "Tucked away in an exclusive gated enclave of just four homes, this gorgeous private sanctuary offers a rare blend of security, space, and seamless indoor-outdoor living.\n\nThe home welcomes you with a ...",
+  "erf_size_m2": 417.0,
+  "land_size_raw": "417 m²",
+  "floor_size_m2": 234.0,
+  "price": {
+    "amount": 2799000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 799 000",
+    "rates_and_taxes_monthly": 2200.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5430772",
+    "suburb": "Paulshof",
+    "city": "Johannesburg",
+    "region": "Paulshof, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Paulshof",
+      "T5430772"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 3.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 3",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Pool",
+      "Security post"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Jane Hoar",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1898008/image/cc87b4defd1d4cfdb00b351f02092ed6_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/jane-hoar/1898008/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11739709/EJWGtp7CIYp4uesOTViKc2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/EJWGtp7CIYp4uesOTViKc2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_EJWGtp7CIYp4uesOTViKc2.jpg",
+      "sha256": "de75eda049bb3b91692de20104793653b4bad42b5177518b6a91f5bde561b628",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 276281,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-23T22:22:39.756985Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11739709/7BlOsEKQY8I7dYdckHRdp2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/7BlOsEKQY8I7dYdckHRdp2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_7BlOsEKQY8I7dYdckHRdp2.jpg",
+      "sha256": "42a2f577ee9962a85707af1d789a383ceeafedaf7d0a9c287673f7f62ff057d0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 172651,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.440448Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11739709/f4oI22xP5ik1B8x4XezfS6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/f4oI22xP5ik1B8x4XezfS6/1600/1066/contain/jpegorpng",
+      "local_filename": "003_f4oI22xP5ik1B8x4XezfS6.jpg",
+      "sha256": "b5c90fdef8dc992db3453b5d22fed24930d8895fef01b0b6104b646f33dffccf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141644,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:39.454241Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11739709/wASSkphebSQ0pY3aTVsxc7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/wASSkphebSQ0pY3aTVsxc7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_wASSkphebSQ0pY3aTVsxc7.jpg",
+      "sha256": "8a9b9729afdcd201dbd579c98b68a64a12a8b08ce69c1a91566767636a95503e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 172060,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.554895Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11739709/tLhYgodtjBwxY5ZIaWPhF3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/tLhYgodtjBwxY5ZIaWPhF3/1600/1066/contain/jpegorpng",
+      "local_filename": "005_tLhYgodtjBwxY5ZIaWPhF3.jpg",
+      "sha256": "e239fcf4e9ad8d59cf6483656720737302d5b536d11c44637eb6550c9719fedb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141625,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:39.785825Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11739709/m22fpPrP3HzuACMueUPFI0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/m22fpPrP3HzuACMueUPFI0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_m22fpPrP3HzuACMueUPFI0.jpg",
+      "sha256": "c4ead9b6a2bd8a36c702b02c77d138933771eeb69264180bdab6f5f610e300f6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176101,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.586562Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11739709/uqMutFbJs1rf5SFm8roGH0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/uqMutFbJs1rf5SFm8roGH0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_uqMutFbJs1rf5SFm8roGH0.jpg",
+      "sha256": "ba7fc128133bca566dc3bec42e4535743876a706b27b585dcdf6ba7ce42ea04d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175129,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.056493Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11739709/gMrjVOUnD5Gn8FFCEJWUb2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/gMrjVOUnD5Gn8FFCEJWUb2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_gMrjVOUnD5Gn8FFCEJWUb2.jpg",
+      "sha256": "1177f3b142a1db0c6d4d30bcf6ce3575bc4aec97963c6bacd176c8b995de433c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 173611,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.762394Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11739709/gnBj8EpXsHngZBfED8z642/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/gnBj8EpXsHngZBfED8z642/1600/1066/contain/jpegorpng",
+      "local_filename": "009_gnBj8EpXsHngZBfED8z642.jpg",
+      "sha256": "4fa76d5c7bb19938eb303ad4c0949e443c281c3c91a55c2bf0de5ac493a75753",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188267,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:40.778547Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11739709/wZzoBOcdirhVM72ooOaEc5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/wZzoBOcdirhVM72ooOaEc5/1600/1066/contain/jpegorpng",
+      "local_filename": "010_wZzoBOcdirhVM72ooOaEc5.jpg",
+      "sha256": "dd8f637c254dbc1ed3e87a3cc8208e9e347e5b56183769012956168506154e52",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182958,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.192108Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11739709/okKRtLUBgC5xqQpHtEWyq3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/okKRtLUBgC5xqQpHtEWyq3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_okKRtLUBgC5xqQpHtEWyq3.jpg",
+      "sha256": "7ce3ea0d72f7eb89f8996173946a860ee85e7cd6ebb97981f9107695e882a516",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176184,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.150773Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11739709/qriNj4VD4m963Ljq0ZT7P4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/qriNj4VD4m963Ljq0ZT7P4/1600/1066/contain/jpegorpng",
+      "local_filename": "012_qriNj4VD4m963Ljq0ZT7P4.jpg",
+      "sha256": "d07bb3a6b9b4d07baebe64b0015c6c5396c366753cdc0d3b119e3d30eba7a296",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 165855,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:42.177445Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11739709/g78T3vu1zXvUyOREL5Zpg4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/g78T3vu1zXvUyOREL5Zpg4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_g78T3vu1zXvUyOREL5Zpg4.jpg",
+      "sha256": "8c2776952885efd4e535dbc28d57b1be46bd4af7190d768287e7ee49f1cead36",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 173699,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.307968Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11739709/PI6RmSrbq3HUVnfCyLyTg5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/PI6RmSrbq3HUVnfCyLyTg5/1600/1066/contain/jpegorpng",
+      "local_filename": "014_PI6RmSrbq3HUVnfCyLyTg5.jpg",
+      "sha256": "0d3e5d764a2c0474180d877a257b74a5cc34f338c1ff079b06b538530dbf7c93",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104134,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.645637Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11739709/QIzt0wtOpEtLlCNz0UDYC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/QIzt0wtOpEtLlCNz0UDYC0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_QIzt0wtOpEtLlCNz0UDYC0.jpg",
+      "sha256": "4b2c3c47eca583fb483419d7694973640c8537194863d84d3987abc7eb96d362",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162316,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.572932Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11739709/erOAF92x0qFtjs72lSdG75/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/erOAF92x0qFtjs72lSdG75/1600/1066/contain/jpegorpng",
+      "local_filename": "016_erOAF92x0qFtjs72lSdG75.jpg",
+      "sha256": "9242a74e922608edfab1d0d5178ba70b2a82f7a77d4034f013c7345345989930",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144186,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:44.952187Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11739709/qvA0fdjNXxZJoYZECb0627/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/qvA0fdjNXxZJoYZECb0627/1600/1066/contain/jpegorpng",
+      "local_filename": "017_qvA0fdjNXxZJoYZECb0627.jpg",
+      "sha256": "406a68ea33c7c8f7761a194cadfe052d3ba237a68ffb8cb573f1941112ad777f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131580,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:41.933562Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11739709/m4jPu68KETy80iDXuZIdq6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/m4jPu68KETy80iDXuZIdq6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_m4jPu68KETy80iDXuZIdq6.jpg",
+      "sha256": "8e2ec6c84e85e024793b5e2c77e451b13a596f6dbde4e33651d587b84d1e5a36",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137206,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:43.014286Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11739709/Fr5IFM22N44d8EI7vTtJr5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/Fr5IFM22N44d8EI7vTtJr5/1600/1066/contain/jpegorpng",
+      "local_filename": "019_Fr5IFM22N44d8EI7vTtJr5.jpg",
+      "sha256": "b60fd4e70c61840be20d2092220c968f883a1847a5e527a9b519788efd2c74c4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127204,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:43.108833Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11739709/04N94772KqzwepyZK9lG57/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/04N94772KqzwepyZK9lG57/1600/1066/contain/jpegorpng",
+      "local_filename": "020_04N94772KqzwepyZK9lG57.jpg",
+      "sha256": "fe84c20fcc1ae81ba01d44de7690079fad3f467f67e0b23c61ca7dd8c7556dca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 140476,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:43.517134Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11739709/m28QIpB7xF1aoWqQDl1EO0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/m28QIpB7xF1aoWqQDl1EO0/1600/1066/contain/jpegorpng",
+      "local_filename": "021_m28QIpB7xF1aoWqQDl1EO0.jpg",
+      "sha256": "d345501e8da825eb34881cd5d1f63297e8fdad62b544e6ff7dc13d7b2723567d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128076,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:43.444200Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11739709/tgszFxtdyxZxd95CkJVyr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/tgszFxtdyxZxd95CkJVyr6/1600/1066/contain/jpegorpng",
+      "local_filename": "022_tgszFxtdyxZxd95CkJVyr6.jpg",
+      "sha256": "9d8d7782c21fb191ac95bdc7898ada4f233c836899bfdb7831d2256bf7437965",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 168887,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:44.393226Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11739709/zJ8bFnhT0k3giNieMsBiN2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/zJ8bFnhT0k3giNieMsBiN2/1600/1066/contain/jpegorpng",
+      "local_filename": "023_zJ8bFnhT0k3giNieMsBiN2.jpg",
+      "sha256": "02059656b9921db48a104b6f7c3408c5c67585f9a5b32a06c8fcc0e1ee516c5d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116156,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:44.695066Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11739709/L2PsYF0pcfUZk5IgRRjna2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/L2PsYF0pcfUZk5IgRRjna2/1600/1066/contain/jpegorpng",
+      "local_filename": "024_L2PsYF0pcfUZk5IgRRjna2.jpg",
+      "sha256": "d7d09edf5f49f0969c51f074004b940afcb8493189e3ec8c065ed8f31a0b516e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132531,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:43.915049Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11739709/RBWBp0Hi3dYUbxzRwYtE77/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/RBWBp0Hi3dYUbxzRwYtE77/1600/1066/contain/jpegorpng",
+      "local_filename": "025_RBWBp0Hi3dYUbxzRwYtE77.jpg",
+      "sha256": "8e373266fb1b924d82dd2d07e300647bd6785fd74c9b439aebf3906a44f73a09",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137242,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:44.568672Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11739709/48U7MUuoyupq8HEQt6aM95/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/48U7MUuoyupq8HEQt6aM95/1600/1066/contain/jpegorpng",
+      "local_filename": "026_48U7MUuoyupq8HEQt6aM95.jpg",
+      "sha256": "573c316574a568fb8cc69068b6b20aa44f5f29fd9f4f647c68a55700cfe321eb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127961,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:45.750287Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11739709/9zpcVHPXLaOBRNfGULBoh1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/9zpcVHPXLaOBRNfGULBoh1/1600/1066/contain/jpegorpng",
+      "local_filename": "027_9zpcVHPXLaOBRNfGULBoh1.jpg",
+      "sha256": "b0d56215b3a3787982b1acf5dc30ee1b50cc732e552fe86b0cd64818b01d3876",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154374,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:45.196742Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11739709/Bl79N5zKyUdqhKMi4meDu0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/Bl79N5zKyUdqhKMi4meDu0/1600/1066/contain/jpegorpng",
+      "local_filename": "028_Bl79N5zKyUdqhKMi4meDu0.jpg",
+      "sha256": "d2890f96982b89ea8738c1a8ff61b934b2ea5cd2062067bf4aa6e0a6532ce2dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139188,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.113604Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11739709/zIBivv6UXpeXn3ivYawfA7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/zIBivv6UXpeXn3ivYawfA7/1600/1066/contain/jpegorpng",
+      "local_filename": "029_zIBivv6UXpeXn3ivYawfA7.jpg",
+      "sha256": "557c32fb5225b6647d4d4637b2ce3508fe031d1e5f2a2d3f45d1a97a60fd8cd3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146712,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:45.293765Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11739709/zJEnocC7BK03DndP6lpXP0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/zJEnocC7BK03DndP6lpXP0/1600/1066/contain/jpegorpng",
+      "local_filename": "030_zJEnocC7BK03DndP6lpXP0.jpg",
+      "sha256": "adb0b57d45b48a5eacbc86e99b90bd11cb0b3060f0563e9063bb50f4a624cec9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 378370,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.922910Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11739709/95I5tUJhP2Q0SOVwFUgtq1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/95I5tUJhP2Q0SOVwFUgtq1/1600/1066/contain/jpegorpng",
+      "local_filename": "031_95I5tUJhP2Q0SOVwFUgtq1.jpg",
+      "sha256": "737e1b56a869352a4cf473038d4e773fa17ef87817fdc3d8aff3a4aa5f8f7d36",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171854,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:45.693848Z"
+    },
+    {
+      "order_index": 31,
+      "original_url": "https://images.pp.co.za/listing/11739709/zoR01efW4R54BCxBRYm1p5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/zoR01efW4R54BCxBRYm1p5/1600/1066/contain/jpegorpng",
+      "local_filename": "032_zoR01efW4R54BCxBRYm1p5.jpg",
+      "sha256": "f1ef23154e96d70ebe7c9fcd5ea2db5db97c1555b9c0a8fcbe3791e4bfca6ba0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 295814,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 32",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:47.532416Z"
+    },
+    {
+      "order_index": 32,
+      "original_url": "https://images.pp.co.za/listing/11739709/PhMhyQM6uVmLBXVXQBLHp0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/PhMhyQM6uVmLBXVXQBLHp0/1600/1066/contain/jpegorpng",
+      "local_filename": "033_PhMhyQM6uVmLBXVXQBLHp0.jpg",
+      "sha256": "1133fa3b2fa3979ecea0756dc199d313fc278e89b48fd3a0117ea86d93449f4b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 240463,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 33",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.310924Z"
+    },
+    {
+      "order_index": 33,
+      "original_url": "https://images.pp.co.za/listing/11739709/gV2VXdf1ghkNmrVBqDuBb5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/gV2VXdf1ghkNmrVBqDuBb5/1600/1066/contain/jpegorpng",
+      "local_filename": "034_gV2VXdf1ghkNmrVBqDuBb5.jpg",
+      "sha256": "b83d0fe583636fa8282b7aaa6ecc1705f3140dee498ca888adbdc27cb799a1fb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 281797,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 34",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.647038Z"
+    },
+    {
+      "order_index": 34,
+      "original_url": "https://images.pp.co.za/listing/11739709/eee5GjUfT3i9HIaCNyxXR6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/eee5GjUfT3i9HIaCNyxXR6/1600/1066/contain/jpegorpng",
+      "local_filename": "035_eee5GjUfT3i9HIaCNyxXR6.jpg",
+      "sha256": "a598c4e74b1392509058fb70be157c991517fd7c86089a8e230df5a210dffa87",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 237697,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 35",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.984226Z"
+    },
+    {
+      "order_index": 35,
+      "original_url": "https://images.pp.co.za/listing/11739709/FMjIFAJQsugCJE3Fz94Ap3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/FMjIFAJQsugCJE3Fz94Ap3/1600/1066/contain/jpegorpng",
+      "local_filename": "036_FMjIFAJQsugCJE3Fz94Ap3.jpg",
+      "sha256": "24b578c69bc90436c7e6596697ac84964eff6332828806425ccaf86282839c45",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 180574,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 36",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:46.971114Z"
+    },
+    {
+      "order_index": 36,
+      "original_url": "https://images.pp.co.za/listing/11739709/lgXwd35AvvSGgl724viGW4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11739709/lgXwd35AvvSGgl724viGW4/1600/1066/contain/jpegorpng",
+      "local_filename": "037_lgXwd35AvvSGgl724viGW4.jpg",
+      "sha256": "316dca7871a307fe5afaccb9d4c41375c004c3711e2cec72833a48d3d3bf8fe8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 280536,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Paulshof photo number 37",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:22:48.372264Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/-ZFQ6vp3Gk8?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/768",
+            "name": "Paulshof"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5430772",
+            "name": "T5430772"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11739709/EJWGtp7CIYp4uesOTViKc2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paulshof, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5430772"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 799 000 | 3 Bedroom House in Paulshof | Private Property",
+    "og:description": "Tucked away in an exclusive gated enclave of just four homes, this gorgeous private sanctuary offers a rare blend of security, space, and seamless indoor-outdoor living.\n\nThe home welcomes you with a ...",
+    "og:image": "https://images.pp.co.za/listing/11739709/EJWGtp7CIYp4uesOTViKc2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5430772"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 799 000 | 3 Bedroom House in Paulshof | Private Property",
+    "og:description": "Tucked away in an exclusive gated enclave of just four homes, this gorgeous private sanctuary offers a rare blend of security, space, and seamless indoor-outdoor living.\n\nThe home welcomes you with a ...",
+    "og:image": "https://images.pp.co.za/listing/11739709/EJWGtp7CIYp4uesOTViKc2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5430772",
+    "description": "3 Bedroom House in Paulshof, Tucked away in an exclusive gated enclave of just four homes, this gorgeous private sanctuary offers",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "c2e6862c78af4de7caf3ba1d48c17fcaa10b618247fc2c8686f949cadc8763e5"
+}

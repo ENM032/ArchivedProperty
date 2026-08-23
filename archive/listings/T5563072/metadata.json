@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5563072",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/6-village-walk/T5563072",
+  "archived_at": "2026-08-23T22:19:51.735880Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|487dc52f-ddfc-4b29-8fd0-a33b9164641a|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=PZX0f7RkzEqqjlF1QixBog; expires=Thu, 23-Aug-2125 22:19:46 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Sun, 23 Aug 2026 22:19:45 GMT",
+    "content-length": "22665"
+  },
+  "fetch_duration_sec": 1.3624458312988281,
+  "total_images_discovered": 15,
+  "total_images_archived": 15,
+  "total_archive_size_bytes": 3858925,
+  "content_fingerprint": "a7235e2f32274b68ce43d9083aaf975f594545e350f7d54b88ebfe7e116aea7a"
+}

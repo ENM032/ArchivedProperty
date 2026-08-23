@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5393572",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/3-st-peters/36-wroxham-road/T5393572",
+  "archived_at": "2026-08-23T22:26:17.456055Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|1b7c7fe0-8ccb-43db-a8ee-d7cfcd4bd945|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=jsIwgeZf9Eqg26u2CTqssw; expires=Thu, 23-Aug-2125 22:26:15 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Sun, 23 Aug 2026 22:26:14 GMT",
+    "content-length": "25795"
+  },
+  "fetch_duration_sec": 1.333362340927124,
+  "total_images_discovered": 23,
+  "total_images_archived": 23,
+  "total_archive_size_bytes": 4459499,
+  "content_fingerprint": "9c789647445e76087498219c6ad016c2617d86de3c78eafbbb48de9d1ea8f719"
+}

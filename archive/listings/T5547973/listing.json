@@ -1,0 +1,652 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5547973",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/38-brooke-estate/3-nanyuki/T5547973",
+  "extracted_at": "2026-08-23T22:36:39.928969Z",
+  "title": "4 Bedroom House in Sunninghill",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-09",
+  "description": "Please note this is a bank repossessed home and the Company that bought the property is open to negotiations. Offers from R3150000 Owners would like R3600000\n\nWelcome to a home where space, comfort an...",
+  "erf_size_m2": 528.0,
+  "land_size_raw": "528 m²",
+  "floor_size_m2": 300.0,
+  "price": {
+    "amount": 3150000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 150 000",
+    "rates_and_taxes_monthly": 1844.0,
+    "levies_monthly": 2999.0
+  },
+  "location": {
+    "street_address": "38 Brooke Estate, 3 Nanyuki",
+    "suburb": "Sunninghill",
+    "city": "Johannesburg",
+    "region": "Sunninghill, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.019589391881244,
+    "longitude": 28.070526226312843,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Sunninghill",
+      "T5547973"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 4.0,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 4",
+      "Garage parking 2",
+      "Open parking 4",
+      "Pet friendly",
+      "Pool",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Lance Ferreira",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2107162/image/b8869934c3ac475992f31730900b5558_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/lance-ferreira/2107162/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11942717/gMCtfFLasCELxu0jVyWdk4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/gMCtfFLasCELxu0jVyWdk4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_gMCtfFLasCELxu0jVyWdk4.jpg",
+      "sha256": "c3d0dbfed666f9556d8865a6335c786ba602e33325f91539848f582a3021a947",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 250640,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-23T22:36:40.498610Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11942717/CP2YZ1g3qhuvRYXrMb00l2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/CP2YZ1g3qhuvRYXrMb00l2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_CP2YZ1g3qhuvRYXrMb00l2.jpg",
+      "sha256": "667d3f038fa1d2b76a481003c1b89b25a5797705be4698e39d112523ac91122f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146325,
+      "width": 1080,
+      "height": 804,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:41.845572Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11942717/ahmWmIyI095sbOorvyBSf6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/ahmWmIyI095sbOorvyBSf6/1600/1066/contain/jpegorpng",
+      "local_filename": "003_ahmWmIyI095sbOorvyBSf6.jpg",
+      "sha256": "9ab4d6483dd87c32d49b067aca67bbf29b621814d167235cd254ad5e979fa1f0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 294147,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:41.334928Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11942717/WzkpR7nSJhBxWVRIlhQlA7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/WzkpR7nSJhBxWVRIlhQlA7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_WzkpR7nSJhBxWVRIlhQlA7.jpg",
+      "sha256": "c10d87b2a0a390d9cb342b08f74416542e7c51c2080b645e5d76adfa67cdf963",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130011,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:41.595462Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11942717/KyFkNVjvHHY7jryv2cErw4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/KyFkNVjvHHY7jryv2cErw4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_KyFkNVjvHHY7jryv2cErw4.jpg",
+      "sha256": "ceb1cc66427a3bb1f2b8d871fa5ff3394965807782e3b41ca952746e0ea3c401",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159678,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:41.898667Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11942717/cyAuGTzA3bwlaf9lFRi5m0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/cyAuGTzA3bwlaf9lFRi5m0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_cyAuGTzA3bwlaf9lFRi5m0.jpg",
+      "sha256": "6f8b3b8fd5164a7fee25354d6e2fc1f3da166bae7e9419d6185bee9032b54e03",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182579,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:42.657784Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11942717/ew6UHIDayIe3GPaltUmZr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/ew6UHIDayIe3GPaltUmZr6/1600/1066/contain/jpegorpng",
+      "local_filename": "007_ew6UHIDayIe3GPaltUmZr6.jpg",
+      "sha256": "56827a61a73ebbaefafdd11ae36486a8d7032acc20361845429c5115c8406227",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170022,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:42.917950Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11942717/XCZYuSSy6M95kgBHf2Kxe7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/XCZYuSSy6M95kgBHf2Kxe7/1600/1066/contain/jpegorpng",
+      "local_filename": "008_XCZYuSSy6M95kgBHf2Kxe7.jpg",
+      "sha256": "3626667926566ef8c1e522c1944cfe18416876fe1808b38d9dbbc72a6637e19f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153787,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:43.259076Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11942717/KyAqTIinzFDUEyItrD9zy0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/KyAqTIinzFDUEyItrD9zy0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_KyAqTIinzFDUEyItrD9zy0.jpg",
+      "sha256": "6252c1ad0d2d46b6f1bb8c84ca556d86ff11e406d231acda751a49142ebd8c50",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158912,
+      "width": 1420,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:43.327422Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11942717/CTpqjbMT7kKy7Tq8EWm4T2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/CTpqjbMT7kKy7Tq8EWm4T2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_CTpqjbMT7kKy7Tq8EWm4T2.jpg",
+      "sha256": "22d9d6ee34819a536749c0998e0d7f424804b3bdf680377e01b30b6e3dfef199",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170434,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:43.354170Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11942717/lTtk1KpWWS0JsUGjip68d6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/lTtk1KpWWS0JsUGjip68d6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_lTtk1KpWWS0JsUGjip68d6.jpg",
+      "sha256": "03a4a0da95c256bdad46c593799948161f12124ff7a84e405fb723ac03fd11df",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178939,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:44.253953Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11942717/RgDSNsLt95lY9MOH3AzQP1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/RgDSNsLt95lY9MOH3AzQP1/1600/1066/contain/jpegorpng",
+      "local_filename": "012_RgDSNsLt95lY9MOH3AzQP1.jpg",
+      "sha256": "f7144902975ef8cfd5dc63f958837d641c780ab36152155fc2f8505ae5c8cb3d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159625,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.261246Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11942717/UEe92h7mYbQwvKsoSKiu05/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/UEe92h7mYbQwvKsoSKiu05/1600/1066/contain/jpegorpng",
+      "local_filename": "013_UEe92h7mYbQwvKsoSKiu05.jpg",
+      "sha256": "237848f6fbb4f6f75169e312a80e925f3fdc011ed1830a2d017c20fb075ea9d7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188257,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:44.780851Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11942717/v4XtR9vHCHbY0b5RkyOVb6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/v4XtR9vHCHbY0b5RkyOVb6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_v4XtR9vHCHbY0b5RkyOVb6.jpg",
+      "sha256": "554176cc5edeec774a0832a5449116a241df9f03a69eed1f13251fc0af052ee4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142436,
+      "width": 1418,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:44.675105Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11942717/GUMPPaqjSDrzhIVupG5nN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/GUMPPaqjSDrzhIVupG5nN4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_GUMPPaqjSDrzhIVupG5nN4.jpg",
+      "sha256": "a8bdb7387955bebf6cce58eedd76ebe81b8524b1e3b6891112fc4d69cee49ecb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 155032,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.307142Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11942717/v0LU0tn1XeGq906ZsJgm34/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/v0LU0tn1XeGq906ZsJgm34/1600/1066/contain/jpegorpng",
+      "local_filename": "016_v0LU0tn1XeGq906ZsJgm34.jpg",
+      "sha256": "9c5e771d4729aa70ea38839635d9ad6538d79642907bda7b8971c1e905cea7c1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 76593,
+      "width": 1412,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:44.869995Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11942717/Cz7FiWRaIXiGXKLs7StAR2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/Cz7FiWRaIXiGXKLs7StAR2/1600/1066/contain/jpegorpng",
+      "local_filename": "017_Cz7FiWRaIXiGXKLs7StAR2.jpg",
+      "sha256": "d8a3fc4048bb744a55e867de72b629d46e55d33e4de23bfa3b6670bbd0f262dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118506,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.029228Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11942717/LMMAXySjAazv0n8erE2sP5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/LMMAXySjAazv0n8erE2sP5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_LMMAXySjAazv0n8erE2sP5.jpg",
+      "sha256": "e095a0fdb396f55dcc0c34dae6796481b9146b5cfd34c010d64d403666f24708",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114081,
+      "width": 1412,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.000186Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11942717/mbbu8dQz3bo7Awr6B9oB81/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/mbbu8dQz3bo7Awr6B9oB81/1600/1066/contain/jpegorpng",
+      "local_filename": "019_mbbu8dQz3bo7Awr6B9oB81.jpg",
+      "sha256": "05ba41508aef51bf7c5451b3a9d7c0b48af73bad9b781feb6f40c8f5cc9c5602",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129154,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.547040Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11942717/pfr8LuiyEHqGg4Cr3waqw0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/pfr8LuiyEHqGg4Cr3waqw0/1600/1066/contain/jpegorpng",
+      "local_filename": "020_pfr8LuiyEHqGg4Cr3waqw0.jpg",
+      "sha256": "611941262604c4a3316a2ee2096f949a5641b03cae7499410f0b2249e28c6254",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139317,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.761442Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11942717/u32f0baDjKIo9kY3Emp2Q4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/u32f0baDjKIo9kY3Emp2Q4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_u32f0baDjKIo9kY3Emp2Q4.jpg",
+      "sha256": "465769b9df51afbb174c27d97719a649e54f0e8fe21898a467f25c688cebf421",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 138006,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.511295Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11942717/hPSZoWzK4Zald7EsxHyf86/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/hPSZoWzK4Zald7EsxHyf86/1600/1066/contain/jpegorpng",
+      "local_filename": "022_hPSZoWzK4Zald7EsxHyf86.jpg",
+      "sha256": "38d427980ecd522079afea4bd82ca2a96ca553f7c9a2de10e1228e59d1b61efd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170287,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.729165Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11942717/3ys1Nr0BFV8eQtvunlqAK3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/3ys1Nr0BFV8eQtvunlqAK3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_3ys1Nr0BFV8eQtvunlqAK3.jpg",
+      "sha256": "2b05b41ca2eba5942f1e8f5ccc75309604d3772d08f5072a640302e134605d69",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115529,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:45.965064Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11942717/Au2tPQ0pAaRGfx3Sn3NC50/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/Au2tPQ0pAaRGfx3Sn3NC50/1600/1066/contain/jpegorpng",
+      "local_filename": "024_Au2tPQ0pAaRGfx3Sn3NC50.jpg",
+      "sha256": "a9ccdf9aee6f7114100455e50110770d358a018b63386b6b6b8eb64d80985ab4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104411,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.208116Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11942717/M8Pj8NMmhHFU5yctowZlC6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/M8Pj8NMmhHFU5yctowZlC6/1600/1066/contain/jpegorpng",
+      "local_filename": "025_M8Pj8NMmhHFU5yctowZlC6.jpg",
+      "sha256": "4fa78aa4aef4eb95edca32c9f95812a037f46781f8f61bfbe2f5f8fef8dd2bd8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 98971,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.192713Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11942717/OAk44LcAHpVge1XVh8RZs0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/OAk44LcAHpVge1XVh8RZs0/1600/1066/contain/jpegorpng",
+      "local_filename": "026_OAk44LcAHpVge1XVh8RZs0.jpg",
+      "sha256": "069f28ce9e36b3be258bc8f05fa66ad5a10f8e1e5b1988d823e8c6bd3d891f61",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116365,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.396686Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11942717/HJAezriHi7yfT4SG8tpdr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/HJAezriHi7yfT4SG8tpdr6/1600/1066/contain/jpegorpng",
+      "local_filename": "027_HJAezriHi7yfT4SG8tpdr6.jpg",
+      "sha256": "e10923863456643d6ba65fddb6abe76756049e32e502e4a249be20c34a0ab6fa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 93743,
+      "width": 1412,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:47.330404Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11942717/oIgVJExesQXzQDkLA8agK5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/oIgVJExesQXzQDkLA8agK5/1600/1066/contain/jpegorpng",
+      "local_filename": "028_oIgVJExesQXzQDkLA8agK5.jpg",
+      "sha256": "611941262604c4a3316a2ee2096f949a5641b03cae7499410f0b2249e28c6254",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139317,
+      "width": 1419,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.864969Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11942717/EiKVFjnGm4CCRYExv73T85/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/EiKVFjnGm4CCRYExv73T85/1600/1066/contain/jpegorpng",
+      "local_filename": "029_EiKVFjnGm4CCRYExv73T85.jpg",
+      "sha256": "0694059aff1ff3e187f38e885a0dac8f2251c15ff1f3498c12d3c7bd2484b0fc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 238507,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:46.755394Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11942717/VB1xQYmzh90BQoKECPMHs2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/VB1xQYmzh90BQoKECPMHs2/1600/1066/contain/jpegorpng",
+      "local_filename": "030_VB1xQYmzh90BQoKECPMHs2.jpg",
+      "sha256": "200371a13095951cc8e040aca0ad01597cbf0f664d41da853bbf6e4f9ecbd251",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 209933,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:48.067510Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11942717/G8GjclcBf7lljq8rXHwjY1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942717/G8GjclcBf7lljq8rXHwjY1/1600/1066/contain/jpegorpng",
+      "local_filename": "031_G8GjclcBf7lljq8rXHwjY1.jpg",
+      "sha256": "3cbc24a730a15dafd5c8e41c516ada0cf325735c3eaa6ac26f58a4e37e7bf4c0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144062,
+      "width": 1080,
+      "height": 801,
+      "alt_text": "4 Bedroom House in Sunninghill photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-23T22:36:48.049870Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/769",
+            "name": "Sunninghill"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/38-brooke-estate/3-nanyuki/T5547973",
+            "name": "T5547973"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11942717/gMCtfFLasCELxu0jVyWdk4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "38 Brooke Estate, 3 Nanyuki",
+        "addressLocality": "Sunninghill, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.019589391881244,
+        "longitude": 28.070526226312843
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/38-brooke-estate/3-nanyuki/T5547973"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 150 000 | 4 Bedroom House in Sunninghill | Private Property",
+    "og:description": "Please note this is a bank repossessed home and the Company that bought the property is open to negotiations. Offers from R3150000 Owners would like R3600000\n\nWelcome to a home where space, comfort an...",
+    "og:image": "https://images.pp.co.za/listing/11942717/gMCtfFLasCELxu0jVyWdk4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/38-brooke-estate/3-nanyuki/T5547973"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 150 000 | 4 Bedroom House in Sunninghill | Private Property",
+    "og:description": "Please note this is a bank repossessed home and the Company that bought the property is open to negotiations. Offers from R3150000 Owners would like R3600000\n\nWelcome to a home where space, comfort an...",
+    "og:image": "https://images.pp.co.za/listing/11942717/gMCtfFLasCELxu0jVyWdk4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/38-brooke-estate/3-nanyuki/T5547973",
+    "description": "4 Bedroom House in Sunninghill, 38 brooke estate, 3 nanyuki, Please note this is a bank repossessed home and the Company that bought the property is open to nego",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "a9e7ed35e6530ce9169ea416332f72b44cfd5c4b17e94fa3f81da8e3c08e8248"
+}

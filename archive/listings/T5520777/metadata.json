@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5520777",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/paulshof/T5520777",
+  "archived_at": "2026-08-23T22:19:19.675527Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|5a81d208-c481-414c-b36e-64f14db65b26|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=mNFFsCYV6kyggLZORlu2wg; expires=Thu, 23-Aug-2125 22:19:04 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Sun, 23 Aug 2026 22:19:04 GMT",
+    "content-length": "29325"
+  },
+  "fetch_duration_sec": 1.33058500289917,
+  "total_images_discovered": 44,
+  "total_images_archived": 44,
+  "total_archive_size_bytes": 10310275,
+  "content_fingerprint": "bc1154dbabff61acdf8e2691afbf1ef03e6bcac8eef45bf454d6b84b1a7ba1c5"
+}
