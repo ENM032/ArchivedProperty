@@ -363,8 +363,11 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
         staging_dir, images_dir = writer.create_staging_dir(listing.listing_id, cfg.archive_dir)
 
         if listing.images:
+            existing_dir = ArchiveReader.find_listing_dir(self.archive_dir, listing.listing_id)
+            existing_images_dir = (existing_dir / "images") if (existing_dir and (existing_dir / "images").exists()) else None
+
             downloader = ImageDownloader(config=cfg)
-            listing.images = downloader.download_all(listing.images, images_dir)
+            listing.images = downloader.download_all(listing.images, images_dir, existing_images_dir=existing_images_dir)
 
         metadata = ArchiveMetadata(
             schema_version="1.0.0",
