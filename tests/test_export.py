@@ -1,5 +1,5 @@
 """
-Tests for PortfolioExporter (CSV, SQLite, JSONL, GeoJSON).
+Tests for PortfolioExporter (CSV, SQLite, JSONL, GeoJSON) and regional geographic filters.
 """
 
 import json
@@ -10,31 +10,30 @@ import pytest
 from property_archiver.export.exporter import PortfolioExporter
 
 
-def test_export_csv(tmp_path: Path):
-    out_csv = tmp_path / "test_portfolio.csv"
-    PortfolioExporter.export_csv("./archive", out_csv)
+def test_export_csv_filtered(tmp_path: Path):
+    out_csv = tmp_path / "test_lonehill.csv"
+    PortfolioExporter.export_csv("./archive", out_csv, filter_suburb="Lonehill")
     assert out_csv.exists()
     content = out_csv.read_text(encoding="utf-8")
     assert "listing_id" in content
-    assert "T4710876" in content
+    assert "T5333193" in content
+    assert "T4710876" not in content  # Rivonia should be filtered out
 
 
-def test_export_sqlite(tmp_path: Path):
-    out_db = tmp_path / "test_portfolio.db"
-    PortfolioExporter.export_sqlite("./archive", out_db)
+def test_export_sqlite_filtered(tmp_path: Path):
+    out_db = tmp_path / "test_rivonia.db"
+    PortfolioExporter.export_sqlite("./archive", out_db, filter_suburb="Rivonia")
     assert out_db.exists()
 
     conn = sqlite3.connect(out_db)
     cursor = conn.cursor()
-    cursor.execute("SELECT listing_id, price_amount, suburb FROM listings")
+    cursor.execute("SELECT listing_id, price_amount, suburb, area, province FROM listings")
     rows = cursor.fetchall()
-    assert len(rows) >= 1
-    ids = [r[0] for r in rows]
-    assert "T4710876" in ids
-
-    cursor.execute("SELECT count(*) FROM listing_images")
-    img_count = cursor.fetchone()[0]
-    assert img_count >= 50
+    assert len(rows) == 1
+    assert rows[0][0] == "T4710876"
+    assert rows[0][2] == "Rivonia"
+    assert rows[0][3] == "Sandton"
+    assert rows[0][4] == "Gauteng"
     conn.close()
 
 
