@@ -21,9 +21,9 @@ class ArchiverSettings(BaseSettings):
         default=Path("./archive"),
         description="Root directory where all listings and assets are archived"
     )
-    archive_layout: Literal["flat", "hierarchical"] = Field(
-        default="flat",
-        description="Storage directory layout: 'flat' (listings/<id>) or 'hierarchical' (listings/<prov>/<area>/<suburb>/<id>)"
+    archive_layout: Literal["hierarchical", "flat"] = Field(
+        default="hierarchical",
+        description="Storage directory layout: 'hierarchical' (listings/<prov>/<area>/<suburb>/<id>) or 'flat' (listings/<id>)"
     )
 
     # Security & SSRF

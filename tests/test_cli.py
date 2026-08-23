@@ -20,7 +20,9 @@ def test_cli_fetch_local_file(sample_html_path: Path, tmp_path: Path):
     assert "Listing Successfully Archived" in result.output
 
     # Check directory created
-    archive_listing = tmp_path / "listings" / "T4710876"
+    from property_archiver.storage.reader import ArchiveReader
+    archive_listing = ArchiveReader.find_listing_dir(tmp_path, "T4710876")
+    assert archive_listing is not None
     assert archive_listing.exists()
     assert (archive_listing / "listing.json").exists()
     assert (archive_listing / "checksums.json").exists()
