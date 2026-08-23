@@ -1,6 +1,7 @@
 """
 Embedded single-page application (SPA) HTML, CSS, and Vanilla JavaScript
-for the Unified Property Archiver Dashboard with interactive Leaflet Map View and Side-by-Side Comparison.
+for the Unified Property Archiver Dashboard with Cascading Province/Area/Suburb Filters,
+Grouped Location Accordion View, and Interactive Map.
 """
 
 DASHBOARD_HTML = """<!DOCTYPE html>
@@ -125,14 +126,28 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             background-color: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 0.5rem;
-            padding: 1rem;
+            padding: 1.25rem;
             margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .controls-row-top {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             align-items: center;
             justify-content: space-between;
         }
+        .controls-row-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+
         .search-box {
             flex: 1;
             min-width: 260px;
@@ -147,11 +162,12 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             font-size: 0.875rem;
         }
         .search-input:focus { outline: none; border-color: var(--primary); }
-        .filter-group {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            align-items: center;
+        
+        .filter-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
         }
         .select-filter {
             background-color: var(--bg-main);
@@ -161,6 +177,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             border-radius: 0.375rem;
             font-size: 0.875rem;
             cursor: pointer;
+            min-width: 150px;
         }
 
         .view-toggle {
@@ -294,6 +311,60 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             color: var(--text-muted);
         }
 
+        /* Grouped Location Accordion */
+        #grouped-view-container {
+            display: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .province-accordion {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .province-header {
+            background-color: #1e293b;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+        }
+        .province-header:hover { background-color: var(--bg-hover); }
+        .area-section {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .area-section:last-child { border-bottom: none; }
+        .area-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .suburb-block {
+            margin-bottom: 1.25rem;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+        .suburb-header {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         /* Map Container */
         #map-view-container {
             display: none;
@@ -306,12 +377,9 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             margin-bottom: 2rem;
             position: relative;
         }
-        #leaflet-map {
-            width: 100%;
-            height: 100%;
-        }
+        #leaflet-map { width: 100%; height: 100%; }
 
-        /* Modal & Dossier View */
+        /* Modal & Dossier */
         .modal-backdrop {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -383,9 +451,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             padding: 0.75rem;
             border-radius: 50%;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .gallery-prev { left: 1rem; }
         .gallery-next { right: 1rem; }
@@ -440,11 +505,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             border-bottom: 1px solid var(--border);
             padding-bottom: 0.35rem;
         }
-        .amenities-tag-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
+        .amenities-tag-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .amenity-tag {
             background-color: var(--bg-card);
             border: 1px solid var(--border);
@@ -511,6 +572,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             </button>
             <div class="view-toggle">
                 <button id="btn-view-grid" class="view-btn active" onclick="switchView('grid')">Grid</button>
+                <button id="btn-view-grouped" class="view-btn" onclick="switchView('grouped')">Grouped</button>
                 <button id="btn-view-map" class="view-btn" onclick="switchView('map')">Map</button>
             </div>
             <button class="btn btn-secondary" onclick="openExportMenu(event)">
@@ -549,39 +611,58 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             </div>
         </div>
 
-        <!-- Controls Bar -->
+        <!-- Controls Bar with Cascading Filters -->
         <div class="controls-bar">
-            <div class="search-box">
-                <input type="text" id="search-input" class="search-input" placeholder="Search by ID (e.g. T4710876), Suburb, Street, Title..." oninput="filterGrid()">
+            <div class="controls-row-top">
+                <div class="search-box">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search by ID (e.g. T4710876), Suburb, Street, Title..." oninput="filterData()">
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                    <select id="status-filter" class="select-filter" onchange="filterData()">
+                        <option value="all">All Statuses</option>
+                        <option value="active">Active</option>
+                        <option value="under_offer">Under Offer</option>
+                        <option value="sold">Sold</option>
+                    </select>
+                    <select id="sort-filter" class="select-filter" onchange="filterData()">
+                        <option value="date-desc">Newest Archived</option>
+                        <option value="date-asc">Oldest Archived</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="beds-desc">Bedrooms: Most</option>
+                    </select>
+                </div>
             </div>
-            <div class="filter-group">
-                <select id="status-filter" class="select-filter" onchange="filterGrid()">
-                    <option value="all">All Statuses</option>
-                    <option value="active">Active</option>
-                    <option value="under_offer">Under Offer</option>
-                    <option value="sold">Sold</option>
+            <!-- Cascading Hierarchy Row -->
+            <div class="controls-row-bottom">
+                <span class="filter-label">Location Drill-Down:</span>
+                <select id="geo-province-filter" class="select-filter" onchange="onProvinceChanged()">
+                    <option value="all">All Provinces</option>
                 </select>
-                <select id="sort-filter" class="select-filter" onchange="filterGrid()">
-                    <option value="date-desc">Newest Archived</option>
-                    <option value="date-asc">Oldest Archived</option>
-                    <option value="price-desc">Price: High to Low</option>
-                    <option value="price-asc">Price: Low to High</option>
-                    <option value="beds-desc">Bedrooms: Most</option>
+                <select id="geo-area-filter" class="select-filter" onchange="onAreaChanged()">
+                    <option value="all">All Areas / Metros</option>
                 </select>
+                <select id="geo-suburb-filter" class="select-filter" onchange="filterData()">
+                    <option value="all">All Suburbs</option>
+                </select>
+                <button class="btn btn-secondary" style="padding: 0.4rem 0.75rem; font-size: 0.8rem;" onclick="resetGeoFilters()">Reset Location</button>
             </div>
         </div>
 
-        <!-- Property Grid View -->
+        <!-- Flat Property Grid View -->
         <div id="property-grid" class="property-grid"></div>
+
+        <!-- Grouped Location Accordion View -->
+        <div id="grouped-view-container"></div>
 
         <!-- Map View Container -->
         <div id="map-view-container">
             <div id="leaflet-map"></div>
         </div>
 
-        <div id="empty-state" class="empty-state" style="display: none;">
+        <div id="empty-state" class="empty-state" style="display: none; text-align: center; padding: 3rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem;">
             <h3>No archived listings found</h3>
-            <p style="color: var(--text-muted); margin-top: 0.5rem;">Try adjusting your search criteria or archive a new listing using the button above.</p>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Try adjusting your search or location filters.</p>
         </div>
     </div>
 
@@ -596,7 +677,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 <button class="modal-close" onclick="closeDossierModal()">&times;</button>
             </div>
             <div class="modal-body" id="modal-body">
-                <!-- Gallery Carousel -->
                 <div class="gallery-viewer" id="gallery-container">
                     <img id="gallery-main-img" class="main-gallery-img" src="" alt="Property Image">
                     <button class="gallery-nav-btn gallery-prev" onclick="prevImage(event)">&#10094;</button>
@@ -605,7 +685,6 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 </div>
                 <div class="thumb-strip" id="gallery-thumb-strip"></div>
 
-                <!-- Info Grid -->
                 <div class="section-grid">
                     <div>
                         <div class="info-card">
@@ -655,11 +734,11 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             <div class="modal-body">
                 <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="flex: 1;">
-                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing / Snapshot A</label>
+                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing A</label>
                         <select id="compare-select-a" class="select-filter" style="width: 100%; margin-top: 0.35rem;"></select>
                     </div>
                     <div style="flex: 1;">
-                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing / Snapshot B</label>
+                        <label style="color: var(--text-muted); font-size: 0.85rem;">Listing B</label>
                         <select id="compare-select-b" class="select-filter" style="width: 100%; margin-top: 0.35rem;"></select>
                     </div>
                     <div style="display: flex; align-items: flex-end;">
@@ -698,6 +777,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
         let allListings = [];
         let currentListing = null;
         let currentImageIndex = 0;
+        let currentView = 'grid';
         let mainMap = null;
         let miniMap = null;
         let markersGroup = null;
@@ -707,7 +787,8 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 const res = await fetch('/api/listings');
                 allListings = await res.json();
                 renderMetrics();
-                filterGrid();
+                populateCascadingGeoFilters();
+                filterData();
                 populateCompareSelects();
             } catch (err) {
                 showToast("Failed loading listings: " + err, "error");
@@ -735,10 +816,78 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             document.getElementById('m-status-detail').innerText = `${activeCount} Active | ${offerCount} Under Offer | ${soldCount} Sold`;
         }
 
-        function filterGrid() {
+        function populateCascadingGeoFilters() {
+            const provSelect = document.getElementById('geo-province-filter');
+            const provinces = new Set();
+
+            allListings.forEach(item => {
+                const p = item.geo_hierarchy?.province || item.location?.province;
+                if (p) provinces.add(p);
+            });
+
+            provSelect.innerHTML = '<option value="all">All Provinces</option>';
+            Array.from(provinces).sort().forEach(p => {
+                provSelect.add(new Option(p, p));
+            });
+            onProvinceChanged();
+        }
+
+        function onProvinceChanged() {
+            const selectedProv = document.getElementById('geo-province-filter').value;
+            const areaSelect = document.getElementById('geo-area-filter');
+            const areas = new Set();
+
+            allListings.forEach(item => {
+                const p = item.geo_hierarchy?.province || item.location?.province;
+                const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
+                if ((selectedProv === 'all' || p === selectedProv) && a) {
+                    areas.add(a);
+                }
+            });
+
+            areaSelect.innerHTML = '<option value="all">All Areas / Metros</option>';
+            Array.from(areas).sort().forEach(a => {
+                areaSelect.add(new Option(a, a));
+            });
+            onAreaChanged();
+        }
+
+        function onAreaChanged() {
+            const selectedProv = document.getElementById('geo-province-filter').value;
+            const selectedArea = document.getElementById('geo-area-filter').value;
+            const subSelect = document.getElementById('geo-suburb-filter');
+            const suburbs = new Set();
+
+            allListings.forEach(item => {
+                const p = item.geo_hierarchy?.province || item.location?.province;
+                const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
+                const s = item.geo_hierarchy?.suburb || item.location?.suburb;
+
+                if ((selectedProv === 'all' || p === selectedProv) &&
+                    (selectedArea === 'all' || a === selectedArea) && s) {
+                    suburbs.add(s);
+                }
+            });
+
+            subSelect.innerHTML = '<option value="all">All Suburbs</option>';
+            Array.from(suburbs).sort().forEach(s => {
+                subSelect.add(new Option(s, s));
+            });
+            filterData();
+        }
+
+        function resetGeoFilters() {
+            document.getElementById('geo-province-filter').value = 'all';
+            onProvinceChanged();
+        }
+
+        function filterData() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             const statusFilter = document.getElementById('status-filter').value;
             const sortFilter = document.getElementById('sort-filter').value;
+            const provFilter = document.getElementById('geo-province-filter').value;
+            const areaFilter = document.getElementById('geo-area-filter').value;
+            const subFilter = document.getElementById('geo-suburb-filter').value;
 
             let filtered = allListings.filter(item => {
                 const matchesQuery = !query || 
@@ -752,7 +901,15 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                     (statusFilter === 'under_offer' && (status === 'under_offer' || item.is_under_offer)) ||
                     (statusFilter === 'sold' && (status === 'sold' || item.is_sold));
 
-                return matchesQuery && matchesStatus;
+                const p = item.geo_hierarchy?.province || item.location?.province;
+                const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
+                const s = item.geo_hierarchy?.suburb || item.location?.suburb;
+
+                const matchesProv = (provFilter === 'all' || p === provFilter);
+                const matchesArea = (areaFilter === 'all' || a === areaFilter);
+                const matchesSub = (subFilter === 'all' || s === subFilter);
+
+                return matchesQuery && matchesStatus && matchesProv && matchesArea && matchesSub;
             });
 
             filtered.sort((a, b) => {
@@ -765,7 +922,42 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             });
 
             renderGridCards(filtered);
+            renderGroupedView(filtered);
             updateMapMarkers(filtered);
+        }
+
+        function createCardElement(item) {
+            const card = document.createElement('div');
+            card.className = 'property-card';
+            card.onclick = () => openDossier(item.listing_id);
+
+            const statusClass = item.is_sold ? 'sold' : (item.is_under_offer ? 'under_offer' : 'active');
+            const statusLabel = item.is_sold ? 'Sold' : (item.is_under_offer ? 'Under Offer' : 'Active');
+            const heroImg = item.hero_image_url || '/api/placeholder';
+
+            card.innerHTML = `
+                <div class="card-thumb-wrapper">
+                    <img class="card-thumb" src="${heroImg}" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
+                    <div class="card-badge ${statusClass}">${statusLabel}</div>
+                    <div class="img-count-tag">${item.images_count || 0} Photos</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-price">${item.price?.formatted_display || 'R ' + (item.price?.amount || 0).toLocaleString()}</div>
+                    <div class="card-title">${item.title || 'Untitled Listing'}</div>
+                    <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+                    <div class="card-specs">
+                        <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
+                        <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
+                        <div class="card-spec-item"><strong>${item.features?.garages || 0}</strong> Garages</div>
+                        ${item.erf_size_m2 ? `<div class="card-spec-item"><strong>${item.erf_size_m2}</strong> m²</div>` : ''}
+                    </div>
+                    <div class="card-footer">
+                        <span>ID: ${item.listing_id}</span>
+                        <span>${new Date(item.extracted_at).toLocaleDateString()}</span>
+                    </div>
+                </div>
+            `;
+            return card;
         }
 
         function renderGridCards(listings) {
@@ -780,54 +972,99 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             empty.style.display = 'none';
 
             listings.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'property-card';
-                card.onclick = () => openDossier(item.listing_id);
-
-                const statusClass = item.is_sold ? 'sold' : (item.is_under_offer ? 'under_offer' : 'active');
-                const statusLabel = item.is_sold ? 'Sold' : (item.is_under_offer ? 'Under Offer' : 'Active');
-                const heroImg = item.hero_image_url || '/api/placeholder';
-
-                card.innerHTML = `
-                    <div class="card-thumb-wrapper">
-                        <img class="card-thumb" src="${heroImg}" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
-                        <div class="card-badge ${statusClass}">${statusLabel}</div>
-                        <div class="img-count-tag">${item.images_count || 0} Photos</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-price">${item.price?.formatted_display || 'R ' + (item.price?.amount || 0).toLocaleString()}</div>
-                        <div class="card-title">${item.title || 'Untitled Listing'}</div>
-                        <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
-                        <div class="card-specs">
-                            <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
-                            <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
-                            <div class="card-spec-item"><strong>${item.features?.garages || 0}</strong> Garages</div>
-                            ${item.erf_size_m2 ? `<div class="card-spec-item"><strong>${item.erf_size_m2}</strong> m²</div>` : ''}
-                        </div>
-                        <div class="card-footer">
-                            <span>ID: ${item.listing_id}</span>
-                            <span>${new Date(item.extracted_at).toLocaleDateString()}</span>
-                        </div>
-                    </div>
-                `;
-                grid.appendChild(card);
+                grid.appendChild(createCardElement(item));
             });
         }
 
+        function renderGroupedView(listings) {
+            const container = document.getElementById('grouped-view-container');
+            container.innerHTML = '';
+
+            // Group: Province -> Area -> Suburb
+            const groups = {};
+            listings.forEach(item => {
+                const prov = item.geo_hierarchy?.province || 'Other Province';
+                const area = item.geo_hierarchy?.area || 'Other Area';
+                const sub = item.geo_hierarchy?.suburb || 'Other Suburb';
+
+                if (!groups[prov]) groups[prov] = {};
+                if (!groups[prov][area]) groups[prov][area] = {};
+                if (!groups[prov][area][sub]) groups[prov][area][sub] = [];
+
+                groups[prov][area][sub].push(item);
+            });
+
+            for (const [prov, areas] of Object.entries(groups)) {
+                let provCount = 0, provVal = 0;
+                for (const a of Object.values(areas)) {
+                    for (const s of Object.values(a)) {
+                        provCount += s.length;
+                        provVal += s.reduce((sum, x) => sum + (x.price?.amount || 0), 0);
+                    }
+                }
+                const avgProv = provCount ? Math.round(provVal / provCount) : 0;
+
+                const provBox = document.createElement('div');
+                provBox.className = 'province-accordion';
+                provBox.innerHTML = `
+                    <div class="province-header">
+                        <div style="font-size: 1.15rem; font-weight: 700; color: var(--primary);">
+                            📍 ${prov}
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">
+                            <strong>${provCount}</strong> Properties | Total: <strong>R ${provVal.toLocaleString()}</strong> | Avg: <strong>R ${avgProv.toLocaleString()}</strong>
+                        </div>
+                    </div>
+                `;
+
+                const body = document.createElement('div');
+
+                for (const [area, suburbs] of Object.entries(areas)) {
+                    const areaSec = document.createElement('div');
+                    areaSec.className = 'area-section';
+                    areaSec.innerHTML = `<div class="area-title">🏙️ ${area}</div>`;
+
+                    for (const [sub, subListings] of Object.entries(suburbs)) {
+                        const subBlock = document.createElement('div');
+                        subBlock.className = 'suburb-block';
+                        subBlock.innerHTML = `
+                            <div class="suburb-header">
+                                <span>🏡 ${sub}</span>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">${subListings.length} listing(s)</span>
+                            </div>
+                        `;
+
+                        const subGrid = document.createElement('div');
+                        subGrid.className = 'property-grid';
+                        subListings.forEach(item => subGrid.appendChild(createCardElement(item)));
+
+                        subBlock.appendChild(subGrid);
+                        areaSec.appendChild(subBlock);
+                    }
+                    body.appendChild(areaSec);
+                }
+
+                provBox.appendChild(body);
+                container.appendChild(provBox);
+            }
+        }
+
         function switchView(view) {
+            currentView = view;
             document.getElementById('btn-view-grid').classList.toggle('active', view === 'grid');
+            document.getElementById('btn-view-grouped').classList.toggle('active', view === 'grouped');
             document.getElementById('btn-view-map').classList.toggle('active', view === 'map');
 
             const grid = document.getElementById('property-grid');
+            const grouped = document.getElementById('grouped-view-container');
             const mapContainer = document.getElementById('map-view-container');
 
+            grid.style.display = (view === 'grid') ? 'grid' : 'none';
+            grouped.style.display = (view === 'grouped') ? 'flex' : 'none';
+            mapContainer.style.display = (view === 'map') ? 'block' : 'none';
+
             if (view === 'map') {
-                grid.style.display = 'none';
-                mapContainer.style.display = 'block';
                 initMap();
-            } else {
-                grid.style.display = 'grid';
-                mapContainer.style.display = 'none';
             }
         }
 
@@ -840,7 +1077,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 }).addTo(mainMap);
                 markersGroup = L.featureGroup().addTo(mainMap);
             }
-            setTimeout(() => { mainMap.invalidateSize(); filterGrid(); }, 200);
+            setTimeout(() => { mainMap.invalidateSize(); filterData(); }, 200);
         }
 
         function updateMapMarkers(listings) {
@@ -1086,7 +1323,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             selA.innerHTML = '';
             selB.innerHTML = '';
 
-            allListings.forEach((item, idx) => {
+            allListings.forEach(item => {
                 const optA = new Option(`${item.listing_id} - ${item.title || 'Listing'}`, item.listing_id);
                 const optB = new Option(`${item.listing_id} - ${item.title || 'Listing'}`, item.listing_id);
                 selA.add(optA);

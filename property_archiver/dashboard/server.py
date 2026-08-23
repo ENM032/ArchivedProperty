@@ -1,5 +1,6 @@
 """
-Embedded HTTP server and REST API with recursive listing discovery.
+Embedded HTTP server and REST API with recursive listing discovery,
+export engine, and /api/hierarchy endpoint.
 """
 
 import io
@@ -17,6 +18,7 @@ from typing import Any
 from property_archiver.config import settings
 from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.fetcher import Fetcher
+from property_archiver.core.hierarchy import GeoHierarchyBuilder, GeoNode
 from property_archiver.core.security import safe_join_path
 from property_archiver.dashboard.app_html import DASHBOARD_HTML
 from property_archiver.export.exporter import PortfolioExporter
@@ -28,6 +30,42 @@ from property_archiver.storage.writer import ArchiveWriter
 from property_archiver.utils.url_resolver import resolve_input_targets
 
 logger = logging.getLogger(__name__)
+
+
+def serialize_geo_node(node: GeoNode) -> dict[str, Any]:
+    """Serialize a GeoNode and its subtree to a clean JSON-friendly dict."""
+    return {
+        "name": node.name,
+        "level": node.level,
+        "total_listings": node.total_listings,
+        "total_value_zar": node.total_value_zar,
+        "avg_price_zar": node.avg_price_zar,
+        "active_count": node.active_count,
+        "under_offer_count": node.under_offer_count,
+        "sold_count": node.sold_count,
+        "children": {k: serialize_geo_node(v) for k, v in node.children.items()},
+        "listings": [
+            {
+                "listing_id": r.listing_id,
+                "portal_name": r.portal_name,
+                "title": r.title,
+                "property_type": r.property_type,
+                "listing_status": r.listing_status,
+                "is_under_offer": r.is_under_offer,
+                "is_sold": r.is_sold,
+                "status_badges": r.status_badges,
+                "price": r.price.model_dump(),
+                "location": r.location.model_dump(),
+                "features": r.features.model_dump(),
+                "erf_size_m2": r.erf_size_m2,
+                "floor_size_m2": r.floor_size_m2,
+                "images_count": len(r.images),
+                "hero_image_url": f"/api/listings/{r.listing_id}/image/{r.images[0].local_filename}" if (r.images and r.images[0].local_filename) else None,
+                "extracted_at": r.extracted_at.isoformat(),
+            }
+            for r in node.listings
+        ]
+    }
 
 
 class DashboardRequestHandler(BaseHTTPRequestHandler):
@@ -55,7 +93,12 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self._handle_api_list_listings()
             return
 
-        # 3. API: Single listing details or image
+        # 3. API: Geographic Hierarchy Tree
+        if path == "/api/hierarchy":
+            self._handle_api_hierarchy(query)
+            return
+
+        # 4. API: Single listing details or image
         if path.startswith("/api/listings/"):
             parts = [p for p in path.split("/") if p]
             if len(parts) == 3:
@@ -68,20 +111,20 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                 self._handle_api_get_image(listing_id, image_filename)
                 return
 
-        # 4. API: Compare two archives
+        # 5. API: Compare two archives
         if path == "/api/compare":
             id_a = query.get("a", [""])[0]
             id_b = query.get("b", [""])[0]
             self._handle_api_compare(id_a, id_b)
             return
 
-        # 5. API: Multi-format export (CSV, SQLite, JSONL, GeoJSON)
+        # 6. API: Multi-format export (CSV, SQLite, JSONL, GeoJSON)
         if path == "/api/export":
             export_fmt = query.get("format", ["csv"])[0].lower()
             self._handle_api_export(export_fmt)
             return
 
-        # 6. Placeholder SVG image
+        # 7. Placeholder SVG image
         if path == "/api/placeholder":
             svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#1e293b" width="600" height="400"/><text fill="#94a3b8" font-family="sans-serif" font-size="24" dy="10.5" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
             self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
@@ -125,6 +168,8 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                             hero_url = f"/api/listings/{record.listing_id}/image/{img.local_filename}"
                             break
 
+                prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(record)
+
                 results.append({
                     "listing_id": record.listing_id,
                     "portal_name": record.portal_name,
@@ -136,6 +181,11 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                     "status_badges": record.status_badges,
                     "price": record.price.model_dump(),
                     "location": record.location.model_dump(),
+                    "geo_hierarchy": {
+                        "province": prov,
+                        "area": area,
+                        "suburb": sub,
+                    },
                     "features": record.features.model_dump(),
                     "erf_size_m2": record.erf_size_m2,
                     "land_size_raw": record.land_size_raw,
@@ -148,6 +198,23 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                 logger.error("Failed loading listing %s: %s", item.name, exc)
 
         self._send_json_response(results)
+
+    def _handle_api_hierarchy(self, query: dict[str, list[str]]):
+        """Return complete geographic hierarchy tree with aggregate statistics."""
+        records = PortfolioExporter.load_all_listings(self.archive_dir)
+        prov = query.get("province", [None])[0]
+        area = query.get("area", [None])[0]
+        sub = query.get("suburb", [None])[0]
+        status = query.get("status", ["all"])[0]
+
+        tree_root = GeoHierarchyBuilder.build_tree(
+            records=records,
+            filter_province=prov,
+            filter_area=area,
+            filter_suburb=sub,
+            filter_status=status,
+        )
+        self._send_json_response(serialize_geo_node(tree_root))
 
     def _handle_api_get_listing(self, listing_id: str):
         """Return full details for a listing."""
