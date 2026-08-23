@@ -44,7 +44,7 @@ def main():
 
 
 def _fetch_single_target(target: str, output: str, no_images: bool, timeout: float, rate_limit: float, user_agent: str | None) -> bool:
-    """Internal helper to fetch and archive a single resolved target."""
+    """Internal helper to fetch and archive a single resolved target with smart caching."""
     cfg = settings.model_copy()
     cfg.archive_dir = Path(output)
     cfg.download_images = not no_images
@@ -99,9 +99,14 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
 
     archived_images_count = 0
     if cfg.download_images and listing.images:
-        console.print(f"[yellow]Downloading {len(listing.images)} gallery images...[/yellow]")
+        # Check if archive already exists to reuse cached images
+        existing_dir = ArchiveReader.find_listing_dir(cfg.archive_dir, listing.listing_id)
+        existing_images_dir = (existing_dir / "images") if (existing_dir and (existing_dir / "images").exists()) else None
+
+        cache_msg = " [cyan](smart cache enabled)[/cyan]" if existing_images_dir else ""
+        console.print(f"[yellow]Archiving {len(listing.images)} gallery images...{cache_msg}[/yellow]")
         downloader = ImageDownloader(config=cfg)
-        listing.images = downloader.download_all(listing.images, images_dir)
+        listing.images = downloader.download_all(listing.images, images_dir, existing_images_dir=existing_images_dir)
         archived_images_count = sum(1 for img in listing.images if img.local_filename is not None)
         console.print(f"[green]Archived {archived_images_count}/{len(listing.images)} images.[/green]")
 

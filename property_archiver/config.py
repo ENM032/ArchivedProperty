@@ -26,6 +26,30 @@ class ArchiverSettings(BaseSettings):
         description="Storage directory layout: 'flat' (listings/<id>) or 'hierarchical' (listings/<prov>/<area>/<suburb>/<id>)"
     )
 
+    # Security & SSRF
+    allowed_domains: list[str] = Field(
+        default_factory=lambda: [
+            "privateproperty.co.za",
+            "www.privateproperty.co.za",
+            "images.pp.co.za",
+            "images.privateproperty.co.za",
+            "helium.privateproperty.co.za",
+        ],
+        description="Whitelisted domains permitted for fetching"
+    )
+    allow_custom_domains: bool = Field(
+        default=False,
+        description="Allow fetching from domains outside the default whitelist after public IP verification"
+    )
+    verify_ssl: bool = Field(
+        default=True,
+        description="Verify SSL/TLS certificates on all outbound HTTP requests"
+    )
+    max_response_size_bytes: int = Field(
+        default=25 * 1024 * 1024,
+        description="Maximum allowed HTTP response payload in bytes (25 MB)"
+    )
+
     # Network & Rate Limiting
     request_timeout_sec: float = Field(default=25.0, description="HTTP socket and connect timeout in seconds")
     rate_limit_delay_sec: float = Field(default=1.0, description="Polite delay between consecutive portal requests")
@@ -34,7 +58,8 @@ class ArchiverSettings(BaseSettings):
 
     # Media Downloader
     download_images: bool = Field(default=True, description="Whether to fetch and archive high-resolution listing images")
-    image_concurrency: int = Field(default=6, description="Number of parallel worker threads for asset downloads")
+    max_concurrency: int = Field(default=6, description="Number of parallel worker threads for asset downloads")
+    image_concurrency: int = Field(default=6, description="Alias for max_concurrency")
     max_image_dimension: int = Field(default=1600, description="Preferred resolution cap for preserved photos")
 
     # Browser & User-Agent Identity
