@@ -3,6 +3,7 @@ Click & Rich Command-Line Interface for Property Archiver.
 """
 
 import logging
+import shutil
 import sys
 import time
 import webbrowser
@@ -202,9 +203,7 @@ def fetch_command(
 @click.option("--status", type=click.Choice(["all", "active", "under_offer", "sold"], case_sensitive=False), default="all", help="Filter by listing status")
 @click.option("--archive-dir", type=click.Path(exists=True), default="./archive", help="Archive directory path")
 def tree_command(province: str | None, area: str | None, suburb: str | None, status: str, archive_dir: str):
-    """
-    Display archived listings sorted hierarchically by Province -> Area -> Suburb -> Listing.
-    """
+    """Display archived listings sorted hierarchically by Province -> Area -> Suburb -> Listing."""
     records = PortfolioExporter.load_all_listings(archive_dir)
     if not records:
         console.print("[yellow]No archived listings found in archive directory.[/yellow]")
@@ -222,7 +221,6 @@ def tree_command(province: str | None, area: str | None, suburb: str | None, sta
         console.print("[yellow]No listings match the specified geographic/status filters.[/yellow]")
         return
 
-    # Render Rich Tree (Windows-safe glyphs)
     root_label = (
         f"[bold white][ZA] {tree_root.name}[/bold white] "
         f"([bold cyan]{tree_root.total_listings}[/bold cyan] listings | "
@@ -272,6 +270,61 @@ def tree_command(province: str | None, area: str | None, suburb: str | None, sta
     console.print()
     console.print(rich_tree)
     console.print()
+
+
+@main.command(name="reorganize")
+@click.option("--layout", "-l", type=click.Choice(["hierarchical", "flat"], case_sensitive=False), required=True, help="Target storage layout")
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+@click.option("--dry-run", is_flag=True, default=False, help="Simulate restructuring without moving files")
+def reorganize_command(layout: str, archive_dir: str, dry_run: bool):
+    """
+    Restructure existing archived property directories on disk between 'flat' and 'hierarchical' layouts.
+    """
+    base_dir = Path(archive_dir).resolve()
+    target_layout = layout.lower()
+    console.print(f"[bold cyan]Reorganizing archive repository to layout: {target_layout.upper()}[/bold cyan]")
+    if dry_run:
+        console.print("[yellow][DRY RUN MODE] No files will be moved.[/yellow]\n")
+
+    listing_dirs = ArchiveReader.find_all_listing_dirs(base_dir)
+    if not listing_dirs:
+        console.print("[yellow]No archived listings found to reorganize.[/yellow]")
+        return
+
+    moved_count = 0
+    for current_dir in listing_dirs:
+        try:
+            listing = ArchiveReader.load_listing(current_dir)
+            if target_layout == "hierarchical":
+                rel_path = GeoHierarchyBuilder.get_hierarchical_relpath(listing)
+                dest_dir = base_dir / "listings" / rel_path
+            else:
+                dest_dir = base_dir / "listings" / listing.listing_id
+
+            if current_dir.resolve() == dest_dir.resolve():
+                continue
+
+            console.print(f"  [cyan]{listing.listing_id}[/cyan]: {current_dir.relative_to(base_dir)} -> [green]{dest_dir.relative_to(base_dir)}[/green]")
+            if not dry_run:
+                dest_dir.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(current_dir), str(dest_dir))
+            moved_count += 1
+        except Exception as exc:
+            console.print(f"[bold red]Failed reorganizing {current_dir}:[/bold red] {exc}")
+
+    # Cleanup empty directories
+    if not dry_run:
+        listings_root = base_dir / "listings"
+        for root, dirs, files in os.walk(listings_root, topdown=False):
+            for d in dirs:
+                full_d = Path(root) / d
+                try:
+                    if full_d.exists() and not any(full_d.iterdir()):
+                        full_d.rmdir()
+                except OSError:
+                    pass
+
+    console.print(f"\n[bold green]Successfully reorganized {moved_count} listing directory(ies).[/bold green]")
 
 
 @main.command(name="export")
@@ -344,8 +397,8 @@ def dashboard_alias(ctx):
 def view_command(listing_id: str, archive_dir: str, port: int):
     """Open a specific archived listing directly in the visual web dossier."""
     clean_id = listing_id.strip().strip("/").upper()
-    listing_path = Path(archive_dir) / "listings" / clean_id
-    if not listing_path.exists():
+    listing_dir = ArchiveReader.find_listing_dir(archive_dir, clean_id)
+    if not listing_dir:
         console.print(f"[bold red]Archive not found for listing ID:[/bold red] {clean_id}")
         sys.exit(1)
 

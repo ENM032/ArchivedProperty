@@ -1,6 +1,5 @@
 """
-Embedded HTTP server and REST API for the Unified Property Archiver Dashboard.
-Supports /api/compare and /api/export (csv, sqlite, jsonl, geojson).
+Embedded HTTP server and REST API with recursive listing discovery.
 """
 
 import io
@@ -51,7 +50,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self._send_html_response(DASHBOARD_HTML)
             return
 
-        # 2. API: List all archived listings
+        # 2. API: List all archived listings (recursive)
         if path == "/api/listings":
             self._handle_api_list_listings()
             return
@@ -112,51 +111,49 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
         self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
 
     def _handle_api_list_listings(self):
-        """Return array of summary records for all archived listings."""
-        listings_base = self.archive_dir / "listings"
+        """Return array of summary records for all discovered listings."""
+        listing_dirs = ArchiveReader.find_all_listing_dirs(self.archive_dir)
         results: list[dict[str, Any]] = []
 
-        if listings_base.exists():
-            for item in listings_base.iterdir():
-                if item.is_dir() and (item / "listing.json").exists():
-                    try:
-                        record = ArchiveReader.load_listing(item)
-                        hero_url = None
-                        if record.images:
-                            for img in record.images:
-                                if img.local_filename and (item / "images" / img.local_filename).exists():
-                                    hero_url = f"/api/listings/{record.listing_id}/image/{img.local_filename}"
-                                    break
+        for item in listing_dirs:
+            try:
+                record = ArchiveReader.load_listing(item)
+                hero_url = None
+                if record.images:
+                    for img in record.images:
+                        if img.local_filename and (item / "images" / img.local_filename).exists():
+                            hero_url = f"/api/listings/{record.listing_id}/image/{img.local_filename}"
+                            break
 
-                        results.append({
-                            "listing_id": record.listing_id,
-                            "portal_name": record.portal_name,
-                            "title": record.title,
-                            "property_type": record.property_type,
-                            "listing_status": record.listing_status,
-                            "is_under_offer": record.is_under_offer,
-                            "is_sold": record.is_sold,
-                            "status_badges": record.status_badges,
-                            "price": record.price.model_dump(),
-                            "location": record.location.model_dump(),
-                            "features": record.features.model_dump(),
-                            "erf_size_m2": record.erf_size_m2,
-                            "land_size_raw": record.land_size_raw,
-                            "floor_size_m2": record.floor_size_m2,
-                            "images_count": len(record.images),
-                            "hero_image_url": hero_url,
-                            "extracted_at": record.extracted_at.isoformat(),
-                        })
-                    except Exception as exc:
-                        logger.error("Failed loading listing %s: %s", item.name, exc)
+                results.append({
+                    "listing_id": record.listing_id,
+                    "portal_name": record.portal_name,
+                    "title": record.title,
+                    "property_type": record.property_type,
+                    "listing_status": record.listing_status,
+                    "is_under_offer": record.is_under_offer,
+                    "is_sold": record.is_sold,
+                    "status_badges": record.status_badges,
+                    "price": record.price.model_dump(),
+                    "location": record.location.model_dump(),
+                    "features": record.features.model_dump(),
+                    "erf_size_m2": record.erf_size_m2,
+                    "land_size_raw": record.land_size_raw,
+                    "floor_size_m2": record.floor_size_m2,
+                    "images_count": len(record.images),
+                    "hero_image_url": hero_url,
+                    "extracted_at": record.extracted_at.isoformat(),
+                })
+            except Exception as exc:
+                logger.error("Failed loading listing %s: %s", item.name, exc)
 
         self._send_json_response(results)
 
     def _handle_api_get_listing(self, listing_id: str):
         """Return full details for a listing."""
         try:
-            listing_dir = safe_join_path(self.archive_dir / "listings", listing_id)
-            if not listing_dir.exists():
+            listing_dir = ArchiveReader.find_listing_dir(self.archive_dir, listing_id)
+            if not listing_dir:
                 self.send_error(HTTPStatus.NOT_FOUND, f"Listing {listing_id} not found")
                 return
 
@@ -175,7 +172,11 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
     def _handle_api_get_image(self, listing_id: str, filename: str):
         """Serve an archived image file safely."""
         try:
-            listing_dir = safe_join_path(self.archive_dir / "listings", listing_id)
+            listing_dir = ArchiveReader.find_listing_dir(self.archive_dir, listing_id)
+            if not listing_dir:
+                self.send_error(HTTPStatus.NOT_FOUND, "Listing not found")
+                return
+
             img_path = safe_join_path(listing_dir / "images", filename)
             if not img_path.exists() or not img_path.is_file():
                 self.send_error(HTTPStatus.NOT_FOUND, "Image not found")
@@ -194,9 +195,9 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
     def _handle_api_compare(self, id_a: str, id_b: str):
         """Compare two listings or snapshots."""
         try:
-            dir_a = safe_join_path(self.archive_dir / "listings", id_a)
-            dir_b = safe_join_path(self.archive_dir / "listings", id_b)
-            if not dir_a.exists() or not dir_b.exists():
+            dir_a = ArchiveReader.find_listing_dir(self.archive_dir, id_a)
+            dir_b = ArchiveReader.find_listing_dir(self.archive_dir, id_b)
+            if not dir_a or not dir_b:
                 self.send_error(HTTPStatus.NOT_FOUND, "One or both listings not found")
                 return
 
@@ -261,7 +262,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(content)
 
-        else:  # Default to CSV
+        else:
             out_file = temp_dir / "portfolio.csv"
             PortfolioExporter.export_csv(self.archive_dir, out_file)
             with open(out_file, "rb") as f:

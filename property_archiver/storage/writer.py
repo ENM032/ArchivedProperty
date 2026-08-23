@@ -1,6 +1,6 @@
 """
-Atomic archive writer with Windows-safe directory swaps, retry backoff,
-and automated historical snapshot versioning.
+Atomic archive writer supporting flat and hierarchical (Province/Area/Suburb) filesystem layouts,
+Windows-safe directory swaps, and historical snapshot ledgers.
 """
 
 import json
@@ -16,6 +16,7 @@ from property_archiver.config import ArchiverSettings, settings
 from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.exceptions import StorageError
 from property_archiver.core.hasher import calculate_file_sha256
+from property_archiver.core.hierarchy import GeoHierarchyBuilder
 from property_archiver.core.security import safe_join_path, sanitize_filename
 from property_archiver.models.archive import ArchiveManifest, ArchiveMetadata
 from property_archiver.models.listing import ListingRecord
@@ -50,11 +51,19 @@ class ArchiveWriter:
     ) -> Path:
         """
         Finalize, hash, and atomically commit the staging directory into the permanent archive.
-        Preserves previous versions in snapshots/ history ledger if updates are detected.
+        Respects flat vs hierarchical layout settings.
         """
         base_dir = Path(output_base_dir or self.config.archive_dir).resolve()
         safe_lid = sanitize_filename(listing.listing_id or "listing")
-        target_dir = safe_join_path(base_dir, "listings", safe_lid)
+
+        # Determine target path based on layout configuration
+        if getattr(self.config, "archive_layout", "flat") == "hierarchical":
+            rel_subpath = GeoHierarchyBuilder.get_hierarchical_relpath(listing)
+            target_dir = base_dir / "listings" / rel_subpath
+        else:
+            target_dir = safe_join_path(base_dir, "listings", safe_lid)
+
+        target_dir.parent.mkdir(parents=True, exist_ok=True)
 
         try:
             # 1. Write raw.html
@@ -101,21 +110,17 @@ class ArchiveWriter:
                 f.write(manifest.model_dump_json(indent=2))
 
             # 6. Historical Snapshot & Timeline Ledger
-            snapshots_to_preserve: list[Path] = []
             history_entries: list[dict] = []
-
             if target_dir.exists() and (target_dir / "listing.json").exists():
                 try:
                     old_listing = ArchiveReader.load_listing(target_dir)
                     old_meta = ArchiveReader.load_metadata(target_dir)
 
-                    # Read existing history if present
                     old_history_file = target_dir / "history.json"
                     if old_history_file.exists():
                         with open(old_history_file, "r", encoding="utf-8") as hf:
                             history_entries = json.load(hf)
 
-                    # Check for diff
                     diff = ChangeDetector.compare_records(old_listing, listing)
                     if not diff.is_identical:
                         snap_time_str = old_meta.archived_at.strftime("%Y%m%d_%H%M%S")
@@ -135,12 +140,10 @@ class ArchiveWriter:
                             }
                         })
 
-                    # Write updated history.json in staging dir
                     staging_history = staging_dir / "history.json"
                     with open(staging_history, "w", encoding="utf-8") as hf:
                         json.dump(history_entries, hf, indent=2)
 
-                    # Preserve existing snapshots folder if present
                     old_snapshots_dir = target_dir / "snapshots"
                     if old_snapshots_dir.exists():
                         staging_snapshots = staging_dir / "snapshots"
@@ -165,33 +168,28 @@ class ArchiveWriter:
         """
         backup_dir = target_dir.parent / f".bak_{target_dir.name}_{int(time.time()*1000)}"
 
-        # Step A: Move existing target_dir to backup
         if target_dir.exists():
             for attempt in range(max_retries):
                 try:
                     target_dir.rename(backup_dir)
                     break
-                except (PermissionError, OSError) as e:
+                except (PermissionError, OSError):
                     if attempt == max_retries - 1:
-                        # Fallback: remove recursively
                         shutil.rmtree(target_dir, ignore_errors=True)
                         break
                     time.sleep(0.05 * (2 ** attempt))
 
-        # Step B: Rename staging_dir to target_dir
         for attempt in range(max_retries):
             try:
                 staging_dir.rename(target_dir)
                 break
             except (PermissionError, OSError) as e:
                 if attempt == max_retries - 1:
-                    # If rename fails, restore backup if possible
                     if backup_dir.exists() and not target_dir.exists():
                         backup_dir.rename(target_dir)
                     raise StorageError(f"Failed moving staging dir to target {target_dir}: {e}") from e
                 time.sleep(0.05 * (2 ** attempt))
 
-        # Step C: Cleanup backup dir safely
         if backup_dir.exists():
             shutil.rmtree(backup_dir, ignore_errors=True)
 
