@@ -1,5 +1,5 @@
 """
-Multi-format export engine: CSV, SQLite, JSON Lines, and GeoJSON with recursive discovery.
+Multi-format export engine: CSV, SQLite, JSON Lines, and GeoJSON with regional/geographic filtering.
 """
 
 import csv
@@ -9,6 +9,7 @@ import sqlite3
 from pathlib import Path
 from typing import Any
 
+from property_archiver.core.hierarchy import GeoHierarchyBuilder
 from property_archiver.models.listing import ListingRecord
 from property_archiver.storage.reader import ArchiveReader
 
@@ -16,17 +17,43 @@ logger = logging.getLogger(__name__)
 
 
 class PortfolioExporter:
-    """Exports archived property collections into analytical and spatial formats."""
+    """Exports archived property collections into analytical and spatial formats with regional filters."""
 
     @staticmethod
-    def load_all_listings(archive_dir: Path | str) -> list[ListingRecord]:
-        """Load all valid listing records recursively from flat or hierarchical archive directory."""
+    def load_all_listings(
+        archive_dir: Path | str,
+        filter_province: str | None = None,
+        filter_area: str | None = None,
+        filter_suburb: str | None = None,
+        filter_status: str | None = None,
+    ) -> list[ListingRecord]:
+        """Load and filter listing records from flat or hierarchical archive directories."""
         listing_dirs = ArchiveReader.find_all_listing_dirs(archive_dir)
         records: list[ListingRecord] = []
 
         for item in listing_dirs:
             try:
                 rec = ArchiveReader.load_listing(item)
+
+                # Status filter
+                if filter_status and filter_status != "all":
+                    st = (rec.listing_status or "active").lower()
+                    if filter_status == "active" and (st != "active" or rec.is_under_offer or rec.is_sold):
+                        continue
+                    elif filter_status == "under_offer" and (st != "under_offer" and not rec.is_under_offer):
+                        continue
+                    elif filter_status == "sold" and (st != "sold" and not rec.is_sold):
+                        continue
+
+                # Geo filters
+                prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(rec)
+                if filter_province and filter_province.lower() not in prov.lower():
+                    continue
+                if filter_area and filter_area.lower() not in area.lower():
+                    continue
+                if filter_suburb and filter_suburb.lower() not in sub.lower():
+                    continue
+
                 records.append(rec)
             except Exception as exc:
                 logger.warning("Failed loading listing %s for export: %s", item.name, exc)
@@ -34,14 +61,24 @@ class PortfolioExporter:
         return records
 
     @staticmethod
-    def export_csv(archive_dir: Path | str, output_path: Path | str) -> Path:
-        """Export all listings to a flattened CSV spreadsheet."""
-        records = PortfolioExporter.load_all_listings(archive_dir)
+    def export_csv(
+        archive_dir: Path | str,
+        output_path: Path | str,
+        filter_province: str | None = None,
+        filter_area: str | None = None,
+        filter_suburb: str | None = None,
+        filter_status: str | None = None,
+    ) -> Path:
+        """Export filtered listings to a flattened CSV spreadsheet."""
+        records = PortfolioExporter.load_all_listings(
+            archive_dir, filter_province, filter_area, filter_suburb, filter_status
+        )
         out_file = Path(output_path).resolve()
         out_file.parent.mkdir(parents=True, exist_ok=True)
 
         rows: list[dict[str, Any]] = []
         for r in records:
+            prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(r)
             rows.append({
                 "listing_id": r.listing_id,
                 "portal": r.portal_name,
@@ -58,9 +95,10 @@ class PortfolioExporter:
                 "rates_taxes_monthly": r.price.rates_and_taxes_monthly,
                 "levies_monthly": r.price.levies_monthly,
                 "street_address": r.location.street_address,
-                "suburb": r.location.suburb,
+                "suburb": sub,
+                "area": area,
                 "city": r.location.city,
-                "province": r.location.province,
+                "province": prov,
                 "country": r.location.country,
                 "latitude": r.location.latitude,
                 "longitude": r.location.longitude,
@@ -98,9 +136,18 @@ class PortfolioExporter:
         return out_file
 
     @staticmethod
-    def export_sqlite(archive_dir: Path | str, output_path: Path | str) -> Path:
-        """Export all listings into an indexed relational SQLite database."""
-        records = PortfolioExporter.load_all_listings(archive_dir)
+    def export_sqlite(
+        archive_dir: Path | str,
+        output_path: Path | str,
+        filter_province: str | None = None,
+        filter_area: str | None = None,
+        filter_suburb: str | None = None,
+        filter_status: str | None = None,
+    ) -> Path:
+        """Export filtered listings into an indexed relational SQLite database."""
+        records = PortfolioExporter.load_all_listings(
+            archive_dir, filter_province, filter_area, filter_suburb, filter_status
+        )
         out_file = Path(output_path).resolve()
         out_file.parent.mkdir(parents=True, exist_ok=True)
 
@@ -126,6 +173,7 @@ class PortfolioExporter:
             levies_monthly REAL,
             street_address TEXT,
             suburb TEXT,
+            area TEXT,
             city TEXT,
             province TEXT,
             latitude REAL,
@@ -145,6 +193,7 @@ class PortfolioExporter:
         """)
 
         cursor.execute("CREATE INDEX idx_listings_province ON listings(province)")
+        cursor.execute("CREATE INDEX idx_listings_area ON listings(area)")
         cursor.execute("CREATE INDEX idx_listings_suburb ON listings(suburb)")
         cursor.execute("CREATE INDEX idx_listings_status ON listings(listing_status)")
         cursor.execute("CREATE INDEX idx_listings_price ON listings(price_amount)")
@@ -164,9 +213,10 @@ class PortfolioExporter:
         """)
 
         for r in records:
+            prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(r)
             cursor.execute("""
             INSERT INTO listings VALUES (
-                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
             )
             """, (
                 r.listing_id,
@@ -182,9 +232,10 @@ class PortfolioExporter:
                 r.price.rates_and_taxes_monthly,
                 r.price.levies_monthly,
                 r.location.street_address,
-                r.location.suburb,
+                sub,
+                area,
                 r.location.city,
-                r.location.province,
+                prov,
                 r.location.latitude,
                 r.location.longitude,
                 r.erf_size_m2,
@@ -219,9 +270,18 @@ class PortfolioExporter:
         return out_file
 
     @staticmethod
-    def export_jsonl(archive_dir: Path | str, output_path: Path | str) -> Path:
-        """Export all listings as line-delimited JSON (JSONL)."""
-        records = PortfolioExporter.load_all_listings(archive_dir)
+    def export_jsonl(
+        archive_dir: Path | str,
+        output_path: Path | str,
+        filter_province: str | None = None,
+        filter_area: str | None = None,
+        filter_suburb: str | None = None,
+        filter_status: str | None = None,
+    ) -> Path:
+        """Export filtered listings as line-delimited JSON (JSONL)."""
+        records = PortfolioExporter.load_all_listings(
+            archive_dir, filter_province, filter_area, filter_suburb, filter_status
+        )
         out_file = Path(output_path).resolve()
         out_file.parent.mkdir(parents=True, exist_ok=True)
 
@@ -232,15 +292,25 @@ class PortfolioExporter:
         return out_file
 
     @staticmethod
-    def export_geojson(archive_dir: Path | str, output_path: Path | str) -> Path:
-        """Export all listings with GPS coordinates as a standard GeoJSON FeatureCollection."""
-        records = PortfolioExporter.load_all_listings(archive_dir)
+    def export_geojson(
+        archive_dir: Path | str,
+        output_path: Path | str,
+        filter_province: str | None = None,
+        filter_area: str | None = None,
+        filter_suburb: str | None = None,
+        filter_status: str | None = None,
+    ) -> Path:
+        """Export filtered listings with GPS coordinates as GeoJSON FeatureCollection."""
+        records = PortfolioExporter.load_all_listings(
+            archive_dir, filter_province, filter_area, filter_suburb, filter_status
+        )
         out_file = Path(output_path).resolve()
         out_file.parent.mkdir(parents=True, exist_ok=True)
 
         features: list[dict[str, Any]] = []
         for r in records:
             if r.location.latitude is not None and r.location.longitude is not None:
+                prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(r)
                 features.append({
                     "type": "Feature",
                     "geometry": {
@@ -256,9 +326,10 @@ class PortfolioExporter:
                         "is_under_offer": r.is_under_offer,
                         "is_sold": r.is_sold,
                         "street_address": r.location.street_address,
-                        "suburb": r.location.suburb,
+                        "suburb": sub,
+                        "area": area,
                         "city": r.location.city,
-                        "province": r.location.province,
+                        "province": prov,
                         "bedrooms": r.features.bedrooms,
                         "bathrooms": r.features.bathrooms,
                         "erf_size_m2": r.erf_size_m2,

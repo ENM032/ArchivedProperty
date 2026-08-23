@@ -3,6 +3,7 @@ Click & Rich Command-Line Interface for Property Archiver.
 """
 
 import logging
+import os
 import shutil
 import sys
 import time
@@ -277,9 +278,7 @@ def tree_command(province: str | None, area: str | None, suburb: str | None, sta
 @click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
 @click.option("--dry-run", is_flag=True, default=False, help="Simulate restructuring without moving files")
 def reorganize_command(layout: str, archive_dir: str, dry_run: bool):
-    """
-    Restructure existing archived property directories on disk between 'flat' and 'hierarchical' layouts.
-    """
+    """Restructure existing archived property directories on disk between 'flat' and 'hierarchical' layouts."""
     base_dir = Path(archive_dir).resolve()
     target_layout = layout.lower()
     console.print(f"[bold cyan]Reorganizing archive repository to layout: {target_layout.upper()}[/bold cyan]")
@@ -312,7 +311,6 @@ def reorganize_command(layout: str, archive_dir: str, dry_run: bool):
         except Exception as exc:
             console.print(f"[bold red]Failed reorganizing {current_dir}:[/bold red] {exc}")
 
-    # Cleanup empty directories
     if not dry_run:
         listings_root = base_dir / "listings"
         for root, dirs, files in os.walk(listings_root, topdown=False):
@@ -330,9 +328,23 @@ def reorganize_command(layout: str, archive_dir: str, dry_run: bool):
 @main.command(name="export")
 @click.option("--format", "-f", "export_format", type=click.Choice(["csv", "sqlite", "jsonl", "geojson"], case_sensitive=False), default="csv", help="Export format")
 @click.option("--output", "-o", "output_path", type=click.Path(), default=None, help="Destination output file path")
-@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
-def export_command(export_format: str, output_path: str | None, archive_dir: str):
-    """Export all archived listings into CSV, SQLite, JSONL, or GeoJSON formats."""
+@click.option("--province", "-p", type=str, default=None, help="Filter export by province (e.g. 'Gauteng')")
+@click.option("--area", "-a", type=str, default=None, help="Filter export by area (e.g. 'Sandton')")
+@click.option("--suburb", "-s", type=str, default=None, help="Filter export by suburb (e.g. 'Rivonia')")
+@click.option("--status", type=click.Choice(["all", "active", "under_offer", "sold"], case_sensitive=False), default="all", help="Filter export by status")
+@click.option("--archive-dir", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def export_command(
+    export_format: str,
+    output_path: str | None,
+    province: str | None,
+    area: str | None,
+    suburb: str | None,
+    status: str,
+    archive_dir: str
+):
+    """
+    Export archived listings into CSV, SQLite, JSONL, or GeoJSON formats with optional geographic filters.
+    """
     fmt = export_format.lower()
     default_names = {
         "csv": "portfolio.csv",
@@ -344,13 +356,13 @@ def export_command(export_format: str, output_path: str | None, archive_dir: str
 
     console.print(f"[bold cyan]Exporting portfolio to {fmt.upper()}...[/bold cyan]")
     if fmt == "csv":
-        out = PortfolioExporter.export_csv(archive_dir, target_out)
+        out = PortfolioExporter.export_csv(archive_dir, target_out, province, area, suburb, status)
     elif fmt == "sqlite":
-        out = PortfolioExporter.export_sqlite(archive_dir, target_out)
+        out = PortfolioExporter.export_sqlite(archive_dir, target_out, province, area, suburb, status)
     elif fmt == "jsonl":
-        out = PortfolioExporter.export_jsonl(archive_dir, target_out)
+        out = PortfolioExporter.export_jsonl(archive_dir, target_out, province, area, suburb, status)
     elif fmt == "geojson":
-        out = PortfolioExporter.export_geojson(archive_dir, target_out)
+        out = PortfolioExporter.export_geojson(archive_dir, target_out, province, area, suburb, status)
     else:
         console.print(f"[red]Unsupported format: {fmt}[/red]")
         sys.exit(1)
