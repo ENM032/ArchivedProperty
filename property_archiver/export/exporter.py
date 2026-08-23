@@ -1,5 +1,5 @@
 """
-Multi-format export engine: CSV, SQLite, JSON Lines, and GeoJSON (GIS).
+Multi-format export engine: CSV, SQLite, JSON Lines, and GeoJSON with recursive discovery.
 """
 
 import csv
@@ -20,20 +20,16 @@ class PortfolioExporter:
 
     @staticmethod
     def load_all_listings(archive_dir: Path | str) -> list[ListingRecord]:
-        """Load all valid listing records from the archive directory."""
-        base_dir = Path(archive_dir).resolve() / "listings"
+        """Load all valid listing records recursively from flat or hierarchical archive directory."""
+        listing_dirs = ArchiveReader.find_all_listing_dirs(archive_dir)
         records: list[ListingRecord] = []
 
-        if not base_dir.exists():
-            return records
-
-        for item in base_dir.iterdir():
-            if item.is_dir() and (item / "listing.json").exists():
-                try:
-                    rec = ArchiveReader.load_listing(item)
-                    records.append(rec)
-                except Exception as exc:
-                    logger.warning("Failed loading listing %s for export: %s", item.name, exc)
+        for item in listing_dirs:
+            try:
+                rec = ArchiveReader.load_listing(item)
+                records.append(rec)
+            except Exception as exc:
+                logger.warning("Failed loading listing %s for export: %s", item.name, exc)
 
         return records
 
@@ -114,7 +110,6 @@ class PortfolioExporter:
         conn = sqlite3.connect(out_file)
         cursor = conn.cursor()
 
-        # Create Schema
         cursor.execute("""
         CREATE TABLE listings (
             listing_id TEXT PRIMARY KEY,
@@ -149,6 +144,7 @@ class PortfolioExporter:
         )
         """)
 
+        cursor.execute("CREATE INDEX idx_listings_province ON listings(province)")
         cursor.execute("CREATE INDEX idx_listings_suburb ON listings(suburb)")
         cursor.execute("CREATE INDEX idx_listings_status ON listings(listing_status)")
         cursor.execute("CREATE INDEX idx_listings_price ON listings(price_amount)")
@@ -262,6 +258,7 @@ class PortfolioExporter:
                         "street_address": r.location.street_address,
                         "suburb": r.location.suburb,
                         "city": r.location.city,
+                        "province": r.location.province,
                         "bedrooms": r.features.bedrooms,
                         "bathrooms": r.features.bathrooms,
                         "erf_size_m2": r.erf_size_m2,

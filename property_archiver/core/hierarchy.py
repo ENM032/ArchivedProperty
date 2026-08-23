@@ -1,9 +1,11 @@
 """
-Geographic hierarchy model and tree builder for South African real estate.
+Geographic hierarchy model, slugification, and tree builder for South African real estate.
 Structures archives into Province -> Area/City -> Suburb -> Listing.
 """
 
+import re
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 from property_archiver.models.listing import ListingRecord
@@ -13,10 +15,17 @@ def clean_geo_name(name: str | None, default: str = "Unknown") -> str:
     """Normalize geographic names (strip whitespace, title case)."""
     if not name or not name.strip():
         return default
-    cleaned = name.strip()
-    # Normalize common abbreviations or separators
-    cleaned = cleaned.replace("-", " ")
+    cleaned = name.strip().replace("-", " ")
     return " ".join(word.capitalize() for word in cleaned.split())
+
+
+def slugify_geo_name(name: str | None, default: str = "unknown") -> str:
+    """Convert geographic name into a filesystem-safe slug (e.g. 'Kyalami Hills' -> 'kyalami_hills')."""
+    if not name or not name.strip():
+        return default
+    cleaned = re.sub(r"[^\w\s-]", "", name.lower().strip())
+    slug = re.sub(r"[-\s]+", "_", cleaned)
+    return slug or default
 
 
 @dataclass
@@ -56,12 +65,12 @@ class GeoNode:
 
 
 class GeoHierarchyBuilder:
-    """Builds and filters geographic hierarchy trees from listing collections."""
+    """Builds and filters geographic hierarchy trees and path resolvers."""
 
     @staticmethod
     def extract_geo_keys(record: ListingRecord) -> tuple[str, str, str]:
         """
-        Extract (Province, Area/City, Suburb) from a listing record with fallback cascades.
+        Extract normalized (Province, Area/City, Suburb) from a listing record.
         """
         loc = record.location
 
@@ -70,13 +79,12 @@ class GeoHierarchyBuilder:
 
         # 2. Area / Region / City
         area = None
-        if loc.region and loc.region.lower() != loc.suburb.lower() if loc.suburb else False:
-            # Region often contains "Sandton" or "Midrand" or "Rivonia, Sandton"
+        if loc.region and (not loc.suburb or loc.region.lower() != loc.suburb.lower()):
             area = loc.region.split(",")[-1].strip()
         elif loc.city and loc.city.lower() != province.lower():
             area = loc.city
         elif loc.breadcrumbs and len(loc.breadcrumbs) >= 4:
-            area = loc.breadcrumbs[3]  # [South Africa, Gauteng, Johannesburg, Sandton, Rivonia]
+            area = loc.breadcrumbs[3]
 
         area = clean_geo_name(area, loc.city or "General Area")
 
@@ -94,6 +102,15 @@ class GeoHierarchyBuilder:
         return province, area, suburb
 
     @staticmethod
+    def get_hierarchical_relpath(record: ListingRecord) -> Path:
+        """
+        Compute relative subpath for hierarchical storage layout:
+        <province_slug>/<area_slug>/<suburb_slug>/<listing_id>
+        """
+        prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(record)
+        return Path(slugify_geo_name(prov)) / slugify_geo_name(area) / slugify_geo_name(sub) / record.listing_id
+
+    @staticmethod
     def build_tree(
         records: list[ListingRecord],
         filter_province: str | None = None,
@@ -107,7 +124,6 @@ class GeoHierarchyBuilder:
         root = GeoNode(name="South Africa", level="root")
 
         for r in records:
-            # Filter checks
             if filter_status and filter_status != "all":
                 if filter_status == "active" and (r.listing_status != "active" or r.is_under_offer or r.is_sold):
                     continue
@@ -125,7 +141,6 @@ class GeoHierarchyBuilder:
             if filter_suburb and filter_suburb.lower() not in sub.lower():
                 continue
 
-            # Traverse / Create tree nodes
             if prov not in root.children:
                 root.children[prov] = GeoNode(name=prov, level="province")
             prov_node = root.children[prov]
