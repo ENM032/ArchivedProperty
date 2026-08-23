@@ -12,12 +12,14 @@ import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
+from rich.tree import Tree
 
 from property_archiver import __version__
 from property_archiver.config import settings
 from property_archiver.core.change_detector import ChangeDetector
 from property_archiver.core.exceptions import PropertyArchiverError
 from property_archiver.core.fetcher import Fetcher
+from property_archiver.core.hierarchy import GeoHierarchyBuilder
 from property_archiver.dashboard.server import DashboardServer
 from property_archiver.export.exporter import PortfolioExporter
 from property_archiver.extractors import get_extractor_for_url_or_html
@@ -193,14 +195,91 @@ def fetch_command(
         console.print(f"\n[bold green]Batch complete: {success_count}/{len(resolved)} listings archived successfully.[/bold green]")
 
 
+@main.command(name="tree")
+@click.option("--province", "-p", type=str, default=None, help="Filter by province (e.g. 'Gauteng')")
+@click.option("--area", "-a", type=str, default=None, help="Filter by area/city (e.g. 'Sandton')")
+@click.option("--suburb", "-s", type=str, default=None, help="Filter by suburb (e.g. 'Rivonia')")
+@click.option("--status", type=click.Choice(["all", "active", "under_offer", "sold"], case_sensitive=False), default="all", help="Filter by listing status")
+@click.option("--archive-dir", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def tree_command(province: str | None, area: str | None, suburb: str | None, status: str, archive_dir: str):
+    """
+    Display archived listings sorted hierarchically by Province -> Area -> Suburb -> Listing.
+    """
+    records = PortfolioExporter.load_all_listings(archive_dir)
+    if not records:
+        console.print("[yellow]No archived listings found in archive directory.[/yellow]")
+        return
+
+    tree_root = GeoHierarchyBuilder.build_tree(
+        records=records,
+        filter_province=province,
+        filter_area=area,
+        filter_suburb=suburb,
+        filter_status=status,
+    )
+
+    if tree_root.total_listings == 0:
+        console.print("[yellow]No listings match the specified geographic/status filters.[/yellow]")
+        return
+
+    # Render Rich Tree (Windows-safe glyphs)
+    root_label = (
+        f"[bold white][ZA] {tree_root.name}[/bold white] "
+        f"([bold cyan]{tree_root.total_listings}[/bold cyan] listings | "
+        f"[green]R {int(tree_root.total_value_zar):,}[/green] total | "
+        f"[yellow]Avg R {int(tree_root.avg_price_zar):,}[/yellow])"
+    ).replace(",", " ")
+
+    rich_tree = Tree(root_label)
+
+    for prov_name, prov_node in sorted(tree_root.children.items()):
+        prov_label = (
+            f"[bold magenta]> {prov_name}[/bold magenta] "
+            f"({prov_node.total_listings} listings | "
+            f"Avg R {int(prov_node.avg_price_zar):,})"
+        ).replace(",", " ")
+        prov_branch = rich_tree.add(prov_label)
+
+        for area_name, area_node in sorted(prov_node.children.items()):
+            area_label = f"[bold cyan]>> {area_name}[/bold cyan] ({area_node.total_listings} listings)"
+            area_branch = prov_branch.add(area_label)
+
+            for sub_name, sub_node in sorted(area_node.children.items()):
+                sub_label = f"[bold green]>>> {sub_name}[/bold green] ({sub_node.total_listings} listings)"
+                sub_branch = area_branch.add(sub_label)
+
+                for rec in sub_node.listings:
+                    status_badge = "[bold green]ACTIVE[/bold green]"
+                    if rec.listing_status == "sold" or rec.is_sold:
+                        status_badge = "[bold red]SOLD[/bold red]"
+                    elif rec.listing_status == "under_offer" or rec.is_under_offer:
+                        status_badge = "[bold yellow]UNDER OFFER[/bold yellow]"
+
+                    price_str = rec.price.formatted_display or (f"R {int(rec.price.amount):,}".replace(",", " ") if rec.price.amount else "Price N/A")
+                    specs_str = f"{rec.features.bedrooms or 0}b/{rec.features.bathrooms or 0}ba"
+                    erf_str = f"{int(rec.erf_size_m2)} m2" if rec.erf_size_m2 else ""
+                    
+                    listing_label = (
+                        f"* [bold white][{rec.listing_id}][/bold white] "
+                        f"[yellow]{price_str}[/yellow] - "
+                        f"{rec.title or 'Property'} "
+                        f"({specs_str}{' | ' + erf_str if erf_str else ''}) "
+                        f"[{status_badge}] "
+                        f"[dim]({len(rec.images)} imgs)[/dim]"
+                    )
+                    sub_branch.add(listing_label)
+
+    console.print()
+    console.print(rich_tree)
+    console.print()
+
+
 @main.command(name="export")
 @click.option("--format", "-f", "export_format", type=click.Choice(["csv", "sqlite", "jsonl", "geojson"], case_sensitive=False), default="csv", help="Export format")
 @click.option("--output", "-o", "output_path", type=click.Path(), default=None, help="Destination output file path")
 @click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
 def export_command(export_format: str, output_path: str | None, archive_dir: str):
-    """
-    Export all archived listings into CSV, SQLite, JSONL, or GeoJSON formats.
-    """
+    """Export all archived listings into CSV, SQLite, JSONL, or GeoJSON formats."""
     fmt = export_format.lower()
     default_names = {
         "csv": "portfolio.csv",

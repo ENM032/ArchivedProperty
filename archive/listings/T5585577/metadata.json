@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5585577",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sunninghill/T5585577",
+  "archived_at": "2026-08-23T22:35:14.594618Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|88bda377-cac4-43a1-8704-3b478b5b2aeb|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=CzcOcREC5kGr36rvP655YA; expires=Thu, 23-Aug-2125 22:35:05 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Sun, 23 Aug 2026 22:35:04 GMT",
+    "content-length": "26305"
+  },
+  "fetch_duration_sec": 1.3487086296081543,
+  "total_images_discovered": 30,
+  "total_images_archived": 30,
+  "total_archive_size_bytes": 4272748,
+  "content_fingerprint": "a518a74e14d270fafb8bb8fda9aa16af1757b1ac8612adbfcdec463683c77bb3"
+}
