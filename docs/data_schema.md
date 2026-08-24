@@ -1,61 +1,39 @@
-# Data Schema & Archive Format
+# Canonical Data Schema Reference (v1.0.0)
 
-## 1. Archive Directory Structure
-
-Every archived property is stored in an isolated, self-contained directory under `archive/listings/<listing_id>/`:
-
-```
-archive/
-└── listings/
-    └── T4710876/
-        ├── raw.html          # Byte-exact raw HTML snapshot as served by server
-        ├── listing.json      # Normalized JSON record conforming to Schema v1.0.0
-        ├── metadata.json     # Crawl provenance metadata (timings, headers, archiver version)
-        ├── history.json      # Historical timeline ledger tracking price drops & status changes
-        ├── checksums.json    # Cryptographic SHA-256 manifest of every file
-        └── images/           # High-resolution preserved image assets (all 56 gallery photos)
-            ├── 001_OHWDrL0sRYBS5V4yxQIos2.jpg
-            ├── 002_QfBaAogURQxOa3iC6KATv2.jpg
-            └── ...
-```
+Every archived listing is normalized into a strictly validated Pydantic model (`ListingRecord`) and saved as `listing.json`.
 
 ---
 
-## 2. Listing Schema Specification (`listing.json`)
-
-The normalized listing model is validated using Pydantic v2.
-
-### Field Definitions
+## Field Specifications
 
 | Field | Type | Description |
 |---|---|---|
-| `schema_version` | `string` | Version of the schema specification (e.g. `"1.0.0"`) |
-| `portal_name` | `string` | Source portal identifier (e.g. `"privateproperty.co.za"`) |
-| `listing_id` | `string` | Portal unique listing identifier (e.g. `"T4710876"`) |
-| `canonical_url` | `string` | Canonical URL of the listing |
-| `extracted_at` | `string (ISO 8601)` | UTC timestamp when data was parsed |
-| `title` | `string | null` | Headline title of the listing |
-| `property_type` | `string | null` | Property category (`"House"`, `"Apartment"`, `"Townhouse"`) |
-| `listing_status` | `string` | Listing status (`"active"`, `"under_offer"`, `"sold"`, `"withdrawn"`) |
-| `status_badges` | `array<string>` | Discovered visual badges (`["Under Offer", "Reduced", "On Show"]`) |
-| `is_under_offer` | `boolean` | Flag for Under Offer / Contract Pending |
-| `is_sold` | `boolean` | Flag for Sold listings |
-| `is_on_show` | `boolean` | Flag for active On Show scheduled viewings |
-| `is_price_reduced` | `boolean` | Flag for discounted listings |
-| `on_show_details` | `object | null` | Structured date and times for viewings |
-| `listing_date` | `string (YYYY-MM-DD) | null` | Date when the property was listed |
-| `description` | `string | null` | Full textual description |
-| `erf_size_m2` | `float | null` | Land / Erf size normalized to square meters (auto-converts `ha` to $	ext{m}^2$) |
-| `land_size_raw` | `string | null` | Original raw land size string (e.g. `"2.5 ha"`, `"1983 m²"`) |
-| `floor_size_m2` | `float | null` | Floor / building size in square meters |
-| `price` | `object` | Pricing sub-model (`amount`, `currency`, `rates_and_taxes_monthly`, `levies_monthly`) |
-| `location` | `object` | Location sub-model (`street_address`, `suburb`, `city`, `province`, `country`, `latitude`, `longitude`, `breadcrumbs`) |
-| `features` | `object` | Features sub-model (`bedrooms`, `bathrooms`, `garages`, `has_pool`, `has_garden`, `has_alarm`, etc., and `raw_features_list`) |
-| `agent` | `object | null` | Primary listing agent (`agent_name`, `agency_name`, `agency_logo_url`, `profile_url`) |
-| `co_agents` | `array<object>` | Additional co-listing agents and team members |
-| `images` | `array<object>` | Preserved images (all 56 gallery photos with `order_index`, `resolved_url`, `sha256`, `width`, `height`) |
-| `videos` | `array<object>` | Preserved video embeds (`provider`, `url`, `title`) |
-| `raw_json_ld` | `array<object>` | Lossless raw JSON-LD blocks extracted from page (with `@graph` support) |
-| `open_graph` | `object` | Captured OpenGraph metadata tags |
-| `meta_tags` | `object` | Captured standard HTML meta tags |
-| `content_fingerprint` | `string` | SHA-256 hash of semantic data for change detection |
+| `schema_version` | `str` | Schema specification version (`"1.0.0"`). |
+| `portal_name` | `str` | Source portal identifier (e.g. `"privateproperty.co.za"`). |
+| `listing_id` | `str` | Unique portal identifier (e.g. `"T4710876"`). |
+| `canonical_url` | `str` | Full canonical URL of the listing. |
+| `extracted_at` | `datetime` | UTC timestamp of extraction. |
+| `title` | `str` | Headline title of the listing. |
+| `listing_type` | `str` | Transaction classification (`"for_sale"` or `"to_rent"`). |
+| `property_type` | `str` | Physical structure category (`"House"`, `"Apartment"`, `"Townhouse"`, `"Vacant Land"`, `"Commercial"`, `"Farm"`). |
+| `listing_status` | `str` | Lifecycle status (`"active"`, `"under_offer"`, `"sold"`, `"withdrawn"`). |
+| `status_badges` | `list[str]` | Visual badges on the page (`["Under Offer", "Reduced"]`). |
+| `is_under_offer` | `bool` | True if marked Under Offer. |
+| `is_sold` | `bool` | True if marked Sold. |
+| `is_on_show` | `bool` | True if scheduled for public viewing. |
+| `is_price_reduced`| `bool` | True if price was discounted. |
+| `erf_size_m2` | `float` | Land size normalized to square meters (auto-converts hectares: $1\text{ ha} = 10,000\text{ m}^2$). |
+| `land_size_raw` | `str` | Original raw size string (e.g. `"2.5 ha"`, `"1983 m²"`). |
+| `floor_size_m2` | `float` | Building floor area in square meters. |
+| `price.amount` | `float` | Asking price numerical amount in ZAR. |
+| `price.rates_and_taxes_monthly` | `float` | Municipal rates & taxes in ZAR. |
+| `price.levies_monthly` | `float` | Body corporate / HOA levies in ZAR. |
+| `location.suburb` | `str` | Suburb name (e.g. `"Rivonia"`). |
+| `location.city` | `str` | Area / City name (e.g. `"Sandton"`). |
+| `location.province` | `str` | Province name (e.g. `"Gauteng"`). |
+| `location.latitude` | `float` | GPS latitude coordinate. |
+| `location.longitude` | `float` | GPS longitude coordinate. |
+| `agent` | `AgentInfo` | Lead estate agent details. |
+| `co_agents` | `list[AgentInfo]`| Co-listing agents and team members. |
+| `images` | `list[ImageRecord]`| Preserved high-resolution gallery images. |
+| `content_fingerprint` | `str` | Cryptographic SHA-256 hash of semantic listing data. |
