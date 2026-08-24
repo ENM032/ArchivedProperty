@@ -1,93 +1,98 @@
-# System Architecture & Design
+# System Architecture & Technical Design
 
-## 1. Architectural Overview
+`property-archiver` is designed as a secure, high-throughput, and decoupled system for ingesting, validating, versioning, analyzing, and visualizing South African real estate data.
 
-`property-archiver` is a modular, production-ready system for ingesting, validating, extracting, and archiving South African real estate listings from online portals.
+---
+
+## 1. High-Level Component Topology
 
 ```
-                           [Listing URL / HTML Snapshot]
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │   Security & SSRF Validator   │
-                         │   • URL scheme enforcement    │
-                         │   • DNS check vs private IPs  │
-                         │   • Hostname allowlist check  │
-                         └───────────────────────────────┘
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │        Fetcher Engine         │
-                         │   • httpx HTTP client         │
-                         │   • Domain rate limiter       │
-                         │   • Exponential backoff+jitter│
-                         │   • Max response byte limit   │
-                         └───────────────────────────────┘
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │    Multi-Tier Extractor       │
-                         │   • Tier 1: JS Deobfuscation  │
-                         │   • Tier 2: Status & Badges   │
-                         │   • Tier 3: JSON-LD / Schema  │
-                         │   • Tier 4: OpenGraph / Meta  │
-                         │   • Tier 5: Semantic DOM      │
-                         │   • Tier 6: Media Discovery   │
-                         └───────────────────────────────┘
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │    Normalizer & Validator     │
-                         │   • Pydantic v2 Schema v1.0.0 │
-                         │   • Strict type coercion      │
-                         │   • Stable content hash       │
-                         └───────────────────────────────┘
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │   Image Processing Worker     │
-                         │   • Full 56-image resolution  │
-                         │   • High-res 1600x1066 URLs   │
-                         │   • Pillow format validation  │
-                         │   • Dimension inspection      │
-                         │   • SHA-256 computation       │
-                         └───────────────────────────────┘
-                                         │
-                                         ▼
-                         ┌───────────────────────────────┐
-                         │    Atomic Archive Writer      │
-                         │   • .staging directory        │
-                         │   • raw.html snapshot         │
-                         │   • listing.json              │
-                         │   • metadata.json             │
-                         │   • checksums.json manifest   │
-                         │   • Atomic rename commit      │
-                         └───────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                             CLI & REST Clients                              │
+│         (property-archiver fetch, tree, export, serve, compare)             │
+└───────────────────────┬─────────────────────────────┬───────────────────────┘
+                        │                             │
+                        ▼                             ▼
+       ┌────────────────────────────────┐   ┌────────────────────────────────┐
+       │   Ingestion & Extraction       │   │   Web Dashboard & REST API     │
+       │   - SSRF Guard                 │   │   - server.py (Dispatcher)     │
+       │   - Fetcher (httpx Engine)     │   │   - routes/listings.py         │
+       │   - Extractor (JSON-LD + DOM)  │   │   - routes/hierarchy.py        │
+       │   - Smart Image Downloader     │   │   - routes/compare.py          │
+       │   - Change Detector & History  │   │   - routes/export.py           │
+       └───────────────┬────────────────┘   └───────────────┬────────────────┘
+                       │                                    │
+                       │     ┌────────────────────────┐     │
+                       ├────►│ Decoupled ES6 Frontend ├─────┤
+                       │     │ - State Store          │     │
+                       │     │ - Grid/Grouped/Map     │     │
+                       │     │ - Modular CSS Tokens   │     │
+                       │     └────────────────────────┘     │
+                       ▼                                    ▼
+       ┌─────────────────────────────────────────────────────────────────────┐
+       │                 Storage & Export Management Layer                   │
+       │  - Hierarchical Storage (Province / Area / Suburb / Listing ID)     │
+       │  - SHA-256 Checksum Manifests (checksums.json)                      │
+       │  - Exporters: CSV, Relational SQLite (portfolio.db), GeoJSON, JSONL │
+       └─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 2. Core Subsystems & Key Innovations
+## 2. Ingestion & Image Pipeline (with Smart Caching)
 
-### A. JavaScript Deobfuscation Engine
-Private Property encodes full listing metadata, all 56 high-resolution gallery photos, and agent contact cards inside an obfuscated inline script:
-```javascript
-window[...] = JSON.parse(Y.map($ => D[$]).join(''));
+1. **URL Resolution & Normalization**:
+   - Short IDs (e.g. `T4710876`) are resolved to canonical portal URLs.
+2. **SSRF Guard**:
+   - Validates schemes, whitelists domains, resolves DNS, and blocks private/loopback/link-local IPv4 & IPv6 ranges.
+3. **Resilient HTTP Fetcher**:
+   - Incorporates polite rate limiting, jittered exponential backoff for transient 429/5xx codes, and payload size bounds.
+4. **Multi-Source Extraction Pipeline**:
+   - Priority 1: Schema.org JSON-LD (`@graph` unpacking, coordinates, structural specifications).
+   - Priority 2: Semantic HTML & DOM selectors (rates, levies, features list, multi-agent cards).
+   - Priority 3: OpenGraph & meta tags fallback.
+5. **Smart Local Image Caching**:
+   - Before requesting photos from the CDN, the downloader checks whether matching image hashes exist in the local archive.
+   - Cached photos are verified and copied instantly, reducing re-archival time from ~8s to <1s.
+6. **Atomic Directory Swapping**:
+   - Commits to staging first; verifies SHA-256 digests; swaps atomically to avoid corrupt archives.
+
+---
+
+## 3. Storage Hierarchy Layout
+
+By default, archives are stored in the **tiered South African regional hierarchy**:
+
+$$\text{archive/listings/}\langle\text{province}\rangle\text{/}\langle\text{area}\rangle\text{/}\langle\text{suburb}\rangle\text{/}\langle\text{id}\rangle\text{/}$$
+
 ```
-The extractor parses the token array `D` (1,600+ string tokens) and index mapping array `Y` (17,900+ integer indices), executing the token replacement natively in Python. This allows capturing all 56 gallery photos and real agent profiles without requiring headless Chrome or Node.js.
+archive/listings/gauteng/sandton/rivonia/T4710876/
+├── raw.html          # Byte-exact snapshot of source markup
+├── listing.json      # Canonical normalized schema (v1.0.0)
+├── metadata.json     # Scraping provenance, timing, and headers
+├── checksums.json    # Cryptographic SHA-256 manifest
+├── history.json      # Append-only price and spec change ledger
+└── images/           # High-resolution gallery assets
+    ├── 001_OHWDrL0sRYBS5V4yxQIos2.jpg
+    └── ...
+```
 
-### B. Status & Lifecycle Detector (`docs/listing_lifecycle_and_status.md`)
-Detects whether listings are `active`, `under_offer`, `sold`, `withdrawn`, `reduced`, or `on_show` by analyzing application state (`bundleParams.isUnderOffer`), DOM badge containers, and OpenGraph headers.
+---
 
-### C. Security & SSRF Prevention Layer (`property_archiver/core/security.py`)
-- Scheme enforcement (`http`/`https`).
-- DNS resolution checks actively blocking private/loopback/link-local IPv4 and IPv6 subnets (`127.0.0.0/8`, `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`, `169.254.0.0/16`, `::1`, `fc00::/7`).
-- Path-traversal protection and cross-platform filename sanitization.
+## 4. Web Dashboard Decoupled Architecture
 
-### D. Image Preservation Pipeline (`property_archiver/images/downloader.py`)
-- Downloads all 56 high-resolution images concurrently using a bounded thread pool.
-- Validates image headers with Pillow and computes SHA-256 digests.
+The dashboard is decoupled into an HTTP REST server and a zero-build native ES6 frontend:
 
-### E. Atomic Storage & Integrity Manifests (`property_archiver/storage/`)
-- Uses staging folders (`.staging_<id>_<timestamp>`) and atomic directory renaming.
-- Generates `checksums.json` containing SHA-256 hashes for all 56 images, raw HTML, metadata, and normalized JSON.
+```
+property_archiver/dashboard/
+├── server.py              # Lightweight Threading HTTP Server & static file streamer
+├── routes/                # Micro-controllers (<100 lines each)
+│   ├── listings.py        # /api/listings, /api/listings/{id}, image streaming
+│   ├── hierarchy.py       # /api/hierarchy regional tree calculation
+│   ├── compare.py         # /api/compare snapshot diffs
+│   └── export.py          # /api/export downloads
+└── frontend/              # Static Frontend Web App
+    ├── index.html         # Pure Semantic HTML
+    ├── css/               # Modular CSS Token & BEM files
+    └── js/                # Native ES6 Modules (store, views, components, api)
+```

@@ -1,0 +1,588 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5485220",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/22-adrienne-street/T5485220",
+  "extracted_at": "2026-08-24T10:05:03.883998Z",
+  "title": "12 Bedroom House in Sandown",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [
+    "Reduced"
+  ],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": true,
+  "on_show_details": null,
+  "listing_date": "2026-05-13",
+  "description": "Investment Opportunity in Prime Sandown  Multi-Unit Income Property in the Secure Edward Rubenstein Enclosure\n\nPositioned in sought-after Sandown, this versatile income-generating property presents an...",
+  "erf_size_m2": 1866.0,
+  "land_size_raw": "1 866 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 4700000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 700 000",
+    "rates_and_taxes_monthly": 3656.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "22 Adrienne Street",
+    "suburb": "Sandown",
+    "city": "Johannesburg",
+    "region": "Sandown, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Sandown",
+      "T5485220"
+    ]
+  },
+  "features": {
+    "bedrooms": 12.0,
+    "bathrooms": 12.0,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 12",
+      "Bathrooms 12",
+      "Open parking 8",
+      "Pet friendly",
+      "Pool",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Flora Mupanomunda",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2286878/image/7b1a1d17db774aaea0efe062dd87ac93_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/flora-mupanomunda/2286878/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11833933/tbLCIWfu0a0vUhtDMJI1I1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/tbLCIWfu0a0vUhtDMJI1I1/1600/1066/contain/jpegorpng",
+      "local_filename": "001_tbLCIWfu0a0vUhtDMJI1I1.jpg",
+      "sha256": "a496143eefab3ce7c6d15b479317e26df72c129b1519e59309c61ab0511b7c2e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 482758,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T10:05:05.076315Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11833933/JkKBCfNHlXtTFG8D7oViQ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/JkKBCfNHlXtTFG8D7oViQ7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_JkKBCfNHlXtTFG8D7oViQ7.jpg",
+      "sha256": "63596d0bcc65c01de1e91ac70e70838884ba0e957d0045adc53bf5f37dfcd8d8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 482352,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:04.804165Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11833933/bmd53r1RDJjr1yATR8KUr0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/bmd53r1RDJjr1yATR8KUr0/1600/1066/contain/jpegorpng",
+      "local_filename": "003_bmd53r1RDJjr1yATR8KUr0.jpg",
+      "sha256": "a0ba305ccb8daeb5e0b4c6445ac19d6bcd608e6682a7a438fd8139066e882f23",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 495095,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:04.815297Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11833933/cp14jkELRXenb3sWfw54K3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/cp14jkELRXenb3sWfw54K3/1600/1066/contain/jpegorpng",
+      "local_filename": "004_cp14jkELRXenb3sWfw54K3.jpg",
+      "sha256": "882cf066a24a094ade577a8ccb5aa50b88e8b5ac8fd71750e58d1ab0aa6020d9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 86207,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:04.695840Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11833933/B3wSXKvycZs7ND8PBkJaS2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/B3wSXKvycZs7ND8PBkJaS2/1600/1066/contain/jpegorpng",
+      "local_filename": "005_B3wSXKvycZs7ND8PBkJaS2.jpg",
+      "sha256": "9cc442ea4626b1757a3acf88645ce646800ff135c1e01479d8ec12beb8fb412b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150631,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:04.892488Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11833933/pKsjs7igPPLUVDf0XoJD37/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/pKsjs7igPPLUVDf0XoJD37/1600/1066/contain/jpegorpng",
+      "local_filename": "006_pKsjs7igPPLUVDf0XoJD37.jpg",
+      "sha256": "6247e8557ce686c633d2bca7684c94814f1ab1368a0929c65e541e9462140a1c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137698,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.831831Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11833933/Ok37hGiJ0Iu2XI3EMHf5t4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/Ok37hGiJ0Iu2XI3EMHf5t4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_Ok37hGiJ0Iu2XI3EMHf5t4.jpg",
+      "sha256": "ab2c2a1d5def8b8a9abcfbb1ad8fbc1b1ab90be99503efab46b8335e44192d61",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 78922,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.050135Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11833933/r9EfZFCFhCs0kJqoO4T3k1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/r9EfZFCFhCs0kJqoO4T3k1/1600/1066/contain/jpegorpng",
+      "local_filename": "008_r9EfZFCFhCs0kJqoO4T3k1.jpg",
+      "sha256": "da220b5914cbc432f511689e3a728ceee9d3693108dc62d4340715f1a814aacf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103392,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.359216Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11833933/Gskhd3goSyK74PxxzPkAY1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/Gskhd3goSyK74PxxzPkAY1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_Gskhd3goSyK74PxxzPkAY1.jpg",
+      "sha256": "00d1a0331a99ac62cb583f40e196e9c2e8f0b0402318db19348bcd090e55b8d4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 110642,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.934919Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11833933/NWI2JjSRF89FCJ3JOpHkB4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/NWI2JjSRF89FCJ3JOpHkB4/1600/1066/contain/jpegorpng",
+      "local_filename": "010_NWI2JjSRF89FCJ3JOpHkB4.jpg",
+      "sha256": "062a1676b0d87ea9d3bd3d0bbe244d7188e07147c982c9317afcc042367c2c81",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 89053,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.559489Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11833933/sQSwkL6ol9kS330BOCKRa7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/sQSwkL6ol9kS330BOCKRa7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_sQSwkL6ol9kS330BOCKRa7.jpg",
+      "sha256": "faa6d0c335543faf97894e250f82d5131086a97c06b06f113af90c5e99dd4b43",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116628,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.405689Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11833933/eQgQAYyz3d9giTtyTTNtk7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/eQgQAYyz3d9giTtyTTNtk7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_eQgQAYyz3d9giTtyTTNtk7.jpg",
+      "sha256": "d6151423cc0fb03f5b775f08297b68ab12131cc57f986003bdf7f292fb08dd3c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145063,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.493998Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11833933/E18MDVRjQCnyupCbpK4TY3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/E18MDVRjQCnyupCbpK4TY3/1600/1066/contain/jpegorpng",
+      "local_filename": "013_E18MDVRjQCnyupCbpK4TY3.jpg",
+      "sha256": "827c21c197c8655f6ce404825c19549bc579d2daa9b43e63833e7729c7570f46",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 109648,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.716483Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11833933/CeAzWgSqY5JLdXbj3NZmO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/CeAzWgSqY5JLdXbj3NZmO7/1600/1066/contain/jpegorpng",
+      "local_filename": "014_CeAzWgSqY5JLdXbj3NZmO7.jpg",
+      "sha256": "5512801deaf771aa2eb0d1957c695e63ae52a5f431292205b1e4fc18cd63ad3a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131759,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.793200Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11833933/WICULxdnvi9tczhlizrBy5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/WICULxdnvi9tczhlizrBy5/1600/1066/contain/jpegorpng",
+      "local_filename": "015_WICULxdnvi9tczhlizrBy5.jpg",
+      "sha256": "3997773248fd807b90d7dc0809b3bfa90133b2e37e89ef40b18d6fa5a0377ec5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139807,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.073371Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11833933/IeGVY1UgkyAxOgdrdBQW84/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/IeGVY1UgkyAxOgdrdBQW84/1600/1066/contain/jpegorpng",
+      "local_filename": "016_IeGVY1UgkyAxOgdrdBQW84.jpg",
+      "sha256": "dc9ae610c309d3a84767362f6f24e4b48b634f09c0d40d6ebef56425d4f204f4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 100920,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:05.917624Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11833933/gAI6erkFLUUuoWUzC1Luy0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/gAI6erkFLUUuoWUzC1Luy0/1600/1066/contain/jpegorpng",
+      "local_filename": "017_gAI6erkFLUUuoWUzC1Luy0.jpg",
+      "sha256": "cb2d2729dd6bcef7427bc27a28f684183c7ed299aa4ab78f96b42b2a588250c0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136540,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.064652Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11833933/DAVq9lEH9lsht8WEpKEsz6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/DAVq9lEH9lsht8WEpKEsz6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_DAVq9lEH9lsht8WEpKEsz6.jpg",
+      "sha256": "5c25fb800f7b094715d0324185696f0d6c936c81efc9471d44a1895c9279abdc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 106150,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.225757Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11833933/owx6sR11mxyP9WI06qzH02/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/owx6sR11mxyP9WI06qzH02/1600/1066/contain/jpegorpng",
+      "local_filename": "019_owx6sR11mxyP9WI06qzH02.jpg",
+      "sha256": "bb5aace3762ed9ea4a04b7ea6d7ec00d3179dee9bac5d87ba38a86cec3c71821",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 419155,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.437068Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11833933/uy80sWPVEUo1ivwdjFcbh7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/uy80sWPVEUo1ivwdjFcbh7/1600/1066/contain/jpegorpng",
+      "local_filename": "020_uy80sWPVEUo1ivwdjFcbh7.jpg",
+      "sha256": "b87f355b20f620ddb643ff48d1afabdd936faf131d5b4b3bd84cff6d24f8716a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 425956,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.339130Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11833933/bJioi1ojQ8Xm9MN3it8TA0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/bJioi1ojQ8Xm9MN3it8TA0/1600/1066/contain/jpegorpng",
+      "local_filename": "021_bJioi1ojQ8Xm9MN3it8TA0.jpg",
+      "sha256": "08ef03af1e92a53cf1521bd7ac4070eba8239383e0b2b82dc45f57b8854527f1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 376287,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.319529Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11833933/1DBa36Cio4iubkqstvdc07/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/1DBa36Cio4iubkqstvdc07/1600/1066/contain/jpegorpng",
+      "local_filename": "022_1DBa36Cio4iubkqstvdc07.jpg",
+      "sha256": "d7f1167ffdf71009a2bc35e2d4b3ddee9ccaae750f8b6e91d380868ed60730a5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 328406,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.754506Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11833933/J08QhldMbkjcdcwb3hRIQ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/J08QhldMbkjcdcwb3hRIQ6/1600/1066/contain/jpegorpng",
+      "local_filename": "023_J08QhldMbkjcdcwb3hRIQ6.jpg",
+      "sha256": "d627cc250e3559d78e7d2d088e2abe73252e72f029865bc7445a44c4a1bc4518",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 569176,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.543371Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11833933/Ii24pvabiASNgEFQWsVnW3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/Ii24pvabiASNgEFQWsVnW3/1600/1066/contain/jpegorpng",
+      "local_filename": "024_Ii24pvabiASNgEFQWsVnW3.jpg",
+      "sha256": "2eebeaf24ae2dad10abb143c8c57aebef461bb20e6038a7133dc0c343faef22b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 491153,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.945474Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11833933/lpbXhPWMOQwg2WgSJ24zF0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/lpbXhPWMOQwg2WgSJ24zF0/1600/1066/contain/jpegorpng",
+      "local_filename": "025_lpbXhPWMOQwg2WgSJ24zF0.jpg",
+      "sha256": "dedeffe3505ec6dd128ab750b0a42f2727afd26b34437f166f3194a7ff24412c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 427065,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.994752Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11833933/3WgYWuw5FSWHJX0n0kr3U0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/3WgYWuw5FSWHJX0n0kr3U0/1600/1066/contain/jpegorpng",
+      "local_filename": "026_3WgYWuw5FSWHJX0n0kr3U0.jpg",
+      "sha256": "c2b693516f5759ae575bf555aa4e98f5a16e30969a5b9e69ded1af028d080685",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 509667,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:06.719157Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11833933/1RnuEaDu9vle0irsubGDE3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11833933/1RnuEaDu9vle0irsubGDE3/1600/1066/contain/jpegorpng",
+      "local_filename": "027_1RnuEaDu9vle0irsubGDE3.jpg",
+      "sha256": "8781d332a0ab59f70f1e0a47691341ebaa100fc082669515f786b9be22a626b7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 557010,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "12 Bedroom House in Sandown photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T10:05:07.009365Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/245",
+            "name": "Sandown"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/22-adrienne-street/T5485220",
+            "name": "T5485220"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11833933/tbLCIWfu0a0vUhtDMJI1I1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "22 Adrienne Street",
+        "addressLocality": "Sandown, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "12"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "12"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/22-adrienne-street/T5485220"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 700 000 | 12 Bedroom House in Sandown | Private Property",
+    "og:description": "Investment Opportunity in Prime Sandown  Multi-Unit Income Property in the Secure Edward Rubenstein Enclosure\n\nPositioned in sought-after Sandown, this versatile income-generating property presents an...",
+    "og:image": "https://images.pp.co.za/listing/11833933/tbLCIWfu0a0vUhtDMJI1I1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/22-adrienne-street/T5485220"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 700 000 | 12 Bedroom House in Sandown | Private Property",
+    "og:description": "Investment Opportunity in Prime Sandown  Multi-Unit Income Property in the Secure Edward Rubenstein Enclosure\n\nPositioned in sought-after Sandown, this versatile income-generating property presents an...",
+    "og:image": "https://images.pp.co.za/listing/11833933/tbLCIWfu0a0vUhtDMJI1I1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/22-adrienne-street/T5485220",
+    "description": "12 Bedroom House in Sandown, 22 adrienne street, Investment Opportunity in Prime Sandown  Multi-Unit Income Property in the Secure Edward Rubenstein",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "d0ff344fa5d558ac958295a60d68976a94bfd22045ed73507fc6e1eb45715135"
+}

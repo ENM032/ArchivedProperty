@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5010038",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/sandown/T5010038",
+  "archived_at": "2026-08-24T10:03:04.088159Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|433a9a22-6445-4818-ad64-34707b2125d6|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=rLdodFOJcEWlvFkOQSOeew; expires=Fri, 24-Aug-2125 10:02:59 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 10:02:59 GMT",
+    "content-length": "22345"
+  },
+  "fetch_duration_sec": 1.3277196884155273,
+  "total_images_discovered": 15,
+  "total_images_archived": 15,
+  "total_archive_size_bytes": 2941982,
+  "content_fingerprint": "db82b2a0e75dce58ddc067005e859570dccac58b84f8fb9041214dad5d537705"
+}
