@@ -1,0 +1,516 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5014418",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/435-munyaka/4-munyaka-drive/T5014418",
+  "extracted_at": "2026-08-24T01:37:26.441691Z",
+  "title": "3 Bedroom Apartment in Waterfall",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [
+    "On Show"
+  ],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": true,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-03-23",
+  "description": "Each stunningly designed 1, 2 and 3 bedroom Munyaka apartment is mere meters from an inviting, crystal-clear lagoon, is fiber-ready, includes a Scandinavian style kitchen, free eco-friendly appliances...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 117.0,
+  "price": {
+    "amount": 2184900.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 184 900",
+    "rates_and_taxes_monthly": 1350.0,
+    "levies_monthly": 2350.0
+  },
+  "location": {
+    "street_address": "435 Munyaka, 4 Munyaka Drive",
+    "suburb": "Waterfall",
+    "city": "Johannesburg",
+    "region": "Waterfall, Midrand",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Midrand",
+      "Waterfall",
+      "T5014418"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": 1.0,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": true,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": true,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "En-suite 1",
+      "Lounges 1",
+      "Dining areas 1",
+      "Covered parking 2",
+      "Pet friendly",
+      "Access gate",
+      "Balcony",
+      "Built in cupboards",
+      "Club house",
+      "Fenced",
+      "Gym",
+      "Pool",
+      "Scenic view",
+      "Security post",
+      "Kitchen",
+      "Electric fencing"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Jason Ferreira",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2131996/image/e9bb23dfdcfa424aa5f4302f04868c51_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/jason-ferreira/2131996/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11034406/iFFXaMxl5sz9gVTkh5QBc6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/iFFXaMxl5sz9gVTkh5QBc6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_iFFXaMxl5sz9gVTkh5QBc6.jpg",
+      "sha256": "baf26befa2b7f70ae183f1dc66ae2e5a965969cc355b3b6d8da6d46f74264595",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 254345,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T01:37:27.842944Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11034406/xRrxQhnyLazPqMxWTCjet3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/xRrxQhnyLazPqMxWTCjet3/1600/1066/contain/jpegorpng",
+      "local_filename": "002_xRrxQhnyLazPqMxWTCjet3.jpg",
+      "sha256": "47a0687e5caaacdd9d8e74780573ad3e26d391b310520326717d301dc9bbfaf9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196308,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.557935Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11034406/vmejkUQfkfABKi04pU3pl4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/vmejkUQfkfABKi04pU3pl4/1600/1066/contain/jpegorpng",
+      "local_filename": "003_vmejkUQfkfABKi04pU3pl4.jpg",
+      "sha256": "9e4a340a50713e29016555eb4b8bf37d98e6f96944f9105ba54129eb8a23d714",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 210582,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:27.747983Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11034406/ouQgLW3cIH5IRYvSqEc1M6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/ouQgLW3cIH5IRYvSqEc1M6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_ouQgLW3cIH5IRYvSqEc1M6.jpg",
+      "sha256": "db7384a7c708dea352ea133649de122fd9c338df68521643b07b6cc3202d3d48",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162376,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.315829Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11034406/ONKOn1ReP00no9Xwhb21N7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/ONKOn1ReP00no9Xwhb21N7/1600/1066/contain/jpegorpng",
+      "local_filename": "005_ONKOn1ReP00no9Xwhb21N7.jpg",
+      "sha256": "0db9bc50777aa41b28b0b084125a75b6b50c37116d27a47e91954bbc07abf021",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 207294,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.559950Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11034406/WAdofYNGWTZB7FHsmEpvq3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/WAdofYNGWTZB7FHsmEpvq3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_WAdofYNGWTZB7FHsmEpvq3.jpg",
+      "sha256": "f7dc7651f52f8840b2c41d20fd9787314ecf50732eb2959adbccb6fd8da36c2d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129866,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.318847Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11034406/CaD6TD4aFle8gVeENh5Lu3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/CaD6TD4aFle8gVeENh5Lu3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_CaD6TD4aFle8gVeENh5Lu3.jpg",
+      "sha256": "95279450aa0a05c9f2ef26251cf4adbf9ba03678d31a14438aab50e9a2745cbf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 308930,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.464617Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11034406/69s52qpxgNxnqTHLKy0OQ2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/69s52qpxgNxnqTHLKy0OQ2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_69s52qpxgNxnqTHLKy0OQ2.jpg",
+      "sha256": "966354236a9cebd273d1cdd6ac606672092589fc7a196decf5df67aaa82f436f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 220723,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:28.682615Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11034406/wvOtMUNionzX4Ims8WsSR5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/wvOtMUNionzX4Ims8WsSR5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_wvOtMUNionzX4Ims8WsSR5.jpg",
+      "sha256": "5522d9c65190f2e8c52d9f0fb2ed8db88f033b6accca3e976405b445747c642b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 244200,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:29.975825Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11034406/05BshkvU9Krkc8T4Vm8VR0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/05BshkvU9Krkc8T4Vm8VR0/1600/1066/contain/jpegorpng",
+      "local_filename": "010_05BshkvU9Krkc8T4Vm8VR0.jpg",
+      "sha256": "2ae61540d96fa4bdf4b9bc59f8d66a76f5d3afd609a364c620432563ed6103b1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 254768,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:29.887302Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11034406/Oj6c4tA8R7BYGsQeM4RqC4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/Oj6c4tA8R7BYGsQeM4RqC4/1600/1066/contain/jpegorpng",
+      "local_filename": "011_Oj6c4tA8R7BYGsQeM4RqC4.jpg",
+      "sha256": "82fa5ae13a3b4ea22f481465e791b3af4b77f2722f001f2c6db8d81f0126bb20",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 300238,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:29.094074Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11034406/nU4qqHmsH9YCEyp98flhJ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/nU4qqHmsH9YCEyp98flhJ6/1600/1066/contain/jpegorpng",
+      "local_filename": "012_nU4qqHmsH9YCEyp98flhJ6.jpg",
+      "sha256": "67b9b6580f0f4971eac878817db0e2ae7b0b94e34fdca70ca5b50f4ef14b7244",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 242898,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:29.253171Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11034406/SHaQfYGUXlpLaOBqqoN4d5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/SHaQfYGUXlpLaOBqqoN4d5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_SHaQfYGUXlpLaOBqqoN4d5.jpg",
+      "sha256": "6a87e87dbffcdc6013972d5acc01de6e80bc19f25baf37c7a5fafe9d134499ea",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206678,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:30.034521Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11034406/4L538oa5mBJFGTf2867Sl2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/4L538oa5mBJFGTf2867Sl2/1600/1066/contain/jpegorpng",
+      "local_filename": "014_4L538oa5mBJFGTf2867Sl2.jpg",
+      "sha256": "750f274a862fccbd9a6be25cc90c3bfbced2b46dae245b37aa5d7150b0d00ea7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 272945,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:30.190927Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11034406/EJyLuvvb5Au41mW00oh1b1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/EJyLuvvb5Au41mW00oh1b1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_EJyLuvvb5Au41mW00oh1b1.jpg",
+      "sha256": "a555119bf4fac8942b269b344d98d30a2236b81f8eefe7fa18a0e96118198e87",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 220206,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:31.361990Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11034406/ACfKkxa7nreuW8p0jMNHU5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/ACfKkxa7nreuW8p0jMNHU5/1600/1066/contain/jpegorpng",
+      "local_filename": "016_ACfKkxa7nreuW8p0jMNHU5.jpg",
+      "sha256": "cd1daadefc410a2a632d72b16c11434d911c2f0841338946242bdf1f8ebfff2b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204625,
+      "width": 800,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:29.912466Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11034406/YkzmHGPbT4IFxMNSAWEbU0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/YkzmHGPbT4IFxMNSAWEbU0/1600/1066/contain/jpegorpng",
+      "local_filename": "017_YkzmHGPbT4IFxMNSAWEbU0.jpg",
+      "sha256": "e8587fd279ef3272f80cc6a37f2f28db29fc303f09e165d648fcaa36123c4c08",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 239104,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:30.412295Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11034406/EI6yxZGDGwVfZtVsppi8U1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/EI6yxZGDGwVfZtVsppi8U1/1600/1066/contain/jpegorpng",
+      "local_filename": "018_EI6yxZGDGwVfZtVsppi8U1.jpg",
+      "sha256": "af10de571e1a8396050de1f7ebb1c2fb705abf8b5d179059ed0db04197bc00a9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 242062,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:31.455680Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11034406/PXdBU30EDMhYYftF6HkRI4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/PXdBU30EDMhYYftF6HkRI4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_PXdBU30EDMhYYftF6HkRI4.jpg",
+      "sha256": "949cd796270c927484bb0e8a68b08bb90a3ed6f1949024f9ed6c61d9ecbdb9c3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 370625,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:30.983560Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11034406/GwRpndC6xk9FQQdOTEBjJ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/GwRpndC6xk9FQQdOTEBjJ1/1600/1066/contain/jpegorpng",
+      "local_filename": "020_GwRpndC6xk9FQQdOTEBjJ1.jpg",
+      "sha256": "a6a171bf9bcb7bfa12c60680dc5551f113e14d00107f828501d9934aacb97899",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 428151,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:31.841595Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11034406/Bg6Vw2fg4a0T0liXQCHiF7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11034406/Bg6Vw2fg4a0T0liXQCHiF7/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Bg6Vw2fg4a0T0liXQCHiF7.jpg",
+      "sha256": "976d34f83d841ed2ebde5030006e531aaa7649d189f52208f516f668edabf182",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 268925,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Waterfall photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:37:31.995592Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/24",
+            "name": "Midrand"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/1256",
+            "name": "Waterfall"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/435-munyaka/4-munyaka-drive/T5014418",
+            "name": "T5014418"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11034406/iFFXaMxl5sz9gVTkh5QBc6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "435 Munyaka, 4 Munyaka Drive",
+        "addressLocality": "Waterfall, Midrand",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/435-munyaka/4-munyaka-drive/T5014418"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 184 900 | 3 Bedroom Apartment in Waterfall | Private Property",
+    "og:description": "Each stunningly designed 1, 2 and 3 bedroom Munyaka apartment is mere meters from an inviting, crystal-clear lagoon, is fiber-ready, includes a Scandinavian style kitchen, free eco-friendly appliances...",
+    "og:image": "https://images.pp.co.za/listing/11034406/iFFXaMxl5sz9gVTkh5QBc6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/435-munyaka/4-munyaka-drive/T5014418"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 184 900 | 3 Bedroom Apartment in Waterfall | Private Property",
+    "og:description": "Each stunningly designed 1, 2 and 3 bedroom Munyaka apartment is mere meters from an inviting, crystal-clear lagoon, is fiber-ready, includes a Scandinavian style kitchen, free eco-friendly appliances...",
+    "og:image": "https://images.pp.co.za/listing/11034406/iFFXaMxl5sz9gVTkh5QBc6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/435-munyaka/4-munyaka-drive/T5014418",
+    "description": "3 Bedroom Apartment in Waterfall, 435 munyaka, 4 munyaka drive, Each stunningly designed 1, 2 and 3 bedroom Munyaka apartment is mere meters from an inviting, cryst",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "12a31fb0286395c8af87708007be17f780bd07e800af1fd99225c73f08554569"
+}

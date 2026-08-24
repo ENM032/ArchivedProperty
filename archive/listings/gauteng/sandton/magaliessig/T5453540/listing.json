@@ -1,0 +1,700 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5453540",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/38-cornmarsh/T5453540",
+  "extracted_at": "2026-08-24T01:57:09.286017Z",
+  "title": "3 Bedroom House in Magaliessig",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-04-12",
+  "description": "Nestled within a very desirable estate, this home offers a serene and peaceful retreat, set back from the hustle and bustle. Recently renovated from top to bottom, it boasts a practical and functional...",
+  "erf_size_m2": 400.0,
+  "land_size_raw": "400 m²",
+  "floor_size_m2": 197.0,
+  "price": {
+    "amount": 2695000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 695 000",
+    "rates_and_taxes_monthly": 1745.0,
+    "levies_monthly": 1230.0
+  },
+  "location": {
+    "street_address": "38 Cornmarsh",
+    "suburb": "Magaliessig",
+    "city": "Johannesburg",
+    "region": "Magaliessig, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.0292471,
+    "longitude": 28.0257886,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Magaliessig",
+      "T5453540"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Patio",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Vera Tomlinson",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2148389/image/f6b9a13984a74e11baff50a62d86f43d_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/vera-tomlinson/2148389/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11777956/XnUycFSQxIJMnaETInY8U0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/XnUycFSQxIJMnaETInY8U0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_XnUycFSQxIJMnaETInY8U0.jpg",
+      "sha256": "26402b6ff05f542b08ebf953f01864f19329b66da5b225e49a0bb6bd1a379377",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 286077,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T01:57:11.342891Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11777956/Cbui56cbdSWuYOxnvb0wk2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/Cbui56cbdSWuYOxnvb0wk2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_Cbui56cbdSWuYOxnvb0wk2.jpg",
+      "sha256": "b632193610019ea9de68e599fe2e87d8997f8b71b3de3bad4f54e86fdcd94214",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 286860,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:10.492004Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11777956/sOXreSkPaxl0udkxB7qhK7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/sOXreSkPaxl0udkxB7qhK7/1600/1066/contain/jpegorpng",
+      "local_filename": "003_sOXreSkPaxl0udkxB7qhK7.jpg",
+      "sha256": "a7f2741990053d1aaa919a85c7cbc58f44fa9c64d8a539718d1e97dfc3aea754",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 363093,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:11.603350Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11777956/ZChatiNDX870eVOsuvab04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/ZChatiNDX870eVOsuvab04/1600/1066/contain/jpegorpng",
+      "local_filename": "004_ZChatiNDX870eVOsuvab04.jpg",
+      "sha256": "15da6499add3759937ad0b95059627f265038d576cd96cf1c4b76552e78855be",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 386404,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:11.379399Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11777956/BQcTQnckJ7ZatXOiU68vx0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/BQcTQnckJ7ZatXOiU68vx0/1600/1066/contain/jpegorpng",
+      "local_filename": "005_BQcTQnckJ7ZatXOiU68vx0.jpg",
+      "sha256": "b6020cfcbf0eb2313342158d45693e4d9d7b8fb571fc2bb8e35ae0dc2c5edc0f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 353820,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:10.461529Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11777956/Le1uq410GTEkuWUIKaDgk3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/Le1uq410GTEkuWUIKaDgk3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Le1uq410GTEkuWUIKaDgk3.jpg",
+      "sha256": "1293d557cebe65a831d789799296bf93e0b29c3940beda176604fa7a60594ef4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 327741,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:11.548874Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11777956/L03XAQuFYrXc618BM4woz6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/L03XAQuFYrXc618BM4woz6/1600/1066/contain/jpegorpng",
+      "local_filename": "007_L03XAQuFYrXc618BM4woz6.jpg",
+      "sha256": "c8de3caeeee8dc02d1f85d791bb41a650ccd01e9debc7d2df885cf6dc5ddfe39",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 320746,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:11.318603Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11777956/LFiC6LfRljLCb15xDXByZ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/LFiC6LfRljLCb15xDXByZ0/1600/1066/contain/jpegorpng",
+      "local_filename": "008_LFiC6LfRljLCb15xDXByZ0.jpg",
+      "sha256": "179e4e99fc16fee5646f74bc6618dd34ffdb25b9a081ab5c270a18b1e9f29978",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 208091,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:10.977944Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11777956/kVMGrcBLgAGfOHwiYSJQi3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/kVMGrcBLgAGfOHwiYSJQi3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_kVMGrcBLgAGfOHwiYSJQi3.jpg",
+      "sha256": "df129061cfaeb4d06cf4160747bd71e4224975438a81f07b6a2e3c0bcf0b7b9d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189890,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.595430Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11777956/hH1kV9QXCF1ifEjAv4ReF5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/hH1kV9QXCF1ifEjAv4ReF5/1600/1066/contain/jpegorpng",
+      "local_filename": "010_hH1kV9QXCF1ifEjAv4ReF5.jpg",
+      "sha256": "b0c3086ed9ecf086ca6c8d143e3319ec9e129fbb5558ecc49e1cb0bad173b1de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 221580,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.816193Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11777956/sRdpmh11uPeUjOtYaJ4vV1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/sRdpmh11uPeUjOtYaJ4vV1/1600/1066/contain/jpegorpng",
+      "local_filename": "011_sRdpmh11uPeUjOtYaJ4vV1.jpg",
+      "sha256": "679236119ccc923ff942ae82443b82f0a26d8dadbeb7660aa9d3e011810fb54b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206180,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.968110Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11777956/lFbbKGmApfxuykw0vbM544/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/lFbbKGmApfxuykw0vbM544/1600/1066/contain/jpegorpng",
+      "local_filename": "012_lFbbKGmApfxuykw0vbM544.jpg",
+      "sha256": "9e7aefdeff43978e9bf30e7a5f015f7e6cb46fff79656cc61f889a01dc5a37bf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 227141,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.676175Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11777956/ZDxUOw3pC7zszPXTnenxu1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/ZDxUOw3pC7zszPXTnenxu1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_ZDxUOw3pC7zszPXTnenxu1.jpg",
+      "sha256": "ff32ab6bc444306ffb467121c755d4ce8cf72e821a9b98690a7f3bd98a4b7a7b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175850,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.952991Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11777956/AutaXIG830dVrKjnKJVkm6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/AutaXIG830dVrKjnKJVkm6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_AutaXIG830dVrKjnKJVkm6.jpg",
+      "sha256": "f581445913b2ba1dc5567b318dbffa9a1e05e0167f840fbf5d20fb016665a06d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178320,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:12.965638Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11777956/chMRgJ0kZ0IAlcEHsPtX56/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/chMRgJ0kZ0IAlcEHsPtX56/1600/1066/contain/jpegorpng",
+      "local_filename": "015_chMRgJ0kZ0IAlcEHsPtX56.jpg",
+      "sha256": "52b01761f8ba2a10a3806a0ca592c54b4bf9479e7f3674f66d59a692d33331db",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186416,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:13.970333Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11777956/ryAzZTnjy0V64Yp7rnte91/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/ryAzZTnjy0V64Yp7rnte91/1600/1066/contain/jpegorpng",
+      "local_filename": "016_ryAzZTnjy0V64Yp7rnte91.jpg",
+      "sha256": "d473ff1e7caacea00395fed05afaf606649800488220b078a78152126d1348d1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166773,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:13.961187Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11777956/pKrZlnwnw4AdragHazrTv6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/pKrZlnwnw4AdragHazrTv6/1600/1066/contain/jpegorpng",
+      "local_filename": "017_pKrZlnwnw4AdragHazrTv6.jpg",
+      "sha256": "1bb78b56a21a5f1d74b9a10e6846e1c03746e34efa4687997c48ebca9ca5d20d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 148857,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.412065Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11777956/x5ahz7JnX8CGWhbshyKxl2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/x5ahz7JnX8CGWhbshyKxl2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_x5ahz7JnX8CGWhbshyKxl2.jpg",
+      "sha256": "3208a409173a7e50e73252d79b37478d66218aa94e8a05f2e25d02ccb7700d36",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 211416,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.425502Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11777956/VxS72mppEqZK9b3Whxesd2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/VxS72mppEqZK9b3Whxesd2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_VxS72mppEqZK9b3Whxesd2.jpg",
+      "sha256": "5827bb4267a7b31fb1544e23b2a194e5f61d86ac70fb72a8b507f12c89c80929",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202896,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.282365Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11777956/9hCcXaheic1wmWkoZnUCn4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/9hCcXaheic1wmWkoZnUCn4/1600/1066/contain/jpegorpng",
+      "local_filename": "020_9hCcXaheic1wmWkoZnUCn4.jpg",
+      "sha256": "38700b2f9d55a5040eb9070d902b4300e4f950d3169dca1108f870db54885738",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159999,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.337556Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11777956/MiHRV7QeKiyZTfZUbO1MB7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/MiHRV7QeKiyZTfZUbO1MB7/1600/1066/contain/jpegorpng",
+      "local_filename": "021_MiHRV7QeKiyZTfZUbO1MB7.jpg",
+      "sha256": "02db4441ac0dc31d0aa6a8de56803607cc1cd08691c7e1f818d47628e157c3d5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217418,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.637522Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11777956/68eLbFrKiLgHs9XHp6ay11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/68eLbFrKiLgHs9XHp6ay11/1600/1066/contain/jpegorpng",
+      "local_filename": "022_68eLbFrKiLgHs9XHp6ay11.jpg",
+      "sha256": "ad3b8460e58c1bcfb2257f7b56fb69fb79615b0803b56bfe3dc60abd23ebb02e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204659,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.517443Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11777956/xIEmS1b0koingNiNIKLSI6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/xIEmS1b0koingNiNIKLSI6/1600/1066/contain/jpegorpng",
+      "local_filename": "023_xIEmS1b0koingNiNIKLSI6.jpg",
+      "sha256": "705cee5c185f27a04bc2f075c051114cd497ae90f6856a8061376a6e7588adf8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176104,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.624659Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11777956/4dtC5CGjU2f47ws3TfOkM7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/4dtC5CGjU2f47ws3TfOkM7/1600/1066/contain/jpegorpng",
+      "local_filename": "024_4dtC5CGjU2f47ws3TfOkM7.jpg",
+      "sha256": "656397f5164a77f4a3dae60fd9f9d4a67138828acc02e9e29952d585034508f4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144437,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.902818Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11777956/21DFROGabLRvMHmBSh6bU1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/21DFROGabLRvMHmBSh6bU1/1600/1066/contain/jpegorpng",
+      "local_filename": "025_21DFROGabLRvMHmBSh6bU1.jpg",
+      "sha256": "4080dfb091dafa66e08e01246eb7700186bd4b9555dc4a7ce5e33ae80dc60361",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151228,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:14.927142Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11777956/XNcySKWFlUnPEzURQVBSP1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/XNcySKWFlUnPEzURQVBSP1/1600/1066/contain/jpegorpng",
+      "local_filename": "026_XNcySKWFlUnPEzURQVBSP1.jpg",
+      "sha256": "dc31aebcfd071db390306d86a19db94a9bc2013b4fb0893dcf71bcf038dbf7d6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139273,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.777589Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11777956/usUodlx6P5Vd82Keh5bN62/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/usUodlx6P5Vd82Keh5bN62/1600/1066/contain/jpegorpng",
+      "local_filename": "027_usUodlx6P5Vd82Keh5bN62.jpg",
+      "sha256": "5b0752907fdf9c31e6b9fde1b52cb7b3a7c769d0d18b22653956d59dda5897f4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159240,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.899986Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11777956/dar3SVa3kxEyLzySNzeyj0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/dar3SVa3kxEyLzySNzeyj0/1600/1066/contain/jpegorpng",
+      "local_filename": "028_dar3SVa3kxEyLzySNzeyj0.jpg",
+      "sha256": "068602b1c3af70e0bde09ec568135ff8154bc0dca2434eb12758872870747718",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174240,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.989395Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11777956/5I5m8c1nvLrelutuXqKYe7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/5I5m8c1nvLrelutuXqKYe7/1600/1066/contain/jpegorpng",
+      "local_filename": "029_5I5m8c1nvLrelutuXqKYe7.jpg",
+      "sha256": "9813bc01f5cff9ace90ecde39065de202583fc4adc7b052e45d721e4e9b5e05b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150802,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.499280Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11777956/Ct5ILIinpXwY8fHryFWKS6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/Ct5ILIinpXwY8fHryFWKS6/1600/1066/contain/jpegorpng",
+      "local_filename": "030_Ct5ILIinpXwY8fHryFWKS6.jpg",
+      "sha256": "77f692f982f2f640a95b09d22729e29c5b0477e96f7e9de8882190e172f1e0a2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 102187,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:15.354638Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11777956/SuxqxfGMwhGtvPCJRYYYf0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/SuxqxfGMwhGtvPCJRYYYf0/1600/1066/contain/jpegorpng",
+      "local_filename": "031_SuxqxfGMwhGtvPCJRYYYf0.jpg",
+      "sha256": "958990f4a0cfe1e586c5ee87996f5d8630fadc8bd12400417ae966637d47a395",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125024,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:17.359610Z"
+    },
+    {
+      "order_index": 31,
+      "original_url": "https://images.pp.co.za/listing/11777956/X27V9OPaSM72ngVnArPnH5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/X27V9OPaSM72ngVnArPnH5/1600/1066/contain/jpegorpng",
+      "local_filename": "032_X27V9OPaSM72ngVnArPnH5.jpg",
+      "sha256": "1817ce4a733847f436ce383568f70336b7638d1bf2990c909d23ca8ea414d173",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142228,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 32",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:16.817103Z"
+    },
+    {
+      "order_index": 32,
+      "original_url": "https://images.pp.co.za/listing/11777956/gU9llnxhXp1gWBH8j49DL5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/gU9llnxhXp1gWBH8j49DL5/1600/1066/contain/jpegorpng",
+      "local_filename": "033_gU9llnxhXp1gWBH8j49DL5.jpg",
+      "sha256": "69bfc1a613ced83db810034142fa6f310aaa1f5d587448e9040cf41be0740fc8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131411,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 33",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:17.277698Z"
+    },
+    {
+      "order_index": 33,
+      "original_url": "https://images.pp.co.za/listing/11777956/M8go5ImaZ40VcNrxJ0FzA4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11777956/M8go5ImaZ40VcNrxJ0FzA4/1600/1066/contain/jpegorpng",
+      "local_filename": "034_M8go5ImaZ40VcNrxJ0FzA4.jpg",
+      "sha256": "94b34ea54bb30b403b855a523af30a65f7dc8fc1c3a6ea2da2bf83dc1228aa94",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 355685,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Magaliessig photo number 34",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:57:17.256117Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1484",
+            "name": "Magaliessig"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/38-cornmarsh/T5453540",
+            "name": "T5453540"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11777956/XnUycFSQxIJMnaETInY8U0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "38 Cornmarsh",
+        "addressLocality": "Magaliessig, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.0292471,
+        "longitude": 28.0257886
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/38-cornmarsh/T5453540"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 695 000 | 3 Bedroom House in Magaliessig | Private Property",
+    "og:description": "Nestled within a very desirable estate, this home offers a serene and peaceful retreat, set back from the hustle and bustle. Recently renovated from top to bottom, it boasts a practical and functional...",
+    "og:image": "https://images.pp.co.za/listing/11777956/XnUycFSQxIJMnaETInY8U0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/38-cornmarsh/T5453540"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 695 000 | 3 Bedroom House in Magaliessig | Private Property",
+    "og:description": "Nestled within a very desirable estate, this home offers a serene and peaceful retreat, set back from the hustle and bustle. Recently renovated from top to bottom, it boasts a practical and functional...",
+    "og:image": "https://images.pp.co.za/listing/11777956/XnUycFSQxIJMnaETInY8U0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/38-cornmarsh/T5453540",
+    "description": "3 Bedroom House in Magaliessig, 38 cornmarsh, Nestled within a very desirable estate, this home offers a serene and peaceful retreat, set back fro",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "886b6d703f20e45b08988a5db49835c7a45eb3b0fa3edcb3fb0f84e4c82b96ae"
+}

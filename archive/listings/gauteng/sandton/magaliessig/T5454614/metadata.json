@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5454614",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/59-cornmarsh-way/T5454614",
+  "archived_at": "2026-08-24T01:57:42.629624Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|bac7e73b-2a8f-4a0e-96eb-e78af720e6c0|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Y7xOyWNVlEu9B0nhduAFqQ; expires=Fri, 24-Aug-2125 01:57:30 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:57:30 GMT",
+    "content-length": "30257"
+  },
+  "fetch_duration_sec": 1.3275256156921387,
+  "total_images_discovered": 46,
+  "total_images_archived": 46,
+  "total_archive_size_bytes": 10051640,
+  "content_fingerprint": "53dd36c93356c5c205bd88a1d8c82a62f39a293267655e977999eb2c511b7684"
+}

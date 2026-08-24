@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5577878",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T5577878",
+  "archived_at": "2026-08-24T02:08:03.049969Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|9d8f1bd9-77df-4c78-b4ab-81c5429b96c5|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=bOfx5aPTs02N5NjQ2S95zw; expires=Fri, 24-Aug-2125 02:07:49 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 02:07:49 GMT",
+    "content-length": "29901"
+  },
+  "fetch_duration_sec": 1.3486096858978271,
+  "total_images_discovered": 51,
+  "total_images_archived": 51,
+  "total_archive_size_bytes": 9684577,
+  "content_fingerprint": "a38066c0983cc7ae0c25349ffe541b73527f3d3f4a62c5e94b948a83eff51610"
+}

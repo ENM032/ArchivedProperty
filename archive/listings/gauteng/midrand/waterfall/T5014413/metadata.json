@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5014413",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/434-munyaka/4-munyaka-drive/T5014413",
+  "archived_at": "2026-08-24T01:35:40.620620Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|67fdd1df-02e6-444f-b440-acee9fa5d632|C2143|CD887",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=oaTRKnFrmE-099P4cRkXvQ; expires=Fri, 24-Aug-2125 01:35:28 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:35:27 GMT",
+    "content-length": "25416"
+  },
+  "fetch_duration_sec": 1.3474807739257812,
+  "total_images_discovered": 27,
+  "total_images_archived": 27,
+  "total_archive_size_bytes": 6695821,
+  "content_fingerprint": "605f0a7e9d39d44605b2b087bec0f137eea15f11550ea0584b107de545d63256"
+}

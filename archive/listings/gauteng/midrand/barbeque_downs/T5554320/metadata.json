@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5554320",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5554320",
+  "archived_at": "2026-08-24T01:41:42.729727Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|44014d42-d9ee-403d-875c-a2f6ed176b05|C2143|CD887",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=i-KXe_bk-kKIa-OSvck7xw; expires=Fri, 24-Aug-2125 01:41:24 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:41:24 GMT",
+    "content-length": "28644"
+  },
+  "fetch_duration_sec": 1.3406250476837158,
+  "total_images_discovered": 46,
+  "total_images_archived": 46,
+  "total_archive_size_bytes": 55246756,
+  "content_fingerprint": "b229516652bd83952989856ad6047b0dadddb27eb0581484ae3c8c058ac81303"
+}

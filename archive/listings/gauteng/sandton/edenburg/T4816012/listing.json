@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T4816012",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/8a-dunton-road/T4816012",
+  "extracted_at": "2026-08-24T01:53:24.208221Z",
+  "title": "5 Bedroom House in Edenburg",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2024-10-08",
+  "description": "Entertainers home in lovely elevated portion. Entertainers home in lovely elevated portion. Ultra versatile home with 2 income producing cottages ideal for extended family or work from home.  Lovely i...",
+  "erf_size_m2": 2293.0,
+  "land_size_raw": "2 293 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 4800000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 800 000",
+    "rates_and_taxes_monthly": 3738.0,
+    "levies_monthly": 650.0
+  },
+  "location": {
+    "street_address": "8A Dunton Road",
+    "suburb": "Edenburg",
+    "city": "Johannesburg",
+    "region": "Edenburg, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.053406,
+    "longitude": 28.06667,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Edenburg",
+      "T4816012"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 4.0,
+    "en_suites": 3.0,
+    "lounges": 3.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": true,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 4",
+      "En-suite 3",
+      "Lounges 3",
+      "Garage parking 2",
+      "Alarm",
+      "Built in cupboards",
+      "Patio",
+      "Pool",
+      "Study",
+      "Entrance hall",
+      "Kitchen",
+      "Garden cottage",
+      "Family TV room",
+      "Guest toilet",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Alistair Dempster",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2157349/image/7f189562d3844b1ebcedb22942682b9d_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/alistair-dempster/2157349/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Pat Dempster",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1149230/image/d7cce35c37cb4131bd1f7d7f589f00c5_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/pat-dempster/1149230/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/10704227/7iSbkqrZLTqyCIk3M3lSM4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/7iSbkqrZLTqyCIk3M3lSM4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_7iSbkqrZLTqyCIk3M3lSM4.jpg",
+      "sha256": "1d10425a3668dba3924acaf23aa9b953aebcfbd6125c4869720404eaabef8c58",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 359450,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T01:53:25.350327Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/10704227/zB8BmOqgJsDyCCtJzxfnC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/zB8BmOqgJsDyCCtJzxfnC0/1600/1066/contain/jpegorpng",
+      "local_filename": "002_zB8BmOqgJsDyCCtJzxfnC0.jpg",
+      "sha256": "a1e6c52608a7ca56f8ae94c023a18a4eec09823ea9374b095799c2fb38aba2bc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 259088,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.430650Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/10704227/kknOT2JR8bxIchx4pu69k1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/kknOT2JR8bxIchx4pu69k1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_kknOT2JR8bxIchx4pu69k1.jpg",
+      "sha256": "836e49e7b0ae6ca643e1b2c12ee15502d54177f7198330e2396bbba4b99443de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 293654,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.433499Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/10704227/cEeJetg5QQqetxjMBSQt31/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/cEeJetg5QQqetxjMBSQt31/1600/1066/contain/jpegorpng",
+      "local_filename": "004_cEeJetg5QQqetxjMBSQt31.jpg",
+      "sha256": "d839c351c3ba08346dc4b7a466edd463ddcba7592e86682fba0151cef56a1d98",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 367185,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.407810Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/10704227/OMFY9i44pqg6wxL1kEx1g4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/OMFY9i44pqg6wxL1kEx1g4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_OMFY9i44pqg6wxL1kEx1g4.jpg",
+      "sha256": "a0e1d9a5ce5a324c6e4d2a69364f7e08ccacd39d9c4d0620ea453828c5523966",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 301361,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.621864Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/10704227/u7FPUi46aCKptWMReHO5F6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/u7FPUi46aCKptWMReHO5F6/1600/1066/contain/jpegorpng",
+      "local_filename": "006_u7FPUi46aCKptWMReHO5F6.jpg",
+      "sha256": "165877ee215a10e27b96177b3ba54367025b727e3662aeeeaa1149b03926b32c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135225,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:25.327619Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/10704227/ZZNKsPF5W7XkJlWLyhG1m7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/ZZNKsPF5W7XkJlWLyhG1m7/1600/1066/contain/jpegorpng",
+      "local_filename": "007_ZZNKsPF5W7XkJlWLyhG1m7.jpg",
+      "sha256": "dd812eb152271584777c0b6db6588ed0acce18f6d29f711bd3219df648428c33",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 226508,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:25.874640Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/10704227/NWjR70n72fIpgcTVFdr4G4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/NWjR70n72fIpgcTVFdr4G4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_NWjR70n72fIpgcTVFdr4G4.jpg",
+      "sha256": "bb2f478d13aac4f11ae795ee9fb1300567f64858b391e168d38fd13aeedb0000",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166220,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.655173Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/10704227/LotKcxI87TuzPGPERdx2A3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/LotKcxI87TuzPGPERdx2A3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_LotKcxI87TuzPGPERdx2A3.jpg",
+      "sha256": "9a5cccdbe47c478424d668e83143efe52b1f4ea034045cfe43d2375e6ae77c6c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162469,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:26.496159Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/10704227/tRZ4dyeeiGDiBhAdoqoUX1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/tRZ4dyeeiGDiBhAdoqoUX1/1600/1066/contain/jpegorpng",
+      "local_filename": "010_tRZ4dyeeiGDiBhAdoqoUX1.jpg",
+      "sha256": "28e9658da121559257f85359e9761c91279f50b616bc23bc509c02349508db7e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162945,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:27.906339Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/10704227/q3RRKttz4zwZ7daGiwyJq0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/q3RRKttz4zwZ7daGiwyJq0/1600/1066/contain/jpegorpng",
+      "local_filename": "011_q3RRKttz4zwZ7daGiwyJq0.jpg",
+      "sha256": "57a81581f1063f91a3c5d1189ce233b33139afef2a74a61e457bcf94f63280f8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137215,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:27.799496Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/10704227/JPq8wK6GuVSD3u3h3SGVI2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/JPq8wK6GuVSD3u3h3SGVI2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_JPq8wK6GuVSD3u3h3SGVI2.jpg",
+      "sha256": "305f41a2b6cbffaba719a4c959cbd3078f0d414d4228404c0ea964cb2c9473ba",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127868,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:28.093023Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/10704227/89PPEufrefVLwn3yiAmhB0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/89PPEufrefVLwn3yiAmhB0/1600/1066/contain/jpegorpng",
+      "local_filename": "013_89PPEufrefVLwn3yiAmhB0.jpg",
+      "sha256": "1b1557153594a117c92adfaa980ca2a9dceea9d06f65a05e2db6b3fb2fef9695",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147762,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:28.290698Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/10704227/C7AVNc6E6haTwkl1GKPkD2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/C7AVNc6E6haTwkl1GKPkD2/1600/1066/contain/jpegorpng",
+      "local_filename": "014_C7AVNc6E6haTwkl1GKPkD2.jpg",
+      "sha256": "5a90e126696d2918eba62c3a6ce12a509d6784ee856afad2224a5cbe6c40589c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114679,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:28.064240Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/10704227/eK77YF5l8ar1fDEUDNDiA4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/eK77YF5l8ar1fDEUDNDiA4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_eK77YF5l8ar1fDEUDNDiA4.jpg",
+      "sha256": "bad68acbb25b2fc2616a498ed929f2499d0928ef5086aeb34d1083a204824970",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147847,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:28.066340Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/10704227/B099nUE6qti2uei9P0uqQ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/B099nUE6qti2uei9P0uqQ7/1600/1066/contain/jpegorpng",
+      "local_filename": "016_B099nUE6qti2uei9P0uqQ7.jpg",
+      "sha256": "986f2fb8a91120f9c07377111a13fc54a144a7c91364c33cfb908dfb4f1a7a7d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 140036,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:29.157383Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/10704227/9tx5SmaVzQ33nbt2Dyiu34/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/9tx5SmaVzQ33nbt2Dyiu34/1600/1066/contain/jpegorpng",
+      "local_filename": "017_9tx5SmaVzQ33nbt2Dyiu34.jpg",
+      "sha256": "e56fe9486b902833dbcdb1c1043bb234eb1cab73556ba712b55f9f037039a251",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154123,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:29.331929Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/10704227/hvJ68E18ESsh8vjnowL2r0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/hvJ68E18ESsh8vjnowL2r0/1600/1066/contain/jpegorpng",
+      "local_filename": "018_hvJ68E18ESsh8vjnowL2r0.jpg",
+      "sha256": "78b5eaed5374183be68ff7f2989eb5903034d840d7c89cc85a9775336938a3b1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104788,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.009064Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/10704227/on0Z8KCSMs3wxx8mzPYQg2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/on0Z8KCSMs3wxx8mzPYQg2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_on0Z8KCSMs3wxx8mzPYQg2.jpg",
+      "sha256": "713887caf8bcbd6694be9a3e36d5885ca007dedc400b9c76f92d1a624693db55",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127755,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:28.466641Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/10704227/AcLEcOcfqcPFv0QvJQhiM0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/AcLEcOcfqcPFv0QvJQhiM0/1600/1066/contain/jpegorpng",
+      "local_filename": "020_AcLEcOcfqcPFv0QvJQhiM0.jpg",
+      "sha256": "dc566644baa6304ba1b91c157a5c79cc774ea97404ad4aaac34da8935d7082cc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113546,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.066745Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/10704227/iREZpEAcDyRhMDRqUYKY82/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/iREZpEAcDyRhMDRqUYKY82/1600/1066/contain/jpegorpng",
+      "local_filename": "021_iREZpEAcDyRhMDRqUYKY82.jpg",
+      "sha256": "69121f626fb91d57a8502e6c92e22d5fc7c713df7e16d68ebdcf679abe3f1663",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145791,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:29.615010Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/10704227/pKVvgltHncirwgfh45HaJ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/pKVvgltHncirwgfh45HaJ1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_pKVvgltHncirwgfh45HaJ1.jpg",
+      "sha256": "174dab7821b5dbfeafad07b08eaf141916f1153ced5bdc4782d0fcf0152f7de2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113597,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:29.665645Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/10704227/r6s1hV1gchURrzJ91ktN83/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/r6s1hV1gchURrzJ91ktN83/1600/1066/contain/jpegorpng",
+      "local_filename": "023_r6s1hV1gchURrzJ91ktN83.jpg",
+      "sha256": "124591d99f4e3eea4fb9b8215c4fccde9788069eedc59029bed90501fcd06185",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94204,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.328619Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/10704227/0ts6723w9EmHz6L4L9Oxu1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/0ts6723w9EmHz6L4L9Oxu1/1600/1066/contain/jpegorpng",
+      "local_filename": "024_0ts6723w9EmHz6L4L9Oxu1.jpg",
+      "sha256": "92f6400bdd9319511c42f09d0ba8eaa53220737ace7f89ea87f9aa91d40054d1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130255,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.805099Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/10704227/v5Bo7pIOqxWsQYJTc29VK7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/v5Bo7pIOqxWsQYJTc29VK7/1600/1066/contain/jpegorpng",
+      "local_filename": "025_v5Bo7pIOqxWsQYJTc29VK7.jpg",
+      "sha256": "eb68735d1db848c8e21ed29d6772a1361fa19682e54ca043380d199e4ba7cc1a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121751,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.070574Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/10704227/MRyQOtRz0AiOV0Uhv0e2e0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/MRyQOtRz0AiOV0Uhv0e2e0/1600/1066/contain/jpegorpng",
+      "local_filename": "026_MRyQOtRz0AiOV0Uhv0e2e0.jpg",
+      "sha256": "01f3af431d2d1aa69cdcc58a1e60491f9344c34fdb88925bc934ac5e6cec51b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113534,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.848447Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/10704227/rPxOM8aS0ryEcFY0KO9JM6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/rPxOM8aS0ryEcFY0KO9JM6/1600/1066/contain/jpegorpng",
+      "local_filename": "027_rPxOM8aS0ryEcFY0KO9JM6.jpg",
+      "sha256": "79e8f35edf684873ed6de0125b167715a9480eb6c0449ebe76f991830a5fedff",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125467,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:31.549302Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/10704227/9Eyk4xnthtzYHLpcjG1HR6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/9Eyk4xnthtzYHLpcjG1HR6/1600/1066/contain/jpegorpng",
+      "local_filename": "028_9Eyk4xnthtzYHLpcjG1HR6.jpg",
+      "sha256": "c5639fbbce39a1ca27997944f0328daefc9661c8833fdf2f1d7005995d65141b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 187459,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:31.832228Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/10704227/cTJhhOQQR7vohVfv976C21/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/cTJhhOQQR7vohVfv976C21/1600/1066/contain/jpegorpng",
+      "local_filename": "029_cTJhhOQQR7vohVfv976C21.jpg",
+      "sha256": "5d9ed20f0e235cb25a9c7f54a1249312659d8c6c7ab7a2c6d43380cb2bc34c02",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116066,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:31.260370Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/10704227/KOanIBxu0KLbTKfclLZNP7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/KOanIBxu0KLbTKfclLZNP7/1600/1066/contain/jpegorpng",
+      "local_filename": "030_KOanIBxu0KLbTKfclLZNP7.jpg",
+      "sha256": "5a862bbe31b9f0e23bc50244ad9866fe2790ff1796d2dbc31c1dbee46e49fcb1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135846,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:30.910247Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/10704227/adVjHiMxSmVVLxbVkmxE71/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/adVjHiMxSmVVLxbVkmxE71/1600/1066/contain/jpegorpng",
+      "local_filename": "031_adVjHiMxSmVVLxbVkmxE71.jpg",
+      "sha256": "7d535358b24a84b31e78f4deda2155e2bae4c43b693f6e6524e7f9e0b1ee0993",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137512,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:32.169059Z"
+    },
+    {
+      "order_index": 31,
+      "original_url": "https://images.pp.co.za/listing/10704227/bjChEu2bbPDPviIa1XgNB3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/bjChEu2bbPDPviIa1XgNB3/1600/1066/contain/jpegorpng",
+      "local_filename": "032_bjChEu2bbPDPviIa1XgNB3.jpg",
+      "sha256": "39be1111540e787e936766ca68dbdaefc249919afb655adf9bc7ce3545e7eeb1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 319584,
+      "width": 1600,
+      "height": 990,
+      "alt_text": "5 Bedroom House in Edenburg photo number 32",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:31.582482Z"
+    },
+    {
+      "order_index": 32,
+      "original_url": "https://images.pp.co.za/listing/10704227/q8IygrNPyJmxYmqg9dnUb7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/q8IygrNPyJmxYmqg9dnUb7/1600/1066/contain/jpegorpng",
+      "local_filename": "033_q8IygrNPyJmxYmqg9dnUb7.jpg",
+      "sha256": "1f30685b47ae7c4f7019eaf4f52eba194309227f46be29104047d4d7a5775be7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 307719,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 33",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:32.498227Z"
+    },
+    {
+      "order_index": 33,
+      "original_url": "https://images.pp.co.za/listing/10704227/PrmI0pe7gzfGNtK4NCSsj1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/PrmI0pe7gzfGNtK4NCSsj1/1600/1066/contain/jpegorpng",
+      "local_filename": "034_PrmI0pe7gzfGNtK4NCSsj1.jpg",
+      "sha256": "aaab2354ca279f90db73c077f42f6622d258c3585339d9eb436a96a02f2e7208",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 410304,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 34",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:32.802205Z"
+    },
+    {
+      "order_index": 34,
+      "original_url": "https://images.pp.co.za/listing/10704227/eILOtb8PMKiUsNuiwWNUx3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10704227/eILOtb8PMKiUsNuiwWNUx3/1600/1066/contain/jpegorpng",
+      "local_filename": "035_eILOtb8PMKiUsNuiwWNUx3.jpg",
+      "sha256": "b8c930a13dd071c233a52aaf2531221544fad90548da98d1a21ce1a081777c07",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 336082,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Edenburg photo number 35",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:53:33.860333Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/1518",
+            "name": "Edenburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/8a-dunton-road/T4816012",
+            "name": "T4816012"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/10704227/7iSbkqrZLTqyCIk3M3lSM4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8A Dunton Road",
+        "addressLocality": "Edenburg, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.053406,
+        "longitude": 28.06667
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/8a-dunton-road/T4816012"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 800 000 | 5 Bedroom House in Edenburg | Private Property",
+    "og:description": "Entertainers home in lovely elevated portion. Entertainers home in lovely elevated portion. Ultra versatile home with 2 income producing cottages ideal for extended family or work from home.  Lovely i...",
+    "og:image": "https://images.pp.co.za/listing/10704227/7iSbkqrZLTqyCIk3M3lSM4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/8a-dunton-road/T4816012"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 800 000 | 5 Bedroom House in Edenburg | Private Property",
+    "og:description": "Entertainers home in lovely elevated portion. Entertainers home in lovely elevated portion. Ultra versatile home with 2 income producing cottages ideal for extended family or work from home.  Lovely i...",
+    "og:image": "https://images.pp.co.za/listing/10704227/7iSbkqrZLTqyCIk3M3lSM4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/edenburg/8a-dunton-road/T4816012",
+    "description": "5 Bedroom House in Edenburg, 8a dunton road, Entertainers home in lovely elevated portion. Entertainers home in lovely elevated portion. Ultra ve",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "ea1cb20e2f5bcf488553fda8190dc267841c6a40e1bdb7c98b509a8c08f3774c"
+}

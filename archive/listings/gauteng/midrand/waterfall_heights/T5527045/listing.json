@@ -1,0 +1,570 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5527045",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/T5527045",
+  "extracted_at": "2026-08-24T01:26:23.642789Z",
+  "title": "3 Bedroom Penthouse in Waterfall Heights",
+  "listing_type": "for_sale",
+  "property_type": "Penthouse",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-20",
+  "description": "Ellipse provides an exceptional living environment tailored to the diverse Live-Work-Play & shopping lifestyle. This is truly remarkable and magnificent in every-way. Unmatched luxury living and desig...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 290.0,
+  "price": {
+    "amount": 7700000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 7 700 000",
+    "rates_and_taxes_monthly": 6500.0,
+    "levies_monthly": 8000.0
+  },
+  "location": {
+    "street_address": "Waterfall Heights",
+    "suburb": "Waterfall Heights",
+    "city": "Johannesburg",
+    "region": "Waterfall Heights, Midrand",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Midrand",
+      "Waterfall",
+      "Waterfall Heights",
+      "T5527045"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 4.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 4",
+      "Lounges 1",
+      "Dining areas 1",
+      "Open parking 4",
+      "Balcony",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Shepherd Shabangu",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2343341/image/8ff2c3615dfd4c28acac39265079fd4d_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/shepherd-shabangu/2343341/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11906583/75CXl5HoMZOcOlgyax0n91/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/75CXl5HoMZOcOlgyax0n91/1600/1066/contain/jpegorpng",
+      "local_filename": "001_75CXl5HoMZOcOlgyax0n91.jpg",
+      "sha256": "c80c7c002ba4e31cc1b0e8bf32c2ecf365231edfb0a496768373eeb0a533f890",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171302,
+      "width": 1347,
+      "height": 611,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T01:26:25.721174Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11906583/cwFowUZXQEYDWgJOK0qmQ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/cwFowUZXQEYDWgJOK0qmQ1/1600/1066/contain/jpegorpng",
+      "local_filename": "002_cwFowUZXQEYDWgJOK0qmQ1.jpg",
+      "sha256": "a1b5f31b8da637284ebe0ee6da731bc6d33e6652eee4890d8a4b11bfde6838fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202624,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:24.835689Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11906583/44Zn3aoWPNtuZXPfOsKLd2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/44Zn3aoWPNtuZXPfOsKLd2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_44Zn3aoWPNtuZXPfOsKLd2.jpg",
+      "sha256": "7e0b06d8d1e9faeea6b5abe823e08988b6374e60ae8f71d6f5d2d34e03551ca4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 107696,
+      "width": 1345,
+      "height": 610,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:24.543623Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11906583/CY7MXyPCvLUtYd9VksFTy0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/CY7MXyPCvLUtYd9VksFTy0/1600/1066/contain/jpegorpng",
+      "local_filename": "004_CY7MXyPCvLUtYd9VksFTy0.jpg",
+      "sha256": "51bb87307b3e7430ece3b62a12b59f0312b4637f0645b14b4605e326a7668e6c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 99326,
+      "width": 1345,
+      "height": 609,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:24.686878Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11906583/XA5YIn4b93Fx8ghxtpW7t2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/XA5YIn4b93Fx8ghxtpW7t2/1600/1066/contain/jpegorpng",
+      "local_filename": "005_XA5YIn4b93Fx8ghxtpW7t2.jpg",
+      "sha256": "1bd58bf76ac4a6228cb4cb9704d5912c5d089d407a7421609ef6cf4a3161ac81",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 62711,
+      "width": 1347,
+      "height": 619,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.389303Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11906583/dQzhdZEAtRZr1vRzi8FtZ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/dQzhdZEAtRZr1vRzi8FtZ3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_dQzhdZEAtRZr1vRzi8FtZ3.jpg",
+      "sha256": "a0e44d57fd810658105706b2cb3b61261c077ad6fff70612c60760129e58ebfe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 90579,
+      "width": 1341,
+      "height": 612,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.484540Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11906583/V6QDHVVMy0tlgKEv25xgw0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/V6QDHVVMy0tlgKEv25xgw0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_V6QDHVVMy0tlgKEv25xgw0.jpg",
+      "sha256": "77a06026b66559116dfa35f12b4fa1220fd319ed4b727a9809601a0a8e3b9f9c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 79568,
+      "width": 1347,
+      "height": 612,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.900450Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11906583/WbDn7rSs40y1BuJftnumR7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/WbDn7rSs40y1BuJftnumR7/1600/1066/contain/jpegorpng",
+      "local_filename": "008_WbDn7rSs40y1BuJftnumR7.jpg",
+      "sha256": "b90b39d7030a95de4fb78ca6c8fe45875877dbe156e4a6de1c2f6f97d7f2a0b5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 65819,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.069339Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11906583/i5hrIGbois8ZD8Lp65uYV0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/i5hrIGbois8ZD8Lp65uYV0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_i5hrIGbois8ZD8Lp65uYV0.jpg",
+      "sha256": "611365d8d78f52cef1f0b6695b5826927a6aa639b50ae604f47642054cc770da",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 67016,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.976667Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11906583/KqPHQsqtdzZLdsXs0TXjc1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/KqPHQsqtdzZLdsXs0TXjc1/1600/1066/contain/jpegorpng",
+      "local_filename": "010_KqPHQsqtdzZLdsXs0TXjc1.jpg",
+      "sha256": "bd632ca15e4ea524e5a059938d3a000b63a16ae237328b21f65a42b442172b2f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 87429,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.822096Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11906583/GJQnkn3O2wWEyvfuZbXzG1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/GJQnkn3O2wWEyvfuZbXzG1/1600/1066/contain/jpegorpng",
+      "local_filename": "011_GJQnkn3O2wWEyvfuZbXzG1.jpg",
+      "sha256": "4355ec2e512346388def78b0a242807cbffdbd86ba8262ad769546b42174d14b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 75792,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:26.666462Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11906583/47zYxsQRgd6z6KO80RAhT6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/47zYxsQRgd6z6KO80RAhT6/1600/1066/contain/jpegorpng",
+      "local_filename": "012_47zYxsQRgd6z6KO80RAhT6.jpg",
+      "sha256": "4eff83073867c27d08a5da832f650eb5e374993e8ea48387be122d86a1583bd7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 85598,
+      "width": 1339,
+      "height": 609,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:25.908894Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11906583/BcHku8I1bhpEdt23R6LFT4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/BcHku8I1bhpEdt23R6LFT4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_BcHku8I1bhpEdt23R6LFT4.jpg",
+      "sha256": "bb4738bdfae88e80d5e95556f81d537d1cc19424ac481450fef8728862a4fc3d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 81083,
+      "width": 1347,
+      "height": 610,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:26.224211Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11906583/Ho0loPBqnH23FfeXQLaiP0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/Ho0loPBqnH23FfeXQLaiP0/1600/1066/contain/jpegorpng",
+      "local_filename": "014_Ho0loPBqnH23FfeXQLaiP0.jpg",
+      "sha256": "1bbc9d474c74bbead1b78a3628d1199886116e6339a41fad5ca0aed86966e01e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 76982,
+      "width": 1345,
+      "height": 608,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.043911Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11906583/Frb4pAEGVimVrlzg212ha5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/Frb4pAEGVimVrlzg212ha5/1600/1066/contain/jpegorpng",
+      "local_filename": "015_Frb4pAEGVimVrlzg212ha5.jpg",
+      "sha256": "6458bcb11471855e7eadae1514056100bf8de6f01fa1380614b739293472c55d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 71517,
+      "width": 1337,
+      "height": 612,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:26.252602Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11906583/q8udy9biLkqyJ4p5LcYd10/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/q8udy9biLkqyJ4p5LcYd10/1600/1066/contain/jpegorpng",
+      "local_filename": "016_q8udy9biLkqyJ4p5LcYd10.jpg",
+      "sha256": "56f220530205ff1f69aed3eb6dca5a3f49c2d57f576c36e239f47b740bc64030",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150390,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.213690Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11906583/YzuMKnEsNvCg8RGISZX0i7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/YzuMKnEsNvCg8RGISZX0i7/1600/1066/contain/jpegorpng",
+      "local_filename": "017_YzuMKnEsNvCg8RGISZX0i7.jpg",
+      "sha256": "c8a8f898995432ef7c7163b84e0f1d9d7744825aa5dba4732e8abf6c6fe6107c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127885,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.444843Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11906583/8r7tVIASLiAjtqQzfhkIo2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/8r7tVIASLiAjtqQzfhkIo2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_8r7tVIASLiAjtqQzfhkIo2.jpg",
+      "sha256": "46631c3a855b2fe967d18cbdaa90cd51e2040fcdb41e1d072fa5037621a5b691",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 58368,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.336942Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11906583/1HpU1iHBf4Ug8UR6RfDk63/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/1HpU1iHBf4Ug8UR6RfDk63/1600/1066/contain/jpegorpng",
+      "local_filename": "019_1HpU1iHBf4Ug8UR6RfDk63.jpg",
+      "sha256": "f8694bde10983ef1438ce3ea32f85651d43b4b80d6388a8b847eb898689ffaa0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 76010,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.502651Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11906583/uIHMfYlZyGAFllwJnLkdm4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/uIHMfYlZyGAFllwJnLkdm4/1600/1066/contain/jpegorpng",
+      "local_filename": "020_uIHMfYlZyGAFllwJnLkdm4.jpg",
+      "sha256": "3ac6258f756caa80ed19a168d5132fb66756bc0faa6052072f5b8d5704a45d7a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 69349,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.917312Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11906583/xnX2Bn3DMit5xHSTtZGHS5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/xnX2Bn3DMit5xHSTtZGHS5/1600/1066/contain/jpegorpng",
+      "local_filename": "021_xnX2Bn3DMit5xHSTtZGHS5.jpg",
+      "sha256": "fa8d979e63874272f59efcb8daf7a97e0cb5edba0dca9fd730f16d0dca7130ba",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 69422,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:28.209701Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11906583/iiCZgPn30aGadZFGN7s3a1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/iiCZgPn30aGadZFGN7s3a1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_iiCZgPn30aGadZFGN7s3a1.jpg",
+      "sha256": "28340392f35614cfec5365d85800a03742f8679d96faa8da4b8f42ff79023ab5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 70542,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:28.592443Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11906583/cY6NkFk72eTXlPVHGU9pU2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/cY6NkFk72eTXlPVHGU9pU2/1600/1066/contain/jpegorpng",
+      "local_filename": "023_cY6NkFk72eTXlPVHGU9pU2.jpg",
+      "sha256": "a2bc17205a38ae04287f6b5e1e9b67ccbe97a8f72408bc3e5ea646fea9d76d11",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 54117,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:27.699728Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11906583/gQ18Ju1PAOct8xgGdnu710/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/gQ18Ju1PAOct8xgGdnu710/1600/1066/contain/jpegorpng",
+      "local_filename": "024_gQ18Ju1PAOct8xgGdnu710.jpg",
+      "sha256": "ab9d4a85791c052eba7140ea9f7af0af8ac773e24ddbcff942ee76b9482d428b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 200265,
+      "width": 1345,
+      "height": 609,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:29.250358Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11906583/JvMzL5dWn3sWUxUCO5NMi1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11906583/JvMzL5dWn3sWUxUCO5NMi1/1600/1066/contain/jpegorpng",
+      "local_filename": "025_JvMzL5dWn3sWUxUCO5NMi1.jpg",
+      "sha256": "b8c1c1c4c10a4f12a178d02dd98d08b1936418090e1981fdf10d72844189f54a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 239055,
+      "width": 1600,
+      "height": 721,
+      "alt_text": "3 Bedroom Penthouse in Waterfall Heights photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:26:30.587208Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/24",
+            "name": "Midrand"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/1256",
+            "name": "Waterfall"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/6324",
+            "name": "Waterfall Heights"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/T5527045",
+            "name": "T5527045"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11906583/75CXl5HoMZOcOlgyax0n91/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Waterfall Heights, Midrand",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/T5527045"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 7 700 000 | 3 Bedroom Penthouse in Waterfall Heights | Private Property",
+    "og:description": "Ellipse provides an exceptional living environment tailored to the diverse Live-Work-Play & shopping lifestyle. This is truly remarkable and magnificent in every-way. Unmatched luxury living and desig...",
+    "og:image": "https://images.pp.co.za/listing/11906583/75CXl5HoMZOcOlgyax0n91/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/T5527045"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 7 700 000 | 3 Bedroom Penthouse in Waterfall Heights | Private Property",
+    "og:description": "Ellipse provides an exceptional living environment tailored to the diverse Live-Work-Play & shopping lifestyle. This is truly remarkable and magnificent in every-way. Unmatched luxury living and desig...",
+    "og:image": "https://images.pp.co.za/listing/11906583/75CXl5HoMZOcOlgyax0n91/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/waterfall-heights/T5527045",
+    "description": "3 Bedroom Penthouse in Waterfall Heights, Ellipse provides an exceptional living environment tailored to the diverse Live-Work-Play & shopping",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "4339d8a40fab933c0c961aea0795533090aeeed7f23f79d53457a0a294d7de54"
+}
