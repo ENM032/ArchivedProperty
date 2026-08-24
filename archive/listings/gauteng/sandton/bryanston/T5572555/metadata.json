@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5572555",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/T5572555",
+  "archived_at": "2026-08-24T13:00:53.231258Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|c5c6062d-2356-42f2-bb24-44cd8444d61f|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=yVE4kdzHg0m3fD0ySg4KtA; expires=Fri, 24-Aug-2125 13:00:46 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 13:00:46 GMT",
+    "content-length": "30601"
+  },
+  "fetch_duration_sec": 1.3394551277160645,
+  "total_images_discovered": 51,
+  "total_images_archived": 51,
+  "total_archive_size_bytes": 9108464,
+  "content_fingerprint": "c2b81c8ccc86a0135e4750da43e0a4bbe2001ea6cadc6a504a7b40672b07a158"
+}

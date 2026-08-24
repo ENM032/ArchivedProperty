@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5542614",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/30-sagewood/T5542614",
+  "archived_at": "2026-08-24T14:04:58.470498Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|3fd7de08-a125-4122-b1ca-52029722125b|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=CY0tKyVnykCE1oAd0Klg1w; expires=Fri, 24-Aug-2125 14:04:50 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 14:04:50 GMT",
+    "content-length": "28728"
+  },
+  "fetch_duration_sec": 1.3563480377197266,
+  "total_images_discovered": 39,
+  "total_images_archived": 39,
+  "total_archive_size_bytes": 8585629,
+  "content_fingerprint": "881e3f51af36a9b9c52dadb2cf6b5c6dfbc89f8c4a4fb99b41df7b0f712a21f6"
+}

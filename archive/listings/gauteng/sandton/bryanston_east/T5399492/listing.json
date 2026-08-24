@@ -1,0 +1,552 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5399492",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5399492",
+  "extracted_at": "2026-08-24T12:23:18.059556Z",
+  "title": "3 Bedroom House in Bryanston East",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-02-23",
+  "description": "Set in one of the most sought-after areas of Bryanston, this exceptional 3-bedroom townhouse offers breathtaking views, luxurious finishes, and top-tier security, all within a beautifully maintained 2...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 188.0,
+  "price": {
+    "amount": 2999000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 999 000",
+    "rates_and_taxes_monthly": 2600.0,
+    "levies_monthly": 5550.0
+  },
+  "location": {
+    "street_address": "Bryanston East",
+    "suburb": "Bryanston East",
+    "city": "Johannesburg",
+    "region": "Bryanston East, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Bryanston",
+      "Bryanston East",
+      "T5399492"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 4",
+      "Pet friendly",
+      "Balcony",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Liesl Bosman",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2328762/image/079d373e7f37466189bdf3b0dfb1e213_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/liesl-bosman/2328762/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11688115/hEh8miZHB10KImq3uLPHQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/hEh8miZHB10KImq3uLPHQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_hEh8miZHB10KImq3uLPHQ4.jpg",
+      "sha256": "5b2ebca3c4edff11f65be8b41e52c22bdf20794484e282702ec651f1e41919c1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 526161,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:23:19.411818Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11688115/dOpH174SHcB9IyFnJNw8u3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/dOpH174SHcB9IyFnJNw8u3/1600/1066/contain/jpegorpng",
+      "local_filename": "002_dOpH174SHcB9IyFnJNw8u3.jpg",
+      "sha256": "041458772436589c8f7868251e2e7d3679c7f77240b49461ddc4c4cfcd8d8408",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 534178,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.415207Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11688115/b2LkjFSTTkPSieqGhLAMa2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/b2LkjFSTTkPSieqGhLAMa2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_b2LkjFSTTkPSieqGhLAMa2.jpg",
+      "sha256": "d9f7d7350c08b360b2bde545f368c2c5e43ab5fa7ee5bbb041cb91db120ec6a4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 394225,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.092361Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11688115/iZ0noEbD8dRKeCeWw8a7m5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/iZ0noEbD8dRKeCeWw8a7m5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_iZ0noEbD8dRKeCeWw8a7m5.jpg",
+      "sha256": "7423c67f0236e2f0ec70f9f4a479eb0dec124d9e4d70747bc739e8e0104a2c99",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 486715,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.214868Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11688115/lG4JJBUyFW0sJGTCoFbDZ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/lG4JJBUyFW0sJGTCoFbDZ1/1600/1066/contain/jpegorpng",
+      "local_filename": "005_lG4JJBUyFW0sJGTCoFbDZ1.jpg",
+      "sha256": "7c53a83e34063db789a3cd5a66118a1e80f0f5461d275a0e52b6dfb579742a6b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 411762,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.498238Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11688115/p9goh5BzR6SDg7BALXyHk6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/p9goh5BzR6SDg7BALXyHk6/1600/1066/contain/jpegorpng",
+      "local_filename": "006_p9goh5BzR6SDg7BALXyHk6.jpg",
+      "sha256": "75d069888ad82dbd83a64c98ba48c29c5102ab53bd521257fc4904cf067d16f7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 242643,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.043472Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11688115/KDbPWtKBw2BY6V7N2aX9C0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/KDbPWtKBw2BY6V7N2aX9C0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_KDbPWtKBw2BY6V7N2aX9C0.jpg",
+      "sha256": "e3a1386821eb7a61365d6f5e758b67902e3e8cb7e76f74c995c6a80d7d19c092",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 249684,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.940807Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11688115/jJqbyL3vaHb7bFvZP9pDw4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/jJqbyL3vaHb7bFvZP9pDw4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_jJqbyL3vaHb7bFvZP9pDw4.jpg",
+      "sha256": "3f8bf430abf87f0da225c118568ddb0a74f87a017682559650ee27b6aa470688",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 238312,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.524926Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11688115/xY9WxpnFdxhCDyq5jy3cJ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/xY9WxpnFdxhCDyq5jy3cJ4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_xY9WxpnFdxhCDyq5jy3cJ4.jpg",
+      "sha256": "d79dedf9238132f6558dd78c7466eb5ce84ad82fabcd6b7fc3dbb49d049861d1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 201987,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.747168Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11688115/6n45C8xFPFpgTtsYBwT0t2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/6n45C8xFPFpgTtsYBwT0t2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_6n45C8xFPFpgTtsYBwT0t2.jpg",
+      "sha256": "9480795a823821d8b6e6a89ca2218514df4205019f8ba026cd972cd3287929a2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194967,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.791644Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11688115/rr8VllZtx8dg8IknKY6FG7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/rr8VllZtx8dg8IknKY6FG7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_rr8VllZtx8dg8IknKY6FG7.jpg",
+      "sha256": "0cf2d867815858eae92bd08e78dfa04a59203aa0285cba8e6c7180ac1a82627e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 237260,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.797161Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11688115/F9AN1jESQxQSLaDtZFkdb2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/F9AN1jESQxQSLaDtZFkdb2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_F9AN1jESQxQSLaDtZFkdb2.jpg",
+      "sha256": "e7b7597160b48dd12d47f95f0844a6ccd81ba4926c205b4512b49875f221d04b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 255956,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.031313Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11688115/Ur2Mj13BKEKJnuT8viVlr1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/Ur2Mj13BKEKJnuT8viVlr1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_Ur2Mj13BKEKJnuT8viVlr1.jpg",
+      "sha256": "632923151184828b1645e5bb4b73f1e41f68d61ebd365ad5e08474cf701dc8ce",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 205176,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:19.884080Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11688115/yGytfr32ybHFN8ke9sBoe6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/yGytfr32ybHFN8ke9sBoe6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_yGytfr32ybHFN8ke9sBoe6.jpg",
+      "sha256": "724ce7d88db194ee9174ea131afd615277993d2b854d2f023b5c9d0c81df98b8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171266,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:21.116558Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11688115/OeiuWDcpalJzB7wJ8eZv45/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/OeiuWDcpalJzB7wJ8eZv45/1600/1066/contain/jpegorpng",
+      "local_filename": "015_OeiuWDcpalJzB7wJ8eZv45.jpg",
+      "sha256": "faa069875a6211ed382e3d06bebb24086d9857262033d1f1e80bb45a45a24507",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 250598,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.347963Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11688115/yt2296Bq41YbsjSFoaapS2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/yt2296Bq41YbsjSFoaapS2/1600/1066/contain/jpegorpng",
+      "local_filename": "016_yt2296Bq41YbsjSFoaapS2.jpg",
+      "sha256": "c7e65caf18ba6eeb4ad150b178a8ea9b051ac5267673db66ce69d6e80c9b3972",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116640,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.181481Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11688115/xz2p3CyivfHvMXkPGCJtA2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/xz2p3CyivfHvMXkPGCJtA2/1600/1066/contain/jpegorpng",
+      "local_filename": "017_xz2p3CyivfHvMXkPGCJtA2.jpg",
+      "sha256": "46030a172b3727b59e2a5f8cbd989af8476d6cf5a18ea59ce74dc358abd926d4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202720,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.358279Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11688115/iSZ8vRXjFmEMOD3e7F5XP4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/iSZ8vRXjFmEMOD3e7F5XP4/1600/1066/contain/jpegorpng",
+      "local_filename": "018_iSZ8vRXjFmEMOD3e7F5XP4.jpg",
+      "sha256": "ab65623ace6759f2a47e4a9731e674691cf0e35e5651e5da920cdfbf11cabbcc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 267402,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:21.427819Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11688115/tOhJwpG7QtF7aiHvE4XFT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/tOhJwpG7QtF7aiHvE4XFT7/1600/1066/contain/jpegorpng",
+      "local_filename": "019_tOhJwpG7QtF7aiHvE4XFT7.jpg",
+      "sha256": "85440b1c749e45161ace4558352421207d55ea5338556f4d37188c3f385faf8a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202758,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.454131Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11688115/2TihoEdcFbhGspdsidoix6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/2TihoEdcFbhGspdsidoix6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_2TihoEdcFbhGspdsidoix6.jpg",
+      "sha256": "4353b6b3b742b6235e96fada6e018265e060d9395587b8a7516ccfa8af04c5c0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158472,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:20.564543Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11688115/LOHKBixiQNSqWdFHs7wF93/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/LOHKBixiQNSqWdFHs7wF93/1600/1066/contain/jpegorpng",
+      "local_filename": "021_LOHKBixiQNSqWdFHs7wF93.jpg",
+      "sha256": "19bbfa15bccac18ee6c08bef1e6e9d62a4fbe4ae46d6ff913f10e81877f63946",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134119,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:21.606474Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11688115/VueFl2n7edqNtMpTA00um6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/VueFl2n7edqNtMpTA00um6/1600/1066/contain/jpegorpng",
+      "local_filename": "022_VueFl2n7edqNtMpTA00um6.jpg",
+      "sha256": "3ca18eb28f31e961515e426274b7ca394e1b9657cb84ca380fb33d512345f5bd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 446890,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:21.016534Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11688115/l95sXuWfBoOtik1BzSFBl5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11688115/l95sXuWfBoOtik1BzSFBl5/1600/1066/contain/jpegorpng",
+      "local_filename": "023_l95sXuWfBoOtik1BzSFBl5.jpg",
+      "sha256": "afc84b35ef3df63178b059578e07870db356aab08aa3108786718bfa0a88132f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 308445,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Bryanston East photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:23:21.111787Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/238",
+            "name": "Bryanston"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/3526",
+            "name": "Bryanston East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5399492",
+            "name": "T5399492"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11688115/hEh8miZHB10KImq3uLPHQ4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bryanston East, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5399492"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 999 000 | 3 Bedroom House in Bryanston East | Private Property",
+    "og:description": "Set in one of the most sought-after areas of Bryanston, this exceptional 3-bedroom townhouse offers breathtaking views, luxurious finishes, and top-tier security, all within a beautifully maintained 2...",
+    "og:image": "https://images.pp.co.za/listing/11688115/hEh8miZHB10KImq3uLPHQ4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5399492"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 999 000 | 3 Bedroom House in Bryanston East | Private Property",
+    "og:description": "Set in one of the most sought-after areas of Bryanston, this exceptional 3-bedroom townhouse offers breathtaking views, luxurious finishes, and top-tier security, all within a beautifully maintained 2...",
+    "og:image": "https://images.pp.co.za/listing/11688115/hEh8miZHB10KImq3uLPHQ4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5399492",
+    "description": "3 Bedroom House in Bryanston East, Set in one of the most sought-after areas of Bryanston, this exceptional 3-bedroom townhouse offers",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "1eb2f5b71726188159aa2fb6f03c2dd1b38e8e16f76974bdaae14946f47a1049"
+}

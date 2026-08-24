@@ -1,0 +1,649 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5474602",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602",
+  "extracted_at": "2026-08-24T12:04:58.599277Z",
+  "title": "3 Bedroom Townhouse in Magaliessig",
+  "listing_type": "for_sale",
+  "property_type": "Townhouse",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-04",
+  "description": "Spacious Family Townhouse in Secure Magaliessig Complex\n\nSpacious Family Living in a Secure Magaliessig Complex\nNEGOTIATING OFFERS FROM R1 999 000\nSELLER ASKING R2 250 000\nDiscover exceptional space a...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 199.0,
+  "price": {
+    "amount": 1999000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 999 000",
+    "rates_and_taxes_monthly": 1869.0,
+    "levies_monthly": 2343.0
+  },
+  "location": {
+    "street_address": "1 SS JAYNIC MEWS, 22 Troupant Avenue",
+    "suburb": "Magaliessig",
+    "city": "Johannesburg",
+    "region": "Magaliessig, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.034714,
+    "longitude": 28.018148,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Magaliessig",
+      "T5474602"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": 1.0,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": true,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": true,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "En-suite 1",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Access gate",
+      "Balcony",
+      "Patio",
+      "Pool",
+      "Storage",
+      "Kitchen",
+      "Garden",
+      "Family TV room",
+      "Guest toilet",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Yvette Joubert",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2352308/image/1f678c2777c74ad694ce347e60eef153_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/yvette-joubert/2352308/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11814338/sdSPFrhZCoU008ZG1X8DC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/sdSPFrhZCoU008ZG1X8DC0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_sdSPFrhZCoU008ZG1X8DC0.jpg",
+      "sha256": "356acaf3a5db50ce815103c3c56f9327e877753e4d2eae23d1090384815cbeca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 471935,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:05:00.590431Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11814338/9zdqbfdBvUCeYOvWYJjBj7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/9zdqbfdBvUCeYOvWYJjBj7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_9zdqbfdBvUCeYOvWYJjBj7.jpg",
+      "sha256": "5523bc5a15f06d12542530ded2f89cbb1e333a8616e9c4fd5bcf3e6874400a06",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 404763,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:59.757016Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11814338/Qyz3lejOLIa5va2S4PUfu0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/Qyz3lejOLIa5va2S4PUfu0/1600/1066/contain/jpegorpng",
+      "local_filename": "003_Qyz3lejOLIa5va2S4PUfu0.jpg",
+      "sha256": "ca57eaa8a36542f9cb674b0566d0812616e44e5a835c6c99ed89fb188a393452",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 480840,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:00.592619Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11814338/LO3ZI4fF1kfTfC3bqh2pA3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/LO3ZI4fF1kfTfC3bqh2pA3/1600/1066/contain/jpegorpng",
+      "local_filename": "004_LO3ZI4fF1kfTfC3bqh2pA3.jpg",
+      "sha256": "107964feeefad2168a7e123a4ec3985d3d3cccf02ad511b677cb35922e2ec68a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 534294,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:59.908879Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11814338/UOlzng5Q61F4fdNIlfrVI7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/UOlzng5Q61F4fdNIlfrVI7/1600/1066/contain/jpegorpng",
+      "local_filename": "005_UOlzng5Q61F4fdNIlfrVI7.jpg",
+      "sha256": "3b1f451c38d0f92131c9972bb7acd4aa3c95bb94fcfd5f3fcdcb75453e100e9b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 457390,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:59.596478Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11814338/U9agcapJgtpEA8kwKcfsv2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/U9agcapJgtpEA8kwKcfsv2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_U9agcapJgtpEA8kwKcfsv2.jpg",
+      "sha256": "674a9f9d855c047ecdd383ee19bb597d6bd397fa5179ec89c3f04a633ded2f9e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 210281,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:00.112399Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11814338/sHLLHcVbOpYIyaiVQA6hb5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/sHLLHcVbOpYIyaiVQA6hb5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_sHLLHcVbOpYIyaiVQA6hb5.jpg",
+      "sha256": "662c6648ff80437a59f4e03306f660cf72cb1716f2974183ee09cd9b09312d81",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 192231,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:59.974042Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11814338/VjcnzIVp6YkH7iXS3ITez6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/VjcnzIVp6YkH7iXS3ITez6/1600/1066/contain/jpegorpng",
+      "local_filename": "008_VjcnzIVp6YkH7iXS3ITez6.jpg",
+      "sha256": "1fb6174e13a19013821af78cebb1c2a8856fa01b1e40121109fec364a5839dc5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202612,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.081694Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11814338/p4nosom13B2LubGOD0feg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/p4nosom13B2LubGOD0feg0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_p4nosom13B2LubGOD0feg0.jpg",
+      "sha256": "3bd342017f75f4b7722be593ece8a123d8a50a49ffc7e267f860703235fb4f12",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 173647,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:00.307600Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11814338/nvFBBQRUsvQoO0GWOJWs03/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/nvFBBQRUsvQoO0GWOJWs03/1600/1066/contain/jpegorpng",
+      "local_filename": "010_nvFBBQRUsvQoO0GWOJWs03.jpg",
+      "sha256": "84b090b7a55158e653f0fae404975cf55f8a72b92ba79aa423b171f405a5e64c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191488,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.874052Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11814338/JnRsjOuoyzj07ZNVzilDo3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/JnRsjOuoyzj07ZNVzilDo3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_JnRsjOuoyzj07ZNVzilDo3.jpg",
+      "sha256": "d7727739948f829da6ad5526adec59d63bab9a26602a77fa9ad484b2937459b1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 214592,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.559062Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11814338/J5tjXhiGIHejhWFQhc6BZ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/J5tjXhiGIHejhWFQhc6BZ1/1600/1066/contain/jpegorpng",
+      "local_filename": "012_J5tjXhiGIHejhWFQhc6BZ1.jpg",
+      "sha256": "94618dc8dde16f69c4fb19887ce67a88b63675d721b690d0bdf692e4646c58f9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 286662,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:00.967185Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11814338/57KWUnh2WN3wOIq4DKYCF1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/57KWUnh2WN3wOIq4DKYCF1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_57KWUnh2WN3wOIq4DKYCF1.jpg",
+      "sha256": "9543e525fe7d6486a0b2d48d4dde70976b78e3e3c46d8a70e718abadc2434198",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 260241,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.090223Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11814338/usbVD11YWWaAjeTqG2eus1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/usbVD11YWWaAjeTqG2eus1/1600/1066/contain/jpegorpng",
+      "local_filename": "014_usbVD11YWWaAjeTqG2eus1.jpg",
+      "sha256": "bdace83f3a495fa1bb37e4cbe3df251fd211e5605e00d1ed694a612222cc6a8f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177017,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:04.467192Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11814338/cWFYhOxRUWtRurEdM0t7h1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/cWFYhOxRUWtRurEdM0t7h1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_cWFYhOxRUWtRurEdM0t7h1.jpg",
+      "sha256": "9f79c9e32036dad90b9f6bfade16d16a5fa83fbe6c00553bdd148647f0989bdc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 184153,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.362509Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11814338/CapedajPUQ8LmsphaiLdS0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/CapedajPUQ8LmsphaiLdS0/1600/1066/contain/jpegorpng",
+      "local_filename": "016_CapedajPUQ8LmsphaiLdS0.jpg",
+      "sha256": "72cb4b7613555726af632fdb72fb651fd6b91f7e78362db0227a57238d12f33e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177726,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.491578Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11814338/mST9jfatlMFLvPamLxqYx3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/mST9jfatlMFLvPamLxqYx3/1600/1066/contain/jpegorpng",
+      "local_filename": "017_mST9jfatlMFLvPamLxqYx3.jpg",
+      "sha256": "8542e4b82523193a5d777de14da8ec7e3e9aafd7f1ed6705e160f7a2f8c8ed8b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152391,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.643586Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11814338/AwXxN6eDSzCdJ745izCzF4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/AwXxN6eDSzCdJ745izCzF4/1600/1066/contain/jpegorpng",
+      "local_filename": "018_AwXxN6eDSzCdJ745izCzF4.jpg",
+      "sha256": "2c2b6996750b2d1f01d09402d0eca4cd953f9e4a85d7607d7b7a974b94466c0d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 161008,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.140271Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11814338/K2jo7TadqaLgm5Z5MS4JH7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/K2jo7TadqaLgm5Z5MS4JH7/1600/1066/contain/jpegorpng",
+      "local_filename": "019_K2jo7TadqaLgm5Z5MS4JH7.jpg",
+      "sha256": "e3b525f859489513ed9c0c6ee2d8d1a52a0d4097df40482442645bb0019f806f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170923,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:01.942863Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11814338/hV1LeuCSi08lWcU9bk3140/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/hV1LeuCSi08lWcU9bk3140/1600/1066/contain/jpegorpng",
+      "local_filename": "020_hV1LeuCSi08lWcU9bk3140.jpg",
+      "sha256": "e42a75ea6a626ace7e4cf2ba446c0ccfa1c7b7e79f9617e4d20cab18b1a02d69",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 331418,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.399265Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11814338/fKI60hIJz1swj1rZhcfsy1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/fKI60hIJz1swj1rZhcfsy1/1600/1066/contain/jpegorpng",
+      "local_filename": "021_fKI60hIJz1swj1rZhcfsy1.jpg",
+      "sha256": "636b4c55a7027f3fd16a2eec878a83ba9f1f2d00f4ec4ce43de0349cdd951eee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 361076,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.249877Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11814338/9Bo7JfZlvzo5ZYIi9XEfp5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/9Bo7JfZlvzo5ZYIi9XEfp5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_9Bo7JfZlvzo5ZYIi9XEfp5.jpg",
+      "sha256": "4176b2c0c16a151fcb1fae15a11f1053970484d536ca422214127ab2ae3a5b94",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 331845,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.613104Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11814338/V7jGYo8spFPCVyWhNqtVB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/V7jGYo8spFPCVyWhNqtVB2/1600/1066/contain/jpegorpng",
+      "local_filename": "023_V7jGYo8spFPCVyWhNqtVB2.jpg",
+      "sha256": "4668b5990b46448cdac1267a51c4ddc59ac98edf1e375fe5fb2acb59178d4afb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 282637,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.606828Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11814338/0PvtWRxF6SgvDGDH3P0kS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/0PvtWRxF6SgvDGDH3P0kS7/1600/1066/contain/jpegorpng",
+      "local_filename": "024_0PvtWRxF6SgvDGDH3P0kS7.jpg",
+      "sha256": "cfcb46e5541599c600f4d4c300dc7689bf4d0e4afecb4699c0bc312677b1a01e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 279656,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.652448Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11814338/NcvWNzhTSVDz2PAxEEt2V1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/NcvWNzhTSVDz2PAxEEt2V1/1600/1066/contain/jpegorpng",
+      "local_filename": "025_NcvWNzhTSVDz2PAxEEt2V1.jpg",
+      "sha256": "f53211563ded0d39a2482add76663c76ab89aa29c3c9135c54d0c8c2eaaacd2c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 277326,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.111526Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11814338/9G9TclFGOPDKr2MZ1ytp76/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/9G9TclFGOPDKr2MZ1ytp76/1600/1066/contain/jpegorpng",
+      "local_filename": "026_9G9TclFGOPDKr2MZ1ytp76.jpg",
+      "sha256": "5b49981ebe9ac4ccf75822fbd5e86d4d161ab178e199e6c707f0b14ddda21ebf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 369000,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.000204Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11814338/pNLDVSOmo27OLuZMcnTq81/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/pNLDVSOmo27OLuZMcnTq81/1600/1066/contain/jpegorpng",
+      "local_filename": "027_pNLDVSOmo27OLuZMcnTq81.jpg",
+      "sha256": "2616b3f17c2b9e4c8e678633d04c812733baf0c823998afd4f4152ad7c427107",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 269668,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:02.995240Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11814338/uBN5pEtvYmQJIE530N4ml0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/uBN5pEtvYmQJIE530N4ml0/1600/1066/contain/jpegorpng",
+      "local_filename": "028_uBN5pEtvYmQJIE530N4ml0.jpg",
+      "sha256": "95fb18c7acecc68ab0eee99514031867cca8d94373e0b7983451014c57f48bf5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 251683,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.116582Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11814338/C9llghkBglAtlyAwRlGNn2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/C9llghkBglAtlyAwRlGNn2/1600/1066/contain/jpegorpng",
+      "local_filename": "029_C9llghkBglAtlyAwRlGNn2.jpg",
+      "sha256": "8bc65c70f185bcc3e1919f82768d2ac6562cdbbeefc69676afc46218a85599b8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 336025,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.399417Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11814338/Hho0t9vz1QyVC0cmIeCij1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11814338/Hho0t9vz1QyVC0cmIeCij1/1600/1066/contain/jpegorpng",
+      "local_filename": "030_Hho0t9vz1QyVC0cmIeCij1.jpg",
+      "sha256": "b7716a2da75e0a08bfb6ec6ba4fa74e34bf13477ea641b7e4e27d007e64a8e22",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 289085,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Townhouse in Magaliessig photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:03.848682Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1484",
+            "name": "Magaliessig"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602",
+            "name": "T5474602"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11814338/sdSPFrhZCoU008ZG1X8DC0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 SS JAYNIC MEWS, 22 Troupant Avenue",
+        "addressLocality": "Magaliessig, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.034714,
+        "longitude": 28.018148
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 999 000 | 3 Bedroom Townhouse in Magaliessig | Private Property",
+    "og:description": "Spacious Family Townhouse in Secure Magaliessig Complex\n\nSpacious Family Living in a Secure Magaliessig Complex\nNEGOTIATING OFFERS FROM R1 999 000\nSELLER ASKING R2 250 000\nDiscover exceptional space a...",
+    "og:image": "https://images.pp.co.za/listing/11814338/sdSPFrhZCoU008ZG1X8DC0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 999 000 | 3 Bedroom Townhouse in Magaliessig | Private Property",
+    "og:description": "Spacious Family Townhouse in Secure Magaliessig Complex\n\nSpacious Family Living in a Secure Magaliessig Complex\nNEGOTIATING OFFERS FROM R1 999 000\nSELLER ASKING R2 250 000\nDiscover exceptional space a...",
+    "og:image": "https://images.pp.co.za/listing/11814338/sdSPFrhZCoU008ZG1X8DC0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602",
+    "description": "3 Bedroom Townhouse in Magaliessig, 1 ss jaynic mews, 22 troupant avenue, Spacious Family Townhouse in Secure Magaliessig Complex\n\nSpacious Family Living in a Secure Magalies",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "690168ee7ed8caaf582b19dd7facc8e9837d4608079f649f90f24bda8ffc222f"
+}

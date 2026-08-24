@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5588448",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/2a-st-audley-road/T5588448",
+  "extracted_at": "2026-08-24T12:38:01.685913Z",
+  "title": "4 Bedroom House in Bryanston",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-08-15",
+  "description": "Nestled within an exclusive boutique estate of just 25 residences, this brand-new home presents an exceptional opportunity to enjoy sophisticated modern living in one of Bryanston''s most sought-after...",
+  "erf_size_m2": 180.0,
+  "land_size_raw": "180 m²",
+  "floor_size_m2": 170.0,
+  "price": {
+    "amount": 3995000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 995 000",
+    "rates_and_taxes_monthly": 2704.0,
+    "levies_monthly": 2971.0
+  },
+  "location": {
+    "street_address": "2A St Audley road",
+    "suburb": "Bryanston",
+    "city": "Johannesburg",
+    "region": "Bryanston, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.073726,
+    "longitude": 28.0352561,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Bryanston",
+      "T5588448"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 4.5,
+    "en_suites": 4.0,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": true,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": null,
+    "has_balcony": true,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": true,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 4.5",
+      "En-suite 4",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Access gate",
+      "Balcony",
+      "Built in cupboards",
+      "Security post",
+      "Staff quarters",
+      "Study",
+      "Kitchen",
+      "Garden",
+      "Intercom",
+      "Electric fencing",
+      "Guest toilet"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Marijka Taylor",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1878349/image/08d24c3e325e46aea02716ed8311e9c6_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/marijka-taylor/1878349/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/12013240/pLtNILaLS397Tx2C57Jmb6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/pLtNILaLS397Tx2C57Jmb6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_pLtNILaLS397Tx2C57Jmb6.jpg",
+      "sha256": "388629d3ad8af708ad08e2ec6ce57d8ae8809839f53d0e168c4b78829df46770",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216763,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:38:02.672787Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/12013240/hPPBzAnphu1rYVzgvcRsh3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/hPPBzAnphu1rYVzgvcRsh3/1600/1066/contain/jpegorpng",
+      "local_filename": "002_hPPBzAnphu1rYVzgvcRsh3.jpg",
+      "sha256": "b6fdc60461435e1991c85add3d325f17ffc57a4c444acccfbb1c305efce37554",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 256451,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:02.717147Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/12013240/M8UmzNZmEVBk9vumuZy0i7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/M8UmzNZmEVBk9vumuZy0i7/1600/1066/contain/jpegorpng",
+      "local_filename": "003_M8UmzNZmEVBk9vumuZy0i7.jpg",
+      "sha256": "f3b7f0b4b3541ac198522a13b8bb191063816644886d5bf9b5433138004dca42",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 304099,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.784595Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/12013240/j84DqR9yqbu0lE8GKGzVH4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/j84DqR9yqbu0lE8GKGzVH4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_j84DqR9yqbu0lE8GKGzVH4.jpg",
+      "sha256": "7dcebcf35ccf5c656fa63283aa0f3015654272f18388344cd4a6c3a3e4c32ac7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 201138,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:02.836883Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/12013240/6yHTndnNXRSEumtKuenKf5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/6yHTndnNXRSEumtKuenKf5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_6yHTndnNXRSEumtKuenKf5.jpg",
+      "sha256": "8198dba1f56f4a5f424276d2c6e49f1fcbf7d8af6737071539be07a534b48957",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159921,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.595061Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/12013240/jVlIDBs93xpHNxBKEzjjD7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/jVlIDBs93xpHNxBKEzjjD7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_jVlIDBs93xpHNxBKEzjjD7.jpg",
+      "sha256": "7131a6e567737800a6598cc969b4b751c39c2e63721a25910ce21cc85f5c1286",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154524,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:02.655567Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/12013240/nhcGzmJXTmCBILFRmIDQc0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/nhcGzmJXTmCBILFRmIDQc0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_nhcGzmJXTmCBILFRmIDQc0.jpg",
+      "sha256": "5ebf3a1006c81a8280c70a6dc14c70a28ac90aeba6ca43aaf1fc2d1e5434f23d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152994,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.986683Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/12013240/8o9I51sPvW5l9F6YNF75J5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/8o9I51sPvW5l9F6YNF75J5/1600/1066/contain/jpegorpng",
+      "local_filename": "008_8o9I51sPvW5l9F6YNF75J5.jpg",
+      "sha256": "ac7dc08e60d3195487c401e00636d64120814bfa7c6afc0a2e4e14bbeb8505af",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197616,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.384533Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/12013240/tYUKfeslAHbPeOaEO6yrv1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/tYUKfeslAHbPeOaEO6yrv1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_tYUKfeslAHbPeOaEO6yrv1.jpg",
+      "sha256": "b769b7ed5156189228c30b93063d812365b15dac1d3fcfba08097d2534886958",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 264512,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.136084Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/12013240/Ew9WkhpdRtXoLfGYRraDp2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/Ew9WkhpdRtXoLfGYRraDp2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_Ew9WkhpdRtXoLfGYRraDp2.jpg",
+      "sha256": "4bb306d8bbfe578452583c5479d62b38652c5142abbd02b3a375e53f0a9a9e2b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186755,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.235081Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/12013240/VUbkgUKVWLuqgWnR4bH402/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/VUbkgUKVWLuqgWnR4bH402/1600/1066/contain/jpegorpng",
+      "local_filename": "011_VUbkgUKVWLuqgWnR4bH402.jpg",
+      "sha256": "d4c824b0be6a5fc1a03bc1726454df832da87caa7368ff6989fe3085f0b203ec",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134725,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.504657Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/12013240/TTql3Ds49D155XX1sF75f3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/TTql3Ds49D155XX1sF75f3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_TTql3Ds49D155XX1sF75f3.jpg",
+      "sha256": "cd1d4269e83c458670beac54d5cb14792fbab8496541a8da0a0fa0ec611313b3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133727,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.619592Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/12013240/KFKNLsJsQZtJn3L1EtpmF4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/KFKNLsJsQZtJn3L1EtpmF4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_KFKNLsJsQZtJn3L1EtpmF4.jpg",
+      "sha256": "b15643127584fc97f31e4cf4658a080497e7704389e828839bba0b40fb1325de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 219189,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:03.767124Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/12013240/pPZWS9AXm8AWE2APOZWXo4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/pPZWS9AXm8AWE2APOZWXo4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_pPZWS9AXm8AWE2APOZWXo4.jpg",
+      "sha256": "565a44f46851f4f97fd617ebc318742ad1bf9c96b019fad761fdf876772ebda5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186232,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.864014Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/12013240/mJl24jTgBDFlO3o3L22GG1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/mJl24jTgBDFlO3o3L22GG1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_mJl24jTgBDFlO3o3L22GG1.jpg",
+      "sha256": "6448c6326bf4071aeeba45743c3505ff086f151ba067048466771ebd90eef43a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 169497,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.316368Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/12013240/Y9kSXHxQDOFAgkY2ah8G33/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/Y9kSXHxQDOFAgkY2ah8G33/1600/1066/contain/jpegorpng",
+      "local_filename": "016_Y9kSXHxQDOFAgkY2ah8G33.jpg",
+      "sha256": "7c1453713d64ab29e9a2ec163ff0c3a24cbfda0e2400b19586bbe9233011d909",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151828,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.193112Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/12013240/iVXYprHLwQ0XRjnm2KBFZ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/iVXYprHLwQ0XRjnm2KBFZ1/1600/1066/contain/jpegorpng",
+      "local_filename": "017_iVXYprHLwQ0XRjnm2KBFZ1.jpg",
+      "sha256": "94993c3b137433acc0d8d24f88794b7b6aa9d6a317d37dd4a0db7a52d4cd2243",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 227501,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.188166Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/12013240/EI8dxJWkTkke45yQzN3jt2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/EI8dxJWkTkke45yQzN3jt2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_EI8dxJWkTkke45yQzN3jt2.jpg",
+      "sha256": "eb90955e376cc039eaf304a9a4a59ba73cfa4464967b8c24fffc64535ff9b1b4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 195932,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.386665Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/12013240/bJIhE3qpxqU4uFHIk2wDg3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/bJIhE3qpxqU4uFHIk2wDg3/1600/1066/contain/jpegorpng",
+      "local_filename": "019_bJIhE3qpxqU4uFHIk2wDg3.jpg",
+      "sha256": "7e6c43d7fc5bf65a3a4c23ab48c8bf79c188e95b30d35e0bc337d93ce69dd1a4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 164472,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.416404Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/12013240/sq63K2bIPN5OyYRVtg0dj5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/sq63K2bIPN5OyYRVtg0dj5/1600/1066/contain/jpegorpng",
+      "local_filename": "020_sq63K2bIPN5OyYRVtg0dj5.jpg",
+      "sha256": "934512e54bf7eefbd6f2f312f6f16b24f7e27cb8fc1fc61dd69b6e51d5480e51",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137030,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.634617Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/12013240/OVgiCPam16G4e2sJhIVll5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/OVgiCPam16G4e2sJhIVll5/1600/1066/contain/jpegorpng",
+      "local_filename": "021_OVgiCPam16G4e2sJhIVll5.jpg",
+      "sha256": "08b015948b586cbccc709e74d2ee6307f83814d3a3aa82b70559b810fc953f21",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130749,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.749723Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/12013240/XJKCDDXgWrqW9riDswD5Y3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/XJKCDDXgWrqW9riDswD5Y3/1600/1066/contain/jpegorpng",
+      "local_filename": "022_XJKCDDXgWrqW9riDswD5Y3.jpg",
+      "sha256": "cb129264a62757743f14abfbf5ca0bc3738646cf667bb9a5a02c1e4522d23561",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 163188,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.784409Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/12013240/6aavqW43JvsP9o5FBYegi3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/6aavqW43JvsP9o5FBYegi3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_6aavqW43JvsP9o5FBYegi3.jpg",
+      "sha256": "ff1e316622f5be2ad9fe8abc058f82b048eedd547e87c02cac088689dbcdd571",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145431,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.829694Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/12013240/pCD4FMYxT3ZpqfkENulTh2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/pCD4FMYxT3ZpqfkENulTh2/1600/1066/contain/jpegorpng",
+      "local_filename": "024_pCD4FMYxT3ZpqfkENulTh2.jpg",
+      "sha256": "62b2e64082597b419b74be35e996bafe685710b9baf60d7d3a5f5d5e7b3860fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185718,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:04.961407Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/12013240/DCS0yW6TrgDct7kJwCS8i7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/DCS0yW6TrgDct7kJwCS8i7/1600/1066/contain/jpegorpng",
+      "local_filename": "025_DCS0yW6TrgDct7kJwCS8i7.jpg",
+      "sha256": "9f1d899777c2bdaa91305c62a7c29ed57c94f972f7cbe284664b95ba4376db86",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137810,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:05.039467Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/12013240/vmL38xU3JB50dUyDOgZ6d7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/vmL38xU3JB50dUyDOgZ6d7/1600/1066/contain/jpegorpng",
+      "local_filename": "026_vmL38xU3JB50dUyDOgZ6d7.jpg",
+      "sha256": "f74fb29a69b6e14536d1bbd21239610193b23bb50c38a3e161a9614a8670da6b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145977,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:05.210153Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/12013240/rwzbj8sbpwwSTUdQ4Qgy23/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/rwzbj8sbpwwSTUdQ4Qgy23/1600/1066/contain/jpegorpng",
+      "local_filename": "027_rwzbj8sbpwwSTUdQ4Qgy23.jpg",
+      "sha256": "17bce040e3d3cc4708a4e19f4f8cda5d898f0cac029b6ddba450b159765d2ab2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181984,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:05.363546Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/12013240/9qKxIt48iJNkQQFT0iSgH5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/9qKxIt48iJNkQQFT0iSgH5/1600/1066/contain/jpegorpng",
+      "local_filename": "028_9qKxIt48iJNkQQFT0iSgH5.jpg",
+      "sha256": "5c06e598f0d387358067093443f13f188b6c71e484563dfcef64fdae2957e142",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 201444,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:05.703046Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/12013240/eJ1cRIilQNbH1OU61osWZ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12013240/eJ1cRIilQNbH1OU61osWZ6/1600/1066/contain/jpegorpng",
+      "local_filename": "029_eJ1cRIilQNbH1OU61osWZ6.jpg",
+      "sha256": "93a64700d72a52a03b07a0123fa0e415a4f1636f040e885b141d71fa3c11a818",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 288598,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:38:05.363434Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/238",
+            "name": "Bryanston"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/2a-st-audley-road/T5588448",
+            "name": "T5588448"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/12013240/pLtNILaLS397Tx2C57Jmb6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2A St Audley road",
+        "addressLocality": "Bryanston, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.073726,
+        "longitude": 28.0352561
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/2a-st-audley-road/T5588448"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 995 000 | 4 Bedroom House in Bryanston | Private Property",
+    "og:description": "Nestled within an exclusive boutique estate of just 25 residences, this brand-new home presents an exceptional opportunity to enjoy sophisticated modern living in one of Bryanston''s most sought-after...",
+    "og:image": "https://images.pp.co.za/listing/12013240/pLtNILaLS397Tx2C57Jmb6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/2a-st-audley-road/T5588448"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 995 000 | 4 Bedroom House in Bryanston | Private Property",
+    "og:description": "Nestled within an exclusive boutique estate of just 25 residences, this brand-new home presents an exceptional opportunity to enjoy sophisticated modern living in one of Bryanston''s most sought-after...",
+    "og:image": "https://images.pp.co.za/listing/12013240/pLtNILaLS397Tx2C57Jmb6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/2a-st-audley-road/T5588448",
+    "description": "4 Bedroom House in Bryanston, 2a st audley road, Nestled within an exclusive boutique estate of just 25 residences, this brand-new home presents an e",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "a7dd59ca09b558cc14f74cd36ecc75a22fefc2a5274f29dc1e88a51ca129858f"
+}

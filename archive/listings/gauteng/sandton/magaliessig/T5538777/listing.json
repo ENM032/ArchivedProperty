@@ -1,0 +1,549 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5538777",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5538777",
+  "extracted_at": "2026-08-24T12:04:12.039782Z",
+  "title": "3 Bedroom Cluster in Magaliessig",
+  "listing_type": "for_sale",
+  "property_type": "Cluster",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-01",
+  "description": "Move-in ready, with affordable levies, this immaculate renovated freehold townhouse in Magaliesig offers a standout blend of modern comfort, exceptional neatness and secure living. The complex is reco...",
+  "erf_size_m2": 309.0,
+  "land_size_raw": "309 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 2049000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 049 000",
+    "rates_and_taxes_monthly": 1645.0,
+    "levies_monthly": 700.0
+  },
+  "location": {
+    "street_address": "T5538777",
+    "suburb": "Magaliessig",
+    "city": "Johannesburg",
+    "region": "Magaliessig, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Magaliessig",
+      "T5538777"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": 1.0,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "En-suite 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Storeys 1",
+      "Pet friendly",
+      "Access gate",
+      "Built in cupboards",
+      "Pool",
+      "Security post",
+      "Kitchen",
+      "Garden",
+      "Electric fencing",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Rene Horak",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2320118/image/272915b3cbc54d68bf20bb9a17a6d0a0_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/rene-horak/2320118/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11926247/ar6zNOiOrN48ph7qAlHuP5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/ar6zNOiOrN48ph7qAlHuP5/1600/1066/contain/jpegorpng",
+      "local_filename": "001_ar6zNOiOrN48ph7qAlHuP5.jpg",
+      "sha256": "954238f90d87d6b157a92aec58bcbbe80082bcbe69aa517c1f0cce27421e2509",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 228002,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:04:13.342875Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11926247/o7mu26x2xucIEQJ3AmMQn1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/o7mu26x2xucIEQJ3AmMQn1/1600/1066/contain/jpegorpng",
+      "local_filename": "002_o7mu26x2xucIEQJ3AmMQn1.jpg",
+      "sha256": "95590c6796af772b073f4d8abc019ed185ee62998bd3626df1bd78d506b6d2d2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159084,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.678297Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11926247/ZTFWk3JmW0NtkbHcgQoYR5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/ZTFWk3JmW0NtkbHcgQoYR5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_ZTFWk3JmW0NtkbHcgQoYR5.jpg",
+      "sha256": "533a5e1d6351d9b63c567c1c6e7464e08a3e94a446dc888f3e3438e3d7f61f15",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156437,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.801549Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11926247/wIRON1dhVpld1SMPcfFxN5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/wIRON1dhVpld1SMPcfFxN5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_wIRON1dhVpld1SMPcfFxN5.jpg",
+      "sha256": "e31e9ee4c5fd0221540c84b46b3a153d7e6edd817a413d5355d7c56cfb1a44a7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167897,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.635222Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11926247/T6lVj0qrUCmGy5BNFMHh11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/T6lVj0qrUCmGy5BNFMHh11/1600/1066/contain/jpegorpng",
+      "local_filename": "005_T6lVj0qrUCmGy5BNFMHh11.jpg",
+      "sha256": "20f454c849768fd7bd45dbf6430c9a1e30fac0e5b0e0a3df5cec68bcb4781573",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119463,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.626742Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11926247/xyC7tdq3ImjGoJQewtceq3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/xyC7tdq3ImjGoJQewtceq3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_xyC7tdq3ImjGoJQewtceq3.jpg",
+      "sha256": "db1256e3ba26afe7703c3fab83cdff0584d1669b8a4270f82f2b914f34fe9d15",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135408,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.661561Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11926247/0m4Rfilb8y9EwRXqMeeHM5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/0m4Rfilb8y9EwRXqMeeHM5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_0m4Rfilb8y9EwRXqMeeHM5.jpg",
+      "sha256": "1216ce0ca0c6bc4e02f472db8949c720a84e55285d172e20ff92461c62a18207",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 89841,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.538306Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11926247/lhSU9srsuEgPONn3YEKBC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/lhSU9srsuEgPONn3YEKBC2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_lhSU9srsuEgPONn3YEKBC2.jpg",
+      "sha256": "959167e6dcdbc4dc934293f5667481c0c46a37634a4472de51874174f3f99022",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 93527,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.587727Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11926247/jUBPJSgmdB9lwfzi1p7m76/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/jUBPJSgmdB9lwfzi1p7m76/1600/1066/contain/jpegorpng",
+      "local_filename": "009_jUBPJSgmdB9lwfzi1p7m76.jpg",
+      "sha256": "221334eceb55c086e2814175d3138ed80a9764650db17f10905a8020a560b536",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139862,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.641209Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11926247/ORYlnTa8uiDQX9rmEZMFP3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/ORYlnTa8uiDQX9rmEZMFP3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_ORYlnTa8uiDQX9rmEZMFP3.jpg",
+      "sha256": "b28c7bb4f04c29fd9b4112760e7de4358a4dc34cab7346bc61874c527a08fded",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 83335,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.995384Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11926247/NIzrCkUaFJCPjc5FpT9Ti4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/NIzrCkUaFJCPjc5FpT9Ti4/1600/1066/contain/jpegorpng",
+      "local_filename": "011_NIzrCkUaFJCPjc5FpT9Ti4.jpg",
+      "sha256": "48f829fe28232a752c1908f5601735e1353d835e56e004b729358354e493d279",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136935,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.823434Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11926247/R7HQyjEUVRbkbZo8jsH1A5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/R7HQyjEUVRbkbZo8jsH1A5/1600/1066/contain/jpegorpng",
+      "local_filename": "012_R7HQyjEUVRbkbZo8jsH1A5.jpg",
+      "sha256": "6d57f9af4b237582680ad24f829fd3cff84457cd57b687ecc0781bdf22de5165",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 120896,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.874703Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11926247/65oaRPWLjlxTsOKTuy70X7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/65oaRPWLjlxTsOKTuy70X7/1600/1066/contain/jpegorpng",
+      "local_filename": "013_65oaRPWLjlxTsOKTuy70X7.jpg",
+      "sha256": "653452520831a43414bc4cff1c9fe7989f67bd0d8b7ce29ff11fdd48335ff5a7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 93649,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.077512Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11926247/QaOmQqJ4BNhh4yxC0Nils5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/QaOmQqJ4BNhh4yxC0Nils5/1600/1066/contain/jpegorpng",
+      "local_filename": "014_QaOmQqJ4BNhh4yxC0Nils5.jpg",
+      "sha256": "a2fa11b52a241d2fbe64cb14b46891ce68536c9f70d23d49488c1bcecf729658",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 111499,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.198990Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11926247/hmQmWpqHnGLXcL30G1XQT5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/hmQmWpqHnGLXcL30G1XQT5/1600/1066/contain/jpegorpng",
+      "local_filename": "015_hmQmWpqHnGLXcL30G1XQT5.jpg",
+      "sha256": "0f342c044b194c778bceae85f950726eb09f91701dc688965a1e179a7533a52e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 101994,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:13.862268Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11926247/au9c2eqBOXNiJvRgNCnBy4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/au9c2eqBOXNiJvRgNCnBy4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_au9c2eqBOXNiJvRgNCnBy4.jpg",
+      "sha256": "79656a02c68bdbf303cb71948c8163ede3548a3f0015e1bdeaec06595097c580",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 102915,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.246190Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11926247/e5ehQT7nBRoBroglkmVXi2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/e5ehQT7nBRoBroglkmVXi2/1600/1066/contain/jpegorpng",
+      "local_filename": "017_e5ehQT7nBRoBroglkmVXi2.jpg",
+      "sha256": "127b9f344e9c078962f4737869481b36d2a626ed1e1edae5b835196f23e14a93",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 108170,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.181179Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11926247/Wz7CVUZQwX4gGnli6k4x96/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/Wz7CVUZQwX4gGnli6k4x96/1600/1066/contain/jpegorpng",
+      "local_filename": "018_Wz7CVUZQwX4gGnli6k4x96.jpg",
+      "sha256": "cd3944a65914f974983f7812b46d3321761d33109bd1a8dc7e4ae8148a7799a2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 85143,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.359237Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11926247/FXLseHnhqbaolPFtsA5Xq2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/FXLseHnhqbaolPFtsA5Xq2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_FXLseHnhqbaolPFtsA5Xq2.jpg",
+      "sha256": "396251b1672e5ea877412465fb3c0127158ae0220ce744fe62f7bef30e1aa9a3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191228,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.492437Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11926247/Fx8zjbt3AsoAE9i5jDhQ62/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/Fx8zjbt3AsoAE9i5jDhQ62/1600/1066/contain/jpegorpng",
+      "local_filename": "020_Fx8zjbt3AsoAE9i5jDhQ62.jpg",
+      "sha256": "011e3da90741aa10a08709252101d1f15b69bc07607b94fe13b83c884781ea54",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 343935,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.616223Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11926247/LmcoYoxunIxvsaps0DUFe0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/LmcoYoxunIxvsaps0DUFe0/1600/1066/contain/jpegorpng",
+      "local_filename": "021_LmcoYoxunIxvsaps0DUFe0.jpg",
+      "sha256": "b22f66d7cc5ef9a7eee79123ce7192180716fd5a0febbb3fb345e4be8f565d93",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 267935,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.632491Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11926247/HciSd82SbIvMdldwqrG6a1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/HciSd82SbIvMdldwqrG6a1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_HciSd82SbIvMdldwqrG6a1.jpg",
+      "sha256": "e261bb6f5e87cea408aba3bcb8725f52447df318a126d004dbeb8219c8ccc7e1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 347367,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.329326Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11926247/PbzhvIb2fmKomFEgUZudj7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11926247/PbzhvIb2fmKomFEgUZudj7/1600/1066/contain/jpegorpng",
+      "local_filename": "023_PbzhvIb2fmKomFEgUZudj7.jpg",
+      "sha256": "7d3d789824d66362bf28d49f6b91593d30630f382a01f4e91418da7c444ecc07",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 305981,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Cluster in Magaliessig photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:04:14.703357Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/lsH5taI47mU?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1484",
+            "name": "Magaliessig"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5538777",
+            "name": "T5538777"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11926247/ar6zNOiOrN48ph7qAlHuP5/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Magaliessig, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5538777"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 049 000 | 3 Bedroom Cluster in Magaliessig | Private Property",
+    "og:description": "Move-in ready, with affordable levies, this immaculate renovated freehold townhouse in Magaliesig offers a standout blend of modern comfort, exceptional neatness and secure living. The complex is reco...",
+    "og:image": "https://images.pp.co.za/listing/11926247/ar6zNOiOrN48ph7qAlHuP5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5538777"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 049 000 | 3 Bedroom Cluster in Magaliessig | Private Property",
+    "og:description": "Move-in ready, with affordable levies, this immaculate renovated freehold townhouse in Magaliesig offers a standout blend of modern comfort, exceptional neatness and secure living. The complex is reco...",
+    "og:image": "https://images.pp.co.za/listing/11926247/ar6zNOiOrN48ph7qAlHuP5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5538777",
+    "description": "3 Bedroom Cluster in Magaliessig, Move-in ready, with affordable levies, this immaculate renovated freehold townhouse in Magaliesig of",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "bd35dec262fa21368bf54aac05a65242acf7142ebe865efbd608107bf63ce66d"
+}

@@ -1,0 +1,621 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5216920",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920",
+  "extracted_at": "2026-08-24T11:08:20.500998Z",
+  "title": "3 Bedroom House in Bramley North",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-09-04",
+  "description": "Spacious Family Home with Cottage, Flatlet & Pool.. This stunning property offers everything you need for comfortable, versatile living. \n\nFeaturing 3 well-sized bedrooms, 2 of which are en-suite, and...",
+  "erf_size_m2": 1338.0,
+  "land_size_raw": "1 338 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 2200000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 200 000",
+    "rates_and_taxes_monthly": 1863.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5216920",
+    "suburb": "Bramley North",
+    "city": "Johannesburg",
+    "region": "Bramley, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Bramley North",
+      "T5216920"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 3.0,
+    "en_suites": 2.0,
+    "lounges": 3.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": true,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 3",
+      "En-suite 2",
+      "Lounges 3",
+      "Covered parking 5",
+      "Pet friendly",
+      "Access gate",
+      "Alarm",
+      "Built in cupboards",
+      "Pool",
+      "Kitchen",
+      "Garden",
+      "Family TV room",
+      "Fireplace"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Lebo Shadung",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2317084/image/1dd081294f9c4268bdb43f6bb967832f_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/lebo-shadung/2317084/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11375806/UlM0JS0Wy5aipPciX1rtk4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/UlM0JS0Wy5aipPciX1rtk4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_UlM0JS0Wy5aipPciX1rtk4.jpg",
+      "sha256": "d3d0836481f580737bd1d7400233b7484fc0825ddb2b145dc1341ff6439faece",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 296619,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:08:21.505367Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11375806/qzMF0Z6NbQQLTkxez22mo0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/qzMF0Z6NbQQLTkxez22mo0/1600/1066/contain/jpegorpng",
+      "local_filename": "002_qzMF0Z6NbQQLTkxez22mo0.jpg",
+      "sha256": "123bf40af6503a2beb2c86b9b7e3bd3d6a092b96da99b144b20e7a0fb07d4a5e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 248317,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.549074Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11375806/DHfhaWLfdz6lr09EEFH1G0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/DHfhaWLfdz6lr09EEFH1G0/1600/1066/contain/jpegorpng",
+      "local_filename": "003_DHfhaWLfdz6lr09EEFH1G0.jpg",
+      "sha256": "e434ccf32ac04cbd60fae2b2cb4d62d7db31f912a2e8fcabd4e39ffcce8b74e5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 418804,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.522884Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11375806/oMS0tBPEmAylRcaFxviu11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/oMS0tBPEmAylRcaFxviu11/1600/1066/contain/jpegorpng",
+      "local_filename": "004_oMS0tBPEmAylRcaFxviu11.jpg",
+      "sha256": "10270b61690e94080d0a06edee401ca8d50b8e25098c5db4707cf2e489872401",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 235570,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.417237Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11375806/BASZ7Ho5xX0zm6SbExuIA6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/BASZ7Ho5xX0zm6SbExuIA6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_BASZ7Ho5xX0zm6SbExuIA6.jpg",
+      "sha256": "b781988f46932682701650975267eed27ae7be034df74bd0ba1e0fddde079ab1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206021,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.613667Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11375806/MhPzbaK9XFNWCye6fkgNF0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/MhPzbaK9XFNWCye6fkgNF0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_MhPzbaK9XFNWCye6fkgNF0.jpg",
+      "sha256": "fd8314e54032d0843748876d127b7610b5315bb79e4047c15407aa1dca14102f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 172768,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.454025Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11375806/pxDeF6SAoXnq66UdGOfXw5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/pxDeF6SAoXnq66UdGOfXw5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_pxDeF6SAoXnq66UdGOfXw5.jpg",
+      "sha256": "10d3732843478cbe90ed7c8e1ca97dda6a144355bf14cc6a5dae55d0c701b529",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176192,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.855621Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11375806/VXDoAE2QdUoBxF39b1TeE0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/VXDoAE2QdUoBxF39b1TeE0/1600/1066/contain/jpegorpng",
+      "local_filename": "008_VXDoAE2QdUoBxF39b1TeE0.jpg",
+      "sha256": "c8769171f6e18e5bc78685402e93d6197f839022bb50c44c456515c2943b2171",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151865,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.007545Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11375806/6DYwYIbqlD9Hj4uHGuGqv5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/6DYwYIbqlD9Hj4uHGuGqv5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_6DYwYIbqlD9Hj4uHGuGqv5.jpg",
+      "sha256": "d86a34e3874a81f3b1121786dfece6072733a2bc5a4cad12cfc41784aca1cfaf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190257,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.870136Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11375806/yQTXMnIjQ4Ajv8mOSRoix6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/yQTXMnIjQ4Ajv8mOSRoix6/1600/1066/contain/jpegorpng",
+      "local_filename": "010_yQTXMnIjQ4Ajv8mOSRoix6.jpg",
+      "sha256": "8f7ff108958474f2717d4aa2169911750fe7a8fab54077ec30931786af07274f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188863,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.846742Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11375806/cIPOIfLTl0tHtOAyfCEf71/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/cIPOIfLTl0tHtOAyfCEf71/1600/1066/contain/jpegorpng",
+      "local_filename": "011_cIPOIfLTl0tHtOAyfCEf71.jpg",
+      "sha256": "5813f4244525a6d5ec449de4635a19475c2b8f4fdaea63603e0133f0f17f5eac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160703,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:21.981054Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11375806/YLL3eXWFfE991eYRzRYv67/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/YLL3eXWFfE991eYRzRYv67/1600/1066/contain/jpegorpng",
+      "local_filename": "012_YLL3eXWFfE991eYRzRYv67.jpg",
+      "sha256": "28141ceeafe63ce06e46931b9554522cc9c717e8feaa77079a06e2f2432ffac5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160808,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.209411Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11375806/jvfYrI3782KysXaTdPMDO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/jvfYrI3782KysXaTdPMDO7/1600/1066/contain/jpegorpng",
+      "local_filename": "013_jvfYrI3782KysXaTdPMDO7.jpg",
+      "sha256": "be55154a88bccbcf419b845666bb897a4aa31922755c898ae7fbb727d3019c3d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137879,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.227627Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11375806/41BOvuEjGnsnQ83UgRiYH3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/41BOvuEjGnsnQ83UgRiYH3/1600/1066/contain/jpegorpng",
+      "local_filename": "014_41BOvuEjGnsnQ83UgRiYH3.jpg",
+      "sha256": "7bc87fdf1b80ae83d38c360e9defdc61edb0f533e97c06cb4b5652fff1c79dd3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181806,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.356623Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11375806/44TvKzdevZPmIrfSbD8A43/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/44TvKzdevZPmIrfSbD8A43/1600/1066/contain/jpegorpng",
+      "local_filename": "015_44TvKzdevZPmIrfSbD8A43.jpg",
+      "sha256": "df16e87fdd54562067cfd43751f8eecf9926d2a99b89efa3fb0728316cdd66a4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123754,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.204911Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11375806/wZ7WLEj7TmAEgZbSX3lCC5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/wZ7WLEj7TmAEgZbSX3lCC5/1600/1066/contain/jpegorpng",
+      "local_filename": "016_wZ7WLEj7TmAEgZbSX3lCC5.jpg",
+      "sha256": "a9b8782c2dda7ecb055d5145abb2c09acc1b2fdd800f8609db17ae78f2e61769",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 164967,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.602090Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11375806/Vef3d3VRAkWetIq8zY45x3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/Vef3d3VRAkWetIq8zY45x3/1600/1066/contain/jpegorpng",
+      "local_filename": "017_Vef3d3VRAkWetIq8zY45x3.jpg",
+      "sha256": "1e03b72d25c4485c57ab91cfd513a0d3e9f70461854956b786dcdabc93d4c848",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 105034,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.736115Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11375806/RjrOWova9gjhiSZekmlHH3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/RjrOWova9gjhiSZekmlHH3/1600/1066/contain/jpegorpng",
+      "local_filename": "018_RjrOWova9gjhiSZekmlHH3.jpg",
+      "sha256": "c54adc5878b6482ec659e0642375be9f149c625e99767b10cf5c963fc39dfe32",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152294,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.754306Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11375806/lipQx9RLeEKtn20TuovQe6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/lipQx9RLeEKtn20TuovQe6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_lipQx9RLeEKtn20TuovQe6.jpg",
+      "sha256": "2de43fc147a629ec1999a8953e447a4b560794336f9ed06b71d9f72377b4f385",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125412,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:22.781365Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11375806/9cWd5DjAvWSCs2nIeIGJR2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/9cWd5DjAvWSCs2nIeIGJR2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_9cWd5DjAvWSCs2nIeIGJR2.jpg",
+      "sha256": "3b9f66cedd2ffc753469f76c293d7824bd00fe3d9ca63ffa8e98cc8df8030263",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149789,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.163394Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11375806/aDoozYdQONxc0GZpHj1MA2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/aDoozYdQONxc0GZpHj1MA2/1600/1066/contain/jpegorpng",
+      "local_filename": "021_aDoozYdQONxc0GZpHj1MA2.jpg",
+      "sha256": "dcead784005f9f6696854bff9cad6dd57e65a9447b326b00385918135b72ca76",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121939,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.086848Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11375806/vS0qzg8Jaxecz82vCKhqC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/vS0qzg8Jaxecz82vCKhqC2/1600/1066/contain/jpegorpng",
+      "local_filename": "022_vS0qzg8Jaxecz82vCKhqC2.jpg",
+      "sha256": "c27402481dce409603d4c4639d1fb7b5ce04ff4099ae00a26fa3a6737dc284de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125893,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.196760Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11375806/KHH1smOThZYzKe9Wsr0Ta4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/KHH1smOThZYzKe9Wsr0Ta4/1600/1066/contain/jpegorpng",
+      "local_filename": "023_KHH1smOThZYzKe9Wsr0Ta4.jpg",
+      "sha256": "983a1713cb474f1187ae84444df12f139aaafb5de92630a9c081e45a412c33c9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 107565,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.205251Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11375806/vyRPJiIdCsMcA8OPhIe8D4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/vyRPJiIdCsMcA8OPhIe8D4/1600/1066/contain/jpegorpng",
+      "local_filename": "024_vyRPJiIdCsMcA8OPhIe8D4.jpg",
+      "sha256": "c16ce3cb64bad12be08bb2cb441a36dd010e26f144d7b9778b49fcb1aff8127f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103457,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.314722Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11375806/s43swuipc1btBRmsf21ra2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/s43swuipc1btBRmsf21ra2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_s43swuipc1btBRmsf21ra2.jpg",
+      "sha256": "2f630e71b3a57a8edae845f8db62a88e92f0bc9cfff0b0c273c066e51410ce6a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 165551,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.474492Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11375806/U6YEt1TVwfbzQ3Bxg6RUQ5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/U6YEt1TVwfbzQ3Bxg6RUQ5/1600/1066/contain/jpegorpng",
+      "local_filename": "026_U6YEt1TVwfbzQ3Bxg6RUQ5.jpg",
+      "sha256": "20d891802b75de22ba512917794727ab96695d06e0c535ea278e42344d9a0dce",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131127,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.523151Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11375806/AoQVdKTuU6BqG2VCmt0Dt1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/AoQVdKTuU6BqG2VCmt0Dt1/1600/1066/contain/jpegorpng",
+      "local_filename": "027_AoQVdKTuU6BqG2VCmt0Dt1.jpg",
+      "sha256": "e06013987070d1e3609685c6bd4f93a47560ba8a4a98c892333dcf4f5b1f1de9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 108685,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.571647Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11375806/4rSCCC1H714DqGCLwr8wp5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/4rSCCC1H714DqGCLwr8wp5/1600/1066/contain/jpegorpng",
+      "local_filename": "028_4rSCCC1H714DqGCLwr8wp5.jpg",
+      "sha256": "f5c1b71f3e86c284aa93aafa353da345badb308f1401ea1b49400599f69d3fad",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 229758,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:24.064030Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11375806/4VDDPDFiyRnYUvm7hKCIW0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11375806/4VDDPDFiyRnYUvm7hKCIW0/1600/1066/contain/jpegorpng",
+      "local_filename": "029_4VDDPDFiyRnYUvm7hKCIW0.jpg",
+      "sha256": "31f4042b38d857cfbb0ff16dbe6a5a03840f18b96b69f0b1479615b77b4273ab",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 272790,
+      "width": 1600,
+      "height": 1064,
+      "alt_text": "3 Bedroom House in Bramley North photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:23.729515Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/1022",
+            "name": "Bramley North"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920",
+            "name": "T5216920"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11375806/UlM0JS0Wy5aipPciX1rtk4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bramley, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 200 000 | 3 Bedroom House in Bramley North | Private Property",
+    "og:description": "Spacious Family Home with Cottage, Flatlet & Pool.. This stunning property offers everything you need for comfortable, versatile living. \n\nFeaturing 3 well-sized bedrooms, 2 of which are en-suite, and...",
+    "og:image": "https://images.pp.co.za/listing/11375806/UlM0JS0Wy5aipPciX1rtk4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 200 000 | 3 Bedroom House in Bramley North | Private Property",
+    "og:description": "Spacious Family Home with Cottage, Flatlet & Pool.. This stunning property offers everything you need for comfortable, versatile living. \n\nFeaturing 3 well-sized bedrooms, 2 of which are en-suite, and...",
+    "og:image": "https://images.pp.co.za/listing/11375806/UlM0JS0Wy5aipPciX1rtk4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920",
+    "description": "3 Bedroom House in Bramley North, Spacious Family Home with Cottage, Flatlet & Pool.. This stunning property offers everything you nee",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "096893773901259ca9088da411221948da27219f13a61ba359eb6ad3c08aea2e"
+}

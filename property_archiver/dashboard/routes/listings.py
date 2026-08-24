@@ -1,5 +1,5 @@
 """
-Route handlers for listing resources, details, image streaming, and fetch ingestion.
+Route handlers for listing resources, details, image streaming, deletion, and updates.
 """
 
 import json
@@ -61,6 +61,9 @@ def handle_list_listings(archive_dir: Path) -> tuple[dict[str, Any] | list[Any],
                 "erf_size_m2": record.erf_size_m2,
                 "land_size_raw": record.land_size_raw,
                 "floor_size_m2": record.floor_size_m2,
+                "user_notes": getattr(record, "user_notes", None),
+                "user_tags": getattr(record, "user_tags", []),
+                "user_rating": getattr(record, "user_rating", None),
                 "images_count": len(record.images),
                 "hero_image_url": hero_url,
                 "extracted_at": record.extracted_at.isoformat(),
@@ -82,13 +85,45 @@ def handle_get_listing(archive_dir: Path, listing_id: str) -> tuple[dict[str, An
         metadata = ArchiveReader.load_metadata(listing_dir)
         manifest = ArchiveReader.load_manifest(listing_dir)
 
+        history = []
+        history_file = listing_dir / "history.json"
+        if history_file.exists():
+            try:
+                history = json.loads(history_file.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+
         return {
             "listing": record.model_dump(mode="json"),
             "metadata": metadata.model_dump(mode="json"),
             "checksums": manifest.model_dump(mode="json"),
+            "history": history,
         }, HTTPStatus.OK
     except Exception as exc:
         return {"error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR
+
+
+def handle_delete_listing(archive_dir: Path, listing_id: str) -> tuple[dict[str, Any], HTTPStatus]:
+    """Delete an archived listing and its assets permanently."""
+    try:
+        success = ArchiveWriter.delete_archive(archive_dir, listing_id)
+        if success:
+            return {"success": True, "message": f"Listing {listing_id} successfully deleted"}, HTTPStatus.OK
+        return {"success": False, "error": f"Listing {listing_id} not found"}, HTTPStatus.NOT_FOUND
+    except Exception as exc:
+        return {"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR
+
+
+def handle_update_listing(archive_dir: Path, listing_id: str, updates: dict[str, Any]) -> tuple[dict[str, Any], HTTPStatus]:
+    """Update listing status, user annotations, notes, or tags."""
+    try:
+        updated_record = ArchiveWriter.update_listing(archive_dir, listing_id, updates)
+        return {
+            "success": True,
+            "listing": updated_record.model_dump(mode="json"),
+        }, HTTPStatus.OK
+    except Exception as exc:
+        return {"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR
 
 
 def handle_get_image(archive_dir: Path, listing_id: str, filename: str) -> tuple[bytes | None, str, HTTPStatus]:

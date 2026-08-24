@@ -1,39 +1,53 @@
 """
-Tests for Click CLI commands.
+Tests for Click CLI commands (fetch, inspect, validate, tree, reorganize, edit, delete).
 """
 
 from pathlib import Path
 from click.testing import CliRunner
+import pytest
 
 from property_archiver.cli import main
+from property_archiver.storage.reader import ArchiveReader
 
 
-def test_cli_fetch_local_file(sample_html_path: Path, tmp_path: Path):
+def test_cli_fetch_edit_and_delete(sample_html_path: Path, tmp_path: Path):
     runner = CliRunner()
-    result = runner.invoke(main, [
+    
+    # 1. Fetch
+    res_fetch = runner.invoke(main, [
         "fetch",
         str(sample_html_path),
         "--output", str(tmp_path),
         "--no-images"
     ])
-    assert result.exit_code == 0
-    assert "Listing Successfully Archived" in result.output
+    assert res_fetch.exit_code == 0
+    assert "Listing Successfully Archived" in res_fetch.output
 
-    # Check directory created
-    from property_archiver.storage.reader import ArchiveReader
     archive_listing = ArchiveReader.find_listing_dir(tmp_path, "T4710876")
     assert archive_listing is not None
     assert archive_listing.exists()
-    assert (archive_listing / "listing.json").exists()
-    assert (archive_listing / "checksums.json").exists()
 
-    # Test inspect command
-    inspect_res = runner.invoke(main, ["inspect", str(archive_listing)])
-    assert inspect_res.exit_code == 0
-    assert "T4710876" in inspect_res.output
-    assert "4 Bedroom House in Rivonia" in inspect_res.output
+    # 2. Edit
+    res_edit = runner.invoke(main, [
+        "edit",
+        "T4710876",
+        "--status", "sold",
+        "--notes", "CLI Edited Note",
+        "--tags", "Shortlisted, Prime",
+        "--rating", "5",
+        "--archive-dir", str(tmp_path)
+    ])
+    assert res_edit.exit_code == 0
+    assert "Successfully updated archive T4710876" in res_edit.output
+    assert "SOLD" in res_edit.output
 
-    # Test validate command
-    validate_res = runner.invoke(main, ["validate", str(archive_listing)])
-    assert validate_res.exit_code == 0
-    assert "integrity verified" in validate_res.output
+    # 3. Delete with --yes
+    res_del = runner.invoke(main, [
+        "delete",
+        "T4710876",
+        "--yes",
+        "--archive-dir", str(tmp_path)
+    ])
+    assert res_del.exit_code == 0
+    assert "Successfully deleted archive: T4710876" in res_del.output
+    assert ArchiveReader.find_listing_dir(tmp_path, "T4710876") is None

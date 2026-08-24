@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5494355",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/1-banbury-close/T5494355",
+  "archived_at": "2026-08-24T11:28:21.054157Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|46725262-0eb6-445b-8c4d-7d03ac971972|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=1A9g8ZL-GUqpWW4clZN5hQ; expires=Fri, 24-Aug-2125 11:28:16 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:28:15 GMT",
+    "content-length": "25771"
+  },
+  "fetch_duration_sec": 1.3489387035369873,
+  "total_images_discovered": 24,
+  "total_images_archived": 24,
+  "total_archive_size_bytes": 8100079,
+  "content_fingerprint": "5fe7cfa23ea800dfb7ef7fec02c1779bf3c6c035fa04a036b8e3007264b6ecb6"
+}

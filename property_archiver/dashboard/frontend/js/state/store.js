@@ -37,6 +37,19 @@ class Store {
         this.notify();
     }
 
+    removeListing(listingId) {
+        this.rawListings = this.rawListings.filter(item => item.listing_id !== listingId);
+        this.applyFilters();
+    }
+
+    updateListing(listingId, updatedRecord) {
+        const idx = this.rawListings.findIndex(item => item.listing_id === listingId);
+        if (idx !== -1) {
+            this.rawListings[idx] = { ...this.rawListings[idx], ...updatedRecord };
+            this.applyFilters();
+        }
+    }
+
     updateFilters(newFilters) {
         this.activeFilters = { ...this.activeFilters, ...newFilters };
         this.applyFilters();
@@ -50,7 +63,9 @@ class Store {
             const matchesQuery = !query ||
                 (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
                 (item.title && item.title.toLowerCase().includes(query)) ||
-                (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query));
+                (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query)) ||
+                (item.user_notes && item.user_notes.toLowerCase().includes(query)) ||
+                (item.user_tags && item.user_tags.some(t => t.toLowerCase().includes(query)));
 
             const lType = (item.listing_type || 'for_sale').toLowerCase();
             const matchesListingType = (listingType === 'all') || (lType === listingType);

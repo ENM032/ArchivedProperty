@@ -1,0 +1,646 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5541045",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/3-delta-road/T5541045",
+  "extracted_at": "2026-08-24T11:08:51.263232Z",
+  "title": "5 Bedroom House in Petervale",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-03",
+  "description": "Classic Family Lifestyle or Investor Dream with Spacious Interiors and Endless Potential!!!\n\nDiscover effortless family living in this beautifully renovated 5-bedroom home, perfectly positioned within...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 1204.0,
+  "price": {
+    "amount": 3699000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 699 000",
+    "rates_and_taxes_monthly": 3222.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "3 Delta Road",
+    "suburb": "Petervale",
+    "city": "Johannesburg",
+    "region": "Petervale, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Petervale",
+      "T5541045"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 4.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 2.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 3.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 4",
+      "Lounges 2",
+      "Dining areas 2",
+      "Garage parking 3",
+      "Pet friendly",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Staff quarters",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Peggy Edom-Nduku",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2076976/image/91e937f532f6440192406ed39b8e1a85_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/peggy-edom-nduku/2076976/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11930236/w3XqEJHylh9W8JOCfhopK3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/w3XqEJHylh9W8JOCfhopK3/1600/1066/contain/jpegorpng",
+      "local_filename": "001_w3XqEJHylh9W8JOCfhopK3.jpg",
+      "sha256": "89fbe4b9e9251ce48d4bf1e114a889e002fe294ad508d800718e009f57777520",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 328777,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:08:52.166133Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11930236/Ew9FHV7L0yMllyjClE3hc6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/Ew9FHV7L0yMllyjClE3hc6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_Ew9FHV7L0yMllyjClE3hc6.jpg",
+      "sha256": "451ec49dd4ba6a04bae0c2cdfa5495e87ff53e91c40fe669b8be28690eaf2a65",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 374351,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.451998Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11930236/YrwH9UpnDaNRnjOERJ1GG1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/YrwH9UpnDaNRnjOERJ1GG1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_YrwH9UpnDaNRnjOERJ1GG1.jpg",
+      "sha256": "9c88b1342a4702ee4d2fe7e9540cbed236e6491bc34bd37432e43be6fca4a07c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185995,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.274269Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11930236/27KCjcPACmXNhDCIKHdUj4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/27KCjcPACmXNhDCIKHdUj4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_27KCjcPACmXNhDCIKHdUj4.jpg",
+      "sha256": "21db96d90065576fb05641d8c7e6dcfd2df0c84ddb4a4617101f4e04700f879e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199577,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:51.961082Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11930236/WLF5zxHcP2q3PgeDey08p6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/WLF5zxHcP2q3PgeDey08p6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_WLF5zxHcP2q3PgeDey08p6.jpg",
+      "sha256": "8d6905b31d7e65938c3a46f9866a6fde86a9d89784ad4dfb8b2ecbfd8f22c417",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 192987,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.116850Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11930236/yoM3rqDbAUUUWiLIpUl4k2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/yoM3rqDbAUUUWiLIpUl4k2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_yoM3rqDbAUUUWiLIpUl4k2.jpg",
+      "sha256": "8a0d800cedad6beb45da3692f6eb241ad67bbb8080341144f88945dfc8ff1038",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204781,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:51.961250Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11930236/yUbmcWX7lq3agmAGXTvPQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/yUbmcWX7lq3agmAGXTvPQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_yUbmcWX7lq3agmAGXTvPQ4.jpg",
+      "sha256": "53ff9b727cacb415394aa687e6294b7fb0607f354331aa7c90ff61cc3fd3109f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154547,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.321343Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11930236/8jQ2INzeCOY0vbf47fvUS3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/8jQ2INzeCOY0vbf47fvUS3/1600/1066/contain/jpegorpng",
+      "local_filename": "008_8jQ2INzeCOY0vbf47fvUS3.jpg",
+      "sha256": "dc267acb5ea30ce3480cf3043d61089f88f5f5ea6cde7fbe217628ee5af3a9ac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 256901,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.689835Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11930236/XxWIQWV3EmrXlKxZAUb753/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/XxWIQWV3EmrXlKxZAUb753/1600/1066/contain/jpegorpng",
+      "local_filename": "009_XxWIQWV3EmrXlKxZAUb753.jpg",
+      "sha256": "f23efdd25c627e56639c07134df03c2d71dc31ebad563dbe368460c86a4dadf1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206471,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.541536Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11930236/nOy88apyodvaBbIUbbAbW4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/nOy88apyodvaBbIUbbAbW4/1600/1066/contain/jpegorpng",
+      "local_filename": "010_nOy88apyodvaBbIUbbAbW4.jpg",
+      "sha256": "8f2fb2bd6893d7585f0154ddea4ab64e12e7c4df5b8f0f0373e14dac3b9bd34b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 238988,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.541704Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11930236/9ETgV8tTPrHq2MNJwxqqL7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/9ETgV8tTPrHq2MNJwxqqL7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_9ETgV8tTPrHq2MNJwxqqL7.jpg",
+      "sha256": "04c4e7d3cbef60de121ddc4bd870cb507de5f118fffed2cf649318611ce0a805",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186155,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.720836Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11930236/JsZKvs3oB2BQhtL1BcW0L6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/JsZKvs3oB2BQhtL1BcW0L6/1600/1066/contain/jpegorpng",
+      "local_filename": "012_JsZKvs3oB2BQhtL1BcW0L6.jpg",
+      "sha256": "871ebf67db1df74bfe8caa90dc6c87545abe02082f114b5bd9e829bf04fcbb86",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159362,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.947734Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11930236/xTHOoeoQdIqKpnsJLOiZt4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/xTHOoeoQdIqKpnsJLOiZt4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_xTHOoeoQdIqKpnsJLOiZt4.jpg",
+      "sha256": "a5108c5beec63f51051966af2f862478b6bbf3ef22c23be95bea4b2ae0ead7ad",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 319145,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.998754Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11930236/pu06NiLT4NPwbt0lrGS4h1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/pu06NiLT4NPwbt0lrGS4h1/1600/1066/contain/jpegorpng",
+      "local_filename": "014_pu06NiLT4NPwbt0lrGS4h1.jpg",
+      "sha256": "1ac456affea7148f06ddee24a221d5a08dd562318aa72af5b75cf4455613016e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 161452,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.940119Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11930236/wYf4kzhWazJfaSYSVeKmB1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/wYf4kzhWazJfaSYSVeKmB1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_wYf4kzhWazJfaSYSVeKmB1.jpg",
+      "sha256": "ff7440425633cdd6f45be5d73ed8ee45b533b7658e699945c8e2d5b3bd7b3bcf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 210414,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.724006Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11930236/YDzGX3qrCpFAkvipYm0pW6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/YDzGX3qrCpFAkvipYm0pW6/1600/1066/contain/jpegorpng",
+      "local_filename": "016_YDzGX3qrCpFAkvipYm0pW6.jpg",
+      "sha256": "8e020b7bd8279cf099e67753af2a0f8a51d23af9a2e754b1d8880b095678555b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196755,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:52.877887Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11930236/QgdvwxL2NGdkuvcpAILyV2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/QgdvwxL2NGdkuvcpAILyV2/1600/1066/contain/jpegorpng",
+      "local_filename": "017_QgdvwxL2NGdkuvcpAILyV2.jpg",
+      "sha256": "3fc908b683ad89beed8e278206485d59573e6039a9d04fcf913dad9549773230",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212633,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.134398Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11930236/9MdAlgXDPkSpC0iJkvYKj4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/9MdAlgXDPkSpC0iJkvYKj4/1600/1066/contain/jpegorpng",
+      "local_filename": "018_9MdAlgXDPkSpC0iJkvYKj4.jpg",
+      "sha256": "973e4ed0b46d72d284a80516006711a297c09568248ce07427ef0a8817b72bfd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182908,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.087985Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11930236/KPxmXTx3TjEZ8TLaJA0XV4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/KPxmXTx3TjEZ8TLaJA0XV4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_KPxmXTx3TjEZ8TLaJA0XV4.jpg",
+      "sha256": "4c1c988dac06fb9a1bc0cc44c22d52cb51cc375dcefa90e29bd10543ab9b5b0c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212117,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.231879Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11930236/aTmbtDR9SP25MNDKcTx6Q1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/aTmbtDR9SP25MNDKcTx6Q1/1600/1066/contain/jpegorpng",
+      "local_filename": "020_aTmbtDR9SP25MNDKcTx6Q1.jpg",
+      "sha256": "85f1a9be2e82113ccde5a8dda6945c73abe7bf2a1f9acd8727eeb0ccd7d4820b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 215251,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.167245Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11930236/Fa8a27I8Qcg928QZzcfw53/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/Fa8a27I8Qcg928QZzcfw53/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Fa8a27I8Qcg928QZzcfw53.jpg",
+      "sha256": "770df46f2211244948c1612f43f6f2be2213452a65ffcb9e119abdf4d321fba0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191831,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.348620Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11930236/QmwB4awcEuYZpvqZ7uC1E5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/QmwB4awcEuYZpvqZ7uC1E5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_QmwB4awcEuYZpvqZ7uC1E5.jpg",
+      "sha256": "db3f40bb4499a2a26c7c3c31c29726cc9108abd87d9d352c52948c47d35bd257",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 106181,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.361773Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11930236/6SjWt1hTwZDCDSx4ehMqg1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/6SjWt1hTwZDCDSx4ehMqg1/1600/1066/contain/jpegorpng",
+      "local_filename": "023_6SjWt1hTwZDCDSx4ehMqg1.jpg",
+      "sha256": "ab4f33a264f83d6845e7cc182c4be6d9417a4ad0bb63297e0e84c0b6406f1afa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154936,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.292984Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11930236/3HEtKMMJH0w3ZzDdMopO55/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/3HEtKMMJH0w3ZzDdMopO55/1600/1066/contain/jpegorpng",
+      "local_filename": "024_3HEtKMMJH0w3ZzDdMopO55.jpg",
+      "sha256": "8b4c09813872b5dc95fa5f553378ec8e476fdf5679e4f44af1880641753f3388",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190195,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.566639Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11930236/hDUZjx41RuECuIUIlfbKA6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/hDUZjx41RuECuIUIlfbKA6/1600/1066/contain/jpegorpng",
+      "local_filename": "025_hDUZjx41RuECuIUIlfbKA6.jpg",
+      "sha256": "199317a7bf9fe2a3a97bf34e3c542ffde33cc5f2f45c7d7215282e6879a57686",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216155,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.599639Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11930236/JHwlWdsWQW0MQlEbHo1kG1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/JHwlWdsWQW0MQlEbHo1kG1/1600/1066/contain/jpegorpng",
+      "local_filename": "026_JHwlWdsWQW0MQlEbHo1kG1.jpg",
+      "sha256": "fc8974695f6938583ba03eb271f25c21b17060ad8189a55ec805ecaa6c3c9937",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 364088,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.851873Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11930236/JiY6AvU9oj8JLazzA7NFH1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/JiY6AvU9oj8JLazzA7NFH1/1600/1066/contain/jpegorpng",
+      "local_filename": "027_JiY6AvU9oj8JLazzA7NFH1.jpg",
+      "sha256": "7bd63f086f805772297dedb6da5450169042388d0ec1baa0d2f4d9cdd25d492c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 263273,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:54.597095Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11930236/TnNRLgpu7GigS1mPmP4f26/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/TnNRLgpu7GigS1mPmP4f26/1600/1066/contain/jpegorpng",
+      "local_filename": "028_TnNRLgpu7GigS1mPmP4f26.jpg",
+      "sha256": "cd4923900f47468701050da09490da26954014734af750826fdcbe90f735e015",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 371991,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.885524Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11930236/mJPYaK7Df7bNlfER9csYc5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/mJPYaK7Df7bNlfER9csYc5/1600/1066/contain/jpegorpng",
+      "local_filename": "029_mJPYaK7Df7bNlfER9csYc5.jpg",
+      "sha256": "124aae78f16eb7968a0aaba7f57e74a67b0cdd0c24a89c8168f3b7b0d091c60d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 296847,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.553249Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11930236/l53x8ahw1ISDYYgbzAb0o5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11930236/l53x8ahw1ISDYYgbzAb0o5/1600/1066/contain/jpegorpng",
+      "local_filename": "030_l53x8ahw1ISDYYgbzAb0o5.jpg",
+      "sha256": "dc8ae166533e2a7b9f49e51cffd66e8ebd0894f11722ce79784005e3f523e027",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 261946,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Petervale photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:08:53.735860Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/cbDQWHpvR6k?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/1723",
+            "name": "Petervale"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/3-delta-road/T5541045",
+            "name": "T5541045"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11930236/w3XqEJHylh9W8JOCfhopK3/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Delta Road",
+        "addressLocality": "Petervale, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/3-delta-road/T5541045"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 699 000 | 5 Bedroom House in Petervale | Private Property",
+    "og:description": "Classic Family Lifestyle or Investor Dream with Spacious Interiors and Endless Potential!!!\n\nDiscover effortless family living in this beautifully renovated 5-bedroom home, perfectly positioned within...",
+    "og:image": "https://images.pp.co.za/listing/11930236/w3XqEJHylh9W8JOCfhopK3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/3-delta-road/T5541045"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 699 000 | 5 Bedroom House in Petervale | Private Property",
+    "og:description": "Classic Family Lifestyle or Investor Dream with Spacious Interiors and Endless Potential!!!\n\nDiscover effortless family living in this beautifully renovated 5-bedroom home, perfectly positioned within...",
+    "og:image": "https://images.pp.co.za/listing/11930236/w3XqEJHylh9W8JOCfhopK3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/3-delta-road/T5541045",
+    "description": "5 Bedroom House in Petervale, 3 delta road, Classic Family Lifestyle or Investor Dream with Spacious Interiors and Endless Potential!!!\n\nDiscove",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "13042d4e78833f8e0c407017d284f4a8c18656ff9530cdf87fda8e7892ee5426"
+}

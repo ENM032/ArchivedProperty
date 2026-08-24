@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5591335",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5591335",
+  "archived_at": "2026-08-24T11:15:50.129496Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|3e6f32c2-dfb1-45ff-9e27-57e6a1ef25a8|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=NiPKH7C6UU-9RZOqeCL06Q; expires=Fri, 24-Aug-2125 11:15:42 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:15:41 GMT",
+    "content-length": "29754"
+  },
+  "fetch_duration_sec": 1.3367764949798584,
+  "total_images_discovered": 54,
+  "total_images_archived": 54,
+  "total_archive_size_bytes": 11027291,
+  "content_fingerprint": "21cd4acb62f5d85ba77a34e7d247dbe25740d872c91526e1d881213289b222f1"
+}

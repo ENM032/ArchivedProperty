@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5474602",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1-ss-jaynic-mews/22-troupant-avenue/T5474602",
+  "archived_at": "2026-08-24T12:05:04.473337Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|4bcc967c-56fc-4fc3-9d18-f31542e22431|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Z3qP6L14-0-SDH0owTm87g; expires=Fri, 24-Aug-2125 12:04:56 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:04:56 GMT",
+    "content-length": "27076"
+  },
+  "fetch_duration_sec": 1.3037254810333252,
+  "total_images_discovered": 30,
+  "total_images_archived": 30,
+  "total_archive_size_bytes": 8660736,
+  "content_fingerprint": "690168ee7ed8caaf582b19dd7facc8e9837d4608079f649f90f24bda8ffc222f"
+}

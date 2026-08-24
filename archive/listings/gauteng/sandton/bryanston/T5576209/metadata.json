@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5576209",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/18-devonshire-avenue/T5576209",
+  "archived_at": "2026-08-24T12:55:43.494487Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|efb4d744-b961-47ad-95c3-1d9de4eb22bc|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=6AO2suk_FkaXaK23Yf9C8w; expires=Fri, 24-Aug-2125 12:55:36 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:55:36 GMT",
+    "content-length": "29410"
+  },
+  "fetch_duration_sec": 1.311481237411499,
+  "total_images_discovered": 42,
+  "total_images_archived": 42,
+  "total_archive_size_bytes": 5652835,
+  "content_fingerprint": "e85857f82d64ea36e36b08eae2c7b6d6bc850f1ad1a311d701707f075ff3d444"
+}

@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5543970",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5543970",
+  "extracted_at": "2026-08-24T11:21:04.888570Z",
+  "title": "4 Bedroom House in Beverley",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-07",
+  "description": "Elegant Family Living with Exceptional Entertaining in a Prestigious Beverley Estate\n\nSole mandate.\n\nNestled within one of Beverley''s most sought-after secure estates, this exceptional four-bedroom r...",
+  "erf_size_m2": 540.0,
+  "land_size_raw": "540 m²",
+  "floor_size_m2": 350.0,
+  "price": {
+    "amount": 4700000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 700 000",
+    "rates_and_taxes_monthly": 3050.0,
+    "levies_monthly": 1900.0
+  },
+  "location": {
+    "street_address": "T5543970",
+    "suburb": "Beverley",
+    "city": "Johannesburg",
+    "region": "Beverley, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Beverley",
+      "T5543970"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3.5",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Balcony",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Lauren-Kate Fletcher",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2325040/image/6d59927e9d834beaa75aa8891e23e7b8_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/lauren-kate-fletcher/2325040/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11935389/K5pJfF2rOu7GbhKXorili3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/K5pJfF2rOu7GbhKXorili3/1600/1066/contain/jpegorpng",
+      "local_filename": "001_K5pJfF2rOu7GbhKXorili3.jpg",
+      "sha256": "75c29de771935b22e0e991fc674b4dfec21a254ee3239b8d99ade8f9bef1a6c8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217688,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:21:06.890952Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11935389/6gb9NitJ2PytdtjukAWrJ2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/6gb9NitJ2PytdtjukAWrJ2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_6gb9NitJ2PytdtjukAWrJ2.jpg",
+      "sha256": "ce619a5d2496d67aeeca7dd525e906b38e997e85d7b8f37cca95b4c1472fd6e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151149,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:06.826029Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11935389/Y17fKanaykmCDF4vuZqV75/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/Y17fKanaykmCDF4vuZqV75/1600/1066/contain/jpegorpng",
+      "local_filename": "003_Y17fKanaykmCDF4vuZqV75.jpg",
+      "sha256": "b4562a6a8ae5998f3daad9c5fe260a3d7e86d1ce746930e8fb4b4a30056be479",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127228,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:06.686309Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11935389/OC4RewpiqvUkrKGq4tb3d3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/OC4RewpiqvUkrKGq4tb3d3/1600/1066/contain/jpegorpng",
+      "local_filename": "004_OC4RewpiqvUkrKGq4tb3d3.jpg",
+      "sha256": "4b257352576e6becee520be22df622606457a7f7d93241a1c5d5e91274d22131",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147096,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:06.854942Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11935389/r7muq4QXaLPc17iy4LkNc5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/r7muq4QXaLPc17iy4LkNc5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_r7muq4QXaLPc17iy4LkNc5.jpg",
+      "sha256": "6126cd667d1758feeba889f6b47d4b0b8c98625dee217da3d21289c8e8ba5ef1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189218,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:06.694379Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11935389/1Trob70VAneRBadSk1VS06/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/1Trob70VAneRBadSk1VS06/1600/1066/contain/jpegorpng",
+      "local_filename": "006_1Trob70VAneRBadSk1VS06.jpg",
+      "sha256": "f307fbdf066f28fc6ac258348ed01aa4dfd9dc291ab78f33f4d31bc2e77ba781",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177448,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:06.706351Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11935389/gKrdt1k6C9FXLB677jasN7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/gKrdt1k6C9FXLB677jasN7/1600/1066/contain/jpegorpng",
+      "local_filename": "007_gKrdt1k6C9FXLB677jasN7.jpg",
+      "sha256": "adf8a473935f0525a50eae33025055022f284dfce715fc28bbd29db86b5ca396",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179910,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.156798Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11935389/gtTVN5NwKFJxHsXr91hiX2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/gtTVN5NwKFJxHsXr91hiX2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_gtTVN5NwKFJxHsXr91hiX2.jpg",
+      "sha256": "14d4b5167243b411bca4f505d351b9242160cfe29d2c5aa36e9ac42805e46372",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 245438,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.103831Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11935389/BlrCeVpf1H2TIJMSallQP6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/BlrCeVpf1H2TIJMSallQP6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_BlrCeVpf1H2TIJMSallQP6.jpg",
+      "sha256": "9f3d3e405589d9cb326a5edfac96e312de1168701a1a6f5ca8ac3985ed17466b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 165252,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.104020Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11935389/4kpJ0rbvLjFS1unScS5sk3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/4kpJ0rbvLjFS1unScS5sk3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_4kpJ0rbvLjFS1unScS5sk3.jpg",
+      "sha256": "c821ca42f97cd86a4ed07c02b092f825353d15ca8178bc9f9c45e59665322cb0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171353,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.321348Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11935389/TNbfg0ivQZB78ebmwFEi11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/TNbfg0ivQZB78ebmwFEi11/1600/1066/contain/jpegorpng",
+      "local_filename": "011_TNbfg0ivQZB78ebmwFEi11.jpg",
+      "sha256": "c3a9502ce5bca37124ae64867d504659e2c6b83d0f9bcdcd315f1d8e6ecdf6fb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188049,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.173155Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11935389/4rZqNMIJwYGXfPsLd7ztm5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/4rZqNMIJwYGXfPsLd7ztm5/1600/1066/contain/jpegorpng",
+      "local_filename": "012_4rZqNMIJwYGXfPsLd7ztm5.jpg",
+      "sha256": "5c73d7f62fa42708cd8c162276406f999546430a1d750d0ceba34113a37448aa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194260,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.350539Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11935389/v8E5TaZk0hrHdlcnd6NMt5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/v8E5TaZk0hrHdlcnd6NMt5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_v8E5TaZk0hrHdlcnd6NMt5.jpg",
+      "sha256": "2779d8d82a66eb12607838a58b40015a78aca441e6ec67f1f160c4107669c95d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 143843,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.704496Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11935389/fzwlEiufNXIx9QY2RZptN0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/fzwlEiufNXIx9QY2RZptN0/1600/1066/contain/jpegorpng",
+      "local_filename": "014_fzwlEiufNXIx9QY2RZptN0.jpg",
+      "sha256": "838a45b2bff76790c9b1f2fd70cbebe08cafd084de0631c21968dbacd90b9f51",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190164,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:10.586459Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11935389/WlJDtsQ4jV6Db9puyFQDe0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/WlJDtsQ4jV6Db9puyFQDe0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_WlJDtsQ4jV6Db9puyFQDe0.jpg",
+      "sha256": "a78e483d2f5f7561bdce50cec96c8e764f70746d0b784c724fdafd052d135f07",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 228885,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.699537Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11935389/UUzaxkz6P6wkc0OTm9zvj3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/UUzaxkz6P6wkc0OTm9zvj3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_UUzaxkz6P6wkc0OTm9zvj3.jpg",
+      "sha256": "e43670b37c77d5ad585e1a0b6d4e4fe072b0350d9971db99be601405c7f62960",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119774,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.673733Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11935389/gPKqGQX2ht5oJPsY241f20/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/gPKqGQX2ht5oJPsY241f20/1600/1066/contain/jpegorpng",
+      "local_filename": "017_gPKqGQX2ht5oJPsY241f20.jpg",
+      "sha256": "4a5b1ed026903d20c208059f9f1d1fa12909a71a80ff72cf119e124c89b05b57",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115811,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:07.949136Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11935389/W7a0xDENRZXI7vAiQMpCo3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/W7a0xDENRZXI7vAiQMpCo3/1600/1066/contain/jpegorpng",
+      "local_filename": "018_W7a0xDENRZXI7vAiQMpCo3.jpg",
+      "sha256": "184f679b6ff3684b7b01cd4584a471e3303d1c3cfb95abe5cf1ee00d3d3ee898",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176750,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.480962Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11935389/r80BHcpP9HUtCiBl1OhIo0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/r80BHcpP9HUtCiBl1OhIo0/1600/1066/contain/jpegorpng",
+      "local_filename": "019_r80BHcpP9HUtCiBl1OhIo0.jpg",
+      "sha256": "74dc3a2c20fdec71223ee1945c827d9220e042c0a683aef81918b74bfdbb1e88",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 208071,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.063367Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11935389/rL91yTtZHxQgd6PAQ1Ctv2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/rL91yTtZHxQgd6PAQ1Ctv2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_rL91yTtZHxQgd6PAQ1Ctv2.jpg",
+      "sha256": "7a4079ed4d0950fafaf85cecb1d84c37ee5b30b24bede66dc560ed88d85456b8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197229,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.058340Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11935389/iH766x6mRjlHpm22eqsRy1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/iH766x6mRjlHpm22eqsRy1/1600/1066/contain/jpegorpng",
+      "local_filename": "021_iH766x6mRjlHpm22eqsRy1.jpg",
+      "sha256": "f206ee373495d54f058717406984d51aca2a003b465df4ccf5d6393b27f61d23",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 335859,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.511130Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11935389/wb1199U7R2gYyLjjrKOwi0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/wb1199U7R2gYyLjjrKOwi0/1600/1066/contain/jpegorpng",
+      "local_filename": "022_wb1199U7R2gYyLjjrKOwi0.jpg",
+      "sha256": "eea256042b0720dce7fdb8e0fe19977856c6286d6d52a8f493a16b0d454399b3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 295511,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.502804Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11935389/WOkIRdHzE3wyhve1YdnSP0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/WOkIRdHzE3wyhve1YdnSP0/1600/1066/contain/jpegorpng",
+      "local_filename": "023_WOkIRdHzE3wyhve1YdnSP0.jpg",
+      "sha256": "ba610618b2f9c546203b8cc23f048bc710556f856769d4c9a076b2aab0e2ad2a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 304275,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.619273Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11935389/2kjApbxcMmFB78NZAY1bK3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/2kjApbxcMmFB78NZAY1bK3/1600/1066/contain/jpegorpng",
+      "local_filename": "024_2kjApbxcMmFB78NZAY1bK3.jpg",
+      "sha256": "0db91adca927e5c8f93ac8e1f823cbd55211a3f4c2fab9fb1067415ef333aa12",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186950,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.559040Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11935389/vx1Ul4h7nBHsT5wwLDe2A2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11935389/vx1Ul4h7nBHsT5wwLDe2A2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_vx1Ul4h7nBHsT5wwLDe2A2.jpg",
+      "sha256": "415f3dbf2f4f1c68919e8ee9ef7e67db71295e92823fa5261543d9658000f416",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 247122,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Beverley photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:21:08.919842Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/6zIf2Nn01tA?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/1485",
+            "name": "Beverley"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5543970",
+            "name": "T5543970"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11935389/K5pJfF2rOu7GbhKXorili3/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Beverley, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5543970"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 700 000 | 4 Bedroom House in Beverley | Private Property",
+    "og:description": "Elegant Family Living with Exceptional Entertaining in a Prestigious Beverley Estate\n\nSole mandate.\n\nNestled within one of Beverley''s most sought-after secure estates, this exceptional four-bedroom r...",
+    "og:image": "https://images.pp.co.za/listing/11935389/K5pJfF2rOu7GbhKXorili3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5543970"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 700 000 | 4 Bedroom House in Beverley | Private Property",
+    "og:description": "Elegant Family Living with Exceptional Entertaining in a Prestigious Beverley Estate\n\nSole mandate.\n\nNestled within one of Beverley''s most sought-after secure estates, this exceptional four-bedroom r...",
+    "og:image": "https://images.pp.co.za/listing/11935389/K5pJfF2rOu7GbhKXorili3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5543970",
+    "description": "4 Bedroom House in Beverley, Elegant Family Living with Exceptional Entertaining in a Prestigious Beverley Estate\n\nSole mandate.",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "ddfc3b68b2586b9cf6b84063825f272f907f5c4b2c4c66ab6a11b89effeb0d0f"
+}

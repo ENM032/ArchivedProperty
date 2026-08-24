@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5507572",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5507572",
+  "archived_at": "2026-08-24T11:33:07.167666Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|b93c0a6c-f628-4b61-b49d-aa44db906ad8|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=ZkDOg6zGt0K4vap7LIuqwA; expires=Fri, 24-Aug-2125 11:33:02 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:33:02 GMT",
+    "content-length": "23334"
+  },
+  "fetch_duration_sec": 1.3311364650726318,
+  "total_images_discovered": 21,
+  "total_images_archived": 21,
+  "total_archive_size_bytes": 1374463,
+  "content_fingerprint": "97217fab5a5f30581be1588ee708de4088fcd065555c4227bc130a2d47280a13"
+}

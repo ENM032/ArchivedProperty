@@ -1,0 +1,617 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5503892",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5503892",
+  "extracted_at": "2026-08-24T11:26:32.595602Z",
+  "title": "3 Bedroom House in Morningside",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-29",
+  "description": "Exclusive mandate!\n\nDiscover the perfect family retreat in the heart of Morningside with this charming three-bedroom home that seamlessly blends comfort and style. \nAs you step through the inviting en...",
+  "erf_size_m2": 487.0,
+  "land_size_raw": "487 m²",
+  "floor_size_m2": 250.0,
+  "price": {
+    "amount": 2499000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 499 000",
+    "rates_and_taxes_monthly": 2720.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5503892",
+    "suburb": "Morningside",
+    "city": "Johannesburg",
+    "region": "Morningside, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Morningside",
+      "T5503892"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 3.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 3",
+      "Covered parking 2",
+      "Pet friendly",
+      "Pool",
+      "Staff quarters",
+      "Study",
+      "Garden",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Anne Power",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2080271/image/4767ca38a18e40d388f9c2d0a1bb58fd_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/anne-power/2080271/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11866069/kCywmGHxvCFR3X1IxJ9696/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/kCywmGHxvCFR3X1IxJ9696/1600/1066/contain/jpegorpng",
+      "local_filename": "001_kCywmGHxvCFR3X1IxJ9696.jpg",
+      "sha256": "aa11ab32e8972d74db06f45113333fb38399eead3b81849cb1c932926c3b47f3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 223277,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:26:33.472560Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11866069/kwAEeS5x0Hk5MCRWEo4GM7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/kwAEeS5x0Hk5MCRWEo4GM7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_kwAEeS5x0Hk5MCRWEo4GM7.jpg",
+      "sha256": "e9d1b266a3b4fa0462353b680b5ef30c3ec4b4c0812d5b91fce145d0fe27dd04",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197443,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.499135Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11866069/Y7A5tAl4DzFvgj0fUqzsa5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/Y7A5tAl4DzFvgj0fUqzsa5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_Y7A5tAl4DzFvgj0fUqzsa5.png",
+      "sha256": "10d6352577fb186a333ab39160cd2570310ce34330132855e4fa4a393313eff0",
+      "mime_type": "image/png",
+      "file_size_bytes": 1830101,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.574281Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11866069/R8rvAeacsgRyBpMt7sgwm5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/R8rvAeacsgRyBpMt7sgwm5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_R8rvAeacsgRyBpMt7sgwm5.png",
+      "sha256": "21124460b7e1b56442166bb99f4ec02cbc3c9d5f913f4dbf3d680b1dde47ea86",
+      "mime_type": "image/png",
+      "file_size_bytes": 1670222,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.135984Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11866069/9QQdyu16l6k52ia2ppdi13/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/9QQdyu16l6k52ia2ppdi13/1600/1066/contain/jpegorpng",
+      "local_filename": "005_9QQdyu16l6k52ia2ppdi13.png",
+      "sha256": "a09ec1209e9b2ab5d417535c2269d76322f24d671b8845134952c21388dcb230",
+      "mime_type": "image/png",
+      "file_size_bytes": 1698441,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.461735Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11866069/LzksiEGNnFyd1GZ3jiDxY0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/LzksiEGNnFyd1GZ3jiDxY0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_LzksiEGNnFyd1GZ3jiDxY0.png",
+      "sha256": "9cd290c05a9555a6eef8ed53ffb8438278e70bc0816cfb61ea935fa61baab7d4",
+      "mime_type": "image/png",
+      "file_size_bytes": 1732597,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.461940Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11866069/HJn3WEvu0IL9K8r1uPgC63/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/HJn3WEvu0IL9K8r1uPgC63/1600/1066/contain/jpegorpng",
+      "local_filename": "007_HJn3WEvu0IL9K8r1uPgC63.png",
+      "sha256": "7a2fbf67b7c3c0e4127c0aed2efb9e848ea06eed2d38f07aff0bbda8a3b5bbfc",
+      "mime_type": "image/png",
+      "file_size_bytes": 1751625,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.943028Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11866069/Pkd1qLudpyaUE0jRZJrlN3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/Pkd1qLudpyaUE0jRZJrlN3/1600/1066/contain/jpegorpng",
+      "local_filename": "008_Pkd1qLudpyaUE0jRZJrlN3.png",
+      "sha256": "43cba4361b2ef1b2143a52cb8ab5239ff44815db4f3fbb1d3e05f2f704cbc91a",
+      "mime_type": "image/png",
+      "file_size_bytes": 1678150,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.936653Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11866069/X2SD8gxEn3XjayXQZJChz6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/X2SD8gxEn3XjayXQZJChz6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_X2SD8gxEn3XjayXQZJChz6.png",
+      "sha256": "0b0a862f4e8417c1e9ccb8be7ff52c343df3fe31cfdf181289b40047f73311b3",
+      "mime_type": "image/png",
+      "file_size_bytes": 1725864,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.522160Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11866069/KClOweqNHrBqxB9Quv7a35/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/KClOweqNHrBqxB9Quv7a35/1600/1066/contain/jpegorpng",
+      "local_filename": "010_KClOweqNHrBqxB9Quv7a35.jpg",
+      "sha256": "a19121e9ac81b5ad8424d4297bf8a641ef95b6a3b5c8ff399597ee809c1cca0d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115984,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:33.933010Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11866069/mxgmC4IXs3ximpq1p40LD0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/mxgmC4IXs3ximpq1p40LD0/1600/1066/contain/jpegorpng",
+      "local_filename": "011_mxgmC4IXs3ximpq1p40LD0.jpg",
+      "sha256": "70d21759f9fd5ac7b52539f75e01048f54c41553aeaab9d5b7d32842eb12960a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134656,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.317074Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11866069/qu2eCC8uWn5nKPPSlrjPG1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/qu2eCC8uWn5nKPPSlrjPG1/1600/1066/contain/jpegorpng",
+      "local_filename": "012_qu2eCC8uWn5nKPPSlrjPG1.png",
+      "sha256": "f3cf659a0dfb8dac02a1a1bf42c7de82b1560dd29195c3553ce930c44e199ef1",
+      "mime_type": "image/png",
+      "file_size_bytes": 1624836,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.433739Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11866069/8NxDa06YRiBZc7DcQco5z1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/8NxDa06YRiBZc7DcQco5z1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_8NxDa06YRiBZc7DcQco5z1.jpg",
+      "sha256": "852450699631164faca8562bc31e5bd3f4f3f0e6009f0be77600f5e973fa864f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 198707,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.438185Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11866069/himDMHYi9VUhKXNE9gae02/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/himDMHYi9VUhKXNE9gae02/1600/1066/contain/jpegorpng",
+      "local_filename": "014_himDMHYi9VUhKXNE9gae02.png",
+      "sha256": "6fc64c831adaee1feb1c3a33d0dc65d7ff42cbc9ee888ceb71cb2c8f67fee38c",
+      "mime_type": "image/png",
+      "file_size_bytes": 1882845,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.037858Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11866069/0QkQn5xtaIahopScb3EZv0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/0QkQn5xtaIahopScb3EZv0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_0QkQn5xtaIahopScb3EZv0.jpg",
+      "sha256": "10adee80461e5f3c1177babd0e3711517c324cde797aaf85561c0d7f81ebaccb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 205998,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.951359Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11866069/sVGDNqpmSysKWBouc5NAI3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/sVGDNqpmSysKWBouc5NAI3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_sVGDNqpmSysKWBouc5NAI3.png",
+      "sha256": "ca6f3ff92bc73d3a23e030f429546b2e6fda332d2592ff2ebb1cf97f04d3ec8d",
+      "mime_type": "image/png",
+      "file_size_bytes": 2191521,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.493645Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11866069/2MCoZvCUEXOgRjCakjfqr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/2MCoZvCUEXOgRjCakjfqr6/1600/1066/contain/jpegorpng",
+      "local_filename": "017_2MCoZvCUEXOgRjCakjfqr6.jpg",
+      "sha256": "68ee2865690443619b7a519b5f6f143cb086a731500b8568f7b378bfef2260d1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 180777,
+      "width": 1364,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:34.771859Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11866069/XCgOcmHxpWM26UbKhzLvz2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/XCgOcmHxpWM26UbKhzLvz2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_XCgOcmHxpWM26UbKhzLvz2.jpg",
+      "sha256": "531cca9c78e294cf0f39da0c27a6e2adcb807e36f5278cb56ef4cd81ddf9535d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 140120,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.013271Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11866069/QE2Jou5wWG4ltvYyIGWoD4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/QE2Jou5wWG4ltvYyIGWoD4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_QE2Jou5wWG4ltvYyIGWoD4.jpg",
+      "sha256": "aa545a479d050fbd5adb5eee0431e26a9ef58c793cd73329b2f86ff6f1459e93",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146848,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.202582Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11866069/7rhUb6DK3SBT26tRtmjSa6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/7rhUb6DK3SBT26tRtmjSa6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_7rhUb6DK3SBT26tRtmjSa6.jpg",
+      "sha256": "7bd989e26ea78233fe3ca7e6e05c3cb356cb663cf189b8a94cba98e12861e93f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145499,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:39.719734Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11866069/s9Iixj0Hgie7Tf9c2xuOC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/s9Iixj0Hgie7Tf9c2xuOC2/1600/1066/contain/jpegorpng",
+      "local_filename": "021_s9Iixj0Hgie7Tf9c2xuOC2.jpg",
+      "sha256": "0cc94ad4bc951aea9aa2e96276ea99b042200060e858d4e90b0a4c96bde26e27",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160773,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.336929Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11866069/1TXq10txPDO5cHEzamfTJ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/1TXq10txPDO5cHEzamfTJ7/1600/1066/contain/jpegorpng",
+      "local_filename": "022_1TXq10txPDO5cHEzamfTJ7.jpg",
+      "sha256": "91c612840bdb9da3ad9834c6b92ee23cceec1dd6ba030ef40eec8292ef71e368",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128990,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.549419Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11866069/IMhvhtXxtVTQioS6y49Br3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/IMhvhtXxtVTQioS6y49Br3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_IMhvhtXxtVTQioS6y49Br3.jpg",
+      "sha256": "20af03179773ea00d259e4a44284047958c3be5fc967ab2b43c61e55f7063dd3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167001,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.609732Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11866069/WGs9FEd5wX2z0yuSznZS43/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/WGs9FEd5wX2z0yuSznZS43/1600/1066/contain/jpegorpng",
+      "local_filename": "024_WGs9FEd5wX2z0yuSznZS43.jpg",
+      "sha256": "49e8e9050c5037b87172192f165999538f9bb996979f746d7b303bda002f22ef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158734,
+      "width": 1376,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.893841Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11866069/lyfpT6R2w6a52IHYeaCSe4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/lyfpT6R2w6a52IHYeaCSe4/1600/1066/contain/jpegorpng",
+      "local_filename": "025_lyfpT6R2w6a52IHYeaCSe4.jpg",
+      "sha256": "832b65ad0128d5609d4d521cd680cfdb4fa9cfebbc28991327f3b09cad8922b6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 75246,
+      "width": 1360,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:35.936342Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11866069/0BL07DX0STxjm46FQn4zb1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/0BL07DX0STxjm46FQn4zb1/1600/1066/contain/jpegorpng",
+      "local_filename": "026_0BL07DX0STxjm46FQn4zb1.jpg",
+      "sha256": "09248654d043c72d0b4283a2aaf1653bfea66dbe040f4b8eb0390ecae0b9fbed",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 230408,
+      "width": 1360,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.171481Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11866069/dXO17rmEEcOYnlnemOTDZ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/dXO17rmEEcOYnlnemOTDZ0/1600/1066/contain/jpegorpng",
+      "local_filename": "027_dXO17rmEEcOYnlnemOTDZ0.jpg",
+      "sha256": "ba4042562dc55de464eefacd222abc395b466ad82bcc58b83a385b26d42a72e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154669,
+      "width": 1360,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.453255Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11866069/Ledb65BZmBS60GtKGtmUf6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/Ledb65BZmBS60GtKGtmUf6/1600/1066/contain/jpegorpng",
+      "local_filename": "028_Ledb65BZmBS60GtKGtmUf6.jpg",
+      "sha256": "fc212bdf9c2f4a8f3a25d408d590a6c1079c6f15e25b864c98a82c85d09c57a1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152889,
+      "width": 1360,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.851342Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11866069/ir9fFynrvJDQkRohABFbC1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11866069/ir9fFynrvJDQkRohABFbC1/1600/1066/contain/jpegorpng",
+      "local_filename": "029_ir9fFynrvJDQkRohABFbC1.jpg",
+      "sha256": "b5f420e2e7e498fdf1be75528a03fa86cc1c976057138baf6488a09ebc39c640",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144384,
+      "width": 1360,
+      "height": 768,
+      "alt_text": "3 Bedroom House in Morningside photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:26:36.554947Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/242",
+            "name": "Morningside"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5503892",
+            "name": "T5503892"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11866069/kCywmGHxvCFR3X1IxJ9696/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Morningside, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5503892"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 499 000 | 3 Bedroom House in Morningside | Private Property",
+    "og:description": "Exclusive mandate!\n\nDiscover the perfect family retreat in the heart of Morningside with this charming three-bedroom home that seamlessly blends comfort and style. \nAs you step through the inviting en...",
+    "og:image": "https://images.pp.co.za/listing/11866069/kCywmGHxvCFR3X1IxJ9696/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5503892"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 499 000 | 3 Bedroom House in Morningside | Private Property",
+    "og:description": "Exclusive mandate!\n\nDiscover the perfect family retreat in the heart of Morningside with this charming three-bedroom home that seamlessly blends comfort and style. \nAs you step through the inviting en...",
+    "og:image": "https://images.pp.co.za/listing/11866069/kCywmGHxvCFR3X1IxJ9696/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5503892",
+    "description": "3 Bedroom House in Morningside, Exclusive mandate!\n\nDiscover the perfect family retreat in the heart of Morningside with this charmi",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "074b489bed2af64b321930b631f8b6bd79e795626d24f5df87a8f45879a03594"
+}

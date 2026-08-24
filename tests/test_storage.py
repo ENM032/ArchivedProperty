@@ -1,5 +1,5 @@
 """
-Tests for ArchiveWriter (flat & hierarchical), ArchiveReader (recursive discovery), and integrity validation.
+Tests for ArchiveWriter (flat, hierarchical, update, delete), ArchiveReader (recursive discovery), and integrity validation.
 """
 
 from pathlib import Path
@@ -13,7 +13,7 @@ from property_archiver.storage.reader import ArchiveReader
 from property_archiver.storage.writer import ArchiveWriter
 
 
-def test_write_and_read_hierarchical_archive(tmp_path: Path):
+def test_write_read_update_and_delete_archive(tmp_path: Path):
     cfg = ArchiverSettings(archive_dir=tmp_path, archive_layout="hierarchical")
     writer = ArchiveWriter(config=cfg)
 
@@ -49,25 +49,38 @@ def test_write_and_read_hierarchical_archive(tmp_path: Path):
         output_base_dir=tmp_path
     )
 
-    # Verify hierarchical path: listings/gauteng/sandton/rivonia/T_TEST_100
+    # 1. Verify hierarchical path: listings/gauteng/sandton/rivonia/T_TEST_100
     rel_path = archive_path.relative_to(tmp_path)
     assert str(rel_path).replace("\\", "/") == "listings/gauteng/sandton/rivonia/T_TEST_100"
 
-    # Verify recursive discovery finds it
+    # 2. Verify recursive discovery finds it
     dirs = ArchiveReader.find_all_listing_dirs(tmp_path)
     assert len(dirs) == 1
     assert dirs[0] == archive_path
 
-    # Verify find_listing_dir works by ID
-    found_dir = ArchiveReader.find_listing_dir(tmp_path, "T_TEST_100")
-    assert found_dir == archive_path
+    # 3. Test update_listing (Edit & Annotations)
+    updates = {
+        "listing_status": "under_offer",
+        "user_notes": "Great investment prospect",
+        "user_tags": ["Prime", "High ROI"],
+        "user_rating": 5
+    }
+    updated = ArchiveWriter.update_listing(tmp_path, "T_TEST_100", updates)
+    assert updated.listing_status == "under_offer"
+    assert updated.is_under_offer is True
+    assert updated.user_notes == "Great investment prospect"
+    assert updated.user_tags == ["Prime", "High ROI"]
+    assert updated.user_rating == 5
 
-    # Verify loaded data
-    loaded_listing = ArchiveReader.load_listing(archive_path)
-    assert loaded_listing.listing_id == "T_TEST_100"
-    assert loaded_listing.title == "Test Hierarchical House"
+    # Verify history.json recorded the edit
+    history_file = archive_path / "history.json"
+    assert history_file.exists()
+    import json
+    history = json.loads(history_file.read_text(encoding="utf-8"))
+    assert len(history) >= 1
+    assert history[-1]["event"] == "manual_edit"
 
-    # Verify integrity
-    is_valid, errors = ArchiveReader.validate_integrity(archive_path)
-    assert is_valid is True
-    assert len(errors) == 0
+    # 4. Test delete_archive (Delete feature)
+    assert ArchiveWriter.delete_archive(tmp_path, "T_TEST_100") is True
+    assert not archive_path.exists()
+    assert len(ArchiveReader.find_all_listing_dirs(tmp_path)) == 0

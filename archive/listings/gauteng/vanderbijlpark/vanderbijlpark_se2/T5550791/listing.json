@@ -1,0 +1,546 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5550791",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791",
+  "extracted_at": "2026-08-24T14:47:26.001741Z",
+  "title": "3 Bedroom House in Vanderbijlpark SE2",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-13",
+  "description": "Spacious 3 Bedroom Family Home in SE 2. This spacious and versatile 3-bedroom family home, offers the perfect opportunity to comfortably combine home and work.\nAs you enter through the front door, you...",
+  "erf_size_m2": 759.0,
+  "land_size_raw": "759 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 1380000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 380 000",
+    "rates_and_taxes_monthly": 1200.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "Vanderbijlpark Se2",
+    "suburb": "Vanderbijlpark SE2",
+    "city": "Gauteng South",
+    "region": "Vanderbijlpark SE 2, Vanderbijlpark",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Gauteng South",
+      "Vanderbijlpark",
+      "Vanderbijlpark SE",
+      "Vanderbijlpark SE2",
+      "T5550791"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": true,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 2",
+      "Garage parking 1",
+      "Built in cupboards",
+      "Kitchen",
+      "Garden",
+      "Scullery",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Debbie Blom",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2286183/image/649a56aad83d40659ca5d33d5692da44_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/debbie-blom/2286183/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11947545/ih4YLTSd2PrZLXgd7CFIB6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/ih4YLTSd2PrZLXgd7CFIB6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_ih4YLTSd2PrZLXgd7CFIB6.jpg",
+      "sha256": "28ca70f98c016a9dafbffbbd92a7002e324ffeb9b6d446b4451ace444ddd50f3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217870,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T14:47:27.076183Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11947545/jIQ8vUDSvhfDxrcRYBNhX5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/jIQ8vUDSvhfDxrcRYBNhX5/1600/1066/contain/jpegorpng",
+      "local_filename": "002_jIQ8vUDSvhfDxrcRYBNhX5.jpg",
+      "sha256": "ff1398afbc2b39d1bf9d7f0a4739b4341f81d10b8d81651c7868522227557bd7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139741,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:26.938060Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11947545/wadtJI85rjNEWzjs2oxdk6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/wadtJI85rjNEWzjs2oxdk6/1600/1066/contain/jpegorpng",
+      "local_filename": "003_wadtJI85rjNEWzjs2oxdk6.jpg",
+      "sha256": "b1300ee8362d07a7abe5b4106fdbfa1d95a477d693daa6654c0b7533e6bdf6e2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178762,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:26.937485Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11947545/bW5Fe0exyUUmsIKytHax72/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/bW5Fe0exyUUmsIKytHax72/1600/1066/contain/jpegorpng",
+      "local_filename": "004_bW5Fe0exyUUmsIKytHax72.jpg",
+      "sha256": "8cd1dbee8a058f77cbbd752a42bd83a582bba95b764f45b93fb8c6e292e3a7e6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136500,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.067042Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11947545/bUBBeX3ryPwvNLsuuAGmA5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/bUBBeX3ryPwvNLsuuAGmA5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_bUBBeX3ryPwvNLsuuAGmA5.jpg",
+      "sha256": "bbcf7ba63c40768448271a92155e026219614b273fd78da0f4314ebe0a9eb3e2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134248,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:26.937566Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11947545/9olvPCGNljc9CS4fyQJcn1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/9olvPCGNljc9CS4fyQJcn1/1600/1066/contain/jpegorpng",
+      "local_filename": "006_9olvPCGNljc9CS4fyQJcn1.jpg",
+      "sha256": "0fd63a5edba1a3cf8002cf93d3bbbbb92e1d1c71a1e1de130d5d4075b221bde9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149571,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:26.936470Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11947545/f3wQ2CX9GLVg5e8vbWaOV0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/f3wQ2CX9GLVg5e8vbWaOV0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_f3wQ2CX9GLVg5e8vbWaOV0.jpg",
+      "sha256": "5979022104bf5210c60732970346c4b9403b2a1c3d7dc6679380ecb8ce348a15",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144490,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.547506Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11947545/DvjrRc6jZw1NcjQl9w4GK6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/DvjrRc6jZw1NcjQl9w4GK6/1600/1066/contain/jpegorpng",
+      "local_filename": "008_DvjrRc6jZw1NcjQl9w4GK6.jpg",
+      "sha256": "9219ae9e95c01e61dbefa8dbe7b4acb1f957bcc76e02c0781be99329c0cac765",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136748,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.303048Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11947545/vMMXmoxT96DF5IxevywUB5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/vMMXmoxT96DF5IxevywUB5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_vMMXmoxT96DF5IxevywUB5.jpg",
+      "sha256": "40f22c8c8c9971a565c027c3fa952ea8be7f00607f6b848d77e18d4f9182d64b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121311,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.120246Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11947545/uJ7miq6d5d4i74kz2cMxU7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/uJ7miq6d5d4i74kz2cMxU7/1600/1066/contain/jpegorpng",
+      "local_filename": "010_uJ7miq6d5d4i74kz2cMxU7.jpg",
+      "sha256": "0bd4a9bdc0b37497e981743a0166e688223c03850c855d270387108858421098",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104523,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.109833Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11947545/E4XIul8kUS4VvZcUQyRxz4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/E4XIul8kUS4VvZcUQyRxz4/1600/1066/contain/jpegorpng",
+      "local_filename": "011_E4XIul8kUS4VvZcUQyRxz4.jpg",
+      "sha256": "1c69a15d42cd9260335d264167625de77dd48aa9ca540c5e68fe2d8730ae8023",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150773,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.453028Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11947545/Z4IXntLgSAl23WrauZUF82/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/Z4IXntLgSAl23WrauZUF82/1600/1066/contain/jpegorpng",
+      "local_filename": "012_Z4IXntLgSAl23WrauZUF82.jpg",
+      "sha256": "84c39fa7df63751f67745a809037309d990da4f11738ebd937b14922f1bfe01e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 83286,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.422537Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11947545/5oNrULZ8QsrVLOZdEuER26/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/5oNrULZ8QsrVLOZdEuER26/1600/1066/contain/jpegorpng",
+      "local_filename": "013_5oNrULZ8QsrVLOZdEuER26.jpg",
+      "sha256": "7c63b9a7db884bef68baa37d62ec34dd4b13426c5ac5aea331a9f3133441aca6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118119,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.654041Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11947545/WG3aGtMPgKMyMmWE1Llat6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/WG3aGtMPgKMyMmWE1Llat6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_WG3aGtMPgKMyMmWE1Llat6.jpg",
+      "sha256": "3a6e17a117e580baad7319e18446914129fb0287f001d893824d9b83f95a7ccd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 96959,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.790038Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11947545/2cdVkLEBJbyLbgt8kMq612/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/2cdVkLEBJbyLbgt8kMq612/1600/1066/contain/jpegorpng",
+      "local_filename": "015_2cdVkLEBJbyLbgt8kMq612.jpg",
+      "sha256": "47f58ecf83818fac0da619ec881e997b7e4daeeb0b6b5c3489ea3fe9766da929",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131645,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:27.878067Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11947545/Bln9V4gm7UXReo5vys34B7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/Bln9V4gm7UXReo5vys34B7/1600/1066/contain/jpegorpng",
+      "local_filename": "016_Bln9V4gm7UXReo5vys34B7.jpg",
+      "sha256": "5502d16e2c4d02167b389088a00431a53fc9877750dec893409dcc2106f70d08",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129748,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.078259Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11947545/ywBAGqzDXyq8TXfgKoWWt5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/ywBAGqzDXyq8TXfgKoWWt5/1600/1066/contain/jpegorpng",
+      "local_filename": "017_ywBAGqzDXyq8TXfgKoWWt5.jpg",
+      "sha256": "a296ccee9559cbc97217aee8ee7293431a092ef61bd4d9c3f0e1c886fa2b1fea",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132954,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.017185Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11947545/12o1947cOvy6XgY7DEd9g7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/12o1947cOvy6XgY7DEd9g7/1600/1066/contain/jpegorpng",
+      "local_filename": "018_12o1947cOvy6XgY7DEd9g7.jpg",
+      "sha256": "ed23199c58ac5e73520650a19cde0a084bce2f4646e0316714e386833991a98d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142401,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:29.157773Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11947545/TfsD2OFgtdBKgAflBOsRP2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/TfsD2OFgtdBKgAflBOsRP2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_TfsD2OFgtdBKgAflBOsRP2.jpg",
+      "sha256": "d84518ead2e8fb6ed60225310fbedd54379b0299d8455bbdf9aed2394168c465",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123608,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.346563Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11947545/ZRZKg6rnUGTJa2fTGiWVg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/ZRZKg6rnUGTJa2fTGiWVg0/1600/1066/contain/jpegorpng",
+      "local_filename": "020_ZRZKg6rnUGTJa2fTGiWVg0.jpg",
+      "sha256": "e49a144de263a536a763fa5111591a5c206ff7111302aff3f7ff095835d61f15",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104486,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.679513Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11947545/qHG3L3Ee42MExvgfQeaj30/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/qHG3L3Ee42MExvgfQeaj30/1600/1066/contain/jpegorpng",
+      "local_filename": "021_qHG3L3Ee42MExvgfQeaj30.jpg",
+      "sha256": "beab3687adabbf3fd11eb3072785886a2f234c0be1aeac74dd765cc085b6cf1f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199601,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.513556Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11947545/oGD4bhyVxmaQh3Gktdc1e5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/oGD4bhyVxmaQh3Gktdc1e5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_oGD4bhyVxmaQh3Gktdc1e5.jpg",
+      "sha256": "7c30b3c24cc4f0afd8a2719a0f137086c10f9cac14c96ceee0977f3c2cfca128",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 293577,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:29.728829Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11947545/pVJTI6PaJooFnH1xtLF5e0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11947545/pVJTI6PaJooFnH1xtLF5e0/1600/1066/contain/jpegorpng",
+      "local_filename": "023_pVJTI6PaJooFnH1xtLF5e0.jpg",
+      "sha256": "6ea25f72f3d7df23e7442b18962f7adf9e08438202d6e3510d3501b6349e2bda",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 201551,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Vanderbijlpark SE2 photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:47:28.812338Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/812",
+            "name": "Gauteng South"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/814",
+            "name": "Vanderbijlpark"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/822",
+            "name": "Vanderbijlpark SE"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/5394",
+            "name": "Vanderbijlpark SE2"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791",
+            "name": "T5550791"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11947545/ih4YLTSd2PrZLXgd7CFIB6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vanderbijlpark SE 2, Vanderbijlpark",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 380 000 | 3 Bedroom House in Vanderbijlpark SE2 | Private Property",
+    "og:description": "Spacious 3 Bedroom Family Home in SE 2. This spacious and versatile 3-bedroom family home, offers the perfect opportunity to comfortably combine home and work.\nAs you enter through the front door, you...",
+    "og:image": "https://images.pp.co.za/listing/11947545/ih4YLTSd2PrZLXgd7CFIB6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 380 000 | 3 Bedroom House in Vanderbijlpark SE2 | Private Property",
+    "og:description": "Spacious 3 Bedroom Family Home in SE 2. This spacious and versatile 3-bedroom family home, offers the perfect opportunity to comfortably combine home and work.\nAs you enter through the front door, you...",
+    "og:image": "https://images.pp.co.za/listing/11947545/ih4YLTSd2PrZLXgd7CFIB6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791",
+    "description": "3 Bedroom House in Vanderbijlpark SE2, Spacious 3 Bedroom Family Home in SE 2. This spacious and versatile 3-bedroom family home, offers th",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "070c7a4eb4fdeb586e74c302e62f6d095a652b91cfa7ffbe65ecc03a0c6c3b54"
+}

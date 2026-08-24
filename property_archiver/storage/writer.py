@@ -1,6 +1,6 @@
 """
 Atomic archive writer supporting flat and hierarchical (Province/Area/Suburb) filesystem layouts,
-Windows-safe directory swaps, and historical snapshot ledgers.
+Windows-safe directory swaps, historical snapshot ledgers, and delete/update operations.
 """
 
 import json
@@ -10,6 +10,7 @@ import shutil
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 from property_archiver import __version__
 from property_archiver.config import ArchiverSettings, settings
@@ -26,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 
 class ArchiveWriter:
-    """Writes listing data, assets, and historical snapshots atomically to disk."""
+    """Writes, updates, and deletes listing data, assets, and historical snapshots atomically on disk."""
 
     def __init__(self, config: ArchiverSettings | None = None):
         self.config = config or settings
@@ -40,6 +41,18 @@ class ArchiveWriter:
         images_dir = staging_dir / "images"
         images_dir.mkdir(parents=True, exist_ok=True)
         return staging_dir, images_dir
+
+    
+    def write_archive(
+        self,
+        listing: ListingRecord,
+        raw_html: bytes | str,
+        metadata: ArchiveMetadata,
+        output_base_dir: Path | str | None = None
+    ) -> Path:
+        """Convenience method creating staging and committing archive in one call."""
+        staging_dir, _ = self.create_staging_dir(listing.listing_id, output_base_dir)
+        return self.commit_archive(staging_dir, listing, raw_html, metadata, output_base_dir)
 
     def commit_archive(
         self,
@@ -57,149 +70,221 @@ class ArchiveWriter:
         safe_lid = sanitize_filename(listing.listing_id or "listing")
 
         # Determine target path based on layout configuration
-        if getattr(self.config, "archive_layout", "flat") == "hierarchical":
-            rel_subpath = GeoHierarchyBuilder.get_hierarchical_relpath(listing)
-            target_dir = base_dir / "listings" / rel_subpath
+        if getattr(self.config, "archive_layout", "hierarchical") == "hierarchical":
+            rel_path = GeoHierarchyBuilder.get_hierarchical_relpath(listing)
+            target_dir = safe_join_path(base_dir, "listings", rel_path)
         else:
             target_dir = safe_join_path(base_dir, "listings", safe_lid)
 
         target_dir.parent.mkdir(parents=True, exist_ok=True)
 
+        # Write raw.html
+        raw_html_bytes = raw_html.encode("utf-8") if isinstance(raw_html, str) else raw_html
+        raw_path = staging_dir / "raw.html"
+        with open(raw_path, "wb") as f:
+            f.write(raw_html_bytes)
+
+        # Write listing.json
+        listing_json_path = staging_dir / "listing.json"
+        with open(listing_json_path, "w", encoding="utf-8") as f:
+            f.write(listing.model_dump_json(indent=2))
+
+        # Write metadata.json
+        meta_path = staging_dir / "metadata.json"
+        with open(meta_path, "w", encoding="utf-8") as f:
+            f.write(metadata.model_dump_json(indent=2))
+
+        # Build checksums.json
+        checksums: dict[str, str] = {
+            "listing.json": calculate_file_sha256(listing_json_path),
+            "raw.html": calculate_file_sha256(raw_path),
+            "metadata.json": calculate_file_sha256(meta_path),
+        }
+
+        images_dir = staging_dir / "images"
+        if images_dir.exists():
+            for img_file in sorted(images_dir.iterdir()):
+                if img_file.is_file():
+                    checksums[f"images/{img_file.name}"] = calculate_file_sha256(img_file)
+
+        manifest = ArchiveManifest(
+            schema_version="1.0.0",
+            archiver_version=__version__,
+            listing_id=listing.listing_id,
+            total_files=len(checksums),
+            files=checksums,
+        )
+        manifest_path = staging_dir / "checksums.json"
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            f.write(manifest.model_dump_json(indent=2))
+
+        # Maintain historical diffs if updating an existing archive
+        history_file = target_dir / "history.json"
+        history_records = []
+        if target_dir.exists() and (target_dir / "listing.json").exists():
+            try:
+                old_listing = ArchiveReader.load_listing(target_dir)
+                if history_file.exists():
+                    history_records = json.loads(history_file.read_text(encoding="utf-8"))
+
+                diff = ChangeDetector.compare_records(old_listing, listing)
+                if not diff.is_identical:
+                    history_records.append({
+                        "timestamp": datetime.now(timezone.utc).isoformat(),
+                        "event": "scraped_update",
+                        "price_changed": diff.price_changed,
+                        "old_price": diff.old_price,
+                        "new_price": diff.new_price,
+                        "price_diff": diff.price_diff,
+                        "status_changed": diff.status_changed,
+                        "old_status": diff.old_status,
+                        "new_status": diff.new_status,
+                        "badges_added": diff.badges_added,
+                        "badges_removed": diff.badges_removed,
+                        "spec_changes": diff.spec_changes,
+                    })
+            except Exception as exc:
+                logger.warning("Failed computing change history for %s: %s", listing.listing_id, exc)
+
+        if history_records:
+            staging_history = staging_dir / "history.json"
+            staging_history.write_text(json.dumps(history_records, indent=2), encoding="utf-8")
+
+        # Atomic directory swap
+        self._safe_atomic_replace(staging_dir, target_dir)
+        logger.info("Successfully committed archive to %s", target_dir)
+        return target_dir
+
+    @staticmethod
+    def delete_archive(archive_dir: Path | str, listing_id: str) -> bool:
+        """
+        Delete an archived listing directory completely and clean up any empty parent directories.
+        """
+        base_dir = Path(archive_dir).resolve()
+        listing_dir = ArchiveReader.find_listing_dir(base_dir, listing_id)
+        if not listing_dir or not listing_dir.exists():
+            return False
+
         try:
-            # 1. Write raw.html
-            raw_html_bytes = raw_html.encode("utf-8") if isinstance(raw_html, str) else raw_html
-            raw_html_path = staging_dir / "raw.html"
-            with open(raw_html_path, "wb") as f:
-                f.write(raw_html_bytes)
+            shutil.rmtree(listing_dir)
+            logger.info("Deleted archive directory: %s", listing_dir)
 
-            # 2. Write listing.json
-            listing_json_path = staging_dir / "listing.json"
-            with open(listing_json_path, "w", encoding="utf-8") as f:
-                f.write(listing.model_dump_json(indent=2))
-
-            # 3. Calculate checksums manifest for all files in staging
-            manifest = ArchiveManifest(
-                schema_version="1.0.0",
-                listing_id=listing.listing_id,
-                archived_at=datetime.now(timezone.utc),
-                archiver_version=__version__,
-            )
-
-            total_size = 0
-            for root, _, files in os.walk(staging_dir):
-                for filename in files:
-                    if filename in ("checksums.json", "metadata.json", "history.json"):
-                        continue
-                    full_p = Path(root) / filename
-                    rel_p = str(full_p.relative_to(staging_dir)).replace("\\", "/")
-                    file_hash = calculate_file_sha256(full_p)
-                    manifest.files[rel_p] = file_hash
-                    total_size += full_p.stat().st_size
-
-            # 4. Write metadata.json
-            metadata.total_archive_size_bytes = total_size
-            metadata_path = staging_dir / "metadata.json"
-            with open(metadata_path, "w", encoding="utf-8") as f:
-                f.write(metadata.model_dump_json(indent=2))
-
-            manifest.files["metadata.json"] = calculate_file_sha256(metadata_path)
-
-            # 5. Write checksums.json
-            checksums_path = staging_dir / "checksums.json"
-            with open(checksums_path, "w", encoding="utf-8") as f:
-                f.write(manifest.model_dump_json(indent=2))
-
-            # 6. Historical Snapshot & Timeline Ledger
-            history_entries: list[dict] = []
-            if target_dir.exists() and (target_dir / "listing.json").exists():
+            # Clean up empty parent directories (e.g. suburb -> area -> province)
+            parent = listing_dir.parent
+            listings_root = (base_dir / "listings").resolve()
+            while parent != listings_root and parent.is_relative_to(listings_root):
                 try:
-                    old_listing = ArchiveReader.load_listing(target_dir)
-                    old_meta = ArchiveReader.load_metadata(target_dir)
-
-                    old_history_file = target_dir / "history.json"
-                    if old_history_file.exists():
-                        with open(old_history_file, "r", encoding="utf-8") as hf:
-                            history_entries = json.load(hf)
-
-                    diff = ChangeDetector.compare_records(old_listing, listing)
-                    if not diff.is_identical:
-                        snap_time_str = old_meta.archived_at.strftime("%Y%m%d_%H%M%S")
-                        history_entries.append({
-                            "timestamp": old_meta.archived_at.isoformat(),
-                            "snapshot_id": snap_time_str,
-                            "price": old_listing.price.amount,
-                            "status": old_listing.listing_status,
-                            "fingerprint": old_listing.content_fingerprint,
-                            "diff_summary": {
-                                "price_changed": diff.price_changed,
-                                "price_diff": diff.price_diff,
-                                "status_changed": diff.status_changed,
-                                "old_status": diff.old_status,
-                                "new_status": diff.new_status,
-                                "badges_added": diff.badges_added,
-                            }
-                        })
-
-                    staging_history = staging_dir / "history.json"
-                    with open(staging_history, "w", encoding="utf-8") as hf:
-                        json.dump(history_entries, hf, indent=2)
-
-                    old_snapshots_dir = target_dir / "snapshots"
-                    if old_snapshots_dir.exists():
-                        staging_snapshots = staging_dir / "snapshots"
-                        shutil.copytree(old_snapshots_dir, staging_snapshots, dirs_exist_ok=True)
-
-                except Exception as e:
-                    logger.debug("Failed computing history ledger: %s", e)
-
-            # 7. Safe Windows-Resilient Atomic Directory Swap
-            self._safe_atomic_replace(staging_dir, target_dir)
-            logger.info("Successfully committed archive to %s", target_dir)
-            return target_dir
-
-        except Exception as exc:
-            if staging_dir.exists():
-                shutil.rmtree(staging_dir, ignore_errors=True)
-            raise StorageError(f"Failed to commit archive for {listing.listing_id}: {exc}") from exc
-
-    def _safe_atomic_replace(self, staging_dir: Path, target_dir: Path, max_retries: int = 5) -> None:
-        """
-        Atomically replace target_dir with staging_dir with exponential backoff on PermissionError (WinError 32).
-        """
-        backup_dir = target_dir.parent / f".bak_{target_dir.name}_{int(time.time()*1000)}"
-
-        if target_dir.exists():
-            for attempt in range(max_retries):
-                try:
-                    target_dir.rename(backup_dir)
-                    break
-                except (PermissionError, OSError):
-                    if attempt == max_retries - 1:
-                        shutil.rmtree(target_dir, ignore_errors=True)
+                    if parent.exists() and not any(parent.iterdir()):
+                        parent.rmdir()
+                        logger.debug("Cleaned up empty directory: %s", parent)
+                        parent = parent.parent
+                    else:
                         break
-                    time.sleep(0.05 * (2 ** attempt))
+                except OSError:
+                    break
 
+            return True
+        except Exception as exc:
+            logger.error("Failed deleting archive %s: %s", listing_id, exc)
+            raise StorageError(f"Failed deleting archive {listing_id}: {exc}") from exc
+
+    @staticmethod
+    def update_listing(archive_dir: Path | str, listing_id: str, updates: dict[str, Any]) -> ListingRecord:
+        """
+        Update user annotations, status, or details in an existing archive and record a history event.
+        """
+        base_dir = Path(archive_dir).resolve()
+        listing_dir = ArchiveReader.find_listing_dir(base_dir, listing_id)
+        if not listing_dir or not listing_dir.exists():
+            raise StorageError(f"Listing {listing_id} not found in archive")
+
+        record = ArchiveReader.load_listing(listing_dir)
+        old_status = record.listing_status
+        old_notes = record.user_notes
+        old_rating = record.user_rating
+
+        # Apply allowed fields
+        if "listing_status" in updates:
+            record.listing_status = str(updates["listing_status"]).lower()
+            if record.listing_status == "under_offer":
+                record.is_under_offer = True
+                record.is_sold = False
+            elif record.listing_status == "sold":
+                record.is_sold = True
+                record.is_under_offer = False
+            elif record.listing_status == "active":
+                record.is_sold = False
+                record.is_under_offer = False
+
+        if "user_notes" in updates:
+            record.user_notes = updates["user_notes"]
+
+        if "user_tags" in updates:
+            tags = updates["user_tags"]
+            if isinstance(tags, str):
+                record.user_tags = [t.strip() for t in tags.split(",") if t.strip()]
+            elif isinstance(tags, list):
+                record.user_tags = [str(t).strip() for t in tags if str(t).strip()]
+
+        if "user_rating" in updates:
+            rating_val = updates["user_rating"]
+            record.user_rating = int(rating_val) if rating_val is not None else None
+
+        # Write updated listing.json
+        listing_json_path = listing_dir / "listing.json"
+        with open(listing_json_path, "w", encoding="utf-8") as f:
+            f.write(record.model_dump_json(indent=2))
+
+        # Append manual edit to history.json
+        history_file = listing_dir / "history.json"
+        history_records = []
+        if history_file.exists():
+            try:
+                history_records = json.loads(history_file.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+
+        history_records.append({
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "event": "manual_edit",
+            "updated_fields": list(updates.keys()),
+            "status_changed": (old_status != record.listing_status),
+            "old_status": old_status,
+            "new_status": record.listing_status,
+        })
+        history_file.write_text(json.dumps(history_records, indent=2), encoding="utf-8")
+
+        # Update checksums.json
+        manifest_file = listing_dir / "checksums.json"
+        if manifest_file.exists():
+            try:
+                manifest_data = json.loads(manifest_file.read_text(encoding="utf-8"))
+                manifest_data["files"]["listing.json"] = calculate_file_sha256(listing_json_path)
+                manifest_file.write_text(json.dumps(manifest_data, indent=2), encoding="utf-8")
+            except Exception:
+                pass
+
+        logger.info("Successfully updated listing %s", listing_id)
+        return record
+
+    def _safe_atomic_replace(self, staging_dir: Path, target_dir: Path):
+        """Perform a robust atomic directory swap with Windows lock retry backoff."""
+        if not target_dir.exists():
+            staging_dir.rename(target_dir)
+            return
+
+        backup_dir = target_dir.parent / f".backup_{target_dir.name}_{int(time.time())}"
+        target_dir.rename(backup_dir)
+
+        max_retries = 5
         for attempt in range(max_retries):
             try:
                 staging_dir.rename(target_dir)
                 break
-            except (PermissionError, OSError) as e:
+            except OSError as exc:
                 if attempt == max_retries - 1:
-                    if backup_dir.exists() and not target_dir.exists():
-                        backup_dir.rename(target_dir)
-                    raise StorageError(f"Failed moving staging dir to target {target_dir}: {e}") from e
-                time.sleep(0.05 * (2 ** attempt))
+                    backup_dir.rename(target_dir)
+                    raise StorageError(f"Atomic swap failed for {target_dir}: {exc}") from exc
+                time.sleep(0.1 * (2 ** attempt))
 
-        if backup_dir.exists():
-            shutil.rmtree(backup_dir, ignore_errors=True)
-
-    def write_archive(
-        self,
-        listing: ListingRecord,
-        raw_html: bytes | str,
-        metadata: ArchiveMetadata,
-        output_base_dir: Path | str | None = None
-    ) -> Path:
-        """Convenience method for creating and committing an archive without separate image staging."""
-        staging_dir, _ = self.create_staging_dir(listing.listing_id, output_base_dir)
-        return self.commit_archive(staging_dir, listing, raw_html, metadata, output_base_dir)
+        shutil.rmtree(backup_dir, ignore_errors=True)

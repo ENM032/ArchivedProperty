@@ -1,5 +1,5 @@
 /**
- * Base API Client wrapper with error handling.
+ * Base API Client wrapper with error handling and CRUD methods.
  */
 export async function apiFetch(url, options = {}) {
     const response = await fetch(url, options);
@@ -31,5 +31,19 @@ export async function archiveListing(target) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ target })
+    });
+}
+
+export async function deleteListingApi(id) {
+    return apiFetch(`/api/listings/${id}`, {
+        method: 'DELETE'
+    });
+}
+
+export async function updateListingApi(id, updates) {
+    return apiFetch(`/api/listings/${id}/edit`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updates)
     });
 }

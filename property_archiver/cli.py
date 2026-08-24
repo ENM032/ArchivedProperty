@@ -545,5 +545,74 @@ def batch_command(file_list: str, output: str):
     fetch_command.callback(targets=tuple(urls), clipboard=False, output=output, no_images=False, timeout=25.0, rate_limit=1.0, user_agent=None)
 
 
+
+@main.command(name="delete")
+@click.argument("listing_id", type=str)
+@click.option("--yes", "-y", is_flag=True, default=False, help="Skip confirmation prompt")
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def delete_command(listing_id: str, yes: bool, archive_dir: str):
+    """Permanently delete an archived listing and its assets."""
+    clean_id = listing_id.strip().strip("/").upper()
+    listing_dir = ArchiveReader.find_listing_dir(archive_dir, clean_id)
+    if not listing_dir:
+        console.print(f"[bold red]Listing archive {clean_id} not found.[/bold red]")
+        sys.exit(1)
+
+    if not yes:
+        if not click.confirm(f"Are you sure you want to permanently delete archive '{clean_id}' at {listing_dir}?"):
+            console.print("[yellow]Deletion cancelled.[/yellow]")
+            return
+
+    try:
+        ArchiveWriter.delete_archive(archive_dir, clean_id)
+        console.print(f"[bold green]Successfully deleted archive:[/bold green] [cyan]{clean_id}[/cyan]")
+    except Exception as exc:
+        console.print(f"[bold red]Failed deleting archive {clean_id}:[/bold red] {exc}")
+        sys.exit(1)
+
+
+@main.command(name="edit")
+@click.argument("listing_id", type=str)
+@click.option("--status", type=click.Choice(["active", "under_offer", "sold", "withdrawn"], case_sensitive=False), default=None, help="Update listing status")
+@click.option("--notes", type=str, default=None, help="Update custom user notes")
+@click.option("--tags", type=str, default=None, help="Comma-separated user tags (e.g. 'Prime,Good ROI')")
+@click.option("--rating", type=click.IntRange(1, 5), default=None, help="User rating score (1 to 5)")
+@click.option("--archive-dir", "-a", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def edit_command(listing_id: str, status: str | None, notes: str | None, tags: str | None, rating: int | None, archive_dir: str):
+    """Edit listing status, custom notes, user tags, or star ratings."""
+    clean_id = listing_id.strip().strip("/").upper()
+    listing_dir = ArchiveReader.find_listing_dir(archive_dir, clean_id)
+    if not listing_dir:
+        console.print(f"[bold red]Listing archive {clean_id} not found.[/bold red]")
+        sys.exit(1)
+
+    updates = {}
+    if status is not None:
+        updates["listing_status"] = status
+    if notes is not None:
+        updates["user_notes"] = notes
+    if tags is not None:
+        updates["user_tags"] = [t.strip() for t in tags.split(",") if t.strip()]
+    if rating is not None:
+        updates["user_rating"] = rating
+
+    if not updates:
+        console.print("[yellow]No updates specified. Use --status, --notes, --tags, or --rating.[/yellow]")
+        return
+
+    try:
+        updated = ArchiveWriter.update_listing(archive_dir, clean_id, updates)
+        console.print(f"[bold green]Successfully updated archive {clean_id}:[/bold green]")
+        console.print(f"  * Status: [cyan]{updated.listing_status.upper()}[/cyan]")
+        if updated.user_notes:
+            console.print(f"  * Notes: [white]{updated.user_notes}[/white]")
+        if updated.user_tags:
+            console.print(f"  * Tags: [magenta]{', '.join(updated.user_tags)}[/magenta]")
+        if updated.user_rating:
+            console.print(f"  * Rating: [yellow]{'★' * updated.user_rating}[/yellow]")
+    except Exception as exc:
+        console.print(f"[bold red]Failed updating archive {clean_id}:[/bold red] {exc}")
+        sys.exit(1)
+
 if __name__ == "__main__":
     main()
