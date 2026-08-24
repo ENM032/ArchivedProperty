@@ -43,7 +43,7 @@ def main():
     pass
 
 
-def _fetch_single_target(target: str, output: str, no_images: bool, timeout: float, rate_limit: float, user_agent: str | None) -> bool:
+def _fetch_single_target(target: str, output: str, no_images: bool, timeout: float, rate_limit: float, user_agent: str | None, layout: str | None = None) -> bool:
     """Internal helper to fetch and archive a single resolved target with smart caching."""
     cfg = settings.model_copy()
     cfg.archive_dir = Path(output)
@@ -52,6 +52,8 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
     cfg.rate_limit_delay_sec = rate_limit
     if user_agent:
         cfg.user_agent = user_agent
+    if layout:
+        cfg.archive_layout = layout.lower()
 
     is_local_file = Path(target).exists()
 
@@ -162,6 +164,7 @@ def _fetch_single_target(target: str, output: str, no_images: bool, timeout: flo
 @click.option("--timeout", type=float, default=25.0, help="HTTP request timeout in seconds")
 @click.option("--rate-limit", type=float, default=1.0, help="Polite delay between requests in seconds")
 @click.option("--user-agent", type=str, default=None, help="Custom User-Agent string")
+@click.option("--layout", "-l", type=click.Choice(["hierarchical", "flat"], case_sensitive=False), default=None, help="Archive folder layout ('hierarchical' or 'flat')")
 def fetch_command(
     targets: tuple[str, ...],
     clipboard: bool,
@@ -169,7 +172,8 @@ def fetch_command(
     no_images: bool,
     timeout: float,
     rate_limit: float,
-    user_agent: str | None
+    user_agent: str | None,
+    layout: str | None = None,
 ):
     """Fetch and archive listings from URLs, short IDs, files, or clipboard."""
     console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
@@ -195,7 +199,7 @@ def fetch_command(
     for idx, target in enumerate(resolved, 1):
         if len(resolved) > 1:
             console.print(f"\n[bold cyan]--- Processing [{idx}/{len(resolved)}] ---[/bold cyan]")
-        if _fetch_single_target(target, output, no_images, timeout, rate_limit, user_agent):
+        if _fetch_single_target(target, output, no_images, timeout, rate_limit, user_agent, layout):
             success_count += 1
 
     if len(resolved) > 1:

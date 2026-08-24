@@ -617,7 +617,21 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 <div class="search-box">
                     <input type="text" id="search-input" class="search-input" placeholder="Search by ID (e.g. T4710876), Suburb, Street, Title..." oninput="filterData()">
                 </div>
-                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                    <select id="listing-type-filter" class="select-filter" onchange="filterData()">
+                        <option value="all">All Intents (Buy/Rent)</option>
+                        <option value="for_sale">For Sale (Buy)</option>
+                        <option value="to_rent">To Rent</option>
+                    </select>
+                    <select id="prop-type-filter" class="select-filter" onchange="filterData()">
+                        <option value="all">All Property Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="land">Vacant Land</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="farm">Farm</option>
+                    </select>
                     <select id="status-filter" class="select-filter" onchange="filterData()">
                         <option value="all">All Statuses</option>
                         <option value="active">Active</option>
@@ -883,6 +897,8 @@ DASHBOARD_HTML = """<!DOCTYPE html>
 
         function filterData() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const typeFilter = document.getElementById('listing-type-filter')?.value || 'all';
+            const propFilter = document.getElementById('prop-type-filter')?.value || 'all';
             const statusFilter = document.getElementById('status-filter').value;
             const sortFilter = document.getElementById('sort-filter').value;
             const provFilter = document.getElementById('geo-province-filter').value;
@@ -894,6 +910,14 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                     (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
                     (item.title && item.title.toLowerCase().includes(query)) ||
                     (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query));
+
+                // Transaction type (for_sale vs to_rent)
+                const lType = (item.listing_type || 'for_sale').toLowerCase();
+                const matchesListingType = (typeFilter === 'all') || (lType === typeFilter);
+
+                // Property category (house, apartment, townhouse, land, etc.)
+                const pType = (item.property_type || '').toLowerCase();
+                const matchesPropType = (propFilter === 'all') || (pType.includes(propFilter));
 
                 const status = (item.listing_status || 'active').toLowerCase();
                 const matchesStatus = (statusFilter === 'all') ||
@@ -909,7 +933,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
                 const matchesArea = (areaFilter === 'all' || a === areaFilter);
                 const matchesSub = (subFilter === 'all' || s === subFilter);
 
-                return matchesQuery && matchesStatus && matchesProv && matchesArea && matchesSub;
+                return matchesQuery && matchesListingType && matchesPropType && matchesStatus && matchesProv && matchesArea && matchesSub;
             });
 
             filtered.sort((a, b) => {

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5526990",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5526990",
+  "archived_at": "2026-08-24T00:33:07.886045Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|cb28592c-74af-419f-b8ac-cbad4fb11953|C2143|CD887",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=tdRu7jJL1U2jbgSnV2J52g; expires=Fri, 24-Aug-2125 00:32:54 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 00:32:53 GMT",
+    "content-length": "28936"
+  },
+  "fetch_duration_sec": 1.309220790863037,
+  "total_images_discovered": 45,
+  "total_images_archived": 45,
+  "total_archive_size_bytes": 9917850,
+  "content_fingerprint": "a835910d66aaddfa9307872a0fbd5621cd83d6deeda7873f0dabcc6ffcaf6806"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "timestamp": "2026-08-23T23:40:26.157098+00:00",
+    "snapshot_id": "20260823_234026",
+    "price": 3450000.0,
+    "status": "under_offer",
+    "fingerprint": "ce67998e45f66e9d3c22ed07814dbd4f43c829ac5c3f2cb32b504e7ba4b5be7b",
+    "diff_summary": {
+      "price_changed": false,
+      "price_diff": null,
+      "status_changed": false,
+      "old_status": null,
+      "new_status": null,
+      "badges_added": []
+    }
+  }
+]

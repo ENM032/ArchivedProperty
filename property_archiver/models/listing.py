@@ -1,5 +1,5 @@
 """
-Top-level canonical listing model with multi-agent support and land size normalization.
+Top-level canonical listing model with multi-agent support, property type, and transaction intent (buy vs rent).
 """
 
 from datetime import date, datetime, timezone
@@ -27,7 +27,8 @@ class ListingRecord(BaseModel):
     
     # Core listing attributes
     title: str | None = Field(default=None, description="Headline title of the listing")
-    property_type: str | None = Field(default=None, description="Property type (e.g. 'House', 'Apartment', 'Townhouse')")
+    listing_type: str = Field(default="for_sale", description="Transaction classification: 'for_sale' (Buy) or 'to_rent' (Rent)")
+    property_type: str | None = Field(default=None, description="Property category (e.g. 'House', 'Apartment', 'Townhouse', 'Vacant Land', 'Commercial', 'Farm')")
     
     # Lifecycle & Status Tracking
     listing_status: str = Field(
@@ -63,12 +64,10 @@ class ListingRecord(BaseModel):
     
     # Media
     images: list[ImageRecord] = Field(default_factory=list, description="Preserved listing images")
-    videos: list[VideoRecord] = Field(default_factory=list, description="Embedded video media")
+    videos: list[VideoRecord] = Field(default_factory=list, description="Preserved listing video tours")
 
-    # Raw metadata preserved for lossless reproducibility
-    raw_json_ld: list[dict[str, Any]] = Field(default_factory=list, description="Raw JSON-LD structures from the page")
-    open_graph: dict[str, str] = Field(default_factory=dict, description="OpenGraph meta tags")
-    meta_tags: dict[str, str] = Field(default_factory=dict, description="Standard HTML meta tags")
-
-    # Fingerprint for change detection
-    content_fingerprint: str | None = Field(default=None, description="SHA-256 hash of semantic listing data")
+    # Raw / Diagnostics
+    raw_json_ld: list[dict[str, Any]] = Field(default_factory=list, description="Raw schema.org JSON-LD blocks parsed from page")
+    open_graph: dict[str, str] = Field(default_factory=dict, description="Parsed Open Graph tags")
+    meta_tags: dict[str, str] = Field(default_factory=dict, description="Parsed standard HTML meta tags")
+    content_fingerprint: str | None = Field(default=None, description="Deterministic SHA-256 fingerprint of semantic listing data")

@@ -1,0 +1,528 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5510588",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5510588",
+  "extracted_at": "2026-08-24T00:17:48.726729Z",
+  "title": "4 Bedroom House in Lonehill",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-04",
+  "description": "Set in the heart of Lonehill, the neighbourhood you dreamed of, this much loved family is waiting for you. Welcoming entrance leads you to the free flowing lounge, dining room and study. Large TV room...",
+  "erf_size_m2": 1175.0,
+  "land_size_raw": "1 175 m²",
+  "floor_size_m2": 320.0,
+  "price": {
+    "amount": 3450000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 450 000",
+    "rates_and_taxes_monthly": 2443.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5510588",
+    "suburb": "Lonehill",
+    "city": "Johannesburg",
+    "region": "Lonehill, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Lonehill",
+      "T5510588"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.0,
+    "en_suites": 2.0,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": true,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3",
+      "En-suite 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Covered parking 1",
+      "Storeys 1",
+      "Pet friendly",
+      "Access gate",
+      "Pool",
+      "Staff quarters",
+      "Entrance hall",
+      "Kitchen",
+      "Garden",
+      "Scullery",
+      "Electric fencing",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Vanessa Huntley",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2287706/image/0812a3d0c3ac43918d8a1d4a82e82762_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/vanessa-huntley/2287706/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Christopher Otter",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2264952/image/e7a65c23f2464e868d5f112816896257_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/christopher-otter/2264952/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11877840/eWe9daoAy0UvZYvpP4w6q3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/eWe9daoAy0UvZYvpP4w6q3/1600/1066/contain/jpegorpng",
+      "local_filename": "001_eWe9daoAy0UvZYvpP4w6q3.jpg",
+      "sha256": "07156e62d00b0919ef79af5c897193b578c63f5a27e6db7e44b36d3fc173bf61",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 288408,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T00:17:49.985016Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11877840/sQ7nYAqapc9nujjmTgKWn5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/sQ7nYAqapc9nujjmTgKWn5/1600/1066/contain/jpegorpng",
+      "local_filename": "002_sQ7nYAqapc9nujjmTgKWn5.jpg",
+      "sha256": "faa5cd18a950b7f63c721ce93f9ff68985be5dee75a1eb3087715d67b8765308",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 321381,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:51.044061Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11877840/TgBs2vXsi5bBgmewuvJeO5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/TgBs2vXsi5bBgmewuvJeO5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_TgBs2vXsi5bBgmewuvJeO5.jpg",
+      "sha256": "b20ab9c303ee7700b4449022d7ff4ef627c449a36f41bdee28c8daa6f5c5af28",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 331273,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:50.027501Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11877840/y6EPAQUHtWDdh4AyAUUZM1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/y6EPAQUHtWDdh4AyAUUZM1/1600/1066/contain/jpegorpng",
+      "local_filename": "004_y6EPAQUHtWDdh4AyAUUZM1.jpg",
+      "sha256": "e9eb434f480054ae690f9f5daa64971c517165fae256e33b28682318712dbb2c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 325028,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:49.835850Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11877840/SN5tuRsjOqKORpsoCALwW1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/SN5tuRsjOqKORpsoCALwW1/1600/1066/contain/jpegorpng",
+      "local_filename": "005_SN5tuRsjOqKORpsoCALwW1.jpg",
+      "sha256": "2a463c2adfcf4bd045698cd86213670cdfeae797178723595bd3a835d8723f4f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 294024,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:51.203801Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11877840/gYgn1kvnTvTPbKCDNYzAy3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/gYgn1kvnTvTPbKCDNYzAy3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_gYgn1kvnTvTPbKCDNYzAy3.jpg",
+      "sha256": "6e72eb24f7e02306a5b9a23532023000944dfaa9dd22f1dbba6f696727f8e221",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135332,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:50.956690Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11877840/rnLjW9NdINkD5dSg34MWN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/rnLjW9NdINkD5dSg34MWN4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_rnLjW9NdINkD5dSg34MWN4.jpg",
+      "sha256": "28bca8b322b1210ad1b15f2dc514fd832bca5bb879282739ae5a82489b7479b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171049,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:50.717535Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11877840/1i1R3IrRKkgShfIVfzXW93/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/1i1R3IrRKkgShfIVfzXW93/1600/1066/contain/jpegorpng",
+      "local_filename": "008_1i1R3IrRKkgShfIVfzXW93.jpg",
+      "sha256": "eb2dd3b52f3af0478a1b3ea37f4b5eb84059244932ee949bf96a98be759a5036",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170806,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:50.587766Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11877840/lWE4wBXNmQsQmAPnITKGQ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/lWE4wBXNmQsQmAPnITKGQ3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_lWE4wBXNmQsQmAPnITKGQ3.jpg",
+      "sha256": "6d0b6baa2daa0394dc5cc2669e506491c7544cc70986bf6d544755d02d38b857",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141316,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:51.389649Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11877840/MG1szmiS7tWwvHZIdzcPE3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/MG1szmiS7tWwvHZIdzcPE3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_MG1szmiS7tWwvHZIdzcPE3.jpg",
+      "sha256": "be09c68456d4db67a5483ef516b189e1d0df86ad6a23478eca03330616d8889c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 210956,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:51.331302Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11877840/4HNAlry8CL7rhdhBBcAco0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/4HNAlry8CL7rhdhBBcAco0/1600/1066/contain/jpegorpng",
+      "local_filename": "011_4HNAlry8CL7rhdhBBcAco0.jpg",
+      "sha256": "0e527c4e0f082191e257e05dbfa4e9b14f8c820ff0561ad4bd3caa1fd5a9c894",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127721,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.188633Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11877840/NLG6XZ0CpGwUvtOPVcxbO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/NLG6XZ0CpGwUvtOPVcxbO7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_NLG6XZ0CpGwUvtOPVcxbO7.jpg",
+      "sha256": "88096b9fbe978050d5b254e10dfc9680e92e3e67794d29e61c5b9256c8d6821e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204617,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.272757Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11877840/d7rNCeM3qZFoX6hQ8D7MN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/d7rNCeM3qZFoX6hQ8D7MN4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_d7rNCeM3qZFoX6hQ8D7MN4.jpg",
+      "sha256": "274d7ecb12615fd432f5f01ced5f512236c59e8025bcf51a63819df9e331c776",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137801,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.353629Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11877840/Y5qMTV4evVKppbuRpIaE74/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/Y5qMTV4evVKppbuRpIaE74/1600/1066/contain/jpegorpng",
+      "local_filename": "014_Y5qMTV4evVKppbuRpIaE74.jpg",
+      "sha256": "c2afd6574fa7f47fbca5e677ced0f70f638f89b2578dd8f2c317b6f6bdea1260",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206868,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.521176Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11877840/q4LafTAzq7usClUKbYE0X6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/q4LafTAzq7usClUKbYE0X6/1600/1066/contain/jpegorpng",
+      "local_filename": "015_q4LafTAzq7usClUKbYE0X6.jpg",
+      "sha256": "416962a0a7ce90af16bce1417a32cef217bb6f68f820c22b19dc6ac7dc190338",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156988,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.661767Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11877840/b21j3dWebTPcIeg1ohMt10/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/b21j3dWebTPcIeg1ohMt10/1600/1066/contain/jpegorpng",
+      "local_filename": "016_b21j3dWebTPcIeg1ohMt10.jpg",
+      "sha256": "33905fe11078473b9a1f991a62035fbcb3e73889c15bc2e63d27fe52ade958cd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 105858,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:52.596992Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11877840/MjPBgUBdhexMRXyEJP2mG7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/MjPBgUBdhexMRXyEJP2mG7/1600/1066/contain/jpegorpng",
+      "local_filename": "017_MjPBgUBdhexMRXyEJP2mG7.jpg",
+      "sha256": "5a683745bef86512960a89eeef83268214a340d24d13db233c0e565fa6146255",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132709,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:53.377711Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11877840/TMFPOicQSVNrJ8OcAwyru5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/TMFPOicQSVNrJ8OcAwyru5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_TMFPOicQSVNrJ8OcAwyru5.jpg",
+      "sha256": "3dfa762fecb0989c3dd72553d9b556f9fb0a9b9f09cd85a93f82b65160d88ed6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153484,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:53.090980Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11877840/65YcFgehVi68V3mI9oyru5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/65YcFgehVi68V3mI9oyru5/1600/1066/contain/jpegorpng",
+      "local_filename": "019_65YcFgehVi68V3mI9oyru5.jpg",
+      "sha256": "1be898cb72f2f8f869ae4ef011e47a207686ec41831524f3ed1a68976273b36d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142067,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:53.693371Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11877840/6CzkPca8Qz6Xo8gJ3uawo6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/6CzkPca8Qz6Xo8gJ3uawo6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_6CzkPca8Qz6Xo8gJ3uawo6.jpg",
+      "sha256": "bae2f058bb339028741efd42defb1c4beb03d9626974e24c17929083e1370650",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216066,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:53.963742Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11877840/vDbLeiiU6clNEBfA0EUC60/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11877840/vDbLeiiU6clNEBfA0EUC60/1600/1066/contain/jpegorpng",
+      "local_filename": "021_vDbLeiiU6clNEBfA0EUC60.jpg",
+      "sha256": "964d83acdb8fae787517a5b41400b06f8ccdca19b8de3eed1dbfcfc012785d88",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 351841,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Lonehill photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:17:53.380502Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/372",
+            "name": "Lonehill"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5510588",
+            "name": "T5510588"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11877840/eWe9daoAy0UvZYvpP4w6q3/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lonehill, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5510588"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 450 000 | 4 Bedroom House in Lonehill | Private Property",
+    "og:description": "Set in the heart of Lonehill, the neighbourhood you dreamed of, this much loved family is waiting for you. Welcoming entrance leads you to the free flowing lounge, dining room and study. Large TV room...",
+    "og:image": "https://images.pp.co.za/listing/11877840/eWe9daoAy0UvZYvpP4w6q3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5510588"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 450 000 | 4 Bedroom House in Lonehill | Private Property",
+    "og:description": "Set in the heart of Lonehill, the neighbourhood you dreamed of, this much loved family is waiting for you. Welcoming entrance leads you to the free flowing lounge, dining room and study. Large TV room...",
+    "og:image": "https://images.pp.co.za/listing/11877840/eWe9daoAy0UvZYvpP4w6q3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5510588",
+    "description": "4 Bedroom House in Lonehill, Set in the heart of Lonehill, the neighbourhood you dreamed of, this much loved family is waiting fo",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "1c4910365a749923f62fba1551e13f92da0e69c12bc01bdb0208c2d40556884e"
+}
