@@ -1,39 +1,52 @@
 # Property Archiver (`property-archiver`)
 
-A production-grade, secure, modular, and resilient tool for archiving publicly accessible South African property listings (specifically tailored for [Private Property South Africa](https://www.privateproperty.co.za)) for legitimate offline archiving, research, and longitudinal comparison.
+A production-grade, secure, modular, and resilient tool for archiving publicly accessible South African property listings (specifically tailored for [Private Property South Africa](https://www.privateproperty.co.za)) for legitimate offline archiving, research, market analysis, and longitudinal comparison.
 
 ---
 
-## 1. Overview & Key Capabilities
+## 1. Key Capabilities & Features
 
-- **Resilient Multi-Tier Extractor**: Combines Schema.org JSON-LD structured data, OpenGraph metadata, semantic HTML structures, and fallback regex extraction to ensure maximum field capture even when page layouts shift.
-- **First-Class High-Resolution Image Preservation**: Automatically discovers all gallery assets, reconstructs original high-resolution photo URLs (e.g. `1600x1066`), deduplicates by asset hash, verifies image integrity with Pillow, and records SHA-256 checksums.
-- **Cryptographic Archive Manifests**: Every archived listing includes a `checksums.json` manifest recording SHA-256 hashes for raw HTML, metadata, normalized JSON, and media assets.
-- **Atomic Storage**: Writes to a temporary staging folder first and performs an atomic directory swap, guaranteeing that crashes or network drops cannot corrupt existing archives.
-- **Change Detection & Diffing**: Identifies semantic updates between multiple archival snapshots (price modifications, rate adjustments, status transitions, newly added/removed features, or revised descriptions).
-- **Security-First Architecture**: Built-in SSRF guards (blocking private, link-local, loopback IPv4/IPv6 ranges and unapproved hosts), path-traversal protection, response payload size limits, and safe filename sanitization.
-- **Offline & Batch Ingestion**: Supports archiving directly from local HTML snapshots as well as live HTTP(S) crawling with polite rate limiting and jittered exponential backoff.
+- **Tiered Geographic Hierarchy**: Automatically sorts and organizes listing archives into an intuitive South African regional hierarchy:
+  $$\text{Province} \longrightarrow \text{Area / Metro} \longrightarrow \text{Suburb} \longrightarrow \text{Listing ID}$$
+  *(e.g., `archive/listings/gauteng/sandton/rivonia/T4710876/`)*.
+- **Property Type & Intent Separation**: Categorizes listings across property types (**House, Apartment, Townhouse, Vacant Land, Farm, Commercial**) and transaction intent (**For Sale / Buy vs To Rent**).
+- **Interactive Web Dashboard**: Embedded modern Single Page Application (SPA) with:
+  - **Cascading Filters**: Dynamically drills down from Province $\rightarrow$ Area $\rightarrow$ Suburb.
+  - **Grouped Accordion View**: Collapsible regional sections with listing counts, total market values, and average prices.
+  - **Interactive GIS Map**: Leaflet & OpenStreetMap view plotting all property pins with GPS accuracy.
+  - **Full Property Dossiers**: Photo gallery carousel, specifications, rates/levies, amenities tags, mini-maps, and agent information.
+  - **Side-by-Side Diff Engine**: Visual comparison mode highlighting price revisions and spec alterations.
+- **Smart Image Caching & Deduplication**: High-resolution gallery photo ingestion with instant local hash lookup. Re-archiving a listing takes **<1 second** by skipping redundant network downloads.
+- **Cryptographic Integrity Ledger**: Generates a `checksums.json` SHA-256 manifest and maintains an append-only `history.json` diff ledger across successive scrapes.
+- **Multi-Format Export Engine**: Export filtered property collections directly to **CSV, indexed relational SQLite (`portfolio.db`), JSON Lines, and GIS GeoJSON FeatureCollections**.
+- **CLI Tree Explorer**: Terminal-based Rich tree explorer displaying market valuations, status ratios, and regional breakdowns.
 
 ---
 
-## 2. Archival Directory Structure
+## 2. Directory Layout: Flat vs Hierarchical
 
-Each listing is stored in a self-contained, versioned folder:
+Property Archiver defaults to the **hierarchical** directory layout:
 
 ```
 archive/
 └── listings/
-    └── T4710876/
-        ├── raw.html          # Byte-exact raw HTML snapshot as served
-        ├── listing.json      # Normalized listing data conforming to schema v1.0.0
-        ├── metadata.json     # Provenance data (timings, headers, archiver version)
-        ├── checksums.json    # Cryptographic SHA-256 manifest of all files
-        └── images/           # High-resolution gallery assets
-            ├── 001_OHWDrL0sRYBS5V4yxQIos2.jpg
-            ├── 002_QfBaAogURQxOa3iC6KATv2.jpg
-            ├── 003_PzdR5Oi5ROOW799BiUIN75.jpg
-            └── ...
+    └── gauteng/
+        └── sandton/
+            ├── lonehill/
+            │   └── T5513030/
+            │       ├── raw.html          # Byte-exact raw HTML snapshot
+            │       ├── listing.json      # Normalized JSON data (schema v1.0.0)
+            │       ├── metadata.json     # Provenance data (timings, headers, archiver version)
+            │       ├── checksums.json    # Cryptographic SHA-256 manifest
+            │       ├── history.json      # Version diff ledger & price change timeline
+            │       └── images/           # High-resolution verified photos
+            │           ├── 001_ABC123.jpg
+            │           └── ...
+            └── rivonia/
+                └── T4710876/
 ```
+
+> **Note**: The reader engine is fully backward-compatible and automatically discovers listings regardless of whether they are saved in a flat (`listings/T4710876`) or hierarchical structure.
 
 ---
 
@@ -45,7 +58,8 @@ archive/
 
 ### Installation
 ```bash
-# Clone or navigate to the repository
+# Clone the repository
+git clone https://github.com/ENM032/ArchivedProperty.git
 cd ArchivedProperty
 
 # Install in editable mode
@@ -59,124 +73,126 @@ pip install -e ".[dev]"
 
 ## 4. CLI Usage & Examples
 
-### Ingest a Live Listing URL
+### Ingest a Listing (URL or Short ID)
 ```bash
-property-archiver fetch https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876 --output ./archive
+# Ingest using full portal URL
+property-archiver fetch https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/13-winston-avenue/T4710876
+
+# Ingest using short listing ID (automatically resolved)
+property-archiver fetch T4710876
+
+# Ingest directly from system clipboard
+property-archiver fetch --clipboard
 ```
 
-### Ingest an Offline Local HTML Snapshot
+### Terminal Geographic Tree Explorer (`tree`)
+Explore the complete archive hierarchy with valuations and listing status badges in the terminal:
 ```bash
-property-archiver fetch ./tests/fixtures/sample_listing.html --output ./archive
+# View full portfolio tree
+property-archiver tree
+
+# Filter by province, area, suburb, or status
+property-archiver tree --province=Gauteng --area=Sandton --status=active
 ```
 
-### Inspect an Existing Archive
+### Launch the Web Dashboard (`serve` / `dashboard`)
 ```bash
-property-archiver inspect ./archive/listings/T4710876
+# Launches the local dashboard at http://127.0.0.1:8000
+property-archiver serve
+
+# Launch on a custom port
+property-archiver serve --port 8080
 ```
 
-### Validate Checksum Integrity
+### Multi-Format & Regional Export (`export`)
+Export all or filtered segments of the archived portfolio:
 ```bash
-property-archiver validate ./archive/listings/T4710876
+# Export entire portfolio to CSV
+property-archiver export --format=csv --output=portfolio.csv
+
+# Export specific suburb to SQLite database with spatial indexes
+property-archiver export --format=sqlite --suburb="Rivonia" --output=rivonia.db
+
+# Export to GeoJSON for QGIS / ArcGIS
+property-archiver export --format=geojson --province="Gauteng" --output=gauteng_gis.geojson
+
+# Export to JSON Lines (JSONL) for analytics pipelines
+property-archiver export --format=jsonl --output=portfolio.jsonl
 ```
 
-### Compare Two Archive Snapshots (Diff Engine)
+### Reorganize Archive Layout on Disk (`reorganize`)
+Restructure existing on-disk archives between `hierarchical` (Province/Area/Suburb) and `flat` layouts:
 ```bash
-property-archiver compare ./archive/listings/T4710876_v1 ./archive/listings/T4710876_v2
+# Preview reorganization with dry-run
+property-archiver reorganize --layout=hierarchical --dry-run
+
+# Execute restructuring
+property-archiver reorganize --layout=hierarchical
+```
+
+### Inspect & Validate Integrity
+```bash
+# Inspect listing details in a formatted table
+property-archiver inspect ./archive/listings/gauteng/sandton/rivonia/T4710876
+
+# Verify SHA-256 cryptographic checksums of all assets
+property-archiver validate ./archive/listings/gauteng/sandton/rivonia/T4710876
+
+# Compare two listing snapshots (Diff engine)
+property-archiver compare ./archive/listings/.../T4710876 ./archive/listings/.../T5513030
 ```
 
 ### Batch Ingestion
-Create a text file `urls.txt` with one URL per line:
 ```bash
-property-archiver batch urls.txt --output ./archive
+# Archive multiple listings from a text file (one URL/ID per line)
+property-archiver batch urls.txt
 ```
 
 ---
 
-## 5. Configuration & Environment Variables
+## 5. Property Classification & Intent Separation
 
-All settings can be customized via CLI flags or prefixed environment variables (`ARCHIVER_*`):
+Each archived listing is structured with two primary classification fields:
+
+| Field | Values | Description |
+|---|---|---|
+| `listing_type` | `for_sale`, `to_rent` | Differentiates properties for purchase (**Buy**) vs leases (**Rent**). |
+| `property_type` | `House`, `Apartment`, `Townhouse`, `Vacant Land`, `Commercial`, `Farm`, `Industrial` | Captures the physical structural category. |
+
+Both fields are stored in `listing.json`, indexed in `portfolio.db`, exported to CSV/GeoJSON, and filterable in the Web Dashboard.
+
+---
+
+## 6. Configuration & Environment Variables
+
+All settings can be customized via `.env` or prefixed environment variables (`ARCHIVER_*`):
 
 | Variable | Default | Description |
 |---|---|---|
-| `ARCHIVER_ARCHIVE_DIR` | `./archive` | Base directory for storing listing archives |
-| `ARCHIVER_USER_AGENT` | `PropertyArchiver/1.0...` | Custom User-Agent header |
-| `ARCHIVER_REQUEST_TIMEOUT_SEC` | `25.0` | Timeout per HTTP request in seconds |
+| `ARCHIVER_ARCHIVE_DIR` | `./archive` | Root directory for storing listing archives |
+| `ARCHIVER_ARCHIVE_LAYOUT` | `hierarchical` | Storage layout: `hierarchical` or `flat` |
+| `ARCHIVER_DOWNLOAD_IMAGES` | `true` | Enable/disable downloading gallery images |
+| `ARCHIVER_MAX_CONCURRENCY` | `6` | Maximum concurrent worker threads for downloads |
 | `ARCHIVER_RATE_LIMIT_DELAY_SEC` | `1.0` | Polite delay between requests to same domain |
-| `ARCHIVER_MAX_RETRIES` | `3` | Maximum retry attempts on 429/5xx errors |
-| `ARCHIVER_MAX_CONCURRENCY` | `4` | Maximum parallel worker threads for image downloading |
-| `ARCHIVER_MAX_RESPONSE_SIZE_BYTES` | `52428800` (50MB) | Max response size to avoid resource exhaustion |
-| `ARCHIVER_DOWNLOAD_IMAGES` | `true` | Set `false` to skip downloading image media |
+| `ARCHIVER_REQUEST_TIMEOUT_SEC` | `25.0` | Socket timeout per HTTP request |
+| `ARCHIVER_MAX_RETRIES` | `3` | Maximum retry attempts on transient network errors |
+| `ARCHIVER_USER_AGENT` | `Mozilla/5.0...` | Custom User-Agent header |
 
 ---
 
-## 6. Architecture & Data Flow
-
-```
-Input (URL or HTML File)
-          │
-          ▼
-┌───────────────────────────┐
-│ Security & SSRF Guard     │ -> Checks scheme, private IPs, allowed hosts
-└───────────────────────────┘
-          │
-          ▼
-┌───────────────────────────┐
-│ Fetcher (httpx Engine)    │ -> Polite rate limiting, jitter, backoff
-└───────────────────────────┘
-          │
-          ▼
-┌───────────────────────────┐
-│ Extractor Pipeline        │
-│  ├─ JSON-LD Parser        │ -> Breadcrumbs, coordinates, specifications
-│  ├─ OpenGraph & Meta      │ -> Title, social descriptions, fallback tags
-│  ├─ Semantic DOM Parser   │ -> Details, features list, rates, taxes
-│  └─ Media Resolver        │ -> High-res gallery discovery & deduplication
-└───────────────────────────┘
-          │
-          ▼
-┌───────────────────────────┐
-│ Normalizer & Validator    │ -> Pydantic v2 validation & type coercion
-└───────────────────────────┘
-          │
-          ▼
-┌───────────────────────────┐
-│ Image Downloader          │ -> Concurrency-bounded streaming, Pillow validation, SHA-256
-└───────────────────────────┘
-          │
-          ▼
-┌───────────────────────────┐
-│ Atomic Archive Writer     │ -> Staging directory -> checksums manifest -> atomic rename
-└───────────────────────────┘
-```
-
----
-
-## 7. Maintenance & Updating Extractors
-
-When Private Property updates its website markup, update the designated extractor located at:
-`property_archiver/extractors/private_property.py`
-
-### Extractor Extension Points
-- **JSON-LD Schema**: Handled in `_extract_json_ld()`. Check if `@type` changed (e.g. `SingleFamilyResidence`, `Residence`, `House`).
-- **DOM CSS Selectors**: Centralized in `_extract_details()` and `_extract_features()`. Update class name regexes (`property-details__list-item`, `property-features__list-item`).
-- **Image URL Resolvers**: Located in `_extract_images()`. If CDN patterns shift from `images.pp.co.za/listing/{id}/{hash}/{w}/{h}/...`, adjust `PP_IMG_HASH_RE`.
-
----
-
-## 8. Running the Test Suite
+## 7. Running Tests
 
 ```bash
-# Run all unit, fixture, and integration tests
+# Run all unit, integration, and security tests
 pytest -v
 
-# Run with test coverage report
+# Run with test coverage
 pytest --cov=property_archiver tests/
 ```
 
 ---
 
-## 9. Legal & Ethical Considerations
+## 8. Legal & Ethical Considerations
 
-- **Public Data Only**: This tool only extracts publicly visible data intended for human viewing. It does not access private accounts or bypass access controls.
-- **Polite Crawling**: Respect target servers by retaining default rate limits (`rate_limit_delay_sec >= 1.0`), avoiding high concurrency, and obeying server error signals.
-- **Privacy**: Does not harvest unnecessary private individual personal data.
+- **Public Data Only**: This tool only archives publicly visible real estate listings for personal offline research and comparison.
+- **Polite Crawling**: Built-in polite rate limits (`rate_limit_delay_sec >= 1.0`), bounded concurrency, and smart caching reduce load on portal servers.

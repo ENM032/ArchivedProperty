@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5112771",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/T5112771",
+  "extracted_at": "2026-08-24T00:51:16.007205Z",
+  "title": "3 Bedroom Apartment in The Polofields",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-06-11",
+  "description": "Discover contemporary living in this beautifully designed 3-bedroom, 2-bathroom apartment situated on the 1st floor of a highly sought-after complex. The apartment features a spacious open-plan living...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 110.0,
+  "price": {
+    "amount": 2200000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 200 000",
+    "rates_and_taxes_monthly": 1290.0,
+    "levies_monthly": 1800.0
+  },
+  "location": {
+    "street_address": "The Polofields",
+    "suburb": "The Polofields",
+    "city": "Johannesburg",
+    "region": "The Polofields, Midrand",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Midrand",
+      "Waterfall",
+      "The Polofields",
+      "T5112771"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Pool",
+      "Security post"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Rickus Bouwer",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2262188/image/0f37c32335624ecd9d5ed6c37f900723_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/rickus-bouwer/2262188/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11199625/r5N3KpTvQCGDSNBC5FytT4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/r5N3KpTvQCGDSNBC5FytT4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_r5N3KpTvQCGDSNBC5FytT4.jpg",
+      "sha256": "3f5180df7ff44612d0f305fbebd9afd2d9a7c4a485d44a93de05729c9f8bdece",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 224574,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T00:51:18.118382Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11199625/bc2LdSoTJ4tOvi29mzj052/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/bc2LdSoTJ4tOvi29mzj052/1600/1066/contain/jpegorpng",
+      "local_filename": "002_bc2LdSoTJ4tOvi29mzj052.jpg",
+      "sha256": "85c553d97e16ccad67da85a98e44751b8e2380ce621ac796e0de05046db27e63",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139021,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:17.642204Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11199625/DLcN5NXPjB8eIWszgIG6o6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/DLcN5NXPjB8eIWszgIG6o6/1600/1066/contain/jpegorpng",
+      "local_filename": "003_DLcN5NXPjB8eIWszgIG6o6.jpg",
+      "sha256": "26eae0b2d28644d56db20486acd6ec4485d6ea74c638fbec6ba1adf5614b3db9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 200984,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:17.833900Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11199625/sbhQe5bUBuuYyNyBs6kWN6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/sbhQe5bUBuuYyNyBs6kWN6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_sbhQe5bUBuuYyNyBs6kWN6.jpg",
+      "sha256": "41d8ba4738a6d224c7e60141e899a35d5706acdf060ecc115d6b5cd98a2464e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134704,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:17.145549Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11199625/bvbBe92rFrWrzlnPgzHKI6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/bvbBe92rFrWrzlnPgzHKI6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_bvbBe92rFrWrzlnPgzHKI6.jpg",
+      "sha256": "7e473fa536f0f716f788ebe159d2fb6421abf2e4343d08e9cd850a950fba6e97",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 109849,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:17.661137Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11199625/qeNthQtHOHJd4OsDzbcgI0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/qeNthQtHOHJd4OsDzbcgI0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_qeNthQtHOHJd4OsDzbcgI0.jpg",
+      "sha256": "1b2524eda662a079530aa83d09e76b6f80455c521bf70f01cec8dd3503dc6e4d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123517,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:17.617926Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11199625/zwvpLmbtYNJPjNuMzDb3K0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/zwvpLmbtYNJPjNuMzDb3K0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_zwvpLmbtYNJPjNuMzDb3K0.jpg",
+      "sha256": "853e4a782a21fafadfa7b4bb4e3fb8049c8c1eb910c223adf89bbb406a65b788",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121329,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.071791Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11199625/Q1PzTYzFBbdM1Wte33krv1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/Q1PzTYzFBbdM1Wte33krv1/1600/1066/contain/jpegorpng",
+      "local_filename": "008_Q1PzTYzFBbdM1Wte33krv1.jpg",
+      "sha256": "3002fec44b998bcd8b2d1525140829e9c297988585267622c00e1c4a7d55abf6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171379,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.976265Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11199625/OkCpT5TaNaia73A7Azojs6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/OkCpT5TaNaia73A7Azojs6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_OkCpT5TaNaia73A7Azojs6.jpg",
+      "sha256": "c3b65e560dd52e6783060a9f55977db16c83cf07af885b793479971ab026e3ee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118407,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.818929Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11199625/AcyduLF8oksaPNVAknX9L3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/AcyduLF8oksaPNVAknX9L3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_AcyduLF8oksaPNVAknX9L3.jpg",
+      "sha256": "6164a2265ba22483fa5dfd9f9eab92b50509be74b5b8040a1663c36692b46a2e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115257,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.861495Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11199625/YGKTvWdy8MxrvzfIUJt704/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/YGKTvWdy8MxrvzfIUJt704/1600/1066/contain/jpegorpng",
+      "local_filename": "011_YGKTvWdy8MxrvzfIUJt704.jpg",
+      "sha256": "50dd3c7e1c44cd5fd6bfb36f1287210d6a6c5c5be905167342d04f99c93f555d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 117064,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.991896Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11199625/v9jAF9dn6IZaai6FUsMFP2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/v9jAF9dn6IZaai6FUsMFP2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_v9jAF9dn6IZaai6FUsMFP2.jpg",
+      "sha256": "88187956869ef34181ff6c740f09e7d1b29e71b9d64bce70fc9f4bc2d33962a9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116042,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:19.229132Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11199625/VC9t3cNO4R3tQHYkhMOGo5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/VC9t3cNO4R3tQHYkhMOGo5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_VC9t3cNO4R3tQHYkhMOGo5.jpg",
+      "sha256": "48cf68d0bac0881ca8cc540a8b4686e9a65dc9133333bfb573fd6563dfbe93f0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145843,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:18.483583Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11199625/alynxVQvagOdkltSm4LI94/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/alynxVQvagOdkltSm4LI94/1600/1066/contain/jpegorpng",
+      "local_filename": "014_alynxVQvagOdkltSm4LI94.jpg",
+      "sha256": "3249689e09a60c30faf325d3b069e96f71839836c32edebdc1ec1fc72dda5dcc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128571,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:19.984562Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11199625/M1J5KQzky96E4aZ3FTCut3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/M1J5KQzky96E4aZ3FTCut3/1600/1066/contain/jpegorpng",
+      "local_filename": "015_M1J5KQzky96E4aZ3FTCut3.jpg",
+      "sha256": "0de516e4e5094f3a270806b8edec17bf5ff80a9725cd3c840e1b61cb9589123c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185834,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:20.178944Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11199625/783DywKsd4WiFSatDTWIh6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/783DywKsd4WiFSatDTWIh6/1600/1066/contain/jpegorpng",
+      "local_filename": "016_783DywKsd4WiFSatDTWIh6.jpg",
+      "sha256": "78d542f226d848cfa887e354cdd1214331eda5487276c32bc91de66c2412376f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157713,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:20.228858Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11199625/9gHCnKqLuf3yHI5kXHFxZ2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/9gHCnKqLuf3yHI5kXHFxZ2/1600/1066/contain/jpegorpng",
+      "local_filename": "017_9gHCnKqLuf3yHI5kXHFxZ2.jpg",
+      "sha256": "4864027c60238a41fb531d082f85d8b40b5db6b5ca5c024c57ded4b5b980816d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146215,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:20.368361Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11199625/80K5ldevGI6FZlRWhy2C25/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/80K5ldevGI6FZlRWhy2C25/1600/1066/contain/jpegorpng",
+      "local_filename": "018_80K5ldevGI6FZlRWhy2C25.jpg",
+      "sha256": "3d689a43e2671cf3700e9cd631acf8f233f07e01945de12af5b604e4e6f8be0b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127625,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:19.369218Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11199625/90tY0hgdOv0JEaAiktWQO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11199625/90tY0hgdOv0JEaAiktWQO7/1600/1066/contain/jpegorpng",
+      "local_filename": "019_90tY0hgdOv0JEaAiktWQO7.jpg",
+      "sha256": "a5ada0685a8cec9e5da53d018c81adf44045b156b74c20fef8a19042b86ef4f2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 299712,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in The Polofields photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T00:51:21.086027Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/24",
+            "name": "Midrand"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/1256",
+            "name": "Waterfall"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/6089",
+            "name": "The Polofields"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/T5112771",
+            "name": "T5112771"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11199625/r5N3KpTvQCGDSNBC5FytT4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "The Polofields, Midrand",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/T5112771"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 200 000 | 3 Bedroom Apartment in The Polofields | Private Property",
+    "og:description": "Discover contemporary living in this beautifully designed 3-bedroom, 2-bathroom apartment situated on the 1st floor of a highly sought-after complex. The apartment features a spacious open-plan living...",
+    "og:image": "https://images.pp.co.za/listing/11199625/r5N3KpTvQCGDSNBC5FytT4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/T5112771"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 200 000 | 3 Bedroom Apartment in The Polofields | Private Property",
+    "og:description": "Discover contemporary living in this beautifully designed 3-bedroom, 2-bathroom apartment situated on the 1st floor of a highly sought-after complex. The apartment features a spacious open-plan living...",
+    "og:image": "https://images.pp.co.za/listing/11199625/r5N3KpTvQCGDSNBC5FytT4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/the-polofields/T5112771",
+    "description": "3 Bedroom Apartment in The Polofields, Discover contemporary living in this beautifully designed 3-bedroom, 2-bathroom apartment situated o",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "63f6907f591070f64ac3f443154b4eab5ed3058c52276f94660e287938bd77d6"
+}

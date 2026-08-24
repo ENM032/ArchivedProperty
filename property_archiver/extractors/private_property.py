@@ -90,6 +90,14 @@ class PrivatePropertyExtractor(BaseExtractor):
             soup, json_ld_residence, bundle_params
         )
 
+        # Detect transaction type (For Sale / Buy vs To Rent)
+        listing_type = "for_sale"
+        url_lower = url.lower()
+        if "to-rent" in url_lower or "for-rent" in url_lower or "/rent/" in url_lower:
+            listing_type = "to_rent"
+        elif bundle_params.get("listingType") and "rent" in str(bundle_params.get("listingType")).lower():
+            listing_type = "to_rent"
+
         # Step 9: Extract Features & Amenities
         features = self._extract_features(soup, json_ld_residence)
 
@@ -112,6 +120,7 @@ class PrivatePropertyExtractor(BaseExtractor):
             canonical_url=url,
             extracted_at=datetime.now(timezone.utc),
             title=title,
+            listing_type=listing_type,
             property_type=prop_type,
             listing_status=status,
             status_badges=badges,

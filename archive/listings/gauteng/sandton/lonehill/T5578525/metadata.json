@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5578525",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/33-buchner-crescent/T5578525#fullscreengallery",
+  "archived_at": "2026-08-24T00:40:25.051231Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|e2eb657e-213b-42f6-98ea-fc1c6f9924ff|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=G7n3JEb2skiFjeuzOey4Wg; expires=Fri, 24-Aug-2125 00:40:08 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 00:40:08 GMT",
+    "content-length": "34078"
+  },
+  "fetch_duration_sec": 1.3350138664245605,
+  "total_images_discovered": 73,
+  "total_images_archived": 73,
+  "total_archive_size_bytes": 8099173,
+  "content_fingerprint": "377dd5abad794373ab7f61496813688637ad911bc377f898ffe122a1a86935f6"
+}
