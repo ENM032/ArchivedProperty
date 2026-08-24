@@ -1,0 +1,513 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5584942",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/T5584942#fullscreengallery",
+  "extracted_at": "2026-08-24T14:42:01.488149Z",
+  "title": "4 Bedroom House in Flora Gardens",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-08-12",
+  "description": "4 Bedroom Family Home  which just smells like new paint & tiles, now available as a partly Furnished Property. One bedroom separate,  as a guestroom with en-suite bathroom. Modern finishing touches th...",
+  "erf_size_m2": 1400.0,
+  "land_size_raw": "1 400 m²",
+  "floor_size_m2": 350.0,
+  "price": {
+    "amount": 2090000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 090 000",
+    "rates_and_taxes_monthly": 2500.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5584942",
+    "suburb": "Flora Gardens",
+    "city": "Gauteng South",
+    "region": "Flora Gardens, Vanderbijlpark",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Gauteng South",
+      "Vanderbijlpark",
+      "Flora Gardens",
+      "T5584942"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.5,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3.5",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Covered parking 6",
+      "Pet friendly",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Staff quarters",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Pattie Rossouw",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2367239/image/25f73adb23c2482bb777b5eee0cf4c76_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/pattie-rossouw/2367239/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/12007039/RtuNtmOgJ92wZb55KeFlK4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/RtuNtmOgJ92wZb55KeFlK4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_RtuNtmOgJ92wZb55KeFlK4.png",
+      "sha256": "3a738ba6a27b2a721a22411e6bdd006127d670fdbd2f4ca1b9cd9e50b50b63a0",
+      "mime_type": "image/png",
+      "file_size_bytes": 3269314,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T14:42:03.483552Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/12007039/irsx7adD2u4V2ex7sJ1aA5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/irsx7adD2u4V2ex7sJ1aA5/1600/1066/contain/jpegorpng",
+      "local_filename": "002_irsx7adD2u4V2ex7sJ1aA5.png",
+      "sha256": "0a5ef6df0f94bd0161a4ee776553eb2e5b7e3b53d84b64013eeec6b7ad349951",
+      "mime_type": "image/png",
+      "file_size_bytes": 3317896,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:04.108421Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/12007039/6fUqHzhbak60u7486glrF7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/6fUqHzhbak60u7486glrF7/1600/1066/contain/jpegorpng",
+      "local_filename": "003_6fUqHzhbak60u7486glrF7.png",
+      "sha256": "feb8bb01b34e77de03b3e80c56ab39e076b36c8e66c4eb22b72494f47621dafe",
+      "mime_type": "image/png",
+      "file_size_bytes": 2056693,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:02.849505Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/12007039/IF2kwzTOq6jGoYvosxDVC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/IF2kwzTOq6jGoYvosxDVC2/1600/1066/contain/jpegorpng",
+      "local_filename": "004_IF2kwzTOq6jGoYvosxDVC2.png",
+      "sha256": "cfea7275561e6ebd75aad89b301b0c1f43444377309d2ab82fcbde31de64978b",
+      "mime_type": "image/png",
+      "file_size_bytes": 2232841,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:04.319840Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/12007039/c7NL0XDVIvxIbnRa6cK3s5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/c7NL0XDVIvxIbnRa6cK3s5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_c7NL0XDVIvxIbnRa6cK3s5.png",
+      "sha256": "712795b4010edf26ac36619502a9cbff1d5e1cc8542a73a53143a2c4cb595d89",
+      "mime_type": "image/png",
+      "file_size_bytes": 2064247,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:04.109177Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/12007039/Uwo3Oun61dxK4DkT0dHXu6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/Uwo3Oun61dxK4DkT0dHXu6/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Uwo3Oun61dxK4DkT0dHXu6.png",
+      "sha256": "b53b390315a7e1c0cd2ac80aa5a69ce7af5be6f08fbb66090d597becf5e0d5e8",
+      "mime_type": "image/png",
+      "file_size_bytes": 2363004,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:04.631546Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/12007039/D6xHurOlFQG2x8CshS4Hv6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/D6xHurOlFQG2x8CshS4Hv6/1600/1066/contain/jpegorpng",
+      "local_filename": "007_D6xHurOlFQG2x8CshS4Hv6.png",
+      "sha256": "26ddd715d1a31af1f665cf8554a9054f1b1b25201f94105d3d8ff503e6c40c71",
+      "mime_type": "image/png",
+      "file_size_bytes": 1940090,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:03.693651Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/12007039/JbE27IYqsDR4IWY7tMtlC3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/JbE27IYqsDR4IWY7tMtlC3/1600/1066/contain/jpegorpng",
+      "local_filename": "008_JbE27IYqsDR4IWY7tMtlC3.png",
+      "sha256": "223b74fe4cb93fdf334c216f101f1a461d3d43ce2b107c39ea50d753913cee27",
+      "mime_type": "image/png",
+      "file_size_bytes": 1987752,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:07.934971Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/12007039/nY9ILVD17cO2iByBhmpUf7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/nY9ILVD17cO2iByBhmpUf7/1600/1066/contain/jpegorpng",
+      "local_filename": "009_nY9ILVD17cO2iByBhmpUf7.png",
+      "sha256": "01dd9b7e66a37faa3b37dd61f7c0751c92f1a86687556eb110f1484d42fb620f",
+      "mime_type": "image/png",
+      "file_size_bytes": 2285371,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:05.089066Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/12007039/2rp9QTyGP9JvpT8vAaV8S3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/2rp9QTyGP9JvpT8vAaV8S3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_2rp9QTyGP9JvpT8vAaV8S3.png",
+      "sha256": "19e544f154836089769433eb77cfa5de62ff45e4603f24f62660743731fca57c",
+      "mime_type": "image/png",
+      "file_size_bytes": 2466284,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:06.194228Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/12007039/Jc6gQvSCiqJ18vlRgraXl0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/Jc6gQvSCiqJ18vlRgraXl0/1600/1066/contain/jpegorpng",
+      "local_filename": "011_Jc6gQvSCiqJ18vlRgraXl0.png",
+      "sha256": "e5a34e278a78345c62c82f119fd60f0d85fe6d896c09485230d90f6f2c005d13",
+      "mime_type": "image/png",
+      "file_size_bytes": 2262339,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:06.287537Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/12007039/mRV4vbTu6PD7H6wfxMn6w1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/mRV4vbTu6PD7H6wfxMn6w1/1600/1066/contain/jpegorpng",
+      "local_filename": "012_mRV4vbTu6PD7H6wfxMn6w1.png",
+      "sha256": "22fc923d5c169c1d8eaeb1adb8d1540c91007eb81911e1b4cbec8b3f7a570fc2",
+      "mime_type": "image/png",
+      "file_size_bytes": 2087635,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:05.388598Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/12007039/7lHEZ8WGC2WnpysCZ0Mdl6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/7lHEZ8WGC2WnpysCZ0Mdl6/1600/1066/contain/jpegorpng",
+      "local_filename": "013_7lHEZ8WGC2WnpysCZ0Mdl6.png",
+      "sha256": "a24d63bfbb86e2e80fcc8fb6ccecff796adf91119329c1afb01278761a14e8e6",
+      "mime_type": "image/png",
+      "file_size_bytes": 2583120,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:06.216143Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/12007039/ZPBfIFRBphFP1jIcqpnUC5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/ZPBfIFRBphFP1jIcqpnUC5/1600/1066/contain/jpegorpng",
+      "local_filename": "014_ZPBfIFRBphFP1jIcqpnUC5.png",
+      "sha256": "89ab8f9b037f140c9c5bcd7174ac14c24c926ad6b01652bc8d11bfe720f4f4d2",
+      "mime_type": "image/png",
+      "file_size_bytes": 2069952,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:06.561307Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/12007039/bGESXSt1zRUT1Vvg9P1V20/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/bGESXSt1zRUT1Vvg9P1V20/1600/1066/contain/jpegorpng",
+      "local_filename": "015_bGESXSt1zRUT1Vvg9P1V20.png",
+      "sha256": "86f2a8802c8cd9efee717f14c0d8946a1cd623c77f1d07961a75d8ba9a848ad7",
+      "mime_type": "image/png",
+      "file_size_bytes": 1993155,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:07.301386Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/12007039/SkZPljI5rkf11e27os6Sk1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/SkZPljI5rkf11e27os6Sk1/1600/1066/contain/jpegorpng",
+      "local_filename": "016_SkZPljI5rkf11e27os6Sk1.png",
+      "sha256": "09c76c6b56f6b08f6cd79d85514f311ae43751f6c21cdefa3f3b69a62624fb0e",
+      "mime_type": "image/png",
+      "file_size_bytes": 1848111,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:08.080948Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/12007039/vTcc69Mvcxwo6peYAEZl54/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/vTcc69Mvcxwo6peYAEZl54/1600/1066/contain/jpegorpng",
+      "local_filename": "017_vTcc69Mvcxwo6peYAEZl54.png",
+      "sha256": "325bb4bb1470b1d88cb0daf4fe383ba0b2d812fa49d795a2a7d4f87ed1f35fe2",
+      "mime_type": "image/png",
+      "file_size_bytes": 2059628,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:07.812030Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/12007039/DoPraCkq4w9s9SeOv1VdA4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/DoPraCkq4w9s9SeOv1VdA4/1600/1066/contain/jpegorpng",
+      "local_filename": "018_DoPraCkq4w9s9SeOv1VdA4.png",
+      "sha256": "458a6096248219134344797d3dc4c223577d43fb34c759b8b84d62ce90239edd",
+      "mime_type": "image/png",
+      "file_size_bytes": 2339850,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:08.869914Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/12007039/KCdU1LJBts84rqieCQreU6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/KCdU1LJBts84rqieCQreU6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_KCdU1LJBts84rqieCQreU6.png",
+      "sha256": "99b30e1d094a8f8d7c57940a747945f33ec627896bae83583d2963526ee4f7ca",
+      "mime_type": "image/png",
+      "file_size_bytes": 3153968,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:08.450731Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/12007039/wX0LFqAyTOS7ZA5poj1x40/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/wX0LFqAyTOS7ZA5poj1x40/1600/1066/contain/jpegorpng",
+      "local_filename": "020_wX0LFqAyTOS7ZA5poj1x40.png",
+      "sha256": "307caa65ca1545a8b48d02791fcfd888298240912ee97bd2482d55f1512a443b",
+      "mime_type": "image/png",
+      "file_size_bytes": 2673008,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:08.572227Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/12007039/zE6n4IT05c2XQzoAHfmE67/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12007039/zE6n4IT05c2XQzoAHfmE67/1600/1066/contain/jpegorpng",
+      "local_filename": "021_zE6n4IT05c2XQzoAHfmE67.jpg",
+      "sha256": "183d3df87d045d808b74cf50c12572df5c29ee3fd96fb6e3f8574b253af82dfb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 342909,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Flora Gardens photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:42:08.532242Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/812",
+            "name": "Gauteng South"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/814",
+            "name": "Vanderbijlpark"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/2383",
+            "name": "Flora Gardens"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/T5584942",
+            "name": "T5584942"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/12007039/RtuNtmOgJ92wZb55KeFlK4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Flora Gardens, Vanderbijlpark",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/T5584942"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 090 000 | 4 Bedroom House in Flora Gardens | Private Property",
+    "og:description": "4 Bedroom Family Home  which just smells like new paint & tiles, now available as a partly Furnished Property. One bedroom separate,  as a guestroom with en-suite bathroom. Modern finishing touches th...",
+    "og:image": "https://images.pp.co.za/listing/12007039/RtuNtmOgJ92wZb55KeFlK4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/T5584942"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 090 000 | 4 Bedroom House in Flora Gardens | Private Property",
+    "og:description": "4 Bedroom Family Home  which just smells like new paint & tiles, now available as a partly Furnished Property. One bedroom separate,  as a guestroom with en-suite bathroom. Modern finishing touches th...",
+    "og:image": "https://images.pp.co.za/listing/12007039/RtuNtmOgJ92wZb55KeFlK4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/flora-gardens/T5584942",
+    "description": "4 Bedroom House in Flora Gardens, 4 Bedroom Family Home  which just smells like new paint & tiles, now available as a partly Furnished",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "f3ce2c7dcc0b2ce6309b6a2bad302da75d08f59188397ce3a40ed3aa1cb23bad"
+}

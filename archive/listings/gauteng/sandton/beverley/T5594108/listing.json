@@ -1,0 +1,634 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5594108",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5594108",
+  "extracted_at": "2026-08-24T11:19:12.602959Z",
+  "title": "3 Bedroom House in Beverley",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-08-20",
+  "description": "Beautifully Renovated Family Home on 756m² stand in Leafy Beverley, Lonehill \n\nTucked away in one of Beverleys most desirable leafy streets, this beautifully renovated full-title residence offers the ...",
+  "erf_size_m2": 756.0,
+  "land_size_raw": "756 m²",
+  "floor_size_m2": 278.0,
+  "price": {
+    "amount": 4399000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 399 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5594108",
+    "suburb": "Beverley",
+    "city": "Johannesburg",
+    "region": "Beverley, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Beverley",
+      "T5594108"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Garage parking 1",
+      "Storeys 1",
+      "Pet friendly",
+      "Built in cupboards",
+      "Security post",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Tumisang Matlholwa",
+    "agency_name": null,
+    "agency_logo_url": "https://prppublicstore.blob.core.windows.net/live-za-content/placeholders/agents/img.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/tumisang-matlholwa/2366165/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/12023647/VY6dIKkh51dbBpeZZw7JS3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/VY6dIKkh51dbBpeZZw7JS3/1600/1066/contain/jpegorpng",
+      "local_filename": "001_VY6dIKkh51dbBpeZZw7JS3.jpg",
+      "sha256": "c4036966dc3f936d898c015f9d7d83ccaa002e0dad6dd2a8058fedb3cec89f90",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 380515,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:19:13.740817Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/12023647/wuPmTmFe6GcqfyC9HKegF2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/wuPmTmFe6GcqfyC9HKegF2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_wuPmTmFe6GcqfyC9HKegF2.jpg",
+      "sha256": "5c35d897be3aec0c72a98a42105ab25f5a39c8c2ec6f9a54af2f8f7e21de99ac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 353336,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.598425Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/12023647/9mbaBZ69aagHawDVam5Wl3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/9mbaBZ69aagHawDVam5Wl3/1600/1066/contain/jpegorpng",
+      "local_filename": "003_9mbaBZ69aagHawDVam5Wl3.jpg",
+      "sha256": "26cfbbcd41ae0d565846fd5687c3a905d274bab5fc854d5f16ed5abfa5a6881c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 327207,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.587839Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/12023647/wtveHoPHJHwbEhTHTRDIf6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/wtveHoPHJHwbEhTHTRDIf6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_wtveHoPHJHwbEhTHTRDIf6.jpg",
+      "sha256": "2c6fa2f8127cc871cc6e92a998b5df685d5b8e04d30852e77cf806c59825fde6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 363434,
+      "width": 1600,
+      "height": 1062,
+      "alt_text": "3 Bedroom House in Beverley photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.598075Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/12023647/j6klMy3ECfkQ7omhns1gQ5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/j6klMy3ECfkQ7omhns1gQ5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_j6klMy3ECfkQ7omhns1gQ5.jpg",
+      "sha256": "b39985d682e0ffe48b49e097dfce60cc98b62ef9a2e34b20995aecc8ce2e7959",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 316326,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.861802Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/12023647/RzQNFRMe409p99Axo7pDf1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/RzQNFRMe409p99Axo7pDf1/1600/1066/contain/jpegorpng",
+      "local_filename": "006_RzQNFRMe409p99Axo7pDf1.jpg",
+      "sha256": "4f1ba275a5c105c793d7e8e516f600b58087aefe545f37f0acc4b2686d3621b4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 356965,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.600899Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/12023647/wpX295eyJrMlhvl5pIrvs4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/wpX295eyJrMlhvl5pIrvs4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_wpX295eyJrMlhvl5pIrvs4.jpg",
+      "sha256": "dee2e0d88cd83e0e75d6114a8a78085a3a05195182235e97a0e080f8b60a7a87",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 164406,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.957129Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/12023647/2FqdEeRgd81IY8XjiMb5f2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/2FqdEeRgd81IY8XjiMb5f2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_2FqdEeRgd81IY8XjiMb5f2.jpg",
+      "sha256": "8208ad3c029d0a7063ded8a27054ef25fab711375175e163c18bb313d781d53f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 242695,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.954833Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/12023647/ZvdLOmCbukzkAcSqkTcET5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/ZvdLOmCbukzkAcSqkTcET5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_ZvdLOmCbukzkAcSqkTcET5.jpg",
+      "sha256": "46f92ba87d4a1a61ea8dd030e7c8a2c8021d436fe83216c8835ee98016073f7e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152038,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:13.954988Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/12023647/g1KTnz4JauSwt2R1DlX6o3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/g1KTnz4JauSwt2R1DlX6o3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_g1KTnz4JauSwt2R1DlX6o3.jpg",
+      "sha256": "6f65266fd322ff5b5d6ffc6421a5edf18dff24b4b9923984a95aa4fe3fa7b756",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206836,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.127651Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/12023647/ekPCljCXKDyyqVvCPD2aB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/ekPCljCXKDyyqVvCPD2aB2/1600/1066/contain/jpegorpng",
+      "local_filename": "011_ekPCljCXKDyyqVvCPD2aB2.jpg",
+      "sha256": "99d0e5b63b1b83d05af4bf26df70e829fab78d04936694434351a7ddf2c91dfd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154686,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.135163Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/12023647/9EUWzQcICPRqzsg1fVM6d7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/9EUWzQcICPRqzsg1fVM6d7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_9EUWzQcICPRqzsg1fVM6d7.jpg",
+      "sha256": "2f717eaa983ea26ab485358fb1ba88ee5a921933ee7a6cb933e7a0bcc988c7e1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 240275,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.242804Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/12023647/Ll0AAuxE7c2qe2rDqKZiq2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/Ll0AAuxE7c2qe2rDqKZiq2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_Ll0AAuxE7c2qe2rDqKZiq2.jpg",
+      "sha256": "557c130edfe4d647ec630037ec51591401e7d2964c0e4b5b577f4e3b362e3767",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 234567,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.643056Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/12023647/H3kqdUPnZgcwqFIdE6zOr3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/H3kqdUPnZgcwqFIdE6zOr3/1600/1066/contain/jpegorpng",
+      "local_filename": "014_H3kqdUPnZgcwqFIdE6zOr3.jpg",
+      "sha256": "a383cdd3349ce2ae238131701260609b0abb66fb44dfae1c78bb94ccfe463dcb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189338,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.351317Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/12023647/2qyp7VN25AOuGJ9O5vFPv3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/2qyp7VN25AOuGJ9O5vFPv3/1600/1066/contain/jpegorpng",
+      "local_filename": "015_2qyp7VN25AOuGJ9O5vFPv3.jpg",
+      "sha256": "b0c35542480e78aaa612bd0f6f5f1231f663f20b21117b217a17d6874c18ab4d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134877,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.321576Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/12023647/VchldUAzQocuYOJzvxpcT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/VchldUAzQocuYOJzvxpcT7/1600/1066/contain/jpegorpng",
+      "local_filename": "016_VchldUAzQocuYOJzvxpcT7.jpg",
+      "sha256": "ca24d8fee5ed62d2c015692ad54c55219431f6ecd4823be7a9b8bd7e079abf00",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 161753,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.646449Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/12023647/wypJFV0EtFLiEaxFOeJ8L1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/wypJFV0EtFLiEaxFOeJ8L1/1600/1066/contain/jpegorpng",
+      "local_filename": "017_wypJFV0EtFLiEaxFOeJ8L1.jpg",
+      "sha256": "0ceeb654254f938818d889828b9e40179858b8fd6ef18d810bcbd754ef8db095",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133615,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.537026Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/12023647/gK3YbZKKRaRsDvmff3Sv14/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/gK3YbZKKRaRsDvmff3Sv14/1600/1066/contain/jpegorpng",
+      "local_filename": "018_gK3YbZKKRaRsDvmff3Sv14.jpg",
+      "sha256": "98f183330f0a79ad325a8ef6ec41d30e89d95ab0a1d75781b02faf5eeb468521",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190073,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.873175Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/12023647/tyZlOzirFGfmVBZnE2c155/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/tyZlOzirFGfmVBZnE2c155/1600/1066/contain/jpegorpng",
+      "local_filename": "019_tyZlOzirFGfmVBZnE2c155.jpg",
+      "sha256": "449760985d67b25b0dae89c0f77aa6e3a275f3ee93822dcb8de210a635c73bb7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 218467,
+      "width": 1600,
+      "height": 1062,
+      "alt_text": "3 Bedroom House in Beverley photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.755859Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/12023647/gw1YEFhLdMgmj2W7Zlisb6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/gw1YEFhLdMgmj2W7Zlisb6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_gw1YEFhLdMgmj2W7Zlisb6.jpg",
+      "sha256": "375d78c72cf58f6411e0059fa737edf3d5e2d8e775063e29913260b32fa4f3d7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191047,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:14.903420Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/12023647/BinHuNxgL3eD4VJzlGEXA6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/BinHuNxgL3eD4VJzlGEXA6/1600/1066/contain/jpegorpng",
+      "local_filename": "021_BinHuNxgL3eD4VJzlGEXA6.jpg",
+      "sha256": "5292a9bc05955a9c32c8be596ab470956be7cf898601395335ec1c0539b18dac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118216,
+      "width": 1600,
+      "height": 1062,
+      "alt_text": "3 Bedroom House in Beverley photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.007667Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/12023647/4ejPFEbzUaTNqHSjwxWyP3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/4ejPFEbzUaTNqHSjwxWyP3/1600/1066/contain/jpegorpng",
+      "local_filename": "022_4ejPFEbzUaTNqHSjwxWyP3.jpg",
+      "sha256": "7cd00dc053cc19016cd428e859571400ce3e3e71f9d82b79c8263c8d4cd4fb0f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 290495,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.189133Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/12023647/YVfAxL9KA0yYgw8zCUALK6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/YVfAxL9KA0yYgw8zCUALK6/1600/1066/contain/jpegorpng",
+      "local_filename": "023_YVfAxL9KA0yYgw8zCUALK6.jpg",
+      "sha256": "cbbc96a0d3b2d413443d696b274ca9dda595e550341df1528896709b291c51bd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179121,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.178875Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/12023647/eHXE23nvximnTYff4D4uj1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/eHXE23nvximnTYff4D4uj1/1600/1066/contain/jpegorpng",
+      "local_filename": "024_eHXE23nvximnTYff4D4uj1.jpg",
+      "sha256": "71fd0b3ca465eec9f30cb46a3016d0235f33ce9f180a714de0ef9c642ed140bb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199258,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.421509Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/12023647/nJgqVtVaWmk4Br6i2hVAx2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/nJgqVtVaWmk4Br6i2hVAx2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_nJgqVtVaWmk4Br6i2hVAx2.jpg",
+      "sha256": "cb792478a808bd4f08a0cbf95da07f0ff42813585e759ea4287bfb485d7ea122",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 163904,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.360694Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/12023647/KMvEUqyp9op1qF2VgwTaU2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/KMvEUqyp9op1qF2VgwTaU2/1600/1066/contain/jpegorpng",
+      "local_filename": "026_KMvEUqyp9op1qF2VgwTaU2.jpg",
+      "sha256": "17c250f9bbae5d83f01a83ae770300b23837b8ce9bf0acde416081f7b282db53",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167443,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Beverley photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.607637Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/12023647/TPB3gwro9iuBa3jfIrBb73/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/TPB3gwro9iuBa3jfIrBb73/1600/1066/contain/jpegorpng",
+      "local_filename": "027_TPB3gwro9iuBa3jfIrBb73.jpg",
+      "sha256": "f163e1365e446e7636f5cbde7af1513011547b23345dd9f56cfeacbbb0881228",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 282221,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.553665Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/12023647/wyGJXqeHkrUBXBauQoj6S2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/wyGJXqeHkrUBXBauQoj6S2/1600/1066/contain/jpegorpng",
+      "local_filename": "028_wyGJXqeHkrUBXBauQoj6S2.jpg",
+      "sha256": "3bb169d0347766eefd8ec207bb2d2be2a163e498f535e6059056c31b57743e30",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 311819,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.715192Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/12023647/8NuPyOVF8mINKc5v95B1D2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/8NuPyOVF8mINKc5v95B1D2/1600/1066/contain/jpegorpng",
+      "local_filename": "029_8NuPyOVF8mINKc5v95B1D2.jpg",
+      "sha256": "0f32a528a404d5e648cddbe905647bbe618f50630456deeea446117c8301473d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 329017,
+      "width": 1600,
+      "height": 1062,
+      "alt_text": "3 Bedroom House in Beverley photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.812207Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/12023647/seLekXgVJdkpXgaKxW7P85/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/12023647/seLekXgVJdkpXgaKxW7P85/1600/1066/contain/jpegorpng",
+      "local_filename": "030_seLekXgVJdkpXgaKxW7P85.jpg",
+      "sha256": "741b177fb41498054b4d68ee806676b0e4e113dd4f9e695263ef4c43006e98ae",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 314381,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "3 Bedroom House in Beverley photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:19:15.873688Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/1485",
+            "name": "Beverley"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5594108",
+            "name": "T5594108"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/12023647/VY6dIKkh51dbBpeZZw7JS3/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Beverley, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5594108"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 399 000 | 3 Bedroom House in Beverley | Private Property",
+    "og:description": "Beautifully Renovated Family Home on 756m² stand in Leafy Beverley, Lonehill \n\nTucked away in one of Beverleys most desirable leafy streets, this beautifully renovated full-title residence offers the ...",
+    "og:image": "https://images.pp.co.za/listing/12023647/VY6dIKkh51dbBpeZZw7JS3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5594108"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 399 000 | 3 Bedroom House in Beverley | Private Property",
+    "og:description": "Beautifully Renovated Family Home on 756m² stand in Leafy Beverley, Lonehill \n\nTucked away in one of Beverleys most desirable leafy streets, this beautifully renovated full-title residence offers the ...",
+    "og:image": "https://images.pp.co.za/listing/12023647/VY6dIKkh51dbBpeZZw7JS3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/beverley/T5594108",
+    "description": "3 Bedroom House in Beverley, Beautifully Renovated Family Home on 756m² stand in Leafy Beverley, Lonehill \n\nTucked away in one of",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "7bf890e9ec528ca376daa614cd675558f3dc8caeff6cb0bfa1d12655ca1ab5c7"
+}

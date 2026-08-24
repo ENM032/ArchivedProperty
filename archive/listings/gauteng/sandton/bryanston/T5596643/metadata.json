@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5596643",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/14-cypress-avenue/T5596643",
+  "archived_at": "2026-08-24T12:26:02.898593Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|f46579d1-d8e4-48f8-a490-ba69c660f1af|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=MMWBRr0B00WMhk3OzrZSMQ; expires=Fri, 24-Aug-2125 12:25:56 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:25:55 GMT",
+    "content-length": "28840"
+  },
+  "fetch_duration_sec": 1.3373692035675049,
+  "total_images_discovered": 40,
+  "total_images_archived": 40,
+  "total_archive_size_bytes": 8650693,
+  "content_fingerprint": "20ce64e51f1538f519f688fcb0d8764e4eaeb243ba73ff86b5d5cf95fbf47cb7"
+}

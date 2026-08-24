@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5550791",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-se/vanderbijlpark-se2/T5550791",
+  "archived_at": "2026-08-24T14:47:29.732189Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|641f4189-17e0-4628-8415-9c0510edbaea|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=E8-HcFF-Nk6A28arLSXlmg; expires=Fri, 24-Aug-2125 14:47:24 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 14:47:23 GMT",
+    "content-length": "24327"
+  },
+  "fetch_duration_sec": 1.3853428363800049,
+  "total_images_discovered": 23,
+  "total_images_archived": 23,
+  "total_archive_size_bytes": 3529809,
+  "content_fingerprint": "070c7a4eb4fdeb586e74c302e62f6d095a652b91cfa7ffbe65ecc03a0c6c3b54"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5460230",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5460230",
+  "archived_at": "2026-08-24T14:01:40.089394Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|5ae0e898-d608-4ad7-9d92-29f4465cb409|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=wC_Yn62zu0uaKHGgLgnoSw; expires=Fri, 24-Aug-2125 14:01:32 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 14:01:32 GMT",
+    "content-length": "27043"
+  },
+  "fetch_duration_sec": 1.3813440799713135,
+  "total_images_discovered": 38,
+  "total_images_archived": 38,
+  "total_archive_size_bytes": 8608883,
+  "content_fingerprint": "5198009933ec6081a3ba14aae8a65adc1583cb8e784a321ba1429ed5f7b16d0b"
+}

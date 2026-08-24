@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5499663",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5499663",
+  "extracted_at": "2026-08-24T12:43:32.565551Z",
+  "title": "4 Bedroom House in Bryanston East",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-26",
+  "description": "This modern farmhouse style family home offers the perfect blend of luxury, comfort, and effortless entertaining within a secure estate setting. Designed for stylish family living, this immaculate 4-b...",
+  "erf_size_m2": 291.0,
+  "land_size_raw": "291 m²",
+  "floor_size_m2": 277.0,
+  "price": {
+    "amount": 4490000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 490 000",
+    "rates_and_taxes_monthly": 2843.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "Bryanston East",
+    "suburb": "Bryanston East",
+    "city": "Johannesburg",
+    "region": "Bryanston East, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Bryanston",
+      "Bryanston East",
+      "T5499663"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 4.5,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 4.5",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Staff quarters",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Liesl Bosman",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2328762/image/079d373e7f37466189bdf3b0dfb1e213_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/liesl-bosman/2328762/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11859121/J9Ccc1sCp9vQqa3KBOJuD2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/J9Ccc1sCp9vQqa3KBOJuD2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_J9Ccc1sCp9vQqa3KBOJuD2.jpg",
+      "sha256": "21fbbda7dcc83cf764a2c2089683f5066315a7e8f50ec85b22cdbd27bcdc987c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 340350,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:43:34.121184Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11859121/AhIfyoBwqmsmypAJwjTag0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/AhIfyoBwqmsmypAJwjTag0/1600/1066/contain/jpegorpng",
+      "local_filename": "002_AhIfyoBwqmsmypAJwjTag0.jpg",
+      "sha256": "61234de8b6c71fc6bb174d68cbc3624768999cd5687ca260be7efec1115021d3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 357046,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.124979Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11859121/5ylkvrrj7fB0bvYAzPQf34/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/5ylkvrrj7fB0bvYAzPQf34/1600/1066/contain/jpegorpng",
+      "local_filename": "003_5ylkvrrj7fB0bvYAzPQf34.jpg",
+      "sha256": "e0b1f61a99df18f3e97b289e3ec4e73f3db7dc6cdb9c868a7b04fcb984e0818e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 258449,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.120754Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11859121/aAyYnJ1yP630mlo6bg3TL7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/aAyYnJ1yP630mlo6bg3TL7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_aAyYnJ1yP630mlo6bg3TL7.jpg",
+      "sha256": "84bace0abd01db8644ba4fcc2753b8abd91692d3e1dd63aff1c818dc336596dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 359445,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.121385Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11859121/jT5xpMdtplf31LQF5EXTm4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/jT5xpMdtplf31LQF5EXTm4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_jT5xpMdtplf31LQF5EXTm4.jpg",
+      "sha256": "bfdd2ad84d438bd1cfd75c686ee44a3805c0e479180cd061fb71c801569206c9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 340115,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.548212Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11859121/SSIgWqPeBTLIoNUzZ8A4P7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/SSIgWqPeBTLIoNUzZ8A4P7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_SSIgWqPeBTLIoNUzZ8A4P7.jpg",
+      "sha256": "6bed73a930ce78baf6ba8131486756fa039fd29fe3b4e0af6caa52da585c1f68",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196759,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.087755Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11859121/itrmNk6JTyg7ELAQcrD381/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/itrmNk6JTyg7ELAQcrD381/1600/1066/contain/jpegorpng",
+      "local_filename": "007_itrmNk6JTyg7ELAQcrD381.jpg",
+      "sha256": "6b0605737f20bc59b2bcb5cef625bc9a58828bb81e4d9f8442674d2140ac5faf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167719,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.809651Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11859121/HaD6sXENzhimLn80sylek4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/HaD6sXENzhimLn80sylek4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_HaD6sXENzhimLn80sylek4.jpg",
+      "sha256": "3015c0096ea1f4be63c60f55f874b5ef476e7593e52e9364ae16d1022f79cbf9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 223937,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.144960Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11859121/XcOJKqqSRgPUcOh3BbaWO0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/XcOJKqqSRgPUcOh3BbaWO0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_XcOJKqqSRgPUcOh3BbaWO0.jpg",
+      "sha256": "f1dd27577309f6ff979968bc84c29f0a1f873c50c5eddd72ab97d959a4b99602",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153616,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.480651Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11859121/BCfvHLSnH5MHJzBemUwSg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/BCfvHLSnH5MHJzBemUwSg0/1600/1066/contain/jpegorpng",
+      "local_filename": "010_BCfvHLSnH5MHJzBemUwSg0.jpg",
+      "sha256": "f5bf0272c8073ffd8c2b13f0e931a2c622dc656ad5c41f2f5fc7868eb62e6516",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 169171,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.635223Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11859121/MAODxeG0OcJmYYGnqbdPi6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/MAODxeG0OcJmYYGnqbdPi6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_MAODxeG0OcJmYYGnqbdPi6.jpg",
+      "sha256": "6fd43afd01b731dbfcb96a7840f0fb3d327bf6ec65db2f0f231b05fbd9022c47",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167708,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.905517Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11859121/5Ro1tddtVCC2Y02JLLKWH5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/5Ro1tddtVCC2Y02JLLKWH5/1600/1066/contain/jpegorpng",
+      "local_filename": "012_5Ro1tddtVCC2Y02JLLKWH5.jpg",
+      "sha256": "262c84dae5501e17c0a1dbe2f8ccdbc7419a2a21513d7b52929fbaa33529d409",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 169008,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:34.938789Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11859121/MRL9PsJwIqgShPonU4cux0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/MRL9PsJwIqgShPonU4cux0/1600/1066/contain/jpegorpng",
+      "local_filename": "013_MRL9PsJwIqgShPonU4cux0.jpg",
+      "sha256": "ddfba2daa4d09c7fe77e5974985174c031cd3cd95458b782f2f7ea003fe4a591",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 124632,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.164121Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11859121/T7ifTynJz2AvyPG4GlJcP4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/T7ifTynJz2AvyPG4GlJcP4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_T7ifTynJz2AvyPG4GlJcP4.jpg",
+      "sha256": "ba3efcc16037318cf28c387d11f8f7ba32debc7441b424aa612acad0b8f13a0e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 236120,
+      "width": 1351,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.350549Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11859121/LGxbAQ8wTUl5iIn14o7DZ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/LGxbAQ8wTUl5iIn14o7DZ1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_LGxbAQ8wTUl5iIn14o7DZ1.jpg",
+      "sha256": "0c4038189d57c4bd15e3233540ca8cb126ed8963b02256fab9fc5477e900f7cf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 227540,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.617796Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11859121/3yYDOKPXEALt00zxSrVIB5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/3yYDOKPXEALt00zxSrVIB5/1600/1066/contain/jpegorpng",
+      "local_filename": "016_3yYDOKPXEALt00zxSrVIB5.jpg",
+      "sha256": "59bcb3b5a1064d83c062e685e55e0538a924e120d8558b0b28d07841c97d630d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156198,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.303720Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11859121/1kB0IQwCJb7nDhOSD39ZB3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/1kB0IQwCJb7nDhOSD39ZB3/1600/1066/contain/jpegorpng",
+      "local_filename": "017_1kB0IQwCJb7nDhOSD39ZB3.jpg",
+      "sha256": "0c49c48a898c3a53a5ef8426822a42fec648ce7dbad752e594e7c331cea79808",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 155731,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.630182Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11859121/ckQIo4Akb90zaMyD3MczY6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/ckQIo4Akb90zaMyD3MczY6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_ckQIo4Akb90zaMyD3MczY6.jpg",
+      "sha256": "f23566b1f8527d061061c5bb14c4210b4e96bd1f41a74fe9f61399f2bf1ea50e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128171,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.516079Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11859121/5zFsrZcbJa8h8JogVMspD0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/5zFsrZcbJa8h8JogVMspD0/1600/1066/contain/jpegorpng",
+      "local_filename": "019_5zFsrZcbJa8h8JogVMspD0.jpg",
+      "sha256": "40ad7b429b5a0fefed16480b01efc3431d6f572fe738267b58d95a83eb6cd13a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174648,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.530097Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11859121/3Y3bfsxJBQmDZOZ3T7BLJ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/3Y3bfsxJBQmDZOZ3T7BLJ1/1600/1066/contain/jpegorpng",
+      "local_filename": "020_3Y3bfsxJBQmDZOZ3T7BLJ1.jpg",
+      "sha256": "13f4a5b61127b812ba7613afc467ef7c6730c1f6bb3b45fa60f5d48a80621d70",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174886,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.834676Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11859121/nUd0LbWjabluJaw7xDjFq4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/nUd0LbWjabluJaw7xDjFq4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_nUd0LbWjabluJaw7xDjFq4.jpg",
+      "sha256": "935cb40d0d41e7ca41c4e309960a0d8ab006022a3348d880f1afcdddb923d1d2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 222781,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.717083Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11859121/itMbjazOFQaM5hRKVAdOZ5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/itMbjazOFQaM5hRKVAdOZ5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_itMbjazOFQaM5hRKVAdOZ5.jpg",
+      "sha256": "241232bb90900709502899aa08b3ef6f91e84f4bd1678d67ac6c45e7c1fede8c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139695,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.867350Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11859121/w6bnrHB5TmNQFTObdQv6r4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/w6bnrHB5TmNQFTObdQv6r4/1600/1066/contain/jpegorpng",
+      "local_filename": "023_w6bnrHB5TmNQFTObdQv6r4.jpg",
+      "sha256": "99d12a7ed1b52976888c328895e97577e141c314263e1e7d0386c3652ca643c6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 236446,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:35.895450Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11859121/18Kufl6ItgprpDUndL3Z65/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/18Kufl6ItgprpDUndL3Z65/1600/1066/contain/jpegorpng",
+      "local_filename": "024_18Kufl6ItgprpDUndL3Z65.jpg",
+      "sha256": "30b0b94c74df19055ead4f461a8dd1693b5ad81084befa338daa3ab75db7de9b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144531,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.008713Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11859121/BTiBZw9KwFbw4kOUQQbxm4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/BTiBZw9KwFbw4kOUQQbxm4/1600/1066/contain/jpegorpng",
+      "local_filename": "025_BTiBZw9KwFbw4kOUQQbxm4.jpg",
+      "sha256": "f0e7b8083a39b8785a246489e5b635b5eef364979e00563170292803f712c7ee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115403,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.073064Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11859121/WcMgJPDg1kynO0yj5Paeq5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/WcMgJPDg1kynO0yj5Paeq5/1600/1066/contain/jpegorpng",
+      "local_filename": "026_WcMgJPDg1kynO0yj5Paeq5.jpg",
+      "sha256": "665a39a7bbff893f00c0da26f49ee89822646602b5d42a8c87bd9df16f65d9c8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194484,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.076129Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11859121/VkTc1DvuUhH36FEGjG0SC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/VkTc1DvuUhH36FEGjG0SC2/1600/1066/contain/jpegorpng",
+      "local_filename": "027_VkTc1DvuUhH36FEGjG0SC2.jpg",
+      "sha256": "c87fcc2654162fb85f5a37cd93d49fbffa19338531707f1fb16fb24f55802d8e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188635,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.379871Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11859121/zgcFPLrZcLIExWAeyomUC3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/zgcFPLrZcLIExWAeyomUC3/1600/1066/contain/jpegorpng",
+      "local_filename": "028_zgcFPLrZcLIExWAeyomUC3.jpg",
+      "sha256": "9151b65367bcb7bd9435a65a584868c843ef053d43129f019a370ddadfccd5da",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 328365,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.259168Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11859121/GnBK7NY1n2Y9IdnjFecbV6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11859121/GnBK7NY1n2Y9IdnjFecbV6/1600/1066/contain/jpegorpng",
+      "local_filename": "029_GnBK7NY1n2Y9IdnjFecbV6.jpg",
+      "sha256": "52fdcdf8342ebbdf208c858191158e6719f2f66f3b20f468d928e3bcdd2a3d7a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 273733,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Bryanston East photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:43:36.379049Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/238",
+            "name": "Bryanston"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/3526",
+            "name": "Bryanston East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5499663",
+            "name": "T5499663"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11859121/J9Ccc1sCp9vQqa3KBOJuD2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bryanston East, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5499663"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 490 000 | 4 Bedroom House in Bryanston East | Private Property",
+    "og:description": "This modern farmhouse style family home offers the perfect blend of luxury, comfort, and effortless entertaining within a secure estate setting. Designed for stylish family living, this immaculate 4-b...",
+    "og:image": "https://images.pp.co.za/listing/11859121/J9Ccc1sCp9vQqa3KBOJuD2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5499663"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 490 000 | 4 Bedroom House in Bryanston East | Private Property",
+    "og:description": "This modern farmhouse style family home offers the perfect blend of luxury, comfort, and effortless entertaining within a secure estate setting. Designed for stylish family living, this immaculate 4-b...",
+    "og:image": "https://images.pp.co.za/listing/11859121/J9Ccc1sCp9vQqa3KBOJuD2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/bryanston-east/T5499663",
+    "description": "4 Bedroom House in Bryanston East, This modern farmhouse style family home offers the perfect blend of luxury, comfort, and effortless",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "3f3f163e29cbc9d1c7135ebeae15c09d37b81fc59c51b7f3566a4fcaf59d83ae"
+}

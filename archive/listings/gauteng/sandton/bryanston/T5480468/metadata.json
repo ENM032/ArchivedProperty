@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5480468",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/10-the-merlin/7-dover-road/T5480468",
+  "archived_at": "2026-08-24T12:59:19.774702Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|a91111ab-ee6e-424e-ba92-01c0644070b1|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=5e0n-SHOQEqDtTtDEjx8og; expires=Fri, 24-Aug-2125 12:59:15 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:59:14 GMT",
+    "content-length": "22266"
+  },
+  "fetch_duration_sec": 1.3816678524017334,
+  "total_images_discovered": 11,
+  "total_images_archived": 11,
+  "total_archive_size_bytes": 2413907,
+  "content_fingerprint": "893749add5b8524e089237d44eb791513be80893db7e2722d823e5aac0c09895"
+}

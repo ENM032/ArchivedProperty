@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5502283",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/43-2nd-avenue/T5502283",
+  "archived_at": "2026-08-24T13:53:21.652933Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|03f367e7-6763-42f8-aa1a-f0dcc0e74e6b|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Phs1_I5r60GUWKVyV9yY5g; expires=Fri, 24-Aug-2125 13:53:15 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 13:53:14 GMT",
+    "content-length": "27994"
+  },
+  "fetch_duration_sec": 1.3560683727264404,
+  "total_images_discovered": 33,
+  "total_images_archived": 33,
+  "total_archive_size_bytes": 7193817,
+  "content_fingerprint": "7656d4db83dfe59ca37fc70b410a254dc4e8c611015327c3f6cd397f575960d3"
+}

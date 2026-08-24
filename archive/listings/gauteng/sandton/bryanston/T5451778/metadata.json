@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5451778",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bryanston/33c-the-river-road/T5451778",
+  "archived_at": "2026-08-24T12:52:32.630484Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|997f37f5-4f4b-48a7-bfd2-b982997987f8|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=MEPQe4u5S0iGecL8uhNIlw; expires=Fri, 24-Aug-2125 12:52:27 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:52:26 GMT",
+    "content-length": "28362"
+  },
+  "fetch_duration_sec": 1.3047432899475098,
+  "total_images_discovered": 32,
+  "total_images_archived": 32,
+  "total_archive_size_bytes": 6222684,
+  "content_fingerprint": "fe1f238bc5302ee01d041f6085cab1e05a971dd821fde7cf25f2de9ea40c7c11"
+}

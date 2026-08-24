@@ -14,7 +14,8 @@ class ArchiveManifest(BaseModel):
     schema_version: str = Field(default="1.0.0", description="Manifest schema version")
     listing_id: str = Field(description="Listing ID")
     archived_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc), description="UTC archive timestamp")
-    archiver_version: str = Field(description="Version of property-archiver used")
+    archiver_version: str = Field(default="1.0.0", description="Version of property-archiver used")
+    total_files: int = Field(default=0, description="Total number of files in manifest")
     files: dict[str, str] = Field(
         default_factory=dict,
         description="Relative filepath mapped to SHA-256 hexadecimal hash"
@@ -29,7 +30,7 @@ class ArchiveMetadata(BaseModel):
     listing_id: str = Field(description="Listing ID")
     source_url: str = Field(description="Original URL or source file path")
     archived_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc), description="UTC timestamp of the archival run")
-    archiver_version: str = Field(description="Version of property-archiver")
+    archiver_version: str = Field(default="1.0.0", description="Version of property-archiver")
     fetch_mode: str = Field(default="http", description="'http' for live crawl or 'file' for local snapshot")
     http_status: int | None = Field(default=None, description="HTTP status code if fetched via network")
     response_headers: dict[str, str] = Field(default_factory=dict, description="Captured HTTP response headers")

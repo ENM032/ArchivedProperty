@@ -1,5 +1,5 @@
 """
-Decoupled HTTP Server serving RESTful API routes and static frontend assets.
+Decoupled HTTP Server serving RESTful API routes, static frontend assets, and CRUD operations.
 """
 
 import json
@@ -17,10 +17,12 @@ from property_archiver.dashboard.routes.compare import handle_compare
 from property_archiver.dashboard.routes.export import handle_export
 from property_archiver.dashboard.routes.hierarchy import handle_get_hierarchy
 from property_archiver.dashboard.routes.listings import (
+    handle_delete_listing,
     handle_fetch_listing,
     handle_get_image,
     handle_get_listing,
     handle_list_listings,
+    handle_update_listing,
 )
 
 logger = logging.getLogger(__name__)
@@ -115,6 +117,36 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                 self._send_json_response({"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
             return
 
+        # Update / Edit Listing
+        if path.startswith("/api/listings/") and path.endswith("/edit"):
+            parts = [p for p in path.split("/") if p]
+            if len(parts) == 4:
+                listing_id = parts[2]
+                content_length = int(self.headers.get("Content-Length", 0))
+                body = self.rfile.read(content_length)
+                try:
+                    payload = json.loads(body.decode("utf-8"))
+                    data, status = handle_update_listing(self.archive_dir, listing_id, payload)
+                    self._send_json_response(data, status)
+                except Exception as exc:
+                    self._send_json_response({"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+                return
+
+        self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
+
+    def do_DELETE(self):
+        """Dispatch DELETE requests for removing archived listings."""
+        parsed_url = urllib.parse.urlparse(self.path)
+        path = parsed_url.path
+
+        if path.startswith("/api/listings/"):
+            parts = [p for p in path.split("/") if p]
+            if len(parts) == 3:
+                listing_id = parts[2]
+                data, status = handle_delete_listing(self.archive_dir, listing_id)
+                self._send_json_response(data, status)
+                return
+
         self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
 
     def _serve_static_file(self, req_path: str):
@@ -125,7 +157,6 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             rel_path = req_path.lstrip("/")
 
         file_path = (FRONTEND_DIR / rel_path).resolve()
-        # Security: Prevent path traversal outside frontend directory
         if not str(file_path).startswith(str(FRONTEND_DIR.resolve())):
             self.send_error(HTTPStatus.FORBIDDEN, "Access denied")
             return

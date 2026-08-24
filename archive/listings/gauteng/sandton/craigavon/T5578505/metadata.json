@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5578505",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5578505",
+  "archived_at": "2026-08-24T11:51:29.868077Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|61e7b969-e106-4256-836d-13a1b862e1e1|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=ZCZlp_vW50yFBAK0KzaoQg; expires=Fri, 24-Aug-2125 11:51:25 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:51:24 GMT",
+    "content-length": "25541"
+  },
+  "fetch_duration_sec": 1.3165283203125,
+  "total_images_discovered": 27,
+  "total_images_archived": 27,
+  "total_archive_size_bytes": 5184866,
+  "content_fingerprint": "01e094d65b96e5e41753062b31c561a1978ce5c48000c483d008b11a65227b18"
+}

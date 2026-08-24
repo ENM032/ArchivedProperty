@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5570001",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5570001",
+  "extracted_at": "2026-08-24T13:40:24.838994Z",
+  "title": "3 Bedroom House in Fourways",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "sold",
+  "status_badges": [
+    "Sold"
+  ],
+  "is_under_offer": false,
+  "is_sold": true,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-29",
+  "description": "Email agent to view this Beautiful North-Facing Home in the Secure Norscot Slopes Village \n\nNestled within the sought-after gated community of Norscot Slopes Village, this beautifully maintained north...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 245.0,
+  "price": {
+    "amount": 2400000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 400 000",
+    "rates_and_taxes_monthly": 1728.0,
+    "levies_monthly": 950.0
+  },
+  "location": {
+    "street_address": "T5570001",
+    "suburb": "Fourways",
+    "city": "Johannesburg",
+    "region": "Fourways, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Fourways",
+      "T5570001"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": true,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 5",
+      "Pet friendly",
+      "Access gate",
+      "Patio",
+      "Pool",
+      "Scenic view",
+      "Staff quarters",
+      "Storage",
+      "Study",
+      "Entrance hall",
+      "Kitchen",
+      "Garden",
+      "Electric fencing",
+      "Family TV room",
+      "Paving",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Roz Pownall",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1458349/image/caa0e4a1cd92442887940b65420faea9_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/roz-pownall/1458349/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11980410/iEphk5Ol8N6U1BHlvvsI92/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/iEphk5Ol8N6U1BHlvvsI92/1600/1066/contain/jpegorpng",
+      "local_filename": "001_iEphk5Ol8N6U1BHlvvsI92.jpg",
+      "sha256": "575e0f2fce342b3b28f81639d536017d692a9800cd4da8c48821f8e5430eb6d5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 343904,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T13:40:25.686951Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11980410/N1mEwR9grpbbh9R0e9cTK5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/N1mEwR9grpbbh9R0e9cTK5/1600/1066/contain/jpegorpng",
+      "local_filename": "002_N1mEwR9grpbbh9R0e9cTK5.jpg",
+      "sha256": "cc9d8a0f42c35c22362abeb76d765b0f65cb929fc7bb69823346803da2b79c47",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 392367,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.046309Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11980410/UDMV20cW5BUJCyL0PnAiO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/UDMV20cW5BUJCyL0PnAiO7/1600/1066/contain/jpegorpng",
+      "local_filename": "003_UDMV20cW5BUJCyL0PnAiO7.jpg",
+      "sha256": "aa47ad5bafe0dbf67b80ad98d5d4dda81ad6cc63547fc9dcf771269fdefb8545",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 375458,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:25.855526Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11980410/M51slVnxE8bl6Gpdv4NZF5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/M51slVnxE8bl6Gpdv4NZF5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_M51slVnxE8bl6Gpdv4NZF5.jpg",
+      "sha256": "135123cd753644b4b6c221b04409e8c13d9247a1984c304ac626258cd777c71e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 231986,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:25.808320Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11980410/Xz6hcluJyDwc8fqWT6ft27/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/Xz6hcluJyDwc8fqWT6ft27/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Xz6hcluJyDwc8fqWT6ft27.jpg",
+      "sha256": "03b931911fb31b3f1bf08d92ec4e4047cf364c11ec252bda0d270d38f3fc5353",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174885,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:25.815693Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11980410/PQTQCKrmAKpwv97S1ZTY62/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/PQTQCKrmAKpwv97S1ZTY62/1600/1066/contain/jpegorpng",
+      "local_filename": "006_PQTQCKrmAKpwv97S1ZTY62.jpg",
+      "sha256": "cda5494df14994447cb87bf3b11c469ab9949f5727ecf35745dde4fd813b4566",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204178,
+      "width": 1590,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.868154Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11980410/JZ1Vi8IPtF2mTXJqXJLcw1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/JZ1Vi8IPtF2mTXJqXJLcw1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_JZ1Vi8IPtF2mTXJqXJLcw1.jpg",
+      "sha256": "eebd8ac9967d8090b4262e073b382adfac498dd37e4869dc4b3ae5749e999202",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191886,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.020768Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11980410/cbpu3HNNOG6lmEoxHnrCA1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/cbpu3HNNOG6lmEoxHnrCA1/1600/1066/contain/jpegorpng",
+      "local_filename": "008_cbpu3HNNOG6lmEoxHnrCA1.jpg",
+      "sha256": "11c3d018e2357b1257f9d396585e909532d7804fd2a14db29478923232529c7b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217525,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.630491Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11980410/doY8ufyQEJm2bvDOWc40P7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/doY8ufyQEJm2bvDOWc40P7/1600/1066/contain/jpegorpng",
+      "local_filename": "009_doY8ufyQEJm2bvDOWc40P7.jpg",
+      "sha256": "caed9888998220089b08e834c5f73b546a881e8b5eea4a6a39cdcd785e71797d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206360,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.143462Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11980410/4rY3vA2iB7t7PDlhjaQVg3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/4rY3vA2iB7t7PDlhjaQVg3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_4rY3vA2iB7t7PDlhjaQVg3.jpg",
+      "sha256": "a1c52a9d0ba0f185a2cdec5e694ceb1ed79a166a3d64f30b06a601d26dd33a6e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204889,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.464392Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11980410/bb7rxDNb4rjwSHzbZPNaO5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/bb7rxDNb4rjwSHzbZPNaO5/1600/1066/contain/jpegorpng",
+      "local_filename": "011_bb7rxDNb4rjwSHzbZPNaO5.jpg",
+      "sha256": "68e2afe2d91cb8a734160e5fd62c32c5fceda71e082815a73f75fdcd0f8fc326",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 221822,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.360047Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11980410/92ZGbY3Qyj1DVyapnZMry2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/92ZGbY3Qyj1DVyapnZMry2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_92ZGbY3Qyj1DVyapnZMry2.jpg",
+      "sha256": "d1b92eff8b7792d8a74d8a4b786182ca323ac509fdea5fa39b248ed8f05464df",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153593,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.851570Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11980410/vou0YRkrSU918jcYtrznu1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/vou0YRkrSU918jcYtrznu1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_vou0YRkrSU918jcYtrznu1.jpg",
+      "sha256": "d136cc0e1d6ab378ad1b55d9441dd5d9a5c04d22baa1a5c8cd87ac07c141c52e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116421,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "3 Bedroom House in Fourways photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:26.976720Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11980410/1B66SdDBIIVhXisy27ji02/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/1B66SdDBIIVhXisy27ji02/1600/1066/contain/jpegorpng",
+      "local_filename": "014_1B66SdDBIIVhXisy27ji02.jpg",
+      "sha256": "87e6d5ca9945fbcaaa1e151affc7b804d63c401ee1e81ac711c042f388a2fdfc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118601,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.194354Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11980410/27boy8doaBYQOUWG8l8p26/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/27boy8doaBYQOUWG8l8p26/1600/1066/contain/jpegorpng",
+      "local_filename": "015_27boy8doaBYQOUWG8l8p26.jpg",
+      "sha256": "6801bd7d12981c7a507f4b822c8f9064b513f7acce3b08d48c7b11ce196446ed",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139317,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "3 Bedroom House in Fourways photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:28.047215Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11980410/ncbUMjy7OgeTW413oNmb01/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/ncbUMjy7OgeTW413oNmb01/1600/1066/contain/jpegorpng",
+      "local_filename": "016_ncbUMjy7OgeTW413oNmb01.jpg",
+      "sha256": "00424fdfdfb880cdaeea5ac2e580bf16932aa3591f10f515f4413ea027d150ee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 392209,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.637273Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11980410/bpcFpYFWSGMPqHlEaTP3V7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/bpcFpYFWSGMPqHlEaTP3V7/1600/1066/contain/jpegorpng",
+      "local_filename": "017_bpcFpYFWSGMPqHlEaTP3V7.jpg",
+      "sha256": "17774cda87073601ea741286a6c267eea336d72574b0c0230fade2f7ff6adac4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 392994,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.737411Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11980410/KI2GHruOId1gTfNvoaMZq6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/KI2GHruOId1gTfNvoaMZq6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_KI2GHruOId1gTfNvoaMZq6.jpg",
+      "sha256": "ff0bf1f16de4f54421a2cb08599d609e055dfa0df52fb77a1a63c2431a17e0ff",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 412716,
+      "width": 1595,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.562391Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11980410/cuXUOjRUFFJo0BUYqsE5I5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11980410/cuXUOjRUFFJo0BUYqsE5I5/1600/1066/contain/jpegorpng",
+      "local_filename": "019_cuXUOjRUFFJo0BUYqsE5I5.jpg",
+      "sha256": "bdbc3867261334974c887cf496d428f1633c4b33eb55a718dbc76e3f145fbf95",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 406490,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Fourways photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T13:40:27.611969Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/373",
+            "name": "Fourways"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5570001",
+            "name": "T5570001"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11980410/iEphk5Ol8N6U1BHlvvsI92/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fourways, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5570001"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 400 000 | 3 Bedroom House in Fourways | Private Property",
+    "og:description": "Email agent to view this Beautiful North-Facing Home in the Secure Norscot Slopes Village \n\nNestled within the sought-after gated community of Norscot Slopes Village, this beautifully maintained north...",
+    "og:image": "https://images.pp.co.za/listing/11980410/iEphk5Ol8N6U1BHlvvsI92/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5570001"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 400 000 | 3 Bedroom House in Fourways | Private Property",
+    "og:description": "Email agent to view this Beautiful North-Facing Home in the Secure Norscot Slopes Village \n\nNestled within the sought-after gated community of Norscot Slopes Village, this beautifully maintained north...",
+    "og:image": "https://images.pp.co.za/listing/11980410/iEphk5Ol8N6U1BHlvvsI92/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5570001",
+    "description": "3 Bedroom House in Fourways, Email agent to view this Beautiful North-Facing Home in the Secure Norscot Slopes Village \n\nNestled",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "59faa1a6a82f13d014ffbafb809e5ecc68d66eef8728caf2d1116c78e5a2551b"
+}

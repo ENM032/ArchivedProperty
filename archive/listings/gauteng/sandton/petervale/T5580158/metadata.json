@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5580158",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/petervale/51-frans-hals-street/T5580158",
+  "archived_at": "2026-08-24T11:09:10.157304Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|2eba3f8e-fadf-4804-9c8a-999e9a3294a9|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=AmxgnTJ0xEyQWSvThzHKQg; expires=Fri, 24-Aug-2125 11:09:06 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:09:05 GMT",
+    "content-length": "26899"
+  },
+  "fetch_duration_sec": 1.3272361755371094,
+  "total_images_discovered": 29,
+  "total_images_archived": 29,
+  "total_archive_size_bytes": 5490434,
+  "content_fingerprint": "549b6c23fb6259c6c94f8327b58ea5a86aede0eb807d1ab73498d68a5b817d07"
+}

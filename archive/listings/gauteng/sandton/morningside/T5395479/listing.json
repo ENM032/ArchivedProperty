@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5395479",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5395479",
+  "extracted_at": "2026-08-24T11:31:56.672113Z",
+  "title": "5 Bedroom House in Morningside",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-02-19",
+  "description": "Brand new 5 Bed Cluster  in Morningside\nNew Development  Luxury 5-Bedroom Homes in Morningside\nPhase two of this successful development offers five exclusive off-plan homes, with occupation in approxi...",
+  "erf_size_m2": 300.0,
+  "land_size_raw": "300 m²",
+  "floor_size_m2": 380.0,
+  "price": {
+    "amount": 6500000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 6 500 000",
+    "rates_and_taxes_monthly": 3500.0,
+    "levies_monthly": 6000.0
+  },
+  "location": {
+    "street_address": "T5395479",
+    "suburb": "Morningside",
+    "city": "Johannesburg",
+    "region": "Morningside, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Morningside",
+      "T5395479"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 4.5,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": true,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": true,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 4.5",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Access gate",
+      "Balcony",
+      "Patio",
+      "Pool",
+      "Scenic view",
+      "Staff quarters",
+      "Entrance hall",
+      "Kitchen",
+      "Garden",
+      "Scullery",
+      "Electric fencing",
+      "Family TV room",
+      "Guest toilet"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Bruce Patcha",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2206014/image/0670f1a1fb414644a07e2a11dc71eb02_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/bruce-patcha/2206014/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11681695/eAxncuiSWAgZyKU0nlKfz4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/eAxncuiSWAgZyKU0nlKfz4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_eAxncuiSWAgZyKU0nlKfz4.jpg",
+      "sha256": "11c8ffc88e6df6de869a8d30d6b97f7924d9ac4a910752a14c4c1ddc988f94a1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 277385,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:31:57.985595Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11681695/cavKVkp5FXqHK1a3AXKJm1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/cavKVkp5FXqHK1a3AXKJm1/1600/1066/contain/jpegorpng",
+      "local_filename": "002_cavKVkp5FXqHK1a3AXKJm1.jpg",
+      "sha256": "dfba46521cef512e414c201f2002ffb99d947c65c976d89fb091916d52719601",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 308391,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:59.216571Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11681695/CZbvJf3n15wBLfdmFoigO1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/CZbvJf3n15wBLfdmFoigO1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_CZbvJf3n15wBLfdmFoigO1.jpg",
+      "sha256": "dd8f29e327fac6cf740de6bf2e4340d1355e5873b437fff36d77b7fd2dac06e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 193982,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:57.628976Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11681695/91WeroJJmQKkHnVFdWrct4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/91WeroJJmQKkHnVFdWrct4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_91WeroJJmQKkHnVFdWrct4.jpg",
+      "sha256": "42c823ffbc361a1b1e5fe1a1a04025e3d6316870c9e698308df4d324fa527f39",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 205944,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:57.629168Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11681695/tGqvxHRriIFmczzkQGEiw1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/tGqvxHRriIFmczzkQGEiw1/1600/1066/contain/jpegorpng",
+      "local_filename": "005_tGqvxHRriIFmczzkQGEiw1.jpg",
+      "sha256": "f50fefda69088af85fc4fa21e277e438b75d0cc59b28873e0ff52d78e26871e7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 262574,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:57.710719Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11681695/Ykz3vi74pQzndfNiy41665/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/Ykz3vi74pQzndfNiy41665/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Ykz3vi74pQzndfNiy41665.jpg",
+      "sha256": "3f804494ee78c9c37de63ce83cf37d0266c88e34807ee1aeac4dd32805573a34",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149101,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:57.981957Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11681695/rdYVWxNG8aDBC9Ci7YM0h7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/rdYVWxNG8aDBC9Ci7YM0h7/1600/1066/contain/jpegorpng",
+      "local_filename": "007_rdYVWxNG8aDBC9Ci7YM0h7.jpg",
+      "sha256": "10b53cdabf57a120e6cb7bcc7192a15c3d20c882cc4d93237a0f098a05094cea",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176837,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:58.407478Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11681695/wtH6qeJ85wjbavpdccwxh4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/wtH6qeJ85wjbavpdccwxh4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_wtH6qeJ85wjbavpdccwxh4.jpg",
+      "sha256": "39da547e875ec0bffc4c27fa887878ff7ccc37066f64c97dd37b750973f5c7ee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166037,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:58.528264Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11681695/ULjBy4gdsPeu1p5NYbHAJ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/ULjBy4gdsPeu1p5NYbHAJ7/1600/1066/contain/jpegorpng",
+      "local_filename": "009_ULjBy4gdsPeu1p5NYbHAJ7.jpg",
+      "sha256": "7dc4010d29255a9520376352d73251fb567e5494e56f4091d41d1724771c119c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119329,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:58.280333Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11681695/kzhhp2obm3supVpCPnyes6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/kzhhp2obm3supVpCPnyes6/1600/1066/contain/jpegorpng",
+      "local_filename": "010_kzhhp2obm3supVpCPnyes6.jpg",
+      "sha256": "429215c42609e5d60dc200c5e06af9a6e8ec255bdeb2315d9c8f591c9a3dd58d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 227186,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:58.472413Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11681695/epnhfge4trohe4yrLrGlM1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/epnhfge4trohe4yrLrGlM1/1600/1066/contain/jpegorpng",
+      "local_filename": "011_epnhfge4trohe4yrLrGlM1.jpg",
+      "sha256": "6aca5ab689f590b2469821fa5c1f1e19058bbcc9e922c67817df689cda0f61b5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217877,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:59.631975Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11681695/rCa3TQTljCHiZRDjQsoZf3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/rCa3TQTljCHiZRDjQsoZf3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_rCa3TQTljCHiZRDjQsoZf3.jpg",
+      "sha256": "f125ce0d77435ed43aca9e4371931c07fafafde5a214f1e94c0cea84f071bd36",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 203742,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:59.493547Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11681695/lxGeLuTw0dxavWgq3WYnL2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11681695/lxGeLuTw0dxavWgq3WYnL2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_lxGeLuTw0dxavWgq3WYnL2.jpg",
+      "sha256": "22652b3e07ce84b765a163120dcab1c1b5f842fa21dcd3f0e9b89dd22a3416c7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 344961,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Morningside photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:31:59.237379Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/242",
+            "name": "Morningside"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5395479",
+            "name": "T5395479"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11681695/eAxncuiSWAgZyKU0nlKfz4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Morningside, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5395479"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 6 500 000 | 5 Bedroom House in Morningside | Private Property",
+    "og:description": "Brand new 5 Bed Cluster  in Morningside\nNew Development  Luxury 5-Bedroom Homes in Morningside\nPhase two of this successful development offers five exclusive off-plan homes, with occupation in approxi...",
+    "og:image": "https://images.pp.co.za/listing/11681695/eAxncuiSWAgZyKU0nlKfz4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5395479"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 6 500 000 | 5 Bedroom House in Morningside | Private Property",
+    "og:description": "Brand new 5 Bed Cluster  in Morningside\nNew Development  Luxury 5-Bedroom Homes in Morningside\nPhase two of this successful development offers five exclusive off-plan homes, with occupation in approxi...",
+    "og:image": "https://images.pp.co.za/listing/11681695/eAxncuiSWAgZyKU0nlKfz4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/morningside/T5395479",
+    "description": "5 Bedroom House in Morningside, Brand new 5 Bed Cluster  in Morningside\nNew Development  Luxury 5-Bedroom Homes in Morningside\nPhase",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "4495c2a812158e9929bc32f8a86086a0b7b7ef2f7efd07c91a9b8f278d9f652d"
+}

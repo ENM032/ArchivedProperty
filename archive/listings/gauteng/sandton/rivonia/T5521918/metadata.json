@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5521918",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/29-kudo-crescent/T5521918",
+  "archived_at": "2026-08-24T12:07:46.332446Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|a07e566d-044d-4037-8c71-200b10c0e409|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=qRZ4wqGygkCeqH_tBlkWHQ; expires=Fri, 24-Aug-2125 12:07:40 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:07:39 GMT",
+    "content-length": "27164"
+  },
+  "fetch_duration_sec": 1.3093008995056152,
+  "total_images_discovered": 30,
+  "total_images_archived": 30,
+  "total_archive_size_bytes": 7285201,
+  "content_fingerprint": "bdcf023e5b7952cd0a1f13d404d4a8af395ebdabcaf2697c24e40b4acd3f2cb0"
+}

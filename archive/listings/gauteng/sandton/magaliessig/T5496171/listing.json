@@ -1,0 +1,462 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5496171",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/22-troupant-village/24-troupant-avenue/T5496171",
+  "extracted_at": "2026-08-24T12:05:20.525109Z",
+  "title": "3 Bedroom Duplex in Magaliessig",
+  "listing_type": "for_sale",
+  "property_type": "Duplex",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-22",
+  "description": "3-Bedroom Duplex Freestanding | Low Levies | Exceptional Freedom and privacy\n \nDiscover a rare opportunity to own a townhouse within an HOA Home Owners Association rather than a sectional title, offer...",
+  "erf_size_m2": 178.0,
+  "land_size_raw": "178 m²",
+  "floor_size_m2": 122.0,
+  "price": {
+    "amount": 1500000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 500 000",
+    "rates_and_taxes_monthly": 1200.0,
+    "levies_monthly": 1000.0
+  },
+  "location": {
+    "street_address": "22 Troupant Village, 24 Troupant Avenue",
+    "suburb": "Magaliessig",
+    "city": "Johannesburg",
+    "region": "Magaliessig, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.034738899999997,
+    "longitude": 28.018909999999998,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Magaliessig",
+      "T5496171"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 1",
+      "Pet friendly",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Vera Tomlinson",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2148389/image/f6b9a13984a74e11baff50a62d86f43d_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/vera-tomlinson/2148389/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11853110/rIOCnf4asn2DVKBpJF1CJ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/rIOCnf4asn2DVKBpJF1CJ6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_rIOCnf4asn2DVKBpJF1CJ6.png",
+      "sha256": "2a9d2d14fa6023f29a9b113f5cd7026497b6fcf21682bd86ab1be16c2231466d",
+      "mime_type": "image/png",
+      "file_size_bytes": 2756944,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:05:21.580213Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11853110/GJIpEGx4HVWQ7n7azipit6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/GJIpEGx4HVWQ7n7azipit6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_GJIpEGx4HVWQ7n7azipit6.png",
+      "sha256": "c219ccb09a19dbee02713e9c9e80074e01aa4eb77fc28acb297938b321b66e5d",
+      "mime_type": "image/png",
+      "file_size_bytes": 2429501,
+      "width": 1558,
+      "height": 1010,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:21.303843Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11853110/7G6GR772vGPQkbjPEULw21/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/7G6GR772vGPQkbjPEULw21/1600/1066/contain/jpegorpng",
+      "local_filename": "003_7G6GR772vGPQkbjPEULw21.png",
+      "sha256": "e558280dd94ef7ac0ad9464b8bae4863db7ab2e7f75c0f71cd717d02726cbefe",
+      "mime_type": "image/png",
+      "file_size_bytes": 2286614,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.399324Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11853110/CnOu05SXWHnkPwNfOdYmJ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/CnOu05SXWHnkPwNfOdYmJ3/1600/1066/contain/jpegorpng",
+      "local_filename": "004_CnOu05SXWHnkPwNfOdYmJ3.jpg",
+      "sha256": "3d29c84fc4981838cd1e463ddaa346fde25e1764e47f8cbcf4584fc83ea577ae",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157138,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:21.641954Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11853110/iQS9hbx2YfgPBOVeurfX13/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/iQS9hbx2YfgPBOVeurfX13/1600/1066/contain/jpegorpng",
+      "local_filename": "005_iQS9hbx2YfgPBOVeurfX13.jpg",
+      "sha256": "58000f97a2fe445d78febb87ca464b1f1485f3a99f460a2a47bba02f38581fa7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134898,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.557388Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11853110/Pt52BkIeDoxUkD58oftcE2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/Pt52BkIeDoxUkD58oftcE2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Pt52BkIeDoxUkD58oftcE2.jpg",
+      "sha256": "848bd2f6ff3ff8f91aa10c05954368e76da5283680bdcdd11917d0b8349fa7ee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 161335,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.394138Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11853110/83nJQjcttP6eQRZzX46xc0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/83nJQjcttP6eQRZzX46xc0/1600/1066/contain/jpegorpng",
+      "local_filename": "007_83nJQjcttP6eQRZzX46xc0.jpg",
+      "sha256": "5625414999c60ffb4fc4787f61022b7a9b67ec73f6fb4e981ebc9a94aa7dd28b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145955,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:21.572708Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11853110/pwFSNJNmMU7NvW8F0cvkW2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/pwFSNJNmMU7NvW8F0cvkW2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_pwFSNJNmMU7NvW8F0cvkW2.png",
+      "sha256": "42b5986387aff94b543dbd53e700e8cfce17c805f51127fca16b4eab32e7a3eb",
+      "mime_type": "image/png",
+      "file_size_bytes": 2192484,
+      "width": 1435,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.931238Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11853110/aNnYf3WDjDit5pwz79Yii0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/aNnYf3WDjDit5pwz79Yii0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_aNnYf3WDjDit5pwz79Yii0.jpg",
+      "sha256": "714722911a087c6aa8511c1a06a794e85579e0e49d3edb3c80da2ac65f98ff85",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126713,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:21.977299Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11853110/1Rta8lElCGr0HnlMnNgye3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/1Rta8lElCGr0HnlMnNgye3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_1Rta8lElCGr0HnlMnNgye3.png",
+      "sha256": "4861b9400fa0e345bd87acc991683c9a378fe9629edcb8fcc7c22d3262c84dbc",
+      "mime_type": "image/png",
+      "file_size_bytes": 2472496,
+      "width": 1560,
+      "height": 1008,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.882921Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11853110/HWaygLs0jIfrww0Whip0b3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/HWaygLs0jIfrww0Whip0b3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_HWaygLs0jIfrww0Whip0b3.png",
+      "sha256": "c510b4e75b447292ec6e75ea11be08d6ce2d27169b29d086578b80ee55abc20f",
+      "mime_type": "image/png",
+      "file_size_bytes": 2586802,
+      "width": 1537,
+      "height": 1023,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:24.268682Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11853110/ZecZmneVcYL6SDXtY2HD60/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/ZecZmneVcYL6SDXtY2HD60/1600/1066/contain/jpegorpng",
+      "local_filename": "012_ZecZmneVcYL6SDXtY2HD60.jpg",
+      "sha256": "b1784ea3986726772264a1693ce4075aa2bf61d31fc3b78c9d2c6f4c5c244b64",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170057,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.940196Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11853110/dCwqBFsAkmJ4IftcwwXHR4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/dCwqBFsAkmJ4IftcwwXHR4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_dCwqBFsAkmJ4IftcwwXHR4.jpg",
+      "sha256": "47b830e7b0641b87c510e787f02ca37d4284ee8a92bf5244d356f48d7c41a737",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 380793,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.552608Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11853110/jX2IndzTANLpsON2rqNW12/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/jX2IndzTANLpsON2rqNW12/1600/1066/contain/jpegorpng",
+      "local_filename": "014_jX2IndzTANLpsON2rqNW12.jpg",
+      "sha256": "47aa45e711f8b05aa11dc186bfc1153042a1716d36bca6b29256fe709fa324c1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 368054,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:22.753977Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11853110/waTy20NUT9JpaLLM5CrhR4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/waTy20NUT9JpaLLM5CrhR4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_waTy20NUT9JpaLLM5CrhR4.jpg",
+      "sha256": "d19a72af591bef723d9471a91c58c10c6c67e2e4e5182d7b2ea437d597aded7f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 355270,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:23.572777Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11853110/MD1eWUYmsszaUawDvXaTC3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/MD1eWUYmsszaUawDvXaTC3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_MD1eWUYmsszaUawDvXaTC3.jpg",
+      "sha256": "c13fc5e243d439b7302746c8345ff74bbc6305a9adf01bebea63d9ad1a499cfd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 363876,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:23.021248Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11853110/FwKcVGuHBlq4yLIGWKgPu4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853110/FwKcVGuHBlq4yLIGWKgPu4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_FwKcVGuHBlq4yLIGWKgPu4.jpg",
+      "sha256": "a9d7dfd2cbd29a50832e0a53a946f04df71509f1e96aa26355c38066997ca19c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 310131,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom Duplex in Magaliessig photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:05:23.242078Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/1484",
+            "name": "Magaliessig"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/22-troupant-village/24-troupant-avenue/T5496171",
+            "name": "T5496171"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11853110/rIOCnf4asn2DVKBpJF1CJ6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "22 Troupant Village, 24 Troupant Avenue",
+        "addressLocality": "Magaliessig, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.034738899999997,
+        "longitude": 28.018909999999998
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/22-troupant-village/24-troupant-avenue/T5496171"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 500 000 | 3 Bedroom Duplex in Magaliessig | Private Property",
+    "og:description": "3-Bedroom Duplex Freestanding | Low Levies | Exceptional Freedom and privacy\n \nDiscover a rare opportunity to own a townhouse within an HOA Home Owners Association rather than a sectional title, offer...",
+    "og:image": "https://images.pp.co.za/listing/11853110/rIOCnf4asn2DVKBpJF1CJ6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/22-troupant-village/24-troupant-avenue/T5496171"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 500 000 | 3 Bedroom Duplex in Magaliessig | Private Property",
+    "og:description": "3-Bedroom Duplex Freestanding | Low Levies | Exceptional Freedom and privacy\n \nDiscover a rare opportunity to own a townhouse within an HOA Home Owners Association rather than a sectional title, offer...",
+    "og:image": "https://images.pp.co.za/listing/11853110/rIOCnf4asn2DVKBpJF1CJ6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/22-troupant-village/24-troupant-avenue/T5496171",
+    "description": "3 Bedroom Duplex in Magaliessig, 22 troupant village, 24 troupant avenue, 3-Bedroom Duplex Freestanding | Low Levies | Exceptional Freedom and privacy\n \nDiscover a rare oppor",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "25b4696540f2e14ee5a60787a59dd8d4eaffa0bfb34c28f89cbf5dad5143011e"
+}

@@ -1,0 +1,643 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5475286",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/6-winston-avenue/T5475286",
+  "extracted_at": "2026-08-24T12:07:02.679199Z",
+  "title": "5 Bedroom House in Rivonia",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-04",
+  "description": "Stylishly Refurbished Family Home. This exceptional, ultra-spacious family residence has been beautifully refurbished to the highest standards, showcasing premium finishes throughout. Thoughtfully mod...",
+  "erf_size_m2": 2424.0,
+  "land_size_raw": "2 424 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 3800000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 800 000",
+    "rates_and_taxes_monthly": 2414.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "6 Winston Avenue",
+    "suburb": "Rivonia",
+    "city": "Johannesburg",
+    "region": "Rivonia, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.042987,
+    "longitude": 28.053755,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Rivonia",
+      "T5475286"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 3.0,
+    "en_suites": 2.0,
+    "lounges": 2.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": true,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": true,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 3",
+      "En-suite 2",
+      "Lounges 2",
+      "Garage parking 2",
+      "Alarm",
+      "Built in cupboards",
+      "Pool",
+      "Staff quarters",
+      "Kitchen",
+      "Garden",
+      "Family TV room",
+      "Fireplace",
+      "Lapa",
+      "Aircon"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Pat Dempster",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1149230/image/d7cce35c37cb4131bd1f7d7f589f00c5_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/pat-dempster/1149230/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Alistair Dempster",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2157349/image/7f189562d3844b1ebcedb22942682b9d_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/alistair-dempster/2157349/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11815655/enpcNiz890xbrkdBlkteH2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/enpcNiz890xbrkdBlkteH2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_enpcNiz890xbrkdBlkteH2.jpg",
+      "sha256": "fd98be6014e932287ea68a889700c001ed8ae22c148916a542342d6690f7bab7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 329048,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T12:07:03.264450Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11815655/b3oEZsnzTLJkv8bIjWDTI7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/b3oEZsnzTLJkv8bIjWDTI7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_b3oEZsnzTLJkv8bIjWDTI7.jpg",
+      "sha256": "d71f6196ed692af839ca659877e3b4bff185df3fb3c9dc9263deb768fa911765",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162473,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:03.641511Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11815655/Vhnq0voX3YUWNK1PzPGAt5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/Vhnq0voX3YUWNK1PzPGAt5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_Vhnq0voX3YUWNK1PzPGAt5.jpg",
+      "sha256": "0ec57f66785e9a80c51fb7821db7f8eb49733025369cf658de7cae04f95b503f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151973,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.445399Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11815655/CE7Hd8a4ETzrjRZkKh1ed6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/CE7Hd8a4ETzrjRZkKh1ed6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_CE7Hd8a4ETzrjRZkKh1ed6.jpg",
+      "sha256": "24a98ae3972869d7ffaeec1126a44109ebc14f54fb3c8463acaec04be29cb18a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176781,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.515035Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11815655/OHwIpLTZOidOdiN05HSvd6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/OHwIpLTZOidOdiN05HSvd6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_OHwIpLTZOidOdiN05HSvd6.jpg",
+      "sha256": "140b9dd865276ad3272bb7a0c49fb329c5a4d11f7960ced6dd67944ca094b44a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196566,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:03.558807Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11815655/y8nT0jWcKQNZA65zIrMRx1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/y8nT0jWcKQNZA65zIrMRx1/1600/1066/contain/jpegorpng",
+      "local_filename": "006_y8nT0jWcKQNZA65zIrMRx1.jpg",
+      "sha256": "d7a6f64b6f4ea8d8866a4b100661f15d1111c22ff3aa6e9d89eb4f6279f6cee7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199162,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.493714Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11815655/NJpjocVD6zQ5XUifrb6Xf3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/NJpjocVD6zQ5XUifrb6Xf3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_NJpjocVD6zQ5XUifrb6Xf3.jpg",
+      "sha256": "806901498ddb8c3733e76d231259eea9642f51a2a60883dd4f5b6d5efb3524c8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 232045,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:03.713851Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11815655/GXPhpxMhXLClqee2GLYQ00/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/GXPhpxMhXLClqee2GLYQ00/1600/1066/contain/jpegorpng",
+      "local_filename": "008_GXPhpxMhXLClqee2GLYQ00.jpg",
+      "sha256": "5720630205fdf8bd3785d9d9223905b650bf204af6cf834c4f0e5842266a469b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156510,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:03.938461Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11815655/JFvq8tqyrJlzlb4ocs5hW6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/JFvq8tqyrJlzlb4ocs5hW6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_JFvq8tqyrJlzlb4ocs5hW6.jpg",
+      "sha256": "5700ffef21b5bdb5bdf8d7104b4cf3a657bf80c3a18f715cf145e88f0c3cfde1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179774,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.030742Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11815655/SkSdSy3P8LIKSGxSq96Uh2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/SkSdSy3P8LIKSGxSq96Uh2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_SkSdSy3P8LIKSGxSq96Uh2.jpg",
+      "sha256": "f62c480f4c7f5b4bd6941849a488bd115af638aa792c43a2176f07994d3606cd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149860,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.283871Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11815655/YmQoAULZ0LTjAjWTo2Wfe3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/YmQoAULZ0LTjAjWTo2Wfe3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_YmQoAULZ0LTjAjWTo2Wfe3.jpg",
+      "sha256": "7ca748efaad895b33de10e8c420469511049de5d0ddb76ad20b25ef6ef6a6744",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 213353,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.354573Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11815655/do64dZa8yadJLmyXU9waC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/do64dZa8yadJLmyXU9waC0/1600/1066/contain/jpegorpng",
+      "local_filename": "012_do64dZa8yadJLmyXU9waC0.jpg",
+      "sha256": "77153235bb8c05b8316663d5a73c0d7aa76d015b7df69f1f0bbf6e5bdd905eab",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 361332,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.676521Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11815655/ZaXojGY7sbL1UpdAw9B923/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/ZaXojGY7sbL1UpdAw9B923/1600/1066/contain/jpegorpng",
+      "local_filename": "013_ZaXojGY7sbL1UpdAw9B923.jpg",
+      "sha256": "ee46419707376ec78347bed68cd80d1dcc34fd8c47df3209bb67e47041a9aa74",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 383351,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.725197Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11815655/jjibVs5EmlMU5seL5f5ke6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/jjibVs5EmlMU5seL5f5ke6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_jjibVs5EmlMU5seL5f5ke6.jpg",
+      "sha256": "b28c1a33eedbd60a5741e1825af806cb7aed6bb96c2ffcb21223479459c6a924",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 453849,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.838428Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11815655/twRKNu9uEAm57HDfkKTxr0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/twRKNu9uEAm57HDfkKTxr0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_twRKNu9uEAm57HDfkKTxr0.jpg",
+      "sha256": "a4cbff109c5eae86cce98a8e3ec538dd07544cf7e22479fbe20b5a730c533774",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 370714,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:04.996379Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11815655/LkExw8KW3VNwfHaJiDGwP3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/LkExw8KW3VNwfHaJiDGwP3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_LkExw8KW3VNwfHaJiDGwP3.jpg",
+      "sha256": "2b81cc30b8950fef5bfbe6aac98b251abdfa5126b31ce4085617698aef501050",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 405218,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.083058Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11815655/uIkzHaWl05AqE1TY3sOX25/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/uIkzHaWl05AqE1TY3sOX25/1600/1066/contain/jpegorpng",
+      "local_filename": "017_uIkzHaWl05AqE1TY3sOX25.jpg",
+      "sha256": "f08fc7fa2b32d8c3d9ba5801ff3fdfa20a08ac3b9c86179d25b4482a1fa1d74c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 406190,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.106534Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11815655/0fkmqEFBcyNapNx6qAZ1J5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/0fkmqEFBcyNapNx6qAZ1J5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_0fkmqEFBcyNapNx6qAZ1J5.jpg",
+      "sha256": "9a80c33d95c53700bcf036cccedd07e82370474d5bdee0f61e6af914908daef2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 455803,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:07.217172Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11815655/EEatfdPqLNEUnpDstThzh4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/EEatfdPqLNEUnpDstThzh4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_EEatfdPqLNEUnpDstThzh4.jpg",
+      "sha256": "7892aae225bfea30e1b0feb520af49d3b85852509cffc0c2d1f8a19e9cfdd6b7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 416454,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.771158Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11815655/b4ZjWAz4H1D8Djpk3gcTl7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/b4ZjWAz4H1D8Djpk3gcTl7/1600/1066/contain/jpegorpng",
+      "local_filename": "020_b4ZjWAz4H1D8Djpk3gcTl7.jpg",
+      "sha256": "3092fbe0eb54679dd63cd4aed1605bcbfd7588853ce3030d90941e311f649bbb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 466499,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.054604Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11815655/RrsO74IX9mqFt5P9TPmiC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/RrsO74IX9mqFt5P9TPmiC0/1600/1066/contain/jpegorpng",
+      "local_filename": "021_RrsO74IX9mqFt5P9TPmiC0.jpg",
+      "sha256": "3e9d8b55be5c0594b99a7770ebfe45c67faca8cf341ad016107060d177a14ba8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 418434,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:05.675498Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11815655/Ol4QYaqWaj989pPOXXpCj1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/Ol4QYaqWaj989pPOXXpCj1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_Ol4QYaqWaj989pPOXXpCj1.jpg",
+      "sha256": "ba5d95543da6dbd2977eed453ffa60cc3d01b9b966c12e215ce480cb7eae295b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159658,
+      "width": 1596,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.053783Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11815655/v8GTBkceZxV9H8fpfzZnL5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/v8GTBkceZxV9H8fpfzZnL5/1600/1066/contain/jpegorpng",
+      "local_filename": "023_v8GTBkceZxV9H8fpfzZnL5.jpg",
+      "sha256": "bd262db67c1d9d96bd26398131cf19ebb61c5e2951ae4b7dc78c85d5b28ad2c9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146314,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.147058Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11815655/Vaqhs2wNYbRR1g8fYuukQ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/Vaqhs2wNYbRR1g8fYuukQ7/1600/1066/contain/jpegorpng",
+      "local_filename": "024_Vaqhs2wNYbRR1g8fYuukQ7.jpg",
+      "sha256": "b986087aca35b5e2becb9dcd4a2953cf29069ec6cd68de13602708fbb64eac63",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191740,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.549285Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11815655/hGmqHpa4C2VGmmagoKA9V3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/hGmqHpa4C2VGmmagoKA9V3/1600/1066/contain/jpegorpng",
+      "local_filename": "025_hGmqHpa4C2VGmmagoKA9V3.jpg",
+      "sha256": "d3764ac8ed3c1f818385f9626ed1c1e30065f98c8943db102ae3e60fc2fbae39",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157644,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.153706Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11815655/WXuthr9PgYbiDx8pGOpMt0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/WXuthr9PgYbiDx8pGOpMt0/1600/1066/contain/jpegorpng",
+      "local_filename": "026_WXuthr9PgYbiDx8pGOpMt0.jpg",
+      "sha256": "5b3c2db6cbde15d432a7e0249c2d35489440eea3f1181aee827f0ae02581632e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175508,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:08.179013Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11815655/kIXKJioikD8aCXSBFWYv72/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/kIXKJioikD8aCXSBFWYv72/1600/1066/contain/jpegorpng",
+      "local_filename": "027_kIXKJioikD8aCXSBFWYv72.jpg",
+      "sha256": "3004a4608c582ec434c69db03427e831f00840629316ea6e8d618ead39a91135",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167550,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.600696Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11815655/9t97ba1R230h02I9Ud2376/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/9t97ba1R230h02I9Ud2376/1600/1066/contain/jpegorpng",
+      "local_filename": "028_9t97ba1R230h02I9Ud2376.jpg",
+      "sha256": "e3588cdc5eef3beef47672ceb2c094b65a1d2dffdda95a3ff1bb524bbd924a3e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 205845,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.705940Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11815655/M76o2jzKCu5ndmWVBE2nE2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11815655/M76o2jzKCu5ndmWVBE2nE2/1600/1066/contain/jpegorpng",
+      "local_filename": "029_M76o2jzKCu5ndmWVBE2nE2.jpg",
+      "sha256": "6e15ab02ac8d577a4275d7fd0a4c2fdf442430700d0205e1db330cdd6768b4b7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 388995,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Rivonia photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T12:07:06.543302Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/244",
+            "name": "Rivonia"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/6-winston-avenue/T5475286",
+            "name": "T5475286"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11815655/enpcNiz890xbrkdBlkteH2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6 Winston Avenue",
+        "addressLocality": "Rivonia, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.042987,
+        "longitude": 28.053755
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/6-winston-avenue/T5475286"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 800 000 | 5 Bedroom House in Rivonia | Private Property",
+    "og:description": "Stylishly Refurbished Family Home. This exceptional, ultra-spacious family residence has been beautifully refurbished to the highest standards, showcasing premium finishes throughout. Thoughtfully mod...",
+    "og:image": "https://images.pp.co.za/listing/11815655/enpcNiz890xbrkdBlkteH2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/6-winston-avenue/T5475286"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 800 000 | 5 Bedroom House in Rivonia | Private Property",
+    "og:description": "Stylishly Refurbished Family Home. This exceptional, ultra-spacious family residence has been beautifully refurbished to the highest standards, showcasing premium finishes throughout. Thoughtfully mod...",
+    "og:image": "https://images.pp.co.za/listing/11815655/enpcNiz890xbrkdBlkteH2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/6-winston-avenue/T5475286",
+    "description": "5 Bedroom House in Rivonia, 6 winston avenue, Stylishly Refurbished Family Home. This exceptional, ultra-spacious family residence has been beauti",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "e3eea16f4c073c6248326f33b7ac579cb20daec691916f678591d82113e6c31a"
+}

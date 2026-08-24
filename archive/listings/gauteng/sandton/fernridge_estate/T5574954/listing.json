@@ -1,0 +1,667 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5574954",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5574954",
+  "extracted_at": "2026-08-24T14:01:52.911960Z",
+  "title": "5 Bedroom House in Fernridge Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-08-03",
+  "description": "Modern Family Living in a Prestigious Secure Estate\n\nEXCLUSIVE MANDATE\n\nDiscover the perfect balance of space, comfort, and modern convenience in this exceptional five-bedroom family home, nestled wit...",
+  "erf_size_m2": 605.0,
+  "land_size_raw": "605 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 4500000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 500 000",
+    "rates_and_taxes_monthly": 3000.0,
+    "levies_monthly": 2711.0
+  },
+  "location": {
+    "street_address": "Fernridge Estate",
+    "suburb": "Fernridge Estate",
+    "city": "Johannesburg",
+    "region": "Fernridge Estate, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Fourways",
+      "Fernridge Estate",
+      "T5574954"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 3.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": true,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 3",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Patio",
+      "Pool",
+      "Staff quarters",
+      "Tv",
+      "Garden",
+      "Fireplace"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Demetri Tsekos",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1961059/image/0212b4315e5e46f0ba083cab7a928859_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/demetri-tsekos/1961059/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11988780/VZyCZBB21gl2FLRLhJotW3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/VZyCZBB21gl2FLRLhJotW3/1600/1066/contain/jpegorpng",
+      "local_filename": "001_VZyCZBB21gl2FLRLhJotW3.jpg",
+      "sha256": "9853959c2125c9289ff46a53bd42aad31bb28a8985add8a0e77e583d97045058",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 322623,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T14:01:54.699702Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11988780/ZsrfwIpj6C4VQEkDQKdzW2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/ZsrfwIpj6C4VQEkDQKdzW2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_ZsrfwIpj6C4VQEkDQKdzW2.jpg",
+      "sha256": "0aa4d9826cb3febc8da81bb7753a00290515734a408e5c661cf411840ea3a1bf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 276148,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.545564Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11988780/8FlI1NyotjaNtv52AP9GE4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/8FlI1NyotjaNtv52AP9GE4/1600/1066/contain/jpegorpng",
+      "local_filename": "003_8FlI1NyotjaNtv52AP9GE4.jpg",
+      "sha256": "018404633043add0ff7a5c67bbc0fc05013607845d2bb757d4b886f10b09cbbf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206477,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.544272Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11988780/VKiwpreC0rAF8y39j31pv1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/VKiwpreC0rAF8y39j31pv1/1600/1066/contain/jpegorpng",
+      "local_filename": "004_VKiwpreC0rAF8y39j31pv1.jpg",
+      "sha256": "74ac11b70e1e26ad6ce7c3d98fd8f6963199d2d012c67cf1de5a40c973c94f16",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194305,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.597043Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11988780/Kbe1acfdmp62jElhCoP4b7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/Kbe1acfdmp62jElhCoP4b7/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Kbe1acfdmp62jElhCoP4b7.jpg",
+      "sha256": "f73c220697e96ddfb6c3b9d3e1a9e590a78f50367d343da44133ffb85928e3f5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181273,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.546539Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11988780/zJmkrszso0mh7oSI4mWVg4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/zJmkrszso0mh7oSI4mWVg4/1600/1066/contain/jpegorpng",
+      "local_filename": "006_zJmkrszso0mh7oSI4mWVg4.jpg",
+      "sha256": "255cc7fe9fe7a44fdaa7239c21b04411653637c9f8f1846b9e7c699db2a0cadd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185879,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.543641Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11988780/CVllTzjtsI7LCRnErTHjY3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/CVllTzjtsI7LCRnErTHjY3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_CVllTzjtsI7LCRnErTHjY3.jpg",
+      "sha256": "366fac7b545e5c6503b87102ee35f00d71a83e8e51f2b49b52a6c29e9cbef7e4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188265,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.680884Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11988780/YldF5yQsRqT2nQUNYOSkm0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/YldF5yQsRqT2nQUNYOSkm0/1600/1066/contain/jpegorpng",
+      "local_filename": "008_YldF5yQsRqT2nQUNYOSkm0.jpg",
+      "sha256": "34ef5208dc536e7f0d0b0e0cad72a0f0a2270d3baf943dd18ea7cf12dbaab090",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174080,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.696792Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11988780/RknsQJYYHM94kPgZaOtm60/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/RknsQJYYHM94kPgZaOtm60/1600/1066/contain/jpegorpng",
+      "local_filename": "009_RknsQJYYHM94kPgZaOtm60.jpg",
+      "sha256": "2d6c2f7cf2c6aaacf87b4e3694ba0009435593c34da96628d00e771e79b38f02",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 180584,
+      "width": 1595,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.699843Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11988780/JGVuLtcPjdNBfym3dS4I14/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/JGVuLtcPjdNBfym3dS4I14/1600/1066/contain/jpegorpng",
+      "local_filename": "010_JGVuLtcPjdNBfym3dS4I14.jpg",
+      "sha256": "863730587301eebeff802ad19b24b4ab8bd2782a96371d95e4fb3327333f5876",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196171,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.695950Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11988780/TOWM4TGYY24wIZXUugPpk6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/TOWM4TGYY24wIZXUugPpk6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_TOWM4TGYY24wIZXUugPpk6.jpg",
+      "sha256": "d0d6f772ea536db68ac9047d3c5a0e463ec3ce5d6757f7948c2be1d35b0aa8b4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 206385,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.712728Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11988780/Ve77k3X98PgHgicLzmIjb3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/Ve77k3X98PgHgicLzmIjb3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_Ve77k3X98PgHgicLzmIjb3.jpg",
+      "sha256": "38dcbd254eb45fd18b5db626dff28e442fa58e5675df9e00bb5769b615c913a7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 195345,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.722558Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11988780/mep7II7YXqAaEKfI8e1h71/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/mep7II7YXqAaEKfI8e1h71/1600/1066/contain/jpegorpng",
+      "local_filename": "013_mep7II7YXqAaEKfI8e1h71.jpg",
+      "sha256": "5cffcf9d44e9e7bf9dfdc8f8e71ee51147eb63d43bf81391bf5ce6b2a841fca6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153193,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.750839Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11988780/KzFmSTiLgSMogNwESHOLQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/KzFmSTiLgSMogNwESHOLQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_KzFmSTiLgSMogNwESHOLQ4.jpg",
+      "sha256": "573a88092dc218ad9ec20d9c5be3ec87dee55c621980db5bedcbfcd00a986757",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 262955,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.807425Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11988780/I6Crt4Lmpu7CCUh0pmnZq0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/I6Crt4Lmpu7CCUh0pmnZq0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_I6Crt4Lmpu7CCUh0pmnZq0.jpg",
+      "sha256": "d7cf96595a25a6a275f9ecdeb5e7d6643247a480fce8b02e11f119953c2f9360",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 281228,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.779449Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11988780/f0nGMfwYC34gM4RAT94CX4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/f0nGMfwYC34gM4RAT94CX4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_f0nGMfwYC34gM4RAT94CX4.jpg",
+      "sha256": "e0209c0d83605eafabbe9a8c1daaac207e239b085cdee168fed991fe12515ad2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142802,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.991024Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11988780/fI76aEhRfHCd8ignL4eH11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/fI76aEhRfHCd8ignL4eH11/1600/1066/contain/jpegorpng",
+      "local_filename": "017_fI76aEhRfHCd8ignL4eH11.jpg",
+      "sha256": "46404b7ec272e1d0debc35240587094acc0421702764730d85cf45f0452c9482",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 227856,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:58.053403Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11988780/y1Zrgdlp0a7f1HPwsdqlW3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/y1Zrgdlp0a7f1HPwsdqlW3/1600/1066/contain/jpegorpng",
+      "local_filename": "018_y1Zrgdlp0a7f1HPwsdqlW3.jpg",
+      "sha256": "b684489a86b746a318669168fbe56e3e290097490c209187c6c749b6e703ab35",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160507,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.517989Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11988780/2AEbwEBILeWBBxDWIBIIs5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/2AEbwEBILeWBBxDWIBIIs5/1600/1066/contain/jpegorpng",
+      "local_filename": "019_2AEbwEBILeWBBxDWIBIIs5.jpg",
+      "sha256": "232fb1aeee3967a2232f4c91dea2111f78066bcce394177ef70f13710ee6098a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 163094,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:54.808349Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11988780/FH2OYEypL86GMhfeOwvBO2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/FH2OYEypL86GMhfeOwvBO2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_FH2OYEypL86GMhfeOwvBO2.jpg",
+      "sha256": "f7fbb94d69ac7fd813c2359cbb82b1337da0365baa72e072dcefabc4150b8849",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139423,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.235058Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11988780/kNkbh91MfiJSYyd0SrfO02/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/kNkbh91MfiJSYyd0SrfO02/1600/1066/contain/jpegorpng",
+      "local_filename": "021_kNkbh91MfiJSYyd0SrfO02.jpg",
+      "sha256": "dc5fbf6bd78d9a11b3c3d019610b015415b13bf79a9b360bfdcb653802e7dace",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 155983,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.131481Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11988780/R7zBJfB6T9gtrD7vtMIEM3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/R7zBJfB6T9gtrD7vtMIEM3/1600/1066/contain/jpegorpng",
+      "local_filename": "022_R7zBJfB6T9gtrD7vtMIEM3.jpg",
+      "sha256": "2dbf3d8ea2b89777673837c44475c6539448b5245fc74fe6486a8c2b22e59c3f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 168513,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.212313Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11988780/UHY1yGwKnOibF6eHH2A9M5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/UHY1yGwKnOibF6eHH2A9M5/1600/1066/contain/jpegorpng",
+      "local_filename": "023_UHY1yGwKnOibF6eHH2A9M5.jpg",
+      "sha256": "3fa644d7eac251e89570de263906cc30fb918c7f5107841340f6b8a1928c78f4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191253,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.189668Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11988780/tMWu0NGOUPG2WRrN3dpBs2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/tMWu0NGOUPG2WRrN3dpBs2/1600/1066/contain/jpegorpng",
+      "local_filename": "024_tMWu0NGOUPG2WRrN3dpBs2.jpg",
+      "sha256": "4b98c4210743e6386e668d5f3919f64e9c12f7fc34f8b0c4ce22e031ce089a6f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176998,
+      "width": 1598,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.655799Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11988780/PJI381WCayu5epgC0R6OP0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/PJI381WCayu5epgC0R6OP0/1600/1066/contain/jpegorpng",
+      "local_filename": "025_PJI381WCayu5epgC0R6OP0.jpg",
+      "sha256": "e7ac62f1cc159dd0a355acc4e23a1fd93b685d53a42a687f4ac1336b5a78dd0e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 272759,
+      "width": 1596,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.827422Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11988780/SmnFWheNYENp0zpQrJGkQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/SmnFWheNYENp0zpQrJGkQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "026_SmnFWheNYENp0zpQrJGkQ4.jpg",
+      "sha256": "3fd3d9feae16781d119dd3536881948f28a8a6597b619bdbb9d52df57b74bd09",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 213381,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:55.975712Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11988780/2C76m57jqKUH8VKM67fSl3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/2C76m57jqKUH8VKM67fSl3/1600/1066/contain/jpegorpng",
+      "local_filename": "027_2C76m57jqKUH8VKM67fSl3.jpg",
+      "sha256": "07612986f77521452fad652da624d88328c0835fb9fbece9982a9d7bc8d0eb1c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 282333,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:56.047369Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11988780/r0zJXRtO8ephDrrr7bTvv4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/r0zJXRtO8ephDrrr7bTvv4/1600/1066/contain/jpegorpng",
+      "local_filename": "028_r0zJXRtO8ephDrrr7bTvv4.jpg",
+      "sha256": "480120aa29522312484440ad7a187781dc29885f79b399dcb36b06906e682554",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 369884,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:56.172237Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11988780/8yGkn5Q6w3WDt12lNFJCo6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/8yGkn5Q6w3WDt12lNFJCo6/1600/1066/contain/jpegorpng",
+      "local_filename": "029_8yGkn5Q6w3WDt12lNFJCo6.jpg",
+      "sha256": "d860b151e9a53ebf0036450a8119c260fe00c3d466f547f7b8d0d8ee4527f973",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 291084,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:57.302966Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11988780/RWe12s3TWzcceccTLJHOP2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/RWe12s3TWzcceccTLJHOP2/1600/1066/contain/jpegorpng",
+      "local_filename": "030_RWe12s3TWzcceccTLJHOP2.jpg",
+      "sha256": "b8fd4db751cd757b061e8cb945f2bc79125c6066c77290abebf464cfe6af3b90",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 325271,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:56.443422Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11988780/qMITEN6TES9xRQbkB69RW5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11988780/qMITEN6TES9xRQbkB69RW5/1600/1066/contain/jpegorpng",
+      "local_filename": "031_qMITEN6TES9xRQbkB69RW5.jpg",
+      "sha256": "bbb19a4e17c79f692ad7c1eb7791495dbcee8759d93af21820a43b65fe1e68c2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 278528,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Fernridge Estate photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:01:56.089007Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/J_3FlqbOj14?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/373",
+            "name": "Fourways"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/3745",
+            "name": "Fernridge Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5574954",
+            "name": "T5574954"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11988780/VZyCZBB21gl2FLRLhJotW3/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernridge Estate, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5574954"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 500 000 | 5 Bedroom House in Fernridge Estate | Private Property",
+    "og:description": "Modern Family Living in a Prestigious Secure Estate\n\nEXCLUSIVE MANDATE\n\nDiscover the perfect balance of space, comfort, and modern convenience in this exceptional five-bedroom family home, nestled wit...",
+    "og:image": "https://images.pp.co.za/listing/11988780/VZyCZBB21gl2FLRLhJotW3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5574954"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 500 000 | 5 Bedroom House in Fernridge Estate | Private Property",
+    "og:description": "Modern Family Living in a Prestigious Secure Estate\n\nEXCLUSIVE MANDATE\n\nDiscover the perfect balance of space, comfort, and modern convenience in this exceptional five-bedroom family home, nestled wit...",
+    "og:image": "https://images.pp.co.za/listing/11988780/VZyCZBB21gl2FLRLhJotW3/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/fernridge-estate/T5574954",
+    "description": "5 Bedroom House in Fernridge Estate, Modern Family Living in a Prestigious Secure Estate\n\nEXCLUSIVE MANDATE\n\nDiscover the perfect balance",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "231b192bf755fdf111bf2e483f4a8d1bc6e1c789b0d13734fb729cf3b759634d"
+}

@@ -1,5 +1,6 @@
 """
-Top-level canonical listing model with multi-agent support, property type, and transaction intent (buy vs rent).
+Top-level canonical listing model with multi-agent support, property type, transaction intent (buy vs rent),
+and custom user annotations (notes, tags, rating).
 """
 
 from datetime import date, datetime, timezone
@@ -65,6 +66,11 @@ class ListingRecord(BaseModel):
     # Media
     images: list[ImageRecord] = Field(default_factory=list, description="Preserved listing images")
     videos: list[VideoRecord] = Field(default_factory=list, description="Preserved listing video tours")
+
+    # User Annotations & Custom Fields
+    user_notes: str | None = Field(default=None, description="Custom user notes and annotations")
+    user_tags: list[str] = Field(default_factory=list, description="User-assigned custom classification tags")
+    user_rating: int | None = Field(default=None, description="User rating score from 1 to 5 stars")
 
     # Raw / Diagnostics
     raw_json_ld: list[dict[str, Any]] = Field(default_factory=list, description="Raw schema.org JSON-LD blocks parsed from page")

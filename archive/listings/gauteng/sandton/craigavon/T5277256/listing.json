@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5277256",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5277256",
+  "extracted_at": "2026-08-24T11:48:21.898246Z",
+  "title": "3 Bedroom House in Craigavon",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-10-23",
+  "description": "Charming cluster in a tranquil and secure estate.\n\nEnter into an sun-filled and open plan lounge and dining room, that opens out to a side patio, overlooking the wrap around garden. The kitchen is wel...",
+  "erf_size_m2": 360.0,
+  "land_size_raw": "360 m²",
+  "floor_size_m2": 210.0,
+  "price": {
+    "amount": 2000000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 000 000",
+    "rates_and_taxes_monthly": 1521.0,
+    "levies_monthly": 2627.0
+  },
+  "location": {
+    "street_address": "T5277256",
+    "suburb": "Craigavon",
+    "city": "Johannesburg",
+    "region": "Craigavon, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "Craigavon",
+      "T5277256"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Patio",
+      "Security post"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Jason Steenberg",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2103806/image/37ede88f7ead498981038880c8a1beb3_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/jason-steenberg/2103806/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Tracy Stuart",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2175059/image/ccdbe52211d7442e9824bb4f82a7476b_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/tracy-stuart/2175059/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11478509/u5b20seCdmd1C1t7L30uD2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/u5b20seCdmd1C1t7L30uD2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_u5b20seCdmd1C1t7L30uD2.jpg",
+      "sha256": "46b4fec099df1700ccf946c48232d7e5918931c34ccb40be98613d953b1eeee0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 184232,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T11:48:22.816932Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11478509/U7dAjHs5VwoRafPdScO8y4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/U7dAjHs5VwoRafPdScO8y4/1600/1066/contain/jpegorpng",
+      "local_filename": "002_U7dAjHs5VwoRafPdScO8y4.jpg",
+      "sha256": "32bbe7dbfa6ea2071d26eb6e86c501567d79af776d3e1aaa427423017a00e56a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191953,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:22.813913Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11478509/INA1nu4VVhzoRWu70qZYT2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/INA1nu4VVhzoRWu70qZYT2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_INA1nu4VVhzoRWu70qZYT2.jpg",
+      "sha256": "41071f39dce3c42c7bc5d0b6d0afbe66790115e8562a50a3aced4f43b0c74dea",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196074,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.024880Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11478509/eSIZfEnD0apRhSufAVn0i4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/eSIZfEnD0apRhSufAVn0i4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_eSIZfEnD0apRhSufAVn0i4.jpg",
+      "sha256": "472fd356aa3383040d444bd3de2276150711f3bb7fd6de713ca0b3aa8f50f197",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 183873,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:22.810038Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11478509/pRyTsCqd2qqFH1w2qtLbN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/pRyTsCqd2qqFH1w2qtLbN4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_pRyTsCqd2qqFH1w2qtLbN4.jpg",
+      "sha256": "8bd0dfc4a5aa21c3a5b54be94e8988e0780e0af43684a0ac45346b68afda82eb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 183249,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:22.801017Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11478509/D3d5BUZ1A8M7pmCg4QVTJ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/D3d5BUZ1A8M7pmCg4QVTJ1/1600/1066/contain/jpegorpng",
+      "local_filename": "006_D3d5BUZ1A8M7pmCg4QVTJ1.jpg",
+      "sha256": "abb342c48323b810bff22a13122085815f4607941997310e8aab1340caab5416",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 152433,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:22.801201Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11478509/NOY6MquWlML3FTvgvL45O3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/NOY6MquWlML3FTvgvL45O3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_NOY6MquWlML3FTvgvL45O3.jpg",
+      "sha256": "e2abb54fda0fc95421b53e1d664f3493e44f7bd52a9edbd5495d996db4929137",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 159918,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:23.181378Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11478509/xoelzsDlraHDJCj3oLZc02/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/xoelzsDlraHDJCj3oLZc02/1600/1066/contain/jpegorpng",
+      "local_filename": "008_xoelzsDlraHDJCj3oLZc02.jpg",
+      "sha256": "025cc92b61eee4a905ddcc5cd091f3eb0b840bd76e1abc7f47faa8c0c8d14631",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166489,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:23.163491Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11478509/Nva551CeWRJkEpfJchuMp3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/Nva551CeWRJkEpfJchuMp3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_Nva551CeWRJkEpfJchuMp3.jpg",
+      "sha256": "e2d9868e1ceaa4ba51d2ab629cd346bded81d239683c3ed4af4c18b05c351d5e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190477,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:23.250902Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11478509/h3Dj52Rpt7clmAECQlapS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/h3Dj52Rpt7clmAECQlapS7/1600/1066/contain/jpegorpng",
+      "local_filename": "010_h3Dj52Rpt7clmAECQlapS7.jpg",
+      "sha256": "8cce5a3dbb9a8bc8a1c175338dbb6d0bebbc1f22a395c643c908172fc69aa13a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174853,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:23.622308Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11478509/tbkuC2gThmeGjaKmbab953/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/tbkuC2gThmeGjaKmbab953/1600/1066/contain/jpegorpng",
+      "local_filename": "011_tbkuC2gThmeGjaKmbab953.jpg",
+      "sha256": "858d02b720f3c6b01f461f4d4483202c651969a6fd0e78a892d931c6f6f3d832",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199897,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.865389Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11478509/6Wp8q3vUswg932cIoV4Tg6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/6Wp8q3vUswg932cIoV4Tg6/1600/1066/contain/jpegorpng",
+      "local_filename": "012_6Wp8q3vUswg932cIoV4Tg6.jpg",
+      "sha256": "71e8c101c1de3957ac3dab7f913e9f62735b55b647ae6f21b86137e9bed5599c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150815,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.421625Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11478509/66yU5E2BSUQ5VJmYgmo4H4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/66yU5E2BSUQ5VJmYgmo4H4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_66yU5E2BSUQ5VJmYgmo4H4.jpg",
+      "sha256": "f6f12f6608ccbbcea2d95f5447b0ebcb029f31c04cd71271675919b68944167a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128406,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.407924Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11478509/TBp9AqpcokNkUuxMoiqvd4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/TBp9AqpcokNkUuxMoiqvd4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_TBp9AqpcokNkUuxMoiqvd4.jpg",
+      "sha256": "9457d1b12ed1d429b1e9622afec9a6460695b1bbd95d411d494b2ce3818046b6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147397,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.739942Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11478509/PVYl53u99YHSnyxK1LzZt1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/PVYl53u99YHSnyxK1LzZt1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_PVYl53u99YHSnyxK1LzZt1.jpg",
+      "sha256": "886fe76451f7f48394bee8ea6a744b1907e0a0961b6ed7205cf110fa868ae9d6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156918,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.409215Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11478509/lfmCp3B7M6kY0EGagNVpB6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/lfmCp3B7M6kY0EGagNVpB6/1600/1066/contain/jpegorpng",
+      "local_filename": "016_lfmCp3B7M6kY0EGagNVpB6.jpg",
+      "sha256": "e309a5f23cc1c4bb017224b44d2464af5abf6b9d52f0c670547055b33a42e50f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131528,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.543416Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11478509/P8Hf0UtEeJoqmPICYlMe04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/P8Hf0UtEeJoqmPICYlMe04/1600/1066/contain/jpegorpng",
+      "local_filename": "017_P8Hf0UtEeJoqmPICYlMe04.jpg",
+      "sha256": "5f077ae94b2ab6bd56e14304323992a8ec053b561f35b6f25d9a76fd9a59c3ae",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189129,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.840354Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11478509/ZCaY3ABW1voGMzjV7OPW60/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/ZCaY3ABW1voGMzjV7OPW60/1600/1066/contain/jpegorpng",
+      "local_filename": "018_ZCaY3ABW1voGMzjV7OPW60.jpg",
+      "sha256": "66aaf10674e9ab5c6c075dc843b79cbd2596492970d0b285f2bbc381ac7303fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216497,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:25.804654Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11478509/MF0FenhkwMwslkZzpI6qK6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11478509/MF0FenhkwMwslkZzpI6qK6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_MF0FenhkwMwslkZzpI6qK6.jpg",
+      "sha256": "85ce3fa5e3e83dc3f5e9418b267a74ad9ae4a578cda1769da04d275bdc9ba546",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177638,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Craigavon photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T11:48:24.829809Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/772",
+            "name": "Craigavon"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5277256",
+            "name": "T5277256"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11478509/u5b20seCdmd1C1t7L30uD2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Craigavon, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5277256"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 000 000 | 3 Bedroom House in Craigavon | Private Property",
+    "og:description": "Charming cluster in a tranquil and secure estate.\n\nEnter into an sun-filled and open plan lounge and dining room, that opens out to a side patio, overlooking the wrap around garden. The kitchen is wel...",
+    "og:image": "https://images.pp.co.za/listing/11478509/u5b20seCdmd1C1t7L30uD2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5277256"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 000 000 | 3 Bedroom House in Craigavon | Private Property",
+    "og:description": "Charming cluster in a tranquil and secure estate.\n\nEnter into an sun-filled and open plan lounge and dining room, that opens out to a side patio, overlooking the wrap around garden. The kitchen is wel...",
+    "og:image": "https://images.pp.co.za/listing/11478509/u5b20seCdmd1C1t7L30uD2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/craigavon/T5277256",
+    "description": "3 Bedroom House in Craigavon, Charming cluster in a tranquil and secure estate.\n\nEnter into an sun-filled and open plan lounge and",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "214337df5d97110d7f83c628946cba12086a11b615e1efa5171cd9a056ad08ee"
+}

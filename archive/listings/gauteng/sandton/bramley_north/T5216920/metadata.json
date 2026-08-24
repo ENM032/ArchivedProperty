@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5216920",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/bramley-north/T5216920",
+  "archived_at": "2026-08-24T11:08:24.065900Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|c65ba464-7cd9-41df-9c28-1ae78a2e94ca|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=3rbnv3TYZ0SxNVlLWHEfMw; expires=Fri, 24-Aug-2125 11:08:18 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 11:08:18 GMT",
+    "content-length": "25517"
+  },
+  "fetch_duration_sec": 1.680204153060913,
+  "total_images_discovered": 29,
+  "total_images_archived": 29,
+  "total_archive_size_bytes": 5284444,
+  "content_fingerprint": "096893773901259ca9088da411221948da27219f13a61ba359eb6ad3c08aea2e"
+}

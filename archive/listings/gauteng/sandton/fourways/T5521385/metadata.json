@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5521385",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/fourways/T5521385",
+  "archived_at": "2026-08-24T14:11:25.799690Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|6d10a52a-7919-46c1-bb41-6e21a72a9c01|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Zs_duV3wTE2rQBe5ZSBZsQ; expires=Fri, 24-Aug-2125 14:11:18 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 14:11:18 GMT",
+    "content-length": "30405"
+  },
+  "fetch_duration_sec": 3.019869327545166,
+  "total_images_discovered": 57,
+  "total_images_archived": 57,
+  "total_archive_size_bytes": 8788053,
+  "content_fingerprint": "915f27a0e2fb553756fb3e7328e2f1a12317d6dc673af0256e30e74cad2e4183"
+}

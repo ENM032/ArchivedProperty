@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5532399",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/rivonia/18-ballich-way/T5532399",
+  "archived_at": "2026-08-24T12:07:30.249057Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|87d3d2d6-3f32-4e97-ada1-687b3eeb86d8|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=fQ5kTastUEidn560UiHxrQ; expires=Fri, 24-Aug-2125 12:07:19 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 12:07:19 GMT",
+    "content-length": "30863"
+  },
+  "fetch_duration_sec": 1.327314853668213,
+  "total_images_discovered": 52,
+  "total_images_archived": 52,
+  "total_archive_size_bytes": 31468928,
+  "content_fingerprint": "97e0187e615202b6d9796747cb8f04c5f6178130d523ecac689946ba9040bce0"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5269243",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/emfuleni-golf-estate/T5269243",
+  "archived_at": "2026-08-24T14:26:37.782738Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|981ba381-123d-4615-b509-0c87e10590ee|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=iJyMWXPWIEmC3WumnKvO8Q; expires=Fri, 24-Aug-2125 14:26:32 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 14:26:32 GMT",
+    "content-length": "25848"
+  },
+  "fetch_duration_sec": 1.3696582317352295,
+  "total_images_discovered": 24,
+  "total_images_archived": 24,
+  "total_archive_size_bytes": 3997441,
+  "content_fingerprint": "85ba5d179115b915425268ea0211c816917a76553aef0167f4bc0b148e4a3f8a"
+}

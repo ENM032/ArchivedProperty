@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5263595",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/T5263595",
+  "extracted_at": "2026-08-24T14:45:46.068141Z",
+  "title": "3 Bedroom House in Vanderbijlpark Central",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-10-13",
+  "description": "Charming Family Home in Vanderbijlpark CE7 with Ample Parking\n\nDiscover a welcoming family home situated in the established suburb of Vanderbijlpark CE7. This property offers a practical and comfortab...",
+  "erf_size_m2": 400.0,
+  "land_size_raw": "400 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 1350000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 350 000",
+    "rates_and_taxes_monthly": 500.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5263595",
+    "suburb": "Vanderbijlpark Central",
+    "city": "Gauteng South",
+    "region": "Vanderbijlpark CE, Vanderbijlpark",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Gauteng South",
+      "Vanderbijlpark",
+      "Vanderbijlpark Central",
+      "T5263595"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 3.0,
+    "en_suites": 1.0,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 3",
+      "En-suite 1",
+      "Lounges 1",
+      "Garage parking 2",
+      "Open parking 4",
+      "Alarm"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Ettiene Botha",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2325579/image/56413055c93b4783b482f4847e784bc6_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/ettiene-botha/2325579/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Elias Sibanda",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2326918/image/db488b3a6f644ec498bd8dc913353fb1_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/elias-sibanda/2326918/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11455128/QqxysICsH1zBv7jutKkRN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/QqxysICsH1zBv7jutKkRN4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_QqxysICsH1zBv7jutKkRN4.jpg",
+      "sha256": "bbe2da1a7d2619d22530b4bbd0ae732e1064f5b748363e594ab19b1cbfa7cf6f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 282760,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T14:45:47.010023Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11455128/Qu83E8BO6X7hlYIKLmJ5C1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/Qu83E8BO6X7hlYIKLmJ5C1/1600/1066/contain/jpegorpng",
+      "local_filename": "002_Qu83E8BO6X7hlYIKLmJ5C1.jpg",
+      "sha256": "b0489f1475577d00e4e4929f0eb38907e92a78c3f24e125364183227d708e2e4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 184549,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:46.975494Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11455128/baJx0MfTNoJrcQ1NhRnnO5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/baJx0MfTNoJrcQ1NhRnnO5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_baJx0MfTNoJrcQ1NhRnnO5.jpg",
+      "sha256": "ec25b300034ffc5176fae45abea5bb275f8881e19a900bdee9da14f88cf0239e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157323,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:46.971076Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11455128/fjT0rLGet4CzPV9B13o612/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/fjT0rLGet4CzPV9B13o612/1600/1066/contain/jpegorpng",
+      "local_filename": "004_fjT0rLGet4CzPV9B13o612.jpg",
+      "sha256": "dca6eee89ba1091254450ed51277808e408db35e610ca5cb41396f9b683311b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188083,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.000770Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11455128/uTFVOa58qeNfZz6cohr7q3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/uTFVOa58qeNfZz6cohr7q3/1600/1066/contain/jpegorpng",
+      "local_filename": "005_uTFVOa58qeNfZz6cohr7q3.jpg",
+      "sha256": "4ab425da74487eb812a7533207a1065fed48bd6ace55219bed38cda85411866b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 120044,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.096250Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11455128/1hX2ELpKJQW4shRGjTK0w2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/1hX2ELpKJQW4shRGjTK0w2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_1hX2ELpKJQW4shRGjTK0w2.jpg",
+      "sha256": "721d685c712d6f853ecca50f85bf40c98822f0651d6d2bdc8d99776eaf8e88c5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127605,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:46.970792Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11455128/OU9yjuK1jeIVL6nUsD0v13/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/OU9yjuK1jeIVL6nUsD0v13/1600/1066/contain/jpegorpng",
+      "local_filename": "007_OU9yjuK1jeIVL6nUsD0v13.jpg",
+      "sha256": "a65907f32a74e26429c3ac10731e60cf32f848792261fa7a66884ede20c38cd0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145043,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.487492Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11455128/VJaYOTtDKvAEFIPOrncwI2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/VJaYOTtDKvAEFIPOrncwI2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_VJaYOTtDKvAEFIPOrncwI2.jpg",
+      "sha256": "6eb0cfb10b0c10b13e67dfcba246553183ea580a582afe77cc0c1d277948eb3d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130021,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.219702Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11455128/H8FgxgnYQjl0eil8g9yGh3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/H8FgxgnYQjl0eil8g9yGh3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_H8FgxgnYQjl0eil8g9yGh3.jpg",
+      "sha256": "074f33087bc23a7dc7cebe58b9bbccb65c19995e6b4cb1e38d515e3ead98daf1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 72686,
+      "width": 800,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.360425Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11455128/szjFr5YWbDCOoitihS2lm0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/szjFr5YWbDCOoitihS2lm0/1600/1066/contain/jpegorpng",
+      "local_filename": "010_szjFr5YWbDCOoitihS2lm0.jpg",
+      "sha256": "8b7f7fd9f6f9d3f6e6ca285acbdec4cd9486ba3ae7dbc15024ac50a878162029",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137085,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.539555Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11455128/UFqlCKtsXXsuzlcPdCWef6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/UFqlCKtsXXsuzlcPdCWef6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_UFqlCKtsXXsuzlcPdCWef6.jpg",
+      "sha256": "f876a7b32b4ddf4540d9b98da3e3e5e8ba6e4fb4f2387df82332342ceedaf54a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123505,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.427666Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11455128/MoYNu7jgDKAZ2uW1Bi0xC7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/MoYNu7jgDKAZ2uW1Bi0xC7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_MoYNu7jgDKAZ2uW1Bi0xC7.jpg",
+      "sha256": "8a31ce7a20b88c3cfd3f95e0fb4509a8aa74e7c2c716ba7731d250e655c16b90",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 83854,
+      "width": 800,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.514691Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11455128/sreqhl8dxe1z43bvTGbzB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/sreqhl8dxe1z43bvTGbzB2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_sreqhl8dxe1z43bvTGbzB2.jpg",
+      "sha256": "a024b8a459a2890b6a6e062e6da1c8da25c3334017e83ffd921652d44d9c1190",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178575,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.812649Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11455128/sE5IWRynC8dcGokdqENKH0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/sE5IWRynC8dcGokdqENKH0/1600/1066/contain/jpegorpng",
+      "local_filename": "014_sE5IWRynC8dcGokdqENKH0.jpg",
+      "sha256": "95c29d043c3b783cca24099e0b8f82508c53b5bb8967af0b4c4cf5e15aef44b1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141855,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.698079Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11455128/KF6B61iz2tDwvD5BYJvEU7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/KF6B61iz2tDwvD5BYJvEU7/1600/1066/contain/jpegorpng",
+      "local_filename": "015_KF6B61iz2tDwvD5BYJvEU7.jpg",
+      "sha256": "44b16830a2e77f42a83b3ec3dc3fea68e3e0e039b77a4e61555e8502b3bce1c3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127530,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.885356Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11455128/tQBBOOnB3ImwbxOOdxwd16/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/tQBBOOnB3ImwbxOOdxwd16/1600/1066/contain/jpegorpng",
+      "local_filename": "016_tQBBOOnB3ImwbxOOdxwd16.jpg",
+      "sha256": "fd41b186a070e77f56095bb185e0c58fc2334966407f5cb8d9ae83d72ce4ddfb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153258,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.067227Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11455128/n4TlOpYTGIChFWmrn42132/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/n4TlOpYTGIChFWmrn42132/1600/1066/contain/jpegorpng",
+      "local_filename": "017_n4TlOpYTGIChFWmrn42132.jpg",
+      "sha256": "682c218de3a41013c221fb6426ed98917aad18700c63595c6a72442c94bdb033",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160794,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:47.966767Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11455128/zZYMzBGICPz1d0ZTdzB2m2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/zZYMzBGICPz1d0ZTdzB2m2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_zZYMzBGICPz1d0ZTdzB2m2.jpg",
+      "sha256": "c53b3321f02780cc2dc50ad293198fb034ef86244eabb2ab28cb4dbb08972d0f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135389,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.237651Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11455128/IMb0NM7VgnFNJZox9vscT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/IMb0NM7VgnFNJZox9vscT7/1600/1066/contain/jpegorpng",
+      "local_filename": "019_IMb0NM7VgnFNJZox9vscT7.jpg",
+      "sha256": "fe7be484f05ec06cd901b608592dfa6eb1f702758cc5580f51ad6180ee2a1c98",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147539,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.427009Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11455128/P7BciAcZpt0ZEy5CXNOEi5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/P7BciAcZpt0ZEy5CXNOEi5/1600/1066/contain/jpegorpng",
+      "local_filename": "020_P7BciAcZpt0ZEy5CXNOEi5.jpg",
+      "sha256": "ef6a8db585fb2d5ee8be97e4f48ea7016c06e625dd4f45fd8d4a4aa93a425ae8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133127,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.595530Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11455128/0xahrFpALbbJeL86sL44v3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11455128/0xahrFpALbbJeL86sL44v3/1600/1066/contain/jpegorpng",
+      "local_filename": "021_0xahrFpALbbJeL86sL44v3.jpg",
+      "sha256": "56cf059c6f4b807a667f76adc13688653709e5816fd017dcde83343d4d210e5c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131301,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Vanderbijlpark Central photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T14:45:48.505040Z"
+    }
+  ],
+  "videos": [],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/812",
+            "name": "Gauteng South"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/814",
+            "name": "Vanderbijlpark"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/329",
+            "name": "Vanderbijlpark Central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/T5263595",
+            "name": "T5263595"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11455128/QqxysICsH1zBv7jutKkRN4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vanderbijlpark CE, Vanderbijlpark",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/T5263595"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 350 000 | 3 Bedroom House in Vanderbijlpark Central | Private Property",
+    "og:description": "Charming Family Home in Vanderbijlpark CE7 with Ample Parking\n\nDiscover a welcoming family home situated in the established suburb of Vanderbijlpark CE7. This property offers a practical and comfortab...",
+    "og:image": "https://images.pp.co.za/listing/11455128/QqxysICsH1zBv7jutKkRN4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/T5263595"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 350 000 | 3 Bedroom House in Vanderbijlpark Central | Private Property",
+    "og:description": "Charming Family Home in Vanderbijlpark CE7 with Ample Parking\n\nDiscover a welcoming family home situated in the established suburb of Vanderbijlpark CE7. This property offers a practical and comfortab...",
+    "og:image": "https://images.pp.co.za/listing/11455128/QqxysICsH1zBv7jutKkRN4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/gauteng-south/vanderbijlpark/vanderbijlpark-central/T5263595",
+    "description": "3 Bedroom House in Vanderbijlpark Central, Charming Family Home in Vanderbijlpark CE7 with Ample Parking\n\nDiscover a welcoming family home situ",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "bf2a1ac9335d50c7da64e92c70fccfa64d8ceaf2a3bb75173d605efd42f843cd"
+}

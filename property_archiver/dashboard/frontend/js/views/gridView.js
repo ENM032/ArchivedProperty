@@ -1,5 +1,5 @@
 /**
- * Flat Card Grid View Renderer.
+ * Flat Card Grid View Renderer with User Tags and Ratings.
  */
 import { formatZAR, formatDate } from '../utils/formatters.js';
 import { openDossier } from '../components/dossierModal.js';
@@ -31,6 +31,12 @@ export function createCardElement(item) {
     const statusLabel = item.is_sold ? 'Sold' : (item.is_under_offer ? 'Under Offer' : 'Active');
     const heroImg = item.hero_image_url || '/api/placeholder';
 
+    const tagsHtml = (item.user_tags && item.user_tags.length > 0)
+        ? `<div class="card-tags">${item.user_tags.slice(0, 3).map(t => `<span class="user-tag-chip-sm">${t}</span>`).join('')}</div>`
+        : '';
+
+    const ratingHtml = item.user_rating ? `<span style="color: var(--accent-amber); font-size: 0.85rem;">${'★'.repeat(item.user_rating)}</span>` : '';
+
     card.innerHTML = `
         <div class="card-thumb-wrapper">
             <img class="card-thumb" src="${heroImg}" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
@@ -38,9 +44,13 @@ export function createCardElement(item) {
             <div class="img-count-tag">${item.images_count || 0} Photos</div>
         </div>
         <div class="card-body">
-            <div class="card-price">${formatZAR(item.price?.amount)}</div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="card-price">${formatZAR(item.price?.amount)}</div>
+                ${ratingHtml}
+            </div>
             <div class="card-title">${item.title || 'Untitled Listing'}</div>
             <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+            ${tagsHtml}
             <div class="card-specs">
                 <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
                 <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
