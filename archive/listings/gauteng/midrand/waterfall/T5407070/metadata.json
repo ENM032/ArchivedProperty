@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5407070",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/T5407070",
+  "archived_at": "2026-08-24T01:39:02.863153Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|20bb7cc2-f3d9-469e-ab57-1712c14b3b9b|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Pulk5xCwMUWoDputmvnrAA; expires=Fri, 24-Aug-2125 01:38:56 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:38:55 GMT",
+    "content-length": "25169"
+  },
+  "fetch_duration_sec": 1.3420569896697998,
+  "total_images_discovered": 22,
+  "total_images_archived": 22,
+  "total_archive_size_bytes": 2253888,
+  "content_fingerprint": "2d6f6b04e7154265a5060f028da30cfba1d1595e06bb9aa55d0d78b1a6778e6d"
+}

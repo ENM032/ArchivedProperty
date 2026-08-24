@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5485897",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/5410-munyaka-estate/1-munyaka-south/T5485897",
+  "archived_at": "2026-08-24T01:22:17.549462Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|86741b84-9abd-4928-b167-f18f035dd7c1|C2143|CD887",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=qbQoOGGz5EmWgqy8YhVSOg; expires=Fri, 24-Aug-2125 01:22:07 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:22:07 GMT",
+    "content-length": "28164"
+  },
+  "fetch_duration_sec": 1.3155238628387451,
+  "total_images_discovered": 37,
+  "total_images_archived": 37,
+  "total_archive_size_bytes": 6288897,
+  "content_fingerprint": "2137f65e68d38c79099b7a0fb91fd732b1871c61dcb2db28df1b57aa316ebead"
+}

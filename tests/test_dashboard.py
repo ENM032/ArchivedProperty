@@ -1,5 +1,5 @@
 """
-Tests for Unified Dashboard HTTP server, REST endpoints, and /api/hierarchy.
+Tests for Unified Dashboard HTTP server, REST endpoints, and static asset streaming.
 """
 
 import json
@@ -24,7 +24,23 @@ def test_dashboard_root_html(running_server: str):
         assert res.status == 200
         html = res.read().decode("utf-8")
         assert "<title>Property Archiver - Unified Dashboard</title>" in html
-        assert "Grouped" in html
+        assert "app.js" in html
+
+
+def test_static_css_and_js(running_server: str):
+    req_css = urllib.request.Request(f"{running_server}/css/main.css")
+    with urllib.request.urlopen(req_css) as res:
+        assert res.status == 200
+        assert "text/css" in res.headers.get("Content-Type", "")
+        css_text = res.read().decode("utf-8")
+        assert "@import" in css_text
+
+    req_js = urllib.request.Request(f"{running_server}/js/app.js")
+    with urllib.request.urlopen(req_js) as res:
+        assert res.status == 200
+        assert "javascript" in res.headers.get("Content-Type", "")
+        js_text = res.read().decode("utf-8")
+        assert "store" in js_text
 
 
 def test_api_list_listings(running_server: str):

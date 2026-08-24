@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5487433",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/000-the-polofields-waterfall/1-polofields-drive/T5487433",
+  "archived_at": "2026-08-24T01:32:04.247159Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|075aae45-1741-4be2-9147-2ffb7f60ee7a|C2143|CD888",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=m2QMGUcU0USBOrFC94wkoQ; expires=Fri, 24-Aug-2125 01:31:49 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:31:49 GMT",
+    "content-length": "28456"
+  },
+  "fetch_duration_sec": 1.3385388851165771,
+  "total_images_discovered": 42,
+  "total_images_archived": 42,
+  "total_archive_size_bytes": 7184537,
+  "content_fingerprint": "0a4b74b1d40297ac419e64b88b4e48f05123ecd53ffd5a2b1806afe8ef483f3e"
+}

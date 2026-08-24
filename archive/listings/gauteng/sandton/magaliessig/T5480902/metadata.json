@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5480902",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/magaliessig/T5480902",
+  "archived_at": "2026-08-24T01:59:22.826960Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|98e4ec17-52e1-4721-bf05-fac720f80a08|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=aa86ksUGx0eR_vCYqFhEBQ; expires=Fri, 24-Aug-2125 01:59:12 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:59:12 GMT",
+    "content-length": "25846"
+  },
+  "fetch_duration_sec": 1.3368394374847412,
+  "total_images_discovered": 29,
+  "total_images_archived": 29,
+  "total_archive_size_bytes": 5770411,
+  "content_fingerprint": "d1cf29c0b47be6769598911caa4c3eba2d03e6fd7720025869bb52d8189d96cd"
+}

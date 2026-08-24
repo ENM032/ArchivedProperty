@@ -1,0 +1,649 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T4889153",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T4889153",
+  "extracted_at": "2026-08-24T02:08:59.137518Z",
+  "title": "6 Bedroom House in Linden",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "sold",
+  "status_badges": [
+    "Sold"
+  ],
+  "is_under_offer": false,
+  "is_sold": true,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-04-28",
+  "description": "BY APPOINTMENT ONLY.\nThis exceptional double-story home combines elegance, style & functionality in the heart of Linden. Perfectly positioned, this property offers an abundance of space, sophisticated...",
+  "erf_size_m2": 1015.0,
+  "land_size_raw": "1 015 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 5380000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 5 380 000",
+    "rates_and_taxes_monthly": 2927.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T4889153",
+    "suburb": "Linden",
+    "city": "Johannesburg",
+    "region": "Linden, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Linden",
+      "T4889153"
+    ]
+  },
+  "features": {
+    "bedrooms": 6.0,
+    "bathrooms": 6.5,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 2.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 6",
+      "Bathrooms 6.5",
+      "Lounges 2",
+      "Dining areas 2",
+      "Garage parking 2",
+      "Open parking 4",
+      "Flatlets",
+      "Pet friendly",
+      "Balcony",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Colleen Tappin",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1808151/image/b0cf28c73774424cb7cff59bf13f833b_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/colleen-tappin/1808151/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/10827095/SwBGLNmUY3l6a13GW2cDw0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/SwBGLNmUY3l6a13GW2cDw0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_SwBGLNmUY3l6a13GW2cDw0.jpg",
+      "sha256": "a01f6035cfd2a3910d6732444e8ad7abeefbefcc207f8d5bdd6732c28b6663d8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157449,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T02:08:59.860348Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/10827095/Td5lHt3fgUNEEbEE97CzO2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/Td5lHt3fgUNEEbEE97CzO2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_Td5lHt3fgUNEEbEE97CzO2.jpg",
+      "sha256": "bc0a9b2b2098d242d4f7d2eb0289bf530a40a4c350a0a37560d191c0514bef55",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194153,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:08:59.707813Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/10827095/9nxN8lLHhBV7A88oQ1MMX5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/9nxN8lLHhBV7A88oQ1MMX5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_9nxN8lLHhBV7A88oQ1MMX5.jpg",
+      "sha256": "041a0531944259ff22984a4498027bc71750479d9f7c33c294736b17214a010e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135771,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:08:59.942149Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/10827095/vZjjKUdmzmmYl95s5nx455/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/vZjjKUdmzmmYl95s5nx455/1600/1066/contain/jpegorpng",
+      "local_filename": "004_vZjjKUdmzmmYl95s5nx455.jpg",
+      "sha256": "5003b6fa9aec30a9da4d76793bbcdf1e727a33058e3b5507127a1007476371e6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 138686,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:00.286981Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/10827095/C7dfBnhpXM65oiu3KWcsZ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/C7dfBnhpXM65oiu3KWcsZ4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_C7dfBnhpXM65oiu3KWcsZ4.jpg",
+      "sha256": "c14c9b475e50acc8848321242fd6b6876f98a7f64b12ee2e26d12783de8c98ef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 66188,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:00.783520Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/10827095/drxcwy2dgaXEI7qN4Ebyy3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/drxcwy2dgaXEI7qN4Ebyy3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_drxcwy2dgaXEI7qN4Ebyy3.jpg",
+      "sha256": "37110b0b22b56c27113b4c2e413fa68e0309ae646a21791b2e7d16e9cec2dabf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121426,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:00.809227Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/10827095/ai6aw25lyPKn37MsIVfgr5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/ai6aw25lyPKn37MsIVfgr5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_ai6aw25lyPKn37MsIVfgr5.jpg",
+      "sha256": "a8dc23793414b57d1560cbc31f8d27884b2766dad4815642eea6452590e5270b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 100903,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:08:59.742057Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/10827095/1yU3poFyIbdpoNZ0pSX745/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/1yU3poFyIbdpoNZ0pSX745/1600/1066/contain/jpegorpng",
+      "local_filename": "008_1yU3poFyIbdpoNZ0pSX745.jpg",
+      "sha256": "2abc53d7f89aa68b3215e54a9281733bc92d9a65e381b92e50dec4b94e4062f5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126534,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:08:59.781109Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/10827095/5wuyUu1Ovh4Sd6453sDr07/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/5wuyUu1Ovh4Sd6453sDr07/1600/1066/contain/jpegorpng",
+      "local_filename": "009_5wuyUu1Ovh4Sd6453sDr07.jpg",
+      "sha256": "2ea792ff5dbe6ea4fe04cd12ff05d5cefae7ac14ac16bee6ca91e1f5eb89c57f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 73776,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:08:59.814931Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/10827095/L7jPjzJPb8WV7hQl3wx1w2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/L7jPjzJPb8WV7hQl3wx1w2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_L7jPjzJPb8WV7hQl3wx1w2.jpg",
+      "sha256": "e7aa42d7b438d948899158beb57831ac525230637318f810089141475083d2df",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113036,
+      "width": 1024,
+      "height": 681,
+      "alt_text": "6 Bedroom House in Linden photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:00.980958Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/10827095/rv3yAHGTtg1HZiFbVz9Uw4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/rv3yAHGTtg1HZiFbVz9Uw4/1600/1066/contain/jpegorpng",
+      "local_filename": "011_rv3yAHGTtg1HZiFbVz9Uw4.jpg",
+      "sha256": "2f54ad307cc19a2e64bc1b60aaf7ea2c371f65a4e18820d95461a76d46a6e877",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 110495,
+      "width": 1024,
+      "height": 681,
+      "alt_text": "6 Bedroom House in Linden photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:01.006387Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/10827095/5KrtVtXjn5yBaFWtL2HWu4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/5KrtVtXjn5yBaFWtL2HWu4/1600/1066/contain/jpegorpng",
+      "local_filename": "012_5KrtVtXjn5yBaFWtL2HWu4.jpg",
+      "sha256": "1e268d56bafafdbe50de7bc1d16ccf268e453f4cc456e047a9e08c3023a013fd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 70740,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:01.080261Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/10827095/FcjJsNW3H0vYhr9MGlSae5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/FcjJsNW3H0vYhr9MGlSae5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_FcjJsNW3H0vYhr9MGlSae5.jpg",
+      "sha256": "c3b1d227f28d2af9b651234f8c592323c39d4f50ca273bfd25b76c28967bc8e6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133074,
+      "width": 1024,
+      "height": 681,
+      "alt_text": "6 Bedroom House in Linden photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:01.434555Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/10827095/TI6tlUvcaJXCnR83Zu59u2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/TI6tlUvcaJXCnR83Zu59u2/1600/1066/contain/jpegorpng",
+      "local_filename": "014_TI6tlUvcaJXCnR83Zu59u2.jpg",
+      "sha256": "f6dca94999c74dd3a3ac3c99d93953833ebaf3c572d006edf260e40790ecb703",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142208,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.250995Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/10827095/CX62AZFWMdbcjRNYx86ao0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/CX62AZFWMdbcjRNYx86ao0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_CX62AZFWMdbcjRNYx86ao0.jpg",
+      "sha256": "5003b6fa9aec30a9da4d76793bbcdf1e727a33058e3b5507127a1007476371e6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 138686,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.111309Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/10827095/seGTi4suoyHcZqW3cnjNJ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/seGTi4suoyHcZqW3cnjNJ4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_seGTi4suoyHcZqW3cnjNJ4.jpg",
+      "sha256": "d7afda630b8e17108de4cb90f424d69d6ad39a9250d36bd0d62f147f56e76c53",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126997,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.247251Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/10827095/DJFHC0gDwTYwS1eAt0JMD1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/DJFHC0gDwTYwS1eAt0JMD1/1600/1066/contain/jpegorpng",
+      "local_filename": "017_DJFHC0gDwTYwS1eAt0JMD1.jpg",
+      "sha256": "82a9f98e066076cc59069256938d7c93c4139d83692a42b0b77ec9b0a2bbdceb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 238450,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.599245Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/10827095/djMZIL2Gr8aGbWPTaemNT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/djMZIL2Gr8aGbWPTaemNT7/1600/1066/contain/jpegorpng",
+      "local_filename": "018_djMZIL2Gr8aGbWPTaemNT7.jpg",
+      "sha256": "fd55123be943ec900c62fed40f3b2a9c7e113efa5b7f1c728fef653482f5eebb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149342,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.430511Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/10827095/ZYTH56RYaDTrLGM5z5e035/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/ZYTH56RYaDTrLGM5z5e035/1600/1066/contain/jpegorpng",
+      "local_filename": "019_ZYTH56RYaDTrLGM5z5e035.jpg",
+      "sha256": "44d4848c1af554e7b059dcd40a1315676ca26bd499ce733ff309612771810087",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 95782,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:02.610232Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/10827095/NIfPJ4TMdcj33DcwtP7aJ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/NIfPJ4TMdcj33DcwtP7aJ0/1600/1066/contain/jpegorpng",
+      "local_filename": "020_NIfPJ4TMdcj33DcwtP7aJ0.jpg",
+      "sha256": "3c6fd32a8d8b9f5d0c890f0670317a11510d907375b535daf4ebd8227433a474",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 81379,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:03.561398Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/10827095/KZGK9te2OBsI4ZVyd55re7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/KZGK9te2OBsI4ZVyd55re7/1600/1066/contain/jpegorpng",
+      "local_filename": "021_KZGK9te2OBsI4ZVyd55re7.jpg",
+      "sha256": "c5ade7ecf89d9ee54a0241c58534abe10b0a363b41bbf979915ce037ac05f9f9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 71953,
+      "width": 1024,
+      "height": 681,
+      "alt_text": "6 Bedroom House in Linden photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:03.405930Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/10827095/ejQ943f1C8Mp9Vxiuztv55/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/ejQ943f1C8Mp9Vxiuztv55/1600/1066/contain/jpegorpng",
+      "local_filename": "022_ejQ943f1C8Mp9Vxiuztv55.jpg",
+      "sha256": "db4f2cec8cfa55112e2644dc8ac094499d7a73fe1646e0442bd642f60fe07892",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 92057,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:05.307781Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/10827095/aJrNCPkP1yoyEc9vUhdV53/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/aJrNCPkP1yoyEc9vUhdV53/1600/1066/contain/jpegorpng",
+      "local_filename": "023_aJrNCPkP1yoyEc9vUhdV53.jpg",
+      "sha256": "687dce6b5581ebd4d0555d596cdeb888539305e0a1f368b14e9da465b2383628",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 164224,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "6 Bedroom House in Linden photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:04.033234Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/10827095/4joXFJQ2CMOaYDfXMnvTk1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/4joXFJQ2CMOaYDfXMnvTk1/1600/1066/contain/jpegorpng",
+      "local_filename": "024_4joXFJQ2CMOaYDfXMnvTk1.jpg",
+      "sha256": "6bdda3752b287f2a8d21c18733a7db9b9412c910541f9a65d22febe391f5b43a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199147,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "6 Bedroom House in Linden photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:03.891757Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/10827095/Um4MIPJpqozfMfYJ5vzPd1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/Um4MIPJpqozfMfYJ5vzPd1/1600/1066/contain/jpegorpng",
+      "local_filename": "025_Um4MIPJpqozfMfYJ5vzPd1.jpg",
+      "sha256": "02369d1f51be52db8f41282392ac7f3b6b5ec60727094f77f751baaa58d9305f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199699,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "6 Bedroom House in Linden photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:04.122899Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/10827095/dhpPmOdeGitFWc9qJ0pXR5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/dhpPmOdeGitFWc9qJ0pXR5/1600/1066/contain/jpegorpng",
+      "local_filename": "026_dhpPmOdeGitFWc9qJ0pXR5.jpg",
+      "sha256": "77569810258d80983cb3293a19e4673c4f4e9557a08a23586da703921695e593",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 96618,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:03.949862Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/10827095/gdsmFqcoB9sziEQ1zpTfZ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/gdsmFqcoB9sziEQ1zpTfZ3/1600/1066/contain/jpegorpng",
+      "local_filename": "027_gdsmFqcoB9sziEQ1zpTfZ3.jpg",
+      "sha256": "e7ac842f7bc7237040223e571de01cc8a125343c608b47d0e6cd76a507ebfed0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94068,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:04.986355Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/10827095/othfbCp8w6xJ6cSv6C0ra3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/othfbCp8w6xJ6cSv6C0ra3/1600/1066/contain/jpegorpng",
+      "local_filename": "028_othfbCp8w6xJ6cSv6C0ra3.jpg",
+      "sha256": "1b9181ae5615201d7b19483f44d4e4a9f08d248e9da8bdbf6e3bd88350e2dfc7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 67329,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:05.253661Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/10827095/SMrby16WzYWTPNFvdn5Ci0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/SMrby16WzYWTPNFvdn5Ci0/1600/1066/contain/jpegorpng",
+      "local_filename": "029_SMrby16WzYWTPNFvdn5Ci0.jpg",
+      "sha256": "4b4636c3cb19f2bcbe70fb469b13a1945f5483719fa0cd404fea0ef373b809fd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 88663,
+      "width": 1024,
+      "height": 682,
+      "alt_text": "6 Bedroom House in Linden photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:03.986512Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/10827095/k3rjjCdl2qHv3NOpgz9We4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/10827095/k3rjjCdl2qHv3NOpgz9We4/1600/1066/contain/jpegorpng",
+      "local_filename": "030_k3rjjCdl2qHv3NOpgz9We4.jpg",
+      "sha256": "844cb449dbab1e9f15ba42cb138a1d0961291ab835ad8b9e85288c9cea0b27c3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 71703,
+      "width": 1024,
+      "height": 683,
+      "alt_text": "6 Bedroom House in Linden photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T02:09:04.643149Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/E5gS8_nGfDs?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/257",
+            "name": "Linden"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T4889153",
+            "name": "T4889153"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/10827095/SwBGLNmUY3l6a13GW2cDw0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Linden, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "6.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T4889153"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 5 380 000 | 6 Bedroom House in Linden | Private Property",
+    "og:description": "BY APPOINTMENT ONLY.\nThis exceptional double-story home combines elegance, style & functionality in the heart of Linden. Perfectly positioned, this property offers an abundance of space, sophisticated...",
+    "og:image": "https://images.pp.co.za/listing/10827095/SwBGLNmUY3l6a13GW2cDw0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T4889153"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 5 380 000 | 6 Bedroom House in Linden | Private Property",
+    "og:description": "BY APPOINTMENT ONLY.\nThis exceptional double-story home combines elegance, style & functionality in the heart of Linden. Perfectly positioned, this property offers an abundance of space, sophisticated...",
+    "og:image": "https://images.pp.co.za/listing/10827095/SwBGLNmUY3l6a13GW2cDw0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/linden/T4889153",
+    "description": "6 Bedroom House in Linden, BY APPOINTMENT ONLY.\nThis exceptional double-story home combines elegance, style & functionality in",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "dec22b88bfd1a80a552b036f78f87ffe895bb4e9e46b92dfe31d6cafe0f02ff3"
+}

@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5565091",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5565091",
+  "extracted_at": "2026-08-24T01:45:07.023562Z",
+  "title": "3 Bedroom House in Barbeque Downs",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-24",
+  "description": "Discover Your Dream Home in Barbeque Downs!\n\nWelcome to this charming 3-bedroom house nestled in the sought-after neighbourhood of Barbeque Downs, Midrand. Perfectly blending comfort, style, and secur...",
+  "erf_size_m2": 351.0,
+  "land_size_raw": "351 m²",
+  "floor_size_m2": 210.0,
+  "price": {
+    "amount": 3699000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 699 000",
+    "rates_and_taxes_monthly": 2521.0,
+    "levies_monthly": 3260.0
+  },
+  "location": {
+    "street_address": "T5565091",
+    "suburb": "Barbeque Downs",
+    "city": "Johannesburg",
+    "region": "Barbeque Downs, Midrand",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Midrand",
+      "Barbeque Downs",
+      "T5565091"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Lounges 1",
+      "Garage parking 2",
+      "Covered parking 2",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Samantha Cholewka",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2366020/image/bc939467f1314941a73c79a6720168da_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/samantha-cholewka/2366020/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11972032/J0iikKXozR1h1FJ5i61if6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/J0iikKXozR1h1FJ5i61if6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_J0iikKXozR1h1FJ5i61if6.jpg",
+      "sha256": "003d5592fa9ede736b5e5be0df9928076ce00850f651325e2a310b380eb6e382",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 405108,
+      "width": 1500,
+      "height": 1000,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-24T01:45:08.644609Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11972032/5Ds0C1wShecOiMXj2hL660/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/5Ds0C1wShecOiMXj2hL660/1600/1066/contain/jpegorpng",
+      "local_filename": "002_5Ds0C1wShecOiMXj2hL660.jpg",
+      "sha256": "00a7a609356dd61276ee0b466d897b4fc9784a7633cc8d66a76fb53054a51081",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 331604,
+      "width": 1499,
+      "height": 999,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:09.180267Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11972032/iYOukR10EK1cxB55R2Cv34/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/iYOukR10EK1cxB55R2Cv34/1600/1066/contain/jpegorpng",
+      "local_filename": "003_iYOukR10EK1cxB55R2Cv34.jpg",
+      "sha256": "0625e77e5bc7f11bca4af96faadb2189e4f5aa300bc7d16c6f75c1cf1098d3fc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 143037,
+      "width": 1428,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:10.772838Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11972032/27t341Hw6Pczr6rJYUrCX0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/27t341Hw6Pczr6rJYUrCX0/1600/1066/contain/jpegorpng",
+      "local_filename": "004_27t341Hw6Pczr6rJYUrCX0.jpg",
+      "sha256": "0a714310c71490c404da2ac341cafa6b39bf5b07e7dae9a0b95c3d4a93ada66f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129502,
+      "width": 1435,
+      "height": 965,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:08.671070Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11972032/XCINjLDrObRC6CNf0HgsY6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/XCINjLDrObRC6CNf0HgsY6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_XCINjLDrObRC6CNf0HgsY6.jpg",
+      "sha256": "fce06f2fe382dabcdeed2d3db6f382684d32266bbc031237710459063911f407",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 140593,
+      "width": 1427,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:07.915433Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11972032/c51x8BZHqHpvXrK0Ev8RQ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/c51x8BZHqHpvXrK0Ev8RQ3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_c51x8BZHqHpvXrK0Ev8RQ3.jpg",
+      "sha256": "ca7611fcdb55ff74408cf11f6250fccc64afc213eaf7eeb1dabb9c026706cf73",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135927,
+      "width": 1429,
+      "height": 961,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:08.701240Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11972032/HMvglKKxy6aDMKDfwtw3g6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/HMvglKKxy6aDMKDfwtw3g6/1600/1066/contain/jpegorpng",
+      "local_filename": "007_HMvglKKxy6aDMKDfwtw3g6.jpg",
+      "sha256": "b0964c1e6a48eebff7e35c20061e2d04afb0a7eac0128a378e905f60a7535989",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126301,
+      "width": 1427,
+      "height": 959,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:08.356719Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11972032/cZuZpLY26cjJnYZKwTpQL5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/cZuZpLY26cjJnYZKwTpQL5/1600/1066/contain/jpegorpng",
+      "local_filename": "008_cZuZpLY26cjJnYZKwTpQL5.jpg",
+      "sha256": "d4d49d4bb90a2b1c81d6d465014eb85def4cfe96c108507870da354fa9c71dd4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150289,
+      "width": 1429,
+      "height": 961,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:09.677127Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11972032/Qzn1psIyP711NZqfpkoJV4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/Qzn1psIyP711NZqfpkoJV4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_Qzn1psIyP711NZqfpkoJV4.jpg",
+      "sha256": "37f81d6bbf9d217d93ec9de8859113622b3c0aa2e83acbfd4b9b7d005d768d12",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 165552,
+      "width": 1428,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:10.709544Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11972032/h0Bezq0pn6R6YrjnB9h480/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/h0Bezq0pn6R6YrjnB9h480/1600/1066/contain/jpegorpng",
+      "local_filename": "010_h0Bezq0pn6R6YrjnB9h480.jpg",
+      "sha256": "d596ba4fda67293ab161b94032b30c862664f617dfe0f4f5aa9f011dafae7c92",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156851,
+      "width": 1432,
+      "height": 963,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:09.978882Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11972032/fl2q5ttF6Hqad9b6aIeVI6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/fl2q5ttF6Hqad9b6aIeVI6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_fl2q5ttF6Hqad9b6aIeVI6.jpg",
+      "sha256": "3421c6c0535039f728535e1ffda3529d12e58e5bb0abfe0371361cde95ffbff6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146448,
+      "width": 1431,
+      "height": 962,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:09.158112Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11972032/ph9ewfLwX5cYG4QyU7M405/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/ph9ewfLwX5cYG4QyU7M405/1600/1066/contain/jpegorpng",
+      "local_filename": "012_ph9ewfLwX5cYG4QyU7M405.jpg",
+      "sha256": "8f094756e372569041aa3f7aff7183d4eccccfa86ae825b774f371a6c14be526",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 229638,
+      "width": 1428,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:10.477128Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11972032/W5InHhUiOve2QZs4U0Tlm1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/W5InHhUiOve2QZs4U0Tlm1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_W5InHhUiOve2QZs4U0Tlm1.jpg",
+      "sha256": "b378d28def55282cd3d680ab330940afa3bc9234f0b3378843f78922a0f807e7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94514,
+      "width": 1428,
+      "height": 961,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:09.532254Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11972032/L81AXKbu67ssVIboxZxzb4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/L81AXKbu67ssVIboxZxzb4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_L81AXKbu67ssVIboxZxzb4.jpg",
+      "sha256": "30d953ed05e3d9b736571bfaee0f4642b503ca487aa8531cf2a02d7c3e096c33",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 74518,
+      "width": 1444,
+      "height": 971,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:10.671131Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11972032/57WyfbUuojApiZn5GW6DE1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/57WyfbUuojApiZn5GW6DE1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_57WyfbUuojApiZn5GW6DE1.jpg",
+      "sha256": "3319d80255af95770f4df4db7284762a878fcdaab5fb116e2bbdbc1b4f21cce9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 382311,
+      "width": 1457,
+      "height": 972,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:11.348055Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11972032/1wrxz5c3qBlEiiYG0gZM95/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/1wrxz5c3qBlEiiYG0gZM95/1600/1066/contain/jpegorpng",
+      "local_filename": "016_1wrxz5c3qBlEiiYG0gZM95.jpg",
+      "sha256": "1fb49a3593bb6069c6ae54d38bbd63e28c5ee5c207fd5ddfe265067697d7e0d9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 313613,
+      "width": 1487,
+      "height": 990,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:11.496028Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11972032/fPSrF26OK4QalH90P6Lyl4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/fPSrF26OK4QalH90P6Lyl4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_fPSrF26OK4QalH90P6Lyl4.jpg",
+      "sha256": "589871705c03079460016306add89700f9674c2e5eee74c40c1b7e7fe86887dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 380923,
+      "width": 1498,
+      "height": 999,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.348963Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11972032/fBQiZc09sYlgJNIkuEsrT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/fBQiZc09sYlgJNIkuEsrT7/1600/1066/contain/jpegorpng",
+      "local_filename": "018_fBQiZc09sYlgJNIkuEsrT7.jpg",
+      "sha256": "0843bb8fd1b0a8d1b168c7348a5de629d8dbe73e15d7b914ccd401452f476c64",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 143804,
+      "width": 1435,
+      "height": 965,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.007306Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11972032/c6673t0kF0Lohrw44i9k75/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/c6673t0kF0Lohrw44i9k75/1600/1066/contain/jpegorpng",
+      "local_filename": "019_c6673t0kF0Lohrw44i9k75.jpg",
+      "sha256": "1739e6f7c8b7b421f29ac99b51b5e334c9786c7aaa488635285ae9483467d3e0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150299,
+      "width": 1438,
+      "height": 967,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.133733Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11972032/jDpR00U7Z6N49LWp6TeQe2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/jDpR00U7Z6N49LWp6TeQe2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_jDpR00U7Z6N49LWp6TeQe2.jpg",
+      "sha256": "6f94e2fc3bff2e272c3595c8ffde627203cf02a83ad8b9816a709bc854d45168",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114302,
+      "width": 1427,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.251058Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11972032/tWdVxjqlCoyXjoNrkGwYj4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/tWdVxjqlCoyXjoNrkGwYj4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_tWdVxjqlCoyXjoNrkGwYj4.jpg",
+      "sha256": "3e183da5ec4313c69398443cf1c275e11ac730f1697e9ee71f60af7084ab4842",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 100816,
+      "width": 1431,
+      "height": 962,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.553980Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11972032/CYKGav18l6tMeBJCD6OlH7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/CYKGav18l6tMeBJCD6OlH7/1600/1066/contain/jpegorpng",
+      "local_filename": "022_CYKGav18l6tMeBJCD6OlH7.jpg",
+      "sha256": "a79530d07724856e45918c54387f22a6bed14081099bb87a5d92674a5f52b55a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144678,
+      "width": 1436,
+      "height": 969,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.739051Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11972032/qDXtBIxgJTUuOPbRiCwbk4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/qDXtBIxgJTUuOPbRiCwbk4/1600/1066/contain/jpegorpng",
+      "local_filename": "023_qDXtBIxgJTUuOPbRiCwbk4.jpg",
+      "sha256": "2a2ea82c1258146b4d337df63ce6fa2997029b98a55e284a0d768f689200a2fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 107668,
+      "width": 1428,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.371765Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11972032/iciNLihDQVErp0tLdAURN0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/iciNLihDQVErp0tLdAURN0/1600/1066/contain/jpegorpng",
+      "local_filename": "024_iciNLihDQVErp0tLdAURN0.jpg",
+      "sha256": "bd7e7277c36230f5bfc2c45382382ae596e0ac738aa645e25fe5428b5cd1a920",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123668,
+      "width": 1427,
+      "height": 960,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:12.842940Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11972032/RKcro7ywmK9erXQV5Hupz5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/RKcro7ywmK9erXQV5Hupz5/1600/1066/contain/jpegorpng",
+      "local_filename": "025_RKcro7ywmK9erXQV5Hupz5.jpg",
+      "sha256": "50d01272b81be62f4a129e56f8b866e8d1aa331d0826b8b87f283e8bcb973dfc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 112231,
+      "width": 1426,
+      "height": 959,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:13.462748Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11972032/eq2MMURK2hrGMClB11G816/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/eq2MMURK2hrGMClB11G816/1600/1066/contain/jpegorpng",
+      "local_filename": "026_eq2MMURK2hrGMClB11G816.jpg",
+      "sha256": "e9b36005dec3dd2e01f1f6b730eecb570b9b440b9ea74d996a874580a7cc5122",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 364075,
+      "width": 1493,
+      "height": 995,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:13.008255Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11972032/MaiBUyloRxmZsp141QkmH2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11972032/MaiBUyloRxmZsp141QkmH2/1600/1066/contain/jpegorpng",
+      "local_filename": "027_MaiBUyloRxmZsp141QkmH2.jpg",
+      "sha256": "4dfdc84867e9c41103be9bc17fb81b0692bcf4d068cc91773fd0196185ad020a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 309302,
+      "width": 1388,
+      "height": 925,
+      "alt_text": "3 Bedroom House in Barbeque Downs photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-24T01:45:13.855943Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/W1YFh3sSE3Y?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/24",
+            "name": "Midrand"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/1258",
+            "name": "Barbeque Downs"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5565091",
+            "name": "T5565091"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11972032/J0iikKXozR1h1FJ5i61if6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barbeque Downs, Midrand",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5565091"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 699 000 | 3 Bedroom House in Barbeque Downs | Private Property",
+    "og:description": "Discover Your Dream Home in Barbeque Downs!\n\nWelcome to this charming 3-bedroom house nestled in the sought-after neighbourhood of Barbeque Downs, Midrand. Perfectly blending comfort, style, and secur...",
+    "og:image": "https://images.pp.co.za/listing/11972032/J0iikKXozR1h1FJ5i61if6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5565091"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 699 000 | 3 Bedroom House in Barbeque Downs | Private Property",
+    "og:description": "Discover Your Dream Home in Barbeque Downs!\n\nWelcome to this charming 3-bedroom house nestled in the sought-after neighbourhood of Barbeque Downs, Midrand. Perfectly blending comfort, style, and secur...",
+    "og:image": "https://images.pp.co.za/listing/11972032/J0iikKXozR1h1FJ5i61if6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/barbeque-downs/T5565091",
+    "description": "3 Bedroom House in Barbeque Downs, Discover Your Dream Home in Barbeque Downs!\n\nWelcome to this charming 3-bedroom house nestled in the",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "ddfde9f91e421b2d78b691907ba251e8b50fcb4a27060e3c17bfe8240b27f067"
+}

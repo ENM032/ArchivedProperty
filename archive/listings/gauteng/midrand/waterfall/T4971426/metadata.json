@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T4971426",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/1803-ellipse-waterfall/48-magwa-crescent-midrand-gauteng-2090/T4971426#fullscreengallery",
+  "archived_at": "2026-08-24T01:19:52.143295Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|97c92026-574f-46a9-b15e-abbd2bef6ec0|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=0SDV3Ttp9Ey28ggBnzHY-g; expires=Fri, 24-Aug-2125 01:19:37 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:19:36 GMT",
+    "content-length": "33024"
+  },
+  "fetch_duration_sec": 1.3389360904693604,
+  "total_images_discovered": 59,
+  "total_images_archived": 59,
+  "total_archive_size_bytes": 10342067,
+  "content_fingerprint": "e44bf5b640f636246e6945caca17a63b2adcf512d47ef7c2e5661ba72ae00194"
+}

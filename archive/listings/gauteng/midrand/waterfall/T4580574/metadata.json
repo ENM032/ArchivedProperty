@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T4580574",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/midrand/waterfall/1801-ellipse/1801-karkloof-crescent/T4580574",
+  "archived_at": "2026-08-24T01:21:44.987563Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|fd1db8d7-ad39-48a1-b7f8-8a0f3d7a9c0e|C2143|CD886",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=XIGotU0SaUWpA6kPI2s94g; expires=Fri, 24-Aug-2125 01:21:29 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Mon, 24 Aug 2026 01:21:29 GMT",
+    "content-length": "31611"
+  },
+  "fetch_duration_sec": 1.317650556564331,
+  "total_images_discovered": 63,
+  "total_images_archived": 63,
+  "total_archive_size_bytes": 8013240,
+  "content_fingerprint": "084efc39f2edd1bdc0e392f3b06f55179b78679b7b2046be3de7e96bc70c0aee"
+}
