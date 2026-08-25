@@ -387,10 +387,15 @@ def export_command(
 def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
     """Launch the Unified Local Web Dashboard."""
     url = f"http://{host}:{port}"
-    console.print(f"[bold cyan]Property Archiver Dashboard[/bold cyan] v{__version__}")
-    console.print(f"Archive Directory: [green]{Path(archive_dir).resolve()}[/green]")
-    console.print(f"Dashboard URL: [bold green]{url}[/bold green]")
-    console.print("Press [bold yellow]Ctrl+C[/bold yellow] to stop the server.\n")
+    
+    panel_content = (
+        f"[bold cyan]Property Archiver Dashboard v{__version__}[/bold cyan]\n\n"
+        f"  * URL:          [bold green]{url}[/bold green]\n"
+        f"  * Archive Dir:  [white]{Path(archive_dir).resolve()}[/white]\n"
+        f"  * Status:       [bold green]Running[/bold green]\n\n"
+        f"Press [bold yellow]Ctrl+C[/bold yellow] or type [bold yellow]'q'[/bold yellow] + [bold yellow]Enter[/bold yellow] to stop the server."
+    )
+    console.print(Panel(panel_content, border_style="cyan", title="Web Dashboard Server"))
 
     server = DashboardServer(host=host, port=port, archive_dir=archive_dir)
 
@@ -401,7 +406,12 @@ def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
         import threading
         threading.Thread(target=_open, daemon=True).start()
 
-    server.start()
+    try:
+        server.start(enable_terminal_input=True)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        console.print("\n[bold green]Dashboard server stopped cleanly.[/bold green]")
 
 
 @main.command(name="dashboard")
