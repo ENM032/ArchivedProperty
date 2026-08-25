@@ -1,6 +1,6 @@
-/* Application Shell & Containers */
+/* Header & Layout Structure */
 .app-header {
-    background-color: var(--bg-card);
+    background-color: var(--bg-surface);
     border-bottom: 1px solid var(--border);
     padding: 1rem 2rem;
     display: flex;
@@ -9,6 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 40;
+    box-shadow: var(--shadow-sm);
 }
 
 .brand {
@@ -17,9 +18,12 @@
     gap: 0.75rem;
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--brand-navy);
 }
-.brand span { color: var(--text-main); }
+.brand span {
+    color: var(--brand-blue);
+    font-weight: 500;
+}
 
 .header-actions {
     display: flex;
@@ -35,22 +39,26 @@
 
 .view-toggle {
     display: flex;
-    background-color: var(--bg-main);
+    background-color: var(--bg-subtle);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     overflow: hidden;
+    padding: 2px;
 }
 
 .view-btn {
     background: none;
     border: none;
     color: var(--text-muted);
-    padding: 0.5rem 0.85rem;
+    padding: 0.4rem 0.85rem;
     font-size: 0.85rem;
     cursor: pointer;
     font-weight: 600;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease-in-out;
 }
 .view-btn.active {
-    background-color: var(--primary);
-    color: #0f172a;
+    background-color: var(--brand-navy);
+    color: var(--text-inverse);
+    box-shadow: var(--shadow-sm);
 }

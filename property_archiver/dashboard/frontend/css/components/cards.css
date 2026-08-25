@@ -1,4 +1,4 @@
-/* Property Cards & Metrics */
+/* Property Cards & Metrics Counters */
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -7,15 +7,16 @@
 }
 
 .metric-card {
-    background-color: var(--bg-card);
+    background-color: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
 }
 .metric-title {
     color: var(--text-muted);
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -23,7 +24,7 @@
     font-size: 1.75rem;
     font-weight: 700;
     margin-top: 0.25rem;
-    color: var(--text-main);
+    color: var(--brand-deep);
 }
 .metric-sub {
     font-size: 0.75rem;
@@ -38,25 +39,27 @@
 }
 
 .property-card {
-    background-color: var(--bg-card);
+    background-color: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: transform 0.15s, border-color 0.15s;
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    box-shadow: var(--shadow-sm);
 }
 .property-card:hover {
     transform: translateY(-3px);
-    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+    border-color: var(--brand-blue);
 }
 
 .card-thumb-wrapper {
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: #090d16;
+    background-color: var(--bg-subtle);
     overflow: hidden;
 }
 .card-thumb {
@@ -69,27 +72,36 @@
     position: absolute;
     top: 0.75rem;
     left: 0.75rem;
-    background-color: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(4px);
-    color: #fff;
     padding: 0.25rem 0.6rem;
     border-radius: var(--radius-sm);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
 }
-.card-badge.active { border-left: 3px solid var(--accent-green); }
-.card-badge.under_offer { border-left: 3px solid var(--accent-amber); color: var(--accent-amber); }
-.card-badge.sold { border-left: 3px solid var(--accent-red); color: var(--accent-red); }
+.card-badge.active {
+    background-color: var(--status-active-bg);
+    color: var(--status-active-text);
+    border: 1px solid var(--status-active-border);
+}
+.card-badge.under_offer {
+    background-color: var(--status-offer-bg);
+    color: var(--status-offer-text);
+    border: 1px solid var(--status-offer-border);
+}
+.card-badge.sold {
+    background-color: var(--status-sold-bg);
+    color: var(--status-sold-text);
+    border: 1px solid var(--status-sold-border);
+}
 
 .img-count-tag {
     position: absolute;
     bottom: 0.75rem;
     right: 0.75rem;
-    background-color: rgba(15, 23, 42, 0.8);
-    color: #fff;
+    background-color: rgba(0, 8, 20, 0.75);
+    color: #ffffff;
     padding: 0.2rem 0.5rem;
     border-radius: var(--radius-sm);
     font-size: 0.75rem;
@@ -102,9 +114,28 @@
     flex-direction: column;
     flex: 1;
 }
-.card-price { font-size: 1.35rem; font-weight: 700; color: var(--text-main); }
-.card-title { font-size: 1rem; font-weight: 600; color: var(--primary); margin-top: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.card-address { color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--brand-deep);
+}
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--brand-navy);
+    margin-top: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-address {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .card-specs {
     display: flex;
@@ -115,7 +146,9 @@
     font-size: 0.85rem;
     color: var(--text-muted);
 }
-.card-specs strong { color: var(--text-main); }
+.card-specs strong {
+    color: var(--brand-deep);
+}
 
 .card-footer {
     margin-top: auto;
@@ -127,9 +160,9 @@
 }
 
 .user-tag-chip {
-    background-color: rgba(56, 189, 248, 0.15);
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    background-color: var(--brand-blue-tint);
+    border: 1px solid var(--brand-blue-border);
+    color: var(--brand-blue);
     padding: 0.2rem 0.5rem;
     border-radius: var(--radius-sm);
     font-size: 0.75rem;
@@ -137,13 +170,13 @@
 }
 
 .user-tag-chip-sm {
-    background-color: rgba(56, 189, 248, 0.12);
-    border: 1px solid rgba(56, 189, 248, 0.4);
-    color: var(--primary);
+    background-color: var(--brand-blue-tint);
+    border: 1px solid var(--brand-blue-border);
+    color: var(--brand-blue);
     padding: 0.1rem 0.35rem;
     border-radius: 0.2rem;
     font-size: 0.7rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .card-tags {

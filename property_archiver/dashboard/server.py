@@ -93,7 +93,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
 
         # 6. API: Placeholder SVG
         if path == "/api/placeholder":
-            svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#1e293b" width="600" height="400"/><text fill="#94a3b8" font-family="sans-serif" font-size="22" dy="8" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
+            svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" width="600" height="400"/><text fill="#001d3d" font-family="sans-serif" font-size="22" dy="8" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
             self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
             return
 
