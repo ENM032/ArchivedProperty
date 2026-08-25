@@ -52,7 +52,7 @@ function renderDossierModal(data) {
                 </div>
                 <div class="modal-body">
                     <!-- Inline Edit Drawer -->
-                    <div id="edit-drawer" style="display: none; background-color: #1e293b; border: 1px solid var(--primary); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+                    <div id="edit-drawer" style="display: none; background-color: var(--bg-subtle); border: 1px solid var(--brand-blue-border); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
                         <h4 style="color: var(--primary); font-size: 1rem; margin-bottom: 1rem;">Edit Status & Annotations</h4>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
                             <div>

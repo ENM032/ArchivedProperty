@@ -32,16 +32,17 @@ export function updateMapMarkers(listings) {
 
             const marker = L.marker([lat, lng]).addTo(markersGroup);
             const popupDiv = document.createElement('div');
-            popupDiv.style.fontFamily = 'sans-serif';
+            popupDiv.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
             popupDiv.style.minWidth = '180px';
+            popupDiv.style.color = '#000814';
             popupDiv.innerHTML = `
-                <strong style="color: #0f172a; font-size: 1rem;">${formatZAR(item.price?.amount)}</strong>
-                <div style="font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${item.title || 'Listing'}</div>
-                <div style="font-size: 0.75rem; color: #64748b;">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+                <strong style="color: #000814; font-size: 1.05rem;">${formatZAR(item.price?.amount)}</strong>
+                <div style="font-size: 0.85rem; font-weight: 600; color: #001d3d; margin-top: 2px;">${item.title || 'Listing'}</div>
+                <div style="font-size: 0.75rem; color: #475569; margin-top: 2px;">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
             `;
             const btn = document.createElement('button');
             btn.innerText = 'View Dossier';
-            btn.style.cssText = 'margin-top: 8px; width: 100%; background: #0284c7; color: #fff; border: none; padding: 4px; border-radius: 4px; cursor: pointer; font-size: 0.75rem;';
+            btn.style.cssText = 'margin-top: 8px; width: 100%; background: #003566; color: #ffffff; border: none; padding: 6px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; font-weight: 600;';
             btn.onclick = () => openDossier(item.listing_id);
             popupDiv.appendChild(btn);
 

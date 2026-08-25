@@ -1,18 +1,67 @@
-/* Design Tokens & CSS Variables */
+/* White Background & Navy Accent Design System */
 :root {
-    --bg-main: #0f172a;
-    --bg-card: #1e293b;
-    --bg-hover: #334155;
-    --border: #334155;
-    --border-light: rgba(255, 255, 255, 0.1);
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --primary: #38bdf8;
-    --primary-hover: #0ea5e9;
-    --accent-green: #22c55e;
-    --accent-amber: #f59e0b;
-    --accent-red: #ef4444;
-    --accent-purple: #a855f7;
+    /* Base Surfaces */
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f8fafc;
+    --bg-hover: #f1f5f9;
+    --bg-active: #e2e8f0;
+
+    /* Borders */
+    --border: #e2e8f0;
+    --border-strong: #cbd5e1;
+    --border-focus: #003566;
+
+    /* Brand Navy / Midnight Accents */
+    --brand-deep: #000814;
+    --brand-navy: #001d3d;
+    --brand-blue: #003566;
+    --brand-blue-tint: #e6eff8;
+    --brand-blue-border: #99bee6;
+
+    /* Primary & Hover Aliases */
+    --primary: #003566;
+    --primary-hover: #001d3d;
+    --primary-light: #e6eff8;
+
+    /* Typography / Text (High Contrast WCAG AAA Compliant) */
+    --text-main: #000814;
+    --text-navy: #001d3d;
+    --text-accent: #003566;
+    --text-muted: #475569;
+    --text-inverse: #ffffff;
+
+    /* Button Colors */
+    --btn-primary-bg: #003566;
+    --btn-primary-hover: #001d3d;
+    --btn-primary-text: #ffffff;
+    --btn-secondary-bg: #f1f5f9;
+    --btn-secondary-hover: #e2e8f0;
+    --btn-secondary-text: #001d3d;
+
+    /* Status Badges */
+    --status-active-text: #15803d;
+    --status-active-bg: #f0fdf4;
+    --status-active-border: #86efac;
+
+    --status-offer-text: #b45309;
+    --status-offer-bg: #fffbeb;
+    --status-offer-border: #fde68a;
+
+    --status-sold-text: #b91c1c;
+    --status-sold-bg: #fef2f2;
+    --status-sold-border: #fca5a5;
+
+    --accent-red: #dc2626;
+    --accent-amber: #d97706;
+    --accent-green: #16a34a;
+
+    /* Elevation & Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 8, 20, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 8, 20, 0.08), 0 2px 4px -1px rgba(0, 8, 20, 0.04);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 8, 20, 0.1), 0 4px 6px -2px rgba(0, 8, 20, 0.05);
+
+    /* Radii */
     --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
     --radius-lg: 0.75rem;
