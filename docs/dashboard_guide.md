@@ -1,12 +1,27 @@
 # Web Dashboard User & Architecture Guide
 
-The Property Archiver Dashboard is an embedded Single Page Application (SPA) designed for market analysis, spatial exploration, and listing comparison.
+The Property Archiver Dashboard is a Single Page Application (SPA) designed for market analysis, spatial exploration, and listing management.
 
 ---
 
-## 1. Quick Launch
+## 1. UI Showcase
 
-Launch the local web dashboard from the CLI:
+### Grid View
+![Grid View](images/01_dashboard_grid_view.png)
+
+### Regional Grouped View
+![Grouped View](images/02_dashboard_grouped_view.png)
+
+### GIS Map View
+![Map View](images/03_dashboard_map_view.png)
+
+### Property Dossier Modal
+![Dossier Modal](images/04_dashboard_dossier_modal.png)
+
+---
+
+## 2. Launching the Dashboard
+
 ```bash
 # Launch on default port (http://127.0.0.1:8000)
 property-archiver serve
@@ -17,43 +32,23 @@ property-archiver serve --port 8080 --no-open
 
 ---
 
-## 2. Core Dashboard Features
+## 3. Features & Workflow
 
 ### A. View Modes
-1. **Grid View**: Responsive property cards displaying thumbnail photos, badges, pricing, key specs, and addresses.
+1. **Grid View**: Responsive property cards with badges, pricing, specs, tags, and star ratings.
 2. **Grouped Location View**: Collapsible accordions organized by **Province $\rightarrow$ Area $\rightarrow$ Suburb** with aggregate property counts, total valuations, and average prices.
 3. **Interactive GIS Map View**: Fullscreen Leaflet / OpenStreetMap view plotting GPS pins with popup property dossiers.
 
 ### B. Cascading & Intent Filters
 - **Transaction Intent**: Filter by `All Intents`, `For Sale (Buy)`, or `To Rent`.
 - **Property Type**: Instant filtering by `House`, `Apartment`, `Townhouse`, `Vacant Land`, `Commercial`, or `Farm`.
-- **Status Filter**: `Active`, `Under Offer`, `Sold`.
+- **Status Filter**: `Active`, `Under Offer`, `Sold`, `Withdrawn`.
 - **Cascading Location Drill-Down**: Province dropdown updates Area dropdown, which dynamically updates Suburb choices.
 
-### C. Property Dossier Modal
+### C. Property Dossier & Annotation
 Clicking any property card opens an in-depth dossier:
 - **Photo Carousel & Thumbnail Strip**: Full-screen photo viewer.
 - **Specifications & Rates**: Bedrooms, bathrooms, garages, erf size, monthly rates & taxes, and levies.
 - **Interactive Mini-Map**: Centered on property GPS coordinates.
-- **Agent Info**: Primary listing agent and co-agents.
-
-### D. Side-by-Side Comparison
-Click **Compare Listings** to evaluate two properties or historical snapshots with highlighted price and specification diffs.
-
----
-
-## 3. Frontend Architecture & State Management
-
-The frontend runs purely on **native ES6 modules** with **zero build dependencies**:
-
-```
-frontend/
-├── index.html             # Semantic structure
-├── css/                   # Design tokens & BEM component partials
-└── js/
-    ├── app.js             # Bootstrap & global navigation
-    ├── state/store.js     # Central reactive store & filter engine
-    ├── api/apiClient.js   # Fetch API wrapper
-    ├── views/             # View renderers (gridView, groupedView, mapView)
-    └── components/        # Isolated UI components (filterBar, dossierModal, etc.)
-```
+- **Inline Edit Drawer**: Update status, add custom notes, tag chips, and star ratings.
+- **Delete Archive**: Permanently removes the archive from disk with confirmation.

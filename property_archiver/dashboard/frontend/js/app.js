@@ -1,5 +1,5 @@
 /**
- * Application Bootstrap & Lifecycle Manager.
+ * Application Bootstrap & Lifecycle Manager with Deep-Linking Support.
  */
 import { fetchListings } from './api/apiClient.js';
 import { store } from './state/store.js';
@@ -11,12 +11,28 @@ import { renderGroupedView } from './views/groupedView.js';
 import { initMap, updateMapMarkers } from './views/mapView.js';
 import { openCompareModal } from './components/compareModal.js';
 import { openArchiveModal } from './components/archiveModal.js';
+import { openDossier } from './components/dossierModal.js';
 
 export async function loadDashboardData() {
     try {
         const listings = await fetchListings();
         store.setListings(listings);
         populateProvinces();
+
+        // Handle Deep Linking Parameters
+        const params = new URLSearchParams(window.location.search);
+        const viewParam = params.get('view');
+        if (viewParam && ['grid', 'grouped', 'map'].includes(viewParam)) {
+            document.querySelectorAll('.view-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.view === viewParam);
+            });
+            store.setView(viewParam);
+        }
+
+        const openId = params.get('open');
+        if (openId) {
+            setTimeout(() => openDossier(openId), 150);
+        }
     } catch (err) {
         showToast("Failed loading listings: " + err.message, "error");
     }
