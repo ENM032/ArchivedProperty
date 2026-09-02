@@ -1,11 +1,13 @@
 {
   "schema_version": "1.0.0",
   "listing_id": "T5539034",
-  "archived_at": "2026-08-24T00:48:15.086509Z",
+  "archived_at": "2026-09-02T09:31:44.482537Z",
   "archiver_version": "1.0.0",
+  "total_files": 31,
   "files": {
-    "listing.json": "6e8cf4b90caf7ef7bd3bff8c30ed17ae22bdd9db3d3c21234853881224f7448b",
-    "raw.html": "fe03f5e012a7ff2736590578b5715ae2936d12c8605c1a8dc2d7fe6b53c7573a",
+    "listing.json": "0ba3002b0e2d2ef6de9508cacac5b793611e85fb63caaef05737d1fabcd0da73",
+    "raw.html": "82f2e76a2b54158331b48303ae74d9f88b33ffcd80ace4b74c95388336d1186e",
+    "metadata.json": "8f3202cfdfb8fe97074b834e548ebbdd06d470430635a48d404e59398f1a45fd",
     "images/001_1Ozla85iXsZf7YzYc60pf5.jpg": "25b79faefca387a5880969928e99b4e210becfc5302cdbc495b6d91a58af7374",
     "images/002_EmCOgnzz6SrYJl3IVrAzZ1.jpg": "62b63811052e7d87312e26f36d3fe5fb2b6050c35f2c226746f4236384a54252",
     "images/003_JBGoVxz5rfB7MyX1jh9xB1.jpg": "2a62456d2208beebc62cb0e4b7b61a797a2ca3bff74d3ba6cf6483f6c978f4d9",
@@ -33,7 +35,6 @@
     "images/025_uVsUXGOMhoZT9lvFeVQED2.jpg": "3782c935eae5378fbeb56da3ef141e5076b2e7a0bd3dd806cdfacf819b6f4bfe",
     "images/026_8HLOXFSsUJkjbgGtyKtIt2.jpg": "fb29a1f0d511e92d14efbed0250ba07cbb3b6b50f2e2b93a580328eb3f1c0580",
     "images/027_vwnxY3zjZ91y9Jy43ISvH0.jpg": "b35904ac6f1773695de59b62e80ce8c9e305fa66b5867686c8891ef479ce12a5",
-    "images/028_jpRKcBqjvzQvDmSlfNioQ5.jpg": "2bddadb6f23af95dca2bd3ed54a96a95eb235080c79e93d3f48cd98ebce313cd",
-    "metadata.json": "b246fef55c80a4038cda811156c8fcd7ffd5711c69f8f3eaaed7f62abded7a72"
+    "images/028_jpRKcBqjvzQvDmSlfNioQ5.jpg": "2bddadb6f23af95dca2bd3ed54a96a95eb235080c79e93d3f48cd98ebce313cd"
   }
 }

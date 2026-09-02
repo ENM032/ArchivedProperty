@@ -12,7 +12,7 @@ Built with **Pydantic v2**, **HTTPX**, **Playwright**, and a **Zero-Build ES6 We
 
 ## UI Showcase & Web Dashboard
 
-Launch the embedded dashboard anytime with `property-archiver serve`.
+Launch the embedded dashboard anytime with `ap serve`.
 
 ### 1. Portfolio Grid View & Cascading Filters
 Responsive property cards with live status badges, star ratings, custom user tags, pricing, and specs alongside portfolio metrics.
@@ -59,32 +59,35 @@ pip install -e .
 
 ---
 
-## CLI Command Reference
+## CLI Command Reference (`ap`)
+
+> [!TIP]
+> Use the convenient shorthand command **`ap`** (`ArchivedProperty`) for all operations. Full listing URLs can be copied and pasted directly without extracting the ID.
 
 ```bash
 # 1. Fetch and archive a property listing (URL or Portal ID)
-property-archiver fetch https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876
-property-archiver fetch T4710876
+ap fetch https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876
+ap fetch T4710876
 
 # 2. Launch the interactive Web Dashboard
-property-archiver serve --port 8000
+ap serve --port 8000
 
 # 3. Explore the terminal regional hierarchy tree
-property-archiver tree
+ap tree
 
 # 4. Edit status, notes, tags, or rating
-property-archiver edit T4710876 --status=under_offer --notes="Offer submitted" --tags="Prime, Shortlisted" --rating=5
+ap edit T4710876 --status=under_offer --notes="Offer submitted" --tags="Prime, Shortlisted" --rating=5
 
 # 5. Delete an archived property
-property-archiver delete T4710876 --yes
+ap delete T4710876 --yes
 
 # 6. Reorganize flat legacy archives into tiered hierarchy
-property-archiver reorganize
+ap reorganize
 
 # 7. Regional multi-format export
-property-archiver export --format=csv --suburb="Rivonia" --output="rivonia.csv"
-property-archiver export --format=sqlite --output="portfolio.db"
-property-archiver export --format=geojson --output="properties.geojson"
+ap export --format=csv --suburb="Rivonia" --output="rivonia.csv"
+ap export --format=sqlite --output="portfolio.db"
+ap export --format=geojson --output="properties.geojson"
 ```
 
 ---
