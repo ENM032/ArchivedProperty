@@ -1,0 +1,555 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5523629",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/T5523629",
+  "extracted_at": "2026-09-02T09:03:08.380254Z",
+  "title": "4 Bedroom House in River Club",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-17",
+  "description": "Set within an exclusive gated enclave in Morningside Ext 40, Sandton, this fully renovated modern residence delivers a rare combination of architectural design, security, and functional family living....",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": null,
+  "price": {
+    "amount": 6500000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 6 500 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5523629",
+    "suburb": "River Club",
+    "city": "Johannesburg",
+    "region": "River Club, Sandton",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Sandton",
+      "River Club",
+      "T5523629"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 4.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 2.5",
+      "Lounges 2",
+      "Dining areas 1",
+      "Garage parking 4",
+      "Open parking 4",
+      "Flatlets",
+      "Pet friendly",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Staff quarters",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Vivienne Mileman",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2171007/image/dd3cbd410cab4893894e4a42171a64a4_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/vivienne-mileman/2171007/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Alexandra Mileman",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2185779/image/bdcc03fd7ccf4f1687808798effa3f4e_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/alexandra-mileman/2185779/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11900760/twjqVtsYP1KG8jsW8NfIl0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/twjqVtsYP1KG8jsW8NfIl0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_twjqVtsYP1KG8jsW8NfIl0.jpg",
+      "sha256": "0cd859dd49cc42a0ca19c65f105d9ae00c7596b006aa400f1a3d64a06bacafe4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 272930,
+      "width": 1535,
+      "height": 1025,
+      "alt_text": "4 Bedroom House in River Club photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-09-02T09:03:09.260175Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11900760/vIG99cxnK4GUgahxouOcH6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/vIG99cxnK4GUgahxouOcH6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_vIG99cxnK4GUgahxouOcH6.jpg",
+      "sha256": "7e4f6082bca61ba375a450de1bee0255bf1ce066dd736dd9a91ce49c63f6f7be",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 213357,
+      "width": 1535,
+      "height": 1025,
+      "alt_text": "4 Bedroom House in River Club photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.220153Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11900760/ionYGZAGo4tCcYkCfrrrl0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/ionYGZAGo4tCcYkCfrrrl0/1600/1066/contain/jpegorpng",
+      "local_filename": "003_ionYGZAGo4tCcYkCfrrrl0.jpg",
+      "sha256": "ebd0f961bbbf48a7c0e32ce2c55597656c5dc085f3a2d2e86a730b3c8d41d4ed",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 336881,
+      "width": 1537,
+      "height": 1023,
+      "alt_text": "4 Bedroom House in River Club photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.256220Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11900760/HgnaRsiDeQwBR6wJnpavW4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/HgnaRsiDeQwBR6wJnpavW4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_HgnaRsiDeQwBR6wJnpavW4.jpg",
+      "sha256": "a7727eddc02da900050056995d54d978aa4706af70847e55decfe15bd6a1fd58",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 261352,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.648991Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11900760/6duBqItBSDHggvNM5ygPH0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/6duBqItBSDHggvNM5ygPH0/1600/1066/contain/jpegorpng",
+      "local_filename": "005_6duBqItBSDHggvNM5ygPH0.jpg",
+      "sha256": "1c3a1b0e096e1615a668534b59ea58cdae08a867f8044e9856a62c2b5dc4b35e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190067,
+      "width": 1535,
+      "height": 1025,
+      "alt_text": "4 Bedroom House in River Club photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.220399Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11900760/ETO9Q9aoLsjivaHfVBal15/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/ETO9Q9aoLsjivaHfVBal15/1600/1066/contain/jpegorpng",
+      "local_filename": "006_ETO9Q9aoLsjivaHfVBal15.jpg",
+      "sha256": "c63c7b6c02b3fe56e9f0ffbe6904b7bbee27eddbd9956781cdf27aecea57fdd7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167441,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.370027Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11900760/JnEgZd2gsZfu2ZIcxfwcq1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/JnEgZd2gsZfu2ZIcxfwcq1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_JnEgZd2gsZfu2ZIcxfwcq1.jpg",
+      "sha256": "10489fff115abc40c25f4fc79c5ef2ede9cbbc9bebdde36c50cb3f0d6387f080",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179497,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.630985Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11900760/EuUt59JUbUlnviLZkzG7y3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/EuUt59JUbUlnviLZkzG7y3/1600/1066/contain/jpegorpng",
+      "local_filename": "008_EuUt59JUbUlnviLZkzG7y3.jpg",
+      "sha256": "87080057e1f487c2c57dd8c71d848dd635b93535991466467504e8167c02acb5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162024,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.577053Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11900760/TMs4DgnQnvaYcweFjOxDs4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/TMs4DgnQnvaYcweFjOxDs4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_TMs4DgnQnvaYcweFjOxDs4.jpg",
+      "sha256": "18b05329e225284f1f8c3586c467a58fb78d22839c2618480d7eec1490d2def8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119485,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.371163Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11900760/kN3nLAI3iqxQFxltNuY4L7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/kN3nLAI3iqxQFxltNuY4L7/1600/1066/contain/jpegorpng",
+      "local_filename": "010_kN3nLAI3iqxQFxltNuY4L7.jpg",
+      "sha256": "dd517aceeaa1af5ace41c81526a81e481b63c5881f325010a4135dff1da470fb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 111301,
+      "width": 1535,
+      "height": 1025,
+      "alt_text": "4 Bedroom House in River Club photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.597167Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11900760/CIssfiOGf8XdzhhjoK8p53/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/CIssfiOGf8XdzhhjoK8p53/1600/1066/contain/jpegorpng",
+      "local_filename": "011_CIssfiOGf8XdzhhjoK8p53.jpg",
+      "sha256": "676fe2ef56588b4c4eaeb26c0d976a1bee1aea36f9e669e2fa0f70846693734b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113508,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.107883Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11900760/05BKrLa34Njj5oI78bVdp2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/05BKrLa34Njj5oI78bVdp2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_05BKrLa34Njj5oI78bVdp2.jpg",
+      "sha256": "2c7b580c637b29cd314bed8e1f3fe983bb8c44b59cd98b7b4cb796f2d21d84b7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129167,
+      "width": 1535,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:09.985826Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11900760/utFGb9FvgMq3xm9opBQj10/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/utFGb9FvgMq3xm9opBQj10/1600/1066/contain/jpegorpng",
+      "local_filename": "013_utFGb9FvgMq3xm9opBQj10.jpg",
+      "sha256": "38c84da91f389b19c042640ba53d93260ec3879f621fff4b682d55f2ac742c32",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 360638,
+      "width": 1537,
+      "height": 1023,
+      "alt_text": "4 Bedroom House in River Club photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.148734Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11900760/NmDWwQt9MIkvnLBlvSCXg7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/NmDWwQt9MIkvnLBlvSCXg7/1600/1066/contain/jpegorpng",
+      "local_filename": "014_NmDWwQt9MIkvnLBlvSCXg7.jpg",
+      "sha256": "5f260544ffb4513687e6c22ca1abcff8795fec70d48cd8deb8fad8674199db9e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116347,
+      "width": 1537,
+      "height": 1023,
+      "alt_text": "4 Bedroom House in River Club photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.810475Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11900760/CUgLQ840CRb0pysUGl4cz5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/CUgLQ840CRb0pysUGl4cz5/1600/1066/contain/jpegorpng",
+      "local_filename": "015_CUgLQ840CRb0pysUGl4cz5.jpg",
+      "sha256": "94ae2a1cd1367e22963d41113fbfc0643fe4dabc1fd95d0fea2f6c75e8c1fd35",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204265,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.702122Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11900760/FOxePTC4yBaYU0MYkrGbY1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/FOxePTC4yBaYU0MYkrGbY1/1600/1066/contain/jpegorpng",
+      "local_filename": "016_FOxePTC4yBaYU0MYkrGbY1.jpg",
+      "sha256": "25c36fc470e796600c1057ed63e2665a18de6a7d9701e7cf78d466399cf6a64e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119527,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in River Club photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.509957Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11900760/jKtawBBE5N6pbldVAuyDd7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/jKtawBBE5N6pbldVAuyDd7/1600/1066/contain/jpegorpng",
+      "local_filename": "017_jKtawBBE5N6pbldVAuyDd7.jpg",
+      "sha256": "7651815980abb5d4df14aa39864ed1ada537495f6b38db7065011bc24d8dcc11",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167955,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.556140Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11900760/90oay0WGHi2pJrNUr1ppf6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/90oay0WGHi2pJrNUr1ppf6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_90oay0WGHi2pJrNUr1ppf6.jpg",
+      "sha256": "da9ff127b3d106cfb25607f09d54072c26abc5c7e1f4dc0a4763f985b62a297e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 165798,
+      "width": 1596,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.014712Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11900760/IAgwBN8sVDJMdNvsENVPH2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/IAgwBN8sVDJMdNvsENVPH2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_IAgwBN8sVDJMdNvsENVPH2.jpg",
+      "sha256": "220a8ee36f21e28458acc19da893cfb889e5cc16f304e23ec10adbdbb8708955",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204509,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:10.916898Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11900760/LHEMquXNQnDCQhfmR31JU0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/LHEMquXNQnDCQhfmR31JU0/1600/1066/contain/jpegorpng",
+      "local_filename": "020_LHEMquXNQnDCQhfmR31JU0.jpg",
+      "sha256": "bd78abbfa3694f170ed1a90fdca148277a56d32a6c04a49f7397ce21d5c520b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 143759,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.080468Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11900760/ilD6NAvL0BNQBVsMEhdFx2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/ilD6NAvL0BNQBVsMEhdFx2/1600/1066/contain/jpegorpng",
+      "local_filename": "021_ilD6NAvL0BNQBVsMEhdFx2.jpg",
+      "sha256": "4c3055e6362a8ce907f128794640b1041aa3ddcf90320eafd053bcbcea1dd5f5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197626,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.423130Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11900760/RE3FZoZtbEdjtsaZ9qCOc1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/RE3FZoZtbEdjtsaZ9qCOc1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_RE3FZoZtbEdjtsaZ9qCOc1.jpg",
+      "sha256": "24cae5cd6461cf419e7a74a591e52cf7c1b66298a811d44cc9058d90b7848fef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116600,
+      "width": 1597,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in River Club photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.163302Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11900760/a6gceXRKBSmKekPnNF1Lm2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11900760/a6gceXRKBSmKekPnNF1Lm2/1600/1066/contain/jpegorpng",
+      "local_filename": "023_a6gceXRKBSmKekPnNF1Lm2.jpg",
+      "sha256": "a9a03347e4195cd7a0b843a719260e95f96b59b592d87e01c13ffbe96427b991",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 552701,
+      "width": 1600,
+      "height": 1058,
+      "alt_text": "4 Bedroom House in River Club photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:03:11.523899Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/34",
+            "name": "Sandton"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/1023",
+            "name": "River Club"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/T5523629",
+            "name": "T5523629"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11900760/twjqVtsYP1KG8jsW8NfIl0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "River Club, Sandton",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "4"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/T5523629"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 6 500 000 | 4 Bedroom House in River Club | Private Property",
+    "og:description": "Set within an exclusive gated enclave in Morningside Ext 40, Sandton, this fully renovated modern residence delivers a rare combination of architectural design, security, and functional family living....",
+    "og:image": "https://images.pp.co.za/listing/11900760/twjqVtsYP1KG8jsW8NfIl0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/T5523629"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 6 500 000 | 4 Bedroom House in River Club | Private Property",
+    "og:description": "Set within an exclusive gated enclave in Morningside Ext 40, Sandton, this fully renovated modern residence delivers a rare combination of architectural design, security, and functional family living....",
+    "og:image": "https://images.pp.co.za/listing/11900760/twjqVtsYP1KG8jsW8NfIl0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/river-club/T5523629",
+    "description": "4 Bedroom House in River Club, Set within an exclusive gated enclave in Morningside Ext 40, Sandton, this fully renovated modern re",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "6caac8c9ccf2c5578b6d2ef9b7f1d4a9bcb0ff35a4db42d1471731d7b5d7f13c"
+}
