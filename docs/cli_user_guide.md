@@ -55,7 +55,27 @@ ap tree --suburb "Rivonia" --status active
 
 ---
 
-## 4. Editing & User Annotations (`ap edit`)
+## 4. Automated Portfolio Sync & Lifecycle Tracking (`ap sync`)
+
+Check live portals for price reductions, status transitions (`for_sale` $\rightarrow$ `under_offer` $\rightarrow$ `sold`), and delistings:
+
+```bash
+# Sync all active and under-offer listings in portfolio
+ap sync
+
+# Preview changes without modifying disk archives
+ap sync --dry-run
+
+# Target specific region or suburb
+ap sync --province "Gauteng" --suburb "Rivonia"
+
+# Sync without downloading delta photos
+ap sync --no-images
+```
+
+---
+
+## 5. Editing & User Annotations (`ap edit`)
 
 Update lifecycle status, add private notes, tags, or star ratings:
 

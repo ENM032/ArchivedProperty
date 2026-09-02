@@ -75,16 +75,20 @@ ap serve --port 8000
 # 3. Explore the terminal regional hierarchy tree
 ap tree
 
-# 4. Edit status, notes, tags, or rating
+# 4. Automate lifecycle updates (price drops, under offer, sold, delisted)
+ap sync
+ap sync --dry-run --suburb="Rivonia"
+
+# 5. Edit status, notes, tags, or rating
 ap edit T4710876 --status=under_offer --notes="Offer submitted" --tags="Prime, Shortlisted" --rating=5
 
-# 5. Delete an archived property
+# 6. Delete an archived property
 ap delete T4710876 --yes
 
-# 6. Reorganize flat legacy archives into tiered hierarchy
+# 7. Reorganize flat legacy archives into tiered hierarchy
 ap reorganize
 
-# 7. Regional multi-format export
+# 8. Regional multi-format export
 ap export --format=csv --suburb="Rivonia" --output="rivonia.csv"
 ap export --format=sqlite --output="portfolio.db"
 ap export --format=geojson --output="properties.geojson"

@@ -41,6 +41,11 @@ class RateLimitExceededError(FetchError):
     pass
 
 
+class HTTPStatusError(FetchError):
+    """Raised when an HTTP response has an error status code (4xx/5xx)."""
+    pass
+
+
 class ExtractionError(PropertyArchiverError):
     """Raised when parsing or extracting property data fails."""
     pass
