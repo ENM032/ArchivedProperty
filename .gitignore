@@ -58,3 +58,8 @@ Thumbs.db
 scratch/
 .staging_*
 .tmp_*
+*.db
+
+# Local Archived Property Data
+# (Excludes future downloaded listings; existing tracked demo listings remain in repo)
+archive/

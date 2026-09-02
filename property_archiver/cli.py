@@ -176,7 +176,7 @@ def fetch_command(
     layout: str | None = None,
 ):
     """Fetch and archive listings from URLs, short IDs, files, or clipboard."""
-    console.print(f"[bold cyan]Property Archiver[/bold cyan] v{__version__}")
+    console.print(f"[bold cyan]ArchivedProperty (ap)[/bold cyan] v{__version__}")
 
     raw_targets = list(targets)
     if clipboard or not raw_targets:
@@ -389,7 +389,7 @@ def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
     url = f"http://{host}:{port}"
     
     panel_content = (
-        f"[bold cyan]Property Archiver Dashboard v{__version__}[/bold cyan]\n\n"
+        f"[bold cyan]ArchivedProperty Dashboard v{__version__}[/bold cyan]\n\n"
         f"  * URL:          [bold green]{url}[/bold green]\n"
         f"  * Archive Dir:  [white]{Path(archive_dir).resolve()}[/white]\n"
         f"  * Status:       [bold green]Running[/bold green]\n\n"

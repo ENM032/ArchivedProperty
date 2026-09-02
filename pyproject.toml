@@ -32,6 +32,7 @@ dev = [
 ]
 
 [project.scripts]
+ap = "property_archiver.cli:main"
 property-archiver = "property_archiver.cli:main"
 
 [tool.pytest.ini_options]

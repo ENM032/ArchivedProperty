@@ -2,9 +2,10 @@
   "schema_version": "1.0.0",
   "portal_name": "privateproperty.co.za",
   "listing_id": "T5539034",
-  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5539034#fullscreengallery",
-  "extracted_at": "2026-08-24T00:48:07.828040Z",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/sandton/lonehill/T5539034",
+  "extracted_at": "2026-09-02T09:31:43.870022Z",
   "title": "3 Bedroom House in Lonehill",
+  "listing_type": "for_sale",
   "property_type": "House",
   "listing_status": "under_offer",
   "status_badges": [
@@ -125,7 +126,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 1",
       "is_hero": true,
-      "downloaded_at": "2026-08-24T00:48:10.025733Z"
+      "downloaded_at": "2026-09-02T09:31:44.314365Z"
     },
     {
       "order_index": 1,
@@ -139,7 +140,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 2",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:09.830457Z"
+      "downloaded_at": "2026-09-02T09:31:44.314074Z"
     },
     {
       "order_index": 2,
@@ -153,7 +154,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 3",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:09.885187Z"
+      "downloaded_at": "2026-09-02T09:31:44.314683Z"
     },
     {
       "order_index": 3,
@@ -167,7 +168,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 4",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:09.938189Z"
+      "downloaded_at": "2026-09-02T09:31:44.314874Z"
     },
     {
       "order_index": 4,
@@ -181,7 +182,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 5",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:09.905267Z"
+      "downloaded_at": "2026-09-02T09:31:44.314222Z"
     },
     {
       "order_index": 5,
@@ -195,7 +196,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 6",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:09.701935Z"
+      "downloaded_at": "2026-09-02T09:31:44.314485Z"
     },
     {
       "order_index": 6,
@@ -209,7 +210,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 7",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:10.915260Z"
+      "downloaded_at": "2026-09-02T09:31:44.326489Z"
     },
     {
       "order_index": 7,
@@ -223,7 +224,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 8",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.250109Z"
+      "downloaded_at": "2026-09-02T09:31:44.327126Z"
     },
     {
       "order_index": 8,
@@ -237,7 +238,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 9",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:10.465266Z"
+      "downloaded_at": "2026-09-02T09:31:44.326633Z"
     },
     {
       "order_index": 9,
@@ -251,7 +252,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 10",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.624276Z"
+      "downloaded_at": "2026-09-02T09:31:44.328365Z"
     },
     {
       "order_index": 10,
@@ -265,7 +266,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 11",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.261708Z"
+      "downloaded_at": "2026-09-02T09:31:44.328478Z"
     },
     {
       "order_index": 11,
@@ -279,7 +280,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 12",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.512310Z"
+      "downloaded_at": "2026-09-02T09:31:44.327571Z"
     },
     {
       "order_index": 12,
@@ -293,7 +294,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 13",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:10.822593Z"
+      "downloaded_at": "2026-09-02T09:31:44.339095Z"
     },
     {
       "order_index": 13,
@@ -307,7 +308,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 14",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.510825Z"
+      "downloaded_at": "2026-09-02T09:31:44.337248Z"
     },
     {
       "order_index": 14,
@@ -321,7 +322,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 15",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:12.576121Z"
+      "downloaded_at": "2026-09-02T09:31:44.340478Z"
     },
     {
       "order_index": 15,
@@ -335,7 +336,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 16",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:11.773300Z"
+      "downloaded_at": "2026-09-02T09:31:44.343479Z"
     },
     {
       "order_index": 16,
@@ -349,7 +350,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 17",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:13.069278Z"
+      "downloaded_at": "2026-09-02T09:31:44.341498Z"
     },
     {
       "order_index": 17,
@@ -363,7 +364,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 18",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:13.404883Z"
+      "downloaded_at": "2026-09-02T09:31:44.341065Z"
     },
     {
       "order_index": 18,
@@ -377,7 +378,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 19",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:12.674166Z"
+      "downloaded_at": "2026-09-02T09:31:44.349344Z"
     },
     {
       "order_index": 19,
@@ -391,7 +392,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 20",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:12.952472Z"
+      "downloaded_at": "2026-09-02T09:31:44.349619Z"
     },
     {
       "order_index": 20,
@@ -405,7 +406,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 21",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:12.370233Z"
+      "downloaded_at": "2026-09-02T09:31:44.352351Z"
     },
     {
       "order_index": 21,
@@ -419,7 +420,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 22",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:13.762367Z"
+      "downloaded_at": "2026-09-02T09:31:44.352140Z"
     },
     {
       "order_index": 22,
@@ -433,7 +434,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 23",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:14.215033Z"
+      "downloaded_at": "2026-09-02T09:31:44.353458Z"
     },
     {
       "order_index": 23,
@@ -447,7 +448,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 24",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:14.198623Z"
+      "downloaded_at": "2026-09-02T09:31:44.356921Z"
     },
     {
       "order_index": 24,
@@ -461,7 +462,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 25",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:14.435022Z"
+      "downloaded_at": "2026-09-02T09:31:44.359675Z"
     },
     {
       "order_index": 25,
@@ -475,7 +476,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 26",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:13.744534Z"
+      "downloaded_at": "2026-09-02T09:31:44.359929Z"
     },
     {
       "order_index": 26,
@@ -489,7 +490,7 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 27",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:13.964088Z"
+      "downloaded_at": "2026-09-02T09:31:44.364658Z"
     },
     {
       "order_index": 27,
@@ -503,10 +504,13 @@
       "height": 1066,
       "alt_text": "3 Bedroom House in Lonehill photo number 28",
       "is_hero": false,
-      "downloaded_at": "2026-08-24T00:48:15.082330Z"
+      "downloaded_at": "2026-09-02T09:31:44.364188Z"
     }
   ],
   "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
   "raw_json_ld": [
     {
       "@context": "http://schema.org",
@@ -611,5 +615,5 @@
     "description": "3 Bedroom House in Lonehill, Yes, you can have it all... Handsome Architecture, borehole and back-up water system, state of the a",
     "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
   },
-  "content_fingerprint": "bc11c5f94bc58261c58542b982de94602efb75eb93e7fb9a45299327345b5b27"
+  "content_fingerprint": "be641b04528f42f5c5b149e6b1a6c5a673841428fd5f8eda15efd3cec8e7546a"
 }

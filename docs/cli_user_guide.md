@@ -1,48 +1,111 @@
-# CLI User Guide & Ergonomics
+# CLI User Guide (`ap`)
 
-## 1. Archiving Made Simple
+`ap` (**ArchivedProperty**) provides a suite of terminal commands for archiving, exploring, filtering, editing, and analyzing South African real estate property listings.
 
-`property-archiver` is designed for friction-free ingestion. You can archive listings in multiple convenient ways:
+---
 
-### Option A: Short Listing ID (Recommended)
-You don't need to copy 150-character URLs. Just pass the listing ID:
+## 1. Archiving Listings (`ap fetch`)
+
+Pass any full property listing URL directly from your browser. The URL resolver automatically handles canonicalization and extraction.
+
 ```bash
-property-archiver fetch T4710876
-```
-*(The archiver automatically resolves `https://www.privateproperty.co.za/T4710876` and follows the canonical redirect).*
+# Archive directly with a full URL
+ap fetch https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876
 
-### Option B: System Clipboard (`-c` / `--clipboard`)
-Copy any listing URL in your browser and run:
-```bash
-property-archiver fetch -c
-```
-*(Or simply run `property-archiver fetch` with no arguments, and it will automatically inspect your clipboard).*
+# Archive without images (metadata & HTML only for fast analysis)
+ap fetch https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876 --no-images
 
-### Option C: Multiple Targets & Wildcards
-Archive multiple listings or local HTML snapshots in a single command:
-```bash
-# Multiple IDs / URLs
-property-archiver fetch T4710876 T4710877 https://www.privateproperty.co.za/...
+# Archive multiple URLs in batch
+ap fetch https://www.privateproperty.co.za/.../T4710876 https://www.privateproperty.co.za/.../T5275166
 
-# Wildcard glob of local snapshots
-property-archiver fetch ./snapshots/*.html
+# Archive from a text file containing one URL per line
+ap fetch urls.txt
 ```
 
 ---
 
-## 2. Inspecting, Validating & Diffing
+## 2. Interactive Web Dashboard (`ap serve`)
 
-### Inspect an Archive
+Launch the local web dashboard:
 ```bash
-property-archiver inspect ./archive/listings/T4710876
+# Launch on default port (http://127.0.0.1:8000)
+ap serve
+
+# Launch on custom port without auto-opening browser
+ap serve --port 8080 --no-open
+```
+> **Graceful Quit**: Press `Ctrl+C` or type `q` + `Enter` in the terminal to cleanly stop the server.
+
+---
+
+## 3. Terminal Hierarchy Tree Explorer (`ap tree`)
+
+Inspect your local archive structured hierarchically by **Province $\rightarrow$ Area / Metro $\rightarrow$ Suburb $\rightarrow$ Listing**:
+
+```bash
+# View complete nationwide archive hierarchy
+ap tree
+
+# Filter by province and area
+ap tree --province "Gauteng" --area "Sandton"
+
+# Filter by suburb and status
+ap tree --suburb "Rivonia" --status active
 ```
 
-### Validate SHA-256 Checksums
+---
+
+## 4. Editing & User Annotations (`ap edit`)
+
+Update lifecycle status, add private notes, tags, or star ratings:
+
 ```bash
-property-archiver validate ./archive/listings/T4710876
+# Mark as under offer with custom notes and tags
+ap edit T4710876 --status=under_offer --notes="Offer submitted" --tags="Prime, High ROI" --rating=5
+
+# Update star rating
+ap edit T4710876 --rating=4
 ```
 
-### Compare Snapshots (Price Drops & Status Changes)
+---
+
+## 5. Deleting an Archive (`ap delete`)
+
+Permanently delete an archived property:
+
 ```bash
-property-archiver compare ./archive/listings/T4710876_jul ./archive/listings/T4710876_aug
+# Delete with confirmation prompt
+ap delete T4710876
+
+# Delete immediately without prompt
+ap delete T4710876 --yes
+```
+
+---
+
+## 6. Multi-Format Regional Export (`ap export`)
+
+Export property records to CSV, SQLite, GeoJSON, or JSONL:
+
+```bash
+# Export filtered suburb to CSV
+ap export --format=csv --suburb="Rivonia" --output="rivonia.csv"
+
+# Export entire portfolio to SQLite database
+ap export --format=sqlite --output="portfolio.db"
+
+# Export geospatial coordinates to GeoJSON
+ap export --format=geojson --output="map.geojson"
+```
+
+---
+
+## 7. Integrity Validation & Inspection (`ap validate` / `ap inspect`)
+
+```bash
+# Verify cryptographic SHA-256 integrity
+ap validate T4710876
+
+# Inspect raw JSON-LD specifications and details
+ap inspect T4710876
 ```
