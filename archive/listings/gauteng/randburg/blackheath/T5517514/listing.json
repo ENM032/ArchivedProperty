@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5517514",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/T5517514",
+  "extracted_at": "2026-08-26T09:10:49.910778Z",
+  "title": "1 Bedroom Apartment in Blackheath",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-11",
+  "description": "Spacious - Bachelor Apartment for Sale Blackheath! Calling First time buyers Investor''s\n\nProperty Specs: Neat and spacious - Top floor apartment Tiled throughout -easy maintenance\nSeparate fitted kit...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": null,
+  "price": {
+    "amount": 385000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 385 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5517514",
+    "suburb": "Blackheath",
+    "city": "Johannesburg",
+    "region": "Blackheath, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Blackheath",
+      "T5517514"
+    ]
+  },
+  "features": {
+    "bedrooms": 1.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 1",
+      "Bathrooms 1",
+      "Lounges 1",
+      "Covered parking 1",
+      "Access gate",
+      "Built in cupboards",
+      "Pool",
+      "Kitchen"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Maureen Palmer",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1976142/image/4c4ce86882d247f98a874ce2d45d03d2_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/maureen-palmer/1976142/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11890294/8ubFTIj77I7sr8QYufB3F1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/8ubFTIj77I7sr8QYufB3F1/1600/1066/contain/jpegorpng",
+      "local_filename": "001_8ubFTIj77I7sr8QYufB3F1.jpg",
+      "sha256": "821a7d913b8f7ad0db1551affcb543c3efc86ea31ed7725e98c61197e25ea231",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133782,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:10:58.266292Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11890294/y7nFcrz3nVJRoCTSvttZB6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/y7nFcrz3nVJRoCTSvttZB6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_y7nFcrz3nVJRoCTSvttZB6.jpg",
+      "sha256": "55eb93d4332d73ce2c8ebba9ab7974092d422137ca92f9bc3b9541daa4b13b58",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115259,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.073341Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11890294/kAHITZD8sDTKeP0fulKad3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/kAHITZD8sDTKeP0fulKad3/1600/1066/contain/jpegorpng",
+      "local_filename": "003_kAHITZD8sDTKeP0fulKad3.jpg",
+      "sha256": "60538b83f0605d831b4abb5d02fcb18215690ca4b126b4df71add13389b1e544",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 83169,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.073078Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11890294/3vjBgjXeyV9s0D8mAukLu6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/3vjBgjXeyV9s0D8mAukLu6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_3vjBgjXeyV9s0D8mAukLu6.jpg",
+      "sha256": "0b6d175e82b862812204daa0295375788e9a6195779c224dce38296cb68c1a30",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137344,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.932111Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11890294/2mLRSsvBHZJrhbbPvLnDg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/2mLRSsvBHZJrhbbPvLnDg0/1600/1066/contain/jpegorpng",
+      "local_filename": "005_2mLRSsvBHZJrhbbPvLnDg0.jpg",
+      "sha256": "1b3ed4b072b66a35fbe6de9dccdfd88ec59075c355746eaf2015bd707b3be458",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 85128,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:57.764056Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11890294/Cbd7woSBGHI0MsyAJsriU7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/Cbd7woSBGHI0MsyAJsriU7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_Cbd7woSBGHI0MsyAJsriU7.jpg",
+      "sha256": "4e3eb42bf1331c561e6f2045b48782cb38a5bb3b5d6e103c8818788bf4fc96e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 90347,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.973782Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11890294/mfSbDlM3LG3uPs5fj7r6J6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/mfSbDlM3LG3uPs5fj7r6J6/1600/1066/contain/jpegorpng",
+      "local_filename": "007_mfSbDlM3LG3uPs5fj7r6J6.jpg",
+      "sha256": "b909064ac2eca7cbf63157ecbdceaccd530b264c7faddc8961724c611a562946",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 111905,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.460703Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11890294/JHN6d3BsaEkBkpYMezLzV5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/JHN6d3BsaEkBkpYMezLzV5/1600/1066/contain/jpegorpng",
+      "local_filename": "008_JHN6d3BsaEkBkpYMezLzV5.jpg",
+      "sha256": "6ae0a40786fca5c0b200740694e1094f6e33656689e8572392f121a13d7541f3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125349,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:57.743218Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11890294/GjD3IGBoo5lXgVZtcEhzF5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/GjD3IGBoo5lXgVZtcEhzF5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_GjD3IGBoo5lXgVZtcEhzF5.jpg",
+      "sha256": "55eb93d4332d73ce2c8ebba9ab7974092d422137ca92f9bc3b9541daa4b13b58",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115259,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:54.905759Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11890294/aabjxwxFZd3nCdQn8EphJ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/aabjxwxFZd3nCdQn8EphJ0/1600/1066/contain/jpegorpng",
+      "local_filename": "010_aabjxwxFZd3nCdQn8EphJ0.jpg",
+      "sha256": "95cc2ec9810fb91fdb532768730dc2b9a3a4195f309f9d679a749ef64b7d0e47",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 99302,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:55.277594Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11890294/dHHPyWieyS1QGDUBQpexW7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/dHHPyWieyS1QGDUBQpexW7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_dHHPyWieyS1QGDUBQpexW7.jpg",
+      "sha256": "83dff66c4905cbda2da4212da6e266a83bc3478d76287a63ad5f59d6d77b53f5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 66973,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:55.280422Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11890294/4DjBM2V8yqdf0YIijjT8X6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11890294/4DjBM2V8yqdf0YIijjT8X6/1600/1066/contain/jpegorpng",
+      "local_filename": "012_4DjBM2V8yqdf0YIijjT8X6.jpg",
+      "sha256": "f9358f4979fd68b4d4c140b4365de75f19f3012bf1b83773bf2acde28b283563",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 96934,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Blackheath photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:10:55.321539Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/1570",
+            "name": "Blackheath"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/T5517514",
+            "name": "T5517514"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11890294/8ubFTIj77I7sr8QYufB3F1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Blackheath, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/T5517514"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 385 000 | 1 Bedroom Apartment in Blackheath | Private Property",
+    "og:description": "Spacious - Bachelor Apartment for Sale Blackheath! Calling First time buyers Investor''s\n\nProperty Specs: Neat and spacious - Top floor apartment Tiled throughout -easy maintenance\nSeparate fitted kit...",
+    "og:image": "https://images.pp.co.za/listing/11890294/8ubFTIj77I7sr8QYufB3F1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/T5517514"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 385 000 | 1 Bedroom Apartment in Blackheath | Private Property",
+    "og:description": "Spacious - Bachelor Apartment for Sale Blackheath! Calling First time buyers Investor''s\n\nProperty Specs: Neat and spacious - Top floor apartment Tiled throughout -easy maintenance\nSeparate fitted kit...",
+    "og:image": "https://images.pp.co.za/listing/11890294/8ubFTIj77I7sr8QYufB3F1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/blackheath/T5517514",
+    "description": "1 Bedroom Apartment in Blackheath, Spacious - Bachelor Apartment for Sale Blackheath! Calling First time buyers Investor''s\n\nProperty S",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "e0ebf5380d37d6b769fbed22f1a86096963677ba3765600244b93bb390df0a59"
+}

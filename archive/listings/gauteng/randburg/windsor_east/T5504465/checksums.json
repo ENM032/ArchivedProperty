@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5504465",
+  "archived_at": "2026-08-26T09:14:33.114016Z",
+  "archiver_version": "1.0.0",
+  "total_files": 20,
+  "files": {
+    "listing.json": "c1430d8d493dea6125594753545e57f4494fbd03b3f634214d3d64db683264e2",
+    "raw.html": "50cb941cafd3b8234d44b0fe09e747ba2e849de353346c8ab1c50d5eb3f1e03a",
+    "metadata.json": "bede7b2b553f933a2837fbb4422a5cfb1bf35014840a16ec04be9b17f39dfd11",
+    "images/001_dmjW0O4I6NCvONLoR6McG0.png": "108ec9befe10ab3382dfde894f151f4bc83e8bd42ddfe0827094e1777791fdb6",
+    "images/002_nf49pIE7sPd2QHXEQQLCM7.png": "3182535c1d2b40443129a2f71b019ef0d78ffed930ce68d97b6704ccb48296b0",
+    "images/003_o28NwXK1Wa9MV41O6N9Uz5.jpg": "544ef139505a21432b27235e5367d86febb535e9c11ab514c1b6677b5512c6e2",
+    "images/004_HebkUuIBCn4R54HvEVrNx0.png": "d0620428b0e3f84a30de26246b2f18584d812e0b34a0cd46a7ef416e12e119c1",
+    "images/005_Wv63CNjJ3IdsvQgOsCis20.jpg": "1a7cb75a9b7a222211dcc38f7a8f360fcb96d04a5bfca023dacc2e8d17c48212",
+    "images/006_vmarOJonRXQk1iP5o5eWK6.jpg": "7c64821c74ad86a0f054cea4b3664a618e13afabefae1f27a52a302d94f3835e",
+    "images/007_H6ilWYzOnCVVnMlz367rN4.jpg": "71ddc86f7a094df42d5eeaccb75e9db7730e8a04ea170663920af31e7cd8d70e",
+    "images/008_SziaabKF6w0LT5DDOdNiA4.jpg": "29bf3a883bc8cb7c280e5df93aef7b42057ed4fe7ed943fcae3b737e9f895886",
+    "images/009_vgff0wZusb5xy8tV7NTXG7.jpg": "bfa4834d623800eecbfdea59823a09a2fdf4507467ea4ce26f40a2eb08f77d78",
+    "images/010_CGR7lOAIvRKu3S9sCToDY5.png": "3182535c1d2b40443129a2f71b019ef0d78ffed930ce68d97b6704ccb48296b0",
+    "images/011_OkU2otiNbUJbLtxRDIXUi5.jpg": "d6a4cc47db9a7b7cd2eeea318246640a0f5747ab43ea367e4ecd0ff18da1111f",
+    "images/012_dUJJEsu2zDrWJIauzLqrp4.jpg": "b7fbbe101e13d9b8311c7a8ae660d65810673185cc6cfa2bf03dddcaa3425d31",
+    "images/013_qT2eaxlBonqGpV0fjxunU2.jpg": "fb19b9a6b1a28f514db0e2251a6199ec9f1f54f4a20dfce82889ccf543d2e515",
+    "images/014_hMsuR6msbgFO7HXMOg1Y81.png": "108ec9befe10ab3382dfde894f151f4bc83e8bd42ddfe0827094e1777791fdb6",
+    "images/015_laFPWwvH1861QZVEKuWGx1.jpg": "e64a07a4f18a03ccd8428a66a92cb70784328e901cfa6996567fa900a5ccb424",
+    "images/016_LTXj1Xqg9vCSzYu5rizPm4.jpg": "ea42506ed986c4bdb1661de0f8db83bc02151d96a912c2b8917d3a1289d1ef83",
+    "images/017_aja0yLYGBWwR8CNclvXb74.png": "d0620428b0e3f84a30de26246b2f18584d812e0b34a0cd46a7ef416e12e119c1"
+  }
+}

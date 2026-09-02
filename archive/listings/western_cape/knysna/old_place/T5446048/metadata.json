@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5446048",
+  "source_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/old-place/14-stinkwood-crescent/T5446048",
+  "archived_at": "2026-08-26T10:42:03.497353Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|ad1af885-7513-4b54-94b8-13be08206c91|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=OFNWHKq9WE6dJLpRmgZ6Kg; expires=Sun, 26-Aug-2125 10:41:56 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 10:41:56 GMT",
+    "content-length": "27950"
+  },
+  "fetch_duration_sec": 2.052340269088745,
+  "total_images_discovered": 41,
+  "total_images_archived": 41,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "c6cbb320d5be2759c6fc63fcbc95dce6a60ce704d63c5032595813953e9651b3"
+}

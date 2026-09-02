@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5401512",
+  "source_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512",
+  "archived_at": "2026-08-26T10:38:20.236472Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|3d8dc3ae-b578-48a2-8370-f1e064e506b4|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=Ps1lPEHJIk-GFYCLlKigQQ; expires=Sun, 26-Aug-2125 10:38:15 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 10:38:14 GMT",
+    "content-length": "27109"
+  },
+  "fetch_duration_sec": 1.3163907527923584,
+  "total_images_discovered": 26,
+  "total_images_archived": 26,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "322dfba83690a2f98dcdf199d9fdb6737a2409b3dfbdff80b09e7379c8a2895a"
+}

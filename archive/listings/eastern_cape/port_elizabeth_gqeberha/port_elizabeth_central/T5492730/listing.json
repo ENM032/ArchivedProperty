@@ -1,0 +1,658 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5492730",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730",
+  "extracted_at": "2026-08-26T13:07:52.009443Z",
+  "title": "5 Bedroom House in Port Elizabeth Central",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-20",
+  "description": "Discover exceptional value and versatility with this wonderfully spacious property situated in the heart of Port Elizabeth.\n\nWhether youre searching for the perfect family home or a smart investment o...",
+  "erf_size_m2": 633.0,
+  "land_size_raw": "633 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 1390000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 390 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "22 brickmakers kloof",
+    "suburb": "Port Elizabeth Central",
+    "city": "Nelson Mandela Bay",
+    "region": "Port Elizabeth Central, Port Elizabeth (Gqeberha)",
+    "province": "Eastern Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -33.9673124,
+    "longitude": 25.6155477,
+    "breadcrumbs": [
+      "South Africa",
+      "Eastern Cape",
+      "Nelson Mandela Bay",
+      "Port Elizabeth (Gqeberha)",
+      "Port Elizabeth Central",
+      "T5492730"
+    ]
+  },
+  "features": {
+    "bedrooms": 5.0,
+    "bathrooms": 3.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 5",
+      "Bathrooms 3",
+      "Lounges 1",
+      "Dining areas 1",
+      "Flatlets",
+      "Pet friendly",
+      "Kitchen",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Hanro Strydom",
+    "agency_name": null,
+    "agency_logo_url": "https://prppublicstore.blob.core.windows.net/live-za-content/placeholders/agents/img.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/hanro-strydom/2332447/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11847211/1iid3IQ4fujUZ3Uyz1z5c4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/1iid3IQ4fujUZ3Uyz1z5c4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_1iid3IQ4fujUZ3Uyz1z5c4.jpg",
+      "sha256": "b1a136ae453656e998f0bb2229d1c6bbec8c8126652cdd879febf3e31303ef59",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 285172,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T13:07:54.167056Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11847211/qpwpVKOpcm657DiVVaBHJ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/qpwpVKOpcm657DiVVaBHJ3/1600/1066/contain/jpegorpng",
+      "local_filename": "002_qpwpVKOpcm657DiVVaBHJ3.jpg",
+      "sha256": "0f5118d0338e77e467bb695bdd01a25cc2f37712aeadae8c547fd41445dde17d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 291058,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:53.099864Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11847211/FhC3YCcgetT8PLdbqre4k3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/FhC3YCcgetT8PLdbqre4k3/1600/1066/contain/jpegorpng",
+      "local_filename": "003_FhC3YCcgetT8PLdbqre4k3.jpg",
+      "sha256": "825f0d046c8f1fed7f6ee3bc1aecd1371c13e469a3fcafb5fc834f6681a77fcf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 272809,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.592487Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11847211/EPG1vIGm5tl1NhBThn2Ec5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/EPG1vIGm5tl1NhBThn2Ec5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_EPG1vIGm5tl1NhBThn2Ec5.jpg",
+      "sha256": "2e6768725384a496b948db13febdac405cfe345af90d51bf415a1ee033b6c201",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 231445,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:52.994476Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11847211/6QEuMI755YxLcSQwn9WQN5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/6QEuMI755YxLcSQwn9WQN5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_6QEuMI755YxLcSQwn9WQN5.jpg",
+      "sha256": "bb08412cffa984506a8540bc81c2a02100d979d57e9e38cb4639d697953b9ffb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139330,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:52.994262Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11847211/8fuDmPaUlQvkWKKrAXlYu5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/8fuDmPaUlQvkWKKrAXlYu5/1600/1066/contain/jpegorpng",
+      "local_filename": "006_8fuDmPaUlQvkWKKrAXlYu5.jpg",
+      "sha256": "f7e33de827738491203e1365f8ff9d3b489e7947c934712faabe49b004056614",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147443,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:52.995631Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11847211/rT7vp5znEbnTWXgU7R3PH1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/rT7vp5znEbnTWXgU7R3PH1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_rT7vp5znEbnTWXgU7R3PH1.jpg",
+      "sha256": "316cc3686462e8cead808ed7006fc2552e611355f3b2df0651b4915f2d278176",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202357,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.914192Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11847211/y9rTg085LScOvohl3t8gP2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/y9rTg085LScOvohl3t8gP2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_y9rTg085LScOvohl3t8gP2.jpg",
+      "sha256": "aae9a540b9e9c067da8271f2ae13fd5377e5f1ac23c6fea66270216232de4bb3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151951,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:53.379850Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11847211/56Lr5pfFKBmioqxGY4qNH1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/56Lr5pfFKBmioqxGY4qNH1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_56Lr5pfFKBmioqxGY4qNH1.jpg",
+      "sha256": "742ecd8c161ac5ef15f19ccfd19183bbbc02b107136c46d388aa6b411d88b25f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 317970,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:53.688915Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11847211/OEgl84KRfDQejeXn8G3Xd5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/OEgl84KRfDQejeXn8G3Xd5/1600/1066/contain/jpegorpng",
+      "local_filename": "010_OEgl84KRfDQejeXn8G3Xd5.jpg",
+      "sha256": "36fb674c8a894271f8ac4d3caa396d7e7a56927990a52506b9810618835f8919",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 259266,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:53.600784Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11847211/VzbNXA1X1MXlhxmf6q5Di7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/VzbNXA1X1MXlhxmf6q5Di7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_VzbNXA1X1MXlhxmf6q5Di7.jpg",
+      "sha256": "d9151419d6831abc0f62b005006e8817b7ae8d3d3202ce374d5b1aaa1e6e95bb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 208776,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:53.765021Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11847211/KD6If8iQb3HDsvOuW3KEp0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/KD6If8iQb3HDsvOuW3KEp0/1600/1066/contain/jpegorpng",
+      "local_filename": "012_KD6If8iQb3HDsvOuW3KEp0.jpg",
+      "sha256": "98215188d34661d53491ad01e0da75d2a2460256b497ff86a35e88983cd4ae80",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 234617,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.011153Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11847211/tgevPqOSc5fLG01iGS1tX6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/tgevPqOSc5fLG01iGS1tX6/1600/1066/contain/jpegorpng",
+      "local_filename": "013_tgevPqOSc5fLG01iGS1tX6.jpg",
+      "sha256": "e0f73f2f7f291c596cf76a7b073b3615b9d823cbddac8b0d71e18265bee0fdfd",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 213916,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.214542Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11847211/2oQcU7KcM1pHUjIoWx1u06/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/2oQcU7KcM1pHUjIoWx1u06/1600/1066/contain/jpegorpng",
+      "local_filename": "014_2oQcU7KcM1pHUjIoWx1u06.jpg",
+      "sha256": "bf434f0fde25890daadb043b643edab83148a1e4bd3c3b055854354946269579",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197769,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.586587Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11847211/lmsZPozdvDWPPhhEfWw1K6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/lmsZPozdvDWPPhhEfWw1K6/1600/1066/contain/jpegorpng",
+      "local_filename": "015_lmsZPozdvDWPPhhEfWw1K6.jpg",
+      "sha256": "a619ea5ca00e9506d785f4e8c0b7033e0dc067a6a7685501cfc198b9c71abb70",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189212,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.570025Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11847211/lxskUlAVZo3G5RAscV6Gy1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/lxskUlAVZo3G5RAscV6Gy1/1600/1066/contain/jpegorpng",
+      "local_filename": "016_lxskUlAVZo3G5RAscV6Gy1.jpg",
+      "sha256": "b8703f96ba5e063e1a380b498e5fe48b9cb1aeeb1fe14c4e77bd6d789077ee29",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 215553,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.774074Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11847211/PGr31ACK2lexVrEtYpK7L4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/PGr31ACK2lexVrEtYpK7L4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_PGr31ACK2lexVrEtYpK7L4.jpg",
+      "sha256": "f023078e967aa124ebc03c5d9ee6c89caac4a3186f912194ed79c8f57c3b9904",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 385766,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:54.808696Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11847211/kXGSjOVshyEWwwVKS2vb81/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/kXGSjOVshyEWwwVKS2vb81/1600/1066/contain/jpegorpng",
+      "local_filename": "018_kXGSjOVshyEWwwVKS2vb81.jpg",
+      "sha256": "e074ac093c1868d150ec601015f215339042d929cec0128d0fb42e806807ca2d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 373843,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.530308Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11847211/0fZ6Tv8O8l9lxUJrX7Ws44/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/0fZ6Tv8O8l9lxUJrX7Ws44/1600/1066/contain/jpegorpng",
+      "local_filename": "019_0fZ6Tv8O8l9lxUJrX7Ws44.jpg",
+      "sha256": "d663e97e2ec23b4435e5863e997dc076cb1098f2dfdd0b5e65a65da4b4172155",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 373850,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.824555Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11847211/WpVMfKnWbhKTDXgH08kIB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/WpVMfKnWbhKTDXgH08kIB2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_WpVMfKnWbhKTDXgH08kIB2.jpg",
+      "sha256": "818725aac63426e0621fa3cf1bb472a9afd085aabae95e4135b249a8d9188838",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 368991,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.257156Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11847211/2Jzv3rGJo1OzaZWDLW6AZ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/2Jzv3rGJo1OzaZWDLW6AZ4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_2Jzv3rGJo1OzaZWDLW6AZ4.jpg",
+      "sha256": "337438a625873da93fd0866180f5855793b9ab3870ae803201805cff4f7f1fb8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 309483,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.380144Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11847211/HBLsQAqPsfGhUAIdD8Amw0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/HBLsQAqPsfGhUAIdD8Amw0/1600/1066/contain/jpegorpng",
+      "local_filename": "022_HBLsQAqPsfGhUAIdD8Amw0.jpg",
+      "sha256": "5812f785c4c45310a6860a2b7ed3a4ac97becc015e23421974191a6b0f2ef0b8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 208185,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.535980Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11847211/WSX65t9eRksQQkcMY4lqX7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/WSX65t9eRksQQkcMY4lqX7/1600/1066/contain/jpegorpng",
+      "local_filename": "023_WSX65t9eRksQQkcMY4lqX7.jpg",
+      "sha256": "07f28ba3e73938d1c01cdb3adb93a90fbb535f4db9e6021083c45556ec1e85af",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 96616,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.395936Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11847211/WosP9C7lRjxnClYqFjDL47/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/WosP9C7lRjxnClYqFjDL47/1600/1066/contain/jpegorpng",
+      "local_filename": "024_WosP9C7lRjxnClYqFjDL47.jpg",
+      "sha256": "017c38f4bd8f379d8c8d184124186847e99cc1169dd4f516fd11028e73e3084f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166047,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:56.602756Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11847211/ihfGFegoJ6IUFS3Ez8IMn5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/ihfGFegoJ6IUFS3Ez8IMn5/1600/1066/contain/jpegorpng",
+      "local_filename": "025_ihfGFegoJ6IUFS3Ez8IMn5.jpg",
+      "sha256": "364b51c4a9d3241cd5e4da2a486da3aaaed658a89213c735895c4a1449b28e8d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157170,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.787157Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11847211/ciYsGLNiRbl5K3pE8uaLg4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/ciYsGLNiRbl5K3pE8uaLg4/1600/1066/contain/jpegorpng",
+      "local_filename": "026_ciYsGLNiRbl5K3pE8uaLg4.jpg",
+      "sha256": "3d1de6ec4a951ac627e6cad873b9717e57a1e8331f05214c2ef78e58c2bbc5a5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 172835,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.827073Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11847211/j4Z8o8PblxFZ66Bu0W7Lx4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/j4Z8o8PblxFZ66Bu0W7Lx4/1600/1066/contain/jpegorpng",
+      "local_filename": "027_j4Z8o8PblxFZ66Bu0W7Lx4.jpg",
+      "sha256": "5f0479da994e6d468f7b05a6cd934e562d9abbd84ed9fb246586f32fe5e681a4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 186902,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.934551Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11847211/VGx8NNQItejp3EUJMkuhi0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/VGx8NNQItejp3EUJMkuhi0/1600/1066/contain/jpegorpng",
+      "local_filename": "028_VGx8NNQItejp3EUJMkuhi0.jpg",
+      "sha256": "ac499304218cfbbcbf9e5adb7fac11fdc93604f61c3a2ce4590dea2fa6c56576",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114094,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:55.942580Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11847211/MroT5IyRqzSapVH2PmdSD1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/MroT5IyRqzSapVH2PmdSD1/1600/1066/contain/jpegorpng",
+      "local_filename": "029_MroT5IyRqzSapVH2PmdSD1.jpg",
+      "sha256": "9eeb90222787bf1fd0510bfa8418d4473ea39f15523fac07a0f59579fbe0ee00",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 279139,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:56.691775Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11847211/vVG7rtSkEvGL7SH75UpCE7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/vVG7rtSkEvGL7SH75UpCE7/1600/1066/contain/jpegorpng",
+      "local_filename": "030_vVG7rtSkEvGL7SH75UpCE7.jpg",
+      "sha256": "c6829519985fb9ddb7c673ee36aaeda395afc2af3a5c698e6a8f1abdc5230b52",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 346873,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:56.546874Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11847211/0BDx3SWNCeRrtjkq9VqO57/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11847211/0BDx3SWNCeRrtjkq9VqO57/1600/1066/contain/jpegorpng",
+      "local_filename": "031_0BDx3SWNCeRrtjkq9VqO57.jpg",
+      "sha256": "656cbeb013f16f0103ace404d231ab0c3af0e634f03bd68d23cef1cc77c492fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 394812,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "5 Bedroom House in Port Elizabeth Central photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:07:56.259436Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/4fCS9OD8lo0?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/7",
+            "name": "Eastern Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/2954",
+            "name": "Nelson Mandela Bay"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/67",
+            "name": "Port Elizabeth (Gqeberha)"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/540",
+            "name": "Port Elizabeth Central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730",
+            "name": "T5492730"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11847211/1iid3IQ4fujUZ3Uyz1z5c4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "22 brickmakers kloof",
+        "addressLocality": "Port Elizabeth Central, Port Elizabeth (Gqeberha)",
+        "addressRegion": "Eastern Cape"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9673124,
+        "longitude": 25.6155477
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 390 000 | 5 Bedroom House in Port Elizabeth Central | Private Property",
+    "og:description": "Discover exceptional value and versatility with this wonderfully spacious property situated in the heart of Port Elizabeth.\n\nWhether youre searching for the perfect family home or a smart investment o...",
+    "og:image": "https://images.pp.co.za/listing/11847211/1iid3IQ4fujUZ3Uyz1z5c4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 390 000 | 5 Bedroom House in Port Elizabeth Central | Private Property",
+    "og:description": "Discover exceptional value and versatility with this wonderfully spacious property situated in the heart of Port Elizabeth.\n\nWhether youre searching for the perfect family home or a smart investment o...",
+    "og:image": "https://images.pp.co.za/listing/11847211/1iid3IQ4fujUZ3Uyz1z5c4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730",
+    "description": "5 Bedroom House in Port Elizabeth Central, 22 brickmakers kloof, Discover exceptional value and versatility with this wonderfully spacious property situated in the h",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "b624035ea7e5ffc510a868056276936f43bb003e432fb68896c8ea7006a11016"
+}

@@ -1,0 +1,538 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5408299",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299",
+  "extracted_at": "2026-08-26T10:37:16.063993Z",
+  "title": "4 Bedroom House in Green Pastures",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-03-02",
+  "description": "Modern Knysna Home with Pool, Views, and Dual Kitchens\n\nEXCLUSIVE MANDATE\n\nDiscover this modern and inviting home situated in the picturesque Green Pastures, Knysna. The property immediately impresses...",
+  "erf_size_m2": 859.0,
+  "land_size_raw": "859 m²",
+  "floor_size_m2": 131.0,
+  "price": {
+    "amount": 2700000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 700 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": 670.0
+  },
+  "location": {
+    "street_address": "T5408299",
+    "suburb": "Green Pastures",
+    "city": "Garden Route",
+    "region": "Green Pastures, Knysna",
+    "province": "Western Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Western Cape",
+      "Garden Route",
+      "Knysna",
+      "Green Pastures",
+      "T5408299"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": true,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3",
+      "Lounges 2",
+      "Dining areas 1",
+      "Open parking 2",
+      "Pet friendly",
+      "Deck",
+      "Fenced",
+      "Pool",
+      "Scenic view",
+      "Kitchen",
+      "Garden",
+      "Paving",
+      "Built In braai"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Nick Davel",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2318981/image/ba6c05ba1e16412087439dde16f73523_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/nick-davel/2318981/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Nicoline van Niekerk",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2329793/image/ab3f941836ac497ea76edc02e34f63d7_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/nicoline-van-niekerk/2329793/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11701764/JEdR4UHW4JNglvMl1ZbSo1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/JEdR4UHW4JNglvMl1ZbSo1/1600/1066/contain/jpegorpng",
+      "local_filename": "001_JEdR4UHW4JNglvMl1ZbSo1.jpg",
+      "sha256": "bf31f5d4f662cdf786368a9681e79f474f3bda31000808830aba53a697c3aa6a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 230028,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:37:20.620902Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11701764/ge4piVuVkONnkRlTJWdoc7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/ge4piVuVkONnkRlTJWdoc7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_ge4piVuVkONnkRlTJWdoc7.jpg",
+      "sha256": "936971575753f9d59d0cbc8a10459d9bbdbcbc2debefc898709786f1b36450a3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 224820,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:19.861711Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11701764/aoLDRRkgrkv3WE9sfj1Pm3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/aoLDRRkgrkv3WE9sfj1Pm3/1600/1066/contain/jpegorpng",
+      "local_filename": "003_aoLDRRkgrkv3WE9sfj1Pm3.jpg",
+      "sha256": "d8b6a642a129c7c7eabd2e5ac2d77536158a5a6c175b601397c3f1dcc0faeefa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 306552,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.626360Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11701764/57hZ0cY88DYMCjwKN7bBr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/57hZ0cY88DYMCjwKN7bBr6/1600/1066/contain/jpegorpng",
+      "local_filename": "004_57hZ0cY88DYMCjwKN7bBr6.jpg",
+      "sha256": "d98e454f9dc22bced7bd59437538f398839d30a3cfd713fd1089406538f7e1f3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129859,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:19.989490Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11701764/mS5uB15GU0J8DCY3vVXs92/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/mS5uB15GU0J8DCY3vVXs92/1600/1066/contain/jpegorpng",
+      "local_filename": "005_mS5uB15GU0J8DCY3vVXs92.jpg",
+      "sha256": "c2f1acc0bbfbac346edbc704baf9b4c6f9972d506cc413d454d0e51aa0a193e1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141672,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:19.701495Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11701764/WjebIe7qdOlT52tFIriAT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/WjebIe7qdOlT52tFIriAT7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_WjebIe7qdOlT52tFIriAT7.jpg",
+      "sha256": "7a4d70cf9866b4252cc9cce1518b42a4f33d863947459aa5a67e76f8972958f5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 111787,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:19.690805Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11701764/TzOzoZhdwpfnwYORtx9E67/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/TzOzoZhdwpfnwYORtx9E67/1600/1066/contain/jpegorpng",
+      "local_filename": "007_TzOzoZhdwpfnwYORtx9E67.jpg",
+      "sha256": "228622f78b7abfe25bd3e15e3da1948f1eaa89179d38134520a0f7ced0d891a7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115900,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:20.826941Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11701764/0qMnNIPWTui94Xtas66225/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/0qMnNIPWTui94Xtas66225/1600/1066/contain/jpegorpng",
+      "local_filename": "008_0qMnNIPWTui94Xtas66225.jpg",
+      "sha256": "3004a2f00b48c31b3a89835f64f7652d5e02c6c7c41f3357b4e250a28f44c0f2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137603,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:20.129881Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11701764/ew9rkdEDwbmyfgGPlE4Pf4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/ew9rkdEDwbmyfgGPlE4Pf4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_ew9rkdEDwbmyfgGPlE4Pf4.jpg",
+      "sha256": "1c838bdfdb8b1c354e42f5c3ec466be1dc89288bcd6c596cf227b1ca9d66b9ec",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133694,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.058125Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11701764/tGxLnMlc1iuCDKtU3mYc92/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/tGxLnMlc1iuCDKtU3mYc92/1600/1066/contain/jpegorpng",
+      "local_filename": "010_tGxLnMlc1iuCDKtU3mYc92.jpg",
+      "sha256": "1e649736905c0ae6a6a29fbd9e46e04adee399777fc045c01d7df8fa175f59f4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 75789,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.204919Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11701764/BmFATxcP5doKgZQHkywDS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/BmFATxcP5doKgZQHkywDS7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_BmFATxcP5doKgZQHkywDS7.jpg",
+      "sha256": "6ee30a3b55c6e83262b35a764aae74e76debd9bb9a98fe0c5813d2ad9b764cff",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 117323,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:20.173006Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11701764/hK7cIBMqMpIP6zGzywoT43/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/hK7cIBMqMpIP6zGzywoT43/1600/1066/contain/jpegorpng",
+      "local_filename": "012_hK7cIBMqMpIP6zGzywoT43.jpg",
+      "sha256": "57f45fd31452671c7a5b8f0da1462e9665aed57b4ef67f7f0770f5b974ff8020",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136652,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:20.417250Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11701764/dIavlcDwMKuwgUkiNKxbt4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/dIavlcDwMKuwgUkiNKxbt4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_dIavlcDwMKuwgUkiNKxbt4.jpg",
+      "sha256": "f8a04e62680729da6d252cc8c6ec73085040eaec239f83e8cf91a3e25275eb38",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 253746,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.886205Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11701764/7JECdaAiAaklab9GY7Yah4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/7JECdaAiAaklab9GY7Yah4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_7JECdaAiAaklab9GY7Yah4.jpg",
+      "sha256": "1af605e78102557460d619d8a1958514bf8eea592725c40c76193106efd59900",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137371,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.379163Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11701764/ENLFTnPxGao0V0ZLi1u9Z2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/ENLFTnPxGao0V0ZLi1u9Z2/1600/1066/contain/jpegorpng",
+      "local_filename": "015_ENLFTnPxGao0V0ZLi1u9Z2.jpg",
+      "sha256": "b6d75320b4a6c65e57d8721932993bf450d9e84d223881c487cb0f02faab85b9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150640,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:22.166993Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11701764/ShRMvolmhczH3IlUXShfd4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/ShRMvolmhczH3IlUXShfd4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_ShRMvolmhczH3IlUXShfd4.jpg",
+      "sha256": "7cdb789326ad727a3e566fcf9524a0138872b215086b629e732012fb8c30401e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126486,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.791311Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11701764/ucYpil2m4qJMUFmCgrq1o5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/ucYpil2m4qJMUFmCgrq1o5/1600/1066/contain/jpegorpng",
+      "local_filename": "017_ucYpil2m4qJMUFmCgrq1o5.jpg",
+      "sha256": "cfcc21d1a82fabb8997be7286db3b5747205ef1056ca934ea1bef1bb54379031",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 143444,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.403871Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11701764/FeAm65zBsjMPaptAsKx6Q0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/FeAm65zBsjMPaptAsKx6Q0/1600/1066/contain/jpegorpng",
+      "local_filename": "018_FeAm65zBsjMPaptAsKx6Q0.jpg",
+      "sha256": "a68ce803cd0949e2440eac695d345f7b5315d708bdc06aef17e55e63a1627db7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147514,
+      "width": 1600,
+      "height": 994,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.959390Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11701764/IkbQ3gLCh5RUR8s1ktnO06/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/IkbQ3gLCh5RUR8s1ktnO06/1600/1066/contain/jpegorpng",
+      "local_filename": "019_IkbQ3gLCh5RUR8s1ktnO06.jpg",
+      "sha256": "bc6679b321872d0508646177bace5b5405a2c85ef8a972725b147df79e99ea3c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 148441,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.595164Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11701764/lhflFGd7L1wlwRc8VJJR96/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/lhflFGd7L1wlwRc8VJJR96/1600/1066/contain/jpegorpng",
+      "local_filename": "020_lhflFGd7L1wlwRc8VJJR96.jpg",
+      "sha256": "cac5a8f192ad4ab4219450d91516946459527a5e8fabe1b33d117f38b67a3cbe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212916,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:21.779225Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11701764/9hVNK3lIl8IDA4BbtiI3M7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/9hVNK3lIl8IDA4BbtiI3M7/1600/1066/contain/jpegorpng",
+      "local_filename": "021_9hVNK3lIl8IDA4BbtiI3M7.jpg",
+      "sha256": "8cbcc96af4618807198efd17d5d2d82f9b17cb50146c5b0eb32ad8b8aed61fd9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 354342,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:22.897569Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11701764/BozWDrzRhkBtQdLeKiMiO5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11701764/BozWDrzRhkBtQdLeKiMiO5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_BozWDrzRhkBtQdLeKiMiO5.jpg",
+      "sha256": "f0b11904fb847e4f27d7f711c6ced9c63bec2a554051d200874f0d47b35d1859",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 228511,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Green Pastures photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:37:23.219368Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/4",
+            "name": "Western Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/52",
+            "name": "Garden Route"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/923",
+            "name": "Knysna"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/2009",
+            "name": "Green Pastures"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299",
+            "name": "T5408299"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11701764/JEdR4UHW4JNglvMl1ZbSo1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Green Pastures, Knysna",
+        "addressRegion": "Western Cape"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 700 000 | 4 Bedroom House in Green Pastures | Private Property",
+    "og:description": "Modern Knysna Home with Pool, Views, and Dual Kitchens\n\nEXCLUSIVE MANDATE\n\nDiscover this modern and inviting home situated in the picturesque Green Pastures, Knysna. The property immediately impresses...",
+    "og:image": "https://images.pp.co.za/listing/11701764/JEdR4UHW4JNglvMl1ZbSo1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 700 000 | 4 Bedroom House in Green Pastures | Private Property",
+    "og:description": "Modern Knysna Home with Pool, Views, and Dual Kitchens\n\nEXCLUSIVE MANDATE\n\nDiscover this modern and inviting home situated in the picturesque Green Pastures, Knysna. The property immediately impresses...",
+    "og:image": "https://images.pp.co.za/listing/11701764/JEdR4UHW4JNglvMl1ZbSo1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299",
+    "description": "4 Bedroom House in Green Pastures, Modern Knysna Home with Pool, Views, and Dual Kitchens\n\nEXCLUSIVE MANDATE\n\nDiscover this modern and",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "7d0daa756ddcb96510a7294fed8598a4b7ed83a46d6a864f2ddaad52d147f43b"
+}

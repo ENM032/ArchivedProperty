@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5540832",
+  "archived_at": "2026-08-26T10:07:49.203161Z",
+  "archiver_version": "1.0.0",
+  "total_files": 23,
+  "files": {
+    "listing.json": "368f316a31a8fcc89bb19cb445284598c4b938a747200b7c5a9cfc272d82f98b",
+    "raw.html": "bdf3efdb46e404d5c9b7676ff83a8f8830e0808d41740ccf8d5236c7a943fb41",
+    "metadata.json": "8ba23dea0a5f0b3488d37f832564a3351c86980c60329496ed9c62fee7da2f14",
+    "images/001_KVUCJW2Q2kjB9IEZWXQtf5.jpg": "164b32f1cdc7235eddf3cb6271117021375056de071c17542746e023ae72963f",
+    "images/002_PMbxpR288QDv6rKVaDHSv5.png": "1f684462318153a9d9c65c16b4dce72df559d58efab47aaa0ba57a5bc4663657",
+    "images/003_MX8nkX9ZlknoKoOOGy7sq5.png": "e4270848a20df31dc2cc222a6ab19537c85e9ba765eb1cb9592622cf5dcc84b4",
+    "images/004_mPtykh40l2KsILxbCo7vB3.png": "3648985b2e60e8c521aac397fd0ddb966543214f6e01946729db31f9a643b294",
+    "images/005_bsQHEBpz7r91pHDgpmV9Q6.png": "cf9b1758eab51e434287be4f3a4bbfd1d04dced370d0b9bdf5ca75b73b3b865b",
+    "images/006_T0YE13psWnQrrndoseS3f7.png": "e3e99809375ac56936def79a94d4874007624e0f45812ada89a0864c47597d48",
+    "images/007_P4aT1J9gSmu1mxbfDOoyo5.png": "7829651002c6fb669d151e6f09ca6c0c141051a1c727a210986caacff4e14562",
+    "images/008_FbFRZH1yIyMGmq9wlaMnD6.png": "676edf1a645fef9708cc7be667bcb6440b9c4562419dfd37ae24ec79186ad97a",
+    "images/009_jHhgrDsruE94KSADVxTGi6.png": "4e8244d2878be798dc9e695edf8f0b7e3735a33ed8991462a4e7eaae0346b612",
+    "images/010_ItZToAGqeeEv9AydTm38A3.png": "0d859d585aea40d33f62ee29cffeb6357e62926b68bf951efa18a908df1a5c70",
+    "images/011_hzUSD8f1B2Ed43jJMowEm7.png": "48b181152506fb89725a7a93070d0b3d0c284b99354ec17962c11b097e11f0ee",
+    "images/012_WlQWV1iQ6pGRANhYvLecH5.png": "19195bc25380fb29e877c0d48848389b96e397c4f33dbd6fd85a526126fd0f88",
+    "images/013_xDf5734HK9Y2xmGkUsZEB3.png": "061e1ce3aefa98280721d5c4d83c7f9d11e6fa566ace14a87b68164106dabdae",
+    "images/014_JLCrdcCtBYowj4Pbli5Mj2.png": "70d939330f63abddb43be8bd03ca8b97a45cfdf095f6fe07bc4b04e992ae3cb3",
+    "images/015_o4ez9JyUA0ZCmb763JtKj1.png": "d3c9090bf0322eae971ecc712a5a6d296f5330e902cc10cfd3c733f28fcce8f1",
+    "images/016_TPhDNklqGuEysj00BfWpS5.png": "ce28ee11d8d7920ed45d26dd6793c248453fdb9b7baf5870f712d7634aa3e7d7",
+    "images/017_LOzhCNZARCjEwC3JWNMky1.png": "2e16af24ffb4bfddbaea0b257ec85b3a72eb052116f03d1916b9c874cd613117",
+    "images/018_Z2iS16spRZMNFpSK6RwGx0.png": "f19466881367a825f87116b3379a5c4ca9fdbc5074ed8f7212f1425744eacb12",
+    "images/019_f0efNyp4Colk7RLz9KUGr5.jpg": "e719ed0a477c30dca299a24151de51eba7cf2d21efa0ba962b09ecb2239297e2",
+    "images/020_9nJo15D6ii1A1Qf0lofVV3.jpg": "0dcf9de7fe3797e390813e2a881ec720dc41806a4a6be79d44c73dd605831444"
+  }
+}

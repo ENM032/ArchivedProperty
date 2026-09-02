@@ -1,0 +1,617 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5134045",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5134045",
+  "extracted_at": "2026-08-26T09:18:18.206218Z",
+  "title": "3 Bedroom House in La Lucia",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-11",
+  "description": "Wonderful position - Prime La Lucia . A few steps to the right and you have The Mall, Virgin Active gym, library, clinic, tennis and padel courts, and you can go walkies to the beach with dog \n\nThis v...",
+  "erf_size_m2": 950.0,
+  "land_size_raw": "950 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 3700000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 700 000",
+    "rates_and_taxes_monthly": 1914.0,
+    "levies_monthly": 1021.0
+  },
+  "location": {
+    "street_address": "T5134045",
+    "suburb": "La Lucia",
+    "city": "Durban",
+    "region": "La Lucia, Umhlanga",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Durban",
+      "Umhlanga",
+      "La Lucia",
+      "T5134045"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": 1.0,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": true,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "En-suite 1",
+      "Garage parking 2",
+      "Alarm",
+      "Staff quarters",
+      "Kitchen",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Sharon Westcott",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1881152/image/2af9335c3f0a44178d482a1f81d63333_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/sharon-westcott/1881152/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11235674/3MmKKUzBJ6ILRBrXJ3Rt22/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/3MmKKUzBJ6ILRBrXJ3Rt22/1600/1066/contain/jpegorpng",
+      "local_filename": "001_3MmKKUzBJ6ILRBrXJ3Rt22.jpg",
+      "sha256": "5d01b6f0ed67416f5978494fde8f9d4d7bd39291158e63d67f9ac783b579500b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 222129,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:18:19.114784Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11235674/qZUyDCpvZTwBRubeFkGzo2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/qZUyDCpvZTwBRubeFkGzo2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_qZUyDCpvZTwBRubeFkGzo2.jpg",
+      "sha256": "1bd68432adcfe4af98b91e8ad53209c5f65555c4a77860571dadc209b3a9800c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166061,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.014196Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11235674/xZr1rQnZHPamx1hFpcwzw2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/xZr1rQnZHPamx1hFpcwzw2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_xZr1rQnZHPamx1hFpcwzw2.jpg",
+      "sha256": "b850d213503e6e96f549824bb572374017cd6d9d68f49fa93d99798c5881e5b8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 118758,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.946907Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11235674/9XATMjTA6lR3581HPgsl36/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/9XATMjTA6lR3581HPgsl36/1600/1066/contain/jpegorpng",
+      "local_filename": "004_9XATMjTA6lR3581HPgsl36.jpg",
+      "sha256": "44422968d364b6e34bc7d41659f7a1b0354a58eb70654c19cb955ebed4bd08af",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116818,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.087818Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11235674/Mu1eTY8CBk9iNkW8O4rdh4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/Mu1eTY8CBk9iNkW8O4rdh4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Mu1eTY8CBk9iNkW8O4rdh4.jpg",
+      "sha256": "b327f8b26ddc130f4e9d95ac793853c79291f1aaf86eeafc8e92e91a8a30b211",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132401,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:20.069475Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11235674/U4fP5YcfRVA4fBabg49C44/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/U4fP5YcfRVA4fBabg49C44/1600/1066/contain/jpegorpng",
+      "local_filename": "006_U4fP5YcfRVA4fBabg49C44.jpg",
+      "sha256": "745c7c5e15effcb71f2ef3fe7bcb09f131519cfdb6313b0f4875ee680e79cfa9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 215020,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.304858Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11235674/qEXhEJ3ncCKI3DYrWEv0J4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/qEXhEJ3ncCKI3DYrWEv0J4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_qEXhEJ3ncCKI3DYrWEv0J4.jpg",
+      "sha256": "7e04ed9423342ac296aeadaadf479f3d41dfb1785041a2a691c85b195482ceb4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 84154,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.218644Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11235674/zmw9lDTFDo8fpnJXGA7Ne4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/zmw9lDTFDo8fpnJXGA7Ne4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_zmw9lDTFDo8fpnJXGA7Ne4.jpg",
+      "sha256": "a030c90bdf60b5ca316cbc4ffa22bfcea1396ffca69ae435dad839eeac575b26",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 80610,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.267574Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11235674/3TrlukNXoKT7ZIabiuw414/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/3TrlukNXoKT7ZIabiuw414/1600/1066/contain/jpegorpng",
+      "local_filename": "009_3TrlukNXoKT7ZIabiuw414.jpg",
+      "sha256": "34e2f491d1264932e17475308307714847a83ad45e974ea01d3b2065bc896a6b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121171,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.512416Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11235674/UUELOC861zqDDdUuQCOkW6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/UUELOC861zqDDdUuQCOkW6/1600/1066/contain/jpegorpng",
+      "local_filename": "010_UUELOC861zqDDdUuQCOkW6.jpg",
+      "sha256": "8a249201424119ec8249c63074ffebeded5738686ea85eccbae377580ae42f2f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 102526,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.621778Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11235674/1uS61BqlmfY8QJ6RPWbs84/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/1uS61BqlmfY8QJ6RPWbs84/1600/1066/contain/jpegorpng",
+      "local_filename": "011_1uS61BqlmfY8QJ6RPWbs84.jpg",
+      "sha256": "be2bc8379c3c12b82b4ba657a1296560c1c3bfd9d1fec1e61d33c7e77a656617",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 106146,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.481673Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11235674/28GR9ID47fiH9mUQojDJ70/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/28GR9ID47fiH9mUQojDJ70/1600/1066/contain/jpegorpng",
+      "local_filename": "012_28GR9ID47fiH9mUQojDJ70.jpg",
+      "sha256": "a4400c3925442e80d1329595bcaf509811f34f184fcb4014b309d2b227c83904",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145406,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.681471Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11235674/hY7JO58W7j1nYsviTKmpj3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/hY7JO58W7j1nYsviTKmpj3/1600/1066/contain/jpegorpng",
+      "local_filename": "013_hY7JO58W7j1nYsviTKmpj3.jpg",
+      "sha256": "1d03dc477780d58da809642663c257f2dc9c998d9a75293d2ae4b73530eb7ed2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129828,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.705399Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11235674/jw99wgUh78KdWmv224AT10/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/jw99wgUh78KdWmv224AT10/1600/1066/contain/jpegorpng",
+      "local_filename": "014_jw99wgUh78KdWmv224AT10.jpg",
+      "sha256": "40af7403b76dbc4530e45b864f913dd3db0ad152f94124c9d14309c6cbbeb902",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 77493,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.887473Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11235674/VF5pA4IzjnxNuzm2wxm4S4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/VF5pA4IzjnxNuzm2wxm4S4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_VF5pA4IzjnxNuzm2wxm4S4.jpg",
+      "sha256": "f3ccbb2419c29866ca22ddfac51e0e88248c2ca70f6f03a466cad58a9ce14d2b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 93877,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:20.758233Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11235674/bRr0MVpU8fxduwKQQZMTl3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/bRr0MVpU8fxduwKQQZMTl3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_bRr0MVpU8fxduwKQQZMTl3.jpg",
+      "sha256": "d77ef0087357c10b5968b1b815a70f18d90b67d159a3ec6330d7617ed8fece66",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 110457,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:19.886917Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11235674/oyO59pNJP3Ot4bumqU3gr4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/oyO59pNJP3Ot4bumqU3gr4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_oyO59pNJP3Ot4bumqU3gr4.jpg",
+      "sha256": "99c09fdee820260d41d60c11122f848014f061859531dfb7238225ffa51f54cc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 120002,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:20.053533Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11235674/yOYBoyN5cEyAUfbGeCJse0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/yOYBoyN5cEyAUfbGeCJse0/1600/1066/contain/jpegorpng",
+      "local_filename": "018_yOYBoyN5cEyAUfbGeCJse0.jpg",
+      "sha256": "66f98b98a53e13af488d60e482fb9dcd5de8ed98a50789cd866318990d1e9eb8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135040,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:20.260000Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11235674/MsDgRTSwvD3TAOOyj8QAq0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/MsDgRTSwvD3TAOOyj8QAq0/1600/1066/contain/jpegorpng",
+      "local_filename": "019_MsDgRTSwvD3TAOOyj8QAq0.jpg",
+      "sha256": "deb9236d2242bf33eae39b2626bac61e4daf2c5deac0b132eee69078425ba98c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127229,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.192998Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11235674/OKqFVTX7BnshW7Csy3cAX7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/OKqFVTX7BnshW7Csy3cAX7/1600/1066/contain/jpegorpng",
+      "local_filename": "020_OKqFVTX7BnshW7Csy3cAX7.jpg",
+      "sha256": "1029ab23d8f8af8abb9ab6cc65361b32281b872b73cea7b6980724c2094f58c4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125195,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:20.306833Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11235674/BZdz8Lma0mAcPZCuNcDsI6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/BZdz8Lma0mAcPZCuNcDsI6/1600/1066/contain/jpegorpng",
+      "local_filename": "021_BZdz8Lma0mAcPZCuNcDsI6.jpg",
+      "sha256": "d062544063282e1a75725b963091bea652bab4dce8c7a6a017c320dc7efc9f4c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 74507,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.150418Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11235674/GkwBpZgT1gWXWBPxcZyDa1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/GkwBpZgT1gWXWBPxcZyDa1/1600/1066/contain/jpegorpng",
+      "local_filename": "022_GkwBpZgT1gWXWBPxcZyDa1.jpg",
+      "sha256": "af1858309723cd387bf0e801d45137e272d5e8d8f50c0f9473948d13cce3212d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 65086,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.242081Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11235674/2jKxj3S6ia4GuFMbbPJ4z0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/2jKxj3S6ia4GuFMbbPJ4z0/1600/1066/contain/jpegorpng",
+      "local_filename": "023_2jKxj3S6ia4GuFMbbPJ4z0.jpg",
+      "sha256": "fdd8ab8ce6ae894bf9c44ec1ba8513870a39acd2cf15e9db16273c7a30e45518",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104678,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.526406Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11235674/XWWyJsUhyZ4nk9aigJ6hJ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/XWWyJsUhyZ4nk9aigJ6hJ3/1600/1066/contain/jpegorpng",
+      "local_filename": "024_XWWyJsUhyZ4nk9aigJ6hJ3.jpg",
+      "sha256": "e3548e6d5f8c11397a0981e8a72605da23ce1c55c2729642b42b1a0ead846977",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 112469,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.592769Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11235674/uKoMzSKiGKPf9W58l6PVS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/uKoMzSKiGKPf9W58l6PVS7/1600/1066/contain/jpegorpng",
+      "local_filename": "025_uKoMzSKiGKPf9W58l6PVS7.jpg",
+      "sha256": "758157b29f64a1c41fa3a41b145af5613c7d84287a7bd209a45cbf46f4821083",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 322127,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in La Lucia photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.304122Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11235674/u0LUwO5UdpehGpAcuLl506/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/u0LUwO5UdpehGpAcuLl506/1600/1066/contain/jpegorpng",
+      "local_filename": "026_u0LUwO5UdpehGpAcuLl506.jpg",
+      "sha256": "a8693b580657a000baadd9dea1a03309fb56810a2121b9eed754bd3e6b07c5d5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 282251,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in La Lucia photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.770136Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11235674/e7QXof8wGMrbNlcHhmZYk7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/e7QXof8wGMrbNlcHhmZYk7/1600/1066/contain/jpegorpng",
+      "local_filename": "027_e7QXof8wGMrbNlcHhmZYk7.jpg",
+      "sha256": "cb8812a8a17f9af34f49d053951eb0b3b9027e0d99249ceb1f042eda302f2de2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 310616,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in La Lucia photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.611904Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11235674/YEiYZ9A0KHKpU6sCc2WNL6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11235674/YEiYZ9A0KHKpU6sCc2WNL6/1600/1066/contain/jpegorpng",
+      "local_filename": "028_YEiYZ9A0KHKpU6sCc2WNL6.jpg",
+      "sha256": "6b7af8c5a6e946e692d12c3d0d1fc98454425938ddd0c890881f7019a100223d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185466,
+      "width": 1600,
+      "height": 898,
+      "alt_text": "3 Bedroom House in La Lucia photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:18:21.640543Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/Uzo3Fx9pC1U?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/16",
+            "name": "Durban"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/1390",
+            "name": "Umhlanga"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/385",
+            "name": "La Lucia"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5134045",
+            "name": "T5134045"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11235674/3MmKKUzBJ6ILRBrXJ3Rt22/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "La Lucia, Umhlanga",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5134045"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 700 000 | 3 Bedroom House in La Lucia | Private Property",
+    "og:description": "Wonderful position - Prime La Lucia . A few steps to the right and you have The Mall, Virgin Active gym, library, clinic, tennis and padel courts, and you can go walkies to the beach with dog \n\nThis v...",
+    "og:image": "https://images.pp.co.za/listing/11235674/3MmKKUzBJ6ILRBrXJ3Rt22/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5134045"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 700 000 | 3 Bedroom House in La Lucia | Private Property",
+    "og:description": "Wonderful position - Prime La Lucia . A few steps to the right and you have The Mall, Virgin Active gym, library, clinic, tennis and padel courts, and you can go walkies to the beach with dog \n\nThis v...",
+    "og:image": "https://images.pp.co.za/listing/11235674/3MmKKUzBJ6ILRBrXJ3Rt22/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5134045",
+    "description": "3 Bedroom House in La Lucia, Wonderful position - Prime La Lucia . A few steps to the right and you have The Mall, Virgin Active",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "57ad3546afd212c8ebe36223f403bad3e8184e822f6a597ec548c16b7b2eec6d"
+}

@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5478966",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/T5478966",
+  "extracted_at": "2026-08-26T09:14:45.307052Z",
+  "title": "1 Bedroom Apartment in Windsor West",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-07",
+  "description": "Step into comfort and convenience with this delightful first-floor apartment, perfectly positioned in a quiet and intimate complex of just 8 units in Windsor West.\n\nThis well-maintained unit offers:\n\n...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 63.0,
+  "price": {
+    "amount": 400000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 400 000",
+    "rates_and_taxes_monthly": 17.0,
+    "levies_monthly": 1715.0
+  },
+  "location": {
+    "street_address": "T5478966",
+    "suburb": "Windsor West",
+    "city": "Johannesburg",
+    "region": "Windsor West, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Windsor West",
+      "T5478966"
+    ]
+  },
+  "features": {
+    "bedrooms": 1.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 1",
+      "Bathrooms 1",
+      "Lounges 1",
+      "Covered parking 1",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Noma Dube",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2180003/image/b576e171d8bc4ac79f467f9699e77629_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/noma-dube/2180003/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11822589/zGISW6eb5KBouDrrYV45s5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/zGISW6eb5KBouDrrYV45s5/1600/1066/contain/jpegorpng",
+      "local_filename": "001_zGISW6eb5KBouDrrYV45s5.jpg",
+      "sha256": "2dd1dd36101215153026a6069a509e5033184a3dfc1dc708f38ccd3b5c4622aa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 97884,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:14:46.415368Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11822589/Dg2BSeyouu00xpV5k8wlh2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/Dg2BSeyouu00xpV5k8wlh2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_Dg2BSeyouu00xpV5k8wlh2.jpg",
+      "sha256": "7c641b41cc39683003fa154efc2d4e69713dccbed0b6c1195ec786716fadbdcb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119598,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:46.503933Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11822589/yTMpV0q05K4U6dxsQWDx34/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/yTMpV0q05K4U6dxsQWDx34/1600/1066/contain/jpegorpng",
+      "local_filename": "003_yTMpV0q05K4U6dxsQWDx34.jpg",
+      "sha256": "5fecacdc7f4f05d43e94df54449f7754e91d8507621ffdfeb7b3bccd46965925",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 326926,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:46.379651Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11822589/RRZyPUV30PYgzBclrNwGL7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/RRZyPUV30PYgzBclrNwGL7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_RRZyPUV30PYgzBclrNwGL7.jpg",
+      "sha256": "e1dd6d3bc8e407ab84f2d9c93c12efaa1314ce4c98215e577422f085f6060446",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 210875,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:46.552490Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11822589/BQF8iFhLtjVViKahNEIwc7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/BQF8iFhLtjVViKahNEIwc7/1600/1066/contain/jpegorpng",
+      "local_filename": "005_BQF8iFhLtjVViKahNEIwc7.jpg",
+      "sha256": "cb9dc1ffa1574ac29b52ee259950346f0b187b013eb699a479ae608b18e4a55d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216740,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.300534Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11822589/USgvclOlgDAu4GZOO14NX4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/USgvclOlgDAu4GZOO14NX4/1600/1066/contain/jpegorpng",
+      "local_filename": "006_USgvclOlgDAu4GZOO14NX4.jpg",
+      "sha256": "f573d4cae84da3b6381a17adba61a11a5886876cb38b82cfbe4d522cdd4e8f3c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94730,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:46.412386Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11822589/DfdWkeorMgepsbmfxUUJt1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/DfdWkeorMgepsbmfxUUJt1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_DfdWkeorMgepsbmfxUUJt1.jpg",
+      "sha256": "fddc73c60eeff46a7e013912418d6e7b6f967867584ebc613c2f382f44e468d9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 92055,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:46.792589Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11822589/GdreA2WUTw6ahBonvmjSH5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/GdreA2WUTw6ahBonvmjSH5/1600/1066/contain/jpegorpng",
+      "local_filename": "008_GdreA2WUTw6ahBonvmjSH5.jpg",
+      "sha256": "6cb412f33935de4f75b206ef8095fcf03941184400004b22d3b79051537b12c0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 100017,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.684256Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11822589/BXwuTlj5hECR0ERK3ZhcH1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/BXwuTlj5hECR0ERK3ZhcH1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_BXwuTlj5hECR0ERK3ZhcH1.jpg",
+      "sha256": "d37fd4f4ac8d568e527629e0094a53af52d9c8a8bb2214a7bdb32bf399f61556",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 101545,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.551068Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11822589/6Mp1dw0qRyVFJWTU7vVW64/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/6Mp1dw0qRyVFJWTU7vVW64/1600/1066/contain/jpegorpng",
+      "local_filename": "010_6Mp1dw0qRyVFJWTU7vVW64.jpg",
+      "sha256": "28832d05c2e5af5c83ee90adcbb4040ed315e1533fea17aa1f7138dc4fbe39f8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 92519,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.671070Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11822589/Qc9CT5XRoI2lVDNgTPNay3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/Qc9CT5XRoI2lVDNgTPNay3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_Qc9CT5XRoI2lVDNgTPNay3.jpg",
+      "sha256": "0d80db5c56d2ae5f736556bfaf083209391fd8bacde4541ccf2f35ec08da27d0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119709,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.267955Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11822589/QGOHQs9k3fPT58Wtq1fOK7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/QGOHQs9k3fPT58Wtq1fOK7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_QGOHQs9k3fPT58Wtq1fOK7.jpg",
+      "sha256": "ec984360b2a98a8e9c9c1773004537b62ca86d03444bdf05787ba82a276080ef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114750,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.205745Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11822589/vXxfwS2WEftt6nfn1RYCR5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/vXxfwS2WEftt6nfn1RYCR5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_vXxfwS2WEftt6nfn1RYCR5.jpg",
+      "sha256": "6210332a113fe86a9a0cb7aaa0eebae845900a8358dd53e32acc1487047b430c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 95683,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.427878Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11822589/UmZgjbpnw5LlTqahsWQul7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/UmZgjbpnw5LlTqahsWQul7/1600/1066/contain/jpegorpng",
+      "local_filename": "014_UmZgjbpnw5LlTqahsWQul7.jpg",
+      "sha256": "8983dd1ba0c9d458a4894fb3c4d398e19595ed8c8c7632c6ed36ea43e5827a10",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114834,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.707289Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11822589/abs2Gg9DjAUxXSsJv548O5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/abs2Gg9DjAUxXSsJv548O5/1600/1066/contain/jpegorpng",
+      "local_filename": "015_abs2Gg9DjAUxXSsJv548O5.jpg",
+      "sha256": "c202e8cf8b80429186e5fd1b05afb96160ebe08b6ab4412e6e705bf43fca25c5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103842,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:47.716221Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11822589/BKSIDa465sGvhjUiH1kxU5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/BKSIDa465sGvhjUiH1kxU5/1600/1066/contain/jpegorpng",
+      "local_filename": "016_BKSIDa465sGvhjUiH1kxU5.jpg",
+      "sha256": "7a919b3a822511cff614978176fed4cdad56aa2babef81f674b0ad23584c29d0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103009,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.797811Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11822589/3v20cjTUjPnWSbY2hGkQi0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/3v20cjTUjPnWSbY2hGkQi0/1600/1066/contain/jpegorpng",
+      "local_filename": "017_3v20cjTUjPnWSbY2hGkQi0.jpg",
+      "sha256": "889d51db2d514df80a59d9db81835902975d32561895999e5df8628619c3fb26",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 119480,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.240697Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11822589/VHhCviyEDC3RKlWE04og06/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/VHhCviyEDC3RKlWE04og06/1600/1066/contain/jpegorpng",
+      "local_filename": "018_VHhCviyEDC3RKlWE04og06.jpg",
+      "sha256": "e4cc90316128984a64e7bf4ed22db05dd9f7a9394162d34bebbe4dcdf3e13270",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 163737,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:52.205251Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11822589/2fhuz1XpreaWafDWI2ncP7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/2fhuz1XpreaWafDWI2ncP7/1600/1066/contain/jpegorpng",
+      "local_filename": "019_2fhuz1XpreaWafDWI2ncP7.jpg",
+      "sha256": "608a5b1834dc2300047c9f4782f978efdbe93ae584683e23b11f0a1198cd114e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 308574,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.217239Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11822589/SPMc2AHVBRXRZHh79niJK1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/SPMc2AHVBRXRZHh79niJK1/1600/1066/contain/jpegorpng",
+      "local_filename": "020_SPMc2AHVBRXRZHh79niJK1.jpg",
+      "sha256": "f4bbbd62e476e951599303430a3c4874032535eeef3ddfa87a2e60ab9c9b3eca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 318026,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.541232Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11822589/j3LjB9FcTYrTqBJeGKYAL0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/j3LjB9FcTYrTqBJeGKYAL0/1600/1066/contain/jpegorpng",
+      "local_filename": "021_j3LjB9FcTYrTqBJeGKYAL0.jpg",
+      "sha256": "f8069fcdf4d6afdedacb98d1a57cb47876f252d13e2454dcf94b7d8bda42dd49",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149472,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.897508Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11822589/DAR4wH2Ms7VYdEOG10kwM6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/DAR4wH2Ms7VYdEOG10kwM6/1600/1066/contain/jpegorpng",
+      "local_filename": "022_DAR4wH2Ms7VYdEOG10kwM6.jpg",
+      "sha256": "b395ef35773f7c8361ec9cfc6bfbc0f20d158cbfc3b3d1a5a5968ffa49810f42",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 308799,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.956610Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11822589/ZEr12PsBcKtS11jF3h6U41/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11822589/ZEr12PsBcKtS11jF3h6U41/1600/1066/contain/jpegorpng",
+      "local_filename": "023_ZEr12PsBcKtS11jF3h6U41.jpg",
+      "sha256": "6f7908b568a7e281085e3ed45a2bd21f057b09ca4f24f1682e1d5cfb39a9a4e0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 440162,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor West photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:48.888462Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/826",
+            "name": "Windsor West"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/T5478966",
+            "name": "T5478966"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11822589/zGISW6eb5KBouDrrYV45s5/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Windsor West, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/T5478966"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 400 000 | 1 Bedroom Apartment in Windsor West | Private Property",
+    "og:description": "Step into comfort and convenience with this delightful first-floor apartment, perfectly positioned in a quiet and intimate complex of just 8 units in Windsor West.\n\nThis well-maintained unit offers:\n\n...",
+    "og:image": "https://images.pp.co.za/listing/11822589/zGISW6eb5KBouDrrYV45s5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/T5478966"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 400 000 | 1 Bedroom Apartment in Windsor West | Private Property",
+    "og:description": "Step into comfort and convenience with this delightful first-floor apartment, perfectly positioned in a quiet and intimate complex of just 8 units in Windsor West.\n\nThis well-maintained unit offers:\n\n...",
+    "og:image": "https://images.pp.co.za/listing/11822589/zGISW6eb5KBouDrrYV45s5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-west/T5478966",
+    "description": "1 Bedroom Apartment in Windsor West, Step into comfort and convenience with this delightful first-floor apartment, perfectly positioned i",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "8796322fb8ef97ddfa66b294f143cf27e7ca58fa4ad364cf0a22a751257ecd6e"
+}

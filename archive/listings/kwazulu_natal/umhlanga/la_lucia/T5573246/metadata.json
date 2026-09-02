@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5573246",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/durban/umhlanga/la-lucia/T5573246",
+  "archived_at": "2026-08-26T09:23:30.519890Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|ae65c6db-9f34-4585-8418-101ba0d44a04|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=9IMvPQLDeUCcz3OovegZ9g; expires=Sun, 26-Aug-2125 09:23:29 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:23:28 GMT",
+    "content-length": "23560"
+  },
+  "fetch_duration_sec": 1.4400503635406494,
+  "total_images_discovered": 14,
+  "total_images_archived": 0,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "693bd248cbc20db6ed7e8ce4743884b55d8812fc3d196143c82c624c62fb26e8"
+}

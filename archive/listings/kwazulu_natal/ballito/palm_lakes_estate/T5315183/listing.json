@@ -1,0 +1,598 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5315183",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5315183",
+  "extracted_at": "2026-08-26T10:00:51.177345Z",
+  "title": "3 Bedroom House in Palm Lakes Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-31",
+  "description": "SOLE MANDATE : PALM LAKES ESTATE offers this lovely family home, comprising of 3 bedrooms, 2 bathroom, kitchen, scullery, study. lounge, dining room and covered patio.\n\nDouble automated garage with st...",
+  "erf_size_m2": 612.0,
+  "land_size_raw": "612 m²",
+  "floor_size_m2": 206.0,
+  "price": {
+    "amount": 3295000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 295 000",
+    "rates_and_taxes_monthly": 1615.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5315183",
+    "suburb": "Palm Lakes Estate",
+    "city": "Dolphin Coast",
+    "region": "Palm Lakes Estate, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Palm Lakes Estate",
+      "T5315183"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Laundry",
+      "Patio",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Charlie Butterworth",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2135474/image/61c40b807e344c8f961205aa8a093c97_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/charlie-butterworth/2135474/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11543174/z6nuZmy4CLN6wOGmP41yi2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/z6nuZmy4CLN6wOGmP41yi2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_z6nuZmy4CLN6wOGmP41yi2.jpg",
+      "sha256": "1271ed8af2abdf40a1570bf8f8d1d93536f140bfa77a39bc8ffd78e62b64fb86",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104681,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:00:54.561228Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11543174/KtB8IRLCSWymoZrcVifR67/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/KtB8IRLCSWymoZrcVifR67/1600/1066/contain/jpegorpng",
+      "local_filename": "002_KtB8IRLCSWymoZrcVifR67.jpg",
+      "sha256": "6dd8c74cba9fcad2b9efb6fb4188271f82549932e8992b45478020991df336dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 98575,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.586313Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11543174/UA7OwMRpb6l4qGXk7niiU1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/UA7OwMRpb6l4qGXk7niiU1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_UA7OwMRpb6l4qGXk7niiU1.jpg",
+      "sha256": "0ca4b81b109f49cf477b80ba5fac569785fa12de04d557d1f1e9ece52a82c821",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 91694,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.584787Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11543174/oXLrLMwrxdTBe3pcQhcsa0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/oXLrLMwrxdTBe3pcQhcsa0/1600/1066/contain/jpegorpng",
+      "local_filename": "004_oXLrLMwrxdTBe3pcQhcsa0.jpg",
+      "sha256": "c70871cb4b76667d2e32c890d528e5abe6b8e73928537776df37ac840ba776ec",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 96957,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.585577Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11543174/Nzc0csF6cyVCWr7gTvM105/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/Nzc0csF6cyVCWr7gTvM105/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Nzc0csF6cyVCWr7gTvM105.jpg",
+      "sha256": "b0fb71462f02ead820b80bc60c924ce42062d3ce4d031080f845438eeb309a0e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 108146,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.368836Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11543174/qjSGpzAxUUYctpNbDwEEQ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/qjSGpzAxUUYctpNbDwEEQ0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_qjSGpzAxUUYctpNbDwEEQ0.jpg",
+      "sha256": "d02b73fc46c5dfa9c53a874c357d1bf61fa4882654ddd0a792d24d2d8498acf8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 57341,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.584505Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11543174/GnyffLoZURy1hnr70zrjO2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/GnyffLoZURy1hnr70zrjO2/1600/1066/contain/jpegorpng",
+      "local_filename": "007_GnyffLoZURy1hnr70zrjO2.jpg",
+      "sha256": "e3b553aa2dfe948c8b989158b48626e00d8794794f5ddb98a8b3f270afdee048",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 56465,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.925436Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11543174/C9ykw51OBEmfwALXNH3Nx2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/C9ykw51OBEmfwALXNH3Nx2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_C9ykw51OBEmfwALXNH3Nx2.jpg",
+      "sha256": "5748522a9c4087950ab986d740266f475f9eb37febb3bf176886e5072d6a1b69",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 107759,
+      "width": 1439,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.111311Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11543174/pz4PtvuZ34m1w291NpHzW2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/pz4PtvuZ34m1w291NpHzW2/1600/1066/contain/jpegorpng",
+      "local_filename": "009_pz4PtvuZ34m1w291NpHzW2.jpg",
+      "sha256": "0e7e7caae0854dcaa55ba516bc473efda2fa93290581d910f2c35553cfc2df94",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 56976,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.958843Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11543174/5WHWjQIvCWJowrDGCIHs20/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/5WHWjQIvCWJowrDGCIHs20/1600/1066/contain/jpegorpng",
+      "local_filename": "010_5WHWjQIvCWJowrDGCIHs20.jpg",
+      "sha256": "6e673c3a07768d1b19bc778f70e4bcad5e0b965b30b12aeeb0ad0457c710d4a1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 59785,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:53.941157Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11543174/qhAd9Ly8VuRvbaqZW69Nc6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/qhAd9Ly8VuRvbaqZW69Nc6/1600/1066/contain/jpegorpng",
+      "local_filename": "011_qhAd9Ly8VuRvbaqZW69Nc6.jpg",
+      "sha256": "dd53b91f9a141060493bb3933dc492b1d60cf99cb6c31ec12191c337d8f14b3b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 61762,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.307284Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11543174/AU9XRQgIaWwqoKY0xDZjC7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/AU9XRQgIaWwqoKY0xDZjC7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_AU9XRQgIaWwqoKY0xDZjC7.jpg",
+      "sha256": "4031f2547c0959dc59da01cc42d3a90fc6269bc7aeddfa9029b2c51405ece120",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 71778,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.467382Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11543174/N1c3khakQ8Rt5XzBQCirO1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/N1c3khakQ8Rt5XzBQCirO1/1600/1066/contain/jpegorpng",
+      "local_filename": "013_N1c3khakQ8Rt5XzBQCirO1.jpg",
+      "sha256": "6dce60f1d8028a9a20726ce1d8d5e9aeef1dc4a6055091cbe46377a7ef3027ac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 63113,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.308870Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11543174/IaTf9QgDWu0IkeTTn2jAM3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/IaTf9QgDWu0IkeTTn2jAM3/1600/1066/contain/jpegorpng",
+      "local_filename": "014_IaTf9QgDWu0IkeTTn2jAM3.jpg",
+      "sha256": "02cb68123978d9e785fff9a09f4eea2eae3287966a05243f6c50a3ba6b6d5ffa",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 59054,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.481671Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11543174/s4AdHOt7QsnAwI9RfHioj1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/s4AdHOt7QsnAwI9RfHioj1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_s4AdHOt7QsnAwI9RfHioj1.jpg",
+      "sha256": "2e9135a4716a96062e942251bc7000f5210e914189f09cd188ce3a3be5e89516",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 80021,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.705887Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11543174/5cNgpexSVKneARmFUlEc70/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/5cNgpexSVKneARmFUlEc70/1600/1066/contain/jpegorpng",
+      "local_filename": "016_5cNgpexSVKneARmFUlEc70.jpg",
+      "sha256": "6c36476d14b51d321466bcd51f300c1e6cca2808b7fa9407786e6a7ab40eac50",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 71786,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.713790Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11543174/06scvFGnUczcTwZgjZB632/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/06scvFGnUczcTwZgjZB632/1600/1066/contain/jpegorpng",
+      "local_filename": "017_06scvFGnUczcTwZgjZB632.jpg",
+      "sha256": "017b4903b4e26d1ccd1d52247a169671477210df59fc632805ec159b11289df3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 100030,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.734704Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11543174/fKDE51OlKqMSaaHn6UfYt3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/fKDE51OlKqMSaaHn6UfYt3/1600/1066/contain/jpegorpng",
+      "local_filename": "018_fKDE51OlKqMSaaHn6UfYt3.jpg",
+      "sha256": "0056d57c69b968301543d5a4b996e4f32badc589ed9c6565cba573749b5266c3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 54390,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.819225Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11543174/QvX2YRYjeI9MDj75au1gX6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/QvX2YRYjeI9MDj75au1gX6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_QvX2YRYjeI9MDj75au1gX6.jpg",
+      "sha256": "a17c9db9247c54b3ae4d7ad4664cdf5c07b4ff9e6c2e227502fe2d58ea80c9ad",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 60003,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.823673Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11543174/XPS7viFFy4w9Ry9m2FLRW4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/XPS7viFFy4w9Ry9m2FLRW4/1600/1066/contain/jpegorpng",
+      "local_filename": "020_XPS7viFFy4w9Ry9m2FLRW4.jpg",
+      "sha256": "af4ba1de2f83f6b086c6aaf4f84533d5a33f1a579ed77c9c3dc6cdb5fb3c64c1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 40301,
+      "width": 600,
+      "height": 800,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:54.989579Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11543174/kSgCJdt0UX4gi8PRo9xvl4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/kSgCJdt0UX4gi8PRo9xvl4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_kSgCJdt0UX4gi8PRo9xvl4.jpg",
+      "sha256": "39c1776a16f05d11fc5816e19aba3f647fea1496db03a381b3c10d9fe9b05c61",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 35534,
+      "width": 600,
+      "height": 800,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.038246Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11543174/VcgDUMwrhKBOeoyiYXgBD0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/VcgDUMwrhKBOeoyiYXgBD0/1600/1066/contain/jpegorpng",
+      "local_filename": "022_VcgDUMwrhKBOeoyiYXgBD0.jpg",
+      "sha256": "d0ca0877a00a210057c98af7077a03ae7c874b9b931a0ca45951e410af5484b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 54439,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.057749Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11543174/oTxkt0az1V9ch5RdNoXkz6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/oTxkt0az1V9ch5RdNoXkz6/1600/1066/contain/jpegorpng",
+      "local_filename": "023_oTxkt0az1V9ch5RdNoXkz6.jpg",
+      "sha256": "47d7d1fc3a02778e8e9ad8fbb16ca1b14ff12b3543b5085743ab13c33cdad43f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 46830,
+      "width": 600,
+      "height": 800,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.097740Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11543174/1nADLkEArCIKiEqGII0C96/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/1nADLkEArCIKiEqGII0C96/1600/1066/contain/jpegorpng",
+      "local_filename": "024_1nADLkEArCIKiEqGII0C96.jpg",
+      "sha256": "156ce7c4fee9fac3000c20531834796f06c17409f4ae29a8ebdaa3a0c72b6a9b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 47016,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.201985Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11543174/WvJvbzaxQAzoZJkbGJ6Zr2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/WvJvbzaxQAzoZJkbGJ6Zr2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_WvJvbzaxQAzoZJkbGJ6Zr2.jpg",
+      "sha256": "3743a3650e3a012db68c4c5af7f524f6fa5b6ca551dc1ee9f99d2989664ec708",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 52391,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.249496Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11543174/ffUiGvg6JWsRO2WwDHsts6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/ffUiGvg6JWsRO2WwDHsts6/1600/1066/contain/jpegorpng",
+      "local_filename": "026_ffUiGvg6JWsRO2WwDHsts6.jpg",
+      "sha256": "7c30c3adca7bac9a7b9fbe35bc61791afe596cd212bcc2bc78520cad27f2f159",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 43657,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.339774Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11543174/QLkgEJtMiO8qosEyHyJm11/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11543174/QLkgEJtMiO8qosEyHyJm11/1600/1066/contain/jpegorpng",
+      "local_filename": "027_QLkgEJtMiO8qosEyHyJm11.jpg",
+      "sha256": "e1eae6891309149d9869a25a395c6a153e87173a4addea7b38540caca02cd8e5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 115718,
+      "width": 800,
+      "height": 600,
+      "alt_text": "3 Bedroom House in Palm Lakes Estate photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:55.403720Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/810",
+            "name": "Palm Lakes Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5315183",
+            "name": "T5315183"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11543174/z6nuZmy4CLN6wOGmP41yi2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palm Lakes Estate, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5315183"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 295 000 | 3 Bedroom House in Palm Lakes Estate | Private Property",
+    "og:description": "SOLE MANDATE : PALM LAKES ESTATE offers this lovely family home, comprising of 3 bedrooms, 2 bathroom, kitchen, scullery, study. lounge, dining room and covered patio.\n\nDouble automated garage with st...",
+    "og:image": "https://images.pp.co.za/listing/11543174/z6nuZmy4CLN6wOGmP41yi2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5315183"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 295 000 | 3 Bedroom House in Palm Lakes Estate | Private Property",
+    "og:description": "SOLE MANDATE : PALM LAKES ESTATE offers this lovely family home, comprising of 3 bedrooms, 2 bathroom, kitchen, scullery, study. lounge, dining room and covered patio.\n\nDouble automated garage with st...",
+    "og:image": "https://images.pp.co.za/listing/11543174/z6nuZmy4CLN6wOGmP41yi2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5315183",
+    "description": "3 Bedroom House in Palm Lakes Estate, SOLE MANDATE : PALM LAKES ESTATE offers this lovely family home, comprising of 3 bedrooms, 2 bathroo",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "d2ff19b09df258d633b19b18288cf726115ea62da6f5b5abccc9f02e5f378fc7"
+}

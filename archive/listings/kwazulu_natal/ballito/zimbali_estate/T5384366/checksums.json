@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5384366",
+  "archived_at": "2026-08-26T09:34:23.568730Z",
+  "archiver_version": "1.0.0",
+  "total_files": 22,
+  "files": {
+    "listing.json": "77323fda315198e6eddc694b2f9d3692a3343f86b3fb9a8c80b61351d5ffbe3e",
+    "raw.html": "2d767aa4c1e4d51221949c2fc8308bcedc82fa30a904245287b99ed925874218",
+    "metadata.json": "bcafa540a0d4fbdfd24e48d8361fca1ae3b082ba86b90f71fa0262a446ce1a5d",
+    "images/001_uaP5ZFVkvOM4N9rVFpUI30.jpg": "5e6fb3327f8d36b39ab41e0446d8e4104a732a311e6f88ec75b0d8ee73788920",
+    "images/002_jxKDzDLHJ3ff7yrfhuKpS3.jpg": "e693792b683bc0e87197a2913b3b088fca66d22c5fc49ae2178fecb0b8db4ecb",
+    "images/003_aHiLGmow5zyI6FAv0qsmP0.jpg": "c8881099654cfa77523d50515c97868e576a5655813d84eb38bec699a3c7e32d",
+    "images/004_l2dxgD7tfcLObOHfqS9zX5.jpg": "d65512f134f162616eb4ca97a43036a9d0b06c621c57833fde2acd81177a10c4",
+    "images/005_jMuyUcpc3Qo4MNktFSk8a4.jpg": "a73c76ee677f4ad994646cd9c19959debdb3d013cceee3ae14b68a8265637ede",
+    "images/006_sv5PJmLLibzeNRr3acoCB3.jpg": "e16f574dc2444290181e16d07243bcb1640bbfae26c246f0ba6106a248bfda2e",
+    "images/007_ubmpf1boMe5TnfbYqsGAu5.jpg": "27cc1b5ae88771114feabcdf296ab79ac5dbfa5ae446f9190113ad02e2e98582",
+    "images/008_pHV6BYUhERJGL1obabDAy6.jpg": "69d9fefeee2dff8e9d54c1e23aa30ae5b80d481bf0d232e9caa81beba9f78926",
+    "images/009_T2y11ScQRUjvB3rhOXVpG1.jpg": "1547bedd91897f582e4d78429447483d2514c216294ae83e0b432d593eb9c30c",
+    "images/010_fsVRHr1rv6UMJ3rXMld6J7.jpg": "609cd9809a57e6c3ac0b68ecd00f59cc825abdb0ba87fe9610994d7d661ce09f",
+    "images/011_ai6SgIrQENVzoLo1kFMrb7.jpg": "d017b499033fb68f45af974d0eb1eaa141234a323590a7e2b9bb3766460f112d",
+    "images/012_pmDDgi1dvCVa1QiWZcYia5.jpg": "33674831710bc2829f081149c8266338742e0b5e159e1f8055380ff6a3e4d368",
+    "images/013_N9gI0zWwq4o8UCjHVRfGt1.jpg": "0ed4614dac67aaa998837e0f45fde37285ec645969c393de9186bce19605b062",
+    "images/014_5waWKMaf5ohg0dLV8DgcU7.jpg": "e920833dbc029e21e20da578308650f6a8917e3261db3748db478b5b72583fb7",
+    "images/015_I51wOSKIkj8qCtyD3MeDq5.jpg": "c659f861d45650dd63c9602cdd76f15b42dcbdf62b763a5fcce21a9067e50384",
+    "images/016_n7e8HPIzIZ9Qup1S1NjHP2.jpg": "1bda0fc3c9727146fd06bc6c55df14bdd58be3187e2a5ad3d97b9ab8506e97f6",
+    "images/017_GHGfCYrRTdDHW16kb6dCK7.jpg": "d419e864e85e9788baa86697a2e05a8befdacf170689cf573f87bad92c81417f",
+    "images/018_rprNjdGzWN19sGrxw1CnX2.jpg": "f2e1fe47931731a1bc73b0bf1108a5414453bb01b4e08d2fcc8a1187d3c274ae",
+    "images/019_0AhETblqg53TX6cpo1Hx13.jpg": "df2af05ad88e810b485fabf6e6301126433c7de810486a96607b2e718b4ef387"
+  }
+}

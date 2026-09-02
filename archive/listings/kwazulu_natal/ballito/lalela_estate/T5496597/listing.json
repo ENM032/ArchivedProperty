@@ -1,0 +1,635 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5496597",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/T5496597",
+  "extracted_at": "2026-08-26T10:00:36.821495Z",
+  "title": "3 Bedroom House in Lalela Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-22",
+  "description": "LALELA ESTATE PRESENTS\n\nThis modern home offers 3 bedrooms and 2 bathrooms. The open-plan kitchen flows seamlessly into the living and dining area, with sliding doors leading out to a private garden.\n...",
+  "erf_size_m2": 300.0,
+  "land_size_raw": "300 m²",
+  "floor_size_m2": 165.0,
+  "price": {
+    "amount": 3250000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 250 000",
+    "rates_and_taxes_monthly": 1789.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5496597",
+    "suburb": "Lalela Estate",
+    "city": "Dolphin Coast",
+    "region": "Lalela Estate, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Lalela Estate",
+      "T5496597"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Patio",
+      "Security post",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Keyaren Iyer",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2347308/image/6849da233ef44f9897b0d10d1caf2552_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/keyaren-iyer/2347308/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Charlie Butterworth",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2135474/image/61c40b807e344c8f961205aa8a093c97_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/charlie-butterworth/2135474/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11853817/4VJuxIuA3ayKqGLLwOy376/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/4VJuxIuA3ayKqGLLwOy376/1600/1066/contain/jpegorpng",
+      "local_filename": "001_4VJuxIuA3ayKqGLLwOy376.jpg",
+      "sha256": "53fd697bd3db776794c74c289c93861d6ede8a810f35ddbf320dd959eb76adb4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217766,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:00:37.909271Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11853817/6v2m6vjjURdHRRKZ2Rs7Y7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/6v2m6vjjURdHRRKZ2Rs7Y7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_6v2m6vjjURdHRRKZ2Rs7Y7.jpg",
+      "sha256": "c5e3bee65e220de694b2de61b401cc6f0ae99f9871601f1b6a92c6c96f92f5b1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 209551,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.620778Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11853817/2z1Sk6IJ0IMR4Y55isPZ84/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/2z1Sk6IJ0IMR4Y55isPZ84/1600/1066/contain/jpegorpng",
+      "local_filename": "003_2z1Sk6IJ0IMR4Y55isPZ84.jpg",
+      "sha256": "7340a9ad983d56498edf183dbbccf6abb7f7b1f3d62df889ba08c6b7b4096191",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 180329,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:37.990559Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11853817/IBlp19uJJPzVCm61wVPwm1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/IBlp19uJJPzVCm61wVPwm1/1600/1066/contain/jpegorpng",
+      "local_filename": "004_IBlp19uJJPzVCm61wVPwm1.jpg",
+      "sha256": "491efc34cec5f3dc0064bfd8e09273cda99ab7bb2f1d37584d73d6a8b276ba62",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 220980,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:37.902129Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11853817/3RjZjBeiN8sidzyioZEdB0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/3RjZjBeiN8sidzyioZEdB0/1600/1066/contain/jpegorpng",
+      "local_filename": "005_3RjZjBeiN8sidzyioZEdB0.jpg",
+      "sha256": "8f0ddf3fe5abc8544518e3047abd3c36fe7be46b35a71b64d2d3e57dca4a9e7b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144658,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.895450Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11853817/RFgsbBsa4MHoZQrgBx7Rw0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/RFgsbBsa4MHoZQrgBx7Rw0/1600/1066/contain/jpegorpng",
+      "local_filename": "006_RFgsbBsa4MHoZQrgBx7Rw0.jpg",
+      "sha256": "a18761c564ddb2f64f825dc1279bbbc6fbe50777b4b4765c8961775dc7b39dcc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141349,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:37.899848Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11853817/azuXwd2g26FxpyghgMsTx3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/azuXwd2g26FxpyghgMsTx3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_azuXwd2g26FxpyghgMsTx3.jpg",
+      "sha256": "39660f8e8e523e97b13bb06fbc494f78a9d5a7654c6946d862494a948ca7a932",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158906,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.279432Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11853817/pMjg0mCDqIaQ6U3gtWZov0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/pMjg0mCDqIaQ6U3gtWZov0/1600/1066/contain/jpegorpng",
+      "local_filename": "008_pMjg0mCDqIaQ6U3gtWZov0.jpg",
+      "sha256": "5ff1bd3b6b078a6307dafaa7a503e8de4abb2d89920cd8b891b964b93eb6d53f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158708,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.477506Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11853817/hsh0zXAiMOrTx4t05Chlo2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/hsh0zXAiMOrTx4t05Chlo2/1600/1066/contain/jpegorpng",
+      "local_filename": "009_hsh0zXAiMOrTx4t05Chlo2.jpg",
+      "sha256": "99427ae75420320e84bc5985ed147057e9ab2f9038a2026556ba6bf96de59320",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130901,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.296921Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11853817/AGSRvRePqEfG4EfCeUxbL4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/AGSRvRePqEfG4EfCeUxbL4/1600/1066/contain/jpegorpng",
+      "local_filename": "010_AGSRvRePqEfG4EfCeUxbL4.jpg",
+      "sha256": "ed28a36c92a64a2db5586a4fd943c0142fe1c5a7dd5700dbb3cb23b59192db6d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133710,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.540108Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11853817/lHlCBClvRNqB1YwlbfHpK3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/lHlCBClvRNqB1YwlbfHpK3/1600/1066/contain/jpegorpng",
+      "local_filename": "011_lHlCBClvRNqB1YwlbfHpK3.jpg",
+      "sha256": "de8669567ac9338a29db7c906dea77d6766dd8a199bb4bbba6bd0afada057135",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 68682,
+      "width": 709,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.699154Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11853817/sVgd8sz2hRF0CsAtBCqro2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/sVgd8sz2hRF0CsAtBCqro2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_sVgd8sz2hRF0CsAtBCqro2.jpg",
+      "sha256": "3b843930bf12210429da32114a2b1458388a808bd081bb22eda21ace18911de6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139897,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.984830Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11853817/BKnVQDAWDTX5sjQiiqHAZ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/BKnVQDAWDTX5sjQiiqHAZ7/1600/1066/contain/jpegorpng",
+      "local_filename": "013_BKnVQDAWDTX5sjQiiqHAZ7.jpg",
+      "sha256": "9c7bb7b3fd1d817d1f61d5b29927321fc35398ad6cfce5713c64b69ee0ef5d3b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94224,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:42.153194Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11853817/sq3uas4TXfFK507FlWMW36/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/sq3uas4TXfFK507FlWMW36/1600/1066/contain/jpegorpng",
+      "local_filename": "014_sq3uas4TXfFK507FlWMW36.jpg",
+      "sha256": "fcfbaa3d2db7a40cda2db6c0b06f2a7e40384340098bff5834d5215682a987e5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 79234,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:38.719412Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11853817/zkW3EZiMLExS1MTzgfNJ94/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/zkW3EZiMLExS1MTzgfNJ94/1600/1066/contain/jpegorpng",
+      "local_filename": "015_zkW3EZiMLExS1MTzgfNJ94.jpg",
+      "sha256": "6913ad0809492de5436102860c3475cc9589a05385aae647944f80e0e7ddbc03",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181480,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.145438Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11853817/RygUkEmIvCl0xn2vggbYi6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/RygUkEmIvCl0xn2vggbYi6/1600/1066/contain/jpegorpng",
+      "local_filename": "016_RygUkEmIvCl0xn2vggbYi6.jpg",
+      "sha256": "d89d117dafbc57df481e25f9577c22ab9bb4578bbc498d264665597a9ee6e41b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103353,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.046305Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11853817/R40lTySPyFOhALZWSx2r86/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/R40lTySPyFOhALZWSx2r86/1600/1066/contain/jpegorpng",
+      "local_filename": "017_R40lTySPyFOhALZWSx2r86.jpg",
+      "sha256": "c97048a6346b4da662cebdf8d7497bc31c0ac7d9ab0ec66b790aa49e223e7845",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 91108,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.071342Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11853817/FvrEqpVho32Bb9VbmLCLP5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/FvrEqpVho32Bb9VbmLCLP5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_FvrEqpVho32Bb9VbmLCLP5.jpg",
+      "sha256": "14930f21dc96dbfb290c2790094fcc7165e23e185fa5bc3f88582e5a3c5dcb10",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 98217,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.154761Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11853817/l20EQ3y9QoL2gco7R0U1X3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/l20EQ3y9QoL2gco7R0U1X3/1600/1066/contain/jpegorpng",
+      "local_filename": "019_l20EQ3y9QoL2gco7R0U1X3.jpg",
+      "sha256": "dd3425e413e21bcc55af2aa689d99e88e948f31092380563d2af050c32d86bfe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 101557,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.095977Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11853817/rEblRhsGchd54htoKs6zK6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/rEblRhsGchd54htoKs6zK6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_rEblRhsGchd54htoKs6zK6.jpg",
+      "sha256": "2e62c4c832942ccd97a63af8ec03aaf0e964a42bfa9a3ae1f733fb91f7c69d0d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 93230,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.444239Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11853817/Evy6AAT2Rs5FHplCOORB36/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/Evy6AAT2Rs5FHplCOORB36/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Evy6AAT2Rs5FHplCOORB36.jpg",
+      "sha256": "1fd715d09bd3dcb72175f859cfb1dd8b1d7893efffd9cd137b7155c52d3447e2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127786,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.602994Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11853817/iLAH9xrbqs9GBDKgmCSZd2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/iLAH9xrbqs9GBDKgmCSZd2/1600/1066/contain/jpegorpng",
+      "local_filename": "022_iLAH9xrbqs9GBDKgmCSZd2.jpg",
+      "sha256": "81dbe59197e1291d855e0f7217e8952a24fdc9598e5acc2f8be8aa52e2c2bd3f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188163,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.382676Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11853817/Dvx44L1WIDQBpH4ZU2Mvv3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/Dvx44L1WIDQBpH4ZU2Mvv3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_Dvx44L1WIDQBpH4ZU2Mvv3.jpg",
+      "sha256": "1dff9e61528d9fb3f2d82c0ed3eea6e4f8adc83c651df98147e9d58e3763b3ff",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181843,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.487380Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11853817/EyqKizAdp9yv9J09QtpYb6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/EyqKizAdp9yv9J09QtpYb6/1600/1066/contain/jpegorpng",
+      "local_filename": "024_EyqKizAdp9yv9J09QtpYb6.jpg",
+      "sha256": "1af8660282be8a45b3caab26017a1566f6f059c94ac881ce0a61b4e0d29dda96",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 200002,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.749336Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11853817/ncNz0vJcXGAfyac1LHgNb4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/ncNz0vJcXGAfyac1LHgNb4/1600/1066/contain/jpegorpng",
+      "local_filename": "025_ncNz0vJcXGAfyac1LHgNb4.jpg",
+      "sha256": "14bcac92e54f2d2303a361c21609dc99567e8ea85c27124347ca690f79f3034f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 169410,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:39.964699Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11853817/lWyKCmDkpUepFSC6wLBDZ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/lWyKCmDkpUepFSC6wLBDZ7/1600/1066/contain/jpegorpng",
+      "local_filename": "026_lWyKCmDkpUepFSC6wLBDZ7.jpg",
+      "sha256": "15f5f6b6d46d4148e60e05b565174e0ed34491d8c6d8717685cb57a629b0d569",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182199,
+      "width": 1600,
+      "height": 619,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.027450Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11853817/M9ogRTZkLVHLAPohYiNvA3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/M9ogRTZkLVHLAPohYiNvA3/1600/1066/contain/jpegorpng",
+      "local_filename": "027_M9ogRTZkLVHLAPohYiNvA3.jpg",
+      "sha256": "21ace5e2ebd0ae9c79eaf5688fa4a67936d6620975a1805d46a9439386ca653f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 176989,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.211939Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11853817/aTshUj0oR7W8lR2u6sDfI4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/aTshUj0oR7W8lR2u6sDfI4/1600/1066/contain/jpegorpng",
+      "local_filename": "028_aTshUj0oR7W8lR2u6sDfI4.jpg",
+      "sha256": "894a0998705c57aa248f0f035568dfcd9dfeb259a928020d0d51885dec56bf45",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 312217,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.450321Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11853817/zTKREEdKxNjiK34OXOoKa7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11853817/zTKREEdKxNjiK34OXOoKa7/1600/1066/contain/jpegorpng",
+      "local_filename": "029_zTKREEdKxNjiK34OXOoKa7.jpg",
+      "sha256": "582a5b602807b371d97023d212a602d45cb5307e0b76dcbe38f03207714a097c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 247563,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Lalela Estate photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:00:40.573834Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/6622",
+            "name": "Lalela Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/T5496597",
+            "name": "T5496597"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11853817/4VJuxIuA3ayKqGLLwOy376/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lalela Estate, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/T5496597"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 250 000 | 3 Bedroom House in Lalela Estate | Private Property",
+    "og:description": "LALELA ESTATE PRESENTS\n\nThis modern home offers 3 bedrooms and 2 bathrooms. The open-plan kitchen flows seamlessly into the living and dining area, with sliding doors leading out to a private garden.\n...",
+    "og:image": "https://images.pp.co.za/listing/11853817/4VJuxIuA3ayKqGLLwOy376/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/T5496597"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 250 000 | 3 Bedroom House in Lalela Estate | Private Property",
+    "og:description": "LALELA ESTATE PRESENTS\n\nThis modern home offers 3 bedrooms and 2 bathrooms. The open-plan kitchen flows seamlessly into the living and dining area, with sliding doors leading out to a private garden.\n...",
+    "og:image": "https://images.pp.co.za/listing/11853817/4VJuxIuA3ayKqGLLwOy376/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/lalela-estate/T5496597",
+    "description": "3 Bedroom House in Lalela Estate, LALELA ESTATE PRESENTS\n\nThis modern home offers 3 bedrooms and 2 bathrooms. The open-plan kitchen fl",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "92837f9846583777fbff00479e4dd7f6911031eb1140de1f00d0fa5ce8242f9d"
+}

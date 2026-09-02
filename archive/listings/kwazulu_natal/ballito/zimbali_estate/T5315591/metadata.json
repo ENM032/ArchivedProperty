@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5315591",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/2-ss-ilanga-villas/87-yellowwood-drive-unit-2-ilanga-villas/T5315591",
+  "archived_at": "2026-08-26T09:33:41.569101Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|3d9c1c0e-cf43-41de-8c61-b4568411679d|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=F7SpjdgxVEKFtPtdqvQKQQ; expires=Sun, 26-Aug-2125 09:33:39 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:33:38 GMT",
+    "content-length": "28833"
+  },
+  "fetch_duration_sec": 1.3052008152008057,
+  "total_images_discovered": 37,
+  "total_images_archived": 37,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "7b92397afcf1c98b59ccd24f5c5b8c28418c453938cf2cdd9c9cee178daf42d3"
+}

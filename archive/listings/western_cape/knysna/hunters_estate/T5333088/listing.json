@@ -1,0 +1,569 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5333088",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/7-baracuda-street/T5333088",
+  "extracted_at": "2026-08-26T10:42:42.538409Z",
+  "title": "3 Bedroom House in Hunters Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "sold",
+  "status_badges": [
+    "Sold"
+  ],
+  "is_under_offer": false,
+  "is_sold": true,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-12-12",
+  "description": "Dual Mandate \n\nBrand new, beautifully crafted and undeniably easy to live in -this single-level home makes starting out or scaling down feel like youve hit the upgrade button. The central living zones...",
+  "erf_size_m2": 643.0,
+  "land_size_raw": "643 m²",
+  "floor_size_m2": 239.0,
+  "price": {
+    "amount": 3250000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 250 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "7 BARACUDA STREET",
+    "suburb": "Hunters Estate",
+    "city": "Garden Route",
+    "region": "Hunters Estate, Knysna",
+    "province": "Western Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -34.0523637277274,
+    "longitude": 23.0808273315706,
+    "breadcrumbs": [
+      "South Africa",
+      "Western Cape",
+      "Garden Route",
+      "Knysna",
+      "Hunters Home",
+      "Hunters Estate",
+      "T5333088"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 4.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Garage parking 4",
+      "Pet friendly",
+      "Kitchen",
+      "Garden",
+      "Water included"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Angie Bevan",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2182177/image/bac6c921021a4923adb1cd314a75e614_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/angie-bevan/2182177/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11574411/F93gSpMETHJ04GdSd9ZkR6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/F93gSpMETHJ04GdSd9ZkR6/1600/1066/contain/jpegorpng",
+      "local_filename": "001_F93gSpMETHJ04GdSd9ZkR6.jpg",
+      "sha256": "677bbc34e576b7449cd5e242efd882f9057cc5f48abe994623180731006a6f6e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 296404,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:42:43.494167Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11574411/W7V6OmT3iMfxR48qL2oSa7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/W7V6OmT3iMfxR48qL2oSa7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_W7V6OmT3iMfxR48qL2oSa7.jpg",
+      "sha256": "acc293522eec94d9688577709f9de2c9e2af5140c79064a375802067f417ed70",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 351888,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:43.494344Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11574411/9JzM5dqJVmeuX5ti1tz4L3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/9JzM5dqJVmeuX5ti1tz4L3/1600/1066/contain/jpegorpng",
+      "local_filename": "003_9JzM5dqJVmeuX5ti1tz4L3.jpg",
+      "sha256": "d3f0b7eb17f3683067a976ce553c8795c0d88e54500add34c40b0804e374701f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 254806,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:43.624404Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11574411/y2WlqIKUYRAxzvkYzpolN2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/y2WlqIKUYRAxzvkYzpolN2/1600/1066/contain/jpegorpng",
+      "local_filename": "004_y2WlqIKUYRAxzvkYzpolN2.jpg",
+      "sha256": "0f4b8ff12ac5d3cfe2d2ec61a96165a7194ab30616b43c5554138c58ef3db287",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123719,
+      "width": 1422,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.712467Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11574411/nleFXU1zRtWHYjtpvSrJA5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/nleFXU1zRtWHYjtpvSrJA5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_nleFXU1zRtWHYjtpvSrJA5.jpg",
+      "sha256": "e11ea03eb654060f96cb55fda851fc54d8f232908aef5db6cd99ce8cb9234e66",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189344,
+      "width": 1422,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:49.772602Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11574411/gGHUlLwRGtMBIsztRwcfK7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/gGHUlLwRGtMBIsztRwcfK7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_gGHUlLwRGtMBIsztRwcfK7.jpg",
+      "sha256": "235f0621742c2e65c65f29d73dab8a386707cd0b7bc10bd121857d4876cdc68c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196218,
+      "width": 1424,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:43.507146Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11574411/mZmNjD47iHDM5W7BFS7aR1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/mZmNjD47iHDM5W7BFS7aR1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_mZmNjD47iHDM5W7BFS7aR1.jpg",
+      "sha256": "c047fa11271a5653c3973339602b3dab451fad165300ddd1983e75d3accc79d8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 110299,
+      "width": 1424,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:43.992720Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11574411/kNfHPPmOn2RlKDqEhLupb3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/kNfHPPmOn2RlKDqEhLupb3/1600/1066/contain/jpegorpng",
+      "local_filename": "008_kNfHPPmOn2RlKDqEhLupb3.jpg",
+      "sha256": "e001e5164e7f7c97b8ebdc16b12ea6fe423d3aaa7772544fb1a5b4649bc5b1f6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 151475,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.833440Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11574411/QMAJN5lxwIuR8yiKfCcjN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/QMAJN5lxwIuR8yiKfCcjN4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_QMAJN5lxwIuR8yiKfCcjN4.jpg",
+      "sha256": "14434b227bab86c9f21827df4375b6ea23b8206bbc1e2c460c603aa499554303",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137338,
+      "width": 1425,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.663900Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11574411/Mzw1AVWPC9GaEfpUkxmOa2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/Mzw1AVWPC9GaEfpUkxmOa2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_Mzw1AVWPC9GaEfpUkxmOa2.jpg",
+      "sha256": "e2bbedc88a68a39d7bd237c1b5d90b565a08239a1ceb95310b03e0b9ae3f8ddf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150856,
+      "width": 1420,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.164552Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11574411/Iv3J1F8yF8xPhoerJSnOf5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/Iv3J1F8yF8xPhoerJSnOf5/1600/1066/contain/jpegorpng",
+      "local_filename": "011_Iv3J1F8yF8xPhoerJSnOf5.jpg",
+      "sha256": "fb4050f674b18ef8895d9ba1a305bcd6fddedb3a946102dd41a504fa62dc409a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 155448,
+      "width": 1429,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.469022Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11574411/eMy7hSGKsUVUIQTUOEGl56/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/eMy7hSGKsUVUIQTUOEGl56/1600/1066/contain/jpegorpng",
+      "local_filename": "012_eMy7hSGKsUVUIQTUOEGl56.jpg",
+      "sha256": "c65c699ab9c48ece0fc02e98d3b16c640d450b711aa0e8658df0100308730f5e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 209516,
+      "width": 1422,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.576537Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11574411/v5SmjqiWkhNKVN3TrH0js2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/v5SmjqiWkhNKVN3TrH0js2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_v5SmjqiWkhNKVN3TrH0js2.jpg",
+      "sha256": "62b0a25487ed8a451f50d0c6d13d37678589049ea5ddf41fb72e1a9d4a70789f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142744,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:44.817204Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11574411/IqBJPdgkgByrwQEK8kNXu6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/IqBJPdgkgByrwQEK8kNXu6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_IqBJPdgkgByrwQEK8kNXu6.jpg",
+      "sha256": "8ad7ceb8efeb822d93afd9cf6eb7dc832cb58056d0c4d94f81c1c6698a663bc1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 207528,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.096889Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11574411/Mz5tCdYOsWmAiH7DMh20U0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/Mz5tCdYOsWmAiH7DMh20U0/1600/1066/contain/jpegorpng",
+      "local_filename": "015_Mz5tCdYOsWmAiH7DMh20U0.jpg",
+      "sha256": "9fdc4364dfe4d097b5f6b6fe4ea2851ee379359c932e08006ba3f053833607dc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 88191,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:46.567839Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11574411/flndllaUqb4yx53PUNTpQ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/flndllaUqb4yx53PUNTpQ0/1600/1066/contain/jpegorpng",
+      "local_filename": "016_flndllaUqb4yx53PUNTpQ0.jpg",
+      "sha256": "13b4e51bd757c8b34aed401ed5305fc45009784243361c83e66a08b0d54d3d3a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 246876,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.091146Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11574411/KkhDRWAGOKhSUifmnjhD86/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/KkhDRWAGOKhSUifmnjhD86/1600/1066/contain/jpegorpng",
+      "local_filename": "017_KkhDRWAGOKhSUifmnjhD86.jpg",
+      "sha256": "093490788c6b5a459aed6325b19abfb416bc2714d0db8bb95b181b868838abde",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 241460,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.172021Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11574411/uBcXH1TsU15t9Ocnpmjwn2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/uBcXH1TsU15t9Ocnpmjwn2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_uBcXH1TsU15t9Ocnpmjwn2.jpg",
+      "sha256": "b53ecb2890b7662ae4c92f5aca51de5b023fa3d0e232ca887cc0db5d396b2f0d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 205587,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.656720Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11574411/rokdZHmktMg1aTrOeBFSe4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/rokdZHmktMg1aTrOeBFSe4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_rokdZHmktMg1aTrOeBFSe4.jpg",
+      "sha256": "489d62dc96519574960807d59fb78a0d5056a549cb6fc0e7f5a26eabd047de00",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 299589,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.564670Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11574411/PMiiLvtSZaFhXkKOEKDrK4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/PMiiLvtSZaFhXkKOEKDrK4/1600/1066/contain/jpegorpng",
+      "local_filename": "020_PMiiLvtSZaFhXkKOEKDrK4.jpg",
+      "sha256": "c9c62abb0560470f76e5485a1ad53816f8ca57f7211a1928fc084c90af6add00",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 258217,
+      "width": 1429,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.446812Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11574411/31scdCDdSu5mzoeeMiw4z3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/31scdCDdSu5mzoeeMiw4z3/1600/1066/contain/jpegorpng",
+      "local_filename": "021_31scdCDdSu5mzoeeMiw4z3.jpg",
+      "sha256": "13824eb9ba35721648a38f16e967566836089d77b6bad233716bc95bf35764c1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196365,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:45.538717Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11574411/vmXO2oczSAgDqreZos90a4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/vmXO2oczSAgDqreZos90a4/1600/1066/contain/jpegorpng",
+      "local_filename": "022_vmXO2oczSAgDqreZos90a4.jpg",
+      "sha256": "ed8db0243ebb13781edbb214bb5cf47b9baf3eb74fc02fac0e70d3d7d00d10ea",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 273409,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:47.009425Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11574411/Xa4bvnJqNLjIisnKfxuBl4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/Xa4bvnJqNLjIisnKfxuBl4/1600/1066/contain/jpegorpng",
+      "local_filename": "023_Xa4bvnJqNLjIisnKfxuBl4.jpg",
+      "sha256": "0d52aa0f8ea7636268f15f757a8309da73f19ed5ff72d16cb31bb11d9dd9ee9b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 301494,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:46.238042Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11574411/6NAuqHSYIecbUC9Xo5z3O5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11574411/6NAuqHSYIecbUC9Xo5z3O5/1600/1066/contain/jpegorpng",
+      "local_filename": "024_6NAuqHSYIecbUC9Xo5z3O5.jpg",
+      "sha256": "93a5163d6f3b06644e2ccec2bd6d46ead41444eb45506c2daec74eb6fe113eca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 287446,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Hunters Estate photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:42:46.453391Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/4",
+            "name": "Western Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/52",
+            "name": "Garden Route"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/923",
+            "name": "Knysna"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/2195",
+            "name": "Hunters Home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/4360",
+            "name": "Hunters Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/7-baracuda-street/T5333088",
+            "name": "T5333088"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11574411/F93gSpMETHJ04GdSd9ZkR6/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 BARACUDA STREET",
+        "addressLocality": "Hunters Estate, Knysna",
+        "addressRegion": "Western Cape"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.0523637277274,
+        "longitude": 23.0808273315706
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "4"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/7-baracuda-street/T5333088"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 250 000 | 3 Bedroom House in Hunters Estate | Private Property",
+    "og:description": "Dual Mandate \n\nBrand new, beautifully crafted and undeniably easy to live in -this single-level home makes starting out or scaling down feel like youve hit the upgrade button. The central living zones...",
+    "og:image": "https://images.pp.co.za/listing/11574411/F93gSpMETHJ04GdSd9ZkR6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/7-baracuda-street/T5333088"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 250 000 | 3 Bedroom House in Hunters Estate | Private Property",
+    "og:description": "Dual Mandate \n\nBrand new, beautifully crafted and undeniably easy to live in -this single-level home makes starting out or scaling down feel like youve hit the upgrade button. The central living zones...",
+    "og:image": "https://images.pp.co.za/listing/11574411/F93gSpMETHJ04GdSd9ZkR6/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/hunters-home/hunters-estate/7-baracuda-street/T5333088",
+    "description": "3 Bedroom House in Hunters Estate, 7 baracuda street, Dual Mandate \n\nBrand new, beautifully crafted and undeniably easy to live in -this single-level home",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "20571c813f6e4ad47d7a93132576c25cdbaab6e2a455fa54a3a83858de745fe2"
+}

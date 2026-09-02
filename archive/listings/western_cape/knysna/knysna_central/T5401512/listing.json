@@ -1,0 +1,593 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5401512",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512",
+  "extracted_at": "2026-08-26T10:38:16.271882Z",
+  "title": "3 Bedroom House in Knysna Central",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-02-24",
+  "description": "Prime Knysna Central Residence  Coastal Living at Its Finest\n\nDiscover the perfect blend of comfort, style, and convenience in this beautifully appointed 3-bedroom home, ideally positioned in the hear...",
+  "erf_size_m2": 429.0,
+  "land_size_raw": "429 m²",
+  "floor_size_m2": 397.0,
+  "price": {
+    "amount": 2850000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 850 000",
+    "rates_and_taxes_monthly": 1496.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "T5401512",
+    "suburb": "Knysna Central",
+    "city": "Garden Route",
+    "region": "Knysna Central, Knysna",
+    "province": "Western Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Western Cape",
+      "Garden Route",
+      "Knysna",
+      "Knysna Central",
+      "T5401512"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 4.0,
+    "en_suites": 3.0,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": true,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": true,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 4",
+      "En-suite 3",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Alarm",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Scenic view",
+      "Storage",
+      "Entrance hall",
+      "Kitchen",
+      "Garden",
+      "Family TV room",
+      "Paving",
+      "Lapa"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Chris van der Merwe",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1812724/image/b352c3ebd9f34e22bcfb7b16ae62fa0f_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/chris-van-der-merwe/1812724/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11691377/XeSUihSk4b6yuCRswhYnB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/XeSUihSk4b6yuCRswhYnB2/1600/1066/contain/jpegorpng",
+      "local_filename": "001_XeSUihSk4b6yuCRswhYnB2.jpg",
+      "sha256": "daffd9a73378a9f461139db707e9ec2c6391034efb210a19a191595325d4c9d1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 276302,
+      "width": 1600,
+      "height": 944,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:38:18.255962Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11691377/q5c68J1ZJuNCowNxBm3Ka1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/q5c68J1ZJuNCowNxBm3Ka1/1600/1066/contain/jpegorpng",
+      "local_filename": "002_q5c68J1ZJuNCowNxBm3Ka1.jpg",
+      "sha256": "c6a350e4fb68332cbc4b062f81ce47994fbc2c53df67b360946f7efec5b46a33",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 247681,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.267041Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11691377/CnE6P1QWOM1Kh0Akhyto04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/CnE6P1QWOM1Kh0Akhyto04/1600/1066/contain/jpegorpng",
+      "local_filename": "003_CnE6P1QWOM1Kh0Akhyto04.jpg",
+      "sha256": "8dc89658a596cc29f4ba7d6869ae53ce051ce3c2a56418396e99e3c1cf3872ff",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 219592,
+      "width": 1413,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.331367Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11691377/EU7xlsChGby6IpGFNBFAo4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/EU7xlsChGby6IpGFNBFAo4/1600/1066/contain/jpegorpng",
+      "local_filename": "004_EU7xlsChGby6IpGFNBFAo4.jpg",
+      "sha256": "783863d26b31012426e46c4fa426ebcaffa252a3f423fc809c78b06d4b823035",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 262496,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.266949Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11691377/xTPQLHwUzVRzqER7HPDtj2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/xTPQLHwUzVRzqER7HPDtj2/1600/1066/contain/jpegorpng",
+      "local_filename": "005_xTPQLHwUzVRzqER7HPDtj2.jpg",
+      "sha256": "08e0dc1c57aabbe5581a45cf3f756978ebebb27ce1f1e670eca43fe85d6b553d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 211889,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.357248Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11691377/KoWfGTQduF1vNMdw5NYWb4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/KoWfGTQduF1vNMdw5NYWb4/1600/1066/contain/jpegorpng",
+      "local_filename": "006_KoWfGTQduF1vNMdw5NYWb4.jpg",
+      "sha256": "2c49bf6f0ec42b819ef6d85f3b0f49b461ff3f172c62e34e9608700062e91aa2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139977,
+      "width": 1383,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.344105Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11691377/b1EjjISihswwFUFcruO5M3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/b1EjjISihswwFUFcruO5M3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_b1EjjISihswwFUFcruO5M3.jpg",
+      "sha256": "1f0c1bb975929c2f5a9e2fd0f06b609748bcc4132d23e99e08331e260f615487",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 124437,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.679403Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11691377/5fHYd1xW39hFzjFN87pFI7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/5fHYd1xW39hFzjFN87pFI7/1600/1066/contain/jpegorpng",
+      "local_filename": "008_5fHYd1xW39hFzjFN87pFI7.jpg",
+      "sha256": "5d1b0a6c8fe816caff2b71fbb7348d436ae1d2800984f0c0db56f35cdcd99a82",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129456,
+      "width": 1101,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.554441Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11691377/LBwONIiiUa91GtcTQJrvY6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/LBwONIiiUa91GtcTQJrvY6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_LBwONIiiUa91GtcTQJrvY6.jpg",
+      "sha256": "bd18cfdab298eaca59d412d8aea7ca8f8d6c3fbf2614b0aa1c9bec336a073191",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 112870,
+      "width": 1140,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:17.730148Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11691377/lxbUSBKXYvX6OHMK1DDf83/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/lxbUSBKXYvX6OHMK1DDf83/1600/1066/contain/jpegorpng",
+      "local_filename": "010_lxbUSBKXYvX6OHMK1DDf83.jpg",
+      "sha256": "07ae8189742b545c764d4f95589dcaeadac6f3bbdd2ffb9cbb6ed0c45860ee6b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 221821,
+      "width": 1600,
+      "height": 905,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.093921Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11691377/6eA24HDESZCtxch76sbi82/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/6eA24HDESZCtxch76sbi82/1600/1066/contain/jpegorpng",
+      "local_filename": "011_6eA24HDESZCtxch76sbi82.jpg",
+      "sha256": "d556422ce9c835c80d7894b9cf404bdb376d29d11dc3965bc63679ea2846575e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 281213,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.270786Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11691377/S6mGjfI5fW2OKGIaxxcll3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/S6mGjfI5fW2OKGIaxxcll3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_S6mGjfI5fW2OKGIaxxcll3.jpg",
+      "sha256": "67f2e2f8f974c499782f47c4d1810beaa732130a82f52719d651d83317f2ac9e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153494,
+      "width": 1387,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.146462Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11691377/DA8Qaj9u3rsPIWbhCPH8O6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/DA8Qaj9u3rsPIWbhCPH8O6/1600/1066/contain/jpegorpng",
+      "local_filename": "013_DA8Qaj9u3rsPIWbhCPH8O6.jpg",
+      "sha256": "883ecc1398e84c1ab616aa8951936e989e794af35953a88d99f9856de235c0d5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157733,
+      "width": 1429,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.493297Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11691377/QKLzwVmcBif0i2J0lNDW12/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/QKLzwVmcBif0i2J0lNDW12/1600/1066/contain/jpegorpng",
+      "local_filename": "014_QKLzwVmcBif0i2J0lNDW12.jpg",
+      "sha256": "ab081664037c3365e9d1226439c490911e6a6cb681eba4314fc1be6a2ad6edb1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141136,
+      "width": 1304,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.629383Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11691377/cpQYz6Cwe8SZoE8zj0tR71/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/cpQYz6Cwe8SZoE8zj0tR71/1600/1066/contain/jpegorpng",
+      "local_filename": "015_cpQYz6Cwe8SZoE8zj0tR71.jpg",
+      "sha256": "879e4df0e34d5df20c74b4ec72e08c21a91ca02eb67451f6b38422058b212c2c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103659,
+      "width": 1280,
+      "height": 990,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.614079Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11691377/NB3cjFovvXoXzRsJGtoYT0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/NB3cjFovvXoXzRsJGtoYT0/1600/1066/contain/jpegorpng",
+      "local_filename": "016_NB3cjFovvXoXzRsJGtoYT0.jpg",
+      "sha256": "b7fef09d41d81a71ae0719867093f53510adf13fa784cdf2011a835f8738c485",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135238,
+      "width": 1404,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.070483Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11691377/t7Fg7uW1ERarGW14xaUhY0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/t7Fg7uW1ERarGW14xaUhY0/1600/1066/contain/jpegorpng",
+      "local_filename": "017_t7Fg7uW1ERarGW14xaUhY0.jpg",
+      "sha256": "6accaed117311bc76bddadc1bf40a0828474ce283c3894ac5fca15540a4dee67",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 124786,
+      "width": 1280,
+      "height": 952,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.776342Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11691377/6SN4rS4DuNzjAY0Ajs8Xa5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/6SN4rS4DuNzjAY0Ajs8Xa5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_6SN4rS4DuNzjAY0Ajs8Xa5.jpg",
+      "sha256": "46cd7f2f5b9d5082295286f5f5707d4273a1cc34d66abd1e310fbea9d9cf38ca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103780,
+      "width": 1280,
+      "height": 983,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:18.894280Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11691377/eKaqLHwQNcnRICeV92DbF6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/eKaqLHwQNcnRICeV92DbF6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_eKaqLHwQNcnRICeV92DbF6.jpg",
+      "sha256": "f4e6860fa285cc8834530da6ecdf8c285101891ff75e095a59410d66721b7ebc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189693,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.258165Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11691377/qaIjYuHlQg54eVNDWxCGS4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/qaIjYuHlQg54eVNDWxCGS4/1600/1066/contain/jpegorpng",
+      "local_filename": "020_qaIjYuHlQg54eVNDWxCGS4.jpg",
+      "sha256": "4caf6fa2f43e63911cc587a0ed68423989c3da8a82ce8801159686fd8db5f292",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196823,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.952689Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11691377/XLsGPJ0C9fczNHos4Nd8q4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/XLsGPJ0C9fczNHos4Nd8q4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_XLsGPJ0C9fczNHos4Nd8q4.jpg",
+      "sha256": "0690be8c40056177d19fb984e05eb3688de2985e80c063c6d066e47c2afff577",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 148172,
+      "width": 1600,
+      "height": 899,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.263268Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11691377/p4Bal2nQa8RKOpTohQGI81/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/p4Bal2nQa8RKOpTohQGI81/1600/1066/contain/jpegorpng",
+      "local_filename": "022_p4Bal2nQa8RKOpTohQGI81.jpg",
+      "sha256": "0ffe0ed23f15168d2b8decc1744a335ccf04a0b62e1490c2b29734d5adf6482b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 107025,
+      "width": 1600,
+      "height": 836,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.434614Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11691377/KCGQ4Gl0LttGsdpykDtHc7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/KCGQ4Gl0LttGsdpykDtHc7/1600/1066/contain/jpegorpng",
+      "local_filename": "023_KCGQ4Gl0LttGsdpykDtHc7.jpg",
+      "sha256": "9c6a1dea65142b22b58baa37febdb71a59761c5f6f7a1ec0bf45af95b43f0ef7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 99424,
+      "width": 1600,
+      "height": 830,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:20.234492Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11691377/klqUl58BLjbd2pEoL7FLr2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/klqUl58BLjbd2pEoL7FLr2/1600/1066/contain/jpegorpng",
+      "local_filename": "024_klqUl58BLjbd2pEoL7FLr2.jpg",
+      "sha256": "9e0ab7566865d3421a5ffe0936688c21a41f42210c328767dce06424de09d44f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134568,
+      "width": 1553,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.610164Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11691377/vRPNFyxCzvrSRH1czbn2p2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/vRPNFyxCzvrSRH1czbn2p2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_vRPNFyxCzvrSRH1czbn2p2.jpg",
+      "sha256": "6e1e229294d31aa1a76eba12de33e05aab6f2ce45b48a1ab8b8fa3e7a45db231",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202848,
+      "width": 1423,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:19.619670Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11691377/4BZN2CWfT1P1dpK3Zijad7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11691377/4BZN2CWfT1P1dpK3Zijad7/1600/1066/contain/jpegorpng",
+      "local_filename": "026_4BZN2CWfT1P1dpK3Zijad7.jpg",
+      "sha256": "9d10d1b6ded6a9ca018dfcb323b46280d62cd06273db76bdf351ff2de7378e1a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 257418,
+      "width": 1466,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Knysna Central photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:38:20.153287Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/4",
+            "name": "Western Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/52",
+            "name": "Garden Route"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/923",
+            "name": "Knysna"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/562",
+            "name": "Knysna Central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512",
+            "name": "T5401512"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11691377/XeSUihSk4b6yuCRswhYnB2/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Knysna Central, Knysna",
+        "addressRegion": "Western Cape"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 850 000 | 3 Bedroom House in Knysna Central | Private Property",
+    "og:description": "Prime Knysna Central Residence  Coastal Living at Its Finest\n\nDiscover the perfect blend of comfort, style, and convenience in this beautifully appointed 3-bedroom home, ideally positioned in the hear...",
+    "og:image": "https://images.pp.co.za/listing/11691377/XeSUihSk4b6yuCRswhYnB2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 850 000 | 3 Bedroom House in Knysna Central | Private Property",
+    "og:description": "Prime Knysna Central Residence  Coastal Living at Its Finest\n\nDiscover the perfect blend of comfort, style, and convenience in this beautifully appointed 3-bedroom home, ideally positioned in the hear...",
+    "og:image": "https://images.pp.co.za/listing/11691377/XeSUihSk4b6yuCRswhYnB2/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/knysna-central/T5401512",
+    "description": "3 Bedroom House in Knysna Central, Prime Knysna Central Residence  Coastal Living at Its Finest\n\nDiscover the perfect blend of comfort,",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "322dfba83690a2f98dcdf199d9fdb6737a2409b3dfbdff80b09e7379c8a2895a"
+}

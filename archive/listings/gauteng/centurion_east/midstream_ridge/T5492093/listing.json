@@ -1,0 +1,590 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5492093",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5492093",
+  "extracted_at": "2026-09-02T09:16:09.974927Z",
+  "title": "4 Bedroom House in Midstream Ridge",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-19",
+  "description": "Nestled within the highly secure and prestigious Midstream Ridge Estate, this double-story family home effortlessly blends contemporary style with everyday functionality. The heart of the ground floor...",
+  "erf_size_m2": 600.0,
+  "land_size_raw": "600 m²",
+  "floor_size_m2": 284.0,
+  "price": {
+    "amount": 3950000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 950 000",
+    "rates_and_taxes_monthly": null,
+    "levies_monthly": 2400.0
+  },
+  "location": {
+    "street_address": "Midstream Ridge",
+    "suburb": "Midstream Ridge",
+    "city": "Centurion",
+    "region": "Midstream Ridge Estate, Centurion East",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Centurion",
+      "Centurion East",
+      "Midstream Estate",
+      "Midstream Ridge",
+      "T5492093"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 3.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 3.5",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 2",
+      "Pet friendly",
+      "Balcony",
+      "Patio",
+      "Security post",
+      "Study",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Darryl Koller",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2359054/image/2e80e6ad4240409fb2206bb6c08128d4_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/darryl-koller/2359054/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Sarah Miles",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2317587/image/9118656d86c443f889995b52828bbce2_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/sarah-miles/2317587/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11846045/tMjoLtEWwHJ8n2RKfUYvr4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/tMjoLtEWwHJ8n2RKfUYvr4/1600/1066/contain/jpegorpng",
+      "local_filename": "001_tMjoLtEWwHJ8n2RKfUYvr4.jpg",
+      "sha256": "6e6295491b3d844f5c007887c20ed4dc213199f7a1fce0bb59841bafab0b1583",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 312868,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-09-02T09:16:10.856180Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11846045/BHip5jCou1kxq8IKKNQQr6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/BHip5jCou1kxq8IKKNQQr6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_BHip5jCou1kxq8IKKNQQr6.jpg",
+      "sha256": "3417737b3ebe1955e50f2f67c7e8c187e3cd157cfef6848062d7522ce62ef290",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 187275,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.742851Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11846045/HvgTlHICcEEY008a0SXuo4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/HvgTlHICcEEY008a0SXuo4/1600/1066/contain/jpegorpng",
+      "local_filename": "003_HvgTlHICcEEY008a0SXuo4.jpg",
+      "sha256": "db167ab0254bf26fab170b73b012a13f1a2bce0cbfcd16ea69acc227d3ecce30",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199509,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.327327Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11846045/YVLQhVf1eoKlNDA7q7vKE1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/YVLQhVf1eoKlNDA7q7vKE1/1600/1066/contain/jpegorpng",
+      "local_filename": "004_YVLQhVf1eoKlNDA7q7vKE1.jpg",
+      "sha256": "50ac93de1acf886a8337e5a4ca599a135ff0b33c88fe87d6d5bce7ebfd55f04a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 192442,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:10.634351Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11846045/d6f6pxIHggIKm1rm2WAQd5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/d6f6pxIHggIKm1rm2WAQd5/1600/1066/contain/jpegorpng",
+      "local_filename": "005_d6f6pxIHggIKm1rm2WAQd5.jpg",
+      "sha256": "f007efd036ac87b395de1f4c0083b73cc40ceea5fe6a008a329390e745e9e039",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177223,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.153077Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11846045/fCAD3huBqDewx0j9l9KDl1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/fCAD3huBqDewx0j9l9KDl1/1600/1066/contain/jpegorpng",
+      "local_filename": "006_fCAD3huBqDewx0j9l9KDl1.jpg",
+      "sha256": "adf04617ed3c3ba7b4e5fc086ea154bceb973e5969d93b96ee856e5c7bf19910",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135660,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.589996Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11846045/wZldq5kcAlP4heJ0BPw3A7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/wZldq5kcAlP4heJ0BPw3A7/1600/1066/contain/jpegorpng",
+      "local_filename": "007_wZldq5kcAlP4heJ0BPw3A7.jpg",
+      "sha256": "724653bfef133dc865eed609b94067853fb94d7bc837aa4a1952c73849217c3c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 137324,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.020269Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11846045/UtqwZxFQbaFzweDJQKaGt2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/UtqwZxFQbaFzweDJQKaGt2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_UtqwZxFQbaFzweDJQKaGt2.jpg",
+      "sha256": "0b9ebb1eef6562cbd7f252177517f9f5a64ed20d5a15a415ee1edb331523f5be",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 105838,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.282431Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11846045/80Oaje6fBEVhBbtKNGvjf6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/80Oaje6fBEVhBbtKNGvjf6/1600/1066/contain/jpegorpng",
+      "local_filename": "009_80Oaje6fBEVhBbtKNGvjf6.jpg",
+      "sha256": "6361b0d00bcc3e333ed783cf05698a3e251fa1352943016bc7ba77e52266a847",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125555,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.383184Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11846045/QpHWZH0uBaPX7uQ7fjL443/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/QpHWZH0uBaPX7uQ7fjL443/1600/1066/contain/jpegorpng",
+      "local_filename": "010_QpHWZH0uBaPX7uQ7fjL443.jpg",
+      "sha256": "ab4f05d439fdaf9f837aabbe0ea271064c692f7e5092f7d8a3036aab75478962",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 124823,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.711144Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11846045/7vIJNM3su9teSQiov8Osl0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/7vIJNM3su9teSQiov8Osl0/1600/1066/contain/jpegorpng",
+      "local_filename": "011_7vIJNM3su9teSQiov8Osl0.jpg",
+      "sha256": "deb1842318f3739ca90dedb80195c4e52ed73e756814f6beb45e00b6a5ac70de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147977,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.756034Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11846045/8aO7IFpdvsXmkFxiWPmGc7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/8aO7IFpdvsXmkFxiWPmGc7/1600/1066/contain/jpegorpng",
+      "local_filename": "012_8aO7IFpdvsXmkFxiWPmGc7.jpg",
+      "sha256": "130da3434326b4e483cdc74ab4521a40b4deb35263c3dcffc2de2181eea6170b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190794,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.757423Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11846045/4ZBAB6HR8faFaNDaMBrvx2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/4ZBAB6HR8faFaNDaMBrvx2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_4ZBAB6HR8faFaNDaMBrvx2.jpg",
+      "sha256": "fdfc31ec851ee70a3b753e16798f158e6bdeea381bd5839645085300609004a0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128128,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.788053Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11846045/z5AlZDr3eTBNGchsh5jXr5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/z5AlZDr3eTBNGchsh5jXr5/1600/1066/contain/jpegorpng",
+      "local_filename": "014_z5AlZDr3eTBNGchsh5jXr5.jpg",
+      "sha256": "c60b2dc133d666660ae1c70898d0720fb3a4077f343f671a12d23d389faf5eed",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181522,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:11.993837Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11846045/jBLQqsL6wEa4fPr0CrvHi4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/jBLQqsL6wEa4fPr0CrvHi4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_jBLQqsL6wEa4fPr0CrvHi4.jpg",
+      "sha256": "000461b5260a76f88c880fc09c3bdbfec6653b4473df6e1563f006255b3ddc1a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 101952,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.266556Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11846045/zlP3lyaKjdkwp5RkgGkJP2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/zlP3lyaKjdkwp5RkgGkJP2/1600/1066/contain/jpegorpng",
+      "local_filename": "016_zlP3lyaKjdkwp5RkgGkJP2.jpg",
+      "sha256": "a80cb2e0d74735f525583166585debb0470f4788c444352f0db251b464131f0c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153981,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.112996Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11846045/Zp8M5fKagroFsu0FjEmXU3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/Zp8M5fKagroFsu0FjEmXU3/1600/1066/contain/jpegorpng",
+      "local_filename": "017_Zp8M5fKagroFsu0FjEmXU3.jpg",
+      "sha256": "9086fc283445b77ed507d94296584fd1d29f3bde2590072a0544afb43c1a2b79",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 131466,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.189035Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11846045/Qy7g4mZ3jqcO8wAUmyCO01/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/Qy7g4mZ3jqcO8wAUmyCO01/1600/1066/contain/jpegorpng",
+      "local_filename": "018_Qy7g4mZ3jqcO8wAUmyCO01.jpg",
+      "sha256": "36f148a8dfcc967b19f612e3079a4fc7aeb562bf1f6d57b92ce984e9f636b8ce",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 88283,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.357789Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11846045/p0yRQHbcSis4796u8mNi70/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/p0yRQHbcSis4796u8mNi70/1600/1066/contain/jpegorpng",
+      "local_filename": "019_p0yRQHbcSis4796u8mNi70.jpg",
+      "sha256": "7c8c4a2404ee446a45cd3c3e7dc4372cdec66e1638a6a3d3eb57f13bf47b5ea3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 160899,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.140774Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11846045/ve4gHEOBe4XD30XXF1JGg5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/ve4gHEOBe4XD30XXF1JGg5/1600/1066/contain/jpegorpng",
+      "local_filename": "020_ve4gHEOBe4XD30XXF1JGg5.jpg",
+      "sha256": "1f43ff48f74aac077b136baf6177a3ca1c21e402b6be35dfdaaaa7e94946929a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 265368,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.511488Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11846045/ABvqJzOV9lcuAhvchy2i66/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/ABvqJzOV9lcuAhvchy2i66/1600/1066/contain/jpegorpng",
+      "local_filename": "021_ABvqJzOV9lcuAhvchy2i66.jpg",
+      "sha256": "b64871b3078838321a070a927a21a58be85ebc52d035dab34b54c679f891e2f0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 223131,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.485047Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11846045/XrmA9LEEFJAjCZFt1K38E7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/XrmA9LEEFJAjCZFt1K38E7/1600/1066/contain/jpegorpng",
+      "local_filename": "022_XrmA9LEEFJAjCZFt1K38E7.jpg",
+      "sha256": "98f02a1a83719416a4b398486e73910dd5b3aad3c204f8af18524f3905b36436",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 234915,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.690566Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11846045/brvOM14Yh5PF6qpb9aliF1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/brvOM14Yh5PF6qpb9aliF1/1600/1066/contain/jpegorpng",
+      "local_filename": "023_brvOM14Yh5PF6qpb9aliF1.jpg",
+      "sha256": "ab3f156281607f5814022a7aec358884018dde713ae6ca2cbbd59d500736e655",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 284419,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.580648Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11846045/8KHVZNrhpCMG0TaVdQ86X6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/8KHVZNrhpCMG0TaVdQ86X6/1600/1066/contain/jpegorpng",
+      "local_filename": "024_8KHVZNrhpCMG0TaVdQ86X6.jpg",
+      "sha256": "8887aa0dd48df3c09ebeda1cf2baa2d0ca242a35cb7bec85807e08ed1b1c9300",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 283655,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:13.092637Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11846045/N7jD2TRh7radStq1Gc4kY5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11846045/N7jD2TRh7radStq1Gc4kY5/1600/1066/contain/jpegorpng",
+      "local_filename": "025_N7jD2TRh7radStq1Gc4kY5.jpg",
+      "sha256": "fa870812617115958bdfee2bbc6d325be9118fbfd539adbf57dd87f10f30a6e9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 310834,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "4 Bedroom House in Midstream Ridge photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:16:12.843762Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/32",
+            "name": "Centurion"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/957",
+            "name": "Centurion East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/762",
+            "name": "Midstream Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/7336",
+            "name": "Midstream Ridge"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5492093",
+            "name": "T5492093"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11846045/tMjoLtEWwHJ8n2RKfUYvr4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Midstream Ridge Estate, Centurion East",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "3.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5492093"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 950 000 | 4 Bedroom House in Midstream Ridge | Private Property",
+    "og:description": "Nestled within the highly secure and prestigious Midstream Ridge Estate, this double-story family home effortlessly blends contemporary style with everyday functionality. The heart of the ground floor...",
+    "og:image": "https://images.pp.co.za/listing/11846045/tMjoLtEWwHJ8n2RKfUYvr4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5492093"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 950 000 | 4 Bedroom House in Midstream Ridge | Private Property",
+    "og:description": "Nestled within the highly secure and prestigious Midstream Ridge Estate, this double-story family home effortlessly blends contemporary style with everyday functionality. The heart of the ground floor...",
+    "og:image": "https://images.pp.co.za/listing/11846045/tMjoLtEWwHJ8n2RKfUYvr4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5492093",
+    "description": "4 Bedroom House in Midstream Ridge, Nestled within the highly secure and prestigious Midstream Ridge Estate, this double-story family ho",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "bea2d1d39f7ab0054a28c51be9e237d4602e8a5b350d317c1475470434b8371b"
+}

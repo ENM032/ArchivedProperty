@@ -1,0 +1,474 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5545960",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/T5545960",
+  "extracted_at": "2026-08-26T10:37:33.750013Z",
+  "title": "3 Bedroom House in Brenton On Lake",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-08",
+  "description": "Exclusively marketed by Team Webster associated with Keller Williams. \n\nNestled within the peaceful surroundings of Brenton Park, this charming 3-bedroom, 2-bathroom home offers the perfect blend of c...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 107.0,
+  "price": {
+    "amount": 2750000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 750 000",
+    "rates_and_taxes_monthly": 76224.0,
+    "levies_monthly": 1421.0
+  },
+  "location": {
+    "street_address": "T5545960",
+    "suburb": "Brenton On Lake",
+    "city": "Garden Route",
+    "region": "Brenton On Lake, Knysna",
+    "province": "Western Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Western Cape",
+      "Garden Route",
+      "Knysna",
+      "Brenton On Lake",
+      "T5545960"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Garage parking 1"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Liandi Webster",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2364568/image/95304b1d0bd34d738e59946bac81a653_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/liandi-webster/2364568/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Dean Webster",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2229952/image/e4c7166205e946dbbaa9c4b016db386a_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/dean-webster/2229952/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11939003/TKV8iFZMkjH6VBpCRYQyl4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/TKV8iFZMkjH6VBpCRYQyl4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 1",
+      "is_hero": true,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11939003/vfp9xhJrGgrFuhMmGuhO55/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/vfp9xhJrGgrFuhMmGuhO55/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 2",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11939003/jCQzkn72oJ1F9ZLluixRM4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/jCQzkn72oJ1F9ZLluixRM4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 3",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11939003/9z7m651MlB7UdDvYrg9Gm0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/9z7m651MlB7UdDvYrg9Gm0/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 4",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11939003/iPqglqsVpc1n6xuUNXCJJ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/iPqglqsVpc1n6xuUNXCJJ7/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 5",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11939003/KIzukecHUVE66KEn6313p4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/KIzukecHUVE66KEn6313p4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 6",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11939003/Blw5lJhvRdZOq8NvoxW0m7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/Blw5lJhvRdZOq8NvoxW0m7/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 7",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11939003/CwTX3shRI8kKGrfwULRTX1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/CwTX3shRI8kKGrfwULRTX1/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 8",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11939003/NlIQ7SobNLqBuE8xaEURu5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/NlIQ7SobNLqBuE8xaEURu5/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 9",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11939003/MnNNvO16oN4izaCP428ys5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/MnNNvO16oN4izaCP428ys5/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 10",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11939003/6QQzurIq1b0o8s7uMF1yv4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/6QQzurIq1b0o8s7uMF1yv4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 11",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11939003/LA5mRv2rnJigxsK2Z9RC90/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/LA5mRv2rnJigxsK2Z9RC90/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 12",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11939003/bw647cwa9emVN4Q1LU8oo4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/bw647cwa9emVN4Q1LU8oo4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 13",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11939003/B87Xm9nY1KdIc6JumetHW6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/B87Xm9nY1KdIc6JumetHW6/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 14",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11939003/kDPWgVv5iN39a1oNqIpu04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/kDPWgVv5iN39a1oNqIpu04/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 15",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11939003/IVNM3fbTZzrGWWUoaRSUh7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/IVNM3fbTZzrGWWUoaRSUh7/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 16",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11939003/zO1ZDy7lZGkDzRnv6uDtL4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/zO1ZDy7lZGkDzRnv6uDtL4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 17",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11939003/pWUqSCegDqNF9ZXM9fJeY4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11939003/pWUqSCegDqNF9ZXM9fJeY4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Brenton On Lake photo number 18",
+      "is_hero": false,
+      "downloaded_at": null
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/4",
+            "name": "Western Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/52",
+            "name": "Garden Route"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/923",
+            "name": "Knysna"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/8325",
+            "name": "Brenton On Lake"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/T5545960",
+            "name": "T5545960"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11939003/TKV8iFZMkjH6VBpCRYQyl4/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brenton On Lake, Knysna",
+        "addressRegion": "Western Cape"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/T5545960"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 750 000 | 3 Bedroom House in Brenton On Lake | Private Property",
+    "og:description": "Exclusively marketed by Team Webster associated with Keller Williams. \n\nNestled within the peaceful surroundings of Brenton Park, this charming 3-bedroom, 2-bathroom home offers the perfect blend of c...",
+    "og:image": "https://images.pp.co.za/listing/11939003/TKV8iFZMkjH6VBpCRYQyl4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/T5545960"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 750 000 | 3 Bedroom House in Brenton On Lake | Private Property",
+    "og:description": "Exclusively marketed by Team Webster associated with Keller Williams. \n\nNestled within the peaceful surroundings of Brenton Park, this charming 3-bedroom, 2-bathroom home offers the perfect blend of c...",
+    "og:image": "https://images.pp.co.za/listing/11939003/TKV8iFZMkjH6VBpCRYQyl4/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/T5545960",
+    "description": "3 Bedroom House in Brenton On Lake, Exclusively marketed by Team Webster associated with Keller Williams. \n\nNestled within the peaceful",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "3e3c3e564db81042ff54ecff18d5bc6c4070146549adec730829928d36ae4766"
+}

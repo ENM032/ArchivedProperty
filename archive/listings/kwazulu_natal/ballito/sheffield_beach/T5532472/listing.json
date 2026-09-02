@@ -1,0 +1,505 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5532472",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/T5532472",
+  "extracted_at": "2026-08-26T09:58:52.940545Z",
+  "title": "3 Bedroom House in Sheffield Beach",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-25",
+  "description": "Welcome to an established North Coast community where family-inspired amenities, open skies and serene, green hills paint the backdrop to home life.\n\nLalela is situated just off the new N2 interchange...",
+  "erf_size_m2": 300.0,
+  "land_size_raw": "300 m²",
+  "floor_size_m2": 164.0,
+  "price": {
+    "amount": 3250000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 250 000",
+    "rates_and_taxes_monthly": 1891.0,
+    "levies_monthly": 1750.0
+  },
+  "location": {
+    "street_address": "T5532472",
+    "suburb": "Sheffield Beach",
+    "city": "Dolphin Coast",
+    "region": "Sheffield Beach, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Sheffield Beach",
+      "T5532472"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Pet friendly",
+      "Pool",
+      "Security post"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Naseera Samadt",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2137677/image/12575be81af348f2b9f66f1d2d4598eb_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/naseera-samadt/2137677/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11915902/nHsfLYP1u0kg8wUbxWiRg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/nHsfLYP1u0kg8wUbxWiRg0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_nHsfLYP1u0kg8wUbxWiRg0.jpg",
+      "sha256": "8ed039246b148bdf965d40c7ae7a30922cf6ff0414feda46cf382cd8a44b4663",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 196660,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:58:54.188516Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11915902/MmqfyiNGyuUjknT7sKiEU4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/MmqfyiNGyuUjknT7sKiEU4/1600/1066/contain/jpegorpng",
+      "local_filename": "002_MmqfyiNGyuUjknT7sKiEU4.jpg",
+      "sha256": "af5212925a1fc4a4dbb230f58d398b5a2ae5f10a062b7cbae330429be2f4d99b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 198565,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.020895Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11915902/7vZKGQQhaqaSftrUshByZ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/7vZKGQQhaqaSftrUshByZ7/1600/1066/contain/jpegorpng",
+      "local_filename": "003_7vZKGQQhaqaSftrUshByZ7.jpg",
+      "sha256": "1181831edd1235b5e24e28c708d9f8937942119ce0a9c7523e2b6a25e3d2cc78",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 138593,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.738064Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11915902/8gu00DwJ3UkptbkSve31l0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/8gu00DwJ3UkptbkSve31l0/1600/1066/contain/jpegorpng",
+      "local_filename": "004_8gu00DwJ3UkptbkSve31l0.jpg",
+      "sha256": "7a09f511bcfbda38a8be92a71211b0b87e1e347372a9d0a71dec99a0fd6571b3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171153,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.000804Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11915902/8YPkbZe51ZxDhkIV0Gml77/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/8YPkbZe51ZxDhkIV0Gml77/1600/1066/contain/jpegorpng",
+      "local_filename": "005_8YPkbZe51ZxDhkIV0Gml77.jpg",
+      "sha256": "37e5cc56e4ddcb980023531dece7b040731b8486b425662d4395943346e8c74b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 168840,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:53.844582Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11915902/OzxnxFOPZ9rn0SF5lURSb3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/OzxnxFOPZ9rn0SF5lURSb3/1600/1066/contain/jpegorpng",
+      "local_filename": "006_OzxnxFOPZ9rn0SF5lURSb3.jpg",
+      "sha256": "5861daf6f7fa8d0eacbbb2cf4d00b4f5fc40fa4d04e919fe66505855cc0731a3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 239341,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:53.844823Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11915902/co3B9cDfsgFlZ59OvEA2H7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/co3B9cDfsgFlZ59OvEA2H7/1600/1066/contain/jpegorpng",
+      "local_filename": "007_co3B9cDfsgFlZ59OvEA2H7.jpg",
+      "sha256": "aebf22734cf1ef295f5fab5dfa66d1611a101f38b6f406a0e79aca22c9a4f69d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94999,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.207702Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11915902/Q0QTZJ88JdpqLTpZ1GiSr2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/Q0QTZJ88JdpqLTpZ1GiSr2/1600/1066/contain/jpegorpng",
+      "local_filename": "008_Q0QTZJ88JdpqLTpZ1GiSr2.jpg",
+      "sha256": "e3fdeaf49392332337def0067f7339514950d12f60f47a0187f685772978edf0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 120401,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:55.058351Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11915902/u2UCxm9joseya91kE6XcV1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/u2UCxm9joseya91kE6XcV1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_u2UCxm9joseya91kE6XcV1.jpg",
+      "sha256": "a28d7129987a72b32e63d127f4e9dcd8b9a881380ef56df609f21943b367af5d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 171767,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:55.355802Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11915902/c7yueClgYnqD4okqSbk6S7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/c7yueClgYnqD4okqSbk6S7/1600/1066/contain/jpegorpng",
+      "local_filename": "010_c7yueClgYnqD4okqSbk6S7.jpg",
+      "sha256": "a23da1094fdbafe9dc492cf787b536de35a7a496eee1063a247451f8a1ed6959",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 181030,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.427976Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11915902/RDVOc847w0mGxXxqhbQBZ7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/RDVOc847w0mGxXxqhbQBZ7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_RDVOc847w0mGxXxqhbQBZ7.jpg",
+      "sha256": "9afd6e837fb52e64e0f8e33e650a126b31a7e0ac8f0884e21a7a5112d84249c4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139357,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.561096Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11915902/oZ2QFMN2PKJUcsfLiYMoJ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/oZ2QFMN2PKJUcsfLiYMoJ0/1600/1066/contain/jpegorpng",
+      "local_filename": "012_oZ2QFMN2PKJUcsfLiYMoJ0.jpg",
+      "sha256": "740730254faf0568fd190f6006b16146f9a6ac120019e40da371c13ef3ddead5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 125312,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.610050Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11915902/qeOVyUMUn4YzRdIH3YI6X2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/qeOVyUMUn4YzRdIH3YI6X2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_qeOVyUMUn4YzRdIH3YI6X2.jpg",
+      "sha256": "1877f9c6c6fb4dcb0ea8450bedd2ca23692037f49117281dcef8da6f63b4ae85",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 263768,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.794603Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11915902/kxi5ahan5rLDQiQt894MO3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/kxi5ahan5rLDQiQt894MO3/1600/1066/contain/jpegorpng",
+      "local_filename": "014_kxi5ahan5rLDQiQt894MO3.jpg",
+      "sha256": "cfe86f026d0c76f7d29eece43ca6aa245c680ec2fd29c805f94c6ef634dc5f88",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190368,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:54.922651Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11915902/VIj6A8Jyf3xzEokoQKUfc1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/VIj6A8Jyf3xzEokoQKUfc1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_VIj6A8Jyf3xzEokoQKUfc1.jpg",
+      "sha256": "df450b249258187dba16ddf33112137007a2dbbbb174c02f9832384760acb0b5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 184378,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:55.228000Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11915902/bPE0ofroENvEHVvPJaOeN7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/bPE0ofroENvEHVvPJaOeN7/1600/1066/contain/jpegorpng",
+      "local_filename": "016_bPE0ofroENvEHVvPJaOeN7.png",
+      "sha256": "77bc45b92f62c5f741374ce788023bc325b6bca3aa047c475732258ffcd33c27",
+      "mime_type": "image/png",
+      "file_size_bytes": 2055774,
+      "width": 1600,
+      "height": 909,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:56.017769Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11915902/uVcKSK3PQHLYOMz8uVdu73/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/uVcKSK3PQHLYOMz8uVdu73/1600/1066/contain/jpegorpng",
+      "local_filename": "017_uVcKSK3PQHLYOMz8uVdu73.jpg",
+      "sha256": "83bfab7cacd1c07ff0e6f2483f4b04d3d826acd6b3041b4a58f7c0270d620893",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 426417,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:56.259176Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11915902/GYosXuAgsDmiybjtTunvL4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/GYosXuAgsDmiybjtTunvL4/1600/1066/contain/jpegorpng",
+      "local_filename": "018_GYosXuAgsDmiybjtTunvL4.jpg",
+      "sha256": "cf6a80365895dfe3ccf918de199b1e4a407eb329949f49c8d9423350901ec8fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 364851,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:56.415470Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11915902/I1OUO0cjo0aeDxPxtLMxP4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/I1OUO0cjo0aeDxPxtLMxP4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_I1OUO0cjo0aeDxPxtLMxP4.jpg",
+      "sha256": "7951d4543be8fc7ce8212a869ff8bc62b90a4ebbd102f23823a6b8b8c43360fb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212744,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:55.446968Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11915902/3NWpjTwrF0Th6xEhOOgr17/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/3NWpjTwrF0Th6xEhOOgr17/1600/1066/contain/jpegorpng",
+      "local_filename": "020_3NWpjTwrF0Th6xEhOOgr17.jpg",
+      "sha256": "03297f0b4f37fb154a2b98dd94460aeee6f17a4d65cdb78aaaad138a00070198",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 324826,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:56.054070Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11915902/Bekx1cHvdvXlBmlKjEc1R7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11915902/Bekx1cHvdvXlBmlKjEc1R7/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Bekx1cHvdvXlBmlKjEc1R7.jpg",
+      "sha256": "ec924ace7e028a254ed7d8646b13345d267ac634cf11ddb6f4fe50d3b9e4ec55",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 264854,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Sheffield Beach photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:58:56.325229Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/581",
+            "name": "Sheffield Beach"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/T5532472",
+            "name": "T5532472"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11915902/nHsfLYP1u0kg8wUbxWiRg0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sheffield Beach, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/T5532472"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 250 000 | 3 Bedroom House in Sheffield Beach | Private Property",
+    "og:description": "Welcome to an established North Coast community where family-inspired amenities, open skies and serene, green hills paint the backdrop to home life.\n\nLalela is situated just off the new N2 interchange...",
+    "og:image": "https://images.pp.co.za/listing/11915902/nHsfLYP1u0kg8wUbxWiRg0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/T5532472"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 250 000 | 3 Bedroom House in Sheffield Beach | Private Property",
+    "og:description": "Welcome to an established North Coast community where family-inspired amenities, open skies and serene, green hills paint the backdrop to home life.\n\nLalela is situated just off the new N2 interchange...",
+    "og:image": "https://images.pp.co.za/listing/11915902/nHsfLYP1u0kg8wUbxWiRg0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/sheffield-beach/T5532472",
+    "description": "3 Bedroom House in Sheffield Beach, Welcome to an established North Coast community where family-inspired amenities, open skies and sere",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "0f2f48a49f092f402f56b613a9254757dcdb78193e5e6a3d6b9e8475a4ee3f17"
+}

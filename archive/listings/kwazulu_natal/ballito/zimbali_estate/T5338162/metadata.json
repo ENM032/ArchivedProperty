@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5338162",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/11-ebuhleni/143-yellowwood-drive/T5338162",
+  "archived_at": "2026-08-26T09:39:36.090248Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|a8b0ea8a-c5b4-4d53-9e28-a7cf6a0c32b9|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=lWPJM9gUZUmEMOEZouJ9yg; expires=Sun, 26-Aug-2125 09:39:29 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:39:29 GMT",
+    "content-length": "28485"
+  },
+  "fetch_duration_sec": 1.3089475631713867,
+  "total_images_discovered": 37,
+  "total_images_archived": 37,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "dda7b0fce6bce2a91071785c1f6afed15f4057cda8230aad20ba18a3320f513e"
+}

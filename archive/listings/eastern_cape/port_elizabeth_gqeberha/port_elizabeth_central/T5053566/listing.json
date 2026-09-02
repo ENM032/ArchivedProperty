@@ -1,0 +1,625 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5053566",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566",
+  "extracted_at": "2026-08-26T13:09:05.240947Z",
+  "title": "3 Bedroom Apartment in Port Elizabeth Central",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2025-04-23",
+  "description": "Panoramic Bay Views\n\nSoak up the sunshine and sweeping views from this elegant top-floor penthouse - a rare gem offering space, charm, and serious lifestyle appeal! \n\n What You''ll Love:     3 Spaciou...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 137.0,
+  "price": {
+    "amount": 1050000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 1 050 000",
+    "rates_and_taxes_monthly": 760.0,
+    "levies_monthly": 3357.0
+  },
+  "location": {
+    "street_address": "43 Castle Court, 16 Castle Hill",
+    "suburb": "Port Elizabeth Central",
+    "city": "Nelson Mandela Bay",
+    "region": "Port Elizabeth Central, Port Elizabeth (Gqeberha)",
+    "province": "Eastern Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -33.9639607,
+    "longitude": 25.6213206,
+    "breadcrumbs": [
+      "South Africa",
+      "Eastern Cape",
+      "Nelson Mandela Bay",
+      "Port Elizabeth (Gqeberha)",
+      "Port Elizabeth Central",
+      "T5053566"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 2.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": true,
+    "has_alarm": null,
+    "has_intercom": true,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 1",
+      "Lounges 2",
+      "Dining areas 1",
+      "Open parking 1",
+      "Access gate",
+      "Scenic view",
+      "Sea view",
+      "Study",
+      "Entrance hall",
+      "Kitchen",
+      "Intercom",
+      "Pantry"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Tarryn Hoy",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2199319/image/ba560ae5ca324760b4c0d225abdf63c5_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/tarryn-hoy/2199319/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Kobie Potgieter",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/1800746/image/b7613d2588304b39a4b936b07833a7d6_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/kobie-potgieter/1800746/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11098888/eVCZfbbE18S0B9R3NXl3e1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/eVCZfbbE18S0B9R3NXl3e1/1600/1066/contain/jpegorpng",
+      "local_filename": "001_eVCZfbbE18S0B9R3NXl3e1.jpg",
+      "sha256": "32a33e692dffa6059badccfa67efb380621677a84a06faf6133bc11195b6766a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150374,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T13:09:06.356279Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11098888/3ozNJXw8A6XYx8AYiq8vS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/3ozNJXw8A6XYx8AYiq8vS7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_3ozNJXw8A6XYx8AYiq8vS7.jpg",
+      "sha256": "efb58d5c9dc8e178dc64ea81d58f0412c9c691b8045d67d153a14c37cb6a44c8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 124637,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:06.356115Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11098888/vQp9I04pXKVOs4sk64juf5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/vQp9I04pXKVOs4sk64juf5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_vQp9I04pXKVOs4sk64juf5.jpg",
+      "sha256": "db5b0e8899a3151eb081501729fd96c9538b1b959e154069fe555101d664fd9f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141476,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.245084Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11098888/NW4srwm3F79owu7VhPv3L7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/NW4srwm3F79owu7VhPv3L7/1600/1066/contain/jpegorpng",
+      "local_filename": "004_NW4srwm3F79owu7VhPv3L7.jpg",
+      "sha256": "5fd190ccaff346638816d565c08620d983e9e531d289c593f8f1d5493f568470",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114614,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.146736Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11098888/igftfbvitv7wAN8O9jnEI4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/igftfbvitv7wAN8O9jnEI4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_igftfbvitv7wAN8O9jnEI4.jpg",
+      "sha256": "ea5dfc8e69e778b177a7600fcd61a65d84f63f7caa10dd0abc2acfc7933cd4ce",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141027,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.208545Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11098888/tVDm6RxB7aQtRnaQmwPfK4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/tVDm6RxB7aQtRnaQmwPfK4/1600/1066/contain/jpegorpng",
+      "local_filename": "006_tVDm6RxB7aQtRnaQmwPfK4.jpg",
+      "sha256": "0f43635594fe0306952869ac11480c99db685052fea8115642e1f72090dba95a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167587,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.241957Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11098888/Qq0NUAmptyYkQU8YxpLUh5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/Qq0NUAmptyYkQU8YxpLUh5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_Qq0NUAmptyYkQU8YxpLUh5.jpg",
+      "sha256": "d16047997e036108ec7bef059db90ef630b82c75672f05d4006d931327b31d56",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146944,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:06.925086Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11098888/FwLUQTKSXXVHVTVplr0i82/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/FwLUQTKSXXVHVTVplr0i82/1600/1066/contain/jpegorpng",
+      "local_filename": "008_FwLUQTKSXXVHVTVplr0i82.jpg",
+      "sha256": "2310ed40800f19368ee97a6c48e5d1b78337c51919e8b7226706b5c19f9e6c95",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 98969,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:06.720022Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11098888/IVhoZaJTOoCQ81db704ey0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/IVhoZaJTOoCQ81db704ey0/1600/1066/contain/jpegorpng",
+      "local_filename": "009_IVhoZaJTOoCQ81db704ey0.jpg",
+      "sha256": "a1c690a4688bcdaa06336b009392c2b42aaefacd7e4f0b37cd63ca2e3dbd4ee9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 142418,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.181224Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11098888/TGEVdzztYXjx0sgsQXRdl3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/TGEVdzztYXjx0sgsQXRdl3/1600/1066/contain/jpegorpng",
+      "local_filename": "010_TGEVdzztYXjx0sgsQXRdl3.jpg",
+      "sha256": "47b2a5e8aaab68f4810c311ccc393dbce938bd74686008758be14eb5ed212c02",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126037,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.400384Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11098888/E0FuDyJeMiWsBYebIQacX1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/E0FuDyJeMiWsBYebIQacX1/1600/1066/contain/jpegorpng",
+      "local_filename": "011_E0FuDyJeMiWsBYebIQacX1.jpg",
+      "sha256": "89fcc0d63d81f3a055cb3eab2da6a9655d8af9b36a749ab8eb54e779e6c382ae",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 140437,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.570688Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11098888/LJNIaxj750GkfbRK7VDbz3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/LJNIaxj750GkfbRK7VDbz3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_LJNIaxj750GkfbRK7VDbz3.jpg",
+      "sha256": "0ad45e4f24cffc925b463481f8f36ca07aceadfe6923ba3cfeed8633cf39a543",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126928,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.876443Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11098888/mDBUOpgH1difOsP4VLLN63/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/mDBUOpgH1difOsP4VLLN63/1600/1066/contain/jpegorpng",
+      "local_filename": "013_mDBUOpgH1difOsP4VLLN63.jpg",
+      "sha256": "706a1667d210ddd81495ffac1009f50bcc93affc3d19ad46e55ddc0964c372f9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132117,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.949964Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11098888/DfxmblbxhswTr4MCk8mfx6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/DfxmblbxhswTr4MCk8mfx6/1600/1066/contain/jpegorpng",
+      "local_filename": "014_DfxmblbxhswTr4MCk8mfx6.jpg",
+      "sha256": "850fdf0e467ff4fe6f49c61247f013cf568d53165a72fff603eacfa656e43d49",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126032,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.631695Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11098888/LS7R1NusklTjrueaP8ooa4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/LS7R1NusklTjrueaP8ooa4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_LS7R1NusklTjrueaP8ooa4.jpg",
+      "sha256": "79ca519f3bc8aeb0c4c5ecc202e62741f85b9fb21208158dc1b67273aa3309b3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 133421,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.842572Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11098888/GGSozTTvTeJ8oQxGwf0YU3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/GGSozTTvTeJ8oQxGwf0YU3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_GGSozTTvTeJ8oQxGwf0YU3.jpg",
+      "sha256": "11321476dbf9f85167861c9c259e76cde76b217d112aaa50f6458d78fcc99b04",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 105833,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.939501Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11098888/0OYB7HJTU38xzFs7eBwEs4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/0OYB7HJTU38xzFs7eBwEs4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_0OYB7HJTU38xzFs7eBwEs4.jpg",
+      "sha256": "af2f5755ee37dae2fb91887c12ab63a5e036b782fd4f628d29a87c40dd58cb90",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 66311,
+      "width": 800,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:07.919839Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11098888/MTr3Y2cBHaTNcUGbGTwRQ2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/MTr3Y2cBHaTNcUGbGTwRQ2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_MTr3Y2cBHaTNcUGbGTwRQ2.jpg",
+      "sha256": "36ba3857c0700792fd3473971e2750df7f0f563e292cf131066044b9f5068041",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141997,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.192714Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11098888/QjE3ZJTHrjtTAmeeDoc105/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/QjE3ZJTHrjtTAmeeDoc105/1600/1066/contain/jpegorpng",
+      "local_filename": "019_QjE3ZJTHrjtTAmeeDoc105.jpg",
+      "sha256": "9b9488921417e36c89ff8f626d588b0168dc73db084762d42439aa7e85735841",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 126314,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.273458Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11098888/aUdCxpyGgU78NT0saL2uO2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/aUdCxpyGgU78NT0saL2uO2/1600/1066/contain/jpegorpng",
+      "local_filename": "020_aUdCxpyGgU78NT0saL2uO2.jpg",
+      "sha256": "540c99a6adacc29113053ddf3ed583471af289df4d7c5a0ef5b3236ef8500363",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136936,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:09.022275Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11098888/Km2T5eoySpj0bicMc3BqC2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/Km2T5eoySpj0bicMc3BqC2/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Km2T5eoySpj0bicMc3BqC2.jpg",
+      "sha256": "22bf76673c109476a8332ca5607192faa3745ab3ee0a58ef8ddc3c253cbc3ee3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134833,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:09.098532Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11098888/Yg2mh77ObsnkpQvIVv7T95/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/Yg2mh77ObsnkpQvIVv7T95/1600/1066/contain/jpegorpng",
+      "local_filename": "022_Yg2mh77ObsnkpQvIVv7T95.jpg",
+      "sha256": "c2bfbf61f14e5df82320c3317c6e1466fc3a93f5f2e196b0f187d9d6f6417609",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 104202,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.294458Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11098888/MK9bU9vASQquRPUKKZuwW3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/MK9bU9vASQquRPUKKZuwW3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_MK9bU9vASQquRPUKKZuwW3.jpg",
+      "sha256": "134285407beb8ec0b21954f40840e47ea72a9636d584a6667bd5a2104947a494",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 109960,
+      "width": 1280,
+      "height": 959,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.375654Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11098888/sdo820UpLFqRptIhLBBBA4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/sdo820UpLFqRptIhLBBBA4/1600/1066/contain/jpegorpng",
+      "local_filename": "024_sdo820UpLFqRptIhLBBBA4.jpg",
+      "sha256": "c13fd8506b0d3ff2d38ee6ba7a272a41ec8d056033d0ad715c971296df69d68e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 128200,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.703900Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11098888/BWw1RGyUkWsj7V2f8C7tj7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/BWw1RGyUkWsj7V2f8C7tj7/1600/1066/contain/jpegorpng",
+      "local_filename": "025_BWw1RGyUkWsj7V2f8C7tj7.jpg",
+      "sha256": "42bdda5f820c7394e6ea7d7b960c7f2d8a7b239b18e3e18f56dc21ca9852f989",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 108248,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.653715Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11098888/aZGPE6kaJjwQXhXIu1L7l3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/aZGPE6kaJjwQXhXIu1L7l3/1600/1066/contain/jpegorpng",
+      "local_filename": "026_aZGPE6kaJjwQXhXIu1L7l3.jpg",
+      "sha256": "d6d384f53ab88859d3ea446d890362fb80fd280248e8589d6a857ba72d42f136",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 54719,
+      "width": 800,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:09.270617Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11098888/bMo0HAL3J8qJTXB7vZonC7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/bMo0HAL3J8qJTXB7vZonC7/1600/1066/contain/jpegorpng",
+      "local_filename": "027_bMo0HAL3J8qJTXB7vZonC7.jpg",
+      "sha256": "09f9a1f5f1dbf362fba0a8b719aa0e43707b3b59c95ed8e4b1c002c0ff23a657",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 51883,
+      "width": 799,
+      "height": 1066,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:08.748367Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11098888/R1MQuGuPEKJorFt0EIzhW5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11098888/R1MQuGuPEKJorFt0EIzhW5/1600/1066/contain/jpegorpng",
+      "local_filename": "028_R1MQuGuPEKJorFt0EIzhW5.jpg",
+      "sha256": "a0459876f6e8aaf02a686363152a3ba363e56989241930fd5abfd5e53a280381",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113758,
+      "width": 1280,
+      "height": 960,
+      "alt_text": "3 Bedroom Apartment in Port Elizabeth Central photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T13:09:09.794144Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/7",
+            "name": "Eastern Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/2954",
+            "name": "Nelson Mandela Bay"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/67",
+            "name": "Port Elizabeth (Gqeberha)"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/540",
+            "name": "Port Elizabeth Central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566",
+            "name": "T5053566"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11098888/eVCZfbbE18S0B9R3NXl3e1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "43 Castle Court, 16 Castle Hill",
+        "addressLocality": "Port Elizabeth Central, Port Elizabeth (Gqeberha)",
+        "addressRegion": "Eastern Cape"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9639607,
+        "longitude": 25.6213206
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 1 050 000 | 3 Bedroom Apartment in Port Elizabeth Central | Private Property",
+    "og:description": "Panoramic Bay Views\n\nSoak up the sunshine and sweeping views from this elegant top-floor penthouse - a rare gem offering space, charm, and serious lifestyle appeal! \n\n What You''ll Love:     3 Spaciou...",
+    "og:image": "https://images.pp.co.za/listing/11098888/eVCZfbbE18S0B9R3NXl3e1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 1 050 000 | 3 Bedroom Apartment in Port Elizabeth Central | Private Property",
+    "og:description": "Panoramic Bay Views\n\nSoak up the sunshine and sweeping views from this elegant top-floor penthouse - a rare gem offering space, charm, and serious lifestyle appeal! \n\n What You''ll Love:     3 Spaciou...",
+    "og:image": "https://images.pp.co.za/listing/11098888/eVCZfbbE18S0B9R3NXl3e1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566",
+    "description": "3 Bedroom Apartment in Port Elizabeth Central, 43 castle court, 16 castle hill, Panoramic Bay Views\n\nSoak up the sunshine and sweeping views from this elegant top-floor penthouse -",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "b7bba719ef15b203f0cd8db32f31c9798aee4a81728f564afea174ee85138078"
+}

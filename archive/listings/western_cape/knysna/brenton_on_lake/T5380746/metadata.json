@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5380746",
+  "source_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/brenton-on-lake/33-ss-brenton-park/1-kaptein-wa-duthie-street/T5380746",
+  "archived_at": "2026-08-26T10:40:31.279690Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|124bd349-f429-44ae-9c27-df9273350935|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=WD2hBx8y60-8uYWMcOhueA; expires=Sun, 26-Aug-2125 10:40:22 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 10:40:22 GMT",
+    "content-length": "32222"
+  },
+  "fetch_duration_sec": 2.5403902530670166,
+  "total_images_discovered": 51,
+  "total_images_archived": 51,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "4b37063f79be1bb21271629e5e85ce59b3a9ece3426589c02798f30a1ab8d352"
+}

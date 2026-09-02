@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5521422",
+  "source_url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/midstream-ridge/T5521422",
+  "archived_at": "2026-09-02T09:16:48.268640Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|5de3f511-69ca-4004-9525-9cd5644e3d81|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=tNtyL5ABKUW1vGcLqF42-g; expires=Sun, 02-Sep-2125 09:16:39 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 02 Sep 2026 09:16:38 GMT",
+    "content-length": "31596"
+  },
+  "fetch_duration_sec": 1.3400967121124268,
+  "total_images_discovered": 60,
+  "total_images_archived": 60,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "8f26bd2ae85b5ab222e9920b0f1307a81d257436794293aa83725c6373712f29"
+}

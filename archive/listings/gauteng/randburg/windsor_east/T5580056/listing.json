@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5580056",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/15-tallwoods/49-viscounts/T5580056",
+  "extracted_at": "2026-08-26T09:06:02.848762Z",
+  "title": "1 Bedroom Apartment in Windsor East",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-08-07",
+  "description": "Spacious one-bedroom apartment available in a safe building, offering a comfortable living experience. The unit features a well-equipped kitchen and a sizeable loungeliving room that opens onto a balc...",
+  "erf_size_m2": 991.0,
+  "land_size_raw": "991 m²",
+  "floor_size_m2": 59.0,
+  "price": {
+    "amount": 350000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 350 000",
+    "rates_and_taxes_monthly": 305.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "15 Tallwoods, 49 Viscounts",
+    "suburb": "Windsor East",
+    "city": "Johannesburg",
+    "region": "Windsor East, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.10005,
+    "longitude": 27.90459,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Windsor East",
+      "T5580056"
+    ]
+  },
+  "features": {
+    "bedrooms": 1.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 1",
+      "Bathrooms 1",
+      "Lounges 1",
+      "Open parking 1",
+      "Family TV room"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Basil Fergusson",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2313603/image/370f75a5da3d448d9f4e0872b86ed2a3_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/basil-fergusson/2313603/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11998095/UpBrb17w0zhPYEhV9xKa91/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/UpBrb17w0zhPYEhV9xKa91/1600/1066/contain/jpegorpng",
+      "local_filename": "001_UpBrb17w0zhPYEhV9xKa91.png",
+      "sha256": "c185aa6f015bad8a861e2c2d9c2df0c974b67b37a619ae2f934ff91fd24ce9e1",
+      "mime_type": "image/png",
+      "file_size_bytes": 1806923,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:06:04.409793Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11998095/wNPih7xMFRFLmz5KQgs0Q3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/wNPih7xMFRFLmz5KQgs0Q3/1600/1066/contain/jpegorpng",
+      "local_filename": "002_wNPih7xMFRFLmz5KQgs0Q3.png",
+      "sha256": "c8380a627b07e8aed85fab1fbcefe23a1fa004a3f7956c1c72f8ae5a06e7756e",
+      "mime_type": "image/png",
+      "file_size_bytes": 1775028,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:04.278113Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11998095/ejm1MTQKjqknIOcCS5T3N1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/ejm1MTQKjqknIOcCS5T3N1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_ejm1MTQKjqknIOcCS5T3N1.jpg",
+      "sha256": "d9613bd033a13db8a0e8b725d7deec85de650f8b5c2a799fe8ba4c493832caee",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113245,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:03.866354Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11998095/E4ViXUz50Z9hKZsz6jJ8J2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/E4ViXUz50Z9hKZsz6jJ8J2/1600/1066/contain/jpegorpng",
+      "local_filename": "004_E4ViXUz50Z9hKZsz6jJ8J2.jpg",
+      "sha256": "984a8037f56179ee1953b910544f147b79e61eeda4afb22544f247b532bc9c98",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157043,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:03.774393Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11998095/UvEpSW7vesspGi0Bnf2PH7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/UvEpSW7vesspGi0Bnf2PH7/1600/1066/contain/jpegorpng",
+      "local_filename": "005_UvEpSW7vesspGi0Bnf2PH7.jpg",
+      "sha256": "5ebc5e1cde840d4fac7eb137592fbd5038d4addc7f7d5cbe54c8c677ddc8420c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 209168,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:04.276404Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11998095/mVguNnBVEgI6cCSPOHNMF2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/mVguNnBVEgI6cCSPOHNMF2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_mVguNnBVEgI6cCSPOHNMF2.png",
+      "sha256": "5b305cf7b5cc40ee3e976943aab90f2f9f3dd1c5121628b62466b4834ce0532d",
+      "mime_type": "image/png",
+      "file_size_bytes": 1371059,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:03.953845Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11998095/Yabnv5uWm4Xt9Ri2EoviK1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/Yabnv5uWm4Xt9Ri2EoviK1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_Yabnv5uWm4Xt9Ri2EoviK1.jpg",
+      "sha256": "0d210652a682403f1f1fa8e6897949a1618ec45e8ad9070b16dfc6a3b9891dc6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 67700,
+      "width": 799,
+      "height": 1066,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:04.185478Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11998095/St8fh5OHA527TzLujU2yk5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/St8fh5OHA527TzLujU2yk5/1600/1066/contain/jpegorpng",
+      "local_filename": "008_St8fh5OHA527TzLujU2yk5.png",
+      "sha256": "07c31f17941f87a41a94af892afdc50bcd1a27487ca2ee68cd61c2c15ebb1b41",
+      "mime_type": "image/png",
+      "file_size_bytes": 1843113,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:05.075866Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11998095/1vPu1wmyfn6yq33Cdt2CJ5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11998095/1vPu1wmyfn6yq33Cdt2CJ5/1600/1066/contain/jpegorpng",
+      "local_filename": "009_1vPu1wmyfn6yq33Cdt2CJ5.jpg",
+      "sha256": "36aa4d962b6d436c69b7548df3d0e3c88a451f18ee767bf16e25e174290ebba8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199026,
+      "width": 1195,
+      "height": 896,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:06:04.619437Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/256",
+            "name": "Windsor East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/15-tallwoods/49-viscounts/T5580056",
+            "name": "T5580056"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11998095/UpBrb17w0zhPYEhV9xKa91/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15 Tallwoods, 49 Viscounts",
+        "addressLocality": "Windsor East, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.10005,
+        "longitude": 27.90459
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/15-tallwoods/49-viscounts/T5580056"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 350 000 | 1 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Spacious one-bedroom apartment available in a safe building, offering a comfortable living experience. The unit features a well-equipped kitchen and a sizeable loungeliving room that opens onto a balc...",
+    "og:image": "https://images.pp.co.za/listing/11998095/UpBrb17w0zhPYEhV9xKa91/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/15-tallwoods/49-viscounts/T5580056"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 350 000 | 1 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Spacious one-bedroom apartment available in a safe building, offering a comfortable living experience. The unit features a well-equipped kitchen and a sizeable loungeliving room that opens onto a balc...",
+    "og:image": "https://images.pp.co.za/listing/11998095/UpBrb17w0zhPYEhV9xKa91/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/15-tallwoods/49-viscounts/T5580056",
+    "description": "1 Bedroom Apartment in Windsor East, 15 tallwoods, 49 viscounts, Spacious one-bedroom apartment available in a safe building, offering a comfortable living experienc",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "0d5f72d982f2f7b12c6f70f1c41a13a491a283be845cd0db2027c3dfe2178ec1"
+}

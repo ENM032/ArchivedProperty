@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5151209",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/18-brittlewood-drive/T5151209",
+  "archived_at": "2026-08-26T09:48:42.423214Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|473c7dc4-85f1-4d02-aa2f-36a5c9c9c71a|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=YRrJmq_htUq-VMKRBs7csw; expires=Sun, 26-Aug-2125 09:48:31 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:48:31 GMT",
+    "content-length": "34491"
+  },
+  "fetch_duration_sec": 1.3444883823394775,
+  "total_images_discovered": 76,
+  "total_images_archived": 76,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "f1733a8ba83c2c44dff9ebd59265dc4cfab95dd3967f31689ed2812d5c323134"
+}
