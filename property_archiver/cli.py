@@ -13,6 +13,7 @@ from pathlib import Path
 import click
 from rich.console import Console
 from rich.panel import Panel
+from rich.progress import BarColumn, Progress, SpinnerColumn, TaskProgressColumn, TextColumn, TimeRemainingColumn
 from rich.table import Table
 from rich.tree import Tree
 
@@ -623,6 +624,113 @@ def edit_command(listing_id: str, status: str | None, notes: str | None, tags: s
     except Exception as exc:
         console.print(f"[bold red]Failed updating archive {clean_id}:[/bold red] {exc}")
         sys.exit(1)
+
+
+@main.command(name="sync")
+@click.option("--dry-run", is_flag=True, default=False, help="Preview updates without modifying archives on disk")
+@click.option("--province", "-p", type=str, default=None, help="Filter sync by province (e.g. 'Gauteng')")
+@click.option("--area", "-a", type=str, default=None, help="Filter sync by area (e.g. 'Sandton')")
+@click.option("--suburb", "-s", type=str, default=None, help="Filter sync by suburb (e.g. 'Rivonia')")
+@click.option("--status", type=click.Choice(["active_or_offer", "all", "active", "under_offer", "sold"], case_sensitive=False), default="active_or_offer", help="Filter sync by status")
+@click.option("--no-images", is_flag=True, default=False, help="Skip downloading delta images")
+@click.option("--rate-limit", type=float, default=None, help="Seconds delay between requests")
+@click.option("--archive-dir", "archive_dir", type=click.Path(exists=True), default="./archive", help="Archive directory path")
+def sync_command(dry_run: bool, province: str | None, area: str | None, suburb: str | None, status: str, no_images: bool, rate_limit: float | None, archive_dir: str):
+    """Automate listing lifecycle updates: check for price changes, status transitions, and delistings."""
+    from property_archiver.core.sync import SyncEngine, SyncResult
+
+    cfg = settings.model_copy()
+    cfg.archive_dir = archive_dir
+    if rate_limit is not None:
+        cfg.rate_limit_delay_sec = rate_limit
+
+    engine = SyncEngine(config=cfg)
+    targets = engine.discover_targets(
+        archive_dir=archive_dir,
+        filter_province=province,
+        filter_area=area,
+        filter_suburb=suburb,
+        filter_status=status,
+    )
+
+    if not targets:
+        console.print("[yellow]No archived listings matched the specified filters for sync.[/yellow]")
+        return
+
+    mode_label = "[bold yellow][DRY RUN][/bold yellow] " if dry_run else ""
+    console.print(f"\n{mode_label}[bold cyan]Synchronizing {len(targets)} listing(s)...[/bold cyan]\n")
+
+    events = []
+    updated = 0
+    unchanged = 0
+    delisted = 0
+    failed = 0
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TaskProgressColumn(),
+        TimeRemainingColumn(),
+        console=console,
+    ) as progress:
+        task = progress.add_task("Checking for updates...", total=len(targets))
+
+        for target_dir in targets:
+            progress.update(task, description=f"Syncing [cyan]{target_dir.name}[/cyan]...")
+            evt = engine.sync_single(target_dir, dry_run=dry_run, no_images=no_images)
+            events.append(evt)
+
+            if evt.event_type in ("price_drop", "price_increase", "status_transition", "spec_update"):
+                updated += 1
+            elif evt.event_type == "delisted":
+                delisted += 1
+            elif evt.event_type == "unchanged":
+                unchanged += 1
+            elif evt.event_type == "error":
+                failed += 1
+
+            progress.advance(task)
+
+    # Print Summary Table of changes
+    change_events = [e for e in events if e.event_type != "unchanged"]
+
+    if change_events:
+        table = Table(title=f"Portfolio Sync Results ({mode_label.strip() or 'Live'})", show_header=True)
+        table.add_column("Listing ID", style="cyan", width=12)
+        table.add_column("Suburb", style="white", width=15)
+        table.add_column("Event", style="bold", width=20)
+        table.add_column("Details", style="white")
+
+        for e in change_events:
+            if e.event_type == "price_drop":
+                event_badge = "[bold green]📉 Price Drop[/bold green]"
+            elif e.event_type == "price_increase":
+                event_badge = "[bold yellow]📈 Price Increase[/bold yellow]"
+            elif e.event_type == "status_transition":
+                event_badge = "[bold magenta]📝 Status Transition[/bold magenta]"
+            elif e.event_type == "delisted":
+                event_badge = "[bold red]🚫 Delisted[/bold red]"
+            elif e.event_type == "error":
+                event_badge = "[bold red]❌ Error[/bold red]"
+            else:
+                event_badge = "[bold blue]🏷️ Spec Update[/bold blue]"
+
+            table.add_row(e.listing_id, e.suburb or "", event_badge, e.details)
+
+        console.print()
+        console.print(table)
+        console.print()
+
+    # Final summary panel
+    summary_text = (
+        f"[bold]Total Scanned:[/bold] {len(targets)} | "
+        f"[bold green]Updated:[/bold green] {updated} | "
+        f"[bold]Unchanged:[/bold] {unchanged} | "
+        f"[bold yellow]Delisted:[/bold yellow] {delisted} | "
+        f"[bold red]Errors:[/bold red] {failed}"
+    )
+    console.print(Panel(summary_text, title="Sync Summary", border_style="cyan"))
 
 if __name__ == "__main__":
     main()
