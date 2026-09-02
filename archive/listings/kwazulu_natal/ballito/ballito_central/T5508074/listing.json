@@ -1,0 +1,541 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5508074",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/T5508074",
+  "extracted_at": "2026-08-26T09:54:02.365677Z",
+  "title": "3 Bedroom House in Ballito Central",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "under_offer",
+  "status_badges": [
+    "Under Offer"
+  ],
+  "is_under_offer": true,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-03",
+  "description": "SOLE MANDATE\n\nFreestanding Home in Secure Estate in Ballito - Manor Estate \n\nThis exquisite residence boasts 3 spacious bedrooms and 2 bathrooms MES, featuring an open-plan kitchen, dining, and lounge...",
+  "erf_size_m2": 245.0,
+  "land_size_raw": "245 m²",
+  "floor_size_m2": null,
+  "price": {
+    "amount": 2495000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 495 000",
+    "rates_and_taxes_monthly": 910.0,
+    "levies_monthly": 1450.0
+  },
+  "location": {
+    "street_address": "T5508074",
+    "suburb": "Ballito Central",
+    "city": "Dolphin Coast",
+    "region": "Ballito Central, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Ballito Central",
+      "T5508074"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 1",
+      "Pet friendly",
+      "Pool",
+      "Security post"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Naseera Samadt",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2137677/image/12575be81af348f2b9f66f1d2d4598eb_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/naseera-samadt/2137677/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11873426/lM4DEmSIUdlGo9qi80XZo5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/lM4DEmSIUdlGo9qi80XZo5/1600/1066/contain/jpegorpng",
+      "local_filename": "001_lM4DEmSIUdlGo9qi80XZo5.png",
+      "sha256": "06440664cbe4af7d19fdac3148c09fb1081ca327df87c6fbdb4bd8b65c322111",
+      "mime_type": "image/png",
+      "file_size_bytes": 2827177,
+      "width": 1600,
+      "height": 971,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:54:04.364579Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11873426/6MTX401uYOgPU6uurjAQJ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/6MTX401uYOgPU6uurjAQJ4/1600/1066/contain/jpegorpng",
+      "local_filename": "002_6MTX401uYOgPU6uurjAQJ4.png",
+      "sha256": "b642eb671562e49b41e89221227b4524a8535f9ae23cda1cbfb1e021a76289cf",
+      "mime_type": "image/png",
+      "file_size_bytes": 3091065,
+      "width": 1600,
+      "height": 1062,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:03.929195Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11873426/emPRw2Q2ZezCILP1pCILx5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/emPRw2Q2ZezCILP1pCILx5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_emPRw2Q2ZezCILP1pCILx5.jpg",
+      "sha256": "743e739604ddef5462c19cfcb433f32cd1bbf8a906ebdc5b41369e858afb9bc5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 254404,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.142802Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11873426/W0anYJ2woFk5fY92g535v2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/W0anYJ2woFk5fY92g535v2/1600/1066/contain/jpegorpng",
+      "local_filename": "004_W0anYJ2woFk5fY92g535v2.jpg",
+      "sha256": "e3cbba8a34f08570ac31ead111a03aeb4f4d97fd868b0fc9d1028bfe9194e5d4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 185729,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.123226Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11873426/HheZaA21TJtQxH8sOTKw33/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/HheZaA21TJtQxH8sOTKw33/1600/1066/contain/jpegorpng",
+      "local_filename": "005_HheZaA21TJtQxH8sOTKw33.jpg",
+      "sha256": "3e4087731f106d61897985e212b4ba4ee07794c200270f0ca0dc4c61cd58ef66",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 158289,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:03.328521Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11873426/ENJK3fUJCkMkIwScKCSbE4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/ENJK3fUJCkMkIwScKCSbE4/1600/1066/contain/jpegorpng",
+      "local_filename": "006_ENJK3fUJCkMkIwScKCSbE4.jpg",
+      "sha256": "50d9d7732acc3ce150129b980cafce7da355600948151ed7988562c1547c6c2d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135154,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.407888Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11873426/lWRSeSYJ8ONaFwgU1MURo1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/lWRSeSYJ8ONaFwgU1MURo1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_lWRSeSYJ8ONaFwgU1MURo1.jpg",
+      "sha256": "c9fee54aad9e915e4174a8abe3c510ab09998a684f93f7698e6bcd0b569513af",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 135096,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:03.699939Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11873426/3IMqfeBkwF5bPWWdp35PX7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/3IMqfeBkwF5bPWWdp35PX7/1600/1066/contain/jpegorpng",
+      "local_filename": "008_3IMqfeBkwF5bPWWdp35PX7.jpg",
+      "sha256": "e57b231afd8493b8b49ab8fb5e6b7a19d23f1693710c3b8b0279956323059339",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 122004,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.049917Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11873426/q5v0oCNX2AhSR4XB2zKJQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/q5v0oCNX2AhSR4XB2zKJQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_q5v0oCNX2AhSR4XB2zKJQ4.jpg",
+      "sha256": "2bd8eede1a60ba22b0ad86ee969c9a30234fc98b9f734cc2b5b95cdb7cc73ef2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166571,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.469741Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11873426/iPK1QTAbkqVYlV2CQ66Qm2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/iPK1QTAbkqVYlV2CQ66Qm2/1600/1066/contain/jpegorpng",
+      "local_filename": "010_iPK1QTAbkqVYlV2CQ66Qm2.jpg",
+      "sha256": "3cda8d7c42c22abefae24e8ddc69cc4022737273dc7d4ebe95fcfbad16e69603",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175623,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.395520Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11873426/3MDd0eQ84nUnI9ApqsVuY5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/3MDd0eQ84nUnI9ApqsVuY5/1600/1066/contain/jpegorpng",
+      "local_filename": "011_3MDd0eQ84nUnI9ApqsVuY5.jpg",
+      "sha256": "bf2fbd6f874405bd418eb0d9e37d73ee957fede1e279c6a0869d0bc5137b04c0",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141592,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.654808Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11873426/x4ObdxBfvfR65pUQ2DxTb5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/x4ObdxBfvfR65pUQ2DxTb5/1600/1066/contain/jpegorpng",
+      "local_filename": "012_x4ObdxBfvfR65pUQ2DxTb5.jpg",
+      "sha256": "540bc1e6d18f2680ba3e4e40b3495f1b7c17bd7b8418d7fccb8e726b2148fb40",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 166111,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.841792Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11873426/9BnCYiIqBTt6SkM5zTcmJ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/9BnCYiIqBTt6SkM5zTcmJ4/1600/1066/contain/jpegorpng",
+      "local_filename": "013_9BnCYiIqBTt6SkM5zTcmJ4.jpg",
+      "sha256": "a45baa8a49a1012e2582d3e1cb0bc252944c4662320886c0c84bc60e69ef887f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 203293,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.738186Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11873426/M2EfSDuj1g6cz05Y5ni180/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/M2EfSDuj1g6cz05Y5ni180/1600/1066/contain/jpegorpng",
+      "local_filename": "014_M2EfSDuj1g6cz05Y5ni180.jpg",
+      "sha256": "d0a1753ba2cdf18e2881c730e8b6dd0791f2a55e38d924b872c542e8f788ea0b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179794,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.896862Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11873426/W9JMUHi4aSnAgn8MLjE8J6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/W9JMUHi4aSnAgn8MLjE8J6/1600/1066/contain/jpegorpng",
+      "local_filename": "015_W9JMUHi4aSnAgn8MLjE8J6.jpg",
+      "sha256": "ac7f2d352faffe8ab4ff71e96082639b2bdbf892b6d5ac97ae62be8949fa2148",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145897,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:05.715059Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11873426/52dVqxAoxVbOpK8bueu0J4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/52dVqxAoxVbOpK8bueu0J4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_52dVqxAoxVbOpK8bueu0J4.jpg",
+      "sha256": "8113b1d69bfec5d9aa89fee7a16ccf8e5dc774e2e59a8f1a6cc28bef682e4529",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 103386,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:04.811344Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11873426/XXRgX0uoDlpe0TKdVfYwQ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/XXRgX0uoDlpe0TKdVfYwQ4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_XXRgX0uoDlpe0TKdVfYwQ4.jpg",
+      "sha256": "cda0bb4a7f219246b8657a8d842e1a4f0d42c5db9dd1c5522203580f5fb04567",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 204204,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:05.049962Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11873426/8e75sgPS6PheZaDYiANJw5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/8e75sgPS6PheZaDYiANJw5/1600/1066/contain/jpegorpng",
+      "local_filename": "018_8e75sgPS6PheZaDYiANJw5.jpg",
+      "sha256": "c4278dd801cf88b152965dc2eec2cf40e8912cecc3c16e04a3ad3677afa226fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 105387,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:05.074136Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11873426/0nlZifjEugPCjOnIRMuDV0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/0nlZifjEugPCjOnIRMuDV0/1600/1066/contain/jpegorpng",
+      "local_filename": "019_0nlZifjEugPCjOnIRMuDV0.jpg",
+      "sha256": "d41faa87475dd5e92b5a8d88327ab6e5be4cf7a9d76c2b6d178247990bb05c1b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 161231,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:06.108303Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11873426/mfTSFLrel3ZeRdP1FBfWm1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/mfTSFLrel3ZeRdP1FBfWm1/1600/1066/contain/jpegorpng",
+      "local_filename": "020_mfTSFLrel3ZeRdP1FBfWm1.jpg",
+      "sha256": "415a6c752f30e4a47b7a3ddd1e76feaa2b638bd0a4529c0871176ed93c243358",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 354826,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:06.325061Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11873426/Nf3s5JEn0wDQdtNnkwMej5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/Nf3s5JEn0wDQdtNnkwMej5/1600/1066/contain/jpegorpng",
+      "local_filename": "021_Nf3s5JEn0wDQdtNnkwMej5.jpg",
+      "sha256": "b041ece5376a0d5dbf67e380bfbb7663ac412eb4c400101c11c6b295742fec98",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 364464,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:05.434601Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11873426/PdzwD4bkul2ZQKCyls7qK7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/PdzwD4bkul2ZQKCyls7qK7/1600/1066/contain/jpegorpng",
+      "local_filename": "022_PdzwD4bkul2ZQKCyls7qK7.jpg",
+      "sha256": "242d4048b1305082730b8eb3b9d36d88a5973383501f6cf1adb44fbb753dd66e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 258319,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:07.317776Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11873426/VWARfosURGACaqmNWopKg1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11873426/VWARfosURGACaqmNWopKg1/1600/1066/contain/jpegorpng",
+      "local_filename": "023_VWARfosURGACaqmNWopKg1.jpg",
+      "sha256": "923128bc51949046ca2d8ed95cc8486e87b94ceee98c23632ca160d97bee55c8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 251689,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "3 Bedroom House in Ballito Central photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:54:05.418899Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/574",
+            "name": "Ballito Central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/T5508074",
+            "name": "T5508074"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11873426/lM4DEmSIUdlGo9qi80XZo5/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ballito Central, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/T5508074"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 495 000 | 3 Bedroom House in Ballito Central | Private Property",
+    "og:description": "SOLE MANDATE\n\nFreestanding Home in Secure Estate in Ballito - Manor Estate \n\nThis exquisite residence boasts 3 spacious bedrooms and 2 bathrooms MES, featuring an open-plan kitchen, dining, and lounge...",
+    "og:image": "https://images.pp.co.za/listing/11873426/lM4DEmSIUdlGo9qi80XZo5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/T5508074"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 495 000 | 3 Bedroom House in Ballito Central | Private Property",
+    "og:description": "SOLE MANDATE\n\nFreestanding Home in Secure Estate in Ballito - Manor Estate \n\nThis exquisite residence boasts 3 spacious bedrooms and 2 bathrooms MES, featuring an open-plan kitchen, dining, and lounge...",
+    "og:image": "https://images.pp.co.za/listing/11873426/lM4DEmSIUdlGo9qi80XZo5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/ballito-central/T5508074",
+    "description": "3 Bedroom House in Ballito Central, SOLE MANDATE\n\nFreestanding Home in Secure Estate in Ballito - Manor Estate \n\nThis exquisite residenc",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "5160e945d41ce32edcec0a74009047bcedc8ca35b34cf07bbc3142f292001079"
+}

@@ -1,0 +1,454 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5568004",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/13-orgidee-avenue/T5568004",
+  "extracted_at": "2026-08-26T10:23:35.977662Z",
+  "title": "3 Bedroom House in Levalia",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-28",
+  "description": "Discover this beautiful, modern double-storey home nestled in a quiet and sought-after area of Lavalia. Designed for comfortable family living, it offers three spacious bedrooms and two modern bathroo...",
+  "erf_size_m2": 300.0,
+  "land_size_raw": "300 m²",
+  "floor_size_m2": 220.0,
+  "price": {
+    "amount": 2350000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 2 350 000",
+    "rates_and_taxes_monthly": 2240.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "13 Orgidee Avenue",
+    "suburb": "Levalia",
+    "city": "Garden Route",
+    "region": "Levallia, George",
+    "province": "Western Cape",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -33.9726851,
+    "longitude": 22.4863722,
+    "breadcrumbs": [
+      "South Africa",
+      "Western Cape",
+      "Garden Route",
+      "George",
+      "Levalia",
+      "T5568004"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": 1.0,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": true,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": true,
+    "has_fireplace": true,
+    "has_guest_toilet": true,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "En-suite 1",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Pet friendly",
+      "Alarm",
+      "Built in cupboards",
+      "Kitchen",
+      "Garden",
+      "Family TV room",
+      "Paving",
+      "Fireplace",
+      "Guest toilet"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Joelene Badenhorst",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2353790/image/72d62a1485044248af2bda3b7c176fbe_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/joelene-badenhorst/2353790/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11977176/APkq1QDSCLYbD8SCuUSRg1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/APkq1QDSCLYbD8SCuUSRg1/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 1",
+      "is_hero": true,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11977176/ei3dfu4NF3zCLDKwbHoYN6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/ei3dfu4NF3zCLDKwbHoYN6/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 2",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11977176/49p7i9LYrku9XYre3fbQJ2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/49p7i9LYrku9XYre3fbQJ2/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 3",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11977176/V2Q5Kje7IM5fHfBKp2LWj0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/V2Q5Kje7IM5fHfBKp2LWj0/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 4",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11977176/h5JEu0yCYhiwTEFCDmInT1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/h5JEu0yCYhiwTEFCDmInT1/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 5",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11977176/6QP82ZPnpmlgznJWwowAA7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/6QP82ZPnpmlgznJWwowAA7/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 6",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11977176/Sw4gFG6vVMzTcDTgEqBBJ4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/Sw4gFG6vVMzTcDTgEqBBJ4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 7",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11977176/DedEIpEa5iayc2wTloE2I1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/DedEIpEa5iayc2wTloE2I1/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 8",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11977176/TOPvScD34iyGfdCHcpqkk2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/TOPvScD34iyGfdCHcpqkk2/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 9",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11977176/Fp9DK5lmgyG2kNjBpy7vd1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/Fp9DK5lmgyG2kNjBpy7vd1/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 10",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11977176/fz4U9teNFsLpPtgNjqMwi4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/fz4U9teNFsLpPtgNjqMwi4/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 11",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11977176/LcQERJMVDDCwTEGP9jq1H3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/LcQERJMVDDCwTEGP9jq1H3/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 12",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11977176/ASYZENjuXuBm9Br8eosHo2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/ASYZENjuXuBm9Br8eosHo2/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 13",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11977176/baMFd750P8enN8qebx75Z3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/baMFd750P8enN8qebx75Z3/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 14",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11977176/Y40msYlhLVRwsRv9KqHQq6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/Y40msYlhLVRwsRv9KqHQq6/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 15",
+      "is_hero": false,
+      "downloaded_at": null
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11977176/LVa1aN7naJWMboxFDXQrE5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11977176/LVa1aN7naJWMboxFDXQrE5/1600/1066/contain/jpegorpng",
+      "local_filename": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_size_bytes": null,
+      "width": null,
+      "height": null,
+      "alt_text": "3 Bedroom House in Levalia photo number 16",
+      "is_hero": false,
+      "downloaded_at": null
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/4",
+            "name": "Western Cape"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/52",
+            "name": "Garden Route"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/921",
+            "name": "George"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/2443",
+            "name": "Levalia"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/13-orgidee-avenue/T5568004",
+            "name": "T5568004"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11977176/APkq1QDSCLYbD8SCuUSRg1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Orgidee Avenue",
+        "addressLocality": "Levallia, George",
+        "addressRegion": "Western Cape"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9726851,
+        "longitude": 22.4863722
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/13-orgidee-avenue/T5568004"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 2 350 000 | 3 Bedroom House in Levalia | Private Property",
+    "og:description": "Discover this beautiful, modern double-storey home nestled in a quiet and sought-after area of Lavalia. Designed for comfortable family living, it offers three spacious bedrooms and two modern bathroo...",
+    "og:image": "https://images.pp.co.za/listing/11977176/APkq1QDSCLYbD8SCuUSRg1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/13-orgidee-avenue/T5568004"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 2 350 000 | 3 Bedroom House in Levalia | Private Property",
+    "og:description": "Discover this beautiful, modern double-storey home nestled in a quiet and sought-after area of Lavalia. Designed for comfortable family living, it offers three spacious bedrooms and two modern bathroo...",
+    "og:image": "https://images.pp.co.za/listing/11977176/APkq1QDSCLYbD8SCuUSRg1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/george/levalia/13-orgidee-avenue/T5568004",
+    "description": "3 Bedroom House in Levalia, 13 orgidee avenue, Discover this beautiful, modern double-storey home nestled in a quiet and sought-after area of Laval",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "4aa2021e3530f742c592fa359a511da37a7320d1c060648a79d90402edb87faf"
+}

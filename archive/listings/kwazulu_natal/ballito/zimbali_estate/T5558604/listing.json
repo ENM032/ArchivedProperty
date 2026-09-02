@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5558604",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5558604",
+  "extracted_at": "2026-08-26T09:49:49.913575Z",
+  "title": "4 Bedroom House in Zimbali Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-20",
+  "description": "This modern four-bedroom home in Zimbali Hills offers four spacious en-suite bedrooms, including one on the entrance level next to the double garage and three upstairs of which two has their own balco...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 480.0,
+  "price": {
+    "amount": 10950000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 10 950 000",
+    "rates_and_taxes_monthly": 2200.0,
+    "levies_monthly": 8500.0
+  },
+  "location": {
+    "street_address": "T5558604",
+    "suburb": "Zimbali Estate",
+    "city": "Dolphin Coast",
+    "region": "Zimbali Estate, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Zimbali Estate",
+      "T5558604"
+    ]
+  },
+  "features": {
+    "bedrooms": 4.0,
+    "bathrooms": 4.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 4",
+      "Bathrooms 4",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Balcony",
+      "Laundry",
+      "Pool",
+      "Security post",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Shawn Smit",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2272239/image/8ab43bee19ec45b59c77ee6494d45a72_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/shawn-smit/2272239/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Dax Barker",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2042549/image/99598a7105f04273b398e9ebffe561cf_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/dax-barker/2042549/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11961050/BanFzeypFatuSjcZ6L2ww5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/BanFzeypFatuSjcZ6L2ww5/1600/1066/contain/jpegorpng",
+      "local_filename": "001_BanFzeypFatuSjcZ6L2ww5.png",
+      "sha256": "c21af9698f5f69087c2230e7f6642d34b37b3fd0b23c781478bc1f867fdb8706",
+      "mime_type": "image/png",
+      "file_size_bytes": 2748122,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:49:52.109077Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11961050/qQdo4Pg8UsQjeeAyaB6DX6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/qQdo4Pg8UsQjeeAyaB6DX6/1600/1066/contain/jpegorpng",
+      "local_filename": "002_qQdo4Pg8UsQjeeAyaB6DX6.png",
+      "sha256": "a342fe5d8be7241635fe77ba1790761a9a71f51fdb41670efac69e09994abda7",
+      "mime_type": "image/png",
+      "file_size_bytes": 2932265,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:52.721158Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11961050/49v0sOhuGzvPhW7udkQId1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/49v0sOhuGzvPhW7udkQId1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_49v0sOhuGzvPhW7udkQId1.png",
+      "sha256": "82465799c7908034bcea2a469443859324e27f4c0c829c873ce52f51d60c844b",
+      "mime_type": "image/png",
+      "file_size_bytes": 2681443,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:51.286865Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11961050/OABJJkVunl1kXqaz3GnWG5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/OABJJkVunl1kXqaz3GnWG5/1600/1066/contain/jpegorpng",
+      "local_filename": "004_OABJJkVunl1kXqaz3GnWG5.png",
+      "sha256": "c3499cdd5067c52918b5716001409f7c7e355b7e4d85a0f41fa1841bc6a916af",
+      "mime_type": "image/png",
+      "file_size_bytes": 2196718,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:52.768623Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11961050/Yu1Ly4wxWvtprOjo1h3Z65/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/Yu1Ly4wxWvtprOjo1h3Z65/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Yu1Ly4wxWvtprOjo1h3Z65.png",
+      "sha256": "54c4b2bd0b3dc28cdf2ac2d088da608502eb331880fe52bd938768f27ad0cdb5",
+      "mime_type": "image/png",
+      "file_size_bytes": 2114576,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:52.281521Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11961050/4xOk1suKTFGCuqdamErfF7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/4xOk1suKTFGCuqdamErfF7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_4xOk1suKTFGCuqdamErfF7.png",
+      "sha256": "41495668ecf412ce7a4b5aa2911394c86158a6489aa08f1dc4e4eeae70d70d20",
+      "mime_type": "image/png",
+      "file_size_bytes": 2360325,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:52.580021Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11961050/M1enogYJJZJwHkyKnx4aY1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/M1enogYJJZJwHkyKnx4aY1/1600/1066/contain/jpegorpng",
+      "local_filename": "007_M1enogYJJZJwHkyKnx4aY1.png",
+      "sha256": "dded302e8f4d09f1b595e61c7964c40c3200f3824b45e012c9f4c29fabaeab1e",
+      "mime_type": "image/png",
+      "file_size_bytes": 2545399,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.318883Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11961050/NDAhQZU5g1inqe50FiKi51/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/NDAhQZU5g1inqe50FiKi51/1600/1066/contain/jpegorpng",
+      "local_filename": "008_NDAhQZU5g1inqe50FiKi51.png",
+      "sha256": "223db79d914a7b779e6a01b49e16bb2f281505f730ff112d2fe58c44c6024330",
+      "mime_type": "image/png",
+      "file_size_bytes": 2002946,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:53.403562Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11961050/OW3oosSrsb8h2ROR2BXXu3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/OW3oosSrsb8h2ROR2BXXu3/1600/1066/contain/jpegorpng",
+      "local_filename": "009_OW3oosSrsb8h2ROR2BXXu3.png",
+      "sha256": "4166e6cbe1f3f7422bd65f728ef9d1013ecf886391734e965e35b5ad619972f1",
+      "mime_type": "image/png",
+      "file_size_bytes": 2205546,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.440106Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11961050/CughnsQmCFnkZH4qcxM5X0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/CughnsQmCFnkZH4qcxM5X0/1600/1066/contain/jpegorpng",
+      "local_filename": "010_CughnsQmCFnkZH4qcxM5X0.png",
+      "sha256": "5cccc0b06c710cd80a55f3d24998a9665790ae2eafa5439af7802a1dfa6549bc",
+      "mime_type": "image/png",
+      "file_size_bytes": 2262388,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.446111Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11961050/yUG1lZsNEcuERZ9tB5jOf1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/yUG1lZsNEcuERZ9tB5jOf1/1600/1066/contain/jpegorpng",
+      "local_filename": "011_yUG1lZsNEcuERZ9tB5jOf1.png",
+      "sha256": "9de9cd0377fa5c21a7778b1b4fe21304dadd2d8d13b0ecee3795e46d58982071",
+      "mime_type": "image/png",
+      "file_size_bytes": 2163694,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.555770Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11961050/n75HASRxoGAPLS2Ybhdr92/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/n75HASRxoGAPLS2Ybhdr92/1600/1066/contain/jpegorpng",
+      "local_filename": "012_n75HASRxoGAPLS2Ybhdr92.png",
+      "sha256": "a9de64f56c32a3f40b77bbf17408fd878cfa0474fc4d2e400d84f9af5a61b054",
+      "mime_type": "image/png",
+      "file_size_bytes": 2495205,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.552951Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11961050/xZCu0W9rHxLgsYjpJumnl5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/xZCu0W9rHxLgsYjpJumnl5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_xZCu0W9rHxLgsYjpJumnl5.png",
+      "sha256": "12f6fac8c4adf731afb1824a989b193bab40b37983331eb6977c205f39ba1818",
+      "mime_type": "image/png",
+      "file_size_bytes": 2353104,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:54.964605Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11961050/yOihKGfQ0ahJID8bCuXNb1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/yOihKGfQ0ahJID8bCuXNb1/1600/1066/contain/jpegorpng",
+      "local_filename": "014_yOihKGfQ0ahJID8bCuXNb1.png",
+      "sha256": "9d67c0846c17d889891dd2e4f0ed5b9363259e72cfd236fc18d2bd16938412fa",
+      "mime_type": "image/png",
+      "file_size_bytes": 2246920,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:56.268144Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11961050/Gwbs6FDqQAi0CQUnvK5q63/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/Gwbs6FDqQAi0CQUnvK5q63/1600/1066/contain/jpegorpng",
+      "local_filename": "015_Gwbs6FDqQAi0CQUnvK5q63.png",
+      "sha256": "78f45d140425567f3b0fcd50d3c84e5dec07a56f039cdb4a1fe2dcb487f78f43",
+      "mime_type": "image/png",
+      "file_size_bytes": 2268378,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:56.512247Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11961050/nIGfAIGe0gch89GB1uHAt6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/nIGfAIGe0gch89GB1uHAt6/1600/1066/contain/jpegorpng",
+      "local_filename": "016_nIGfAIGe0gch89GB1uHAt6.png",
+      "sha256": "81330085c62d876e6d4c0923b1aa53f152326735130b455e16f427a4bc8574db",
+      "mime_type": "image/png",
+      "file_size_bytes": 2658590,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:56.541951Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11961050/NJE3o0KC2yBTRN3XvGnXb4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/NJE3o0KC2yBTRN3XvGnXb4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_NJE3o0KC2yBTRN3XvGnXb4.png",
+      "sha256": "b7edb5a04ba94d190e9080e6b6fe03d94dbe41e77ac0f7e69d802c26efd8bdcf",
+      "mime_type": "image/png",
+      "file_size_bytes": 2169760,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:56.657506Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11961050/RHbdV9huvOaYzIwWsNZhC1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/RHbdV9huvOaYzIwWsNZhC1/1600/1066/contain/jpegorpng",
+      "local_filename": "018_RHbdV9huvOaYzIwWsNZhC1.png",
+      "sha256": "7385a386c1ad60a02be7b352f034605c1a431da4f0cabca61e84b39140c8316b",
+      "mime_type": "image/png",
+      "file_size_bytes": 2203474,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:56.213390Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11961050/hZD36vCtIl5Ag06PaDDIR4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/hZD36vCtIl5Ag06PaDDIR4/1600/1066/contain/jpegorpng",
+      "local_filename": "019_hZD36vCtIl5Ag06PaDDIR4.png",
+      "sha256": "0238cd81e3a43791b534e07e58b8dadd5f73c4f235d5fefa087eb302775628dd",
+      "mime_type": "image/png",
+      "file_size_bytes": 2596041,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:57.456159Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11961050/sH8vCMMuXL7d1uaNdCrMI6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/sH8vCMMuXL7d1uaNdCrMI6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_sH8vCMMuXL7d1uaNdCrMI6.png",
+      "sha256": "ca8366a5ef262a0c22a02caa6a5671739bd25eb16e2ce0cd8855f9a9c657ce1b",
+      "mime_type": "image/png",
+      "file_size_bytes": 2132686,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:58.530347Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11961050/KXerbyRYsL3gEd0aOR6Ko2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/KXerbyRYsL3gEd0aOR6Ko2/1600/1066/contain/jpegorpng",
+      "local_filename": "021_KXerbyRYsL3gEd0aOR6Ko2.png",
+      "sha256": "07f19f6dcb8d5ffead1412eedc9aca39431ea360d787d22d27ef9c2d7ab9a3a2",
+      "mime_type": "image/png",
+      "file_size_bytes": 2145351,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:57.801917Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11961050/pMU7rab6mbDNAb7bsoWA40/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/pMU7rab6mbDNAb7bsoWA40/1600/1066/contain/jpegorpng",
+      "local_filename": "022_pMU7rab6mbDNAb7bsoWA40.png",
+      "sha256": "d5e61c8dba8b54d451d38dd9ec7f7a1b87ab48bc5bbf86080f516c59f2d920d6",
+      "mime_type": "image/png",
+      "file_size_bytes": 2189028,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:57.671098Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11961050/f1UezgzEeShj94lxacpnD3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11961050/f1UezgzEeShj94lxacpnD3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_f1UezgzEeShj94lxacpnD3.png",
+      "sha256": "ad36fcf4038d1c771f4f77e61684232d578753149dce380c87479d2c13011d38",
+      "mime_type": "image/png",
+      "file_size_bytes": 2696134,
+      "width": 1536,
+      "height": 1024,
+      "alt_text": "4 Bedroom House in Zimbali Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:49:58.304449Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/666",
+            "name": "Zimbali Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5558604",
+            "name": "T5558604"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11961050/BanFzeypFatuSjcZ6L2ww5/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zimbali Estate, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5558604"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 10 950 000 | 4 Bedroom House in Zimbali Estate | Private Property",
+    "og:description": "This modern four-bedroom home in Zimbali Hills offers four spacious en-suite bedrooms, including one on the entrance level next to the double garage and three upstairs of which two has their own balco...",
+    "og:image": "https://images.pp.co.za/listing/11961050/BanFzeypFatuSjcZ6L2ww5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5558604"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 10 950 000 | 4 Bedroom House in Zimbali Estate | Private Property",
+    "og:description": "This modern four-bedroom home in Zimbali Hills offers four spacious en-suite bedrooms, including one on the entrance level next to the double garage and three upstairs of which two has their own balco...",
+    "og:image": "https://images.pp.co.za/listing/11961050/BanFzeypFatuSjcZ6L2ww5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5558604",
+    "description": "4 Bedroom House in Zimbali Estate, This modern four-bedroom home in Zimbali Hills offers four spacious en-suite bedrooms, including one",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "c53c1670be97f9068e8a3db54eac1145313a567607bed944c7015429e2f0286c"
+}

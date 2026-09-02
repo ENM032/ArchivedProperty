@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5504465",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/1-kenwyn/51ak1-duchesses-avenue/T5504465",
+  "extracted_at": "2026-08-26T09:14:26.384797Z",
+  "title": "1 Bedroom Apartment in Windsor East",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-05-31",
+  "description": "Secure 1-Bedroom Apartment with Scenic Views in Windsor East\n\n\n\nSPACIOUS ONE BEDROOM APARTMENT| ONE BATHROOM| SPARKLING POOL IN WINDSOR EAST\n\n\n\nWhy To Buy\n\n\n\n-One Bedroom\n\n-One Bathroom\n\n-83 sqm Floor...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 83.0,
+  "price": {
+    "amount": 410000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 410 000",
+    "rates_and_taxes_monthly": 395.0,
+    "levies_monthly": null
+  },
+  "location": {
+    "street_address": "1 Kenwyn, 51#AK1 Duchesses Avenue",
+    "suburb": "Windsor East",
+    "city": "Johannesburg",
+    "region": "Windsor East, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": -26.1211627,
+    "longitude": 27.9795162,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Windsor East",
+      "T5504465"
+    ]
+  },
+  "features": {
+    "bedrooms": 1.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 1.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": null,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": true,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 1",
+      "Bathrooms 1",
+      "Lounges 1",
+      "Garage parking 1",
+      "Open parking 1",
+      "Balcony",
+      "Pool",
+      "Scenic view",
+      "Security post",
+      "Entrance hall"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Roger de Sousa",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2329006/image/4b3a13ae6d6549ff81d4f2ace446fbfd_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/roger-de-sousa/2329006/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Anna Khumalo",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2353409/image/ad6b34fbd5824d8bb1f0657873ab6a61_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/anna-khumalo/2353409/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11867025/dmjW0O4I6NCvONLoR6McG0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/dmjW0O4I6NCvONLoR6McG0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_dmjW0O4I6NCvONLoR6McG0.png",
+      "sha256": "108ec9befe10ab3382dfde894f151f4bc83e8bd42ddfe0827094e1777791fdb6",
+      "mime_type": "image/png",
+      "file_size_bytes": 3337869,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:14:28.152159Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11867025/nf49pIE7sPd2QHXEQQLCM7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/nf49pIE7sPd2QHXEQQLCM7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_nf49pIE7sPd2QHXEQQLCM7.png",
+      "sha256": "3182535c1d2b40443129a2f71b019ef0d78ffed930ce68d97b6704ccb48296b0",
+      "mime_type": "image/png",
+      "file_size_bytes": 2400818,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:32.841999Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11867025/o28NwXK1Wa9MV41O6N9Uz5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/o28NwXK1Wa9MV41O6N9Uz5/1600/1066/contain/jpegorpng",
+      "local_filename": "003_o28NwXK1Wa9MV41O6N9Uz5.jpg",
+      "sha256": "544ef139505a21432b27235e5367d86febb535e9c11ab514c1b6677b5512c6e2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 154814,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:27.295176Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11867025/HebkUuIBCn4R54HvEVrNx0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/HebkUuIBCn4R54HvEVrNx0/1600/1066/contain/jpegorpng",
+      "local_filename": "004_HebkUuIBCn4R54HvEVrNx0.png",
+      "sha256": "d0620428b0e3f84a30de26246b2f18584d812e0b34a0cd46a7ef416e12e119c1",
+      "mime_type": "image/png",
+      "file_size_bytes": 3380357,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.579349Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11867025/Wv63CNjJ3IdsvQgOsCis20/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/Wv63CNjJ3IdsvQgOsCis20/1600/1066/contain/jpegorpng",
+      "local_filename": "005_Wv63CNjJ3IdsvQgOsCis20.jpg",
+      "sha256": "1a7cb75a9b7a222211dcc38f7a8f360fcb96d04a5bfca023dacc2e8d17c48212",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 57603,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:27.332138Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11867025/vmarOJonRXQk1iP5o5eWK6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/vmarOJonRXQk1iP5o5eWK6/1600/1066/contain/jpegorpng",
+      "local_filename": "006_vmarOJonRXQk1iP5o5eWK6.jpg",
+      "sha256": "7c64821c74ad86a0f054cea4b3664a618e13afabefae1f27a52a302d94f3835e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 76350,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:27.290711Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11867025/H6ilWYzOnCVVnMlz367rN4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/H6ilWYzOnCVVnMlz367rN4/1600/1066/contain/jpegorpng",
+      "local_filename": "007_H6ilWYzOnCVVnMlz367rN4.jpg",
+      "sha256": "71ddc86f7a094df42d5eeaccb75e9db7730e8a04ea170663920af31e7cd8d70e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 47777,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:27.686428Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11867025/SziaabKF6w0LT5DDOdNiA4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/SziaabKF6w0LT5DDOdNiA4/1600/1066/contain/jpegorpng",
+      "local_filename": "008_SziaabKF6w0LT5DDOdNiA4.jpg",
+      "sha256": "29bf3a883bc8cb7c280e5df93aef7b42057ed4fe7ed943fcae3b737e9f895886",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 62556,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:27.634431Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11867025/vgff0wZusb5xy8tV7NTXG7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/vgff0wZusb5xy8tV7NTXG7/1600/1066/contain/jpegorpng",
+      "local_filename": "009_vgff0wZusb5xy8tV7NTXG7.jpg",
+      "sha256": "bfa4834d623800eecbfdea59823a09a2fdf4507467ea4ce26f40a2eb08f77d78",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 57109,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.413898Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11867025/CGR7lOAIvRKu3S9sCToDY5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/CGR7lOAIvRKu3S9sCToDY5/1600/1066/contain/jpegorpng",
+      "local_filename": "010_CGR7lOAIvRKu3S9sCToDY5.png",
+      "sha256": "3182535c1d2b40443129a2f71b019ef0d78ffed930ce68d97b6704ccb48296b0",
+      "mime_type": "image/png",
+      "file_size_bytes": 2400818,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.772133Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11867025/OkU2otiNbUJbLtxRDIXUi5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/OkU2otiNbUJbLtxRDIXUi5/1600/1066/contain/jpegorpng",
+      "local_filename": "011_OkU2otiNbUJbLtxRDIXUi5.jpg",
+      "sha256": "d6a4cc47db9a7b7cd2eeea318246640a0f5747ab43ea367e4ecd0ff18da1111f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 62142,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.084940Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11867025/dUJJEsu2zDrWJIauzLqrp4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/dUJJEsu2zDrWJIauzLqrp4/1600/1066/contain/jpegorpng",
+      "local_filename": "012_dUJJEsu2zDrWJIauzLqrp4.jpg",
+      "sha256": "b7fbbe101e13d9b8311c7a8ae660d65810673185cc6cfa2bf03dddcaa3425d31",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 46041,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:31.761302Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11867025/qT2eaxlBonqGpV0fjxunU2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/qT2eaxlBonqGpV0fjxunU2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_qT2eaxlBonqGpV0fjxunU2.jpg",
+      "sha256": "fb19b9a6b1a28f514db0e2251a6199ec9f1f54f4a20dfce82889ccf543d2e515",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 48360,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.578150Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11867025/hMsuR6msbgFO7HXMOg1Y81/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/hMsuR6msbgFO7HXMOg1Y81/1600/1066/contain/jpegorpng",
+      "local_filename": "014_hMsuR6msbgFO7HXMOg1Y81.png",
+      "sha256": "108ec9befe10ab3382dfde894f151f4bc83e8bd42ddfe0827094e1777791fdb6",
+      "mime_type": "image/png",
+      "file_size_bytes": 3337869,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:29.548623Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11867025/laFPWwvH1861QZVEKuWGx1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/laFPWwvH1861QZVEKuWGx1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_laFPWwvH1861QZVEKuWGx1.jpg",
+      "sha256": "e64a07a4f18a03ccd8428a66a92cb70784328e901cfa6996567fa900a5ccb424",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197813,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.947927Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11867025/LTXj1Xqg9vCSzYu5rizPm4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/LTXj1Xqg9vCSzYu5rizPm4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_LTXj1Xqg9vCSzYu5rizPm4.jpg",
+      "sha256": "ea42506ed986c4bdb1661de0f8db83bc02151d96a912c2b8917d3a1289d1ef83",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 155522,
+      "width": 1296,
+      "height": 729,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:28.968886Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11867025/aja0yLYGBWwR8CNclvXb74/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11867025/aja0yLYGBWwR8CNclvXb74/1600/1066/contain/jpegorpng",
+      "local_filename": "017_aja0yLYGBWwR8CNclvXb74.png",
+      "sha256": "d0620428b0e3f84a30de26246b2f18584d812e0b34a0cd46a7ef416e12e119c1",
+      "mime_type": "image/png",
+      "file_size_bytes": 3380357,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "1 Bedroom Apartment in Windsor East photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:14:30.358820Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/256",
+            "name": "Windsor East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/1-kenwyn/51ak1-duchesses-avenue/T5504465",
+            "name": "T5504465"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11867025/dmjW0O4I6NCvONLoR6McG0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Kenwyn, 51#AK1 Duchesses Avenue",
+        "addressLocality": "Windsor East, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.1211627,
+        "longitude": 27.9795162
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/1-kenwyn/51ak1-duchesses-avenue/T5504465"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 410 000 | 1 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Secure 1-Bedroom Apartment with Scenic Views in Windsor East\n\n\n\nSPACIOUS ONE BEDROOM APARTMENT| ONE BATHROOM| SPARKLING POOL IN WINDSOR EAST\n\n\n\nWhy To Buy\n\n\n\n-One Bedroom\n\n-One Bathroom\n\n-83 sqm Floor...",
+    "og:image": "https://images.pp.co.za/listing/11867025/dmjW0O4I6NCvONLoR6McG0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/1-kenwyn/51ak1-duchesses-avenue/T5504465"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 410 000 | 1 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Secure 1-Bedroom Apartment with Scenic Views in Windsor East\n\n\n\nSPACIOUS ONE BEDROOM APARTMENT| ONE BATHROOM| SPARKLING POOL IN WINDSOR EAST\n\n\n\nWhy To Buy\n\n\n\n-One Bedroom\n\n-One Bathroom\n\n-83 sqm Floor...",
+    "og:image": "https://images.pp.co.za/listing/11867025/dmjW0O4I6NCvONLoR6McG0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/1-kenwyn/51ak1-duchesses-avenue/T5504465",
+    "description": "1 Bedroom Apartment in Windsor East, 1 kenwyn, 51#ak1 duchesses avenue, Secure 1-Bedroom Apartment with Scenic Views in Windsor East\n\n\n\nSPACIOUS ONE BEDROOM APARTMENT| ONE",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "e9192f4bb3c4f81dca9840ae72fd08905878aa7eb37f5e06f8c112d2de5f7dfe"
+}

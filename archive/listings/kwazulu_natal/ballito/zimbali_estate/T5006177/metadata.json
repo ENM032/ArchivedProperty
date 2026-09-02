@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5006177",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/T5006177",
+  "archived_at": "2026-08-26T09:35:59.861948Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|b5178bed-a31b-417a-9693-ddb43c0f6650|C2143|CD894",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=QuNM5UsdcE-H9IQ3BvI-iw; expires=Sun, 26-Aug-2125 09:35:54 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:35:54 GMT",
+    "content-length": "26311"
+  },
+  "fetch_duration_sec": 1.30796480178833,
+  "total_images_discovered": 26,
+  "total_images_archived": 26,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "11605d37ff9cef8d907ce1cc0b598723e28b6b9d4263a1fbb657cf5deed0f9bb"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5442416",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/palm-lakes-estate/T5442416",
+  "archived_at": "2026-08-26T10:07:29.859894Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|584964c8-010a-42ea-95ad-c9bc70fedb2d|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=E3Z3jryvVk-uhRo-4MSASQ; expires=Sun, 26-Aug-2125 10:07:28 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 10:07:28 GMT",
+    "content-length": "25504"
+  },
+  "fetch_duration_sec": 1.3124558925628662,
+  "total_images_discovered": 27,
+  "total_images_archived": 0,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "cb80b118cd48f6b5666dddf05e986d5ff4751ac5c9291098cc28ddf3a3577b51"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T3846586",
+  "archived_at": "2026-08-26T09:47:48.535604Z",
+  "archiver_version": "1.0.0",
+  "total_files": 3,
+  "files": {
+    "listing.json": "c9b702d59eb68147dd7e60a6c3207c88ea8a9291e0b414c3c934c43a879151d6",
+    "raw.html": "31763dbe212d67cc29e0151d01befaa0eb382575cd55ba244d80081286eb9896",
+    "metadata.json": "a917a5c58c927d47362f2ca572061a105ac4d5d84590787251c572b2a722b722"
+  }
+}

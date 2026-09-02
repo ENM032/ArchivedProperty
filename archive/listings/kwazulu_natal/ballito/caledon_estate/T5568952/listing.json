@@ -1,0 +1,691 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5568952",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/T5568952",
+  "extracted_at": "2026-08-26T10:20:14.216239Z",
+  "title": "3 Bedroom House in Caledon Estate",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-29",
+  "description": "SOLE MANDATE - A comfortable three-bedroom, two-bathroom home with modern finishes in the popular Caledon Estate. The bedrooms are well-proportioned and the layout makes good use of the space througho...",
+  "erf_size_m2": 505.0,
+  "land_size_raw": "505 m²",
+  "floor_size_m2": 203.0,
+  "price": {
+    "amount": 3500000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 3 500 000",
+    "rates_and_taxes_monthly": 1500.0,
+    "levies_monthly": 1998.0
+  },
+  "location": {
+    "street_address": "T5568952",
+    "suburb": "Caledon Estate",
+    "city": "Dolphin Coast",
+    "region": "Caledon Estate, Ballito",
+    "province": "KwaZulu Natal",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "KwaZulu Natal",
+      "Dolphin Coast",
+      "Ballito",
+      "Caledon Estate",
+      "T5568952"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": 2.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": true,
+    "has_garden": true,
+    "has_security_post": true,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": true,
+    "has_balcony": true,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": true,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2",
+      "Lounges 1",
+      "Dining areas 1",
+      "Garage parking 2",
+      "Open parking 3",
+      "Flatlets",
+      "Pet friendly",
+      "Balcony",
+      "Laundry",
+      "Patio",
+      "Pool",
+      "Security post",
+      "Garden"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Dylan Skewis",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2280399/image/28ab907de8104ea1912a4e733a96961a_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/dylan-skewis/2280399/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11978690/OWtJnuCs5bPNH7FDbmmm20/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/OWtJnuCs5bPNH7FDbmmm20/1600/1066/contain/jpegorpng",
+      "local_filename": "001_OWtJnuCs5bPNH7FDbmmm20.jpg",
+      "sha256": "8ed020f8cf3a409f379c04b86ff6f36d6577e04ea63c67b6375f3ab2cdc97128",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 419356,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T10:20:15.883009Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11978690/k3UaR6td4PihIvp2w53KR0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/k3UaR6td4PihIvp2w53KR0/1600/1066/contain/jpegorpng",
+      "local_filename": "002_k3UaR6td4PihIvp2w53KR0.jpg",
+      "sha256": "9ecca5b320a83e78c73bf53faf5f024d8ba835f2f858dedc0d81c682d58c5baf",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 389720,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.407349Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11978690/TjYd8KyAcd9xi8rsTFtcB2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/TjYd8KyAcd9xi8rsTFtcB2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_TjYd8KyAcd9xi8rsTFtcB2.jpg",
+      "sha256": "0c411a3dfd16cde05a22f162383ba5bab691fcfc71606886b297c73f485bcd34",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 371044,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.331723Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11978690/skdR992dtNkr4trn27pkC3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/skdR992dtNkr4trn27pkC3/1600/1066/contain/jpegorpng",
+      "local_filename": "004_skdR992dtNkr4trn27pkC3.jpg",
+      "sha256": "ea0f031027778d0a99264f35c67072d3ab9187e68f06e593a14fb8da12432e0d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 309183,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.527235Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11978690/R92IktNjzAfympI42ouay4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/R92IktNjzAfympI42ouay4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_R92IktNjzAfympI42ouay4.jpg",
+      "sha256": "4f25e8877cc46717933967759d5bc5a81f6d71427c619b0f5d15c73c6e9c556e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 383250,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.381731Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11978690/ipJX4D0grBpMxeXMDvzgi7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/ipJX4D0grBpMxeXMDvzgi7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_ipJX4D0grBpMxeXMDvzgi7.jpg",
+      "sha256": "6c55023d074394f53adfdf4f0ea38bd5c5b7f64c8c82cfc3b33682937495501b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 381580,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.194798Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11978690/d3AWQOxCSRbAh8ckmXLCR2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/d3AWQOxCSRbAh8ckmXLCR2/1600/1066/contain/jpegorpng",
+      "local_filename": "007_d3AWQOxCSRbAh8ckmXLCR2.jpg",
+      "sha256": "088149dfb43cd3c9d7aa84b6b8e370d87a4ff5f90af319ed8bd48a9b834142f6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216720,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:16.007482Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11978690/WWj4ilqTtdEWvwc6TsP6r1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/WWj4ilqTtdEWvwc6TsP6r1/1600/1066/contain/jpegorpng",
+      "local_filename": "008_WWj4ilqTtdEWvwc6TsP6r1.jpg",
+      "sha256": "b388378621276cb85d6fff7e685239da08711b2734280680239121fbccd6a0e3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 226349,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.906580Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11978690/31VIOh15g9X957B9NO9Pa1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/31VIOh15g9X957B9NO9Pa1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_31VIOh15g9X957B9NO9Pa1.jpg",
+      "sha256": "d4d31676df1391ec23b1a387247bf00b8f4797f0b2f9fba879ff36b454fcfae4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 190218,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.762617Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11978690/N8vHA8Hic3PWlrMHgkFP17/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/N8vHA8Hic3PWlrMHgkFP17/1600/1066/contain/jpegorpng",
+      "local_filename": "010_N8vHA8Hic3PWlrMHgkFP17.jpg",
+      "sha256": "353d5f06dfea9e07521bb59bdb97570ab04768331a5b8ea9e121957ef5fce113",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 174532,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.812435Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11978690/QfW2hZPh7oMPC24J5HYlk2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/QfW2hZPh7oMPC24J5HYlk2/1600/1066/contain/jpegorpng",
+      "local_filename": "011_QfW2hZPh7oMPC24J5HYlk2.jpg",
+      "sha256": "2c06ed1bfd2bce7dccff28d9f70983ef23ac22b4cef5028acdb8c1ef3d83c3d4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 175466,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:15.951513Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11978690/3NNRCWuGXWNWtVmA6Va5j2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/3NNRCWuGXWNWtVmA6Va5j2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_3NNRCWuGXWNWtVmA6Va5j2.jpg",
+      "sha256": "fed8631e8037ddc17c1dd019b22e65d992f7ca672b633e9e12346ef5fec21ce3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 195946,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:16.362891Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11978690/OF2UaVd1JTXhAW6r0ieWI2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/OF2UaVd1JTXhAW6r0ieWI2/1600/1066/contain/jpegorpng",
+      "local_filename": "013_OF2UaVd1JTXhAW6r0ieWI2.jpg",
+      "sha256": "a9d900a2b73c56c6bf767e38ecbc79ac531eaca86a14ba9eb9da40ee7b5196ec",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114176,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.029509Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11978690/7xaTZgJeMnvMamfKGzVJu4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/7xaTZgJeMnvMamfKGzVJu4/1600/1066/contain/jpegorpng",
+      "local_filename": "014_7xaTZgJeMnvMamfKGzVJu4.jpg",
+      "sha256": "a4c21e09af719ff615f90d5c39a7315e1394b270432cf68d9da54228fb9e916a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 127239,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.192881Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11978690/zSwock42DUf0C2VsXneJr1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/zSwock42DUf0C2VsXneJr1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_zSwock42DUf0C2VsXneJr1.jpg",
+      "sha256": "fbb2a2ae7b2fee6342fc85350cbd01713b2838dbb64212f660b9d241e327d7ef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 120364,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:16.251133Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11978690/DQHfch3ZQp7ZMYvS0QkHW4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/DQHfch3ZQp7ZMYvS0QkHW4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_DQHfch3ZQp7ZMYvS0QkHW4.jpg",
+      "sha256": "033ebbe4a4e08621f802847afef295cb77a68879b0528c9e2efdbe5cd9d8d684",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 129697,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:16.291750Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11978690/t35UryclejKjVhTEpcsen1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/t35UryclejKjVhTEpcsen1/1600/1066/contain/jpegorpng",
+      "local_filename": "017_t35UryclejKjVhTEpcsen1.jpg",
+      "sha256": "b06e8edb029da3217a74cf237c686789db02210d5f99791a9d04e4dc1eaba4ed",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 170347,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.314785Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11978690/c4mxevkhpUlBsGMsIfHlJ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/c4mxevkhpUlBsGMsIfHlJ6/1600/1066/contain/jpegorpng",
+      "local_filename": "018_c4mxevkhpUlBsGMsIfHlJ6.jpg",
+      "sha256": "162e60dd41fd2057af7f24474db800ebe702a394b2d0d54990e808ef702c087c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 114956,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.172901Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11978690/LtUleD8T2IWCbbpWee3m01/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/LtUleD8T2IWCbbpWee3m01/1600/1066/contain/jpegorpng",
+      "local_filename": "019_LtUleD8T2IWCbbpWee3m01.jpg",
+      "sha256": "90950352a20af2837558959740e72f17f86a1c774fc18c66799a630ea4171784",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 116398,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:16.663126Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11978690/mhgLRVcjrHwKLkOn4S2983/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/mhgLRVcjrHwKLkOn4S2983/1600/1066/contain/jpegorpng",
+      "local_filename": "020_mhgLRVcjrHwKLkOn4S2983.jpg",
+      "sha256": "649f72c397c0631ca6bf2b4fd306d07c2aa14ad4fc8b57cd1156b842070310c3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 144780,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.549086Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11978690/GdTTz2a6ZGfMN9n6giMBy3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/GdTTz2a6ZGfMN9n6giMBy3/1600/1066/contain/jpegorpng",
+      "local_filename": "021_GdTTz2a6ZGfMN9n6giMBy3.jpg",
+      "sha256": "53082f64122369a837ece2a91c0781487649baad47848dd3e94885fbb930e30f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 106617,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.085565Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11978690/OcZqS1YWlLLJgyK4nHeCH2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/OcZqS1YWlLLJgyK4nHeCH2/1600/1066/contain/jpegorpng",
+      "local_filename": "022_OcZqS1YWlLLJgyK4nHeCH2.jpg",
+      "sha256": "ea6c3694d7af6051f2faed8f03591298d2eafca37533cb6f0c9f1b8927627538",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 244487,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.499708Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11978690/FCLZVH1huuypmgAHrUXlq6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/FCLZVH1huuypmgAHrUXlq6/1600/1066/contain/jpegorpng",
+      "local_filename": "023_FCLZVH1huuypmgAHrUXlq6.jpg",
+      "sha256": "935a5b2455698ce1c4b30220af864cf4398829c99241d1464d217e86dd15a1f9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139491,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.435115Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11978690/1uIAT12Ua3NcEh1FqkeLX1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/1uIAT12Ua3NcEh1FqkeLX1/1600/1066/contain/jpegorpng",
+      "local_filename": "024_1uIAT12Ua3NcEh1FqkeLX1.jpg",
+      "sha256": "dbac9c15ec0b4479dc7aec0d4ece4315ab470e8c4705d37d541cdddb010bc4d3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 172995,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.712294Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11978690/LoGLoy452LjyjrqyPlqhT7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/LoGLoy452LjyjrqyPlqhT7/1600/1066/contain/jpegorpng",
+      "local_filename": "025_LoGLoy452LjyjrqyPlqhT7.jpg",
+      "sha256": "e94e2fe5faac40d348957a45dc79d2ca92e8d2ee81946d1245fa35609c271c91",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 150858,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.681866Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11978690/cKLXo8GbYeslkrN3llJLD7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/cKLXo8GbYeslkrN3llJLD7/1600/1066/contain/jpegorpng",
+      "local_filename": "026_cKLXo8GbYeslkrN3llJLD7.jpg",
+      "sha256": "1932b09020625e6e7610f852aedff11a793c31b447f1966d1502bcd46e3a4dc5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 121983,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:17.777518Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11978690/JK8AOXC19hQYfgOKIJBdZ3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/JK8AOXC19hQYfgOKIJBdZ3/1600/1066/contain/jpegorpng",
+      "local_filename": "027_JK8AOXC19hQYfgOKIJBdZ3.jpg",
+      "sha256": "7a26e0a816bdd928ef1e02ae16df722efa5b31ed0fe527896c46f5f8c1570f5b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 346380,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.486393Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11978690/YbFOW6ziKOZl0rI6yhE2M5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/YbFOW6ziKOZl0rI6yhE2M5/1600/1066/contain/jpegorpng",
+      "local_filename": "028_YbFOW6ziKOZl0rI6yhE2M5.jpg",
+      "sha256": "ea09ac9060f57c200f5688ceb760ab7e3981c3646093dd800893655467c0731f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 230262,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.063351Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11978690/8g9zJhX3rwLgZf0pvuFug4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/8g9zJhX3rwLgZf0pvuFug4/1600/1066/contain/jpegorpng",
+      "local_filename": "029_8g9zJhX3rwLgZf0pvuFug4.jpg",
+      "sha256": "09868d39d10fabfdbc3dd94e31e16bd429a947f1c9fe60532d5bebd1d54ab878",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 488150,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.867456Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11978690/BGcuchvNaKY1SM3oH5iQ03/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/BGcuchvNaKY1SM3oH5iQ03/1600/1066/contain/jpegorpng",
+      "local_filename": "030_BGcuchvNaKY1SM3oH5iQ03.jpg",
+      "sha256": "b78503d69c5d21022f2f5ab44f111af2f2ea47955aaa50322cc79656ba861b5f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 475010,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.152821Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11978690/ROMOBxs0JCOMV1nw1AMz74/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/ROMOBxs0JCOMV1nw1AMz74/1600/1066/contain/jpegorpng",
+      "local_filename": "031_ROMOBxs0JCOMV1nw1AMz74.jpg",
+      "sha256": "160f8e5058863e05d2c6cc13fcb0badfe2c395a4c81070f74f0f34fe880cd8b5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 417718,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.620598Z"
+    },
+    {
+      "order_index": 31,
+      "original_url": "https://images.pp.co.za/listing/11978690/WglDvlXl0WOWz4HgtmhjM4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/WglDvlXl0WOWz4HgtmhjM4/1600/1066/contain/jpegorpng",
+      "local_filename": "032_WglDvlXl0WOWz4HgtmhjM4.jpg",
+      "sha256": "83a2d84de381a1f676c0cfa9bcf5578678dd84e64dd580ffacd4c4f298072ade",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 333839,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 32",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:18.717822Z"
+    },
+    {
+      "order_index": 32,
+      "original_url": "https://images.pp.co.za/listing/11978690/4yynLC3XGO7VnxHOt4tHT1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11978690/4yynLC3XGO7VnxHOt4tHT1/1600/1066/contain/jpegorpng",
+      "local_filename": "033_4yynLC3XGO7VnxHOt4tHT1.jpg",
+      "sha256": "59d021e50ce2394c4bb7965b1dbcaa48ac78bbbaa6229639824a3ac4486e5b4c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 354015,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Caledon Estate photo number 33",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T10:20:19.158241Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/6Opw3N2a1DI?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/2",
+            "name": "KwaZulu Natal"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/14",
+            "name": "Dolphin Coast"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/664",
+            "name": "Ballito"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/3054",
+            "name": "Caledon Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/T5568952",
+            "name": "T5568952"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11978690/OWtJnuCs5bPNH7FDbmmm20/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caledon Estate, Ballito",
+        "addressRegion": "KwaZulu Natal"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "2"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/T5568952"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 3 500 000 | 3 Bedroom House in Caledon Estate | Private Property",
+    "og:description": "SOLE MANDATE - A comfortable three-bedroom, two-bathroom home with modern finishes in the popular Caledon Estate. The bedrooms are well-proportioned and the layout makes good use of the space througho...",
+    "og:image": "https://images.pp.co.za/listing/11978690/OWtJnuCs5bPNH7FDbmmm20/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/T5568952"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 3 500 000 | 3 Bedroom House in Caledon Estate | Private Property",
+    "og:description": "SOLE MANDATE - A comfortable three-bedroom, two-bathroom home with modern finishes in the popular Caledon Estate. The bedrooms are well-proportioned and the layout makes good use of the space througho...",
+    "og:image": "https://images.pp.co.za/listing/11978690/OWtJnuCs5bPNH7FDbmmm20/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/caledon-estate/T5568952",
+    "description": "3 Bedroom House in Caledon Estate, SOLE MANDATE - A comfortable three-bedroom, two-bathroom home with modern finishes in the popular Ca",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "1b76238743f4a68ba8e905b789d335dec0d9fba4405ff891de702fae61a208de"
+}

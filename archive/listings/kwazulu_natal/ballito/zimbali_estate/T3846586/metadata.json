@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T3846586",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/24-lakewood-drive/T3846586",
+  "archived_at": "2026-08-26T09:47:48.447944Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|232ba8b4-d81b-436a-b9c1-a32fc468b4cb|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=vdJh2TW2LEK6Cb_875kMJg; expires=Sun, 26-Aug-2125 09:47:47 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:47:47 GMT",
+    "content-length": "25991"
+  },
+  "fetch_duration_sec": 1.3017871379852295,
+  "total_images_discovered": 38,
+  "total_images_archived": 0,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "e73a5a14e710229073b1e7c379417a94bdbc2b8d19fd4bb1525b8a2667630e74"
+}

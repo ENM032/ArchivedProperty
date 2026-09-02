@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5544965",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/51-zimbali-wedge/51-r627-road/T5544965",
+  "archived_at": "2026-08-26T09:29:22.923062Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|67f22e00-9586-4ce7-98e9-f21db53ca538|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=u4niYu7RbEaguBXsXTxAZA; expires=Sun, 26-Aug-2125 09:29:16 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:29:15 GMT",
+    "content-length": "26563"
+  },
+  "fetch_duration_sec": 1.3277866840362549,
+  "total_images_discovered": 27,
+  "total_images_archived": 27,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "edafbacf20561871302f697b6648bed4cc0acda15a88e7ad3c84b145d5a35502"
+}

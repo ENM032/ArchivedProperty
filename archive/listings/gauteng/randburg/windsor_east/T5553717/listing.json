@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5553717",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/T5553717",
+  "extracted_at": "2026-08-26T09:11:13.870249Z",
+  "title": "2 Bedroom Apartment in Windsor East",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-15",
+  "description": "Step into a neatly presented flat in Randburg, just 5 minutes away from Cresta Mall, where practical living meets a bright everyday flow. \n\nTwo bedrooms offer built in cupboards and a comfortable spac...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 48.0,
+  "price": {
+    "amount": 350000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 350 000",
+    "rates_and_taxes_monthly": 500.0,
+    "levies_monthly": 2250.0
+  },
+  "location": {
+    "street_address": "T5553717",
+    "suburb": "Windsor East",
+    "city": "Johannesburg",
+    "region": "Windsor East, Windsor, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Windsor East",
+      "T5553717"
+    ]
+  },
+  "features": {
+    "bedrooms": 2.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 2",
+      "Bathrooms 1",
+      "Open parking 1",
+      "Covered parking 1",
+      "Built in cupboards",
+      "Kitchen"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Jordan Govender",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2364463/image/5cca767ef49140e99d3f1efbe343274d_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/jordan-govender/2364463/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11952543/hjOeAZofydFAec50wNqft5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/hjOeAZofydFAec50wNqft5/1600/1066/contain/jpegorpng",
+      "local_filename": "001_hjOeAZofydFAec50wNqft5.jpg",
+      "sha256": "5f31f0aac7b42b7af2654c02123eecaa895666d378d3aed2166e5a51d2f9328b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 275956,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:11:15.100896Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11952543/BIs2GJgcHkp7J8IXWJWsb7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/BIs2GJgcHkp7J8IXWJWsb7/1600/1066/contain/jpegorpng",
+      "local_filename": "002_BIs2GJgcHkp7J8IXWJWsb7.jpg",
+      "sha256": "86d2a0b0eb495d1ba3fb9604f953f324ce593a0732f9ffe6e1b141bb8abbb4a7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 240456,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.310966Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11952543/GHegA84QI8rNOzVydvdfn0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/GHegA84QI8rNOzVydvdfn0/1600/1066/contain/jpegorpng",
+      "local_filename": "003_GHegA84QI8rNOzVydvdfn0.jpg",
+      "sha256": "2b685959b5619386c9112c03cbf083f4cbf126690bfdb3ddfaa161ba893ae572",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 239908,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.120278Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11952543/MSvJmlWxjzrWquVoJkQ674/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/MSvJmlWxjzrWquVoJkQ674/1600/1066/contain/jpegorpng",
+      "local_filename": "004_MSvJmlWxjzrWquVoJkQ674.jpg",
+      "sha256": "6d3721b327d25ad75490e3a2f92e143859bb08ff0fb6a76ec529d1a475c26c33",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 248802,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.014442Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11952543/ZR2fUOejFozdYcVxQniX04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/ZR2fUOejFozdYcVxQniX04/1600/1066/contain/jpegorpng",
+      "local_filename": "005_ZR2fUOejFozdYcVxQniX04.jpg",
+      "sha256": "53927dc273df7d08d7ef096a8988168c951865edfa7198121b0b47472df95627",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 219738,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.069191Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11952543/TGQeaNZ0AvpGMxJRcuVaO7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/TGQeaNZ0AvpGMxJRcuVaO7/1600/1066/contain/jpegorpng",
+      "local_filename": "006_TGQeaNZ0AvpGMxJRcuVaO7.jpg",
+      "sha256": "88894590a9499c4c3be1fb6e3d3a9508c71d2c3c75350cb6da6ca6821ccf120f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113146,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:14.818452Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11952543/2mR9TZbm1tvumjyxu7gEW5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/2mR9TZbm1tvumjyxu7gEW5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_2mR9TZbm1tvumjyxu7gEW5.jpg",
+      "sha256": "f6c7b05665786b57b8e6fe3fdbb3b0ebc9a96a47c1f2672d9ac6976f5e8698de",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 82478,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.914661Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11952543/iJVWQV0T4j2n973UuTn340/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/iJVWQV0T4j2n973UuTn340/1600/1066/contain/jpegorpng",
+      "local_filename": "008_iJVWQV0T4j2n973UuTn340.jpg",
+      "sha256": "98c69970d8716e0e038764bd4972ad0e7120b79af3b1dd8cf6c1218ba1f40f4c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 66819,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.391263Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11952543/uMM3tLNLuGXM7js8XHwz54/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/uMM3tLNLuGXM7js8XHwz54/1600/1066/contain/jpegorpng",
+      "local_filename": "009_uMM3tLNLuGXM7js8XHwz54.jpg",
+      "sha256": "2fb6abe861274e279cf0522e60e9ef7f51f939eb13e2fbcc5f88cf2039af349d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 88001,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.407916Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11952543/7E2NouRJ0sef5wIqR0Hu74/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/7E2NouRJ0sef5wIqR0Hu74/1600/1066/contain/jpegorpng",
+      "local_filename": "010_7E2NouRJ0sef5wIqR0Hu74.jpg",
+      "sha256": "6eb30b426350d41f554fbd1ea842cf97346c058233c9b1ef295ac924be7d687d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 83486,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.236111Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11952543/J2WMEWlpbevQvgaXWMk4F5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/J2WMEWlpbevQvgaXWMk4F5/1600/1066/contain/jpegorpng",
+      "local_filename": "011_J2WMEWlpbevQvgaXWMk4F5.jpg",
+      "sha256": "793820d6cd2a64ac4283922890c888dca9a9f1829dd5a2abe6ec6e77ff9f887e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130361,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.508213Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11952543/STHDnX8k9dUH8OHFfQlwO2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/STHDnX8k9dUH8OHFfQlwO2/1600/1066/contain/jpegorpng",
+      "local_filename": "012_STHDnX8k9dUH8OHFfQlwO2.jpg",
+      "sha256": "e8f3a5ed187414cf5fd3b8cf33570fd94f9dd3ac983969c3cbaaea84ff77f57f",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 134822,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.758037Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11952543/sBFb0CWwlkuUjPAVnv6qX6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/sBFb0CWwlkuUjPAVnv6qX6/1600/1066/contain/jpegorpng",
+      "local_filename": "013_sBFb0CWwlkuUjPAVnv6qX6.jpg",
+      "sha256": "0c50cf057808bea6086c7f1ad681cf453defda3faa876ac6aaf6c8f295323a4e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 94095,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.801399Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11952543/54grbF3yU4c9EtZJcxkYd1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/54grbF3yU4c9EtZJcxkYd1/1600/1066/contain/jpegorpng",
+      "local_filename": "014_54grbF3yU4c9EtZJcxkYd1.jpg",
+      "sha256": "c1e785cb8c3cd0b5bc6fad30919a934dcff65191bd6b223d9d0e650457b73822",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141986,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.764945Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11952543/pxqEeom12vdTyi0P9UBnh3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/pxqEeom12vdTyi0P9UBnh3/1600/1066/contain/jpegorpng",
+      "local_filename": "015_pxqEeom12vdTyi0P9UBnh3.jpg",
+      "sha256": "e4d58974ddf06808f477dc7788e72d3213cdb4e45e2ec5f6f49de120067accb5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 90617,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:15.862699Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11952543/EqetO3Kx8hAgBidwQwtgC0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/EqetO3Kx8hAgBidwQwtgC0/1600/1066/contain/jpegorpng",
+      "local_filename": "016_EqetO3Kx8hAgBidwQwtgC0.jpg",
+      "sha256": "5700f8edb75df2b72ffd17274e9de6ad470a3321b6528f60f78377474612bcc5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 85289,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.936945Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11952543/bIZExKCK1tyJ0TsZLNA4E4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/bIZExKCK1tyJ0TsZLNA4E4/1600/1066/contain/jpegorpng",
+      "local_filename": "017_bIZExKCK1tyJ0TsZLNA4E4.jpg",
+      "sha256": "4145a19dc15c1988094aa996961dc157296760d702b76635f78c48ab563f7552",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 145852,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.198623Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11952543/KkA2EvnyPJedWkKjCg3Xg1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/KkA2EvnyPJedWkKjCg3Xg1/1600/1066/contain/jpegorpng",
+      "local_filename": "018_KkA2EvnyPJedWkKjCg3Xg1.jpg",
+      "sha256": "94af4c7a51ccf53b68a87f5b9e3d6c3ba4b3eeea540cfb742ff2cf620fd1958e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 132738,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.159192Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11952543/lwB91xvYDsxjfvtPd8MAS2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/lwB91xvYDsxjfvtPd8MAS2/1600/1066/contain/jpegorpng",
+      "local_filename": "019_lwB91xvYDsxjfvtPd8MAS2.jpg",
+      "sha256": "9530c0b6eaa457aa919761473c3d26fec0dd3d8674e21afa558b2f3142325047",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149784,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.267613Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11952543/I2a1W3109mPrVFoFvLZn54/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/I2a1W3109mPrVFoFvLZn54/1600/1066/contain/jpegorpng",
+      "local_filename": "020_I2a1W3109mPrVFoFvLZn54.jpg",
+      "sha256": "5b3d76fb95504dfcb37be58b54f7b6b5a5e39fcfd28af99353fb0aee1377c02d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 97317,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.306347Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11952543/aW5n9Bg3ebG9QB85TbPAK4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/aW5n9Bg3ebG9QB85TbPAK4/1600/1066/contain/jpegorpng",
+      "local_filename": "021_aW5n9Bg3ebG9QB85TbPAK4.jpg",
+      "sha256": "4384f39cc85a137519a27a79eadb94311f6828866eea4218c9097b0f5379e4ca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 82822,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:17.291688Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11952543/JA25UhxELVgoNgSZPrYWw5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/JA25UhxELVgoNgSZPrYWw5/1600/1066/contain/jpegorpng",
+      "local_filename": "022_JA25UhxELVgoNgSZPrYWw5.jpg",
+      "sha256": "ff8ab1f629d332f9637447d2de793e632feb3f1d89e582c9256eb076bccf71af",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 76478,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.687882Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11952543/wLNuLb8rMiy2ieidjPQlE2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/wLNuLb8rMiy2ieidjPQlE2/1600/1066/contain/jpegorpng",
+      "local_filename": "023_wLNuLb8rMiy2ieidjPQlE2.jpg",
+      "sha256": "3963ebbdd11ae8f12e13d02982f197d7916005478ee10a79fb34d7d68f296bb1",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 78696,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.601182Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11952543/bmNzc2NyHgaIRhrZ7013q0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/bmNzc2NyHgaIRhrZ7013q0/1600/1066/contain/jpegorpng",
+      "local_filename": "024_bmNzc2NyHgaIRhrZ7013q0.jpg",
+      "sha256": "3d77b3fc67380dc98927e92b4aec61903c8b277d4db224ebfcacf27912288674",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 68459,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.802986Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11952543/HKx0MRUNjyM27y8yGcUdd3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11952543/HKx0MRUNjyM27y8yGcUdd3/1600/1066/contain/jpegorpng",
+      "local_filename": "025_HKx0MRUNjyM27y8yGcUdd3.jpg",
+      "sha256": "44514b1f62531fd0d474d3dcffbd09e07bf0816c108d7bef9a75033b6a1ea187",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 123093,
+      "width": 1600,
+      "height": 1063,
+      "alt_text": "2 Bedroom Apartment in Windsor East photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:11:16.726483Z"
+    }
+  ],
+  "videos": [],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/256",
+            "name": "Windsor East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/T5553717",
+            "name": "T5553717"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11952543/hjOeAZofydFAec50wNqft5/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Windsor East, Windsor, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/T5553717"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 350 000 | 2 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Step into a neatly presented flat in Randburg, just 5 minutes away from Cresta Mall, where practical living meets a bright everyday flow. \n\nTwo bedrooms offer built in cupboards and a comfortable spac...",
+    "og:image": "https://images.pp.co.za/listing/11952543/hjOeAZofydFAec50wNqft5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/T5553717"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 350 000 | 2 Bedroom Apartment in Windsor East | Private Property",
+    "og:description": "Step into a neatly presented flat in Randburg, just 5 minutes away from Cresta Mall, where practical living meets a bright everyday flow. \n\nTwo bedrooms offer built in cupboards and a comfortable spac...",
+    "og:image": "https://images.pp.co.za/listing/11952543/hjOeAZofydFAec50wNqft5/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/windsor-east/T5553717",
+    "description": "2 Bedroom Apartment in Windsor East, Step into a neatly presented flat in Randburg, just 5 minutes away from Cresta Mall, where practical",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "d7ab475f689ec7c3da8688996fdfa38237c998f484065f1fd57d05b809361380"
+}

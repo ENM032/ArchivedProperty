@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5492730",
+  "source_url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/22-brickmakers-kloof/T5492730",
+  "archived_at": "2026-08-26T13:07:56.693849Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|7c1e6ce6-e036-4190-a962-c6261cdcc4ad|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=EV0rsS5DeEaGPbxnMW6bVA; expires=Sun, 26-Aug-2125 13:07:50 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 13:07:50 GMT",
+    "content-length": "26373"
+  },
+  "fetch_duration_sec": 1.31058931350708,
+  "total_images_discovered": 31,
+  "total_images_archived": 31,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "b624035ea7e5ffc510a868056276936f43bb003e432fb68896c8ea7006a11016"
+}

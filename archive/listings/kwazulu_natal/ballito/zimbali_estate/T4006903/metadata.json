@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T4006903",
+  "source_url": "https://www.privateproperty.co.za/for-sale/kwazulu-natal/dolphin-coast/ballito/zimbali-estate/zimbali-beach-estate/18-weavers-pond/T4006903",
+  "archived_at": "2026-08-26T09:39:04.425394Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|8ec1219c-7538-42eb-a7c5-0ece2c87b964|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=_iXXQdNDzkurUMxIBR4-vQ; expires=Sun, 26-Aug-2125 09:38:58 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 09:38:58 GMT",
+    "content-length": "25811"
+  },
+  "fetch_duration_sec": 1.292046070098877,
+  "total_images_discovered": 34,
+  "total_images_archived": 34,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "87fd849be8eb1e9a559c2ec763210819e521f133575b2e242f089689934799f9"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5053566",
+  "source_url": "https://www.privateproperty.co.za/for-sale/eastern-cape/nelson-mandela-bay/port-elizabeth-gqeberha/port-elizabeth-central/43-castle-court/16-castle-hill/T5053566",
+  "archived_at": "2026-08-26T13:09:09.795627Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|792f8a59-e319-4639-8eef-f3d3b3992715|C2143|CD893",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=60wOTr_dqE-OCcwWhAedWw; expires=Sun, 26-Aug-2125 13:09:04 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 13:09:03 GMT",
+    "content-length": "25872"
+  },
+  "fetch_duration_sec": 1.3360333442687988,
+  "total_images_discovered": 28,
+  "total_images_archived": 28,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "b7bba719ef15b203f0cd8db32f31c9798aee4a81728f564afea174ee85138078"
+}

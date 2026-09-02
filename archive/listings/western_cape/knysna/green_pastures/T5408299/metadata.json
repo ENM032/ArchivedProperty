@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "listing_id": "T5408299",
+  "source_url": "https://www.privateproperty.co.za/for-sale/western-cape/garden-route/knysna/green-pastures/T5408299",
+  "archived_at": "2026-08-26T10:37:23.221635Z",
+  "archiver_version": "1.0.0",
+  "fetch_mode": "http",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "private",
+    "content-type": "text/html; charset=utf-8",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "x-stackifyid": "V2|20644513-e92f-432a-b6e2-8d94d0c13d7e|C2143|CD895",
+    "x-aspnetmvc-version": "5.2",
+    "x-aspnet-version": "4.0.30319",
+    "set-cookie": "live-za.phoenix.dv=hFzG42EqKEGwoVcF-MW2-g; expires=Sun, 26-Aug-2125 10:37:15 GMT; path=/, bondCalc_primeInterestRate=10.5; path=/, bondCalc_txtInterestRate=10.5; path=/",
+    "request-context": "appId=cid-v1:5b4bb0ff-c99e-4baa-a3eb-5ac874ea6840",
+    "access-control-expose-headers": "Request-Context",
+    "x-powered-by": "ASP.NET",
+    "x-frame-options": "sameorigin",
+    "date": "Wed, 26 Aug 2026 10:37:14 GMT",
+    "content-length": "25031"
+  },
+  "fetch_duration_sec": 1.3062703609466553,
+  "total_images_discovered": 22,
+  "total_images_archived": 22,
+  "total_archive_size_bytes": 0,
+  "content_fingerprint": "7d0daa756ddcb96510a7294fed8598a4b7ed83a46d6a864f2ddaad52d147f43b"
+}

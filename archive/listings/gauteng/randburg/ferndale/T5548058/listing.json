@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5548058",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/T5548058",
+  "extracted_at": "2026-08-26T09:04:13.947077Z",
+  "title": "2 Bedroom Apartment in Ferndale",
+  "listing_type": "for_sale",
+  "property_type": "Apartment",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-07-09",
+  "description": "Experience low-maintenance urban living in this spaciously designed 4th-floor apartment. Perfectly positioned for young professionals, small families, or practical investors, this home combines classi...",
+  "erf_size_m2": null,
+  "land_size_raw": null,
+  "floor_size_m2": 61.0,
+  "price": {
+    "amount": 325000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 325 000",
+    "rates_and_taxes_monthly": 827.0,
+    "levies_monthly": 2895.0
+  },
+  "location": {
+    "street_address": "T5548058",
+    "suburb": "Ferndale",
+    "city": "Johannesburg",
+    "region": "Ferndale, Randburg",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Johannesburg",
+      "Randburg",
+      "Ferndale",
+      "T5548058"
+    ]
+  },
+  "features": {
+    "bedrooms": 2.0,
+    "bathrooms": 1.0,
+    "en_suites": null,
+    "lounges": 1.0,
+    "dining_rooms": 1.0,
+    "kitchens": null,
+    "study_rooms": null,
+    "garages": null,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": null,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": true,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": true,
+    "has_walk_in_closet": null,
+    "has_kitchen": true,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": null,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 2",
+      "Bathrooms 1",
+      "Lounges 1",
+      "Dining areas 1",
+      "Open parking 1",
+      "Storeys 1",
+      "Built in cupboards",
+      "Fenced",
+      "Kitchen"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Tammy Naidu",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2343625/image/38c9c1f2307b4256b3ae7fe609c79aab_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/tammy-naidu/2343625/"
+  },
+  "co_agents": [],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11942880/bdgGxShtFPALmOoXCadfM1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/bdgGxShtFPALmOoXCadfM1/1600/1066/contain/jpegorpng",
+      "local_filename": "001_bdgGxShtFPALmOoXCadfM1.jpg",
+      "sha256": "95a69150b167db662209131b00ff4ea83dbed37a3ab8bf50d503de3d0fee99fe",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 157863,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-08-26T09:04:14.817451Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11942880/x4KuST458teOsaaKhC4Jk0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/x4KuST458teOsaaKhC4Jk0/1600/1066/contain/jpegorpng",
+      "local_filename": "002_x4KuST458teOsaaKhC4Jk0.jpg",
+      "sha256": "7034ff8dda247089e5de01d36877d572dbc323a117ce7d004226db41ceafa66c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162074,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:14.702204Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11942880/CEsVoIoYuevPW3Amvnprl2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/CEsVoIoYuevPW3Amvnprl2/1600/1066/contain/jpegorpng",
+      "local_filename": "003_CEsVoIoYuevPW3Amvnprl2.jpg",
+      "sha256": "8574f3d2f7d1e72691fb908586dd5c07592c9ba8456bf189b35569fe1d5010ca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 136466,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:14.848676Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11942880/zUHoALCqVFGSjJvlfb3r41/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/zUHoALCqVFGSjJvlfb3r41/1600/1066/contain/jpegorpng",
+      "local_filename": "004_zUHoALCqVFGSjJvlfb3r41.jpg",
+      "sha256": "b44f80e7db821e71e927c84595619fdfa262bf9f4996704f261d2d76a98e2807",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 139988,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:14.836084Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11942880/BVCsaJnjib9gbcyX6E1Du6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/BVCsaJnjib9gbcyX6E1Du6/1600/1066/contain/jpegorpng",
+      "local_filename": "005_BVCsaJnjib9gbcyX6E1Du6.jpg",
+      "sha256": "bf3cd77ab1bb3c57ee4aede133d349e167de1262d0ce7f04ccb5b76bda517e14",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 153155,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.356330Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11942880/tCBWNx3Qnn0QtKd1p5Vo26/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/tCBWNx3Qnn0QtKd1p5Vo26/1600/1066/contain/jpegorpng",
+      "local_filename": "006_tCBWNx3Qnn0QtKd1p5Vo26.jpg",
+      "sha256": "654b05bf01b4ba4fdc402c21e2996064c77a2aae7505c143bb53f332ba7776ac",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 168346,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:14.857375Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11942880/BaspIMmufGlw3YoyIHHUB3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/BaspIMmufGlw3YoyIHHUB3/1600/1066/contain/jpegorpng",
+      "local_filename": "007_BaspIMmufGlw3YoyIHHUB3.jpg",
+      "sha256": "5346d963ba5f87755a26e068eed9215f015dcb4c33d91fdd9ad7fae60474400c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 162187,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.262956Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11942880/d0JYmdu4z2RcDkgIs7SOe6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/d0JYmdu4z2RcDkgIs7SOe6/1600/1066/contain/jpegorpng",
+      "local_filename": "008_d0JYmdu4z2RcDkgIs7SOe6.jpg",
+      "sha256": "ba8fe37e8a0eee109fe0ff67a259961226ba0cf7c6ca1bef72d919d2e9a1428d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 141836,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.458036Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11942880/LLMLuyhHQlvz9FioIRpFr1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/LLMLuyhHQlvz9FioIRpFr1/1600/1066/contain/jpegorpng",
+      "local_filename": "009_LLMLuyhHQlvz9FioIRpFr1.jpg",
+      "sha256": "abce1685926b3107edf4d760ad009cc3518f7a8053043db56b23ba83b62e57eb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 122809,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.324886Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11942880/SKXIsHvvrLgB5JL5GMbLR4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/SKXIsHvvrLgB5JL5GMbLR4/1600/1066/contain/jpegorpng",
+      "local_filename": "010_SKXIsHvvrLgB5JL5GMbLR4.jpg",
+      "sha256": "2ceda686af4c472e01dc252ba8217d0d6c8facc9542c5b928dc542814c1b3425",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 146146,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.209635Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11942880/gbyaGjMLHPgUnvqM8FdRS7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/gbyaGjMLHPgUnvqM8FdRS7/1600/1066/contain/jpegorpng",
+      "local_filename": "011_gbyaGjMLHPgUnvqM8FdRS7.jpg",
+      "sha256": "0ebfc596e447cb8c8616ce7ba631ae444e0a46dd313440386e7eaffc8b9ab32c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 149729,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.968832Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11942880/wAwcVijoWbIoHTDe5OZfn3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/wAwcVijoWbIoHTDe5OZfn3/1600/1066/contain/jpegorpng",
+      "local_filename": "012_wAwcVijoWbIoHTDe5OZfn3.jpg",
+      "sha256": "c49b8bc510f8e3a128424b0c7dd72d1a6a7c1748042b6570af66c9d5e342de6c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 197171,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.107211Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11942880/c0NSABQUR1FdoZOiFch0n5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/c0NSABQUR1FdoZOiFch0n5/1600/1066/contain/jpegorpng",
+      "local_filename": "013_c0NSABQUR1FdoZOiFch0n5.jpg",
+      "sha256": "7aa3a51af65c91b1b411d8d4593222e0f83fddc983a94afe0503ae6258084446",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 147220,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.664164Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11942880/zpWw4pfftLFmNEu3bXmD80/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/zpWw4pfftLFmNEu3bXmD80/1600/1066/contain/jpegorpng",
+      "local_filename": "014_zpWw4pfftLFmNEu3bXmD80.jpg",
+      "sha256": "298288fdb669b69df4d1978ad7074952b2c54c36036d958cdaa673bab017507a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 110294,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.706011Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11942880/WfoftUv0EnwUJMSD1rUxI1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/WfoftUv0EnwUJMSD1rUxI1/1600/1066/contain/jpegorpng",
+      "local_filename": "015_WfoftUv0EnwUJMSD1rUxI1.jpg",
+      "sha256": "ca96845d7b3fe2eece084af67128860a9eb165c5029cf8945acd818c20deb0e4",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 113531,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:15.849142Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11942880/49JPAfedQ8ZBENlLokKno3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/49JPAfedQ8ZBENlLokKno3/1600/1066/contain/jpegorpng",
+      "local_filename": "016_49JPAfedQ8ZBENlLokKno3.jpg",
+      "sha256": "39a619dbcb829c3a212de57b3124e9e95cddf0baffbfa0e4083fa89bb97b77f6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 130219,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.081021Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11942880/axsqFUprrQbbmSr4qWToE5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/axsqFUprrQbbmSr4qWToE5/1600/1066/contain/jpegorpng",
+      "local_filename": "017_axsqFUprrQbbmSr4qWToE5.jpg",
+      "sha256": "a238c3d51ae3747230df4509bacf97e317194a0b559f2a4536371462915ae100",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 179043,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.771591Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11942880/LrLLoqnWUTLnE9wwv0hSv2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/LrLLoqnWUTLnE9wwv0hSv2/1600/1066/contain/jpegorpng",
+      "local_filename": "018_LrLLoqnWUTLnE9wwv0hSv2.jpg",
+      "sha256": "47123b4f6f38162fd8c5d2db355fa2c908171b37b28d69104c0173a5f39769b6",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167411,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.224766Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11942880/cHUNCh5zW2Ds7H6XywQNZ0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/cHUNCh5zW2Ds7H6XywQNZ0/1600/1066/contain/jpegorpng",
+      "local_filename": "019_cHUNCh5zW2Ds7H6XywQNZ0.jpg",
+      "sha256": "907a09f61a2539800c66bc994f65c8cb663ec029d71682cab2ed0d4ebd178bc9",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 156928,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:16.500604Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11942880/bDegSESytkdGogeZgrbNH6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11942880/bDegSESytkdGogeZgrbNH6/1600/1066/contain/jpegorpng",
+      "local_filename": "020_bDegSESytkdGogeZgrbNH6.jpg",
+      "sha256": "e5311cc10108802bca3a16fa9a6076790765af4dd6fd9c8cf3a84cc9255882ca",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 285115,
+      "width": 1600,
+      "height": 900,
+      "alt_text": "2 Bedroom Apartment in Ferndale photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-08-26T09:04:18.068785Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/pmHvuzsW-Lg?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/33",
+            "name": "Johannesburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/35",
+            "name": "Randburg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/250",
+            "name": "Ferndale"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/T5548058",
+            "name": "T5548058"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11942880/bdgGxShtFPALmOoXCadfM1/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ferndale, Randburg",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "1"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/T5548058"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 325 000 | 2 Bedroom Apartment in Ferndale | Private Property",
+    "og:description": "Experience low-maintenance urban living in this spaciously designed 4th-floor apartment. Perfectly positioned for young professionals, small families, or practical investors, this home combines classi...",
+    "og:image": "https://images.pp.co.za/listing/11942880/bdgGxShtFPALmOoXCadfM1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/T5548058"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 325 000 | 2 Bedroom Apartment in Ferndale | Private Property",
+    "og:description": "Experience low-maintenance urban living in this spaciously designed 4th-floor apartment. Perfectly positioned for young professionals, small families, or practical investors, this home combines classi...",
+    "og:image": "https://images.pp.co.za/listing/11942880/bdgGxShtFPALmOoXCadfM1/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/johannesburg/randburg/ferndale/T5548058",
+    "description": "2 Bedroom Apartment in Ferndale, Experience low-maintenance urban living in this spaciously designed 4th-floor apartment. Perfectly p",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "3616e85dd8cdcfad914424eebd380d0246d6e81a064f9f6d2472fd022b86cf74"
+}
