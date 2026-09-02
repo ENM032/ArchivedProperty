@@ -1,0 +1,801 @@
+{
+  "schema_version": "1.0.0",
+  "portal_name": "privateproperty.co.za",
+  "listing_id": "T5519983",
+  "canonical_url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/T5519983",
+  "extracted_at": "2026-09-02T09:20:40.296147Z",
+  "title": "3 Bedroom House in Retire at Midstream",
+  "listing_type": "for_sale",
+  "property_type": "House",
+  "listing_status": "active",
+  "status_badges": [],
+  "is_under_offer": false,
+  "is_sold": false,
+  "is_on_show": false,
+  "is_price_reduced": false,
+  "on_show_details": null,
+  "listing_date": "2026-06-12",
+  "description": "Exclusive mandate - on show, by appointment only! \n\nTucked away in a prestigious security estate, this immaculate 3-bedroom, single-level retirement home offers the perfect balance of elegance, comfor...",
+  "erf_size_m2": 651.0,
+  "land_size_raw": "651 m²",
+  "floor_size_m2": 295.0,
+  "price": {
+    "amount": 4645000.0,
+    "currency": "ZAR",
+    "formatted_display": "R 4 645 000",
+    "rates_and_taxes_monthly": 4128.0,
+    "levies_monthly": 3590.0
+  },
+  "location": {
+    "street_address": "Retire At Midstream",
+    "suburb": "Retire at Midstream",
+    "city": "Centurion",
+    "region": "Retire At Midstream, Midstream Estate, Centurion East",
+    "province": "Gauteng",
+    "country": "South Africa",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "breadcrumbs": [
+      "South Africa",
+      "Gauteng",
+      "Centurion",
+      "Centurion East",
+      "Midstream Estate",
+      "Retire at Midstream",
+      "T5519983"
+    ]
+  },
+  "features": {
+    "bedrooms": 3.0,
+    "bathrooms": 2.5,
+    "en_suites": null,
+    "lounges": null,
+    "dining_rooms": null,
+    "kitchens": null,
+    "study_rooms": 1.0,
+    "garages": 3.0,
+    "open_parkings": null,
+    "covered_parkings": null,
+    "has_pool": null,
+    "has_garden": true,
+    "has_security_post": null,
+    "has_access_gate": null,
+    "has_alarm": null,
+    "has_intercom": null,
+    "has_fencing": null,
+    "has_staff_quarters": null,
+    "has_patio": null,
+    "has_balcony": null,
+    "has_built_in_cupboards": null,
+    "has_walk_in_closet": null,
+    "has_kitchen": null,
+    "has_scullery": null,
+    "has_laundry": null,
+    "has_entrance_hall": null,
+    "has_family_tv_room": null,
+    "has_fireplace": null,
+    "has_guest_toilet": null,
+    "has_irrigation_system": null,
+    "has_aircon": null,
+    "has_storage": null,
+    "has_solar_inverter": null,
+    "is_pet_friendly": true,
+    "is_furnished": null,
+    "raw_features_list": [
+      "Bedrooms 3",
+      "Bathrooms 2.5",
+      "Garage parking 3",
+      "Pet friendly",
+      "Study",
+      "Garden",
+      "Water included"
+    ],
+    "custom_details": {}
+  },
+  "agent": {
+    "agent_name": "Mabette Vermaak",
+    "agency_name": null,
+    "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2079860/image/9eb8e45fc06048e7aacfa61db77bdf40_ach.jpg",
+    "agent_phone": null,
+    "agent_email": null,
+    "branch_name": null,
+    "profile_url": "/estate-agent/mabette-vermaak/2079860/"
+  },
+  "co_agents": [
+    {
+      "agent_name": "Louise Dobson",
+      "agency_name": null,
+      "agency_logo_url": "https://helium.privateproperty.co.za/live-za-images/accountholders/2143804/image/200a0202f75c48d2a81a16698aae4fec_ach.jpg",
+      "agent_phone": null,
+      "agent_email": null,
+      "branch_name": null,
+      "profile_url": "/estate-agent/louise-dobson/2143804/"
+    }
+  ],
+  "images": [
+    {
+      "order_index": 0,
+      "original_url": "https://images.pp.co.za/listing/11894507/51Ce0c4autdKGahpGEtlg0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/51Ce0c4autdKGahpGEtlg0/1600/1066/contain/jpegorpng",
+      "local_filename": "001_51Ce0c4autdKGahpGEtlg0.jpg",
+      "sha256": "72b7cc4d0b30e3cc51c44b412d30138d31571682a2980f2124396a376296c735",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212163,
+      "width": 1590,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 1",
+      "is_hero": true,
+      "downloaded_at": "2026-09-02T09:20:42.633551Z"
+    },
+    {
+      "order_index": 1,
+      "original_url": "https://images.pp.co.za/listing/11894507/wmfNMlQCzen2IBDePjZ5z2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/wmfNMlQCzen2IBDePjZ5z2/1600/1066/contain/jpegorpng",
+      "local_filename": "002_wmfNMlQCzen2IBDePjZ5z2.jpg",
+      "sha256": "a5ad3eff137b15fe2a4c016d4c30dab5833ac582edf0c77a223d50680da96650",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 281009,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 2",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.196345Z"
+    },
+    {
+      "order_index": 2,
+      "original_url": "https://images.pp.co.za/listing/11894507/prvhAG9BN3WLut5A6b43T1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/prvhAG9BN3WLut5A6b43T1/1600/1066/contain/jpegorpng",
+      "local_filename": "003_prvhAG9BN3WLut5A6b43T1.jpg",
+      "sha256": "06814fa481176f4a552afd6887985901b2afb4f17a4593d107c488aeb372146c",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 224764,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 3",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.197526Z"
+    },
+    {
+      "order_index": 3,
+      "original_url": "https://images.pp.co.za/listing/11894507/syYRbcs4BRAizG6rLYPo04/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/syYRbcs4BRAizG6rLYPo04/1600/1066/contain/jpegorpng",
+      "local_filename": "004_syYRbcs4BRAizG6rLYPo04.jpg",
+      "sha256": "b5d794272c9fad51da17c40e4c672ec9aa048ad690746c4ec56433fec655bbef",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178339,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 4",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.608914Z"
+    },
+    {
+      "order_index": 4,
+      "original_url": "https://images.pp.co.za/listing/11894507/5o12h9UfddnaJzUTIKbcV4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/5o12h9UfddnaJzUTIKbcV4/1600/1066/contain/jpegorpng",
+      "local_filename": "005_5o12h9UfddnaJzUTIKbcV4.jpg",
+      "sha256": "d9a956a4f098cbb4f0f1576d4927bd1f8bdd19c2e359349279b3533ede8b2244",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 177108,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 5",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.316161Z"
+    },
+    {
+      "order_index": 5,
+      "original_url": "https://images.pp.co.za/listing/11894507/AekmTA5ORDSttTrxDWGIp2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/AekmTA5ORDSttTrxDWGIp2/1600/1066/contain/jpegorpng",
+      "local_filename": "006_AekmTA5ORDSttTrxDWGIp2.jpg",
+      "sha256": "6088a253903476c8fce7ef6674390d0f41a0520673e41928454d2775850a8109",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 222100,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 6",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.196598Z"
+    },
+    {
+      "order_index": 6,
+      "original_url": "https://images.pp.co.za/listing/11894507/dmZWV8jNOR5ohkqXs9X6c5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/dmZWV8jNOR5ohkqXs9X6c5/1600/1066/contain/jpegorpng",
+      "local_filename": "007_dmZWV8jNOR5ohkqXs9X6c5.jpg",
+      "sha256": "71526518d210dc2d9901a714fda874c7416705d5a48235cd680475e803538082",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 217147,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 7",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.720040Z"
+    },
+    {
+      "order_index": 7,
+      "original_url": "https://images.pp.co.za/listing/11894507/i8Cj8XcLmaqobLVV8rbbU0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/i8Cj8XcLmaqobLVV8rbbU0/1600/1066/contain/jpegorpng",
+      "local_filename": "008_i8Cj8XcLmaqobLVV8rbbU0.jpg",
+      "sha256": "5f2a816b2244963d3be7c4364c972e12a665ea7f1eaa7308d06281d19bcd9c2b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202715,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 8",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.909881Z"
+    },
+    {
+      "order_index": 8,
+      "original_url": "https://images.pp.co.za/listing/11894507/zOn2rJr2zoQWcrmqq8ATS4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/zOn2rJr2zoQWcrmqq8ATS4/1600/1066/contain/jpegorpng",
+      "local_filename": "009_zOn2rJr2zoQWcrmqq8ATS4.jpg",
+      "sha256": "7c1d17ef44c3adc42cbb6574200e3ad3ba67d98ccaaeeac73f995278e45805d7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 188182,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 9",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.598085Z"
+    },
+    {
+      "order_index": 9,
+      "original_url": "https://images.pp.co.za/listing/11894507/7RfvdzjDZVvWmU14Ip6hL4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/7RfvdzjDZVvWmU14Ip6hL4/1600/1066/contain/jpegorpng",
+      "local_filename": "010_7RfvdzjDZVvWmU14Ip6hL4.jpg",
+      "sha256": "bb5fe6d00fc8471e38a61c6d95d67d1b79d5cdb1f782c97ff86cfdfd9b21b694",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182514,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 10",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.826427Z"
+    },
+    {
+      "order_index": 10,
+      "original_url": "https://images.pp.co.za/listing/11894507/6kAShxIkYl5D7Is6zVgqh4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/6kAShxIkYl5D7Is6zVgqh4/1600/1066/contain/jpegorpng",
+      "local_filename": "011_6kAShxIkYl5D7Is6zVgqh4.jpg",
+      "sha256": "e806962663a1d9e70afab37c736c24f9da72a99080c41776d1e644074fcc6c34",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 192547,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 11",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.115728Z"
+    },
+    {
+      "order_index": 11,
+      "original_url": "https://images.pp.co.za/listing/11894507/IRncWSEMUqnuP7qaYTp016/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/IRncWSEMUqnuP7qaYTp016/1600/1066/contain/jpegorpng",
+      "local_filename": "012_IRncWSEMUqnuP7qaYTp016.jpg",
+      "sha256": "55ab00bc882b964cebd276a9e02469b77476b306037f696400e11f9ffc5714bb",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 182399,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 12",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:41.968685Z"
+    },
+    {
+      "order_index": 12,
+      "original_url": "https://images.pp.co.za/listing/11894507/05RAsEsPTYJC68T3uzaX01/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/05RAsEsPTYJC68T3uzaX01/1600/1066/contain/jpegorpng",
+      "local_filename": "013_05RAsEsPTYJC68T3uzaX01.jpg",
+      "sha256": "4636672a96368b6c10b190b0f20c4a02acddde776453ddbdb781ccd9700ef7f2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 202618,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 13",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.088061Z"
+    },
+    {
+      "order_index": 13,
+      "original_url": "https://images.pp.co.za/listing/11894507/igMxxvHe68rUn1uxDYIyu1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/igMxxvHe68rUn1uxDYIyu1/1600/1066/contain/jpegorpng",
+      "local_filename": "014_igMxxvHe68rUn1uxDYIyu1.jpg",
+      "sha256": "7329e8d06cfe4c61201d47007fa66d2dbb35b61117aaaba373f891351c5ec212",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 209778,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 14",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.182937Z"
+    },
+    {
+      "order_index": 14,
+      "original_url": "https://images.pp.co.za/listing/11894507/cWdxNGLDqriFv2BdcbeCy4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/cWdxNGLDqriFv2BdcbeCy4/1600/1066/contain/jpegorpng",
+      "local_filename": "015_cWdxNGLDqriFv2BdcbeCy4.jpg",
+      "sha256": "5abf6679343dc0c8b1de2ef858da275a00088decaa3149aa5cab6911c9e16476",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 183571,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 15",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.264380Z"
+    },
+    {
+      "order_index": 15,
+      "original_url": "https://images.pp.co.za/listing/11894507/xsEgTBFxDlX0jkvb1s5tx4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/xsEgTBFxDlX0jkvb1s5tx4/1600/1066/contain/jpegorpng",
+      "local_filename": "016_xsEgTBFxDlX0jkvb1s5tx4.jpg",
+      "sha256": "0dc6da6c983df150c062f24c38f304f88095bf284e7a54fdd04a68c34d446d2d",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 178127,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 16",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.478266Z"
+    },
+    {
+      "order_index": 16,
+      "original_url": "https://images.pp.co.za/listing/11894507/hsHxoSv9KyOuJniNKzMB73/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/hsHxoSv9KyOuJniNKzMB73/1600/1066/contain/jpegorpng",
+      "local_filename": "017_hsHxoSv9KyOuJniNKzMB73.jpg",
+      "sha256": "f59ebbff08348484cc45d3a7924e5418ccce6d065c18fd64239cd20c117d64a2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 231452,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 17",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.368649Z"
+    },
+    {
+      "order_index": 17,
+      "original_url": "https://images.pp.co.za/listing/11894507/HumDhRMNpFih4tAleXQn27/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/HumDhRMNpFih4tAleXQn27/1600/1066/contain/jpegorpng",
+      "local_filename": "018_HumDhRMNpFih4tAleXQn27.jpg",
+      "sha256": "41865be173482c506a71e73de7fba3fd6e7d6d03407fb9a0e15706bc93b50f5e",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 244553,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 18",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.690776Z"
+    },
+    {
+      "order_index": 18,
+      "original_url": "https://images.pp.co.za/listing/11894507/N71ukAH2Eo8fPCjsdC6Mc6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/N71ukAH2Eo8fPCjsdC6Mc6/1600/1066/contain/jpegorpng",
+      "local_filename": "019_N71ukAH2Eo8fPCjsdC6Mc6.jpg",
+      "sha256": "18ce328bd51b6d0913f9808bfd29b6e6ee7d5de42c43fdaab5908ca3eee7f8b2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 262460,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 19",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.540659Z"
+    },
+    {
+      "order_index": 19,
+      "original_url": "https://images.pp.co.za/listing/11894507/jLG6HtnWVS6tJ5txTLBRY3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/jLG6HtnWVS6tJ5txTLBRY3/1600/1066/contain/jpegorpng",
+      "local_filename": "020_jLG6HtnWVS6tJ5txTLBRY3.jpg",
+      "sha256": "a689f494df71cd4d690391945bc1b0fe0912f426aafca04c63de98c91de20cf8",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 233637,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 20",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.623844Z"
+    },
+    {
+      "order_index": 20,
+      "original_url": "https://images.pp.co.za/listing/11894507/EmrTTYzwEy4njzwg14bn94/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/EmrTTYzwEy4njzwg14bn94/1600/1066/contain/jpegorpng",
+      "local_filename": "021_EmrTTYzwEy4njzwg14bn94.jpg",
+      "sha256": "9fff70763bbe448f239439708ef9aac3138b4c5fcaa68b2a1af976aff05eedd3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 220047,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 21",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.983744Z"
+    },
+    {
+      "order_index": 21,
+      "original_url": "https://images.pp.co.za/listing/11894507/Pe3qd3M2LJmaYAMYOWHdd2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/Pe3qd3M2LJmaYAMYOWHdd2/1600/1066/contain/jpegorpng",
+      "local_filename": "022_Pe3qd3M2LJmaYAMYOWHdd2.jpg",
+      "sha256": "a6b15300a8c7c48acf985f113af15009ce0e9ec35fb4abc8cfed6a1154e3ffb2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 79045,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 22",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:42.972447Z"
+    },
+    {
+      "order_index": 22,
+      "original_url": "https://images.pp.co.za/listing/11894507/nPAc2vuqpnMfhpDwFcj8M3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/nPAc2vuqpnMfhpDwFcj8M3/1600/1066/contain/jpegorpng",
+      "local_filename": "023_nPAc2vuqpnMfhpDwFcj8M3.jpg",
+      "sha256": "a0d04bf60d4b9a887360357103518aca13576bdb6219180751e5841053a5ac87",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 207533,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 23",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.042379Z"
+    },
+    {
+      "order_index": 23,
+      "original_url": "https://images.pp.co.za/listing/11894507/nGtR0VvZtP1BBHnhntoXJ1/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/nGtR0VvZtP1BBHnhntoXJ1/1600/1066/contain/jpegorpng",
+      "local_filename": "024_nGtR0VvZtP1BBHnhntoXJ1.jpg",
+      "sha256": "5749fd26d1f957d87a328dcb2f8fe21a2257c8fd6f4a2e2f8b3d242918f41351",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 180665,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 24",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.053391Z"
+    },
+    {
+      "order_index": 24,
+      "original_url": "https://images.pp.co.za/listing/11894507/V48SpSrccysEVNMQszkwU2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/V48SpSrccysEVNMQszkwU2/1600/1066/contain/jpegorpng",
+      "local_filename": "025_V48SpSrccysEVNMQszkwU2.jpg",
+      "sha256": "4e3adbc49f1bf4226b1a0b8d4268d43b9a00a1155e587ab99390b2cf2334f103",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 187563,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 25",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.071113Z"
+    },
+    {
+      "order_index": 25,
+      "original_url": "https://images.pp.co.za/listing/11894507/JymeDGVGB7E5sDmKUsM0S5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/JymeDGVGB7E5sDmKUsM0S5/1600/1066/contain/jpegorpng",
+      "local_filename": "026_JymeDGVGB7E5sDmKUsM0S5.jpg",
+      "sha256": "94b1c5bcbd826b3125db1f9a783ca59d528a422ab8ff7d9564c212cbb0b409e5",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 216097,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 26",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.557818Z"
+    },
+    {
+      "order_index": 26,
+      "original_url": "https://images.pp.co.za/listing/11894507/T6ys16WStipHnwvOUjaTI2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/T6ys16WStipHnwvOUjaTI2/1600/1066/contain/jpegorpng",
+      "local_filename": "027_T6ys16WStipHnwvOUjaTI2.jpg",
+      "sha256": "e4477b4bba82877a30a2a2730841b8c179b0f04c601f1f10fbcf930b6bc1950a",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 189343,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 27",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.501215Z"
+    },
+    {
+      "order_index": 27,
+      "original_url": "https://images.pp.co.za/listing/11894507/PBZWsbb7z2kbsscBM3ZIZ6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/PBZWsbb7z2kbsscBM3ZIZ6/1600/1066/contain/jpegorpng",
+      "local_filename": "028_PBZWsbb7z2kbsscBM3ZIZ6.jpg",
+      "sha256": "fdd8d5af9b34f8b7ef390d0e1902c073ab30a0b3eb3a04072f60f4f6848aef46",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 273751,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 28",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:45.248325Z"
+    },
+    {
+      "order_index": 28,
+      "original_url": "https://images.pp.co.za/listing/11894507/AGbxpBUwlud3o9BYAhcEw6/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/AGbxpBUwlud3o9BYAhcEw6/1600/1066/contain/jpegorpng",
+      "local_filename": "029_AGbxpBUwlud3o9BYAhcEw6.jpg",
+      "sha256": "1431ae2e577ca969e3b0a63555be016f0b238f2eb64de776a62df529217c84c7",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194223,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 29",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.489406Z"
+    },
+    {
+      "order_index": 29,
+      "original_url": "https://images.pp.co.za/listing/11894507/rgVNqIzCwxokBDBj01b1Y3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/rgVNqIzCwxokBDBj01b1Y3/1600/1066/contain/jpegorpng",
+      "local_filename": "030_rgVNqIzCwxokBDBj01b1Y3.jpg",
+      "sha256": "349bb4fe2a87c476af7abd8bce47abfc4d33b9eb9be6c9f7087aa9546e2ec779",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 191207,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 30",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:43.725333Z"
+    },
+    {
+      "order_index": 30,
+      "original_url": "https://images.pp.co.za/listing/11894507/izZk3lOZllipgrYAeEcXN0/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/izZk3lOZllipgrYAeEcXN0/1600/1066/contain/jpegorpng",
+      "local_filename": "031_izZk3lOZllipgrYAeEcXN0.jpg",
+      "sha256": "64bc8feb2c28e991206508eb290d1b37038ed30fe68156a9d68afcbc48e803e2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 184524,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 31",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.834641Z"
+    },
+    {
+      "order_index": 31,
+      "original_url": "https://images.pp.co.za/listing/11894507/YPXafbvE89NnBynt0gwrh5/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/YPXafbvE89NnBynt0gwrh5/1600/1066/contain/jpegorpng",
+      "local_filename": "032_YPXafbvE89NnBynt0gwrh5.jpg",
+      "sha256": "53dfe96b59150737bf499fb97cd1248919e1fcd24a74572c3222554c17e61633",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 212700,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 32",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.223657Z"
+    },
+    {
+      "order_index": 32,
+      "original_url": "https://images.pp.co.za/listing/11894507/9DRaKmkIv4nEWYTgVkbPW3/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/9DRaKmkIv4nEWYTgVkbPW3/1600/1066/contain/jpegorpng",
+      "local_filename": "033_9DRaKmkIv4nEWYTgVkbPW3.jpg",
+      "sha256": "6146f96dd9dab9865e6245e64033fbc5c1be790c58825a7ca47408ce539afa0b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 281238,
+      "width": 1600,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 33",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.224792Z"
+    },
+    {
+      "order_index": 33,
+      "original_url": "https://images.pp.co.za/listing/11894507/QoQVqbktVdodgFzcIGbpC4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/QoQVqbktVdodgFzcIGbpC4/1600/1066/contain/jpegorpng",
+      "local_filename": "034_QoQVqbktVdodgFzcIGbpC4.jpg",
+      "sha256": "b93dd9f6c7c664acd6b9c8aa83cd6a42954aee4c1337f317ec281f7a1ecc7fbc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 199333,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 34",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.443445Z"
+    },
+    {
+      "order_index": 34,
+      "original_url": "https://images.pp.co.za/listing/11894507/tkMJJV8kGjivpxP4hXYB76/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/tkMJJV8kGjivpxP4hXYB76/1600/1066/contain/jpegorpng",
+      "local_filename": "035_tkMJJV8kGjivpxP4hXYB76.jpg",
+      "sha256": "d3588e5adc28ffaf25c02f2b07273bed617159ca4f107fc39422be7ac64d08ae",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 194262,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 35",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.905919Z"
+    },
+    {
+      "order_index": 35,
+      "original_url": "https://images.pp.co.za/listing/11894507/GkSnJwVWFqFuqrbFlbheu2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/GkSnJwVWFqFuqrbFlbheu2/1600/1066/contain/jpegorpng",
+      "local_filename": "036_GkSnJwVWFqFuqrbFlbheu2.jpg",
+      "sha256": "86c9ac1eb440eb1ea8f5c4a588da6899acf7e10befdcb67e0a2d18ea7c5c93fc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 228427,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 36",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.655734Z"
+    },
+    {
+      "order_index": 36,
+      "original_url": "https://images.pp.co.za/listing/11894507/1bjvLUwmupfumpHRWtz6b2/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/1bjvLUwmupfumpHRWtz6b2/1600/1066/contain/jpegorpng",
+      "local_filename": "037_1bjvLUwmupfumpHRWtz6b2.jpg",
+      "sha256": "2e94d01ef82ab340b75c7a3ced7abcd8317558fd7b44c370e2c1d0d08679edfc",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 233278,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 37",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:44.822461Z"
+    },
+    {
+      "order_index": 37,
+      "original_url": "https://images.pp.co.za/listing/11894507/BlQqta39LujQgr8Y9Hlll4/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/BlQqta39LujQgr8Y9Hlll4/1600/1066/contain/jpegorpng",
+      "local_filename": "038_BlQqta39LujQgr8Y9Hlll4.jpg",
+      "sha256": "8cbe222e27848aacc75106bee7bff294e700927fe5afd941e4e30430c2c533e3",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 167458,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 38",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:45.795547Z"
+    },
+    {
+      "order_index": 38,
+      "original_url": "https://images.pp.co.za/listing/11894507/3PTCtR5GygOFzwiHOUgZm7/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/3PTCtR5GygOFzwiHOUgZm7/1600/1066/contain/jpegorpng",
+      "local_filename": "039_3PTCtR5GygOFzwiHOUgZm7.jpg",
+      "sha256": "e3bbdeac6d75fa576be0d96f5584fc57f6c2b179cde78f49721e68b64f2b64d2",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 248498,
+      "width": 1421,
+      "height": 1066,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 39",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:45.014444Z"
+    },
+    {
+      "order_index": 39,
+      "original_url": "https://images.pp.co.za/listing/11894507/7558jKdprVwXeN9VGx3E40/1024/682/contain/jpegorpng",
+      "resolved_url": "https://images.pp.co.za/listing/11894507/7558jKdprVwXeN9VGx3E40/1600/1066/contain/jpegorpng",
+      "local_filename": "040_7558jKdprVwXeN9VGx3E40.jpg",
+      "sha256": "8bdb091248d3b7409d5d1bf28fc9f316ef492a0142cee3b89aeaaa4a6511647b",
+      "mime_type": "image/jpeg",
+      "file_size_bytes": 214749,
+      "width": 1600,
+      "height": 1019,
+      "alt_text": "3 Bedroom House in Retire at Midstream photo number 40",
+      "is_hero": false,
+      "downloaded_at": "2026-09-02T09:20:45.592725Z"
+    }
+  ],
+  "videos": [
+    {
+      "provider": "YouTube",
+      "url": "https://www.youtube.com/embed/YIC988fh8C0?enablejsapi=1&rel=0",
+      "title": "Video Tour"
+    }
+  ],
+  "user_notes": null,
+  "user_tags": [],
+  "user_rating": null,
+  "raw_json_ld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/south-africa/1",
+            "name": "South Africa"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/3",
+            "name": "Gauteng"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/32",
+            "name": "Centurion"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/957",
+            "name": "Centurion East"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/762",
+            "name": "Midstream Estate"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/7341",
+            "name": "Retire at Midstream"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/T5519983",
+            "name": "T5519983"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Residence",
+      "photo": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://images.pp.co.za/listing/11894507/51Ce0c4autdKGahpGEtlg0/1600/1066/contain/jpegorpng"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Retire At Midstream, Midstream Estate, Centurion East",
+        "addressRegion": "Gauteng"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bedrooms",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bathrooms",
+          "value": "2.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Garages",
+          "value": "3"
+        }
+      ],
+      "url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/T5519983"
+    }
+  ],
+  "open_graph": {
+    "og:title": "R 4 645 000 | 3 Bedroom House in Retire at Midstream | Private Property",
+    "og:description": "Exclusive mandate - on show, by appointment only! \n\nTucked away in a prestigious security estate, this immaculate 3-bedroom, single-level retirement home offers the perfect balance of elegance, comfor...",
+    "og:image": "https://images.pp.co.za/listing/11894507/51Ce0c4autdKGahpGEtlg0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/T5519983"
+  },
+  "meta_tags": {
+    "viewport": "width=device-width",
+    "og:title": "R 4 645 000 | 3 Bedroom House in Retire at Midstream | Private Property",
+    "og:description": "Exclusive mandate - on show, by appointment only! \n\nTucked away in a prestigious security estate, this immaculate 3-bedroom, single-level retirement home offers the perfect balance of elegance, comfor...",
+    "og:image": "https://images.pp.co.za/listing/11894507/51Ce0c4autdKGahpGEtlg0/1600/1066/contain/jpegorpng",
+    "og:url": "https://www.privateproperty.co.za/for-sale/gauteng/centurion/centurion-east/midstream-estate/retire-at-midstream/T5519983",
+    "description": "3 Bedroom House in Retire at Midstream, Exclusive mandate - on show, by appointment only! \n\nTucked away in a prestigious security estate, th",
+    "google-site-verification": "ftsdikeau1SzGd7D0Klyfz29o1PfGqkQ8AhTDx1GIwM"
+  },
+  "content_fingerprint": "9c3a550ffad4587ab38d5102830be4cb5e65709fc29f0f5af23537162234b61c"
+}
