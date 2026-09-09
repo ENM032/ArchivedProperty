@@ -1,4 +1,4 @@
-/* Property Cards & Metrics Counters */
+/* Property Cards & Metrics Counters with CSS Browser Virtualization */
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -38,6 +38,7 @@
     gap: 1.5rem;
 }
 
+/* Browser Virtualization: Skips layout calculations for off-screen cards */
 .property-card {
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
@@ -48,6 +49,8 @@
     cursor: pointer;
     transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
     box-shadow: var(--shadow-sm);
+    content-visibility: auto;
+    contain-intrinsic-size: auto 340px;
 }
 .property-card:hover {
     transform: translateY(-3px);
@@ -61,6 +64,7 @@
     height: 200px;
     background-color: var(--bg-subtle);
     overflow: hidden;
+    aspect-ratio: 16 / 10;
 }
 .card-thumb {
     width: 100%;
@@ -184,4 +188,14 @@
     flex-wrap: wrap;
     gap: 0.35rem;
     margin-top: 0.5rem;
+}
+
+.grid-sentinel {
+    grid-column: 1 / -1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
 }

@@ -1,5 +1,5 @@
 /**
- * Grouped Location Accordion View Renderer (Province -> Area -> Suburb).
+ * Grouped Location Accordion View Renderer with DocumentFragment Batching.
  */
 import { formatZAR } from '../utils/formatters.js';
 import { createCardElement } from './gridView.js';
@@ -22,6 +22,8 @@ export function renderGroupedView(listings) {
         groups[prov][area][sub].push(item);
     });
 
+    const rootFragment = document.createDocumentFragment();
+
     for (const [prov, areas] of Object.entries(groups)) {
         let provCount = 0, provVal = 0;
         for (const a of Object.values(areas)) {
@@ -36,7 +38,7 @@ export function renderGroupedView(listings) {
         provBox.className = 'province-accordion';
         provBox.innerHTML = `
             <div class="province-header">
-                <div style="font-size: 1.15rem; font-weight: 700; color: var(--primary);">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--brand-navy);">
                     📍 ${prov}
                 </div>
                 <div style="font-size: 0.85rem; color: var(--text-muted);">
@@ -64,7 +66,10 @@ export function renderGroupedView(listings) {
 
                 const subGrid = document.createElement('div');
                 subGrid.className = 'property-grid';
-                subListings.forEach(item => subGrid.appendChild(createCardElement(item)));
+                
+                const cardFrag = document.createDocumentFragment();
+                subListings.forEach(item => cardFrag.appendChild(createCardElement(item)));
+                subGrid.appendChild(cardFrag);
 
                 subBlock.appendChild(subGrid);
                 areaSec.appendChild(subBlock);
@@ -73,6 +78,8 @@ export function renderGroupedView(listings) {
         }
 
         provBox.appendChild(body);
-        container.appendChild(provBox);
+        rootFragment.appendChild(provBox);
     }
+
+    container.appendChild(rootFragment);
 }
