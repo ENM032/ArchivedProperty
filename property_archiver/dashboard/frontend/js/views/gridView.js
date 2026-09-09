@@ -1,25 +1,81 @@
 /**
- * Flat Card Grid View Renderer with User Tags and Ratings.
+ * Flat Card Grid View Renderer with Native Lazy Loading, DocumentFragment Batching & Infinite Scroll.
  */
 import { formatZAR, formatDate } from '../utils/formatters.js';
 import { openDossier } from '../components/dossierModal.js';
+
+const BATCH_SIZE = 36;
+let currentListings = [];
+let renderedCount = 0;
+let scrollObserver = null;
 
 export function renderGridView(listings) {
     const grid = document.getElementById('property-grid');
     const empty = document.getElementById('empty-state');
     if (!grid) return;
-    grid.innerHTML = '';
 
-    if (listings.length === 0) {
+    // Disconnect previous observer
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+        scrollObserver = null;
+    }
+
+    grid.innerHTML = '';
+    currentListings = listings || [];
+    renderedCount = 0;
+
+    if (currentListings.length === 0) {
         if (empty) empty.style.display = 'block';
         return;
     }
     if (empty) empty.style.display = 'none';
 
-    listings.forEach(item => {
-        const card = createCardElement(item);
-        grid.appendChild(card);
+    // Render initial batch
+    appendNextBatch(grid);
+
+    // Setup Infinite Scroll Sentinel if more items remain
+    setupSentinel(grid);
+}
+
+function appendNextBatch(grid) {
+    const nextSlice = currentListings.slice(renderedCount, renderedCount + BATCH_SIZE);
+    if (nextSlice.length === 0) return;
+
+    const fragment = document.createDocumentFragment();
+    nextSlice.forEach(item => {
+        fragment.appendChild(createCardElement(item));
     });
+
+    grid.appendChild(fragment);
+    renderedCount += nextSlice.length;
+}
+
+function setupSentinel(grid) {
+    if (renderedCount >= currentListings.length) return;
+
+    let sentinel = document.getElementById('grid-scroll-sentinel');
+    if (!sentinel) {
+        sentinel = document.createElement('div');
+        sentinel.id = 'grid-scroll-sentinel';
+        sentinel.className = 'grid-sentinel';
+        sentinel.innerHTML = '<span>Loading more properties...</span>';
+    }
+
+    grid.appendChild(sentinel);
+
+    scrollObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            sentinel.remove();
+            appendNextBatch(grid);
+            if (renderedCount < currentListings.length) {
+                grid.appendChild(sentinel);
+            } else if (scrollObserver) {
+                scrollObserver.disconnect();
+            }
+        }
+    }, { rootMargin: '400px' });
+
+    scrollObserver.observe(sentinel);
 }
 
 export function createCardElement(item) {
@@ -39,7 +95,12 @@ export function createCardElement(item) {
 
     card.innerHTML = `
         <div class="card-thumb-wrapper">
-            <img class="card-thumb" src="${heroImg}" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
+            <img class="card-thumb" 
+                 src="${heroImg}" 
+                 loading="lazy" 
+                 decoding="async" 
+                 alt="${item.title || 'Property'}" 
+                 onerror="this.src='/api/placeholder'">
             <div class="card-badge ${statusClass}">${statusLabel}</div>
             <div class="img-count-tag">${item.images_count || 0} Photos</div>
         </div>

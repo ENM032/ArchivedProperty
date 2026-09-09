@@ -1,7 +1,15 @@
 /**
- * Filter & Location Drill-Down Toolbar Component.
+ * Filter & Location Drill-Down Toolbar Component with Search Debouncing.
  */
 import { store } from '../state/store.js';
+
+function debounce(fn, delay = 180) {
+    let timer = null;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), delay);
+    };
+}
 
 export function initFilterBar() {
     const container = document.getElementById('filter-bar-container');
@@ -51,8 +59,12 @@ export function initFilterBar() {
         </div>
     `;
 
-    // Attach Event Listeners
-    document.getElementById('search-input').oninput = (e) => store.updateFilters({ search: e.target.value });
+    // Attach Event Listeners with Debounced Search
+    const searchInput = document.getElementById('search-input');
+    searchInput.oninput = debounce((e) => {
+        store.updateFilters({ search: e.target.value });
+    }, 180);
+
     document.getElementById('listing-type-filter').onchange = (e) => store.updateFilters({ listingType: e.target.value });
     document.getElementById('prop-type-filter').onchange = (e) => store.updateFilters({ propertyType: e.target.value });
     document.getElementById('status-filter').onchange = (e) => store.updateFilters({ status: e.target.value });

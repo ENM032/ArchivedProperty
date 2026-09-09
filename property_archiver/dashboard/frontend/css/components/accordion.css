@@ -1,21 +1,18 @@
-/* Location Grouping Accordion View */
-.grouped-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
+/* Geographic Hierarchy Accordion View with CSS Virtualization */
 .province-accordion {
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
+    content-visibility: auto;
+    contain-intrinsic-size: auto 240px;
 }
 
 .province-header {
-    background-color: var(--bg-subtle);
-    padding: 1rem 1.5rem;
+    background-color: var(--bg-surface);
+    padding: 1rem 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,36 +20,39 @@
 }
 
 .area-section {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem;
     border-bottom: 1px solid var(--border);
+    background-color: var(--bg-canvas);
+    content-visibility: auto;
+    contain-intrinsic-size: auto 200px;
 }
 .area-section:last-child {
     border-bottom: none;
 }
 
 .area-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--brand-navy);
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .suburb-block {
     margin-bottom: 1.25rem;
-    background-color: var(--bg-subtle);
+    background-color: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     padding: 1rem;
 }
+.suburb-block:last-child {
+    margin-bottom: 0;
+}
+
 .suburb-header {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--brand-deep);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--brand-blue);
     margin-bottom: 0.75rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
