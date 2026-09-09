@@ -76,8 +76,8 @@ ap serve --port 8000
 ap tree
 
 # 4. Automate lifecycle updates (price drops, under offer, sold, delisted)
-ap sync
-ap sync --dry-run --suburb="Rivonia"
+ap sync -c 8
+ap sync --older-than 12h --dry-run
 
 # 5. Edit status, notes, tags, or rating
 ap edit T4710876 --status=under_offer --notes="Offer submitted" --tags="Prime, Shortlisted" --rating=5

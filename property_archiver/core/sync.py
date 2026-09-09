@@ -1,14 +1,19 @@
 """
 Sync Engine for automated listing lifecycle updates, price tracking, status transitions,
-delisting detection, and historic change ledger management.
+delisting detection, concurrent multi-threading, and historic change ledger management.
 """
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+import hashlib
 import json
 import logging
 from pathlib import Path
+import re
 from typing import Any, Callable
+
+import httpx
 
 from property_archiver.config import ArchiverSettings, settings
 from property_archiver.core.change_detector import ChangeDetector
@@ -47,6 +52,25 @@ class SyncResult:
     events: list[SyncListingEvent] = field(default_factory=list)
 
 
+def parse_time_delta(time_str: str) -> timedelta:
+    """Parse time string like '12h', '1d', '30m', '2w' into a timedelta."""
+    match = re.match(r"^(\d+)\s*([mhdwy])$", time_str.strip().lower())
+    if not match:
+        raise ValueError(f"Invalid duration format: '{time_str}'. Expected format like '12h', '1d', '30m'.")
+    val, unit = int(match.group(1)), match.group(2)
+    if unit == "m":
+        return timedelta(minutes=val)
+    elif unit == "h":
+        return timedelta(hours=val)
+    elif unit == "d":
+        return timedelta(days=val)
+    elif unit == "w":
+        return timedelta(weeks=val)
+    elif unit == "y":
+        return timedelta(days=val * 365)
+    return timedelta(hours=val)
+
+
 class SyncEngine:
     """Orchestrates portfolio re-scraping, change detection, and lifecycle tracking."""
 
@@ -70,11 +94,18 @@ class SyncEngine:
         filter_area: str | None = None,
         filter_suburb: str | None = None,
         filter_status: str | None = "active_or_offer",
+        filter_older_than: str | None = None,
     ) -> list[Path]:
-        """Discover listing directories matching the geographic and lifecycle filter criteria."""
+        """Discover listing directories matching the geographic, lifecycle, and stale filter criteria."""
         base_dir = Path(archive_dir).resolve()
         all_dirs = ArchiveReader.find_all_listing_dirs(base_dir)
         targets: list[Path] = []
+
+        now_utc = datetime.now(timezone.utc)
+        cutoff_dt: datetime | None = None
+        if filter_older_than:
+            delta = parse_time_delta(filter_older_than)
+            cutoff_dt = now_utc - delta
 
         for ldir in all_dirs:
             try:
@@ -96,6 +127,19 @@ class SyncEngine:
                 elif filter_status and filter_status != "all":
                     if filter_status.lower() != st:
                         continue
+
+                # Stale time filter
+                if cutoff_dt:
+                    try:
+                        meta = ArchiveReader.load_metadata(ldir)
+                        archived_dt = meta.archived_at
+                        if archived_dt.tzinfo is None:
+                            archived_dt = archived_dt.replace(tzinfo=timezone.utc)
+                        if archived_dt > cutoff_dt:
+                            # Listing was synced more recently than the cutoff, skip it
+                            continue
+                    except Exception:
+                        pass
 
                 targets.append(ldir)
             except Exception as exc:
@@ -134,6 +178,17 @@ class SyncEngine:
         content_lower = fetch_res.text.lower()
         if any(ind in content_lower for ind in self.DELIST_INDICATORS):
             return self._handle_delisted(listing_dir, old_record, "Delist text detected on page", dry_run)
+
+        # Content Fingerprint Fast-Bypass (<1ms execution for unchanged pages)
+        new_fingerprint = hashlib.sha256(fetch_res.content).hexdigest()
+        if old_record.content_fingerprint and new_fingerprint == old_record.content_fingerprint:
+            return SyncListingEvent(
+                listing_id=lid,
+                event_type="unchanged",
+                title=old_record.title,
+                suburb=suburb,
+                details="Content fingerprint matched (fast bypass)",
+            )
 
         # Re-extract fresh listing record
         try:
@@ -181,6 +236,65 @@ class SyncEngine:
             new_value=new_val,
             details=details,
         )
+
+    def sync_all(
+        self,
+        targets: list[Path],
+        dry_run: bool = False,
+        no_images: bool = False,
+        concurrency: int = 8,
+        progress_callback: Callable[[SyncListingEvent], None] | None = None,
+        fetcher: Fetcher | None = None,
+    ) -> SyncResult:
+        """
+        Execute concurrent sync over target listing directories using persistent connection pooling.
+        """
+        result = SyncResult(total_scanned=len(targets))
+        if not targets:
+            return result
+
+        shared_fetcher = fetcher or Fetcher(config=self.config)
+        concurrency = max(1, min(concurrency, 32))
+
+        # Single-threaded path
+        if concurrency == 1:
+            for t_dir in targets:
+                evt = self.sync_single(t_dir, dry_run=dry_run, no_images=no_images, fetcher=shared_fetcher)
+                self._record_event(result, evt)
+                if progress_callback:
+                    progress_callback(evt)
+            return result
+
+        # Multi-threaded concurrent worker pool
+        with ThreadPoolExecutor(max_workers=concurrency) as executor:
+            future_to_dir = {
+                executor.submit(self.sync_single, t_dir, dry_run, no_images, shared_fetcher): t_dir
+                for t_dir in targets
+            }
+            for future in as_completed(future_to_dir):
+                try:
+                    evt = future.result()
+                except Exception as exc:
+                    t_dir = future_to_dir[future]
+                    evt = SyncListingEvent(listing_id=t_dir.name, event_type="error", details=str(exc))
+                
+                self._record_event(result, evt)
+                if progress_callback:
+                    progress_callback(evt)
+
+        return result
+
+    def _record_event(self, result: SyncResult, evt: SyncListingEvent):
+        """Aggregate event counts into SyncResult."""
+        result.events.append(evt)
+        if evt.event_type in ("price_drop", "price_increase", "status_transition", "spec_update"):
+            result.updated_count += 1
+        elif evt.event_type == "delisted":
+            result.delisted_count += 1
+        elif evt.event_type == "unchanged":
+            result.unchanged_count += 1
+        elif evt.event_type == "error":
+            result.failed_count += 1
 
     def _handle_delisted(self, listing_dir: Path, old_record: ListingRecord, reason: str, dry_run: bool) -> SyncListingEvent:
         """Mark listing as delisted without removing historic assets."""

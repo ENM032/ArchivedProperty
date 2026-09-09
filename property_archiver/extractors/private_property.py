@@ -59,7 +59,10 @@ class PrivatePropertyExtractor(BaseExtractor):
         if not html:
             raise ExtractionError("Cannot extract from empty HTML document.")
 
-        soup = BeautifulSoup(html, "html.parser")
+        try:
+            soup = BeautifulSoup(html, "lxml")
+        except Exception:
+            soup = BeautifulSoup(html, "html.parser")
 
         # Step 1: Extract Listing ID
         listing_id = self._extract_listing_id(url, soup)

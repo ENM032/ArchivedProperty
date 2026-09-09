@@ -60,8 +60,14 @@ ap tree --suburb "Rivonia" --status active
 Check live portals for price reductions, status transitions (`for_sale` $\rightarrow$ `under_offer` $\rightarrow$ `sold`), and delistings:
 
 ```bash
-# Sync all active and under-offer listings in portfolio
+# Sync all active and under-offer listings in portfolio (default: 8 concurrent workers)
 ap sync
+
+# High-performance parallel sync with 16 workers
+ap sync --concurrency 16
+
+# Only sync stale listings that haven't been checked in the last 12 hours
+ap sync --older-than 12h
 
 # Preview changes without modifying disk archives
 ap sync --dry-run
@@ -69,7 +75,7 @@ ap sync --dry-run
 # Target specific region or suburb
 ap sync --province "Gauteng" --suburb "Rivonia"
 
-# Sync without downloading delta photos
+# High-speed metadata & pricing sync (skips delta photos)
 ap sync --no-images
 ```
 

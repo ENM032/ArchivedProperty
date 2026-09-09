@@ -628,6 +628,8 @@ def edit_command(listing_id: str, status: str | None, notes: str | None, tags: s
 
 @main.command(name="sync")
 @click.option("--dry-run", is_flag=True, default=False, help="Preview updates without modifying archives on disk")
+@click.option("--concurrency", "-c", type=int, default=8, help="Number of concurrent worker threads (default: 8)")
+@click.option("--older-than", "-t", type=str, default=None, help="Only sync listings older than duration (e.g. '12h', '1d', '30m')")
 @click.option("--province", "-p", type=str, default=None, help="Filter sync by province (e.g. 'Gauteng')")
 @click.option("--area", "-a", type=str, default=None, help="Filter sync by area (e.g. 'Sandton')")
 @click.option("--suburb", "-s", type=str, default=None, help="Filter sync by suburb (e.g. 'Rivonia')")
@@ -635,9 +637,20 @@ def edit_command(listing_id: str, status: str | None, notes: str | None, tags: s
 @click.option("--no-images", is_flag=True, default=False, help="Skip downloading delta images")
 @click.option("--rate-limit", type=float, default=None, help="Seconds delay between requests")
 @click.option("--archive-dir", "archive_dir", type=click.Path(exists=True), default="./archive", help="Archive directory path")
-def sync_command(dry_run: bool, province: str | None, area: str | None, suburb: str | None, status: str, no_images: bool, rate_limit: float | None, archive_dir: str):
+def sync_command(
+    dry_run: bool,
+    concurrency: int,
+    older_than: str | None,
+    province: str | None,
+    area: str | None,
+    suburb: str | None,
+    status: str,
+    no_images: bool,
+    rate_limit: float | None,
+    archive_dir: str
+):
     """Automate listing lifecycle updates: check for price changes, status transitions, and delistings."""
-    from property_archiver.core.sync import SyncEngine, SyncResult
+    from property_archiver.core.sync import SyncEngine
 
     cfg = settings.model_copy()
     cfg.archive_dir = archive_dir
@@ -645,26 +658,27 @@ def sync_command(dry_run: bool, province: str | None, area: str | None, suburb: 
         cfg.rate_limit_delay_sec = rate_limit
 
     engine = SyncEngine(config=cfg)
-    targets = engine.discover_targets(
-        archive_dir=archive_dir,
-        filter_province=province,
-        filter_area=area,
-        filter_suburb=suburb,
-        filter_status=status,
-    )
+    try:
+        targets = engine.discover_targets(
+            archive_dir=archive_dir,
+            filter_province=province,
+            filter_area=area,
+            filter_suburb=suburb,
+            filter_status=status,
+            filter_older_than=older_than,
+        )
+    except ValueError as val_err:
+        console.print(f"[bold red]Filter Error:[/bold red] {val_err}")
+        sys.exit(1)
 
     if not targets:
         console.print("[yellow]No archived listings matched the specified filters for sync.[/yellow]")
         return
 
     mode_label = "[bold yellow][DRY RUN][/bold yellow] " if dry_run else ""
-    console.print(f"\n{mode_label}[bold cyan]Synchronizing {len(targets)} listing(s)...[/bold cyan]\n")
+    console.print(f"\n{mode_label}[bold cyan]Synchronizing {len(targets)} listing(s) [dim](concurrency: {concurrency})[/dim]...[/bold cyan]\n")
 
     events = []
-    updated = 0
-    unchanged = 0
-    delisted = 0
-    failed = 0
 
     with Progress(
         SpinnerColumn(),
@@ -676,24 +690,20 @@ def sync_command(dry_run: bool, province: str | None, area: str | None, suburb: 
     ) as progress:
         task = progress.add_task("Checking for updates...", total=len(targets))
 
-        for target_dir in targets:
-            progress.update(task, description=f"Syncing [cyan]{target_dir.name}[/cyan]...")
-            evt = engine.sync_single(target_dir, dry_run=dry_run, no_images=no_images)
+        def _on_progress(evt):
             events.append(evt)
-
-            if evt.event_type in ("price_drop", "price_increase", "status_transition", "spec_update"):
-                updated += 1
-            elif evt.event_type == "delisted":
-                delisted += 1
-            elif evt.event_type == "unchanged":
-                unchanged += 1
-            elif evt.event_type == "error":
-                failed += 1
-
             progress.advance(task)
 
+        sync_result = engine.sync_all(
+            targets=targets,
+            dry_run=dry_run,
+            no_images=no_images,
+            concurrency=concurrency,
+            progress_callback=_on_progress,
+        )
+
     # Print Summary Table of changes
-    change_events = [e for e in events if e.event_type != "unchanged"]
+    change_events = [e for e in sync_result.events if e.event_type != "unchanged"]
 
     if change_events:
         table = Table(title=f"Portfolio Sync Results ({mode_label.strip() or 'Live'})", show_header=True)
@@ -724,11 +734,11 @@ def sync_command(dry_run: bool, province: str | None, area: str | None, suburb: 
 
     # Final summary panel
     summary_text = (
-        f"[bold]Total Scanned:[/bold] {len(targets)} | "
-        f"[bold green]Updated:[/bold green] {updated} | "
-        f"[bold]Unchanged:[/bold] {unchanged} | "
-        f"[bold yellow]Delisted:[/bold yellow] {delisted} | "
-        f"[bold red]Errors:[/bold red] {failed}"
+        f"[bold]Total Scanned:[/bold] {sync_result.total_scanned} | "
+        f"[bold green]Updated:[/bold green] {sync_result.updated_count} | "
+        f"[bold]Unchanged:[/bold] {sync_result.unchanged_count} | "
+        f"[bold yellow]Delisted:[/bold yellow] {sync_result.delisted_count} | "
+        f"[bold red]Errors:[/bold red] {sync_result.failed_count}"
     )
     console.print(Panel(summary_text, title="Sync Summary", border_style="cyan"))
 
