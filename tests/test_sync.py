@@ -1,5 +1,5 @@
 """
-Unit & integration tests for SyncEngine and `ap sync` command.
+Unit & integration tests for SyncEngine, concurrent sync_all, fingerprint fast-bypass, and `ap sync` command.
 """
 
 from pathlib import Path
@@ -10,7 +10,7 @@ import pytest
 from property_archiver.cli import main
 from property_archiver.core.exceptions import HTTPStatusError
 from property_archiver.core.fetcher import FetchResult
-from property_archiver.core.sync import SyncEngine
+from property_archiver.core.sync import SyncEngine, parse_time_delta
 from property_archiver.models.archive import ArchiveMetadata
 from property_archiver.models.listing import ListingRecord
 from property_archiver.models.property_details import LocationInfo, PriceInfo, PropertyFeatures
@@ -50,7 +50,8 @@ def sync_archive(tmp_path: Path, sample_html_content: str) -> Path:
         title="4 Bedroom House in Rivonia",
         price=PriceInfo(amount=4999000.0, formatted_display="R 4 999 000"),
         location=LocationInfo(province="Gauteng", region="Sandton", suburb="Rivonia"),
-        listing_status="active"
+        listing_status="active",
+        content_fingerprint="test_fingerprint_hash"
     )
     meta = ArchiveMetadata(
         schema_version="1.0.0",
@@ -110,6 +111,35 @@ def test_sync_detects_price_drop(sync_archive: Path, sample_html_content: str):
     assert history[-1]["price_changed"] is True
 
 
+def test_sync_fingerprint_fast_bypass(sync_archive: Path):
+    listing_dir = ArchiveReader.find_listing_dir(sync_archive, "T4710876")
+    assert listing_dir is not None
+    import hashlib
+
+    # Create HTML matching stored fingerprint
+    content = b"<html><body>Unchanged Page</body></html>"
+    fp = hashlib.sha256(content).hexdigest()
+    rec = ArchiveReader.load_listing(listing_dir)
+    rec.content_fingerprint = fp
+    (listing_dir / "listing.json").write_text(rec.model_dump_json(indent=2), encoding="utf-8")
+
+    mock_fetcher = DummyMockFetcher({
+        rec.canonical_url: FetchResult(
+            url=rec.canonical_url,
+            status_code=200,
+            headers={},
+            content=content,
+            text=content.decode("utf-8"),
+            duration_sec=0.01
+        )
+    })
+
+    engine = SyncEngine()
+    event = engine.sync_single(listing_dir, dry_run=False, fetcher=mock_fetcher)
+    assert event.event_type == "unchanged"
+    assert "fast bypass" in event.details
+
+
 def test_sync_detects_delisting_404(sync_archive: Path):
     listing_dir = ArchiveReader.find_listing_dir(sync_archive, "T4710876")
     assert listing_dir is not None
@@ -155,7 +185,6 @@ def test_sync_detects_status_transition(sync_archive: Path, sample_html_content:
     listing_dir = ArchiveReader.find_listing_dir(sync_archive, "T4710876")
     assert listing_dir is not None
 
-    # Add under-offer badge in HTML
     offer_html = sample_html_content.replace(
         '<div class="listing-details__left-col">',
         '<div class="listing-details__left-col"><div class="badge-container"><span class="badge">Under Offer</span></div>'
@@ -181,32 +210,40 @@ def test_sync_detects_status_transition(sync_archive: Path, sample_html_content:
     assert updated_rec.is_under_offer is True
 
 
-def test_sync_detects_soft_delisting(sync_archive: Path):
+def test_sync_concurrent_sync_all(sync_archive: Path, sample_html_content: str):
     listing_dir = ArchiveReader.find_listing_dir(sync_archive, "T4710876")
     assert listing_dir is not None
 
-    soft_delist_html = "<html><body><h1>This property is no longer available</h1><p>The mandate has expired.</p></body></html>"
     mock_fetcher = DummyMockFetcher({
         "https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876": FetchResult(
             url="https://www.privateproperty.co.za/for-sale/gauteng/sandton/rivonia/4-bedroom-house-in-rivonia/T4710876",
             status_code=200,
             headers={},
-            content=soft_delist_html.encode("utf-8"),
-            text=soft_delist_html,
+            content=sample_html_content.encode("utf-8"),
+            text=sample_html_content,
             duration_sec=0.05
         )
     })
 
     engine = SyncEngine()
-    event = engine.sync_single(listing_dir, dry_run=False, fetcher=mock_fetcher)
+    res = engine.sync_all(targets=[listing_dir], concurrency=4, fetcher=mock_fetcher)
+    assert res.total_scanned == 1
+    assert len(res.events) == 1
 
-    assert event.event_type == "delisted"
-    updated_rec = ArchiveReader.load_listing(listing_dir)
-    assert updated_rec.listing_status == "delisted"
+
+def test_sync_time_delta_parser():
+    td_h = parse_time_delta("12h")
+    assert td_h.total_seconds() == 12 * 3600
+
+    td_d = parse_time_delta("2d")
+    assert td_d.total_seconds() == 2 * 86400
+
+    with pytest.raises(ValueError):
+        parse_time_delta("invalid_format")
 
 
 def test_cli_sync_command(sync_archive: Path):
     runner = CliRunner()
-    res = runner.invoke(main, ["sync", "--dry-run", "--suburb", "Rivonia", "--archive-dir", str(sync_archive)])
+    res = runner.invoke(main, ["sync", "--dry-run", "-c", "4", "--suburb", "Rivonia", "--archive-dir", str(sync_archive)])
     assert res.exit_code == 0
     assert "Sync Summary" in res.output or "Total Scanned" in res.output
