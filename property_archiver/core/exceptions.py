@@ -1,11 +1,14 @@
 """
-Custom exception hierarchy for Property Archiver.
+Custom exception hierarchy for Property Archiver with structured diagnostic contexts.
 """
 
 
 class PropertyArchiverError(Exception):
     """Base exception for all errors in Property Archiver."""
-    pass
+    def __init__(self, message: str = "", context: dict | None = None):
+        super().__init__(message)
+        self.message = message
+        self.context = context or {}
 
 
 class SecurityError(PropertyArchiverError):
@@ -30,8 +33,8 @@ class ResourceExhaustionError(SecurityError):
 
 class FetchError(PropertyArchiverError):
     """Raised when an HTTP request fails or encounters network errors."""
-    def __init__(self, message: str, status_code: int | None = None, url: str | None = None):
-        super().__init__(message)
+    def __init__(self, message: str, status_code: int | None = None, url: str | None = None, context: dict | None = None):
+        super().__init__(message, context)
         self.status_code = status_code
         self.url = url
 
@@ -43,6 +46,16 @@ class RateLimitExceededError(FetchError):
 
 class HTTPStatusError(FetchError):
     """Raised when an HTTP response has an error status code (4xx/5xx)."""
+    pass
+
+
+class NetworkTimeoutError(FetchError):
+    """Raised when an HTTP request or connection times out."""
+    pass
+
+
+class DNSResolutionError(FetchError):
+    """Raised when domain name resolution fails for a target host."""
     pass
 
 
@@ -62,5 +75,10 @@ class StorageError(PropertyArchiverError):
 
 
 class CorruptedArchiveError(StorageError):
-    """Raised when checksum verification fails for an existing archive."""
+    """Raised when checksum verification or JSON decoding fails for an existing archive."""
+    pass
+
+
+class ImageDownloadError(FetchError):
+    """Raised when image asset download fails."""
     pass

@@ -79,7 +79,11 @@ def handle_get_listing(archive_dir: Path, listing_id: str) -> tuple[dict[str, An
     try:
         listing_dir = ArchiveReader.find_listing_dir(archive_dir, listing_id)
         if not listing_dir:
-            return {"error": f"Listing {listing_id} not found"}, HTTPStatus.NOT_FOUND
+            return {
+                "error": f"Listing {listing_id} not found",
+                "code": "LISTING_NOT_FOUND",
+                "status": 404,
+            }, HTTPStatus.NOT_FOUND
 
         record = ArchiveReader.load_listing(listing_dir)
         metadata = ArchiveReader.load_metadata(listing_dir)
@@ -96,22 +100,46 @@ def handle_get_listing(archive_dir: Path, listing_id: str) -> tuple[dict[str, An
         return {
             "listing": record.model_dump(mode="json"),
             "metadata": metadata.model_dump(mode="json"),
-            "checksums": manifest.model_dump(mode="json"),
+            "checksums": manifest.model_dump(mode="json") if manifest else None,
             "history": history,
         }, HTTPStatus.OK
     except Exception as exc:
-        return {"error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR
+        return {
+            "error": str(exc),
+            "code": "INTERNAL_SERVER_ERROR",
+            "status": 500,
+        }, HTTPStatus.INTERNAL_SERVER_ERROR
 
 
 def handle_delete_listing(archive_dir: Path, listing_id: str) -> tuple[dict[str, Any], HTTPStatus]:
     """Delete an archived listing and its assets permanently."""
     try:
-        success = ArchiveWriter.delete_archive(archive_dir, listing_id)
+        writer = ArchiveWriter()
+        listing_dir = ArchiveReader.find_listing_dir(archive_dir, listing_id)
+        if not listing_dir:
+            return {
+                "success": False,
+                "error": f"Listing {listing_id} not found",
+                "code": "LISTING_NOT_FOUND",
+                "status": 404,
+            }, HTTPStatus.NOT_FOUND
+
+        success = writer.delete_archive(listing_dir)
         if success:
             return {"success": True, "message": f"Listing {listing_id} successfully deleted"}, HTTPStatus.OK
-        return {"success": False, "error": f"Listing {listing_id} not found"}, HTTPStatus.NOT_FOUND
+        return {
+            "success": False,
+            "error": f"Failed deleting listing {listing_id}",
+            "code": "DELETE_FAILED",
+            "status": 500,
+        }, HTTPStatus.INTERNAL_SERVER_ERROR
     except Exception as exc:
-        return {"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR
+        return {
+            "success": False,
+            "error": str(exc),
+            "code": "INTERNAL_SERVER_ERROR",
+            "status": 500,
+        }, HTTPStatus.INTERNAL_SERVER_ERROR
 
 
 def handle_update_listing(archive_dir: Path, listing_id: str, updates: dict[str, Any]) -> tuple[dict[str, Any], HTTPStatus]:

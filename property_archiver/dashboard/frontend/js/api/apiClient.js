@@ -1,17 +1,25 @@
 /**
- * Base API Client wrapper with error handling and CRUD methods.
+ * Base API Client wrapper with error handling, offline detection, and CRUD methods.
  */
 export async function apiFetch(url, options = {}) {
-    const response = await fetch(url, options);
-    if (!response.ok) {
-        let errMessage = `HTTP ${response.status}: ${response.statusText}`;
-        try {
-            const body = await response.json();
-            if (body.error) errMessage = body.error;
-        } catch (_) {}
-        throw new Error(errMessage);
+    try {
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            let errMessage = `HTTP ${response.status}: ${response.statusText}`;
+            try {
+                const body = await response.json();
+                if (body.error) errMessage = body.error;
+                if (body.detail) errMessage += ` (${body.detail})`;
+            } catch (_) {}
+            throw new Error(errMessage);
+        }
+        return await response.json();
+    } catch (err) {
+        if (err.name === 'TypeError' && err.message.toLowerCase().includes('fetch')) {
+            throw new Error('Dashboard server unreachable. Please make sure "ap serve" is running.');
+        }
+        throw err;
     }
-    return response.json();
 }
 
 export async function fetchListings() {
