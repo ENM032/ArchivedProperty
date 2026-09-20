@@ -8,7 +8,7 @@ import { renderMetrics } from './components/metricsBar.js';
 import { initFilterBar, populateProvinces } from './components/filterBar.js';
 import { renderGridView } from './views/gridView.js';
 import { renderGroupedView } from './views/groupedView.js';
-import { initMap, updateMapMarkers } from './views/mapView.js';
+import { renderMapView } from './views/mapView.js';
 import { openCompareModal } from './components/compareModal.js';
 import { openArchiveModal } from './components/archiveModal.js';
 import { openDossier } from './components/dossierModal.js';
@@ -54,8 +54,7 @@ function handleStateChange(state) {
     } else if (state.currentView === 'grouped') {
         renderGroupedView(state.filteredListings);
     } else if (state.currentView === 'map') {
-        initMap();
-        updateMapMarkers(state.filteredListings);
+        renderMapView(state.filteredListings);
     }
 }
 

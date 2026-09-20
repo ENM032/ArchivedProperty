@@ -83,3 +83,6 @@ export function renderMapView(listings) {
 window._openDossierFromMap = (id) => {
     openDossier(id);
 };
+
+export const initMap = renderMapView;
+export const updateMapMarkers = renderMapView;
