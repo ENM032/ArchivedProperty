@@ -1,6 +1,6 @@
 """
 Decoupled HTTP Server serving RESTful API routes, static frontend assets, and CRUD operations
-with graceful shutdown handlers (Ctrl+C, 'q' + Enter, SIGINT, SIGTERM).
+with graceful shutdown handlers and standardized JSON error middleware.
 """
 
 import json
@@ -10,6 +10,7 @@ import os
 import signal
 import sys
 import threading
+import time
 import urllib.parse
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -78,7 +79,7 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                     if status == HTTPStatus.OK and bytes_data:
                         self._send_response_bytes(bytes_data, mime)
                     else:
-                        self.send_error(status)
+                        self._send_json_response({"error": "Image not found", "code": "IMAGE_NOT_FOUND", "status": 404}, HTTPStatus.NOT_FOUND)
                     return
 
             # 4. API: Comparison
@@ -93,61 +94,86 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             if path == "/api/export":
                 fmt = query.get("format", ["csv"])[0]
                 bytes_data, mime, filename, status = handle_export(self.archive_dir, fmt)
-                self.send_response(status)
-                self.send_header("Content-Type", mime)
-                self.send_header("Content-Disposition", f"attachment; filename={filename}")
-                self.send_header("Content-Length", str(len(bytes_data)))
-                self.end_headers()
-                self.wfile.write(bytes_data)
+                if status == HTTPStatus.OK and bytes_data:
+                    self.send_response(status)
+                    self.send_header("Content-Type", mime)
+                    self.send_header("Content-Disposition", f"attachment; filename={filename}")
+                    self.send_header("Content-Length", str(len(bytes_data)))
+                    self.end_headers()
+                    self.wfile.write(bytes_data)
+                else:
+                    self._send_json_response({"error": "Export failed", "code": "EXPORT_ERROR", "status": status}, status)
                 return
 
-            # 6. API: Placeholder SVG (White & Navy Theme)
+            # 6. API Placeholder Image
             if path == "/api/placeholder":
-                svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" width="600" height="400"/><text fill="#001d3d" font-family="sans-serif" font-size="22" dy="8" font-weight="bold" x="50%" y="50%" text-anchor="middle">No Image Preview</text></svg>'
-                self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
+                self._serve_placeholder()
                 return
 
-            # 7. Static Frontend Asset Dispatcher
+            # 7. Static Asset Serving
             self._serve_static_file(path)
-        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
-            pass
+        except Exception as exc:
+            logger.exception("Server error processing GET %s: %s", self.path, exc)
+            self._send_json_response({
+                "error": "Internal Server Error",
+                "detail": str(exc),
+                "code": "INTERNAL_SERVER_ERROR",
+                "status": 500
+            }, HTTPStatus.INTERNAL_SERVER_ERROR)
 
     def do_POST(self):
-        """Dispatch POST requests to API controllers."""
+        """Dispatch POST requests for fetching new listings or updating metadata."""
         try:
             parsed_url = urllib.parse.urlparse(self.path)
             path = parsed_url.path
 
-            if path == "/api/fetch":
-                content_length = int(self.headers.get("Content-Length", 0))
-                body = self.rfile.read(content_length)
-                try:
-                    payload = json.loads(body.decode("utf-8"))
-                    target = payload.get("target", "")
-                    data, status = handle_fetch_listing(self.archive_dir, target)
-                    self._send_json_response(data, status)
-                except Exception as exc:
-                    self._send_json_response({"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+            content_length = int(self.headers.get("Content-Length", 0))
+            body_bytes = self.rfile.read(content_length) if content_length > 0 else b"{}"
+
+            try:
+                payload = json.loads(body_bytes.decode("utf-8")) if body_bytes else {}
+            except json.JSONDecodeError:
+                self._send_json_response({
+                    "error": "Invalid JSON in request payload",
+                    "code": "INVALID_JSON",
+                    "status": 400
+                }, HTTPStatus.BAD_REQUEST)
                 return
 
-            # Update / Edit Listing
+            if path == "/api/fetch":
+                target = payload.get("target") or payload.get("url")
+                if not target:
+                    self._send_json_response({
+                        "error": "Missing required field 'target' or 'url'",
+                        "code": "MISSING_FIELD",
+                        "status": 400
+                    }, HTTPStatus.BAD_REQUEST)
+                    return
+                data, status = handle_fetch_listing(self.archive_dir, target)
+                self._send_json_response(data, status)
+                return
+
             if path.startswith("/api/listings/") and path.endswith("/edit"):
                 parts = [p for p in path.split("/") if p]
                 if len(parts) == 4:
                     listing_id = parts[2]
-                    content_length = int(self.headers.get("Content-Length", 0))
-                    body = self.rfile.read(content_length)
-                    try:
-                        payload = json.loads(body.decode("utf-8"))
-                        data, status = handle_update_listing(self.archive_dir, listing_id, payload)
-                        self._send_json_response(data, status)
-                    except Exception as exc:
-                        self._send_json_response({"success": False, "error": str(exc)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+                    data, status = handle_update_listing(self.archive_dir, listing_id, payload)
+                    self._send_json_response(data, status)
                     return
 
-            self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
-        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
-            pass
+            self._send_json_response({
+                "error": f"Endpoint not found: POST {path}",
+                "code": "ENDPOINT_NOT_FOUND",
+                "status": 404
+            }, HTTPStatus.NOT_FOUND)
+        except Exception as exc:
+            logger.exception("Server error processing POST %s: %s", self.path, exc)
+            self._send_json_response({
+                "error": "Internal Server Error",
+                "detail": str(exc),
+                "code": "INTERNAL_SERVER_ERROR",
+                "status": 500
+            }, HTTPStatus.INTERNAL_SERVER_ERROR)
 
     def do_DELETE(self):
         """Dispatch DELETE requests for removing archived listings."""
@@ -163,137 +189,150 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
                     self._send_json_response(data, status)
                     return
 
-            self.send_error(HTTPStatus.NOT_FOUND, "Resource not found")
-        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
-            pass
+            self._send_json_response({
+                "error": f"Endpoint not found: DELETE {path}",
+                "code": "ENDPOINT_NOT_FOUND",
+                "status": 404
+            }, HTTPStatus.NOT_FOUND)
+        except Exception as exc:
+            logger.exception("Server error processing DELETE %s: %s", self.path, exc)
+            self._send_json_response({
+                "error": "Internal Server Error",
+                "detail": str(exc),
+                "code": "INTERNAL_SERVER_ERROR",
+                "status": 500
+            }, HTTPStatus.INTERNAL_SERVER_ERROR)
 
-    def _serve_static_file(self, req_path: str):
-        """Safely serve static HTML, CSS, JS from frontend directory."""
-        if req_path in ("/", "/index.html", "/dashboard"):
-            rel_path = "index.html"
-        else:
-            rel_path = req_path.lstrip("/")
+    def _serve_static_file(self, rel_path: str):
+        """Safely serve frontend static assets with correct MIME types."""
+        clean_path = rel_path.lstrip("/")
+        if not clean_path or clean_path == "":
+            clean_path = "index.html"
 
-        file_path = (FRONTEND_DIR / rel_path).resolve()
+        file_path = (FRONTEND_DIR / clean_path).resolve()
         if not str(file_path).startswith(str(FRONTEND_DIR.resolve())):
-            self.send_error(HTTPStatus.FORBIDDEN, "Access denied")
+            self._send_json_response({"error": "Forbidden", "code": "FORBIDDEN", "status": 403}, HTTPStatus.FORBIDDEN)
             return
 
         if not file_path.exists() or not file_path.is_file():
-            self.send_error(HTTPStatus.NOT_FOUND, f"File {rel_path} not found")
+            self._send_json_response({"error": "File not found", "code": "NOT_FOUND", "status": 404}, HTTPStatus.NOT_FOUND)
             return
 
         mime_type, _ = mimetypes.guess_type(str(file_path))
         mime_type = mime_type or "application/octet-stream"
-        if file_path.suffix == ".js":
-            mime_type = "application/javascript; charset=utf-8"
-        elif file_path.suffix == ".css":
-            mime_type = "text/css; charset=utf-8"
-        elif file_path.suffix == ".html":
-            mime_type = "text/html; charset=utf-8"
 
-        with open(file_path, "rb") as f:
-            content = f.read()
+        try:
+            with open(file_path, "rb") as f:
+                content = f.read()
+            self._send_response_bytes(content, mime_type)
+        except Exception as exc:
+            self._send_json_response({"error": f"Failed reading asset: {exc}", "code": "ASSET_READ_ERROR", "status": 500}, HTTPStatus.INTERNAL_SERVER_ERROR)
 
-        self.send_response(HTTPStatus.OK)
-        self.send_header("Content-Type", mime_type)
-        self.send_header("Content-Length", str(len(content)))
-        self.send_header("Cache-Control", "no-cache")
-        self.end_headers()
-        self.wfile.write(content)
+    def _serve_placeholder(self):
+        """Serve a minimal SVG placeholder image."""
+        svg = """<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+            <rect width="400" height="250" fill="#001d3d"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#5a6a80" font-family="sans-serif" font-size="16">No Photo Archived</text>
+        </svg>"""
+        self._send_response_bytes(svg.encode("utf-8"), "image/svg+xml")
 
     def _send_json_response(self, data: Any, status: HTTPStatus = HTTPStatus.OK):
-        body = json.dumps(data, indent=2).encode("utf-8")
-        self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
+        """Serialize data to JSON and send response headers with UTF-8 encoding."""
+        try:
+            payload = json.dumps(data, indent=2, ensure_ascii=False).encode("utf-8")
+            self.send_response(status)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(payload)))
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(payload)
+        except Exception as exc:
+            logger.error("Failed sending JSON response: %s", exc)
 
-    def _send_response_bytes(self, content_bytes: bytes, mime_type: str):
-        self.send_response(HTTPStatus.OK)
-        self.send_header("Content-Type", mime_type)
-        self.send_header("Content-Length", str(len(content_bytes)))
-        self.end_headers()
-        self.wfile.write(content_bytes)
+    def _send_response_bytes(self, data: bytes, mime_type: str, status: HTTPStatus = HTTPStatus.OK):
+        """Send raw binary content with Content-Type."""
+        try:
+            self.send_response(status)
+            self.send_header("Content-Type", mime_type)
+            self.send_header("Content-Length", str(len(data)))
+            self.send_header("Cache-Control", "public, max-age=3600")
+            self.end_headers()
+            self.wfile.write(data)
+        except Exception as exc:
+            logger.error("Failed sending byte response: %s", exc)
 
-    def log_message(self, format, *args):
+    def log_message(self, format: str, *args: Any):
+        """Suppress standard HTTP server request log spam in console unless debug logging."""
         logger.debug("%s - - [%s] %s", self.address_string(), self.log_date_time_string(), format % args)
 
 
 class DashboardServer:
-    """Manager for running the threaded dashboard HTTP server with graceful shutdown."""
+    """Encapsulated Dashboard HTTP server lifecycle controller."""
 
     def __init__(self, host: str = "127.0.0.1", port: int = 8000, archive_dir: Path | str = "./archive"):
         self.host = host
         self.port = port
         self.archive_dir = Path(archive_dir).resolve()
-        self.server = ReusableThreadingHTTPServer((self.host, self.port), DashboardRequestHandler)
-        self.server.archive_dir = self.archive_dir  # type: ignore
+        self.server: ReusableThreadingHTTPServer | None = None
         self._is_running = False
-        self._stop_event = threading.Event()
+
+    def start_background(self) -> threading.Thread:
+        """Start HTTP server in a background daemon thread for testing or non-blocking execution."""
+        thread = threading.Thread(target=self.start, kwargs={"enable_terminal_input": False}, daemon=True)
+        thread.start()
+        time.sleep(0.15)
+        return thread
 
     def start(self, enable_terminal_input: bool = True):
-        """Start serving requests indefinitely with graceful terminal quit support."""
+        """Start HTTP server with graceful shutdown listeners."""
+        self.server = ReusableThreadingHTTPServer((self.host, self.port), DashboardRequestHandler)
+        self.server.archive_dir = self.archive_dir  # type: ignore
         self._is_running = True
-        self._stop_event.clear()
-        logger.info("Dashboard server running at http://%s:%s (Archive: %s)", self.host, self.port, self.archive_dir)
 
-        # Setup OS signal handlers
-        def _handle_signal(sig, frame):
+        def _signal_handler(signum, frame):
+            logger.info("Received termination signal %s, shutting down...", signum)
             self.stop()
 
         try:
-            signal.signal(signal.SIGINT, _handle_signal)
-            signal.signal(signal.SIGTERM, _handle_signal)
+            signal.signal(signal.SIGINT, _signal_handler)
+            if hasattr(signal, "SIGTERM"):
+                signal.signal(signal.SIGTERM, _signal_handler)
         except (ValueError, AttributeError):
             pass
 
-        # Terminal input listener ('q' + Enter or 'quit' + Enter)
-        if enable_terminal_input and sys.stdin and sys.stdin.isatty():
-            def _terminal_listener():
-                try:
-                    while self._is_running:
-                        line = sys.stdin.readline()
-                        if not line:  # EOF / Ctrl+D
-                            self.stop()
-                            break
-                        cmd = line.strip().lower()
-                        if cmd in ("q", "quit", "exit", "stop"):
-                            self.stop()
-                            break
-                except Exception:
-                    pass
+        if enable_terminal_input:
+            t = threading.Thread(target=self._terminal_input_listener, daemon=True)
+            t.start()
 
-            t_listener = threading.Thread(target=_terminal_listener, daemon=True)
-            t_listener.start()
-
+        logger.info("Dashboard running at http://%s:%d", self.host, self.port)
         try:
-            while self._is_running and not self._stop_event.is_set():
-                self.server.serve_forever(poll_interval=0.5)
-        except (KeyboardInterrupt, SystemExit):
+            self.server.serve_forever()
+        except (KeyboardInterrupt, Exception):
             pass
         finally:
             self.stop()
 
-    def stop(self):
-        """Gracefully shutdown and close socket."""
-        if not self._is_running:
-            return
-        self._is_running = False
-        self._stop_event.set()
-        try:
-            self.server.shutdown()
-        except Exception:
-            pass
-        try:
-            self.server.server_close()
-        except Exception:
-            pass
-        logger.info("Dashboard server stopped cleanly.")
+    def _terminal_input_listener(self):
+        """Listens on stdin for user typing 'q' + Enter to gracefully quit."""
+        while self._is_running:
+            try:
+                line = sys.stdin.readline()
+                if not line:
+                    break
+                if line.strip().lower() in ("q", "quit", "exit"):
+                    print("\nQuitting dashboard server...")
+                    self.stop()
+                    break
+            except Exception:
+                break
 
-    def start_background(self) -> threading.Thread:
-        """Start serving in a background thread."""
-        thread = threading.Thread(target=lambda: self.start(enable_terminal_input=False), daemon=True)
-        thread.start()
-        return thread
+    def stop(self):
+        """Shutdown and release socket immediately."""
+        self._is_running = False
+        if self.server:
+            try:
+                self.server.shutdown()
+                self.server.server_close()
+            except Exception:
+                pass
+            self.server = None

@@ -1,5 +1,6 @@
 """
-Archive reader and cryptographic validator with recursive hierarchical directory discovery.
+Archive reader and cryptographic validator with recursive hierarchical directory discovery
+and resilient, descriptive error handling.
 """
 
 import json
@@ -31,11 +32,14 @@ class ArchiveReader:
         if not listings_root.exists():
             return results
 
-        for root, dirs, files in os.walk(listings_root):
-            # Skip internal staging and snapshots directories
-            dirs[:] = [d for d in dirs if not d.startswith(".staging_") and d not in ("snapshots", "images")]
-            if "listing.json" in files:
-                results.append(Path(root))
+        try:
+            for root, dirs, files in os.walk(listings_root):
+                # Skip internal staging, snapshots, and image directories
+                dirs[:] = [d for d in dirs if not d.startswith(".staging_") and d not in ("snapshots", "images")]
+                if "listing.json" in files:
+                    results.append(Path(root))
+        except OSError as os_err:
+            logger.error("Filesystem traversal error in %s: %s", listings_root, os_err)
 
         # Sort for consistent ordering
         results.sort(key=lambda p: p.name)
@@ -55,64 +59,79 @@ class ArchiveReader:
         """Load and deserialize the normalized listing.json model."""
         path = Path(archive_dir) / "listing.json"
         if not path.exists():
-            raise StorageError(f"Listing definition not found in archive: {path}")
+            raise StorageError(f"Listing definition not found in archive: {path}", context={"path": str(path)})
 
         try:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             return ListingRecord.model_validate(data)
+        except json.JSONDecodeError as jde:
+            raise CorruptedArchiveError(
+                f"Corrupt or malformed JSON in {path} (line {jde.lineno}, col {jde.colno}): {jde.msg}",
+                context={"path": str(path), "line": jde.lineno, "column": jde.colno}
+            )
         except Exception as exc:
-            raise CorruptedArchiveError(f"Corrupted or invalid listing.json at {path}: {exc}") from exc
+            raise StorageError(f"Failed deserializing listing from {path}: {exc}", context={"path": str(path)})
 
     @staticmethod
     def load_metadata(archive_dir: Path | str) -> ArchiveMetadata:
-        """Load crawl metadata from metadata.json."""
+        """Load and deserialize metadata.json."""
         path = Path(archive_dir) / "metadata.json"
         if not path.exists():
-            raise StorageError(f"Metadata file not found in archive: {path}")
+            raise StorageError(f"Metadata definition not found in archive: {path}", context={"path": str(path)})
 
         try:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             return ArchiveMetadata.model_validate(data)
+        except json.JSONDecodeError as jde:
+            raise CorruptedArchiveError(
+                f"Corrupt metadata.json in {path}: {jde.msg}",
+                context={"path": str(path)}
+            )
         except Exception as exc:
-            raise CorruptedArchiveError(f"Corrupted metadata.json at {path}: {exc}") from exc
+            raise StorageError(f"Failed deserializing metadata from {path}: {exc}", context={"path": str(path)})
 
     @staticmethod
-    def load_manifest(archive_dir: Path | str) -> ArchiveManifest:
-        """Load SHA-256 checksum manifest."""
+    def load_manifest(archive_dir: Path | str) -> ArchiveManifest | None:
+        """Load checksums.json manifest if present."""
         path = Path(archive_dir) / "checksums.json"
         if not path.exists():
-            raise StorageError(f"Checksum manifest not found in archive: {path}")
+            return None
 
         try:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             return ArchiveManifest.model_validate(data)
         except Exception as exc:
-            raise CorruptedArchiveError(f"Corrupted checksums.json at {path}: {exc}") from exc
+            logger.warning("Manifest reading failed for %s: %s", path, exc)
+            return None
+
+    @staticmethod
+    def validate_checksums(archive_dir: Path | str) -> tuple[bool, list[str]]:
+        """Cryptographically verify all files against checksums.json."""
+        archive_path = Path(archive_dir).resolve()
+        manifest = ArchiveReader.load_manifest(archive_path)
+        if not manifest:
+            return False, ["Missing checksums.json manifest"]
+
+        errors: list[str] = []
+        for rel_file, expected_hash in manifest.files.items():
+            full_path = archive_path / rel_file
+            if not full_path.exists():
+                errors.append(f"Missing file: {rel_file}")
+                continue
+
+            try:
+                actual_hash = calculate_file_sha256(full_path)
+                if actual_hash != expected_hash:
+                    errors.append(f"Hash mismatch for {rel_file}: expected {expected_hash}, got {actual_hash}")
+            except Exception as exc:
+                errors.append(f"Error calculating hash for {rel_file}: {exc}")
+
+        return len(errors) == 0, errors
 
     @staticmethod
     def validate_integrity(archive_dir: Path | str) -> tuple[bool, list[str]]:
-        """Verify that every file listed in checksums.json matches its recorded SHA-256 digest."""
-        archive_path = Path(archive_dir)
-        errors: list[str] = []
-
-        try:
-            manifest = ArchiveReader.load_manifest(archive_path)
-        except Exception as exc:
-            return False, [f"Failed to load checksums.json: {exc}"]
-
-        for rel_filepath, expected_sha in manifest.files.items():
-            full_path = archive_path / rel_filepath
-            if not full_path.exists():
-                errors.append(f"Missing expected archive file: {rel_filepath}")
-                continue
-
-            actual_sha = calculate_file_sha256(full_path)
-            if actual_sha != expected_sha:
-                errors.append(
-                    f"Integrity failure in {rel_filepath}: expected {expected_sha[:12]}..., got {actual_sha[:12]}..."
-                )
-
-        return (len(errors) == 0), errors
+        """Alias for validate_checksums."""
+        return ArchiveReader.validate_checksums(archive_dir)
