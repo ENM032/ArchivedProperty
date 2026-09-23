@@ -1,5 +1,5 @@
 /**
- * Filter & Location Drill-Down Toolbar Component with Search Debouncing.
+ * Filter & Location Drill-Down Toolbar Component with Search Debouncing & State Retention.
  */
 import { store } from '../state/store.js';
 
@@ -75,7 +75,26 @@ export function initFilterBar() {
     document.getElementById('geo-suburb-filter').onchange = (e) => store.updateFilters({ suburb: e.target.value });
     document.getElementById('btn-reset-geo').onclick = () => resetGeo();
 
+    syncFilterControlsFromStore();
     populateProvinces();
+}
+
+export function syncFilterControlsFromStore() {
+    const f = store.activeFilters;
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = f.search || '';
+
+    const listingTypeSel = document.getElementById('listing-type-filter');
+    if (listingTypeSel) listingTypeSel.value = f.listingType || 'all';
+
+    const propTypeSel = document.getElementById('prop-type-filter');
+    if (propTypeSel) propTypeSel.value = f.propertyType || 'all';
+
+    const statusSel = document.getElementById('status-filter');
+    if (statusSel) statusSel.value = f.status || 'all';
+
+    const sortSel = document.getElementById('sort-filter');
+    if (sortSel) sortSel.value = f.sort || 'date-desc';
 }
 
 export function populateProvinces() {
@@ -87,12 +106,20 @@ export function populateProvinces() {
         if (p) provinces.add(p);
     });
 
+    const currentSelected = store.activeFilters.province || 'all';
     provSelect.innerHTML = '<option value="all">All Provinces</option>';
     Array.from(provinces).sort().forEach(p => provSelect.add(new Option(p, p)));
-    onProvinceChanged(provSelect.value);
+
+    if (currentSelected !== 'all' && provinces.has(currentSelected)) {
+        provSelect.value = currentSelected;
+    } else {
+        provSelect.value = 'all';
+    }
+
+    onProvinceChanged(provSelect.value, false);
 }
 
-function onProvinceChanged(prov) {
+function onProvinceChanged(prov, triggerStoreUpdate = true) {
     const areaSelect = document.getElementById('geo-area-filter');
     if (!areaSelect) return;
     const areas = new Set();
@@ -102,13 +129,23 @@ function onProvinceChanged(prov) {
         if ((prov === 'all' || p === prov) && a) areas.add(a);
     });
 
+    const currentSelected = store.activeFilters.area || 'all';
     areaSelect.innerHTML = '<option value="all">All Areas / Metros</option>';
     Array.from(areas).sort().forEach(a => areaSelect.add(new Option(a, a)));
-    store.updateFilters({ province: prov, area: areaSelect.value });
-    onAreaChanged(areaSelect.value);
+
+    if (currentSelected !== 'all' && areas.has(currentSelected)) {
+        areaSelect.value = currentSelected;
+    } else {
+        areaSelect.value = 'all';
+    }
+
+    if (triggerStoreUpdate) {
+        store.updateFilters({ province: prov, area: areaSelect.value });
+    }
+    onAreaChanged(areaSelect.value, triggerStoreUpdate);
 }
 
-function onAreaChanged(area) {
+function onAreaChanged(area, triggerStoreUpdate = true) {
     const subSelect = document.getElementById('geo-suburb-filter');
     if (!subSelect) return;
     const prov = document.getElementById('geo-province-filter').value;
@@ -124,12 +161,22 @@ function onAreaChanged(area) {
         }
     });
 
+    const currentSelected = store.activeFilters.suburb || 'all';
     subSelect.innerHTML = '<option value="all">All Suburbs</option>';
     Array.from(suburbs).sort().forEach(s => subSelect.add(new Option(s, s)));
-    store.updateFilters({ area: area, suburb: subSelect.value });
+
+    if (currentSelected !== 'all' && suburbs.has(currentSelected)) {
+        subSelect.value = currentSelected;
+    } else {
+        subSelect.value = 'all';
+    }
+
+    if (triggerStoreUpdate) {
+        store.updateFilters({ area: area, suburb: subSelect.value });
+    }
 }
 
 function resetGeo() {
     document.getElementById('geo-province-filter').value = 'all';
-    onProvinceChanged('all');
+    onProvinceChanged('all', true);
 }

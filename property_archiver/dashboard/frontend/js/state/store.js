@@ -1,12 +1,15 @@
 /**
- * Reactive Central Store for Property Archiver Dashboard.
+ * Reactive Central Store for Property Archiver Dashboard with localStorage Hydration.
  */
+import { loadDashboardState, saveDashboardState } from '../utils/storage.js';
+
 class Store {
     constructor() {
+        const savedState = loadDashboardState();
         this.rawListings = [];
         this.filteredListings = [];
-        this.currentView = 'grid'; // 'grid' | 'grouped' | 'map'
-        this.activeFilters = {
+        this.currentView = savedState?.view || 'grid'; // 'grid' | 'grouped' | 'map'
+        this.activeFilters = savedState?.filters || {
             search: '',
             listingType: 'all',
             propertyType: 'all',
@@ -34,6 +37,7 @@ class Store {
 
     setView(view) {
         this.currentView = view;
+        saveDashboardState({ view: this.currentView });
         this.notify();
     }
 
@@ -52,18 +56,20 @@ class Store {
 
     updateFilters(newFilters) {
         this.activeFilters = { ...this.activeFilters, ...newFilters };
+        saveDashboardState({ filters: this.activeFilters });
         this.applyFilters();
     }
 
     applyFilters() {
         const { search, listingType, propertyType, status, sort, province, area, suburb } = this.activeFilters;
-        const query = search.toLowerCase().trim();
+        const query = search ? search.toLowerCase().trim() : '';
 
         let filtered = this.rawListings.filter(item => {
             const matchesQuery = !query ||
                 (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
                 (item.title && item.title.toLowerCase().includes(query)) ||
                 (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query)) ||
+                (item.location && item.location.street_address && item.location.street_address.toLowerCase().includes(query)) ||
                 (item.user_notes && item.user_notes.toLowerCase().includes(query)) ||
                 (item.user_tags && item.user_tags.some(t => t.toLowerCase().includes(query)));
 
