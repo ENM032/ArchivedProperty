@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Archiver - Unified Dashboard</title>
     
-    <!-- External Leaflet Map Dependencies -->
+    <!-- External Leaflet Map & MarkerCluster Dependencies -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     
     <!-- Modular Application CSS Entry Point -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,8 +56,23 @@
         <section id="views-wrapper">
             <div id="property-grid" class="property-grid"></div>
             <div id="grouped-view-container" class="grouped-container" style="display: none;"></div>
-            <div id="map-view-container" class="map-container" style="display: none;">
-                <div id="leaflet-map"></div>
+            <div id="map-view-container" class="map-split-layout" style="display: none;">
+                <div class="map-pane">
+                    <div class="map-controls-floating">
+                        <label class="map-toggle-label">
+                            <input type="checkbox" id="chk-search-in-bounds" checked>
+                            <span>Search as I move the map</span>
+                        </label>
+                        <span id="map-visible-count" class="map-count-badge">0 properties</span>
+                    </div>
+                    <div id="leaflet-map"></div>
+                </div>
+                <div class="map-side-panel">
+                    <div class="side-panel-header">
+                        <h4 id="side-panel-title">Visible Properties</h4>
+                    </div>
+                    <div id="map-side-list" class="map-side-list"></div>
+                </div>
             </div>
             <div id="empty-state" class="empty-state" style="display: none;">
                 <h3>No archived listings found</h3>
