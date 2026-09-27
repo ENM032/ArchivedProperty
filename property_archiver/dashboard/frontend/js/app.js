@@ -1,18 +1,18 @@
 /**
  * Application Bootstrap & Lifecycle Manager with Deep-Linking & Scroll Position Persistence.
  */
-import { fetchListings } from './api/apiClient.js';
-import { store } from './state/store.js';
-import { showToast } from './utils/dom.js';
-import { renderMetrics } from './components/metricsBar.js';
-import { initFilterBar, populateProvinces, syncFilterControlsFromStore, resetFilters } from './components/filterBar.js';
-import { renderGridView } from './views/gridView.js';
-import { renderGroupedView } from './views/groupedView.js';
-import { renderMapView } from './views/mapView.js';
-import { openCompareModal } from './components/compareModal.js';
-import { openArchiveModal } from './components/archiveModal.js';
-import { openDossier } from './components/dossierModal.js';
-import { loadDashboardState, saveDashboardState } from './utils/storage.js';
+import { fetchListings } from './api/apiClient.js?v=2.0.2';
+import { store } from './state/store.js?v=2.0.2';
+import { showToast } from './utils/dom.js?v=2.0.2';
+import { renderMetrics } from './components/metricsBar.js?v=2.0.2';
+import { initFilterBar, populateProvinces, syncFilterControlsFromStore, resetFilters } from './components/filterBar.js?v=2.0.2';
+import { renderGridView } from './views/gridView.js?v=2.0.2';
+import { renderGroupedView } from './views/groupedView.js?v=2.0.2';
+import { renderMapView } from './views/mapView.js?v=2.0.2';
+import { openCompareModal } from './components/compareModal.js?v=2.0.2';
+import { openArchiveModal } from './components/archiveModal.js?v=2.0.2';
+import { openDossier } from './components/dossierModal.js?v=2.0.2';
+import { loadDashboardState, saveDashboardState } from './utils/storage.js?v=2.0.2';
 
 let isInitialLoad = true;
 

@@ -269,14 +269,17 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
         data: bytes,
         mime_type: str,
         status: HTTPStatus = HTTPStatus.OK,
-        cache_control: str = "public, max-age=3600"
+        cache_control: str = "no-cache, no-store, must-revalidate, max-age=0"
     ):
-        """Send raw binary content with Content-Type and Cache-Control."""
+        """Send raw binary content with Content-Type, Cache-Control, and cache-busting headers."""
         try:
             self.send_response(status)
             self.send_header("Content-Type", mime_type)
             self.send_header("Content-Length", str(len(data)))
             self.send_header("Cache-Control", cache_control)
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
+            self.send_header("Clear-Site-Data", '"cache"')
             self.end_headers()
             self.wfile.write(data)
         except Exception as exc:
