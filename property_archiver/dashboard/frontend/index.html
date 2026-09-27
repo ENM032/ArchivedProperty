@@ -88,6 +88,25 @@
     <div id="archive-modal-container"></div>
     <div id="toast" class="toast"><span id="toast-msg"></span></div>
 
+    <script>
+        window.addEventListener('error', function(e) {
+            var el = document.getElementById('toast');
+            var msg = document.getElementById('toast-msg');
+            if (el && msg) {
+                msg.textContent = 'Frontend Error: ' + (e.message || 'Script error');
+                el.className = 'toast show error';
+            }
+        });
+        window.addEventListener('unhandledrejection', function(e) {
+            var el = document.getElementById('toast');
+            var msg = document.getElementById('toast-msg');
+            if (el && msg) {
+                msg.textContent = 'Data Error: ' + (e.reason ? (e.reason.message || e.reason) : 'Unknown error');
+                el.className = 'toast show error';
+            }
+        });
+    </script>
+
     <!-- ES6 Module Application Entry Point -->
     <script type="module" src="/js/app.js"></script>
 </body>

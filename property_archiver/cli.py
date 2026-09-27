@@ -388,11 +388,14 @@ def export_command(
 def serve_command(port: int, host: str, archive_dir: str, open_browser: bool):
     """Launch the Unified Local Web Dashboard."""
     url = f"http://{host}:{port}"
+    arch_path = Path(archive_dir).resolve()
+    listing_count = len(ArchiveReader.find_all_listing_dirs(arch_path)) if arch_path.exists() else 0
     
     panel_content = (
         f"[bold cyan]ArchivedProperty Dashboard v{__version__}[/bold cyan]\n\n"
         f"  * URL:          [bold green]{url}[/bold green]\n"
-        f"  * Archive Dir:  [white]{Path(archive_dir).resolve()}[/white]\n"
+        f"  * Archive Dir:  [white]{arch_path}[/white]\n"
+        f"  * Preserved:    [bold cyan]{listing_count} listings ready[/bold cyan]\n"
         f"  * Status:       [bold green]Running[/bold green]\n\n"
         f"Press [bold yellow]Ctrl+C[/bold yellow] or type [bold yellow]'q'[/bold yellow] + [bold yellow]Enter[/bold yellow] to stop the server."
     )

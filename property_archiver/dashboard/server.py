@@ -58,12 +58,16 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             # 1. API: Listings Collection
             if path == "/api/listings":
                 data, status = handle_list_listings(self.archive_dir)
+                sys.stdout.write(f"[API] /api/listings -> {len(data)} listing(s) loaded from {self.archive_dir.name}\n")
+                sys.stdout.flush()
                 self._send_json_response(data, status)
                 return
 
             # 2. API: Geographic Hierarchy
             if path == "/api/hierarchy":
                 data, status = handle_get_hierarchy(self.archive_dir, query)
+                sys.stdout.write(f"[API] /api/hierarchy -> {status.value} {status.phrase}\n")
+                sys.stdout.flush()
                 self._send_json_response(data, status)
                 return
 
@@ -279,8 +283,10 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             logger.error("Failed sending byte response: %s", exc)
 
     def log_message(self, format: str, *args: Any):
-        """Suppress standard HTTP server request log spam in console unless debug logging."""
-        logger.debug("%s - - [%s] %s", self.address_string(), self.log_date_time_string(), format % args)
+        """Log incoming HTTP requests with timestamp and status to terminal."""
+        msg = format % args
+        sys.stdout.write(f"[HTTP] {self.log_date_time_string()} {msg}\n")
+        sys.stdout.flush()
 
 
 class DashboardServer:
