@@ -2,7 +2,7 @@
  * Leaflet GIS Interactive Map View with Custom Price Badges, Multi-Layer Satellite Switcher,
  * Leaflet.markercluster with Spiderfy, Split-Pane List Sync, and Suburb Centroid Fallback.
  */
-import { formatZAR, formatCompactZAR } from '../utils/formatters.js';
+import { formatZAR, formatCompactZAR, getStatusBadgeInfo } from '../utils/formatters.js';
 import { openDossier } from '../components/dossierModal.js';
 import { getFallbackCoordinates } from '../data/suburbCentroids.js';
 
@@ -131,6 +131,11 @@ export function renderMapView(listings) {
                 popupAnchor: [0, -16]
             });
 
+            const { statusClass, statusLabel } = getStatusBadgeInfo(item);
+            const statusBadgeHtml = statusClass !== 'active' 
+                ? `<span class="card-badge ${statusClass}" style="position: static; font-size: 0.65rem; padding: 0.1rem 0.4rem; display: inline-block; vertical-align: middle; margin-left: 0.35rem;">${statusLabel}</span>`
+                : '';
+
             const popupContent = `
                 <div style="width: 220px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
                     <img src="${heroImg}" 
@@ -139,7 +144,7 @@ export function renderMapView(listings) {
                          style="width: 100%; height: 110px; object-fit: cover; border-radius: 4px; margin-bottom: 0.5rem;" 
                          onerror="this.src='/api/placeholder'">
                     <div style="font-weight: 700; font-size: 1rem; color: #000814; margin-bottom: 0.25rem;">
-                        ${formatZAR(item.price?.amount)}
+                        ${formatZAR(item.price?.amount)}${statusBadgeHtml}
                     </div>
                     <div style="font-weight: 600; font-size: 0.85rem; color: #001d3d; margin-bottom: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                         ${item.title || 'Property'}
@@ -211,10 +216,15 @@ function updateVisibleSidePanel() {
         };
 
         const heroImg = item.hero_image_url || '/api/placeholder';
+        const { statusClass, statusLabel } = getStatusBadgeInfo(item);
+        const statusBadgeHtml = statusClass !== 'active'
+            ? `<span class="card-badge ${statusClass}" style="position: static; font-size: 0.65rem; padding: 0.1rem 0.35rem; display: inline-block; vertical-align: middle; margin-left: 0.35rem;">${statusLabel}</span>`
+            : '';
+
         card.innerHTML = `
             <img class="map-compact-thumb" src="${heroImg}" loading="lazy" decoding="async" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
             <div class="map-compact-details">
-                <div class="map-compact-price">${formatZAR(item.price?.amount)}</div>
+                <div class="map-compact-price">${formatZAR(item.price?.amount)}${statusBadgeHtml}</div>
                 <div class="map-compact-title">${item.title || 'Property'}</div>
                 <div class="map-compact-sub">${item.location?.suburb || ''} | ${item.features?.bedrooms || 0}b/${item.features?.bathrooms || 0}ba</div>
             </div>

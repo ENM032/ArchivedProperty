@@ -3,7 +3,7 @@
  */
 const STORAGE_KEY = 'ap_dashboard_state';
 
-const DEFAULT_FILTERS = {
+export const DEFAULT_FILTERS = {
     search: '',
     listingType: 'all',
     propertyType: 'all',
@@ -46,3 +46,12 @@ export function saveDashboardState(stateUpdates) {
         // Silently ignore storage quota or sandbox restrictions
     }
 }
+
+export function clearDashboardFilters() {
+    try {
+        const current = loadDashboardState() || { view: 'grid', filters: { ...DEFAULT_FILTERS }, scrollY: 0 };
+        current.filters = { ...DEFAULT_FILTERS };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+    } catch (_) {}
+}
+

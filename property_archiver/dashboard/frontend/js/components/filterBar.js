@@ -40,6 +40,8 @@ export function initFilterBar() {
                     <option value="active">Active</option>
                     <option value="under_offer">Under Offer</option>
                     <option value="sold">Sold</option>
+                    <option value="delisted">Delisted</option>
+                    <option value="withdrawn">Withdrawn</option>
                 </select>
                 <select id="sort-filter" class="select-filter">
                     <option value="date-desc">Newest Archived</option>
@@ -55,28 +57,43 @@ export function initFilterBar() {
             <select id="geo-province-filter" class="select-filter"><option value="all">All Provinces</option></select>
             <select id="geo-area-filter" class="select-filter"><option value="all">All Areas / Metros</option></select>
             <select id="geo-suburb-filter" class="select-filter"><option value="all">All Suburbs</option></select>
-            <button id="btn-reset-geo" class="btn btn-secondary" style="padding: 0.4rem 0.75rem; font-size: 0.8rem;">Reset Location</button>
+            <button id="btn-reset-filters" class="btn btn-secondary" style="padding: 0.4rem 0.75rem; font-size: 0.8rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 0.25rem;"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                Reset Filters
+            </button>
         </div>
     `;
 
-    // Attach Event Listeners with Debounced Search
+    bindFilterEvents();
+    syncFilterControlsFromStore();
+    populateProvinces();
+}
+
+function bindFilterEvents() {
     const searchInput = document.getElementById('search-input');
-    searchInput.oninput = debounce((e) => {
-        store.updateFilters({ search: e.target.value });
-    }, 180);
+    if (searchInput) {
+        searchInput.oninput = debounce((e) => {
+            store.updateFilters({ search: e.target.value });
+        }, 180);
+    }
 
     document.getElementById('listing-type-filter').onchange = (e) => store.updateFilters({ listingType: e.target.value });
     document.getElementById('prop-type-filter').onchange = (e) => store.updateFilters({ propertyType: e.target.value });
     document.getElementById('status-filter').onchange = (e) => store.updateFilters({ status: e.target.value });
     document.getElementById('sort-filter').onchange = (e) => store.updateFilters({ sort: e.target.value });
 
-    document.getElementById('geo-province-filter').onchange = (e) => onProvinceChanged(e.target.value);
-    document.getElementById('geo-area-filter').onchange = (e) => onAreaChanged(e.target.value);
+    document.getElementById('geo-province-filter').onchange = (e) => onProvinceChanged(e.target.value, true);
+    document.getElementById('geo-area-filter').onchange = (e) => onAreaChanged(e.target.value, true);
     document.getElementById('geo-suburb-filter').onchange = (e) => store.updateFilters({ suburb: e.target.value });
-    document.getElementById('btn-reset-geo').onclick = () => resetGeo();
 
-    syncFilterControlsFromStore();
+    const resetBtn = document.getElementById('btn-reset-filters');
+    if (resetBtn) resetBtn.onclick = () => resetFilters();
+}
+
+export function resetFilters() {
+    store.resetFilters();
     populateProvinces();
+    syncFilterControlsFromStore();
 }
 
 export function syncFilterControlsFromStore() {
@@ -84,17 +101,18 @@ export function syncFilterControlsFromStore() {
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = f.search || '';
 
-    const listingTypeSel = document.getElementById('listing-type-filter');
-    if (listingTypeSel) listingTypeSel.value = f.listingType || 'all';
+    const setSelectVal = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.value = val;
+    };
 
-    const propTypeSel = document.getElementById('prop-type-filter');
-    if (propTypeSel) propTypeSel.value = f.propertyType || 'all';
-
-    const statusSel = document.getElementById('status-filter');
-    if (statusSel) statusSel.value = f.status || 'all';
-
-    const sortSel = document.getElementById('sort-filter');
-    if (sortSel) sortSel.value = f.sort || 'date-desc';
+    setSelectVal('listing-type-filter', f.listingType || 'all');
+    setSelectVal('prop-type-filter', f.propertyType || 'all');
+    setSelectVal('status-filter', f.status || 'all');
+    setSelectVal('sort-filter', f.sort || 'date-desc');
+    setSelectVal('geo-province-filter', f.province || 'all');
+    setSelectVal('geo-area-filter', f.area || 'all');
+    setSelectVal('geo-suburb-filter', f.suburb || 'all');
 }
 
 export function populateProvinces() {
@@ -114,6 +132,7 @@ export function populateProvinces() {
         provSelect.value = currentSelected;
     } else {
         provSelect.value = 'all';
+        store.activeFilters.province = 'all';
     }
 
     onProvinceChanged(provSelect.value, false);
@@ -129,26 +148,30 @@ function onProvinceChanged(prov, triggerStoreUpdate = true) {
         if ((prov === 'all' || p === prov) && a) areas.add(a);
     });
 
-    const currentSelected = store.activeFilters.area || 'all';
+    let selectedArea = 'all';
+    if (!triggerStoreUpdate) {
+        const currentSelected = store.activeFilters.area || 'all';
+        if (currentSelected !== 'all' && areas.has(currentSelected)) {
+            selectedArea = currentSelected;
+        }
+    }
+
     areaSelect.innerHTML = '<option value="all">All Areas / Metros</option>';
     Array.from(areas).sort().forEach(a => areaSelect.add(new Option(a, a)));
-
-    if (currentSelected !== 'all' && areas.has(currentSelected)) {
-        areaSelect.value = currentSelected;
-    } else {
-        areaSelect.value = 'all';
-    }
+    areaSelect.value = selectedArea;
 
     if (triggerStoreUpdate) {
-        store.updateFilters({ province: prov, area: areaSelect.value });
+        store.updateFilters({ province: prov, area: selectedArea });
+    } else {
+        store.activeFilters.area = selectedArea;
     }
-    onAreaChanged(areaSelect.value, triggerStoreUpdate);
+    onAreaChanged(selectedArea, triggerStoreUpdate);
 }
 
 function onAreaChanged(area, triggerStoreUpdate = true) {
     const subSelect = document.getElementById('geo-suburb-filter');
     if (!subSelect) return;
-    const prov = document.getElementById('geo-province-filter').value;
+    const prov = document.getElementById('geo-province-filter')?.value || 'all';
     const suburbs = new Set();
 
     store.rawListings.forEach(item => {
@@ -161,22 +184,21 @@ function onAreaChanged(area, triggerStoreUpdate = true) {
         }
     });
 
-    const currentSelected = store.activeFilters.suburb || 'all';
+    let selectedSub = 'all';
+    if (!triggerStoreUpdate) {
+        const currentSelected = store.activeFilters.suburb || 'all';
+        if (currentSelected !== 'all' && suburbs.has(currentSelected)) {
+            selectedSub = currentSelected;
+        }
+    }
+
     subSelect.innerHTML = '<option value="all">All Suburbs</option>';
     Array.from(suburbs).sort().forEach(s => subSelect.add(new Option(s, s)));
-
-    if (currentSelected !== 'all' && suburbs.has(currentSelected)) {
-        subSelect.value = currentSelected;
-    } else {
-        subSelect.value = 'all';
-    }
+    subSelect.value = selectedSub;
 
     if (triggerStoreUpdate) {
-        store.updateFilters({ area: area, suburb: subSelect.value });
+        store.updateFilters({ area: area, suburb: selectedSub });
+    } else {
+        store.activeFilters.suburb = selectedSub;
     }
-}
-
-function resetGeo() {
-    document.getElementById('geo-province-filter').value = 'all';
-    onProvinceChanged('all', true);
 }

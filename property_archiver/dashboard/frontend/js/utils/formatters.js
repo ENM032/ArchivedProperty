@@ -23,3 +23,28 @@ export function formatDate(isoString) {
     if (!isoString) return '';
     return new Date(isoString).toLocaleDateString('en-ZA');
 }
+
+export function getStatusBadgeInfo(item) {
+    if (!item) return { statusClass: 'active', statusLabel: 'Active' };
+    const rawStatus = (item.listing_status || '').toLowerCase().trim();
+    if (item.is_sold || rawStatus === 'sold') {
+        return { statusClass: 'sold', statusLabel: 'Sold' };
+    }
+    if (item.is_under_offer || rawStatus === 'under_offer' || rawStatus === 'under offer') {
+        return { statusClass: 'under_offer', statusLabel: 'Under Offer' };
+    }
+    if (rawStatus === 'delisted') {
+        return { statusClass: 'delisted', statusLabel: 'Delisted' };
+    }
+    if (rawStatus === 'withdrawn') {
+        return { statusClass: 'withdrawn', statusLabel: 'Withdrawn' };
+    }
+    if (rawStatus === 'pending') {
+        return { statusClass: 'pending', statusLabel: 'Pending' };
+    }
+    if (rawStatus && rawStatus !== 'active') {
+        const titleCased = rawStatus.charAt(0).toUpperCase() + rawStatus.slice(1).replace(/_/g, ' ');
+        return { statusClass: rawStatus.replace(/[^a-z0-9_-]/g, '_'), statusLabel: titleCased };
+    }
+    return { statusClass: 'active', statusLabel: 'Active' };
+}

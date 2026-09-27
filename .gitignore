@@ -24,6 +24,7 @@ MANIFEST
 
 # Virtual environments
 .env
+.env.*
 .venv
 env/
 venv/
@@ -59,7 +60,7 @@ scratch/
 .staging_*
 .tmp_*
 *.db
+*.sqlite
 
 # Local Archived Property Data
-# (Excludes future downloaded listings; existing tracked demo listings remain in repo)
 archive/

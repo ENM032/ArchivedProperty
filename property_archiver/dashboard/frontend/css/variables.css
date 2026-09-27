@@ -52,6 +52,18 @@
     --status-sold-bg: #fef2f2;
     --status-sold-border: #fca5a5;
 
+    --status-delisted-text: #475569;
+    --status-delisted-bg: #f1f5f9;
+    --status-delisted-border: #cbd5e1;
+
+    --status-withdrawn-text: #64748b;
+    --status-withdrawn-bg: #f8fafc;
+    --status-withdrawn-border: #cbd5e1;
+
+    --status-pending-text: #c2410c;
+    --status-pending-bg: #fff7ed;
+    --status-pending-border: #fed7aa;
+
     --accent-red: #dc2626;
     --accent-amber: #d97706;
     --accent-green: #16a34a;

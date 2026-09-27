@@ -60,6 +60,21 @@ class Store {
         this.applyFilters();
     }
 
+    resetFilters() {
+        this.activeFilters = {
+            search: '',
+            listingType: 'all',
+            propertyType: 'all',
+            status: 'all',
+            sort: 'date-desc',
+            province: 'all',
+            area: 'all',
+            suburb: 'all'
+        };
+        saveDashboardState({ filters: this.activeFilters });
+        this.applyFilters();
+    }
+
     applyFilters() {
         const { search, listingType, propertyType, status, sort, province, area, suburb } = this.activeFilters;
         const query = search ? search.toLowerCase().trim() : '';
@@ -83,7 +98,9 @@ class Store {
             const matchesStatus = (status === 'all') ||
                 (status === 'active' && itemStatus === 'active' && !item.is_under_offer && !item.is_sold) ||
                 (status === 'under_offer' && (itemStatus === 'under_offer' || item.is_under_offer)) ||
-                (status === 'sold' && (itemStatus === 'sold' || item.is_sold));
+                (status === 'sold' && (itemStatus === 'sold' || item.is_sold)) ||
+                (status === 'delisted' && itemStatus === 'delisted') ||
+                (status === 'withdrawn' && itemStatus === 'withdrawn');
 
             const p = item.geo_hierarchy?.province || item.location?.province;
             const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;

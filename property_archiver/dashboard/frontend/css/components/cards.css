@@ -99,6 +99,21 @@
     color: var(--status-sold-text);
     border: 1px solid var(--status-sold-border);
 }
+.card-badge.delisted {
+    background-color: var(--status-delisted-bg);
+    color: var(--status-delisted-text);
+    border: 1px solid var(--status-delisted-border);
+}
+.card-badge.withdrawn {
+    background-color: var(--status-withdrawn-bg);
+    color: var(--status-withdrawn-text);
+    border: 1px solid var(--status-withdrawn-border);
+}
+.card-badge.pending {
+    background-color: var(--status-pending-bg);
+    color: var(--status-pending-text);
+    border: 1px solid var(--status-pending-border);
+}
 
 .img-count-tag {
     position: absolute;

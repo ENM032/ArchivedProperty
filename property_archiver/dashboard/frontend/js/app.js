@@ -5,7 +5,7 @@ import { fetchListings } from './api/apiClient.js';
 import { store } from './state/store.js';
 import { showToast } from './utils/dom.js';
 import { renderMetrics } from './components/metricsBar.js';
-import { initFilterBar, populateProvinces, syncFilterControlsFromStore } from './components/filterBar.js';
+import { initFilterBar, populateProvinces, syncFilterControlsFromStore, resetFilters } from './components/filterBar.js';
 import { renderGridView } from './views/gridView.js';
 import { renderGroupedView } from './views/groupedView.js';
 import { renderMapView } from './views/mapView.js';
@@ -17,14 +17,14 @@ import { loadDashboardState, saveDashboardState } from './utils/storage.js';
 let isInitialLoad = true;
 
 export async function loadDashboardData() {
-    // Preserve current scroll position before data refresh
     const previousScrollY = window.scrollY;
 
     try {
         const listings = await fetchListings();
-        store.setListings(listings);
+        store.rawListings = listings || [];
         populateProvinces();
         syncFilterControlsFromStore();
+        store.applyFilters();
 
         // Handle Deep Linking Parameters (take precedence over stored state)
         const params = new URLSearchParams(window.location.search);
@@ -35,7 +35,6 @@ export async function loadDashboardData() {
             });
             store.setView(viewParam);
         } else {
-            // Synchronize view button active classes with store's currentView
             document.querySelectorAll('.view-btn').forEach(b => {
                 b.classList.toggle('active', b.dataset.view === store.currentView);
             });
@@ -69,10 +68,17 @@ function handleStateChange(state) {
     const grid = document.getElementById('property-grid');
     const grouped = document.getElementById('grouped-view-container');
     const mapContainer = document.getElementById('map-view-container');
+    const empty = document.getElementById('empty-state');
+
+    const hasResults = state.filteredListings && state.filteredListings.length > 0;
 
     grid.style.display = (state.currentView === 'grid') ? 'grid' : 'none';
     grouped.style.display = (state.currentView === 'grouped') ? 'flex' : 'none';
     mapContainer.style.display = (state.currentView === 'map') ? 'block' : 'none';
+
+    if (empty) {
+        empty.style.display = (!hasResults && state.currentView !== 'map') ? 'block' : 'none';
+    }
 
     if (state.currentView === 'grid') {
         renderGridView(state.filteredListings);
@@ -100,6 +106,11 @@ function setupGlobalNavigation() {
             window.location.href = `/api/export?format=${format.toLowerCase().trim()}`;
         }
     };
+
+    const emptyResetBtn = document.getElementById('btn-empty-reset');
+    if (emptyResetBtn) {
+        emptyResetBtn.onclick = () => resetFilters();
+    }
 
     // Track scroll position in localStorage (throttled)
     let scrollTimeout = null;

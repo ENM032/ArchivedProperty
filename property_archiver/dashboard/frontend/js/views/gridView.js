@@ -1,7 +1,7 @@
 /**
  * Flat Card Grid View Renderer with Native Lazy Loading, DocumentFragment Batching & Infinite Scroll.
  */
-import { formatZAR, formatDate } from '../utils/formatters.js';
+import { formatZAR, formatDate, getStatusBadgeInfo } from '../utils/formatters.js';
 import { openDossier } from '../components/dossierModal.js';
 
 const BATCH_SIZE = 36;
@@ -83,8 +83,7 @@ export function createCardElement(item) {
     card.className = 'property-card';
     card.onclick = () => openDossier(item.listing_id);
 
-    const statusClass = item.is_sold ? 'sold' : (item.is_under_offer ? 'under_offer' : 'active');
-    const statusLabel = item.is_sold ? 'Sold' : (item.is_under_offer ? 'Under Offer' : 'Active');
+    const { statusClass, statusLabel } = getStatusBadgeInfo(item);
     const heroImg = item.hero_image_url || '/api/placeholder';
 
     const tagsHtml = (item.user_tags && item.user_tags.length > 0)

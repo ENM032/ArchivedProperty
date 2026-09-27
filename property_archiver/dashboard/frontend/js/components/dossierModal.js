@@ -2,7 +2,7 @@
  * Property Detail Dossier Modal with Edit, Annotate, and Delete Actions.
  */
 import { fetchListingDetails, deleteListingApi, updateListingApi } from '../api/apiClient.js';
-import { formatZAR, formatDate } from '../utils/formatters.js';
+import { formatZAR, formatDate, getStatusBadgeInfo } from '../utils/formatters.js';
 import { showToast } from '../utils/dom.js';
 import { store } from '../state/store.js';
 import { initGallery } from './gallery.js';
@@ -27,6 +27,7 @@ function renderDossierModal(data) {
     const userTags = l.user_tags || [];
     const userRating = l.user_rating || 0;
     const userNotes = l.user_notes || '';
+    const statusInfo = getStatusBadgeInfo(l);
 
     container.innerHTML = `
         <div id="dossier-modal" class="modal-backdrop open">
@@ -61,6 +62,7 @@ function renderDossierModal(data) {
                                     <option value="active" ${l.listing_status === 'active' ? 'selected' : ''}>Active</option>
                                     <option value="under_offer" ${l.listing_status === 'under_offer' ? 'selected' : ''}>Under Offer</option>
                                     <option value="sold" ${l.listing_status === 'sold' ? 'selected' : ''}>Sold</option>
+                                    <option value="delisted" ${l.listing_status === 'delisted' ? 'selected' : ''}>Delisted</option>
                                     <option value="withdrawn" ${l.listing_status === 'withdrawn' ? 'selected' : ''}>Withdrawn</option>
                                 </select>
                             </div>
@@ -142,7 +144,7 @@ function renderDossierModal(data) {
                                     <div><strong>Asking Price:</strong> ${formatZAR(l.price?.amount)}</div>
                                     <div><strong>Rates & Taxes:</strong> ${l.price?.rates_and_taxes_monthly ? formatZAR(l.price.rates_and_taxes_monthly) + '/mo' : 'N/A'}</div>
                                     <div><strong>Levies:</strong> ${l.price?.levies_monthly ? formatZAR(l.price.levies_monthly) + '/mo' : 'N/A'}</div>
-                                    <div><strong>Status:</strong> <span style="color: var(--primary); font-weight: bold;">${(l.listing_status || 'active').toUpperCase()}</span></div>
+                                    <div><strong>Status:</strong> <span class="card-badge ${statusInfo.statusClass}" style="position: static; display: inline-block; vertical-align: middle; margin-left: 0.35rem;">${statusInfo.statusLabel}</span></div>
                                 </div>
                             </div>
                             <div class="info-card">

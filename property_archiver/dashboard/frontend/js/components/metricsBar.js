@@ -11,16 +11,21 @@ export function renderMetrics(listings) {
     const totalImgs = listings.reduce((sum, item) => sum + (item.images_count || 0), 0);
 
     let totalVal = 0;
-    let activeCount = 0, offerCount = 0, soldCount = 0;
+    let activeCount = 0, offerCount = 0, soldCount = 0, inactiveCount = 0;
 
     listings.forEach(item => {
         if (item.price && item.price.amount) totalVal += item.price.amount;
-        if (item.listing_status === 'under_offer' || item.is_under_offer) offerCount++;
-        else if (item.listing_status === 'sold' || item.is_sold) soldCount++;
+        const st = (item.listing_status || 'active').toLowerCase();
+        if (item.is_sold || st === 'sold') soldCount++;
+        else if (item.is_under_offer || st === 'under_offer') offerCount++;
+        else if (st === 'delisted' || st === 'withdrawn') inactiveCount++;
         else activeCount++;
     });
 
     const activePct = totalCount ? Math.round((activeCount / totalCount) * 100) : 0;
+    const statusDetails = inactiveCount > 0
+        ? `${activeCount} Active | ${offerCount} Offer | ${soldCount} Sold | ${inactiveCount} Delisted`
+        : `${activeCount} Active | ${offerCount} Under Offer | ${soldCount} Sold`;
 
     container.innerHTML = `
         <div class="metric-card">
@@ -41,7 +46,7 @@ export function renderMetrics(listings) {
         <div class="metric-card">
             <div class="metric-title">Status Breakdown</div>
             <div class="metric-value">${activePct}% Active</div>
-            <div class="metric-sub">${activeCount} Active | ${offerCount} Under Offer | ${soldCount} Sold</div>
+            <div class="metric-sub">${statusDetails}</div>
         </div>
     `;
 }

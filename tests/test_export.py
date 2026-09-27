@@ -16,7 +16,7 @@ def test_export_csv_filtered(tmp_path: Path):
     assert out_csv.exists()
     content = out_csv.read_text(encoding="utf-8")
     assert "listing_id" in content
-    assert "T5333193" in content
+    assert "T5452118" in content
     assert "T4710876" not in content  # Rivonia should be filtered out
 
 

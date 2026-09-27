@@ -210,9 +210,11 @@ class ArchiveWriter:
             record.listing_status = clean_status
             if clean_status == "under_offer":
                 record.is_under_offer = True
+                record.is_sold = False
             elif clean_status == "sold":
                 record.is_sold = True
-            elif clean_status == "active":
+                record.is_under_offer = False
+            elif clean_status in ("active", "delisted", "withdrawn"):
                 record.is_under_offer = False
                 record.is_sold = False
 
@@ -275,17 +277,22 @@ class ArchiveWriter:
             if not target_path.exists():
                 return False
 
-        parent_area = target_path.parent
-        parent_prov = parent_area.parent
-
         shutil.rmtree(str(target_path), ignore_errors=True)
 
-        # Prune empty parent folders
-        for folder in (parent_area, parent_prov):
+        # Recursively prune empty parent directories up to listings root (suburb -> area -> province)
+        base_dir = Path(archive_base).resolve()
+        listings_root = (base_dir / "listings").resolve() if (base_dir / "listings").exists() else base_dir
+
+        cur = target_path.parent
+        while cur and cur != listings_root and cur != base_dir and cur.resolve() != listings_root:
             try:
-                if folder.exists() and not any(folder.iterdir()):
-                    folder.rmdir()
+                if cur.exists() and not any(cur.iterdir()):
+                    parent_to_check = cur.parent
+                    cur.rmdir()
+                    cur = parent_to_check
+                else:
+                    break
             except OSError:
-                pass
+                break
 
         return True
