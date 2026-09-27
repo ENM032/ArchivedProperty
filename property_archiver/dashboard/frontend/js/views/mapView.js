@@ -111,7 +111,7 @@ export function renderMapView(listings) {
             validCoordinates.push([lat, lng]);
             item._computed_coords = [lat, lng];
 
-            const statusClass = item.is_sold ? 'sold' : (item.is_under_offer ? 'under_offer' : 'active');
+            const { statusClass, statusLabel } = getStatusBadgeInfo(item);
             const heroImg = item.hero_image_url || '/api/placeholder';
             const priceText = formatCompactZAR(item.price?.amount);
 
@@ -131,7 +131,6 @@ export function renderMapView(listings) {
                 popupAnchor: [0, -16]
             });
 
-            const { statusClass, statusLabel } = getStatusBadgeInfo(item);
             const statusBadgeHtml = statusClass !== 'active' 
                 ? `<span class="card-badge ${statusClass}" style="position: static; font-size: 0.65rem; padding: 0.1rem 0.4rem; display: inline-block; vertical-align: middle; margin-left: 0.35rem;">${statusLabel}</span>`
                 : '';
