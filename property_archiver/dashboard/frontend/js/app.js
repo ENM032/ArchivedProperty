@@ -90,6 +90,11 @@ function handleStateChange(state) {
 }
 
 function setupGlobalNavigation() {
+    const addClick = (id, fn) => {
+        const el = document.getElementById(id);
+        if (el) el.onclick = fn;
+    };
+
     document.querySelectorAll('.view-btn').forEach(btn => {
         btn.onclick = () => {
             document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
@@ -98,19 +103,15 @@ function setupGlobalNavigation() {
         };
     });
 
-    document.getElementById('btn-open-compare').onclick = openCompareModal;
-    document.getElementById('btn-open-archive').onclick = openArchiveModal;
-    document.getElementById('btn-open-export').onclick = () => {
+    addClick('btn-open-compare', openCompareModal);
+    addClick('btn-open-archive', openArchiveModal);
+    addClick('btn-open-export', () => {
         const format = prompt("Export Format: Enter 'csv', 'sqlite', 'jsonl', or 'geojson':", "csv");
         if (format && ['csv', 'sqlite', 'jsonl', 'geojson'].includes(format.toLowerCase().trim())) {
             window.location.href = `/api/export?format=${format.toLowerCase().trim()}`;
         }
-    };
-
-    const emptyResetBtn = document.getElementById('btn-empty-reset');
-    if (emptyResetBtn) {
-        emptyResetBtn.onclick = () => resetFilters();
-    }
+    });
+    addClick('btn-empty-reset', () => resetFilters());
 
     // Track scroll position in localStorage (throttled)
     let scrollTimeout = null;
@@ -123,10 +124,16 @@ function setupGlobalNavigation() {
     }, { passive: true });
 }
 
-// Bootstrap on DOM Ready
-window.addEventListener('DOMContentLoaded', () => {
+// Bootstrap on DOM Ready or immediately if DOM is already parsed
+function bootstrap() {
     initFilterBar();
     setupGlobalNavigation();
     store.subscribe(handleStateChange);
     loadDashboardData();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootstrap);
+} else {
+    bootstrap();
+}

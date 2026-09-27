@@ -215,11 +215,13 @@ function renderDossierModal(data) {
 
     initGallery(l.listing_id, l.images);
 
-    if (l.location && l.location.latitude && l.location.longitude) {
+    if (typeof L !== 'undefined' && l.location && l.location.latitude && l.location.longitude) {
         setTimeout(() => {
-            dossierMiniMap = L.map('dossier-mini-map').setView([l.location.latitude, l.location.longitude], 15);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(dossierMiniMap);
-            L.marker([l.location.latitude, l.location.longitude]).addTo(dossierMiniMap);
+            try {
+                dossierMiniMap = L.map('dossier-mini-map').setView([l.location.latitude, l.location.longitude], 15);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(dossierMiniMap);
+                L.marker([l.location.latitude, l.location.longitude]).addTo(dossierMiniMap);
+            } catch (_) {}
         }, 200);
     }
 }

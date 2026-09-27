@@ -70,6 +70,11 @@ export function initFilterBar() {
 }
 
 function bindFilterEvents() {
+    const setEvent = (id, event, handler) => {
+        const el = document.getElementById(id);
+        if (el) el[event] = handler;
+    };
+
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.oninput = debounce((e) => {
@@ -77,17 +82,15 @@ function bindFilterEvents() {
         }, 180);
     }
 
-    document.getElementById('listing-type-filter').onchange = (e) => store.updateFilters({ listingType: e.target.value });
-    document.getElementById('prop-type-filter').onchange = (e) => store.updateFilters({ propertyType: e.target.value });
-    document.getElementById('status-filter').onchange = (e) => store.updateFilters({ status: e.target.value });
-    document.getElementById('sort-filter').onchange = (e) => store.updateFilters({ sort: e.target.value });
+    setEvent('listing-type-filter', 'onchange', (e) => store.updateFilters({ listingType: e.target.value }));
+    setEvent('prop-type-filter', 'onchange', (e) => store.updateFilters({ propertyType: e.target.value }));
+    setEvent('status-filter', 'onchange', (e) => store.updateFilters({ status: e.target.value }));
+    setEvent('sort-filter', 'onchange', (e) => store.updateFilters({ sort: e.target.value }));
 
-    document.getElementById('geo-province-filter').onchange = (e) => onProvinceChanged(e.target.value, true);
-    document.getElementById('geo-area-filter').onchange = (e) => onAreaChanged(e.target.value, true);
-    document.getElementById('geo-suburb-filter').onchange = (e) => store.updateFilters({ suburb: e.target.value });
-
-    const resetBtn = document.getElementById('btn-reset-filters');
-    if (resetBtn) resetBtn.onclick = () => resetFilters();
+    setEvent('geo-province-filter', 'onchange', (e) => onProvinceChanged(e.target.value, true));
+    setEvent('geo-area-filter', 'onchange', (e) => onAreaChanged(e.target.value, true));
+    setEvent('geo-suburb-filter', 'onchange', (e) => store.updateFilters({ suburb: e.target.value }));
+    setEvent('btn-reset-filters', 'onclick', () => resetFilters());
 }
 
 export function resetFilters() {

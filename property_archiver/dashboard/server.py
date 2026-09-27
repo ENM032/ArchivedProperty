@@ -218,13 +218,23 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self._send_json_response({"error": "File not found", "code": "NOT_FOUND", "status": 404}, HTTPStatus.NOT_FOUND)
             return
 
-        mime_type, _ = mimetypes.guess_type(str(file_path))
-        mime_type = mime_type or "application/octet-stream"
+        suffix = file_path.suffix.lower()
+        if suffix in (".js", ".mjs"):
+            mime_type = "text/javascript; charset=utf-8"
+        elif suffix == ".css":
+            mime_type = "text/css; charset=utf-8"
+        elif suffix == ".html":
+            mime_type = "text/html; charset=utf-8"
+        elif suffix == ".json":
+            mime_type = "application/json; charset=utf-8"
+        else:
+            mime_type, _ = mimetypes.guess_type(str(file_path))
+            mime_type = mime_type or "application/octet-stream"
 
         try:
             with open(file_path, "rb") as f:
                 content = f.read()
-            self._send_response_bytes(content, mime_type)
+            self._send_response_bytes(content, mime_type, cache_control="no-cache, no-store, must-revalidate")
         except Exception as exc:
             self._send_json_response({"error": f"Failed reading asset: {exc}", "code": "ASSET_READ_ERROR", "status": 500}, HTTPStatus.INTERNAL_SERVER_ERROR)
 
@@ -244,18 +254,25 @@ class DashboardRequestHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(payload)))
             self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
             self.end_headers()
             self.wfile.write(payload)
         except Exception as exc:
             logger.error("Failed sending JSON response: %s", exc)
 
-    def _send_response_bytes(self, data: bytes, mime_type: str, status: HTTPStatus = HTTPStatus.OK):
-        """Send raw binary content with Content-Type."""
+    def _send_response_bytes(
+        self,
+        data: bytes,
+        mime_type: str,
+        status: HTTPStatus = HTTPStatus.OK,
+        cache_control: str = "public, max-age=3600"
+    ):
+        """Send raw binary content with Content-Type and Cache-Control."""
         try:
             self.send_response(status)
             self.send_header("Content-Type", mime_type)
             self.send_header("Content-Length", str(len(data)))
-            self.send_header("Cache-Control", "public, max-age=3600")
+            self.send_header("Cache-Control", cache_control)
             self.end_headers()
             self.wfile.write(data)
         except Exception as exc:

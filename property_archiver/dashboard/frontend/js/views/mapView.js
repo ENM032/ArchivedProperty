@@ -18,6 +18,14 @@ export function renderMapView(listings) {
 
     currentRenderedListings = listings || [];
 
+    if (typeof L === 'undefined') {
+        const pane = document.getElementById('leaflet-map');
+        if (pane) {
+            pane.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#5a6a80;font-size:0.9rem;">Map tiles library (Leaflet) could not be loaded. Please check your internet connection.</div>';
+        }
+        return;
+    }
+
     if (!mapInstance) {
         // Step 1: Define Multi-Layer Basemaps (Street, High-Resolution Satellite, Dark Canvas)
         const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
