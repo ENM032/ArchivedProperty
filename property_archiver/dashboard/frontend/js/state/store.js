@@ -9,9 +9,7 @@ class Store {
         this.rawListings = [];
         this.filteredListings = [];
         this.currentView = savedState?.view || 'grid';
-        this.activeFilters = { ...DEFAULT_FILTERS, ...(savedState?.filters || {}) };
-        // Always reset search input on fresh initialization to prevent stale query locks
-        this.activeFilters.search = '';
+        this.activeFilters = { ...DEFAULT_FILTERS };
         this.listeners = [];
     }
 
@@ -121,13 +119,17 @@ class Store {
     }
 
     _matchesGeo(item, province, area, suburb) {
-        const p = item.geo_hierarchy?.province || item.location?.province;
-        const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
-        const s = item.geo_hierarchy?.suburb || item.location?.suburb;
+        const p = (item.geo_hierarchy?.province || item.location?.province || '').toLowerCase().trim();
+        const a = (item.geo_hierarchy?.area || item.location?.region || item.location?.city || '').toLowerCase().trim();
+        const s = (item.geo_hierarchy?.suburb || item.location?.suburb || '').toLowerCase().trim();
 
-        const matchesProv = (province === 'all' || (p && p.toLowerCase() === province.toLowerCase()));
-        const matchesArea = (area === 'all' || (a && a.toLowerCase() === area.toLowerCase()));
-        const matchesSub = (suburb === 'all' || (s && s.toLowerCase() === suburb.toLowerCase()));
+        const provTarget = (province || 'all').toLowerCase().trim();
+        const areaTarget = (area || 'all').toLowerCase().trim();
+        const subTarget = (suburb || 'all').toLowerCase().trim();
+
+        const matchesProv = (provTarget === 'all' || p === provTarget);
+        const matchesArea = (areaTarget === 'all' || a === areaTarget);
+        const matchesSub = (subTarget === 'all' || s === subTarget);
 
         return matchesProv && matchesArea && matchesSub;
     }

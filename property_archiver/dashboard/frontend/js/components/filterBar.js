@@ -124,15 +124,16 @@ export function populateProvinces() {
     const provinces = new Set();
     store.rawListings.forEach(item => {
         const p = item.geo_hierarchy?.province || item.location?.province;
-        if (p) provinces.add(p);
+        if (p && p.trim()) provinces.add(p.trim());
     });
 
-    const currentSelected = store.activeFilters.province || 'all';
+    const currentSelected = (store.activeFilters.province || 'all').trim();
     provSelect.innerHTML = '<option value="all">All Provinces</option>';
     Array.from(provinces).sort().forEach(p => provSelect.add(new Option(p, p)));
 
-    if (currentSelected !== 'all' && provinces.has(currentSelected)) {
-        provSelect.value = currentSelected;
+    const match = Array.from(provinces).find(p => p.toLowerCase() === currentSelected.toLowerCase());
+    if (currentSelected !== 'all' && match) {
+        provSelect.value = match;
     } else {
         provSelect.value = 'all';
         store.activeFilters.province = 'all';
@@ -145,18 +146,22 @@ function onProvinceChanged(prov, triggerStoreUpdate = true) {
     const areaSelect = document.getElementById('geo-area-filter');
     if (!areaSelect) return;
     const areas = new Set();
+    const provLower = (prov || 'all').toLowerCase().trim();
+
     store.rawListings.forEach(item => {
-        const p = item.geo_hierarchy?.province || item.location?.province;
-        const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
-        if ((prov === 'all' || p === prov) && a) areas.add(a);
+        const p = (item.geo_hierarchy?.province || item.location?.province || '').toLowerCase().trim();
+        const a = (item.geo_hierarchy?.area || item.location?.region || item.location?.city || '').trim();
+        if ((provLower === 'all' || p === provLower) && a) {
+            areas.add(a);
+        }
     });
 
     let selectedArea = 'all';
-    if (!triggerStoreUpdate) {
-        const currentSelected = store.activeFilters.area || 'all';
-        if (currentSelected !== 'all' && areas.has(currentSelected)) {
-            selectedArea = currentSelected;
-        }
+    const currentSelected = (store.activeFilters.area || 'all').toLowerCase().trim();
+    const match = Array.from(areas).find(a => a.toLowerCase() === currentSelected);
+
+    if (currentSelected !== 'all' && match) {
+        selectedArea = match;
     }
 
     areaSelect.innerHTML = '<option value="all">All Areas / Metros</option>';
@@ -174,25 +179,26 @@ function onProvinceChanged(prov, triggerStoreUpdate = true) {
 function onAreaChanged(area, triggerStoreUpdate = true) {
     const subSelect = document.getElementById('geo-suburb-filter');
     if (!subSelect) return;
-    const prov = document.getElementById('geo-province-filter')?.value || 'all';
+    const prov = (document.getElementById('geo-province-filter')?.value || store.activeFilters.province || 'all').toLowerCase().trim();
+    const areaLower = (area || 'all').toLowerCase().trim();
     const suburbs = new Set();
 
     store.rawListings.forEach(item => {
-        const p = item.geo_hierarchy?.province || item.location?.province;
-        const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
-        const s = item.geo_hierarchy?.suburb || item.location?.suburb;
+        const p = (item.geo_hierarchy?.province || item.location?.province || '').toLowerCase().trim();
+        const a = (item.geo_hierarchy?.area || item.location?.region || item.location?.city || '').toLowerCase().trim();
+        const s = (item.geo_hierarchy?.suburb || item.location?.suburb || '').trim();
 
-        if ((prov === 'all' || p === prov) && (area === 'all' || a === area) && s) {
+        if ((prov === 'all' || p === prov) && (areaLower === 'all' || a === areaLower) && s) {
             suburbs.add(s);
         }
     });
 
     let selectedSub = 'all';
-    if (!triggerStoreUpdate) {
-        const currentSelected = store.activeFilters.suburb || 'all';
-        if (currentSelected !== 'all' && suburbs.has(currentSelected)) {
-            selectedSub = currentSelected;
-        }
+    const currentSelected = (store.activeFilters.suburb || 'all').toLowerCase().trim();
+    const match = Array.from(suburbs).find(s => s.toLowerCase() === currentSelected);
+
+    if (currentSelected !== 'all' && match) {
+        selectedSub = match;
     }
 
     subSelect.innerHTML = '<option value="all">All Suburbs</option>';
