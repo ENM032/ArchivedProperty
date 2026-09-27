@@ -24,7 +24,7 @@ export async function loadDashboardData() {
         store.rawListings = listings || [];
         populateProvinces();
         syncFilterControlsFromStore();
-        store.applyFilters();
+        store.applyFilters(true);
 
         // Handle Deep Linking Parameters (take precedence over stored state)
         const params = new URLSearchParams(window.location.search);

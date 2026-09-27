@@ -83,45 +83,50 @@ export function createCardElement(item) {
     card.className = 'property-card';
     card.onclick = () => openDossier(item.listing_id);
 
-    const { statusClass, statusLabel } = getStatusBadgeInfo(item);
-    const heroImg = item.hero_image_url || '/api/placeholder';
+    try {
+        const { statusClass, statusLabel } = getStatusBadgeInfo(item);
+        const heroImg = item.hero_image_url || '/api/placeholder';
 
-    const tagsHtml = (item.user_tags && item.user_tags.length > 0)
-        ? `<div class="card-tags">${item.user_tags.slice(0, 3).map(t => `<span class="user-tag-chip-sm">${t}</span>`).join('')}</div>`
-        : '';
+        const tagsHtml = (item.user_tags && Array.isArray(item.user_tags) && item.user_tags.length > 0)
+            ? `<div class="card-tags">${item.user_tags.slice(0, 3).map(t => `<span class="user-tag-chip-sm">${t}</span>`).join('')}</div>`
+            : '';
 
-    const ratingHtml = item.user_rating ? `<span style="color: var(--accent-amber); font-size: 0.85rem;">${'★'.repeat(item.user_rating)}</span>` : '';
+        const validRating = (typeof item.user_rating === 'number' && item.user_rating >= 1 && item.user_rating <= 5) ? Math.floor(item.user_rating) : 0;
+        const ratingHtml = validRating > 0 ? `<span style="color: var(--accent-amber); font-size: 0.85rem;">${'★'.repeat(validRating)}</span>` : '';
 
-    card.innerHTML = `
-        <div class="card-thumb-wrapper">
-            <img class="card-thumb" 
-                 src="${heroImg}" 
-                 loading="lazy" 
-                 decoding="async" 
-                 alt="${item.title || 'Property'}" 
-                 onerror="this.src='/api/placeholder'">
-            <div class="card-badge ${statusClass}">${statusLabel}</div>
-            <div class="img-count-tag">${item.images_count || 0} Photos</div>
-        </div>
-        <div class="card-body">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div class="card-price">${formatZAR(item.price?.amount)}</div>
-                ${ratingHtml}
+        card.innerHTML = `
+            <div class="card-thumb-wrapper">
+                <img class="card-thumb" 
+                     src="${heroImg}" 
+                     loading="lazy" 
+                     decoding="async" 
+                     alt="${item.title || 'Property'}" 
+                     onerror="this.src='/api/placeholder'">
+                <div class="card-badge ${statusClass}">${statusLabel}</div>
+                <div class="img-count-tag">${item.images_count || 0} Photos</div>
             </div>
-            <div class="card-title">${item.title || 'Untitled Listing'}</div>
-            <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
-            ${tagsHtml}
-            <div class="card-specs">
-                <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
-                <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
-                <div class="card-spec-item"><strong>${item.features?.garages || 0}</strong> Garages</div>
-                ${item.erf_size_m2 ? `<div class="card-spec-item"><strong>${item.erf_size_m2}</strong> m²</div>` : ''}
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="card-price">${formatZAR(item.price?.amount)}</div>
+                    ${ratingHtml}
+                </div>
+                <div class="card-title">${item.title || 'Untitled Listing'}</div>
+                <div class="card-address">${item.location?.street_address || ''}, ${item.location?.suburb || ''}</div>
+                ${tagsHtml}
+                <div class="card-specs">
+                    <div class="card-spec-item"><strong>${item.features?.bedrooms || 0}</strong> Beds</div>
+                    <div class="card-spec-item"><strong>${item.features?.bathrooms || 0}</strong> Baths</div>
+                    <div class="card-spec-item"><strong>${item.features?.garages || 0}</strong> Garages</div>
+                    ${item.erf_size_m2 ? `<div class="card-spec-item"><strong>${item.erf_size_m2}</strong> m²</div>` : ''}
+                </div>
+                <div class="card-footer">
+                    <span>ID: ${item.listing_id}</span>
+                    <span>${formatDate(item.extracted_at)}</span>
+                </div>
             </div>
-            <div class="card-footer">
-                <span>ID: ${item.listing_id}</span>
-                <span>${formatDate(item.extracted_at)}</span>
-            </div>
-        </div>
-    `;
+        `;
+    } catch (_) {
+        card.innerHTML = `<div class="card-body"><div class="card-title">${item.listing_id}</div><div class="card-price">${formatZAR(item.price?.amount)}</div></div>`;
+    }
     return card;
 }

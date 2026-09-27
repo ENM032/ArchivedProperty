@@ -1,24 +1,17 @@
 /**
  * Reactive Central Store for Property Archiver Dashboard with localStorage Hydration.
  */
-import { loadDashboardState, saveDashboardState } from '../utils/storage.js';
+import { DEFAULT_FILTERS, loadDashboardState, saveDashboardState } from '../utils/storage.js';
 
 class Store {
     constructor() {
         const savedState = loadDashboardState();
         this.rawListings = [];
         this.filteredListings = [];
-        this.currentView = savedState?.view || 'grid'; // 'grid' | 'grouped' | 'map'
-        this.activeFilters = savedState?.filters || {
-            search: '',
-            listingType: 'all',
-            propertyType: 'all',
-            status: 'all',
-            sort: 'date-desc',
-            province: 'all',
-            area: 'all',
-            suburb: 'all'
-        };
+        this.currentView = savedState?.view || 'grid';
+        this.activeFilters = { ...DEFAULT_FILTERS, ...(savedState?.filters || {}) };
+        // Always reset search input on fresh initialization to prevent stale query locks
+        this.activeFilters.search = '';
         this.listeners = [];
     }
 
@@ -31,8 +24,8 @@ class Store {
     }
 
     setListings(listings) {
-        this.rawListings = listings;
-        this.applyFilters();
+        this.rawListings = listings || [];
+        this.applyFilters(true);
     }
 
     setView(view) {
@@ -61,58 +54,85 @@ class Store {
     }
 
     resetFilters() {
-        this.activeFilters = {
-            search: '',
-            listingType: 'all',
-            propertyType: 'all',
-            status: 'all',
-            sort: 'date-desc',
-            province: 'all',
-            area: 'all',
-            suburb: 'all'
-        };
+        this.activeFilters = { ...DEFAULT_FILTERS };
         saveDashboardState({ filters: this.activeFilters });
         this.applyFilters();
     }
 
-    applyFilters() {
+    applyFilters(isInitial = false) {
         const { search, listingType, propertyType, status, sort, province, area, suburb } = this.activeFilters;
         const query = search ? search.toLowerCase().trim() : '';
 
         let filtered = this.rawListings.filter(item => {
-            const matchesQuery = !query ||
-                (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
-                (item.title && item.title.toLowerCase().includes(query)) ||
-                (item.location && item.location.suburb && item.location.suburb.toLowerCase().includes(query)) ||
-                (item.location && item.location.street_address && item.location.street_address.toLowerCase().includes(query)) ||
-                (item.user_notes && item.user_notes.toLowerCase().includes(query)) ||
-                (item.user_tags && item.user_tags.some(t => t.toLowerCase().includes(query)));
-
-            const lType = (item.listing_type || 'for_sale').toLowerCase();
-            const matchesListingType = (listingType === 'all') || (lType === listingType);
-
-            const pType = (item.property_type || '').toLowerCase();
-            const matchesPropType = (propertyType === 'all') || (pType.includes(propertyType));
-
-            const itemStatus = (item.listing_status || 'active').toLowerCase();
-            const matchesStatus = (status === 'all') ||
-                (status === 'active' && itemStatus === 'active' && !item.is_under_offer && !item.is_sold) ||
-                (status === 'under_offer' && (itemStatus === 'under_offer' || item.is_under_offer)) ||
-                (status === 'sold' && (itemStatus === 'sold' || item.is_sold)) ||
-                (status === 'delisted' && itemStatus === 'delisted') ||
-                (status === 'withdrawn' && itemStatus === 'withdrawn');
-
-            const p = item.geo_hierarchy?.province || item.location?.province;
-            const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
-            const s = item.geo_hierarchy?.suburb || item.location?.suburb;
-
-            const matchesProv = (province === 'all' || p === province);
-            const matchesArea = (area === 'all' || a === area);
-            const matchesSub = (suburb === 'all' || s === suburb);
-
-            return matchesQuery && matchesListingType && matchesPropType && matchesStatus && matchesProv && matchesArea && matchesSub;
+            return this._matchesSearch(item, query) &&
+                this._matchesListingType(item, listingType) &&
+                this._matchesPropertyType(item, propertyType) &&
+                this._matchesStatus(item, status) &&
+                this._matchesGeo(item, province, area, suburb);
         });
 
+        // If on initial load saved filters filtered out all available listings, auto-recover with clean filters
+        if (isInitial && filtered.length === 0 && this.rawListings.length > 0) {
+            this.activeFilters = { ...DEFAULT_FILTERS };
+            saveDashboardState({ filters: this.activeFilters });
+            return this.applyFilters(false);
+        }
+
+        this._sortFiltered(filtered, sort);
+        this.filteredListings = filtered;
+        this.notify();
+    }
+
+    _matchesSearch(item, query) {
+        if (!query) return true;
+        return (item.listing_id && item.listing_id.toLowerCase().includes(query)) ||
+            (item.title && item.title.toLowerCase().includes(query)) ||
+            (item.location?.suburb && item.location.suburb.toLowerCase().includes(query)) ||
+            (item.location?.street_address && item.location.street_address.toLowerCase().includes(query)) ||
+            (item.user_notes && item.user_notes.toLowerCase().includes(query)) ||
+            (item.user_tags && item.user_tags.some(t => t.toLowerCase().includes(query)));
+    }
+
+    _matchesListingType(item, listingType) {
+        if (!listingType || listingType === 'all') return true;
+        return (item.listing_type || 'for_sale').toLowerCase() === listingType.toLowerCase();
+    }
+
+    _matchesPropertyType(item, propertyType) {
+        if (!propertyType || propertyType === 'all') return true;
+        return (item.property_type || '').toLowerCase().includes(propertyType.toLowerCase());
+    }
+
+    _matchesStatus(item, status) {
+        const filterStatus = (status || 'all').toLowerCase();
+        if (filterStatus === 'all') return true;
+        const itemStatus = (item.listing_status || 'active').toLowerCase();
+
+        if (filterStatus === 'active') {
+            return itemStatus === 'active' && !item.is_under_offer && !item.is_sold;
+        }
+        if (filterStatus === 'under_offer') {
+            return itemStatus === 'under_offer' || item.is_under_offer;
+        }
+        if (filterStatus === 'sold') {
+            return itemStatus === 'sold' || item.is_sold;
+        }
+        return itemStatus === filterStatus;
+    }
+
+    _matchesGeo(item, province, area, suburb) {
+        const p = item.geo_hierarchy?.province || item.location?.province;
+        const a = item.geo_hierarchy?.area || item.location?.region || item.location?.city;
+        const s = item.geo_hierarchy?.suburb || item.location?.suburb;
+
+        const matchesProv = (province === 'all' || (p && p.toLowerCase() === province.toLowerCase()));
+        const matchesArea = (area === 'all' || (a && a.toLowerCase() === area.toLowerCase()));
+        const matchesSub = (suburb === 'all' || (s && s.toLowerCase() === suburb.toLowerCase()));
+
+        return matchesProv && matchesArea && matchesSub;
+    }
+
+    _sortFiltered(filtered, sort) {
         filtered.sort((a, b) => {
             if (sort === 'date-desc') return new Date(b.extracted_at) - new Date(a.extracted_at);
             if (sort === 'date-asc') return new Date(a.extracted_at) - new Date(b.extracted_at);
@@ -121,9 +141,6 @@ class Store {
             if (sort === 'beds-desc') return (b.features?.bedrooms || 0) - (a.features?.bedrooms || 0);
             return 0;
         });
-
-        this.filteredListings = filtered;
-        this.notify();
     }
 }
 

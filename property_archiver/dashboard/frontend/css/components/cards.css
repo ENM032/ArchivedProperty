@@ -38,7 +38,6 @@
     gap: 1.5rem;
 }
 
-/* Browser Virtualization: Skips layout calculations for off-screen cards */
 .property-card {
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
@@ -49,8 +48,6 @@
     cursor: pointer;
     transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
     box-shadow: var(--shadow-sm);
-    content-visibility: auto;
-    contain-intrinsic-size: auto 340px;
 }
 .property-card:hover {
     transform: translateY(-3px);
