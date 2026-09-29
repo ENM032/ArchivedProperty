@@ -107,7 +107,7 @@ export function createCardElement(item) {
             </div>
             <div class="card-body">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div class="card-price">${formatZAR(item.price?.amount)}</div>
+                    <div class="card-price">${formatZAR(item.price?.amount, item.price)}</div>
                     ${ratingHtml}
                 </div>
                 <div class="card-title">${item.title || 'Untitled Listing'}</div>
@@ -126,7 +126,7 @@ export function createCardElement(item) {
             </div>
         `;
     } catch (_) {
-        card.innerHTML = `<div class="card-body"><div class="card-title">${item.listing_id}</div><div class="card-price">${formatZAR(item.price?.amount)}</div></div>`;
+        card.innerHTML = `<div class="card-body"><div class="card-title">${item.listing_id}</div><div class="card-price">${formatZAR(item.price?.amount, item.price)}</div></div>`;
     }
     return card;
 }

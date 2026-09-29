@@ -44,6 +44,8 @@ class ListingRecord(BaseModel):
     is_sold: bool = Field(default=False, description="True if listing is marked Sold")
     is_on_show: bool = Field(default=False, description="True if listing has an active On Show viewing scheduled")
     is_price_reduced: bool = Field(default=False, description="True if listing price was marked as reduced/discounted")
+    is_auction: bool = Field(default=False, description="True if listing is being sold on auction")
+    is_poa: bool = Field(default=False, description="True if listing price is on application / request")
     on_show_details: dict[str, Any] | None = Field(default=None, description="Structured date/time metadata for On Show viewings")
 
     listing_date: date | None = Field(default=None, description="Publication or listing date")

@@ -13,7 +13,9 @@ class PriceInfo(BaseModel):
 
     amount: float | None = Field(default=None, description="Listed asking price amount")
     currency: str = Field(default="ZAR", description="Currency ISO code (default ZAR)")
-    formatted_display: str | None = Field(default=None, description="Original formatted price string (e.g. 'R 4 999 000')")
+    formatted_display: str | None = Field(default=None, description="Original formatted price string (e.g. 'R 4 999 000', 'POA', 'Auction')")
+    is_poa: bool = Field(default=False, description="True if price is POA (Price on Application / Request)")
+    is_auction: bool = Field(default=False, description="True if property is sold via auction")
     rates_and_taxes_monthly: float | None = Field(default=None, description="Monthly rates and taxes in ZAR")
     levies_monthly: float | None = Field(default=None, description="Monthly body corporate levies in ZAR")
 

@@ -77,16 +77,32 @@ class PrivatePropertyExtractor(BaseExtractor):
         # Step 4: Extract Meta / OpenGraph tags
         meta_tags, og_tags = self._extract_meta_tags(soup)
 
-        # Step 5: Extract Status, Badges & Lifecycle ('Under Offer', 'Sold', 'Reduced', 'On Show')
-        status, badges, is_under_offer, is_sold, is_on_show, is_reduced, on_show_details = self._extract_status(
-            soup, og_tags, bundle_params
-        )
+        # Step 5: Extract Status, Badges & Lifecycle ('Under Offer', 'Sold', 'Reduced', 'On Show', 'Auction', 'POA')
+        (
+            status,
+            badges,
+            is_under_offer,
+            is_sold,
+            is_on_show,
+            is_reduced,
+            is_auction,
+            is_poa,
+            on_show_details,
+        ) = self._extract_status(soup, og_tags, bundle_params)
 
         # Step 6: Extract Location & Geo
         location = self._extract_location(url, soup, json_ld_residence, breadcrumbs, og_tags, bundle_params)
 
         # Step 7: Extract Pricing details
         price = self._extract_price(soup, og_tags, bundle_params)
+        if price.is_auction:
+            is_auction = True
+            if "Auction" not in badges:
+                badges.append("Auction")
+        if price.is_poa:
+            is_poa = True
+            if "POA" not in badges:
+                badges.append("POA")
 
         # Step 8: Extract Property details, sizes, and hectare conversions
         prop_type, listing_date, erf_size, land_size_raw, floor_size = self._extract_details(
@@ -131,6 +147,8 @@ class PrivatePropertyExtractor(BaseExtractor):
             is_sold=is_sold,
             is_on_show=is_on_show,
             is_price_reduced=is_reduced,
+            is_auction=is_auction,
+            is_poa=is_poa,
             on_show_details=on_show_details,
             listing_date=listing_date,
             description=description,
@@ -187,45 +205,55 @@ class PrivatePropertyExtractor(BaseExtractor):
 
         return None
 
-    def _extract_status(
-        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
-    ) -> tuple[str, list[str], bool, bool, bool, bool, dict[str, Any] | None]:
-        """Extract listing lifecycle status and visual badges."""
-        status = "active"
-        badges: list[str] = []
-        is_under_offer = False
-        is_sold = False
-        is_on_show = False
-        is_reduced = False
+    def _extract_status_from_bundle(
+        self, bundle_params: dict[str, Any]
+    ) -> tuple[str, list[str], bool, bool, bool, bool, bool, bool, dict[str, Any] | None]:
+        """Extract status and flags from embedded bundle parameters."""
+        status, badges = "active", []
+        is_under_offer, is_sold, is_on_show = False, False, False
+        is_reduced, is_auction, is_poa = False, False, False
         on_show_details = None
 
-        if bundle_params:
-            if bundle_params.get("isUnderOffer"):
-                is_under_offer = True
-                status = "under_offer"
-                badges.append("Under Offer")
+        if not bundle_params:
+            return status, badges, is_under_offer, is_sold, is_on_show, is_reduced, is_auction, is_poa, on_show_details
 
-            if bundle_params.get("isSold") or bundle_params.get("listingStatus") == "Sold":
-                is_sold = True
-                status = "sold"
-                badges.append("Sold")
+        if bundle_params.get("isUnderOffer"):
+            is_under_offer, status = True, "under_offer"
+            badges.append("Under Offer")
+        if bundle_params.get("isSold") or bundle_params.get("listingStatus") == "Sold":
+            is_sold, status = True, "sold"
+            badges.append("Sold")
+        if bundle_params.get("isOnShow") or bundle_params.get("onShowDetails"):
+            is_on_show = True
+            badges.append("On Show")
+            if isinstance(bundle_params.get("onShowDetails"), dict):
+                on_show_details = bundle_params["onShowDetails"]
+        if bundle_params.get("isReduced") or bundle_params.get("isPriceReduced"):
+            is_reduced = True
+            badges.append("Reduced")
+        if bundle_params.get("isAuction") or "auction" in str(bundle_params.get("listingStatus", "")).lower():
+            is_auction = True
+            badges.append("Auction")
+        if bundle_params.get("isPoa") or bundle_params.get("isPOA"):
+            is_poa = True
+            badges.append("POA")
 
-            if bundle_params.get("isOnShow") or bundle_params.get("onShowDetails"):
-                is_on_show = True
-                badges.append("On Show")
-                if isinstance(bundle_params.get("onShowDetails"), dict):
-                    on_show_details = bundle_params["onShowDetails"]
+        raw_badges = bundle_params.get("badges") or bundle_params.get("tags") or []
+        if isinstance(raw_badges, list):
+            for b in raw_badges:
+                b_text = b.get("text") if isinstance(b, dict) else str(b)
+                if b_text and b_text not in badges:
+                    badges.append(b_text)
 
-            if bundle_params.get("isReduced") or bundle_params.get("isPriceReduced"):
-                is_reduced = True
-                badges.append("Reduced")
+        return status, badges, is_under_offer, is_sold, is_on_show, is_reduced, is_auction, is_poa, on_show_details
 
-            raw_badges = bundle_params.get("badges") or bundle_params.get("tags") or []
-            if isinstance(raw_badges, list):
-                for b in raw_badges:
-                    b_text = b.get("text") if isinstance(b, dict) else str(b)
-                    if b_text and b_text not in badges:
-                        badges.append(b_text)
+    def _extract_status_from_dom(
+        self, soup: BeautifulSoup, badges: list[str]
+    ) -> tuple[str | None, bool, bool, bool, bool, bool, bool]:
+        """Extract lifecycle status and badges from DOM elements."""
+        status_override = None
+        is_under_offer, is_sold, is_on_show = False, False, False
+        is_reduced, is_auction, is_poa = False, False, False
 
         badge_elements = soup.find_all(
             class_=re.compile(r"badge|banner|ribbon|tag|label|listing-banners|listing-details__badge", re.I)
@@ -234,46 +262,85 @@ class PrivatePropertyExtractor(BaseExtractor):
             text = el.get_text(" ", strip=True)
             if not text or len(text) > 40:
                 continue
+            text_lower = text.strip().lower()
 
-            text_clean = text.strip()
-            text_lower = text_clean.lower()
-
-            if "under offer" in text_lower or "offer pending" in text_lower or "under contract" in text_lower:
-                is_under_offer = True
-                status = "under_offer"
-                if "Under Offer" not in badges:
-                    badges.append("Under Offer")
+            if any(term in text_lower for term in ["under offer", "offer pending", "under contract"]):
+                is_under_offer, status_override = True, "under_offer"
+                badges.append("Under Offer")
             elif "sold" in text_lower:
-                is_sold = True
-                status = "sold"
-                if "Sold" not in badges:
-                    badges.append("Sold")
+                is_sold, status_override = True, "sold"
+                badges.append("Sold")
             elif "on show" in text_lower or "show house" in text_lower:
                 is_on_show = True
-                if "On Show" not in badges:
-                    badges.append("On Show")
+                badges.append("On Show")
             elif "reduced" in text_lower or "price drop" in text_lower:
                 is_reduced = True
-                if "Reduced" not in badges:
-                    badges.append("Reduced")
+                badges.append("Reduced")
             elif "auction" in text_lower:
-                if "Auction" not in badges:
-                    badges.append("Auction")
+                is_auction = True
+                badges.append("Auction")
+            elif "poa" in text_lower or "price on application" in text_lower or "price on request" in text_lower:
+                is_poa = True
+                badges.append("POA")
             elif "withdrawn" in text_lower or "off market" in text_lower:
-                status = "withdrawn"
-                if "Withdrawn" not in badges:
-                    badges.append("Withdrawn")
+                status_override = "withdrawn"
+                badges.append("Withdrawn")
 
-        og_title = og_tags.get("og:title", "")
-        if "under offer" in og_title.lower():
-            is_under_offer = True
-            status = "under_offer"
-        elif "sold" in og_title.lower():
-            is_sold = True
-            status = "sold"
+        return status_override, is_under_offer, is_sold, is_on_show, is_reduced, is_auction, is_poa
+
+    def _extract_status(
+        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
+    ) -> tuple[str, list[str], bool, bool, bool, bool, bool, bool, dict[str, Any] | None]:
+        """Extract listing lifecycle status and visual badges."""
+        (
+            status,
+            badges,
+            is_under_offer,
+            is_sold,
+            is_on_show,
+            is_reduced,
+            is_auction,
+            is_poa,
+            on_show_details,
+        ) = self._extract_status_from_bundle(bundle_params)
+
+        (
+            dom_status,
+            dom_under_offer,
+            dom_sold,
+            dom_on_show,
+            dom_reduced,
+            dom_auction,
+            dom_poa,
+        ) = self._extract_status_from_dom(soup, badges)
+
+        if dom_status:
+            status = dom_status
+        is_under_offer = is_under_offer or dom_under_offer
+        is_sold = is_sold or dom_sold
+        is_on_show = is_on_show or dom_on_show
+        is_reduced = is_reduced or dom_reduced
+        is_auction = is_auction or dom_auction
+        is_poa = is_poa or dom_poa
+
+        og_title = og_tags.get("og:title", "").lower()
+        if "under offer" in og_title:
+            is_under_offer, status = True, "under_offer"
+        elif "sold" in og_title:
+            is_sold, status = True, "sold"
 
         badges = list(dict.fromkeys(badges))
-        return status, badges, is_under_offer, is_sold, is_on_show, is_reduced, on_show_details
+        return (
+            status,
+            badges,
+            is_under_offer,
+            is_sold,
+            is_on_show,
+            is_reduced,
+            is_auction,
+            is_poa,
+            on_show_details,
+        )
 
     def _extract_listing_id(self, url: str, soup: BeautifulSoup) -> str:
         """Extract listing ID from URL path or fallback to DOM."""
@@ -418,36 +485,82 @@ class PrivatePropertyExtractor(BaseExtractor):
 
         return loc
 
-    def _extract_price(
-        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
-    ) -> PriceInfo:
-        """Extract asking price, rates, taxes, and monthly levies."""
+    def _extract_price_from_bundle(self, bundle_params: dict[str, Any]) -> PriceInfo:
+        """Extract pricing information from bundle params."""
         price_info = PriceInfo()
+        price_disp = bundle_params.get("priceDisplay")
+        if not price_disp:
+            return price_info
 
-        price_disp = bundle_params.get("priceDisplay", {})
+        raw_p = ""
         if isinstance(price_disp, dict):
-            raw_p = price_disp.get("price")
-            if raw_p:
-                clean_p = re.sub(r"[^0-9.]", "", str(raw_p).replace("\xa0", "").replace("\u202f", ""))
+            raw_p = str(price_disp.get("price") or price_disp.get("displayPrice") or "").strip()
+        elif isinstance(price_disp, str):
+            raw_p = price_disp.strip()
+
+        raw_lower = raw_p.lower()
+        if "poa" in raw_lower or "price on application" in raw_lower or "price on request" in raw_lower:
+            price_info.is_poa = True
+            price_info.formatted_display = "POA"
+        elif "auction" in raw_lower:
+            price_info.is_auction = True
+            clean_p = re.sub(r"[^0-9.]", "", raw_p.replace("\xa0", "").replace("\u202f", ""))
+            if clean_p:
+                try:
+                    price_info.amount = float(clean_p)
+                    price_info.formatted_display = f"Auction (R {int(price_info.amount):,})".replace(",", " ")
+                except ValueError:
+                    price_info.formatted_display = "Auction"
+            else:
+                price_info.formatted_display = "Auction"
+        elif raw_p:
+            clean_p = re.sub(r"[^0-9.]", "", raw_p.replace("\xa0", "").replace("\u202f", ""))
+            if clean_p:
                 try:
                     price_info.amount = float(clean_p)
                     price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
                 except ValueError:
                     pass
 
-        if price_info.amount is None:
-            for el in soup.find_all(class_=re.compile(r"price|listing-details__price|details-page-top", re.I)):
-                text = el.get_text(" ", strip=True)
+        return price_info
+
+    def _extract_price_from_dom(self, soup: BeautifulSoup, price_info: PriceInfo) -> None:
+        """Fallback extraction of asking price or POA/Auction indicator from DOM."""
+        if price_info.amount is not None or price_info.is_poa or price_info.is_auction:
+            return
+
+        for el in soup.find_all(class_=re.compile(r"price|listing-details__price|details-page-top", re.I)):
+            text = el.get_text(" ", strip=True)
+            text_lower = text.lower()
+            if "poa" in text_lower or "price on application" in text_lower or "price on request" in text_lower:
+                price_info.is_poa = True
+                price_info.formatted_display = "POA"
+                return
+            if "auction" in text_lower:
+                price_info.is_auction = True
                 match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text)
                 if match:
                     price_str = match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
                     try:
                         price_info.amount = float(price_str)
-                        price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
-                        break
+                        price_info.formatted_display = f"Auction (R {int(price_info.amount):,})".replace(",", " ")
                     except ValueError:
-                        pass
+                        price_info.formatted_display = "Auction"
+                else:
+                    price_info.formatted_display = "Auction"
+                return
+            match = re.search(r"R\s*([0-9\s\xa0\u202f,]+)", text)
+            if match:
+                price_str = match.group(1).replace(" ", "").replace("\xa0", "").replace("\u202f", "").replace(",", "")
+                try:
+                    price_info.amount = float(price_str)
+                    price_info.formatted_display = f"R {int(price_info.amount):,}".replace(",", " ")
+                    return
+                except ValueError:
+                    pass
 
+    def _extract_rates_and_levies(self, soup: BeautifulSoup, price_info: PriceInfo) -> None:
+        """Extract monthly rates, taxes and levies from details list."""
         for item in soup.find_all(class_=re.compile(r"property-details__list-item", re.I)):
             text = item.get_text(" ", strip=True)
             if "rates and taxes" in text.lower():
@@ -467,6 +580,13 @@ class PrivatePropertyExtractor(BaseExtractor):
                     except ValueError:
                         pass
 
+    def _extract_price(
+        self, soup: BeautifulSoup, og_tags: dict[str, str], bundle_params: dict[str, Any]
+    ) -> PriceInfo:
+        """Extract asking price, rates, taxes, and monthly levies."""
+        price_info = self._extract_price_from_bundle(bundle_params)
+        self._extract_price_from_dom(soup, price_info)
+        self._extract_rates_and_levies(soup, price_info)
         return price_info
 
     def _extract_details(

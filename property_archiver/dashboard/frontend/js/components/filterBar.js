@@ -40,6 +40,8 @@ export function initFilterBar() {
                     <option value="active">Active</option>
                     <option value="under_offer">Under Offer</option>
                     <option value="sold">Sold</option>
+                    <option value="auction">Auction</option>
+                    <option value="poa">POA (Price on Request)</option>
                     <option value="delisted">Delisted</option>
                     <option value="withdrawn">Withdrawn</option>
                 </select>

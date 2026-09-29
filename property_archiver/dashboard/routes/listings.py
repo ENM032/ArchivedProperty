@@ -23,6 +23,54 @@ from property_archiver.utils.url_resolver import resolve_input_targets
 logger = logging.getLogger(__name__)
 
 
+def _find_hero_image_url(record: Any, listing_dir: Path) -> str | None:
+    """Find the first locally available hero image for a listing."""
+    if not record.images:
+        return None
+    for img in record.images:
+        if img.local_filename and (listing_dir / "images" / img.local_filename).exists():
+            return f"/api/listings/{record.listing_id}/image/{img.local_filename}"
+    return None
+
+
+def _serialize_listing_summary(record: Any, listing_dir: Path) -> dict[str, Any]:
+    """Serialize listing record into concise frontend summary dictionary."""
+    hero_url = _find_hero_image_url(record, listing_dir)
+    prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(record)
+    price_obj = record.price
+    is_auction = getattr(record, "is_auction", False) or getattr(price_obj, "is_auction", False)
+    is_poa = getattr(record, "is_poa", False) or getattr(price_obj, "is_poa", False)
+
+    return {
+        "listing_id": record.listing_id,
+        "portal_name": record.portal_name,
+        "title": record.title,
+        "listing_type": getattr(record, "listing_type", "for_sale"),
+        "property_type": record.property_type,
+        "listing_status": record.listing_status,
+        "is_under_offer": record.is_under_offer,
+        "is_sold": record.is_sold,
+        "is_on_show": getattr(record, "is_on_show", False),
+        "is_price_reduced": getattr(record, "is_price_reduced", False),
+        "is_auction": is_auction,
+        "is_poa": is_poa,
+        "status_badges": record.status_badges,
+        "price": price_obj.model_dump(),
+        "location": record.location.model_dump(),
+        "geo_hierarchy": {"province": prov, "area": area, "suburb": sub},
+        "features": record.features.model_dump(),
+        "erf_size_m2": record.erf_size_m2,
+        "land_size_raw": record.land_size_raw,
+        "floor_size_m2": record.floor_size_m2,
+        "user_notes": getattr(record, "user_notes", None),
+        "user_tags": getattr(record, "user_tags", []),
+        "user_rating": getattr(record, "user_rating", None),
+        "images_count": len(record.images),
+        "hero_image_url": hero_url,
+        "extracted_at": record.extracted_at.isoformat(),
+    }
+
+
 def handle_list_listings(archive_dir: Path) -> tuple[dict[str, Any] | list[Any], HTTPStatus]:
     """Return summary array for all discovered listings."""
     listing_dirs = ArchiveReader.find_all_listing_dirs(archive_dir)
@@ -31,43 +79,7 @@ def handle_list_listings(archive_dir: Path) -> tuple[dict[str, Any] | list[Any],
     for item in listing_dirs:
         try:
             record = ArchiveReader.load_listing(item)
-            hero_url = None
-            if record.images:
-                for img in record.images:
-                    if img.local_filename and (item / "images" / img.local_filename).exists():
-                        hero_url = f"/api/listings/{record.listing_id}/image/{img.local_filename}"
-                        break
-
-            prov, area, sub = GeoHierarchyBuilder.extract_geo_keys(record)
-
-            results.append({
-                "listing_id": record.listing_id,
-                "portal_name": record.portal_name,
-                "title": record.title,
-                "listing_type": getattr(record, "listing_type", "for_sale"),
-                "property_type": record.property_type,
-                "listing_status": record.listing_status,
-                "is_under_offer": record.is_under_offer,
-                "is_sold": record.is_sold,
-                "status_badges": record.status_badges,
-                "price": record.price.model_dump(),
-                "location": record.location.model_dump(),
-                "geo_hierarchy": {
-                    "province": prov,
-                    "area": area,
-                    "suburb": sub,
-                },
-                "features": record.features.model_dump(),
-                "erf_size_m2": record.erf_size_m2,
-                "land_size_raw": record.land_size_raw,
-                "floor_size_m2": record.floor_size_m2,
-                "user_notes": getattr(record, "user_notes", None),
-                "user_tags": getattr(record, "user_tags", []),
-                "user_rating": getattr(record, "user_rating", None),
-                "images_count": len(record.images),
-                "hero_image_url": hero_url,
-                "extracted_at": record.extracted_at.isoformat(),
-            })
+            results.append(_serialize_listing_summary(record, item))
         except Exception as exc:
             logger.error("Failed loading listing %s: %s", item.name, exc)
 

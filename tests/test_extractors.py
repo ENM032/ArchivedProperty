@@ -110,3 +110,40 @@ def test_extraction_malformed_html(malformed_html_content: str):
     assert listing.erf_size_m2 is None
     assert len(listing.images) == 0
     assert listing.content_fingerprint is not None
+
+
+def test_auction_extraction():
+    html_auction = """
+    <html>
+        <body>
+            <div class="badge">Auction</div>
+            <div class="price">Auction - Opening Bid R 1 500 000</div>
+            <h1>Modern Auction Property</h1>
+        </body>
+    </html>
+    """
+    extractor = PrivatePropertyExtractor()
+    listing = extractor.extract(html_auction, "https://www.privateproperty.co.za/for-sale/gauteng/sandton/T5637175")
+    assert listing.is_auction is True
+    assert "Auction" in listing.status_badges
+    assert listing.price.is_auction is True
+    assert listing.price.amount == 1500000.0
+
+
+def test_poa_extraction():
+    html_poa = """
+    <html>
+        <body>
+            <div class="listing-details__badge">POA</div>
+            <div class="listing-details__price">Price on Application</div>
+            <h1>Luxury Estate in Somerset West</h1>
+        </body>
+    </html>
+    """
+    extractor = PrivatePropertyExtractor()
+    listing = extractor.extract(html_poa, "https://www.privateproperty.co.za/for-sale/western-cape/somerset-west/T5567003")
+    assert listing.is_poa is True
+    assert "POA" in listing.status_badges
+    assert listing.price.is_poa is True
+    assert listing.price.amount is None
+    assert listing.price.formatted_display == "POA"

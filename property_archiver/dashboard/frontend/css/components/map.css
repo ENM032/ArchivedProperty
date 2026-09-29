@@ -208,6 +208,24 @@
     background-color: #ef4444;
 }
 
+.map-price-chip.auction {
+    background-color: #581c87;
+    color: #f3e8ff;
+    border: 1px solid #c084fc;
+}
+.map-price-chip.auction .status-dot {
+    background-color: #d8b4fe;
+}
+
+.map-price-chip.poa {
+    background-color: #0c4a6e;
+    color: #e0f2fe;
+    border: 1px solid #38bdf8;
+}
+.map-price-chip.poa .status-dot {
+    background-color: #7dd3fc;
+}
+
 /* Custom Marker Cluster Badges */
 .custom-cluster-icon {
     background: transparent;

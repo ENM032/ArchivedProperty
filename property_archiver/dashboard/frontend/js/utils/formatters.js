@@ -1,12 +1,41 @@
 /**
- * Data and Currency formatters.
+ * Data and Currency formatters supporting standard values, POA, and Auctions.
  */
-export function formatZAR(amount) {
+export function formatZAR(amount, priceObj = null) {
+    if (typeof amount === 'object' && amount !== null) {
+        priceObj = amount;
+        amount = priceObj.amount;
+    }
+    if (priceObj) {
+        if (priceObj.is_poa || priceObj.price?.is_poa || priceObj.formatted_display === 'POA') {
+            return 'POA';
+        }
+        if (priceObj.is_auction || priceObj.price?.is_auction) {
+            if (priceObj.formatted_display) return priceObj.formatted_display;
+            if (amount && !isNaN(amount)) return `Auction (${formatZAR(amount)})`;
+            return 'Auction';
+        }
+        if (priceObj.formatted_display && (amount === null || amount === undefined || isNaN(amount))) {
+            return priceObj.formatted_display;
+        }
+    }
     if (amount === null || amount === undefined || isNaN(amount)) return 'Price N/A';
     return 'R ' + Math.round(amount).toLocaleString('en-ZA');
 }
 
-export function formatCompactZAR(amount) {
+export function formatCompactZAR(amount, priceObj = null) {
+    if (typeof amount === 'object' && amount !== null) {
+        priceObj = amount;
+        amount = priceObj.amount;
+    }
+    if (priceObj) {
+        if (priceObj.is_poa || priceObj.price?.is_poa || priceObj.formatted_display === 'POA') {
+            return 'POA';
+        }
+        if (priceObj.is_auction || priceObj.price?.is_auction) {
+            return 'Auction';
+        }
+    }
     if (amount === null || amount === undefined || isNaN(amount) || amount === 0) return 'Price N/A';
     if (amount >= 1_000_000) {
         const val = amount / 1_000_000;
@@ -32,6 +61,12 @@ export function getStatusBadgeInfo(item) {
     }
     if (item.is_under_offer || rawStatus === 'under_offer' || rawStatus === 'under offer') {
         return { statusClass: 'under_offer', statusLabel: 'Under Offer' };
+    }
+    if (item.is_auction || rawStatus === 'auction') {
+        return { statusClass: 'auction', statusLabel: 'Auction' };
+    }
+    if (item.is_poa || rawStatus === 'poa' || item.price?.is_poa) {
+        return { statusClass: 'poa', statusLabel: 'POA' };
     }
     if (rawStatus === 'delisted') {
         return { statusClass: 'delisted', statusLabel: 'Delisted' };

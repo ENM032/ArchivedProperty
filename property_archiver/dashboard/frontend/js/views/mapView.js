@@ -121,7 +121,7 @@ export function renderMapView(listings) {
 
             const { statusClass, statusLabel } = getStatusBadgeInfo(item);
             const heroImg = item.hero_image_url || '/api/placeholder';
-            const priceText = formatCompactZAR(item.price?.amount);
+            const priceText = formatCompactZAR(item.price?.amount, item.price);
 
             // Custom HTML Price Pill Pin (Zillow/Airbnb Style)
             const iconHtml = `
@@ -151,7 +151,7 @@ export function renderMapView(listings) {
                          style="width: 100%; height: 110px; object-fit: cover; border-radius: 4px; margin-bottom: 0.5rem;" 
                          onerror="this.src='/api/placeholder'">
                     <div style="font-weight: 700; font-size: 1rem; color: #000814; margin-bottom: 0.25rem;">
-                        ${formatZAR(item.price?.amount)}${statusBadgeHtml}
+                        ${formatZAR(item.price?.amount, item.price)}${statusBadgeHtml}
                     </div>
                     <div style="font-weight: 600; font-size: 0.85rem; color: #001d3d; margin-bottom: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                         ${item.title || 'Property'}
@@ -231,7 +231,7 @@ function updateVisibleSidePanel() {
         card.innerHTML = `
             <img class="map-compact-thumb" src="${heroImg}" loading="lazy" decoding="async" alt="${item.title || 'Property'}" onerror="this.src='/api/placeholder'">
             <div class="map-compact-details">
-                <div class="map-compact-price">${formatZAR(item.price?.amount)}${statusBadgeHtml}</div>
+                <div class="map-compact-price">${formatZAR(item.price?.amount, item.price)}${statusBadgeHtml}</div>
                 <div class="map-compact-title">${item.title || 'Property'}</div>
                 <div class="map-compact-sub">${item.location?.suburb || ''} | ${item.features?.bedrooms || 0}b/${item.features?.bathrooms || 0}ba</div>
             </div>

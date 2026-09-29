@@ -62,6 +62,8 @@ function renderDossierModal(data) {
                                     <option value="active" ${l.listing_status === 'active' ? 'selected' : ''}>Active</option>
                                     <option value="under_offer" ${l.listing_status === 'under_offer' ? 'selected' : ''}>Under Offer</option>
                                     <option value="sold" ${l.listing_status === 'sold' ? 'selected' : ''}>Sold</option>
+                                    <option value="auction" ${l.listing_status === 'auction' ? 'selected' : ''}>Auction</option>
+                                    <option value="poa" ${l.listing_status === 'poa' ? 'selected' : ''}>POA</option>
                                     <option value="delisted" ${l.listing_status === 'delisted' ? 'selected' : ''}>Delisted</option>
                                     <option value="withdrawn" ${l.listing_status === 'withdrawn' ? 'selected' : ''}>Withdrawn</option>
                                 </select>
@@ -141,7 +143,7 @@ function renderDossierModal(data) {
                             <div class="info-card">
                                 <h4>Pricing & Rates</h4>
                                 <div style="font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                                    <div><strong>Asking Price:</strong> ${formatZAR(l.price?.amount)}</div>
+                                    <div><strong>Asking Price:</strong> ${formatZAR(l.price?.amount, l.price)}</div>
                                     <div><strong>Rates & Taxes:</strong> ${l.price?.rates_and_taxes_monthly ? formatZAR(l.price.rates_and_taxes_monthly) + '/mo' : 'N/A'}</div>
                                     <div><strong>Levies:</strong> ${l.price?.levies_monthly ? formatZAR(l.price.levies_monthly) + '/mo' : 'N/A'}</div>
                                     <div><strong>Status:</strong> <span class="card-badge ${statusInfo.statusClass}" style="position: static; display: inline-block; vertical-align: middle; margin-left: 0.35rem;">${statusInfo.statusLabel}</span></div>

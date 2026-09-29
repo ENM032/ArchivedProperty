@@ -111,6 +111,16 @@
     color: var(--status-pending-text);
     border: 1px solid var(--status-pending-border);
 }
+.card-badge.auction {
+    background-color: var(--status-auction-bg);
+    color: var(--status-auction-text);
+    border: 1px solid var(--status-auction-border);
+}
+.card-badge.poa {
+    background-color: var(--status-poa-bg);
+    color: var(--status-poa-text);
+    border: 1px solid var(--status-poa-border);
+}
 
 .img-count-tag {
     position: absolute;

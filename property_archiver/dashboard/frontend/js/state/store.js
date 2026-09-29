@@ -115,6 +115,12 @@ class Store {
         if (filterStatus === 'sold') {
             return itemStatus === 'sold' || item.is_sold;
         }
+        if (filterStatus === 'auction') {
+            return itemStatus === 'auction' || item.is_auction || item.price?.is_auction || (item.status_badges && item.status_badges.some(b => b.toLowerCase().includes('auction')));
+        }
+        if (filterStatus === 'poa') {
+            return itemStatus === 'poa' || item.is_poa || item.price?.is_poa || (item.status_badges && item.status_badges.some(b => b.toLowerCase().includes('poa')));
+        }
         return itemStatus === filterStatus;
     }
 
@@ -138,8 +144,16 @@ class Store {
         filtered.sort((a, b) => {
             if (sort === 'date-desc') return new Date(b.extracted_at) - new Date(a.extracted_at);
             if (sort === 'date-asc') return new Date(a.extracted_at) - new Date(b.extracted_at);
-            if (sort === 'price-desc') return (b.price?.amount || 0) - (a.price?.amount || 0);
-            if (sort === 'price-asc') return (a.price?.amount || 0) - (b.price?.amount || 0);
+            if (sort === 'price-desc') {
+                const pa = typeof a.price?.amount === 'number' ? a.price.amount : -1;
+                const pb = typeof b.price?.amount === 'number' ? b.price.amount : -1;
+                return pb - pa;
+            }
+            if (sort === 'price-asc') {
+                const pa = typeof a.price?.amount === 'number' ? a.price.amount : Infinity;
+                const pb = typeof b.price?.amount === 'number' ? b.price.amount : Infinity;
+                return pa - pb;
+            }
             if (sort === 'beds-desc') return (b.features?.bedrooms || 0) - (a.features?.bedrooms || 0);
             return 0;
         });

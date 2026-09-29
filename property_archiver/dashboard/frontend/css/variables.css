@@ -64,6 +64,14 @@
     --status-pending-bg: #fff7ed;
     --status-pending-border: #fed7aa;
 
+    --status-auction-text: #6b21a8;
+    --status-auction-bg: #f3e8ff;
+    --status-auction-border: #d8b4fe;
+
+    --status-poa-text: #0369a1;
+    --status-poa-bg: #e0f2fe;
+    --status-poa-border: #7dd3fc;
+
     --accent-red: #dc2626;
     --accent-amber: #d97706;
     --accent-green: #16a34a;
